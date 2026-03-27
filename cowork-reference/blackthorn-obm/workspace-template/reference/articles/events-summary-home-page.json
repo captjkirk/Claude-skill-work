@@ -1,0 +1,30 @@
+{
+  "id": "events-summary-home-page",
+  "title": "events-summary-home-page.md",
+  "content": "## Metadata_Start ## code: en ## title: Events Summary Home Page ## slug: events-summary-home-page ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Our Event Summary Home Page lets you monitor upcoming events, weekly registrations, attendance summaries and more! ![Events Summary Home Page](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Summary%20Home%20Page.png){height=\"\" width=\"\"} To update your Home Page to the custom Events Summary dashboard, navigate to the Lightning App Builder. Setup > Quick Find > Lightning App Builder > Blackthorn Events Homepage > View ![Lightning App Builder 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20App%20Builder%201.png){height=\"\" width=\"\"} Select \"Activation\" > App and Profile > Assign to Apps and Profiles > Check \"Events (Admin) and Events (Planner)\" > Next > Save ![Lightning App Builder 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20App%20Builder%202.png){height=\"\" width=\"\"} Now when you navigate to either the Event (Admin) or Event (Planner) app, you will see your Events Summary dashboard!",
+  "keywords": [
+    "events",
+    "summary",
+    "lightning",
+    "home",
+    "page",
+    "builder",
+    "event",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "your",
+    "dashboard"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "additional-configuration",
+  "title": "additional-configuration.html",
+  "content": "Add Mobile Pay Action to Transaction Page Layout The Mobile Pay action can be added to the page layout to link from the Field Service Lightning (FSL) Mobile app to the Blackthorn . This is useful for FSL Mobile app users that want to accept a mobile payment. Complete the following setup steps to enable the feature. In Salesforce go to Setup &gt; Customize &gt; Custom Objects. Click on the object. On the object, create a custom formula field. Give it any name you'd like, such as \"Mobile Pay\" and use this formula: HYPERLINK(\"btmobilepmt://mobilepayments.blackthorn.io/transaction?id=\" &amp; Id &amp; \"&amp;orgid=\" &amp; $Organization.Id &amp; \"&amp;app=fieldService\",\"Mobile Pay\") Add the new field to the Charge Transaction layout. Click . This will create a hyperlinked field in your mobile app. You can use this approach and/or the App Extension below to launch Blackthorn from the FSL Mobile app. Create an App Extension Create an App Extension for each mobile app device type (iOS and/or Android) that you support. On iOS, this creates the blue lightning bolt button action for a single button click from the Work Order. It's a two-step configuration once our FSL extension package is installed. Navigate to Field Service Mobile Settings in Setup. In the section titled \"App Extension,\" click the Add button. Add the required fields. They will be similar to what is displayed in the screenshot below. Copy/paste the text below into the field shown above. btmobilepmt://mobilepayments.blackthorn.io/transaction?id={!btfslmobileext__Open_Charge_Record_Id__c}&amp;orgid=$Organization.Id&amp;app=fieldService Click to add the App Extension. Once completed, the App Extension will show up in the FSL Mobile app. Be sure to clear your cached data for the button to appear. You may also have to log out and log in. Disable the Creation of Transactions from a Work Order To prevent the automatic creation of from a , the \"Disable Transaction Create From WO\" custom setting was added to the Blackthorn Payments | FSL Settings.&nbsp; Follow the steps below to disable the automatic creation of from a . Go to Custom Settings. Click on Blackthorn Payments | FSL Settings. Click . Set = “True”. Click .",
+  "keywords": [
+    "mobile",
+    "click",
+    "from",
+    "extension",
+    "field",
+    "blackthorn",
+    "transaction",
+    "create",
+    "custom",
+    "below",
+    "button",
+    "settings",
+    "action",
+    "layout",
+    "setup",
+    "disable",
+    "creation",
+    "page",
+    "added",
+    "service"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

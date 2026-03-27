@@ -1,0 +1,36 @@
+{
+  "id": "events-feature-fees-checkout",
+  "title": "events-feature-fees-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Checkout ## slug: events-feature-fees-checkout ## seoTitle: Checkout ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Limitation) Do not use the Virtual Terminal to process a Transaction that includes Fees (Payment Processing or Tax). Fees are not supported by the Virtual Terminal. ::: ## Layout Event Organizers can now display relevant tax information, including the payment processing fee and tax IDs, to their {{variable.Object_Attendee}}s during checkout. The checkout process performs the tax/fee calculations while creating the {{variable.Object_Invoice}} and {{variable.Object_LineItem}}s and determines whether an {{variable.Object_EventItem}} is tax-exempt. The {{variable.Object_Fee}}’s currency and format (symbol vs ISO) will match the {{variable.Object_Event}}’s {{variable.Field_ETEvent_Currency}} and the {{variable.Object_EventSettings}}' {{variable.Field_ETSetting_CurrencyDispla}}. Event Organizers can also change the {{variable.Field_Fee_FeeName}} to match their requirements (Tax, GST, HST, etc.). The format for the displayed tax is as follows: ``` [Fee Name] ([Percent value]%) [Currency symbol/ISO][Amount] Sales Tax (4%) $1.09 ``` ## Order of Calculations 1. Calculate the {{variable.Field_Invoice_GrossAmount}}. 2. Calculate the {{variable.Field_Invoice_NetAmount}} by applying the {{variable.Field_Invoice_Discount}} to the {{variable.Field_Invoice_GrossAmount}} for discountable {{variable.Object_LineItem}}s. 3. Calculate the taxes by multiplying the {{variable.Field_Invoice_NetAmount}} by the applicable tax rate. 4. Calculate the {{variable.Field_Invoice_TotalAmount}} by adding the {{variable.Field_Invoice_NetAmount}} and {{variable.Field_Invoice_TaxAmount}}. 5. Add any {{variable.Object_Fee}}s. The {{variable.Field_Event_TaxFee}} will be calculated at checkout after discounts are applied but before a {{variable.Field_ETEvent_PaymentProcesFee}} is applied. If the {{variable.Object_Attendee}} changes the items in their cart, the {{variable.Field_Event_TaxFee}} amount will dynamically update. If an {{variable.Object_Event}} doesn’t have a {{variable.Field_Event_TaxFee}}, there will be no line item at checkout. {{variable.Object_EventItem}}s that are not tax-exempt will show a tax amount. * If the {{variable.Field_Fee_TaxDisplaySetting}} = “Tax Inclusive pricing,” THEN discounts are calculated after taxes are added since the shown price already includes taxes. * If the {{variable.Field_Fee_TaxDisplaySetting}} = “Calculated at checkout,” THEN discounts are calculated before taxes are added since the tax is shown as a separate item at the checkout. ## Scenarios ### Event Item When an {{variable.Object_Attendee}} registers for an {{variable.Object_Event}} with an {{variable.Object_EventItem}}, they will see the tax {{variable.Field_Fee_FeeName}} and associated amount, including the {{variable.Field_EventItem_TaxAmount}}, in the cart at checkout. The functionality has been updated so the {{variable.Object_EventItem}}s will display prices based on the {{variable.Object_Event}}’s {{variable.Field_Event_TaxFeeCalculatType}} value. * If {{variable.Field_Event_TaxFeeCalculatType}} = “Calculated at Checkout,” * The {{variable.Field_ETEventItem_Price}} will be visible for each {{variable.Object_EventItem}} on the pre-checkout page. * A separate line item will show the sum of the {{variable.Field_EventItem_TaxAmount}} for each {{variable.Object_EventItem}} on the checkout page. * If {{variable.Field_Event_TaxFeeCalculatType}} = “Tax-Inclusive Pricing”, * The {{variable.Field_EventItem_PriceWithTax}} will be visible for each {{variable.Object_EventItem}} on the pre-checkout page. * The {{variable.Field_ETEventItem_Price}} for each {{variable.Object_EventItem}} and a separate line item showing the sum of the {{variable.Field_EventItem_TaxAmount}} for each {{variable.Object_EventItem}} will be on the checkout page. When the {{variable.Object_EventItem}}’s {{variable.Field_EventItem_TaxExempt}} field is enabled (checked), the {{variable.Field_EventItem_TaxAmount}} will not be added to the total price due at checkout. When the {{variable.Object_EventItem}}’s {{variable.Field_EventItem_TaxExempt}} field is not enabled, the {{variable.Field_EventItem_TaxAmount}} will be added to the total price due at checkout. ### Event Item Session When an {{variable.Object_Attendee}} registers for an {{variable.Object_Event}} with an {{variable.Object_EventItemSession}}, they will see the tax {{variable.Field_Fee_FeeName}} and associated amount, including the {{variable.Field_EventItemSessi_TaxAmount}} on paid {{variable.Object_EventItemSession}}s, in the cart at checkout. When the {{variable.Object_EventItemSession}}’s {{variable.Field_EventItemSessi_TaxExempt}} field is enabled (checked), the {{variable.Field_EventItemSessi_TaxAmount}} will not be added to the total price due at checkout. When the {{variable.Object_EventItemSession}}’s {{variable.Field_EventItemSessi_TaxExempt}} field is not enabled, the {{variable.Field_EventItemSessi_TaxAmount}} will be added to the total price due at checkout. ### Supported Scenarios * An {{variable.Object_Event}} with one {{variable.Object_EventItem}} with a {{variable.Field_EventItem_TaxRate}} and one {{variable.Object_EventItem}} with {{variable.Field_EventItem_TaxExempt}} checked. * An {{variable.Object_Event}} with one {{variable.Object_EventItem}} with a {{variable.Field_EventItem_TaxRate}} and one {{variable.Object_EventItem}} with {{variable.Field_EventItem_TaxExempt}} checked and a discount {{variable.Object_Code}} applied at the {{variable.Object_Event}} level. * An {{variable.Object_Event}} with one {{variable.Object_EventItem}} with a {{variable.Field_EventItem_TaxRate}} and one {{variable.Object_EventItem}} with {{variable.Field_EventItem_TaxExempt}} checked and a discount {{variable.Object_Code}} applied at the {{variable.Object_EventItem}} level. * An {{variable.Object_Event}} with two {{variable.Object_EventItem}}s with a {{variable.Field_EventItem_TaxRate}} and a discount {{variable.Object_Code}} applied at the {{variable.Object_EventItem}} level. * An {{variable.Object_Event}} with two {{variable.Object_EventItem}}s that are subject to a {{variable.Field_EventItem_TaxRate}} and discount {{variable.Object_Code}}, but one {{variable.Object_EventItem}} has {{variable.Field_EventItem_TaxExempt}} checked, and the other {{variable.Object_EventItem}} does not have a related {{variable.Object_CodeEligibility}}.",
+  "keywords": [
+    "variable",
+    "object_eventitem",
+    "checkout",
+    "object_event",
+    "item",
+    "added",
+    "when",
+    "field_eventitem_taxexempt",
+    "checked",
+    "amount",
+    "calculated",
+    "applied",
+    "price",
+    "field_eventitem_taxamount",
+    "each",
+    "field_eventitem_taxrate",
+    "event",
+    "object_attendee",
+    "calculate",
+    "taxes"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Calculate the {{variable",
+    "2. Calculate the {{variable",
+    "3. Calculate the taxes by multiplying the {{variable",
+    "4. Calculate the {{variable",
+    "5. Add any {{variable"
+  ],
+  "troubleshooting": []
+}

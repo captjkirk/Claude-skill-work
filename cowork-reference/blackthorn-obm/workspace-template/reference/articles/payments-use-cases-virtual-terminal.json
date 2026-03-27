@@ -1,0 +1,36 @@
+{
+  "id": "payments-use-cases-virtual-terminal",
+  "title": "payments-use-cases-virtual-terminal.md",
+  "content": "## Metadata_Start ## code: en ## title: Virtual Terminal ## slug: payments-use-cases-virtual-terminal ## seoTitle: Virtual Terminal ## description: ## contentType: Markdown ## Metadata_End ## Prepopulating Examples ### Related To Field: Opportunity.Account -> Transaction.Account ![G_01_03 virtual terminal pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_01_03%20virtual%20terminal%20pic%201.png){height=\"\" width=\"\"} ### Currency ISO Field 1. Create a custom picklist field called {{variable.Field_Transaction_CurrencyISO}} on your {{variable.Object_Opportunity}} parent object. 2. Insert the same values as the {{variable.Field_Transaction_CurrencyISO}} field from the {{variable.Object_Transaction}}. *Only include the Currency ISO values that you need.* 3. Set a default value for this custom field, ie \"USD\". 4. Create a new custom metadata type record. * **Name:** Opp_Currency_ISO * **Label:** Opp->Trans Currency * **Screen:** Single Transaction * **Source Object:** Opportunity * **Source Field:** Currency ISO * **Target Object:** Transaction * **Target Field:** Currency ISO 5. Click {{variable.Button_Save}}. ### Description Field: Opportunity.Description -> Transaction.Description ![G_01_03 virtual terminal pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_01_03%20virtual%20terminal%20pic%202.png){height=\"\" width=\"\"} ### Custom Field: Lead.Lead Source -> Transaction. Lead Source ![G_01_03 virtual terminal pic 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_01_03%20virtual%20terminal%20pic%203.png){height=\"\" width=\"\"} ## Additional Use Cases If you have any suggestions for a use case with Blackthorn {{variable.Product_Payments}} please contact {{variable.Link_BlackthornSupport}} and provide details on your use case. We always appreciate hearing the solutions our customers create and love sharing that with our other customers!",
+  "keywords": [
+    "field",
+    "variable",
+    "virtual",
+    "terminal",
+    "g_01_03",
+    "transaction",
+    "currency",
+    "description",
+    "custom",
+    "source",
+    "opportunity",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create a custom picklist field called {{variable",
+    "2. Insert the same values as the {{variable",
+    "3. Set a default value for this custom field, ie \"USD\"",
+    "4. Create a new custom metadata type record",
+    "5. Click {{variable"
+  ],
+  "troubleshooting": []
+}

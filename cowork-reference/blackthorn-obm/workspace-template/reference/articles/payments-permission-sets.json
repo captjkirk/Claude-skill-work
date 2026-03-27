@@ -1,0 +1,30 @@
+{
+  "id": "payments-permission-sets",
+  "title": "payments-permission-sets.html",
+  "content": "Prerequisites The following is a list of required permissions that are NOT included in the Blackthorn Payments permission sets, BUT are required to use the Payments app. Object Read Write Delete View All Comments Account ✅ ✅ ❌ ❌ Contact ✅ ✅ ❌ ❌ Lead ✅ ✅ ❌ ❌ Opportunity ✅ ✅ ❌ ❌ Opportunity Product ✅ ✅ ❌ ❌ Product ✅ ❌ ❌ ❌ Price Book Entry ✅ ❌ ❌ ❌ A standard object that isn’t controlled by a permission set. Content Version ✅ ❌ ❌ ❌ A standard object that isn’t controlled by a permission set. Content Document Link ✅ ❌ ❌ ❌ A standard object that isn’t controlled by a permission set. Packaged Permission Sets There are six packaged permission sets that you can assign to users who need access to the Payments app. All give at least Read, Create, and Edit permission to all custom objects and Read and Edit permission to all custom fields. This includes access to objects and fields for our Stripe Connect and Stripe Billing features. The permission sets also give access to all VisualForce pages and Global Rest Apex classes. Any exceptions or additional permissions are listed below for each permission set. {{variable.PS_PT_Admin}} The Payments Admin permission set is automatically given to Salesforce users with the System Administrator Profile. Users with Payments Admin permissions are able to access the Payments (Admin) app, Setup Wizard, and Payment Settings tabs and perform view all, modify all, and delete records tasks for custom objects. {{variable.PS_PT_User}} The Payments User permission set has Read permissions for Payment Gateway and Webhook Event objects and Read/Create permissions for the Blackthorn Log object. Users do not have Delete permissions on any custom objects. {{variable.PS_PT_Manager}} The Payments Manager permission set is given to Salesforce users without a System Administrator profile. Users with this permission set only have Read permissions for the Payment Gateway and Webhook Event objects. All other custom objects have Delete permissions. {{variable.PS_PT_CommunityPlatformUser}} The Payments Community/Platform User permission set is identical to the Blackthorn | Payments (User) permission set except that it does not have any of our Assigned Apps (a collection of tabs). This is because a permission set assigned to a Community user cannot have any Assigned Apps. Customers who want to give Community users access to Payments should use this permission set. {{variable.PS_PT_SiteGuestUser}} This permission set has all the permissions to create Webhook Events from Stripe. It should be assigned to the Site Guest User during the Webhook Site setup. Blackthorn | Payments (Lite User) The Blackthorn | Payments (Lite User) permission set has read-only access to all BT Payments objects and standard Salesforce functionality, such as reports and dashboards. Users cannot use packaged actions such as capturing Transactions, processing Refunds, etc. Custom Permission Sets Note: If you have custom permission sets you would like to use rather than using our Blackthorn permission sets you can view and add individual items by following the steps below: Install the latest Blackthorn | Payments Salesforce AppExchange package in a sandbox. Log in to the sandbox org as a System Admin. Navigate to Setup -&gt; Users -&gt; Permission Sets. Open up each individual \"Blackthorn | Payments\" permission set. Review all permissions within each and compare them to the custom permission sets you have created. Ensure that all permissions granted by our out-of-the-box standard permission sets are recreated in your permission set.",
+  "keywords": [
+    "permission",
+    "payments",
+    "permissions",
+    "sets",
+    "users",
+    "blackthorn",
+    "custom",
+    "objects",
+    "read",
+    "user",
+    "access",
+    "object",
+    "standard",
+    "variable",
+    "delete",
+    "admin",
+    "salesforce",
+    "webhook",
+    "assigned",
+    "view"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

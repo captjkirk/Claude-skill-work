@@ -1,0 +1,30 @@
+{
+  "id": "payments-set-up-paylink-overview",
+  "title": "payments-set-up-paylink-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: payments-set-up-paylink-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (For Government Cloud Users) Government Cloud users who want to use PayLink need to reach out to {{variable.Link_BlackthornSupport}} to have instanceUrl added to their PayLink license. ::: * * * :::(Info) (Do I need to install PayLink?) PayLink does not need to be installed separately. It was already installed via the Candy Shop. ::: {{variable.Product_PayLink}} is our beautiful, mobile-responsive payment request, paid add-on. For every {{variable.Object_Transaction}} that's created, a unique link (PayLink) is created. The link can be rolled up to your {{variable.Object_Transaction}}'s parent record, such as an {{variable.Object_Opportunity}} record. The link can also be automatically emailed to your customer so they can make an immediate payment. ![L_01_Paylink pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/L_01_Paylink%20pic%201.png){height=\"\" width=\"\"} Check out this quick 2-minute video to see it in action! [Blackthorn Payments - PayLink Overview](https://youtu.be/YYVulOejREQ?si=_uqc89YdD_dx9Rre){target=\"_blank\"} Quick Tip: You can create multiple PayLink configurations to change the look and feel of payment requests!",
+  "keywords": [
+    "paylink",
+    "variable",
+    "overview",
+    "need",
+    "payment",
+    "link",
+    "payments",
+    "government",
+    "cloud",
+    "users",
+    "installed",
+    "object_transaction",
+    "created",
+    "your",
+    "record",
+    "l_01_paylink",
+    "https",
+    "quick",
+    "metadata_start",
+    "code"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

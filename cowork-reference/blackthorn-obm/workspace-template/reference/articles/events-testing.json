@@ -1,0 +1,30 @@
+{
+  "id": "events-testing",
+  "title": "events-testing.md",
+  "content": "## Metadata_Start ## code: en ## title: Testing Payments ## slug: events-testing ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End In order to test paid {{variable.Object_Event}}s there are a number of test cards that can be used through our various Payment Gateway providers. Check out our testing documentation for a complete guide of resources available to test your implementation. * [Stripe](https://docs.blackthorn.io/docs/test-your-stripe-payment-gateway-1) * [Authorize.net](https://docs.blackthorn.io/docs/test-your-authorizenet-payment-gateway-1) * [Spreedly](https://docs.blackthorn.io/docs/test-your-spreedly-payment-gateway-1)",
+  "keywords": [
+    "test",
+    "docs",
+    "payment",
+    "gateway",
+    "your",
+    "testing",
+    "https",
+    "blackthorn",
+    "stripe",
+    "spreedly",
+    "metadata_start",
+    "code",
+    "title",
+    "payments",
+    "slug",
+    "events",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

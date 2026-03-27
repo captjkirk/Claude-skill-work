@@ -1,0 +1,37 @@
+{
+  "id": "simple-user-interface",
+  "title": "simple-user-interface.md",
+  "content": "## Metadata_Start ## code: en ## title: Simple User Interface ## slug: simple-user-interface ## seoTitle: Simple User Interface ## description: ## contentType: Markdown ## Metadata_End ![Example Simple UI_v2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Example%20Simple%20UI_v2.png){height=\"\" width=\"\"} ## What is Supported by Each User Interface? The following chart shows the features we currently support for each {{glossary.user interface (UI)}}. {{snippet.EV_Table_SupportedEachUI}} ## UI Experience Field Setup {{snippet.EV_UIExperienceSetup}} ## Using the Simple UI After the {{variable.Field_ETEvent_UIExperience}} field has been added to your page layout, enabling the Simple UI is simple! 1. This {{variable.Object_Event}} must be a FREE {{variable.Object_Event}}. Paid {{variable.Object_Event}}s are not supported. 2. Make sure there is only one Event Item on the {{variable.Object_Event}}. If there are multiple {{variable.Object_Event}}s, an error will flag. 3. Click the {{variable.Field_ETEvent_UIExperience}} dropdown, and select \"Simple\". 4. Click the {{variable.Field_ETEvent_EventPageURL}}, and check out the Simple UI! ![Simple UI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Simple%20UI.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "simple",
+    "variable",
+    "user",
+    "interface",
+    "object_event",
+    "example",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "supported",
+    "each",
+    "snippet"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. This {{variable",
+    "2. Make sure there is only one Event Item on the {{variable",
+    "3. Click the {{variable",
+    "4. Click the {{variable"
+  ],
+  "troubleshooting": [
+    "error will flag."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "connect-authorizenet-test-mode",
+  "title": "connect-authorizenet-test-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Connect to Authorize.net in Test Mode ## slug: connect-authorizenet-test-mode ## seoTitle: Connect to Authorize.net in Test Mode ## description: ## contentType: Markdown ## Metadata_End {{snippet.PGSetup_AuthNet_ConnectTestMode}}",
+  "keywords": [
+    "connect",
+    "test",
+    "mode",
+    "authorize",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "pgsetup_authnet_connecttestmode"
+  ],
+  "category": "admin",
+  "procedures": [],
+  "troubleshooting": []
+}

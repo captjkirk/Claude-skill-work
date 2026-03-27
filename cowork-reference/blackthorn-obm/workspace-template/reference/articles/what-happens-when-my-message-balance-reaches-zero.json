@@ -1,0 +1,37 @@
+{
+  "id": "what-happens-when-my-message-balance-reaches-zero",
+  "title": "what-happens-when-my-message-balance-reaches-zero.md",
+  "content": "## Metadata_Start ## code: en ## title: What Happens When my Message Balance Reaches Zero? ## slug: what-happens-when-my-message-balance-reaches-zero ## seoTitle: What Happens When my Message Balance Reaches Zero? ## description: ## contentType: Markdown ## Metadata_End When your message balance reaches zero you will not be able to send any outbound text messages until your balance is increased. Your inbound messages will still be sent to Salesforce so you won't miss any text messages from customers, but you will not be able to respond. Your account will also be temporarily placed in \"Suspended\" status until your message balance increases. To add additional messages to your balance, you can do the following: 1. In Salesforce, go to the Messaging Administration page. 2. Navigate to the SMS section (sms icon on the left-hand side). 3. Click the **Add Messages** button. 4. Enter the Quantity of messages you want to purchase. You will see a confirmation of the price for these additional messages. 5. Click **Checkout**. 6. Confirm your payment method and click **Buy Messages**. If the payment is processed successfully, your messages will be immediately added to your balance and your account will be placed back into \"Active\" status.",
+  "keywords": [
+    "your",
+    "messages",
+    "balance",
+    "message",
+    "when",
+    "reaches",
+    "zero",
+    "what",
+    "happens",
+    "click",
+    "able",
+    "text",
+    "until",
+    "salesforce",
+    "account",
+    "placed",
+    "status",
+    "additional",
+    "payment",
+    "metadata_start"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. In Salesforce, go to the Messaging Administration page",
+    "2. Navigate to the SMS section (sms icon on the left-hand side)",
+    "3. Click the **Add Messages** button",
+    "4. Enter the Quantity of messages you want to purchase",
+    "5. Click **Checkout**",
+    "6. Confirm your payment method and click **Buy Messages**"
+  ],
+  "troubleshooting": []
+}

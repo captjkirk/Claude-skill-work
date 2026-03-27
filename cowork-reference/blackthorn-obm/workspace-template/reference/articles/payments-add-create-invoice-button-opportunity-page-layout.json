@@ -1,0 +1,41 @@
+{
+  "id": "payments-add-create-invoice-button-opportunity-page-layout",
+  "title": "payments-add-create-invoice-button-opportunity-page-layout.md",
+  "content": "## Metadata_Start ## code: en ## title: Add the “Create Invoice” Button to the Opportunity Page Layout (Optional) ## slug: payments-add-create-invoice-button-opportunity-page-layout ## seoTitle: Add the “Create Invoice” Button to the Opportunity Page Layout (Optional) ## description: ## contentType: Markdown ## Metadata_End Use the {{variable.Button_CreateInvoice}} button to easily create one-off {{variable.Object_Invoice}}s directly from an {{variable.Object_Opportunity}}. By simply adding information to the necessary fields, you can create a beautiful {{variable.Button_CreateInvoice}} with the click of a button. ## Add the Create Invoice Button 1. Click the **Gear** icon. 2. Click **Setup**. 3. Click the Object Manager tab. 4. In the Quick Find box, enter \"Opportunity\" and click the link for Opportunity. 5. Click Page Layouts. 6. Click Opportunity Layout. ![Opportunity Link](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity%20Link.png){height=\"\" width=\"\"} 8. Click **Buttons**. ![Opportunity Page Layout](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity%20Page%20Layout.png){height=\"\" width=\"\"} 10. Click and drag the {{variable.Button_CreateInvoice}} button to the Opportunity Detail section. ![Opportunity_Create Invoice Button](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity_Create%20Invoice%20Button.png){height=\"\" width=\"\"} 13. Click {{variable.Button_Save}}. 14. Go back to your {{variable.Object_Opportunity}} record and refresh the page. In the drop-down in the right-hand corner, click {{variable.Button_CreateInvoice}}. ![Opportunity_new record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity_new%20record.png){height=\"\" width=\"\"} 16. Click **Create**. ![Opportunity_Create Invoice](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity_Create%20Invoice.png){height=\"\" width=\"\"} :::(Warning) (You need to have the following items to successfully create and review an Invoice:) * Have at least one Product related to the Opportunity. * Add the Invoices Related List to your page layout. ::: ## Auto-convert Opportunities to Invoices You can convert an existing {{variable.Object_Opportunity}} object to an {{variable.Object_Invoice}}. The {{variable.Object_OpportunityProduct}}s will be converted to {{variable.Object_LineItem}}s in the {{variable.Object_Invoice}}. The newly created {{variable.Object_Invoice}} will be linked to the originating {{variable.Object_Opportunity}} using the {{variable.Field_Invoice_Opportunity}} lookup field. The {{variable.Object_OpportunityProduct}} {{variable.Field_OpportunityProd_LineItem}} lookup field will facilitate mapping the {{variable.Object_Invoice}} {{variable.Object_LineItem}} directly with the {{variable.Object_OpportunityProduct}} {{variable.Object_LineItem}}. When an {{variable.Object_Invoice}} is created from Opportunities using the {{variable.Button_CreateInvoice}} button, you can self-map additional {{variable.Object_Opportunity}} {{variable.Object_LineItem}} fields to the {{variable.Object_Invoice}} using a process builder.",
+  "keywords": [
+    "variable",
+    "opportunity",
+    "click",
+    "button",
+    "create",
+    "invoice",
+    "page",
+    "object_invoice",
+    "layout",
+    "button_createinvoice",
+    "object_opportunity",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the **Gear** icon",
+    "2. Click **Setup**",
+    "3. Click the Object Manager tab",
+    "4. In the Quick Find box, enter \"Opportunity\" and click the link for Opportunity",
+    "5. Click Page Layouts",
+    "6. Click Opportunity Layout",
+    "8. Click **Buttons**",
+    "10. Click and drag the {{variable",
+    "13. Click {{variable",
+    "14. Go back to your {{variable"
+  ],
+  "troubleshooting": []
+}

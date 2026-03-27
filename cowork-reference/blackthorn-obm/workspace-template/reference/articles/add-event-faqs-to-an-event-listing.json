@@ -1,0 +1,30 @@
+{
+  "id": "add-event-faqs-to-an-event-listing",
+  "title": "add-event-faqs-to-an-event-listing.html",
+  "content": "An {{variable.Object_EventFAQ}} record allows you to add questions and answers to any {{variable.Object_Event}} . It's a great way to provide information about parking, ID requirements, who to contact, and more! Event FAQ Visibility To show the FAQs on the Event, navigate to the Event Setting record and update the {{variable.Fields_ETETSettings_FAQ}} field to \"Always\". Create an FAQ Navigate to your {{variable.Object_Event}} 's {{variable.SFTerm_RelatedList}} . Click {{variable.button_new}} . Enter a {{variable.Field_EventFAQ_Category}} . To add multiple questions to the same category, enter the same {{variable.Field_EventFAQ_Category}} value for each question. Event FAQ questions with a blank {{variable.Field_EventFAQ_Category}} field (uncategorized questions) will be grouped in their own section without a section title. Event FAQ questions with a value in the {{variable.Field_EventFAQ_Category}} field will have the {{variable.Field_EventFAQ_Category}} as the section title. Enter a {{variable.Field_EventFAQ_SortOrder}} . Select an existing {{variable.Field_EventFAQ_FAQQuestion}} or enter a {{variable.Field_EventFAQ_Question}} (simple text) and an {{variable.Field_EventFAQ_Answer}} (simple text). Click {{variable.Button_Save}} . Your Event FAQ questions will look like this on the Event’s webpage. Use the Expand All / Collapse All button to open or close all the FAQs. Each question/answer can also be opened or closed by itself.",
+  "keywords": [
+    "variable",
+    "event",
+    "questions",
+    "field_eventfaq_category",
+    "enter",
+    "field",
+    "section",
+    "record",
+    "object_event",
+    "faqs",
+    "navigate",
+    "your",
+    "click",
+    "same",
+    "value",
+    "each",
+    "question",
+    "title",
+    "simple",
+    "text"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "add-ons",
+  "title": "add-ons.md",
+  "content": "## Metadata_Start ## code: en ## title: Add-Ons ## slug: add-ons ## seoTitle: Add-Ons ## description: ## contentType: Markdown ## Metadata_End ## Setup iFrame and Allowlisting If you need to set up an iFrame and allowlist your {{variable.Object_Event}}s and/or {{variable.Object_EventGroup}}s onto your website, please review [this documentation](https://docs.blackthorn.io/docs/blackthorn-events-iframes#overview). ## SendGrid Integration If you purchased the SendGrid subscription add-on, please [review the documentation](https://docs.blackthorn.io/docs/enhanced-emails) about Admin Configuration of your SendGrid integration.",
+  "keywords": [
+    "docs",
+    "your",
+    "blackthorn",
+    "sendgrid",
+    "iframe",
+    "variable",
+    "please",
+    "review",
+    "documentation",
+    "https",
+    "integration",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "custom-settings",
+  "title": "custom-settings.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Settings ## slug: custom-settings ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction Custom Settings are used in Blackthorn apps for multiple use cases, such as turning Apex-based features on and off, custom handling around scheduled processes, tracking the status of your onboarding in the setup wizard, and many more. ## Blackthorn Pay - Reattempt Settings Out-of-the-box, Blackthorn {{variable.Product_Payments}} automatically creates and enables a [Reattempt Schedule](/v1/docs/transaction-reattempt-logic) for your failed {{variable.Object_Transaction}}s. 1. Navigate to Custom Settings. ***Lightning/Classic:** Setup > In Quick Find, Search and Click: \"Custom Settings.\"* 2. Click {{variable.Button_SF_Manage}} on Blackthorn Pay - Reattempt Settings. ![H_02_03_reattempt settings](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_03_reattempt%20settings.png){height=\"\" width=\"\"} 3. Check `Allow on Non-Auto Process` if you want to reattempt failed Transactions that don't have `auto-process` checked. *If you don't want to reattempt Transactions unless they have the auto-process field checked, then skip this step.* 4. Enter a number (of days) for each `Attempt` field. *If you enter \"1\" in each field, each attempt will occur that number of days after the previous attempt. By default, we have entered a \"1\" from the first to fourth reattempt (reattempting each day for four days).* :::(Warning) (Disable Reattempt Logic) To disable the Reattempt Logic, uncheck the Enabled field. ::: 5. Click {{variable.Button_Save}}. ## Blackthorn Pay - Trigger Settings There are many Apex-based validation rules, enabled by default. The following custom settings are just a few that can disable them. * {{variable.CS_RetainWebhookRecordDays}}: This field controls how long to keep processed records, which limits the number of records stored in your org. The default value is 30. If the value to blank, processed records won’t be deleted. * {{variable.CS_WebhookBatchDelayMinutes}}: If this field is set to a specific amount of time by the system user, new incoming {{variable.Object_WebhookEvent}}s will process only after the previously set amount of time has passed. This prevents duplication of records when {{variable.Object_WebhookEvent}}s process prior to receiving API responses back from the payment gateway. * {{variable.CS_DisableTransRollupToAcct}}: This field prevents failures by stopping the triggers that sum the total {{variable.Object_Transaction}}s related to an {{variable.Object_Account}} and populate the {{variable.Field_Account_HistoricalActVal}} field. The failure occurred during check and money order scans for Check 21 and Mobile Payments users when more than 50,000 {{variable.Object_Transaction}}s were related to a single {{variable.Object_Account}}. ### To Enable 1. Navigate to Custom Settings. ***Lightning/Classic:** Setup | In Quick Find, Search and Click: \"Custom Settings.\"* 2. Click {{variable.Button_SF_Manage}} next to Blackthorn Pay - Trigger Settings. ### Example: Disable Transaction Account/Contact Lookup Setting When you don't wish to define a Contact/Account on a Transaction, you can disable the related lookups from the Payment Method being populated on the Transaction using a Custom Setting. To disable this, navigate to setup >Custom Settings >Blackthorn Pay - Trigger Settings > “Disable Transaction Related Lookups“. set to TRUE. This will turn off transaction account/contact based lookup settings. ![H_02_03_trigger settings](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_03_trigger%20settings.png){height=\"\" width=\"\"} :::(Info) (Note About Disable Trans Rollup To Parent) This Custom Setting is set to TRUE in new orgs by default. Users will still see `TransactionRollupToParentService` in the Apex Jobs list, but the logic will not fire. To ensure that Transaction rollups are being executed in your org be sure to uncheck this setting. ::: ## Blackthorn Pay - Transaction Parents This Custom Setting correlates to the custom lookup field (Transaction parent) created on the Transaction object. ### Add a New Transaction Parent Adding additional Transaction parents happen in the [Setup Wizard](/v1/docs/quick-start) under the \"Relationships\" step. *We do not advise manipulating these records manually.* The most common Transaction parent is Opportunity, but it can be any object or multiple objects. When the object is selected, it creates a Custom Setting record here. *You can go back to the Setup Wizard at any time to add additional objects (Transaction parents).* ## Blackthorn Pay - Transaction Validations This Custom Setting includes items that allow user to fine tune Transaction validation rules. * TR Validate Status Transition - Blocks invalid manual updates of Transaction Status or Payment Status. * TR Prevent Delete of Record with IDs - Blocks the deletion of Transactions if a Transaction ID is present. * TR Currency Validation - Blocks Transactions from being saved if the Currency on Transaction and Currency on the associated Authorize.net Payment Gateway do not match. ## Blackthorn Pay – Features ### Authorize.net: Track and Reconcile Payments Customers can now track and reconcile payments processed through Authorize.net via the new “Blackthorn Pay – Features” custom setting. The custom setting will be created during package upgrades and new installations and can only be accessed via the LMO. The `Solution Id` field will be populated with Blackthorn’s partner ID when Payments is installed/upgraded in production. A test value will be used in an Authorize.net sandbox. If a sandbox is created from production, the production value will be updated to the test value. Once the `Solution Id` is populated, it will be included any time Blackthorn sends data to Authorize.net. If the `Solution Id` is not available, the data will be sent without the Transaction source information. ### High-Volume Batch Processing The introduction of high-volume batch processing resolves the issue of scalability with our batch processes. Previously, batch processes were limited to one record at a time to ensure that Payments was compliant with Salesforce's limits. The new protected custom setting is located under the Blackthorn Pay – Features custom setting. * Field Label: {{variable.CS_AutoChangeBatchSize}} * API Name: Auto_Charge_Batch_Size__c * Data Type: Number(3,0) * Description: Controls the batch size of the scheduled job. The default setting is 1. Currently, the maximum supported value is 75. ## Next Steps * Learn more about our [Auto-Process and Reattempt Logic](/v1/docs/transaction-reattempt-logic). * Create a [Payment Schedule](/v1/docs/payment-schedules). ## Troubleshooting If you have received an error with your Custom Settings or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have Custom Setting questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "custom",
+    "transaction",
+    "settings",
+    "variable",
+    "blackthorn",
+    "setting",
+    "reattempt",
+    "field",
+    "docs",
+    "disable",
+    "payments",
+    "setup",
+    "logic",
+    "process",
+    "value",
+    "payment",
+    "your",
+    "click",
+    "default",
+    "from"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to Custom Settings",
+    "2. Click {{variable",
+    "3. Check `Allow on Non-Auto Process` if you want to reattempt failed Transactions that don't have `auto-process` checked",
+    "4. Enter a number (of days) for each `Attempt` field",
+    "5. Click {{variable",
+    "30. If the value to blank, processed records won’t be deleted",
+    "1. Navigate to Custom Settings",
+    "2. Click {{variable",
+    "1. Currently, the maximum supported value is 75",
+    "* Setup > In Quick Find, Search and Click"
+  ],
+  "troubleshooting": [
+    "error with your Custom Settings or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with your Custom Settings or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

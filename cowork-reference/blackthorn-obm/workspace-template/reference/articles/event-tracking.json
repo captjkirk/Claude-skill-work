@@ -1,0 +1,41 @@
+{
+  "id": "event-tracking",
+  "title": "event-tracking.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Tracking ## slug: event-tracking ## seoTitle: Event Tracking ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Google Analytics) Click [here](https://docs.blackthorn.io/docs/google-tag-manager) to learn more about using Google Analytics and Google Tag Manager (GTM) with Blackthorn Events. ::: With our Event Tracking feature, users are now able to track their {{variable.Object_Event}} traffic using their Google Tag ID. Just plug in your tracking ID using the instructions below and you're off to the races. 1. Add the {{variable.Field_Event_GoogleAnalyticsID}} field to the {{variable.Object_Event}} page layout. 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, enter and click “Event” (conference360__Event__c). 4. Click the Page Layouts tab. 5. Click Event Layout. 6. In the Quick Find box, enter “Google Analytics Id.” 7. Drag and drop the {{variable.Field_Event_GoogleAnalyticsID}} field onto the page layout. 8. Click {{variable.Button_Save}}. ![Add Google Analytics ID Field to Event Page Layout](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Tracking_Google%20ID.png){height=\"\" width=\"\"} 3. Sign in to your Google Analytics account. 4. Follow the [steps here to locate](https://support.google.com/analytics/answer/9539598){target=`_blank`} your Google Tag ID. 5. Open the record for the Event that you want to track. 6. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_Event_GoogleAnalyticsID}} field. 7. Add the Google Tag ID. 8. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "google",
+    "event",
+    "click",
+    "variable",
+    "analytics",
+    "tracking",
+    "field",
+    "page",
+    "layout",
+    "https",
+    "manager",
+    "using",
+    "your",
+    "field_event_googleanalyticsid",
+    "here",
+    "docs",
+    "blackthorn",
+    "track",
+    "their",
+    "object_event"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Add the {{variable",
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, enter and click “Event” (conference360__Event__c)",
+    "4. Click the Page Layouts tab",
+    "5. Click Event Layout",
+    "6. In the Quick Find box, enter “Google Analytics Id",
+    "7. Drag and drop the {{variable",
+    "8. Click {{variable",
+    "3. Sign in to your Google Analytics account"
+  ],
+  "troubleshooting": []
+}

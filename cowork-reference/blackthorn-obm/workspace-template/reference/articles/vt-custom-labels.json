@@ -1,0 +1,41 @@
+{
+  "id": "vt-custom-labels",
+  "title": "vt-custom-labels.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Labels ## slug: vt-custom-labels ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (The following picklist values can now be translated using custom labels.) * Action * “New Single Charge” * “New Payment Method” * Process Type * “Capture Now” * “Auto-Process” * “Authorize Now” ::: Custom Labels are custom text values, up to 1,000 characters, that can be accessed from Apex Classes or Visualforce Pages. Our Payments package includes the following Custom Labels for the {{variable.Component_VirtualTerminal}}. * Action * Related To * Parent Object * Payment Method * Amount * Process Type * Currency ![J_02_02_custom_labels](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/J_02_02_custom_labels.png){height=\"\" width=\"\"} Before modifying a Custom Label, please complete the following configuration step in the Translation Workbench. This step is required to be able to modify customizations managed by the Payments package. **Virtual Terminal - Custom Labels with Translation Workbench Setup** ## Update Settings in Translation Workbench 1. Navigate to Setup. 2. In the Quick Find box, type \"workbench\". 3. Click **Translation Workbench**. 4. Click **Translation Language Settings**. 5. Click **Enable**. 6. Click **Add**. 7. Select your {{variable.Field_TranslWorkbench_Language}}. 8. Check {{variable.Field_TranslWorkbenchActive}}. 9. Click {{variable.Button_Save}}. ## Update Virtual Terminal Labels in Custom Labels 1. Navigate to Setup. 2. In the Quick Find box, type \"Custom Labels\". 3. Click **Custom Labels**. 4. Find the Custom Labels with \"VT\" in the name. 5. Click the hyperlinked name of the Virtual Terminal Label you would like to modify. 6. Click **New Local Translations/ Overrides**. 7. Select your {{variable.Field_Translation_Language}}. 8. Add the text for the label you would like to see displayed in the {{variable.Field_CustomLabel_TranslatText}} field. *Example: Master Label = VT Action > {{variable.Field_CustomLabel_TranslatText}} = \"Custom Action\". \"Custom Action\" will be what a user sees on the Virtual Terminal.*",
+  "keywords": [
+    "custom",
+    "labels",
+    "click",
+    "variable",
+    "action",
+    "translation",
+    "workbench",
+    "type",
+    "label",
+    "virtual",
+    "terminal",
+    "following",
+    "process",
+    "setup",
+    "find",
+    "values",
+    "payment",
+    "method",
+    "text",
+    "payments"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to Setup",
+    "2. In the Quick Find box, type \"workbench\"",
+    "3. Click **Translation Workbench**",
+    "4. Click **Translation Language Settings**",
+    "5. Click **Enable**",
+    "6. Click **Add**",
+    "7. Select your {{variable",
+    "8. Check {{variable",
+    "9. Click {{variable",
+    "1. Navigate to Setup"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "evbuilder-edit-existing-event-content",
+  "title": "evbuilder-edit-existing-event-content.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Content ## slug: evbuilder-edit-existing-event-content ## seoTitle: Event Content ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Content_CloneEdit}}",
+  "keywords": [
+    "event",
+    "content",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "edit",
+    "existing",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "evbuilder_content_cloneedit"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "payments-assign-site-guest-user-permission-set",
+  "title": "payments-assign-site-guest-user-permission-set.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign Site Guest User Permission Set ## slug: payments-assign-site-guest-user-permission-set ## seoTitle: Assign Site Guest User Permission Set ## description: ## contentType: Markdown ## Metadata_End {{snippet.StripePG_WebhooksAssignGuestPS}}",
+  "keywords": [
+    "assign",
+    "site",
+    "guest",
+    "user",
+    "permission",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "stripepg_webhooksassignguestps"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

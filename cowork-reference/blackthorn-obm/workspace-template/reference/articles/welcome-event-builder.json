@@ -1,0 +1,30 @@
+{
+  "id": "welcome-event-builder",
+  "title": "welcome-event-builder.html",
+  "content": "The new improves upon the by providing Event Organizers and Planners with a “What you see is what you get” {{glossary.user interface (UI)}} and an efficient design for creating and updating s. Along with the release of the is the release of the new Dynamic UI. The new Dynamic UI displays the information entered for an . This means less effort is needed to determine if you will create a simple or complex . Here are a few more features included in the new Dynamic UI. A contemporary look and feel with a large banner and streamlined navigation creates a more delightful {{glossary.user experience}} . s can scroll to see a comprehensive view of an ’s details on one page or use the navigation bar to jump to a section of interest. The customizable footer with hyperlinks creates better connectivity and consistency across your organization’s web presence. Visit the Dynamic UI feature page for more information. Should I use the Event Builder or Wizard? If you’re unsure which – the or the – is the better option for your organization, please review the tables below. Features Wizard Builder Edit existing Event yes yes Clone an Event yes yes Recurring Events yes no Responsive in-line builder no yes Virtual Events* no yes Hybrid Events* no yes Organizer (Contact lookup) no yes New Dynamic UI not an option in the Wizard but can be updated on the SF record yes Other Event UI (Simple, Tabbed, Full-Width, and BYO-CSS) yes not an option in the Builder but can be updated on the SF record *There are a few existing fields surfaced in the Event Builder that facilitate hybrid and virtual s. Object Wizard Builder Events yes yes Speakers yes yes Sessions yes yes Event Items yes yes Attendees yes yes Sponsors no yes FAQs no yes Event Content no yes",
+  "keywords": [
+    "event",
+    "builder",
+    "dynamic",
+    "wizard",
+    "events",
+    "more",
+    "option",
+    "what",
+    "glossary",
+    "user",
+    "release",
+    "information",
+    "simple",
+    "features",
+    "navigation",
+    "creates",
+    "page",
+    "better",
+    "your",
+    "organization"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "payments-move-historical-data-stripe-overview",
+  "title": "payments-move-historical-data-stripe-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: payments-move-historical-data-stripe-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Are webhooks active?) Before you start this task, webhooks need to be inactive. If webhooks are on, all the data will sync into Salesforce the minute it is loaded into your Stripe Account. ::: The first step is to move any historical data from your existing gateway account over to your new {{variable.Product_Stripe}} account. Once that is complete, you will need to sync customer, payment method, transaction, and payout data from {{variable.Product_Stripe}} to {{variable.Product_Salesforce}}. Click the links below for more information about each step. 1. [Instructions](/v1/docs/payments-historical-sync-stripe-instructions) 2. [Customers](/v1/docs/payments-historical-sync-stripe-customers) 3. [Payment Methods](/v1/docs/payments-historical-sync-stripe-payment-methods) 4. [Charges / Refunds](/v1/docs/payments-historical-sync-stripe-charges-refunds) 5. [Payouts](/v1/docs/payments-historical-sync-stripe-payouts) ## Move Data from a Non-Stripe Account to Your New Stripe Account Is your data located somewhere other than at {{variable.Product_Stripe}}? If your data is with a different gateway and you want to move it to {{variable.Product_Stripe}}, {{variable.Product_Stripe}} provides a way to move your Customer and Payment Method records from your old/current payment gateway. To start the process, reach out to [Stripe Support](https://stripe.com/docs/payments/account/data-migrations/pan-import){target=\"_blank\"}.",
+  "keywords": [
+    "stripe",
+    "data",
+    "your",
+    "payments",
+    "historical",
+    "sync",
+    "account",
+    "variable",
+    "docs",
+    "move",
+    "product_stripe",
+    "payment",
+    "from",
+    "overview",
+    "webhooks",
+    "gateway",
+    "start",
+    "need",
+    "into",
+    "step"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. [Instructions](/v1/docs/payments-historical-sync-stripe-instructions) 2",
+    "3. [Payment Methods](/v1/docs/payments-historical-sync-stripe-payment-methods) 4",
+    "5. [Payouts](/v1/docs/payments-historical-sync-stripe-payouts) ## Move Data from a Non-Stripe Account to Your New Stripe Account Is your data located somewhere other than at {{variable"
+  ],
+  "troubleshooting": []
+}

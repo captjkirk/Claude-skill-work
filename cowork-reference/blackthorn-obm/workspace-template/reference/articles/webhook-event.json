@@ -1,0 +1,44 @@
+{
+  "id": "webhook-event",
+  "title": "webhook-event.md",
+  "content": "## Metadata_Start ## code: en ## title: Webhook Events ## slug: webhook-event ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction Anytime records are updated (CRUD - created/updated/deleted) in Stripe, a {{variable.Object_WebhookEvent}} record in Salesforce gets created. Each {{variable.Object_WebhookEvent}} record contains the full Stripe JSON payload of what occurred, which is processed in Salesforce by an [scheduled batch job](/v1/docs/scheduled-batch-jobs) that processes new records every 5 minutes. This batch job will parse the {{variable.Object_WebhookEvent}} details and use the data to insert or update the related record in Salesforce. *For example, if a Payment Method was updated in Stripe, a {{variable.Object_WebhookEvent}} is created in Salesforce and the batch job will update the Payment Method record in Salesforce.* There are several fields in the [Blackthorn | Payments Trigger Settings'](/v1/docs/custom-settings) custom settings that allow you to manage {{variable.Object_WebhookEvent}} records. * {{variable.CS_RetainWebhookRecordDays}}: This field controls how long to keep processed records, which limits the number of records stored in your org. The default value is 30. If the value to blank, processed records won’t be deleted. * {{variable.CS_WebhookBatchDelayMinutes}}: If this field is set to a specific amount of time by the system user, new incoming {{variable.Object_WebhookEvent}}s will process only after the previously set amount of time has passed. This prevents duplication of records when {{variable.Object_WebhookEvent}}s process prior to receiving API responses back from the payment gateway. We suggest using {{variable.Object_WebhookEvent}}s for troubleshooting and/or tracking what records are created or have been updated in Salesforce. This object only captures data from Stripe, it does not send information back to Stripe. Updating or creating {{variable.Object_WebhookEvent}}s in Salesforce will not create and/or update records in Stripe. Note: You must [configure webhooks](/v1/docs/webhooks){target=`_blank`} before {{variable.Object_WebhookEvent}}s can be created. ## Stripe Webhook *How to navigate to Webhook Events in Stripe.* * Navigate to your Stripe dashboard. * On the left-hand side, click on \"Events and Logs\". *This is where you will see all Webhook Events.* * Click on any record. * The event record is split into Event Details, Event Data, and Webhooks. ![H_01_13_Stripe Webhook](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_13_Stripe%20Webhook.png){height=\"\" width=\"\"} All of this information is pushed to Salesforce through Stripe's Webhook. Stripe pushes Webhook Events to Salesforce in random order, such as the Payment data may get pushed before the Customer data, so we place all of these records in the Webhook Event object to process as a batch to mitigate Stripe's unpredictable lack of chronological order. Technically, you first need a Stripe Customer, then a Payment Method, then a Transaction, thus the purpose of the Webhook Event (to mitigate this randomness and process in the order Salesforce needs). ## Salesforce Webhook Event *How to navigate to the Webhook Event object in Salesforce.* ![Webhook Event record updating a Payment](https://youtu.be/bNm5iHHWmCA){height=\"480\" width=\"640\"} * Navigate to the Webhook Events object. ***Lightning:** Click on the App Launcher | Under \"All Items\" | Click on Webhook Events.* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click on Webhook Events.* * Click on any record. ![H_01_13_SF Webhook Event](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_13_SF%20Webhook%20Event.png){height=\"\" width=\"\"} ## Manually Process a Webhook Event record *If you want to manually process the record...* Click the \"Process\" button at the top of the page (classic user interface) or click the down arrow in the upper right-hand corner and click \"Process\" (lightning user interface). *For example, if you are testing and need to process the data faster than every 5 minutes, you would want to manually \"Process\" the Webhook Event record.* ## Troubleshooting/FAQ If you have received an error with any Webhook Event record or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page.",
+  "keywords": [
+    "webhook",
+    "event",
+    "stripe",
+    "variable",
+    "record",
+    "salesforce",
+    "records",
+    "object_webhookevent",
+    "process",
+    "click",
+    "events",
+    "docs",
+    "data",
+    "payment",
+    "created",
+    "batch",
+    "https",
+    "updated",
+    "troubleshooting",
+    "object"
+  ],
+  "category": "events",
+  "procedures": [
+    "30. If the value to blank, processed records won’t be deleted",
+    "* * Navigate",
+    "* On the left-hand side, click",
+    "* * Click",
+    "* Click on the App Launcher | Under \"All Items\" | Click",
+    "* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click",
+    "* * Click",
+    "* Click the \"Process\" button at the top of the page (classic user interface) or click the down arrow in the upper right-hand corner and click"
+  ],
+  "troubleshooting": [
+    "error with any Webhook Event record or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting and/or tracking what records are created or have been updated in Salesforce.",
+    "Troubleshooting/FAQ If you have received an error with any Webhook Event record or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

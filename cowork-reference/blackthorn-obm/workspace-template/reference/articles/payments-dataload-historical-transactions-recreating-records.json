@@ -1,0 +1,37 @@
+{
+  "id": "payments-dataload-historical-transactions-recreating-records",
+  "title": "payments-dataload-historical-transactions-recreating-records.md",
+  "content": "## Metadata_Start ## code: en ## title: Recreating Records ## slug: payments-dataload-historical-transactions-recreating-records ## seoTitle: Recreating Records ## description: ## contentType: Markdown ## Metadata_End Records that exist in Stripe but not in {{variable.Product_Salesforce}} can be recreated in {{variable.Product_Salesforce}} from the Stripe IDs. Here's an example of recreating a charge so the refund can be conducted within {{variable.Product_Salesforce}}. 1. Log into the Stripe dashboard to see the relevant IDs. * Gather the following IDs: * Card ID * Customer ID * Transaction ID 2. Create a new Transaction in Salesforce. 1. Go to Setup > Custom Settings > Blackthorn Pay - Trigger Settings. 2. Click **Manage** and disable relevant triggers to manipulate records. 3. Fill in the following fields: * {{variable.Field_Transaction_RecordType}} = \"Charge\" * {{variable.Field_Transaction_Amount}} = Stripe Dashboard Charge amount * {{variable.Field_Transaction_CurrencyISO}} * {{variable.Field_Transaction_TransaStatus}} = \"Completed\" * {{variable.Field_Transaction_PaymentStatu}} = \"Captured\" * Set the {{variable.Field_Transaction_PaymenMethod}} lookup to the correct {{variable.Object_PaymentMethod}} that matches the Card ID from Step 1. 3. Click **Refund** in {{variable.Product_Salesforce}}.",
+  "keywords": [
+    "variable",
+    "records",
+    "recreating",
+    "stripe",
+    "product_salesforce",
+    "charge",
+    "from",
+    "refund",
+    "dashboard",
+    "relevant",
+    "following",
+    "card",
+    "transaction",
+    "settings",
+    "click",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Log into the Stripe dashboard to see the relevant IDs",
+    "2. Create a new Transaction in Salesforce",
+    "1. Go to Setup > Custom Settings > Blackthorn Pay - Trigger Settings",
+    "2. Click **Manage** and disable relevant triggers to manipulate records",
+    "3. Fill in the following fields: * {{variable",
+    "1. 3"
+  ],
+  "troubleshooting": []
+}

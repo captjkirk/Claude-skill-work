@@ -1,0 +1,43 @@
+{
+  "id": "vt-custom-component-scenario",
+  "title": "vt-custom-component-scenario.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Component Scenario ## slug: vt-custom-component-scenario ## seoTitle: Custom Component Scenario ## description: ## contentType: Markdown ## Metadata_End 1. Create a Lightning Component using the Developer Console. ![Custom Component Scenario_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Custom%20Component%20Scenario_1.png){height=\"\" width=\"\"} 3. Add a {{variable.Field_CustComponentScen_Name}}, select \"Lightning Page\" and \"Lightning Record Page\" in the Component Configuration section, and click **Submit**. ![Custom Component Scenario_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Custom%20Component%20Scenario_2.png){height=\"\" width=\"\"} 5. In the .cmp, add the following code, but replace the recordId and parentId with IDs from your org. **{{variable.Component_BTPayVirtualTerminal}} Custom Component Sample** ``` ` ` ``` 4. Add a controller.js file if you would like to add an event handler. **Controller.js** ``` `({ handleEvent : function(component, event, helper) { var success = event.getParam(\"success\"); var errorMessage = event.getParam(\"errorMessage\"); var transactionId = event.getParam(\"transactionId\"); console.log (' success ' , success); console.log (' errorMessage ' , errorMessage); console.log (' transactionId ' , transactionId); } })` ``` :::(Info) (NOTE) Adding a javascript file like the one above can allow customers to pass in variables that can be used in flows to meet the needs of a business requirement. ::: 5. Save your file. 6. Navigate to the record page where you want this custom component to live. (ex: Invoice) 7. Use the page editor to drag your custom component onto the page. ![Custom Component Scenario_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Custom%20Component%20Scenario_3.png){height=\"\" width=\"\"} 8. Click {{variable.Button_Save}}. Now you'll have more flexibility when using your own custom component.",
+  "keywords": [
+    "custom",
+    "component",
+    "page",
+    "event",
+    "console",
+    "your",
+    "success",
+    "errormessage",
+    "transactionid",
+    "scenario",
+    "lightning",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Create a Lightning Component using the Developer Console",
+    "3. Add a {{variable",
+    "5. In the ",
+    "4. Add a controller",
+    "5. Save your file",
+    "6. Navigate to the record page where you want this custom component to live",
+    "7. Use the page editor to drag your custom component onto the page",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": [
+    "errorMessage = event.",
+    "errorMessage\"); var transactionId = event.",
+    "errorMessage ' , errorMessage); console."
+  ]
+}

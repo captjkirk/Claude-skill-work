@@ -1,0 +1,41 @@
+{
+  "id": "opportunity-on-event-checkout",
+  "title": "opportunity-on-event-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Opportunities on Checkout ## slug: opportunity-on-event-checkout ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Want to track completed and \"pay later\" {{variable.Object_Event}} registrations through Salesforce Opportunities? We just made it super easy to do so! Define four fields on the {{variable.Object_EventSettings}} record to automatically create Open and Closed Won Opportunities when {{variable.Object_Attendee}}s checkout. The new Opportunities relate to the following records. * The {{variable.Object_Opportunity}} relates to the {{variable.Object_Invoice}}, and the {{variable.Object_Invoice}} relates to the {{variable.Object_Attendee}}. * The {{variable.Object_Transaction}} relates directly to the {{variable.Object_Invoice}}. ## Initial Setup 1. Add the {{variable.Object_Opportunity}} object as a {{variable.SFTerm_RelatedList}} to the {{variable.Object_Invoice}} page layout. 2. Add the {{variable.Object_Transaction}} object as a {{variable.SFTerm_RelatedList}} to the {{variable.Object_Opportunity}} page layout. 3. Add the {{variable.Field_Opportunity_Event}} and {{variable.Field_Opportunity_Invoice}} fields to the {{variable.Object_Opportunity}} page layout. ## Create/Update Event Settings When a customer tries to register for a free {{variable.Object_Event}} and wants to generate opportunities, complete the following steps. 1. Go to the {{variable.Object_Event}} record. 2. Click {{variable.Field_ETEvent_EventSettings}}. 3. Scroll down to the Opportunities & Campaigns section. 4. Set {{variable.Field_ETETSettings_CrtOppfrChe}} = \"True\". 5. Enter an {{variable.Field_ETETSettings_OppOpenStag}}. NOTE: Make sure the text matches the {{variable.Object_Opportunity}}'s {{variable.Field_Opportunity_Stage}} picklist values exactly. 6. Enter an {{variable.Field_ETETSettings_OppSuccStaN}}. 7. Enter an {{variable.Field_ETETSettings_OppRecType}}. This field defines the label for the record type when the {{variable.Object_Opportunity}} is created. 8. Set {{variable.Field_ETETSettings_Crt0DollOpp}} = \"Yes\". 9. Click {{variable.Button_Save}}. ![Opportunity on Event Checkout.png](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Opportunity%20on%20Event%20Checkout.png){height=\"\" width=\"\"} ## Opportunity Process The following fields on the {{variable.Object_Opportunity}} record will be populated after the {{variable.Object_Event}} checkout process is complete. * {{variable.Object_Opportunity}} {{variable.Field_Opportunity_Amount}} = {{variable.Object_Invoice}} {{variable.Field_Invoice_TotalAmount}} * {{variable.Object_Opportunity}} {{variable.Field_Opportunity_CloseDate}} = TODAY() * {{variable.Object_Opportunity}} {{variable.Field_Opportunity_AccountName}} = {{variable.Object_Invoice}} {{variable.Field_Invoice_AccountBillTo}} * {{variable.Object_Opportunity}} {{variable.Field_Opportunity_Contact}} (our packaged field) = {{variable.Object_Invoice}} {{variable.Field_Invoice_ContactBillTo}} * {{variable.Object_Opportunity}} {{variable.Field_Opportunity_OpportunName}} = {{variable.Object_Invoice}} {{variable.Field_Invoice_Subject}} OR if null, then {{variable.Object_Invoice}} {{variable.Field_Invoice_EventName}} + {{variable.Object_Contact}} {{variable.Field_Contact_Name}} * The {{variable.Object_Opportunity}} {{variable.Field_Opportunity_Event}} and {{variable.Field_Opportunity_Invoice}} fields will be populated automatically. ### Opportunity Open Stage Name Defines the stage for an open {{variable.Object_Opportunity}} created from the {{variable.Object_Event}} checkout and used with Pay Later {{variable.Object_Event}} checkouts. For example, if {{variable.Field_ETETSettings_CrtOppfrChe}} is enabled and Pay Later was selected during checkout, the {{variable.Object_Opportunity}} will be created with the name in the {{variable.Field_ETETSettings_OppOpenStag}} field. ### Opportunity Successful Stage Name Defines the stage for successful {{variable.Object_Opportunity}} created from the {{variable.Object_Event}} checkout and used with completed {{variable.Object_Event}} checkouts. For example, if {{variable.Field_ETETSettings_CrtOppfrChe}} is enabled and the checkout was paid successfully, the {{variable.Object_Opportunity}} will be created with the name in the {{variable.Field_ETETSettings_OppSuccStaN}} field. ### Create Zero Dollar Opportunities * If {{variable.Field_ETETSettings_Crt0DollOpp}} is set to \"None\" or \"Yes\" and the {{variable.Field_ETETSettings_CrtOppfrChe}} field is checked, {{variable.Object_Opportunity}} records will be created for free and $0.00 {{variable.Object_Event}} orders. * If {{variable.Field_ETETSettings_Crt0DollOpp}} is set to is \"No\" and the {{variable.Field_ETETSettings_CrtOppfrChe}} field is checked, {{variable.Object_Opportunity}} records will NOT be created for free and $0.00 {{variable.Object_Event}} orders.",
+  "keywords": [
+    "variable",
+    "object_opportunity",
+    "object_event",
+    "checkout",
+    "object_invoice",
+    "opportunities",
+    "created",
+    "opportunity",
+    "field",
+    "field_etetsettings_crtoppfrche",
+    "fields",
+    "record",
+    "stage",
+    "name",
+    "event",
+    "later",
+    "create",
+    "open",
+    "when",
+    "following"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Add the {{variable",
+    "2. Add the {{variable",
+    "3. Add the {{variable",
+    "1. Go to the {{variable",
+    "2. Click {{variable",
+    "3. Scroll down to the Opportunities & Campaigns section",
+    "4. Set {{variable",
+    "5. Enter an {{variable",
+    "6. Enter an {{variable",
+    "7. Enter an {{variable"
+  ],
+  "troubleshooting": []
+}

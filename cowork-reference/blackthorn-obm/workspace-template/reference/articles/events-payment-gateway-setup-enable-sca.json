@@ -1,0 +1,30 @@
+{
+  "id": "events-payment-gateway-setup-enable-sca",
+  "title": "events-payment-gateway-setup-enable-sca.md",
+  "content": "## Metadata_Start ## code: en ## title: Enable SCA ## slug: events-payment-gateway-setup-enable-sca ## seoTitle: Enable SCA ## description: ## contentType: Markdown ## Metadata_End {{snippet.SCA_Setup}} If you haven't done so already, set up Stripe Checkout. To support the SCA flow, Stripe Checkout must be used with Events. Click [here](https://docs.blackthorn.io/docs/stripe-checkout-1){target=`_blank`} to learn how to set up Stripe Checkout. (SCA support is only available through Stripe.) For more information about SCA and testing SCA for PayLink, click [here](https://docs.blackthorn.io/docs/sca#sca){target=`_blank`}.",
+  "keywords": [
+    "stripe",
+    "checkout",
+    "docs",
+    "enable",
+    "events",
+    "support",
+    "click",
+    "here",
+    "https",
+    "blackthorn",
+    "target",
+    "_blank",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payment",
+    "gateway",
+    "setup",
+    "seotitle"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

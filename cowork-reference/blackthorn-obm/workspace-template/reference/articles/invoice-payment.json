@@ -1,0 +1,35 @@
+{
+  "id": "invoice-payment",
+  "title": "invoice-payment.md",
+  "content": "## Metadata_Start ## code: en ## title: Invoice Payment ## slug: invoice-payment ## seoTitle: Invoice Payment ## description: ## contentType: Markdown ## Metadata_End When a customer receives an {{variable.Object_Invoice}}, they can immediately make a payment through {{variable.Product_DocumentLink}}. ## Process Flow 1. The customer receives an email with the {{variable.Product_DocumentLink}}. This generated {{variable.Product_DocumentLink}} comes from an {{variable.Object_Invoice}}. When they click on the link, they are brought to a mobile responsive page like the example below. ![K_04_Invoice Payment pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_04_Invoice%20Payment%20pic%201.png){height=\"\" width=\"\"} 2. The customer clicks **Pay**. 3. Depending on the enabled {{variable.Object_PaymentMethod}}s, the customer can either pay with a card or ACH. If this is a new {{variable.Product_Stripe}} customer, a {{variable.Object_PaymentMethod}} and {{variable.Object_PaymentGatewayCustomer}} record will be created automatically and related to the {{variable.Field_Invoice_PreparedFor}} field. If this is an existing {{variable.Object_PaymentGatewayCustomer}} (matches on email) a new {{variable.Object_PaymentMethod}} will be added to their record. 4. If they select Card, they will enter in their credit card information and click **Pay**. If they select ACH, they will enter in their bank information and click **Pay**. If the {{variable.Object_PaymentMethod}} is successful, they will receive a notification that tells the customer: \"Two small deposits will be made in your bank account. These deposits should appear in your bank account within the next few days. When they arrive, confirm your bank account by contacting us.\" There will be an ACH {{variable.Object_PaymentMethod}} with the {{variable.Field_PM_PaymentMethodStatus}} = {{variable.Picklist_PM_Status_Pending}} and a related {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransaStatus}} = \"Open\" in Salesforce. When the customer contacts you, enter the two micro-deposits on the pending ACH {{variable.Object_PaymentMethod}} record. The {{variable.Object_PaymentMethod}}'s {{variable.Field_PM_PaymentMethodStatus}} will automatically update to \"Verified\". Then navigate to the related open {{variable.Object_Transaction}} and click the **Capture** button. Once the {{variable.Object_Transaction}} has been captured and if the {{variable.Object_Invoice}} {{variable.Field_Invoice_BalanceDue}} is \"0\", the related {{variable.Object_Invoice}} {{variable.Field_Invoice_PaymentStatus}} field = {{variable.Picklist_Invoice_Paid}}, the {{variable.Field_Invoice_Status}} field = {{variable.Picklist_InvoiceStat_Completed}} and the {{variable.Field_Invoice_PaidInFull}} field is set to the current date/time. Voila! Your {{variable.Object_Invoice}} has been paid.",
+  "keywords": [
+    "variable",
+    "they",
+    "customer",
+    "object_paymentmethod",
+    "payment",
+    "object_invoice",
+    "when",
+    "click",
+    "related",
+    "field",
+    "bank",
+    "your",
+    "invoice",
+    "product_documentlink",
+    "card",
+    "record",
+    "their",
+    "enter",
+    "deposits",
+    "account"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. The customer receives an email with the {{variable",
+    "2. The customer clicks **Pay**",
+    "3. Depending on the enabled {{variable",
+    "4. If they select Card, they will enter in their credit card information and click **Pay**"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "recaptcha",
+  "title": "recaptcha.md",
+  "content": "## Metadata_Start ## code: en ## title: reCAPTCHA ## slug: recaptcha ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End reCAPTCHA is a free service from Google that helps protect websites from spam and abuse. A “CAPTCHA” is a turing test to tell human and bots apart. It is easy for humans to solve, but hard for “bots” and other malicious software to figure out. By adding reCAPTCHA to a site, you can block automated software while helping your welcome users to enter with ease. Blackthorn Events supports reCAPTCHA for all {{variable.Object_Event}}s that do not require a payment. Before you can use reCAPTCHA with Blackthorn Events, you must set up your Event/webpage [with Google](https://cloud.google.com/security/products/recaptcha){target=`_blank`}. You can enable this feature at the {{variable.Object_EventSettings}} level using the {{variable.Field_ETETSettings_EnableCaptc}} checkbox. It is disabled by default. If you plan on using reCAPTCHA with [Iframes](/v1/docs/blackthorn-events-iframes), please let the {{variable.Link_BlackthornSupport}} team know.",
+  "keywords": [
+    "recaptcha",
+    "variable",
+    "google",
+    "blackthorn",
+    "events",
+    "from",
+    "bots",
+    "software",
+    "your",
+    "using",
+    "iframes",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

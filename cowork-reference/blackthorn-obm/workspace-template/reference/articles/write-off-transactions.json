@@ -1,0 +1,45 @@
+{
+  "id": "write-off-transactions",
+  "title": "write-off-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Write-Off Transactions ## slug: write-off-transactions ## seoTitle: Write-Off Transactions ## description: ## contentType: Markdown ## Metadata_End The new picklist value “Write Off” for the {{variable.Field_Transaction_TransactType}} field is designed to deduct amounts from an {{variable.Object_Invoice}} while maintaining accurate records for financial reconciliation purposes. Users can define the process for creating write-off {{variable.Object_Transaction}}s based on their unique requirements. Admins can implement write-off {{variable.Object_Transaction}}s using tools such as Screen flows, Approval Processes, or other custom workflows to generate write-off {{variable.Object_Transaction}}s. Complete the following steps to create a new write-off {{variable.Object_Transaction}}. 1. From an {{variable.Object_Invoice}} record page, click {{variable.button_new}} on the Transactions {{variable.SFTerm_RelatedList}}. 2. Set the {{variable.Field_Transaction_RecordType}} to \"Charge.\" 3. Click {{variable.Button_Next}}. 4. Add an amount to write off in the {{variable.Field_Transaction_Amount}} field. 5. Set {{variable.Field_Transaction_TransactType}} = \"Write Off.\" 6. Check the {{variable.Field_Transaction_NonGateway}} checkbox. This is required to create a write-off {{variable.Object_Transaction}}. If this field is left blank, an error message will be displayed. 7. Set {{variable.Field_Transaction_TransaStatus}} = \"Completed.\" (This triggers the recalculation of {{variable.Object_Invoice}} totals). 8. Complete any other fields. (optional) 9. Click {{variable.Button_Save}}. The new values will be reflected in the {{variable.Field_Invoice_WriteOffAmount}}, {{variable.Field_Invoice_BalancePaid}}, and {{variable.Field_Invoice_BalanceDue}} {{variable.Object_Invoice}} fields. ## Troubleshooting If you have received an error with your {{variable.Object_Transaction}}s or have a question, please view our [Troubleshooting](/v1/docs/troubleshooting-payments) page.",
+  "keywords": [
+    "variable",
+    "write",
+    "object_transaction",
+    "transactions",
+    "object_invoice",
+    "field",
+    "click",
+    "troubleshooting",
+    "field_transaction_transacttype",
+    "from",
+    "other",
+    "complete",
+    "create",
+    "page",
+    "error",
+    "fields",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. From an {{variable",
+    "2. Set the {{variable",
+    "3. Click {{variable",
+    "4. Add an amount to write off in the {{variable",
+    "5. Set {{variable",
+    "6. Check the {{variable",
+    "7. Set {{variable",
+    "8. Complete any other fields",
+    "9. Click {{variable"
+  ],
+  "troubleshooting": [
+    "error message will be displayed.",
+    "error with your {{variable.",
+    "Troubleshooting If you have received an error with your {{variable.",
+    "Troubleshooting](/v1/docs/troubleshooting-payments) page."
+  ]
+}

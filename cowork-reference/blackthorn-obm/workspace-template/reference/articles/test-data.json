@@ -1,0 +1,47 @@
+{
+  "id": "test-data",
+  "title": "test-data.md",
+  "content": "## Metadata_Start ## code: en ## title: Test Data ## slug: test-data ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When setting up Blackthorn {{variable.Product_Payments}}, we suggest you connect your {{variable.Object_PaymentGateway}} in Test Mode so that you can create test {{variable.Object_Transaction}}s, {{variable.Object_PaymentMethod}}s, and Customers. In order to create successful test records in {{variable.Product_Salesforce}}, you must use the card and ACH numbers below and process through a Test Mode connected {{variable.Object_PaymentGateway}}. ## Stripe ### Test a Stripe Card {{snippet.PGSetup_TestStripePG_Card}} ### Test a Stripe ACH Bank Account {{snippet.PGSetup_TestStripePG_ACHBankAccount}} ### Test for Specific Responses and Errors Use the test cards below to create a {{variable.Object_PaymentMethod}} that produces a specific response. #### Incorrect CVC Code Error Use this number to create an error about an incorrect {{variable.Field_PM_CVV}}. The error message will be in the Stripe data fields. * {{variable.Field_PM_Number}} = 4000000000000127 #### Fail to Capture This number will create a valid Payment Method, but when you capture a Transaction with the Payment Method, the Transaction will fail. The error message will be in the Stripe data fields. * {{variable.Field_PM_Number}} = 4000000000000341 Additional testing for specific responses and errors can be found [here](https://docs.stripe.com/testing#cards-responses){target=`_blank`}. ### Disputes Use the card below in test mode to simulate a disputed {{variable.Object_Transaction}}. This number will create a valid {{variable.Object_PaymentMethod}}, but when you capture a {{variable.Object_Transaction}} with the {{variable.Object_PaymentMethod}}, a {{variable.Object_Dispute}} record will be created. * {{variable.Field_PM_Number}} = \"4000000000000259\" #### Test a Winning a Dispute Enter the words \"winning_evidence\" in the {{variable.Field_DispuEvid_AdditionalInfo}} field on the {{variable.Object_DisputeEvidence}} record to simulate the dispute being won and the funds being returned to your account as an adjustment {{variable.Object_Transaction}}. #### Test a Losing a Dispute Enter the words \"losing_evidence\" in the {{variable.Field_DispuEvid_AdditionalInfo}} field on the {{variable.Object_DisputeEvidence}} record to simulate the dispute being closed and marked as lost. (Your account will not be credited.) Click [here](/v1/docs/disputes){target=`_blank`} for more information about Disputes. ### Delete Test Data 1. Navigate to your {{variable.Product_Stripe}} Dashboard. 2. Toggle \"ON\" the {{variable.Field_Stripe_ViewTestData}} switch. (left-hand column). 3. Click **Business settings**. (left-hand column) 4. Select \"Data\". 5. Next to Test data, click **Delete all test data**. 6. Click **Delete Now**. ![G_06 delete test data](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_06%20delete%20test%20data.png){height=\"\" width=\"\"} #### Salesforce Whether you are in a Production or Sandbox Org, you will need to temporarily deactivate all triggers so that you can delete {{variable.Object_Transaction}}, {{variable.Object_PaymentMethod}}, and {{variable.Object_PaymentGatewayCustomer}} records. 1. Navigate to Custom Settings. 2. Click {{variable.Button_SF_Manage}} next to Blackthorn - Pay Trigger Settings. 3. Click {{variable.Button_SF_Edit}}. 4. Check the {{variable.Field_CS_DisableAllTriggers}} checkbox. 5. Click {{variable.Button_Save}}. 6. Delete all of your test data. 7. Navigate back to Custom Settings and UNCHECK {{variable.Field_CS_DisableAllTriggers}}. ## Authorize.net Test your Authorize.net {{variable.Object_PaymentGateway}} using either the test Authorize.net card or the test Authorize.net ACH bank account. ### Test an Authorize.net Card {{snippet.PGSetup_TestAuthNet_Card}} ### Test an Authorize.net ACH Bank Account {{snippet.PGSetup_TestAuthNet_ACHAcct}} ### Test for Specific Responses and Errors #### Cards Create a {{variable.Object_PaymentMethod}} using the following postal codes to generate a declined {{variable.Object_Transaction}}. * {{variable.Field_PM_PostalCode}} = \"46282\" - This {{variable.Object_Transaction}} will be declined. * {{variable.Field_PM_PostalCode}} = \"46205\" - The {{variable.Object_Transaction}} will be declined because of an AVS mismatch. The address provided does not match the cardholder's billing address. #### ACH To generate a decline using an ACH bank account, submit a {{variable.Object_Transaction}} over $100. #### Duplicate Payment Methods Create two {{variable.Object_PaymentMethod}}s with the same name and email address to generate \"A duplicate record with ID [auth.net id] already exists error\" for the second {{variable.Object_PaymentMethod}}. ## Spreedly Test your {{variable.Object_PaymentGateway}} using either the test {{variable.Product_Spreedly}} card or the test {{variable.Product_Spreedly}} ACH bank account. ### Test a Spreedly Card {{snippet.PGSetup_TestSpreedly_Card}} {{snippet.Spreedly_ACH_Limitation}} ### Test a Spreedly ACH Bank Account {{snippet.PGSetup_TestSpreedly_ACHAcct}} ## PayPal ### Test a PayPal Card :::(Error) (Limitation) Real card and bank account information cannot be used in Test Mode. ::: Use the following test card number to create a successful {{variable.Object_PaymentMethod}} and {{variable.Object_Transaction}}. * {{variable.Field_PM_Number}} = \"4755007800273033\" * {{variable.Field_PM_ExpirationMonth}} = \"05\" * {{variable.Field_PM_ExpirationYear}} = \"2022\" * {{variable.Field_PM_CVV}} = \"105\" ## Transact (CashNet) For testing purposes, create a {{variable.Product_CashNet}} {{variable.Object_PaymentGateway}} and use the following values. Use the {{variable.Product_CashNet}} {{variable.Object_PaymentGateway}} with any {{variable.Object_Event}} and perform a normal (paid) checkout. You should be able to successfully complete the checkout process and perform failing checkouts that should be handled appropriately. Use the following test card numbers: | Card Type | Number | CVV | | --- | --- | --- | | Visa | 4111111111111111 | 125 | | Mastercard | 5454545454545454 | 125 | | American Express | 343434343434343 | 1250 | ## TouchNet For testing purposes, create a {{variable.Product_TouchNet}} Payment Gateway and use the following values: | Field | Value | | --- | --- | | TouchNet UPay Site ID | 242 | | TouchNet UPay Site URL | https://test.secure.touchnet.net:8443/C30002test_upay/web/index.jsp | | TouchNet uPay Form Parameters | DEPARTMENT=any | Use the {{variable.Product_TouchNet}} Payment Gateway with any Event and perform a normal (paid) checkout. You should be able to successfully complete a checkout as well as perform failing checkouts that should be handled appropriately. Use the following test card numbers: | Brand | Number | CVC/CVV | Expiration Date | | --- | --- | --- | --- | | Visa | 4111111111111111 | 125 | Any future date | | American Express | 343434343434343 | 1250 | Any future date | | Discover | 6011111111111117 | 125 | Any future date | | Mastercard | 5121212121212124 | 125 | Any future date |",
+  "keywords": [
+    "variable",
+    "test",
+    "card",
+    "create",
+    "data",
+    "object_transaction",
+    "object_paymentmethod",
+    "account",
+    "your",
+    "snippet",
+    "bank",
+    "click",
+    "object_paymentgateway",
+    "stripe",
+    "error",
+    "number",
+    "delete",
+    "authorize",
+    "following",
+    "payment"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to your {{variable",
+    "2. Toggle \"ON\" the {{variable",
+    "3. Click **Business settings**",
+    "4. Select \"Data\"",
+    "5. Next to Test data, click **Delete all test data**",
+    "6. Click **Delete Now**",
+    "1. Navigate to Custom Settings",
+    "2. Click {{variable",
+    "3. Click {{variable",
+    "4. Check the {{variable"
+  ],
+  "troubleshooting": [
+    "Errors Use the test cards below to create a {{variable.",
+    "Error Use this number to create an error about an incorrect {{variable.",
+    "error message will be in the Stripe data fields.",
+    "error message will be in the Stripe data fields.",
+    "errors can be found [here](https://docs."
+  ]
+}

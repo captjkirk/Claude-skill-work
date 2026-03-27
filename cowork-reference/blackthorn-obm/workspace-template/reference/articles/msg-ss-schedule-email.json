@@ -1,0 +1,23 @@
+{
+  "id": "msg-ss-schedule-email",
+  "title": "msg-ss-schedule-email.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule an Email ## slug: msg-ss-schedule-email ## seoTitle: Schedule an Email ## description: ## contentType: Markdown ## Metadata_End {{snippet.SS_GS_ScheduleAnEmail}}",
+  "keywords": [
+    "schedule",
+    "email",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ss_gs_scheduleanemail"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

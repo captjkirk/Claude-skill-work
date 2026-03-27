@@ -1,0 +1,30 @@
+{
+  "id": "ev-ss-create-org-wide-email-address",
+  "title": "ev-ss-create-org-wide-email-address.html",
+  "content": "Occasionally, an organization-wide or alias email address may be needed to allow users to send emails from the Essentials Edition. Complete the steps below to set up an org-wide email. Click the . Click . In the Quick Find box, enter and click “Organization-Wide Addresses.” Click Add . Enter a Display Name and Email Address . Select either Allow All Profiles to Use this From Address or Allow Only Selected Profiles to Use the From Address . If you select the latter, choose the profiles you want to add. Click . A verification email will be sent to the newly created org-wide email address. Once the org-wide email address has been verified, it will be available to the assigned profiles.",
+  "keywords": [
+    "email",
+    "address",
+    "wide",
+    "click",
+    "profiles",
+    "allow",
+    "from",
+    "organization",
+    "enter",
+    "select",
+    "occasionally",
+    "alias",
+    "needed",
+    "users",
+    "send",
+    "emails",
+    "essentials",
+    "edition",
+    "complete",
+    "steps"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "migrating-records",
+  "title": "migrating-records.md",
+  "content": "## Metadata_Start ## code: en ## title: Migrating & Recreating Records ## slug: migrating-records ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End There are multiple paths to migrating records into Blackthorn {{variable.Product_Payments}}. For existing {{variable.Product_Stripe}} customers, see our documentation on [{{variable.Task_HistoricalSync}}](/v1/docs/historical-sync). To temporarily turn off Stripe callouts and Apex validations, update the applicable [Custom Settings](/v1/docs/custom-settings) under {{variable.CS_BlackthornPayTriggerSetting}}. ## Migrating Records ### Transactions **Source:** CSV Turn off all {{variable.Object_Transaction}}-related Custom Settings (referenced above) or enable {{variable.Field_CS_DisableAllTriggers}} in {{variable.CS_BlackthornPayTriggerSetting}}. :::(Info) () Map your org's Charge Record Type ID value, not the word \"Charge\". This can be found by navigating to the object's Record Type listing, clicking **Charge**, and pulling the ID from the URL. ::: **Required Fields:** - {{variable.Field_Transaction_RecordType}} = \"Charge\" - {{variable.Field_Transaction_Amount}} - {{variable.Field_Transaction_CurrencyISO}} - {{variable.Field_Transaction_TransaStatus}} = \"Completed\" - {{variable.Field_Transaction_PaymentStatu}} = \"Captured\" - {{variable.Field_Transaction_NonGateway}} = \"True\" **Suggested Fields:** - {{variable.Field_Transaction_Account}} - {{variable.Field_Transaction_Contact}} - {{variable.Field_Transaction_ProcessedDat}} (you can map a date field if you don't have date/time available) **Suggested Fields if Records Originated from a Stripe Account:** - {{variable.Field_Transaction_PaymentGatew}} - {{variable.Field_Transaction_TransactioID}} - {{variable.Field_Transaction_CustomerID}} ## Payment Methods **Source:** Raw credit card data :::(Info) () Map your org's Record Type ID value, not the text word. This can be found by navigating to the object's RT listing, clicking **Charge Card** or **ACH**, and pulling the ID from the URL. ::: **Required Fields:** - {{variable.Field_PM_RecordType}} = Charge Card or ACH - {{variable.Field_PM_Email}} **Suggested Fields:** - {{variable.Field_PM_Account}} - {{variable.Field_PM_Contact}} - Address fields 1. Using Data Loader, set your Batch Size to \"1\". 2. Stripe export with Card IDs & Customer IDs. :::(Info) () Turn off all Payment Method-related Custom Settings (referenced above) or enable `Disable All Triggers` from Blackthorn Pay - Trigger Settings. ::: **Map these Fields:** - {{variable.Field_PM_Last4Digits}} - {{variable.Field_PM_CurrencyISO}} - {{variable.Field_PM_CountryISO}} - {{variable.Field_PM_PaymentMethodStatus}} = \"Valid\" ## Recreating Records Sometimes, life doesn't give you sunshine. When it happens, records that exist in {{variable.Product_Stripe}} but not in {{variable.Product_Salesforce}} must be recreated in {{variable.Product_Salesforce}} from the Stripe IDs. Here's an example of recreating a charge so the refund can be conducted within {{variable.Product_Salesforce}}. **Step 1: Log into the {{variable.Product_Stripe}} dashboard to see the relevant IDs.** - Gather the following IDs: - Card ID - Customer ID - Transaction ID **Step 2: Create a new {{variable.Object_Transaction}} in {{variable.Product_Salesforce}}.** 1. Within Setup > Custom Settings > Blackthorn Pay - Trigger Settings, click {{variable.Button_SF_Manage}} and disable relevant triggers to manipulate records. 2. Fill in the following fields: - {{variable.Field_Transaction_RecordType}} = \"Charge\" - {{variable.Field_Transaction_Amount}} = Stripe Dashboard Charge amount - {{variable.Field_Transaction_CurrencyISO}} - {{variable.Field_Transaction_TransaStatus}} = \"Completed\" - {{variable.Field_Transaction_PaymentStatu}} = \"Captured\" - Set the {{variable.Field_Transaction_PaymenMethod}} lookup to the correct {{variable.Object_PaymentMethod}} that matches the Card ID from Step 1. **Step 3: Click Refund in {{variable.Product_Salesforce}}.**",
+  "keywords": [
+    "variable",
+    "charge",
+    "records",
+    "fields",
+    "settings",
+    "from",
+    "card",
+    "stripe",
+    "custom",
+    "product_salesforce",
+    "migrating",
+    "step",
+    "recreating",
+    "blackthorn",
+    "product_stripe",
+    "turn",
+    "info",
+    "your",
+    "record",
+    "type"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Using Data Loader, set your Batch Size to \"1\"",
+    "2. Stripe export with Card IDs & Customer IDs",
+    "1. Within Setup > Custom Settings > Blackthorn Pay - Trigger Settings, click {{variable",
+    "2. Fill in the following fields: - {{variable",
+    "1. **Step 3: Click Refund in {{variable",
+    "* - Gather the following IDs: - Card ID - Customer ID - Transaction ID **Step",
+    "- Trigger Settings, click"
+  ],
+  "troubleshooting": []
+}

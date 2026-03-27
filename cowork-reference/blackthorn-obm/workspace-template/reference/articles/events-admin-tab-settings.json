@@ -1,0 +1,33 @@
+{
+  "id": "events-admin-tab-settings",
+  "title": "events-admin-tab-settings.md",
+  "content": "## Metadata_Start ## code: en ## title: Settings Tab ## slug: events-admin-tab-settings ## seoTitle: Settings Tab ## description: ## contentType: Markdown ## Metadata_End ![Events Admin Tab_Settings Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Settings%20Tab.png){height=\"\" width=\"\"} ## Vanity Domain {{snippet.URL_Limitation}} The {{variable.Field_Domain_VanityDomain}} field allows users to set a domain other than https://events.blackthorn.io for the remote site \"Events_Domain.\" To confirm if the update is successful, check the following: * For the remote site \"Events_Domain,\" go to Setup > Security > Remote Site Settings > Events_Domain. * For the Platform Domain field, go to Custom Settings > Blackthorn | Events Settings > Click \"Manage\" > Platform Domain. For more information about custom domains, go to [Customized Blackthorn Events Domain](https://docs.blackthorn.io/docs/custom-domains){target=\"_blank\"}. ## Favicon URL Users with Event Admin permissions can add a favicon URL to the {{variable.Field_ETETSettings_FaviconUrl}} field. The added favicon URL is stored in the Event Settings. For more information, go to [Favicon URL](https://docs.blackthorn.io/docs/event-settings-1#favicon-url){target=\"_blank\"}.",
+  "keywords": [
+    "settings",
+    "events",
+    "domain",
+    "blackthorn",
+    "favicon",
+    "https",
+    "docs",
+    "admin",
+    "field",
+    "remote",
+    "site",
+    "events_domain",
+    "custom",
+    "event",
+    "variable",
+    "users",
+    "platform",
+    "more",
+    "information",
+    "domains"
+  ],
+  "category": "events",
+  "procedures": [
+    "* For the remote site \"Events_Domain,\" go to Setup",
+    "* For the Platform Domain field, go to Custom Settings > Blackthorn | Events Settings > Click"
+  ],
+  "troubleshooting": []
+}

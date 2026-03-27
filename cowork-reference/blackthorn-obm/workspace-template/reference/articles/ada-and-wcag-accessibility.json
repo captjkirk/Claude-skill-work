@@ -1,0 +1,30 @@
+{
+  "id": "ada-and-wcag-accessibility",
+  "title": "ada-and-wcag-accessibility.html",
+  "content": "The UserWay Accessibility Widget improves the accessibility of the webapp and is enabled by default.&nbsp; This feature gives people who need assistance using their computer the ability to alter their screen. Changes can include the following. Visual Audible Keyboard or mouse assistance The accessible icon is located in the bottom left-hand corner on all {{variable.Object_Event}} s' webpages. Click the icon to access the accessibility feature. Here's a list of everything included in our accessibility settings at this time. Please Note: We removed the “Report a Problem” link on the Userway widget since the feedback went directly to Userway, and we didn’t have an easy way to access it. If you have questions or would like to provide feedback about the Userway widget, please contact {{variable.Link_BlackthornSupport}} . To review Blackthorn's \"Blackthorn.io Accessibility Conformance Report WCAG 2.1 A &amp; AA\" (VPAT) report, click here . Alternative Text for Images To help visually impaired users access the images on your {{variable.Object_Event}} ’s webpage, please add image descriptions to the {{variable.Object_Event}} , {{variable.Object_Session}} , {{variable.Object_Speaker}} , {{variable.Object_Sponsor}} , {{variable.Object_Account}} , {{variable.Object_Contact}} , and {{variable.Object_Attendee}} records. The {{variable.Field_Event_AltTextVisualImp}} field was added to the {{variable.Object_Event}} , {{variable.Object_Session}} , {{variable.Object_Speaker}} , {{variable.Object_Sponsor}} , {{variable.Object_Account}} , and {{variable.Object_Contact}} objects.&nbsp;The field is required if the accompanying {{variable.Field_ETEvent_ImageURL}} field contains a value. API Name: conference360__Alternative_Image_Text__c Data Type: Text Description: Conveys information about the images located on the Event website.&nbsp; The {{variable.Field_Attendee_AltTextVisualIm}} field was added to the {{variable.Object_Attendee}} object. The {{variable.Field_Attendee_AltTextVisualIm}} field will include the same information that is in the {{variable.Object_Event}} 's {{variable.Field_Event_AltTextVisualImp}} field when the related {{variable.Object_Event}} ’s {{variable.Field_ETEvent_ImageURL}} field contains a value. API Name: conference360__Event_Alternative_Image_Text__c Data Type: Text Description: Conveys information about the images located on the Event website. FAQs Q: How do I disable the accessibility widget? A: Please be aware that depending on your location, you may have a legal responsibility to make your Event website accessible. To disable the accessibility widget, please contact {{variable.Link_BlackthornSupport}} . Deprecated Field The {{variable.CS_EnableAccessibility}} field (conference360__Enable_Accessibility__c) on the Blackthorn | Events Settings custom setting has been deprecated. To disable the accessibility widget, please contact {{variable.Link_BlackthornSupport}} .",
+  "keywords": [
+    "variable",
+    "field",
+    "accessibility",
+    "widget",
+    "object_event",
+    "please",
+    "userway",
+    "images",
+    "nbsp",
+    "located",
+    "access",
+    "report",
+    "about",
+    "contact",
+    "link_blackthornsupport",
+    "blackthorn",
+    "text",
+    "your",
+    "information",
+    "event"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

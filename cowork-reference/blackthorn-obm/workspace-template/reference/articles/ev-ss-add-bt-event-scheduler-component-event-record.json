@@ -1,0 +1,41 @@
+{
+  "id": "ev-ss-add-bt-event-scheduler-component-event-record",
+  "title": "ev-ss-add-bt-event-scheduler-component-event-record.md",
+  "content": "## Metadata_Start ## code: en ## title: Add the BT Event Scheduler Component to the Event Record ## slug: ev-ss-add-bt-event-scheduler-component-event-record ## seoTitle: Add the Event Scheduler Component to the Event Record ## description: ## contentType: Markdown ## Metadata_End Complete the steps below to add Messaging’s Communication tab to your {{variable.Object_Event}} object. 1. Open an {{variable.Object_Event}} record. 2. Click the {{variable.Button_GearIcon}}. 3. Click **Edit Page**. ![AddEventSchedulertoEventRecord_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_1.jpg){height=\"\" width=\"\"} 5. Click the “More” tab in the Event page layout. ![AddEventSchedulertoEventRecord_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_2.png){height=\"\" width=\"\"} 7. Click **Add Tab**. ![AddEventSchedulertoEventRecord_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_3.png){height=\"\" width=\"\"} 9. Click the new tab and select {{variable.Field_SF_TabLabel}} = “Custom”. 10. Enter {{variable.Field_SF_CustomLabel}} = “Communication”. ![AddEventSchedulertoEventRecord_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_4.png){height=\"\" width=\"\"} 2. Click **Done**. 3. Move the Communication tab to the top of the Tabs list so {{variable.Field_SF_FirstTab}} = “Communications”. 4. Set {{variable.Field_SF_DefaultTab}} = “First Tab.” 5. In the left navigation pane under Components, search for “BT Event Scheduler.” 6. Click and drag the BT Event Scheduler component to the Communication tab. ![AddEventSchedulertoEventRecord_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_5.png){height=\"\" width=\"\"} 8. Click {{variable.Button_Save}}. 9. Click **Activate**. 10. Click the App Default tab. 1. Click **Assign as App Default**. ![AddEventSchedulertoEventRecord_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_6.png){height=\"\" width=\"\"} 3. Select “Events (Admin)” and “Events (Planner)”. 4. Click **Next**. 5. On the Assign Form Factor screen, choose your preferred platform, and click **Next**. ![AddEventSchedulertoEventRecord_7](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_7.jpg){height=\"\" width=\"\"} 7. If everything looks okay on the Review Assignments screen, click {{variable.Button_Save}}. 8. Click {{variable.Button_Save}}. 9. Return to the {{variable.Object_Event}} record page. ![AddEventSchedulertoEventRecord_8](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddEventSchedulertoEventRecord_8.png){height=\"\" width=\"\"} To watch a video of the process, click [here](https://share.getcloudapp.com/DOuk0DjJ){target=`_blank`}.",
+  "keywords": [
+    "click",
+    "variable",
+    "event",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "scheduler",
+    "record",
+    "component",
+    "communication",
+    "object_event",
+    "page"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Open an {{variable",
+    "2. Click the {{variable",
+    "3. Click **Edit Page**",
+    "5. Click the “More” tab in the Event page layout",
+    "7. Click **Add Tab**",
+    "9. Click the new tab and select {{variable",
+    "10. Enter {{variable",
+    "2. Click **Done**",
+    "3. Move the Communication tab to the top of the Tabs list so {{variable",
+    "4. Set {{variable"
+  ],
+  "troubleshooting": []
+}

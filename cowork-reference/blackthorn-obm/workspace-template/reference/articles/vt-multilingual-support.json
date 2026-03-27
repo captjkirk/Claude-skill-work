@@ -1,0 +1,33 @@
+{
+  "id": "vt-multilingual-support",
+  "title": "vt-multilingual-support.html",
+  "content": "The now supports multiple languages. Admins can override the default language and customize users' language experiences when specific predefined criteria are met. For example, an Admin can change the language for users in a particular region. Content will be presented in a user’s preferred language or default to English if a language isn’t pre-selected. Users won’t have to manually select their language each time they interact with the system, and they can change the displayed language according to their preferences. Translate Custom Labels Blackthorn users can now translate the labels the user sees (and override the standard out-of-the-box values) when using the Virtual Terminal and the Payment Charge Flow. Before proceeding, you must enable s in your org. Then, follow one of the steps below to configure the custom labels.&nbsp; If you are working with the , click Translate the Virtual Terminal .&nbsp; If you are working with the and charge flows, click Translate the Payment Charge Flow . Translate the Payment Charge Flow Navigate to Setup. In the Quick Find box, enter and click \"Custom Labels\". Use the Categories column header to sort and find the “Payment Charge Flow” category. Custom Labels in the \"PaymentChargeFlow\" category have \"ChargeFlow\" as a prefix. Click on the Label you need to translate. Click New Translation / Local Override . Select your . Enter the for the label. Click . The language displayed will depend on the language configured in the User Settings of the user. Custom Labels The Payment Charge Flow custom labels are as follows. Name Standard Label (English) ChargeFlow_Account Account ChargeFlow_Amount Amount ChargeFlow_Card_Holder_Name Card Holder Name ChargeFlow_Card_Number Card Number ChargeFlow_Charge_Card Charge Card ChargeFlow_Charge_Description Charge Description ChargeFlow_Contact Contact ChargeFlow_Currency Currency ChargeFlow_CVV CVV ChargeFlow_Email Email ChargeFlow_Exp_Month Exp Month ChargeFlow_Exp_Year Exp Year ChargeFlow_Payment_Details Payment Details ChargeFlow_Payment_Gateway Payment Gateway ChargeFlow_Please_Wait Please Wait ChargeFlow_Postal_Code Postal Code ChargeFlow_Related_To Related To Translate the Virtual Terminal Navigate to Setup. In the Quick Find box, enter and click “Custom Labels”. Use the Categories column header to sort and find the \"Virtual Terminal\" category. Click the label you need to translate. Click New Translation / Local Override . Select a . Enter the for the label. Click . Custom Labels The Virtual Terminal custom labels are as follows. Name Standard Label (English) VT_Action Action VT_ActionPicklistValue_NewPM New Payment Method VT_ActionPicklistValue_SingleCharge New Single Charge VT_Amount Amount VT_ChargeAndPM_Disabled Both Charge and Payment Method has been disabled. VT_Currency Currency VT_Custom_Error_Message Looks like an error has occurred. Please refresh you page. If the issue persist contact support@blackthorn.io. VT_Header Blackthorn Virtual Terminal VT_PM_Success_Message The Payment method has been created. VT_Parent_Object Parent Object VT_Payment_Method Payment Method VT_PicklistValue_Authorize_Now Authorize Now VT_PicklistValue_Auto_Process Auto-Process VT_PicklistValue_Capture_Now Capture Now VT_Process_Type Process Type VT_Related_To Related To VT_Terminal_AuthNeeded_Header Authorization Needed VT_Terminal_Loading_Error_Header Terminal Data Initialization Error VT_Terminal_PMSuccess_Header Payment Method Created VT_Terminal_PaymentMethodFailed_Error_Header Payment Method Error VT_Terminal_TransactionFailed_Error_Header Transaction Error VT_Terminal_TransactionSuccess_Header Transaction Completed VT_Transaction_Failed_Message The transaction has failed. VT_Transaction_Pending_Auth Pending Payment Intent - Transaction requires further authorization. VT_Transaction_Success_Message The transaction has been completed.",
+  "keywords": [
+    "payment",
+    "labels",
+    "charge",
+    "click",
+    "language",
+    "custom",
+    "translate",
+    "terminal",
+    "virtual",
+    "label",
+    "method",
+    "flow",
+    "transaction",
+    "override",
+    "users",
+    "user",
+    "find",
+    "enter",
+    "error",
+    "english"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "Error_Message Looks like an error has occurred.",
+    "Error_Header Terminal Data Initialization Error VT_Terminal_PMSuccess_Header Payment Method Created VT_Terminal_PaymentMethodFailed_Error_Header Payment Method Error VT_Terminal_TransactionFailed_Error_Header Transaction Error VT_Terminal_TransactionSuccess_Header Transaction Completed VT_Transaction_Failed_Message The transaction has failed."
+  ]
+}

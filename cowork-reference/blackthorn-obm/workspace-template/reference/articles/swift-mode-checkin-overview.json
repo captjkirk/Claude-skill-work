@@ -1,0 +1,42 @@
+{
+  "id": "swift-mode-checkin-overview",
+  "title": "swift-mode-checkin-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Swift Mode Overview ## slug: swift-mode-checkin-overview ## seoTitle: Swift Mode Overview ## description: ## contentType: Markdown ## Metadata_End This guide is for event staff checking in {{variable.Object_Attendee}}s. Event staff only need basic familiarity with the {{variable.Product_MobileCheck-inApp}}—no technical expertise is required. :::(Warning) (Session Check-in Restriction) While Mobile Check-in app users can check in Attendees for Sessions with the app, they cannot use the Swift Mode feature to check in Attendees for Sessions. ::: ## What is Swift Mode? The {{variable.Feature_SwiftMode}} feature for the {{variable.Product_MobileCheck-inApp}} is designed to make the {{variable.Object_Event}} check-in experience faster and more reliable, especially for large {{variable.Object_Event}}s or when internet connectivity is limited. Unlike the traditional approach, where each check-in is sent to the server one at a time (a “one-off” sync), {{variable.Feature_SwiftMode}} works by saving all check-ins locally on your device as you go. When you're ready to sync, these check-ins are then grouped and sent to the server in a single batch. The batching process greatly reduces the number of API calls made to the server, speeding up the check-in process and helping prevent slowdowns and errors when handling thousands of {{variable.Object_Attendee}}s. By syncing in batches, {{variable.Feature_SwiftMode}} ensures that check-ins are quick, efficient, and less likely to be interrupted by network issues, making it ideal for busy, high-volume {{variable.Object_Event}}s. ## Compare Standard Check-in to Swift Mode | Feature | Standard Mobile Check-in | Swift Mode Check-in | | --- | --- | --- | | Enablement | Default | Toggle *Swift Check‑In Mode* + optional *Continuous Scan Mode* in Settings | | QR code / External ID | One‑at‑a‑time scan > Attendee page (tap {{variable.Button_Save}}) | 4× faster camera launch, confirmation beep, no attendee page displayed | | Search | Partial matches OK (e.g., “Ada L”), full list displayed | Exact first or last name or email or company only, no scrollable list (faster query) | | Offline | Optional Offline Mode (manual toggle); [External ID](https://docs.blackthorn.io/docs/mobile-checkin-app-external-id){target=`_blank`} is disabled when offline | Does not require Wi-Fi except for the initial loading of {{variable.Object_Attendee}}s and the later syncing of {{variable.Object_Attendee}}s, which can be done before and after the {{variable.Object_Event}}; External ID is disabled when offline | | Sync | Manual **Refresh** button; no batch IDs; occasional data conflicts for high volume events | Sync Manager page, progress bars, Request IDs & retry | | High‑volume scan | Must re‑open scanner after scanning each QR code | Continuous Scan Mode—keeps the camera open until you no longer need to scan QR codes | ## Set Up and Use Swift Mode Complete the steps below to set up {{variable.Feature_SwiftMode}} and check in {{variable.Object_Attendee}}s. 1. [Enable Swift Mode](https://docs.blackthorn.io/docs/using-swift-mode#enable-swift-mode){target=`_blank`} 2. [Check In Attendees by Name or Email Search](https://docs.blackthorn.io/docs/using-swift-mode#check-in-attendees-by-name-or-email){target=`_blank`} 3. [Check In Attendees by Scanning a QR Code](https://docs.blackthorn.io/docs/using-swift-mode#check-in-attendees-by-scanning-a-qr-code){target=`_blank`} 4. [Sync Attendees and View Check-Ins](https://docs.blackthorn.io/docs/using-swift-mode#sync-attendees-and-view-check-ins){target=`_blank`} 5. [Add Attendees](https://docs.blackthorn.io/docs/using-swift-mode#add-attendees){target=`_blank`} ## References * [Cheat Sheet (Quick Reference)](https://docs.blackthorn.io/docs/swift-mode-references-troubleshooting#cheat-sheet-swift-check-In-quick-reference){target=`_blank`} * [Troubleshooting](https://docs.blackthorn.io/docs/swift-mode-references-troubleshooting#troubleshooting){target=`_blank`} * [FAQs](https://docs.blackthorn.io/docs/swift-mode-references-troubleshooting#faqs){target=`_blank`} * [Support](https://docs.blackthorn.io/docs/swift-mode-references-troubleshooting#support){target=`_blank`}",
+  "keywords": [
+    "mode",
+    "check",
+    "swift",
+    "docs",
+    "variable",
+    "attendees",
+    "https",
+    "blackthorn",
+    "target",
+    "_blank",
+    "sync",
+    "troubleshooting",
+    "code",
+    "object_attendee",
+    "when",
+    "scan",
+    "using",
+    "references",
+    "feature_swiftmode",
+    "object_event"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. [Enable Swift Mode](https://docs",
+    "2. [Check In Attendees by Name or Email Search](https://docs",
+    "3. [Check In Attendees by Scanning a QR Code](https://docs",
+    "4. [Sync Attendees and View Check-Ins](https://docs",
+    "5. [Add Attendees](https://docs",
+    "* button; no batch IDs; occasional data conflicts for high volume events | Sync Manager page, progress bars, Request IDs & retry | | High‑volume scan | Must re‑open scanner after scanning each QR code | Continuous Scan Mode—keeps the camera open until you no longer need to scan QR codes | ## Set Up and Use Swift Mode Complete the step"
+  ],
+  "troubleshooting": [
+    "errors when handling thousands of {{variable.",
+    "troubleshooting#cheat-sheet-swift-check-In-quick-reference){target=`_blank`} * [Troubleshooting](https://docs.",
+    "troubleshooting#troubleshooting){target=`_blank`} * [FAQs](https://docs.",
+    "troubleshooting#faqs){target=`_blank`} * [Support](https://docs."
+  ]
+}

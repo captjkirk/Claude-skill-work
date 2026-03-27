@@ -1,0 +1,29 @@
+{
+  "id": "evbuilder-clone-event-sponsors",
+  "title": "evbuilder-clone-event-sponsors.md",
+  "content": "## Metadata_Start ## code: en ## title: Sponsors ## slug: evbuilder-clone-event-sponsors ## seoTitle: Sponsors ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Sponsor_CloneEdit_1}} ## Edit or Delete Sponsors {{snippet.EVBuilder_Sponsor_CloneEdit_ED}} ## Add Sponsors {{snippet.EVBuilder_Sponsor_CloneEdit_AD}}",
+  "keywords": [
+    "sponsors",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "clone",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_sponsor_cloneedit_1",
+    "edit",
+    "delete",
+    "evbuilder_sponsor_cloneedit_ed",
+    "evbuilder_sponsor_cloneedit_ad"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

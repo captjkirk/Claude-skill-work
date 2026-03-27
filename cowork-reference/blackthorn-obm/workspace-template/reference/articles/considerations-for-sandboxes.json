@@ -1,0 +1,43 @@
+{
+  "id": "considerations-for-sandboxes",
+  "title": "considerations-for-sandboxes.md",
+  "content": "## Metadata_Start ## code: en ## title: Considerations for Sandboxes ## slug: considerations-for-sandboxes ## seoTitle: Considerations for Sandboxes ## description: ## contentType: Markdown ## Metadata_End After refreshing a full or partial sandbox, you must perform the following steps to complete the process. * Clear the {{variable.Field_ETEvent_EventPageURL}} field. * Update the Events_Domain remote site. * Update the {{variable.CS_PlatformDomain}} field. * Reauthorize DocumentLink. ## Clear the Event Page URL Field When you refresh a full or partial sandbox, you can include Blackthorn objects in your refresh template. If you include the Blackthorn {{variable.Product_Events}} objects, it copies the {{variable.Field_ETEvent_EventPageURL}} field from production. The field's value won't be updated automatically for the sandbox and related Org ID. Please make sure to use the {{variable.Field_ETEvent_EventURL}} field. You can also manually clear the {{variable.Field_ETEvent_EventPageURL}} field using one of the following methods. This will generate the correct {{variable.Field_ETEvent_EventURL}}. * Go to the individual {{variable.Object_Event}} record for a one-off update. * Use a list view to mass-update {{variable.Object_Event}}s. * Use a dataloader to make changes to multiple {{variable.Object_Event}}s. ## Update the Events_Domain Remote Site 1. Go to Setup. 2. In the Quick Find box, enter and click “Remote Site Settings.” 3. Click {{variable.Button_SF_Edit}} next to Events_Domain. 4. Enter “https://events.blackthorn.io” in the {{variable.CS_RemoteSiteURL}} field. 5. Click {{variable.Button_Save}}. ## Update the Platform Domain Field 1. Go to Setup. 2. In the Quick Find box, enter and click “Custom Settings.” 3. Click {{variable.Button_SF_Manage}} next to Blackthorn | Events Settings. 4. Click {{variable.Button_SF_Edit}}. 5. Update the {{variable.CS_PlatformDomain}} field to match the {{variable.CS_RemoteSiteURL}} field. 6. Click {{variable.Button_Save}}. ## Reauthorize DocumentLink After refreshing your sandbox, you must reauthorize DocumentLink to avoid errors. {{snippet.DocumentLink_AuthorizeSandbox}}",
+  "keywords": [
+    "variable",
+    "field",
+    "update",
+    "click",
+    "sandbox",
+    "blackthorn",
+    "considerations",
+    "sandboxes",
+    "clear",
+    "field_etevent_eventpageurl",
+    "events_domain",
+    "remote",
+    "site",
+    "reauthorize",
+    "documentlink",
+    "object_event",
+    "enter",
+    "settings",
+    "after",
+    "refreshing"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, enter and click “Remote Site Settings",
+    "3. Click {{variable",
+    "4. Enter “https://events",
+    "5. Click {{variable",
+    "1. Go to Setup",
+    "2. In the Quick Find box, enter and click “Custom Settings",
+    "3. Click {{variable",
+    "4. Click {{variable",
+    "5. Update the {{variable"
+  ],
+  "troubleshooting": [
+    "errors."
+  ]
+}

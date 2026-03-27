@@ -1,0 +1,32 @@
+{
+  "id": "blackthorn-payment-admin",
+  "title": "blackthorn-payment-admin.md",
+  "content": "## Metadata_Start ## code: en ## title: Blackthorn | Payments Admin ## slug: blackthorn-payment-admin ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End This tab will help you manage your {{variable.Component_StripeBilling}} settings. The following jobs are only scheduled for customers who previously had {{variable.Component_StripeBilling}} enabled for their org. (We do not support {{variable.Component_StripeBilling}} for new customers.) Click **Schedule Billing Jobs** on the Blackthorn | Payments Admin Scheduled Jobs tab to schedule the jobs with a single click. To schedule each job individually, click the following buttons on the Blackthorn | Payments Admin Stripe Billing tab. * **Deploy Stripe Billing**: Deploys the necessary fields to use {{variable.Component_StripeBilling}} in a {{variable.Product_Salesforce}} org. * **Re-Calculate Account Revenue**: Recalculates the Historic Account Values (from {{variable.Object_Transaction}}) and MRR/QRR/ARR (from Subscription). * **Rollup Transaction to Invoice Button**: Rolls {{variable.Object_Transaction}}s up to their related {{variable.Object_Invoice}} (Sales Document).",
+  "keywords": [
+    "variable",
+    "blackthorn",
+    "admin",
+    "component_stripebilling",
+    "jobs",
+    "payments",
+    "click",
+    "schedule",
+    "billing",
+    "following",
+    "scheduled",
+    "customers",
+    "their",
+    "stripe",
+    "account",
+    "from",
+    "object_transaction",
+    "metadata_start",
+    "code",
+    "title"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* on the Blackthorn | Payments Admin Scheduled Jobs tab to schedule the jobs with a single click"
+  ],
+  "troubleshooting": []
+}

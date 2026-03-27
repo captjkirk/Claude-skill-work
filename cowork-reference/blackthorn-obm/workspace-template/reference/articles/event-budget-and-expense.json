@@ -1,0 +1,38 @@
+{
+  "id": "event-budget-and-expense",
+  "title": "event-budget-and-expense.md",
+  "content": "## Metadata_Start ## code: en ## title: Budget and Expense ## slug: event-budget-and-expense ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Managing your {{variable.Object_Event}}'s budgets and expenses has never been easier. Organize spending, track budgets, and observe at a high level, how you are tracking for each {{variable.Object_Event}}. ![Budget and Expense Objects in Event Management](https://youtu.be/6ux7fznzJRg){height=\"480\" width=\"640\"} The first step is creating a {{variable.Object_BudgetExpense}} record to group all future created {{variable.Object_ExpenseEntry}} records. Then you can create expense records related to an {{variable.Object_Event}}, and based on the {{variable.Object_BudgetExpense}} {{variable.Field_ETEvent_BudgtExp_Categor}}, they will automatically relate to the {{variable.Object_BudgetExpense}} record, then roll up to the {{variable.Object_Event}}. ## Create a {{variable.Object_BudgetExpense}} Record 1. Click {{variable.button_new}} on the \"Budget & Expenses\" (related list) on the {{variable.Object_Event}}. ![New Budget and Expenses](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/New%20Budget%20and%20Expenses.png){height=\"\" width=\"\"} 2. Enter the {{variable.Field_ETEvent_BudgtExp_EstAmou}}. 3. Select the {{variable.Field_ETEvent_BudgtExp_Categor}} and {{variable.Field_ETEvent_BudgtExp_Subcate}}. 4. Click {{variable.Button_Save}}. ![Save Budget and Expenses](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Save%20Budget%20and%20Expenses.png){height=\"\" width=\"\"} Creating a {{variable.Object_BudgetExpense}} record rolls up the totals to the {{variable.Object_Event}}. ![Budget and Expense record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Budget%20and%20Expense%20record.png){height=\"\" width=\"\"} ## Create an {{variable.Object_ExpenseEntry}} Once you have an actual price based on your budget, you can file an expense. Expenses track the actual amount you have spent overall on your {{variable.Object_Event}}. In the example below, we budgeted for $50 but actually spent $75 on Audiovisuals. ![Log an Expenses](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Log%20an%20Expenses.png){height=\"\" width=\"\"} To create a new {{variable.Object_ExpenseEntry}} follow these steps: 1. Click {{variable.button_new}} on the \"Expense Entries\" (related list) on the {{variable.Object_Event}}. ![Expense Entries](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Expense%20Entries.png){height=\"\" width=\"\"} 2. Enter the actual {{variable.Field_ETEvent_ExpEntry_Amount}}, {{variable.Field_ETEvent_ExpEntry_Categor}}, {{variable.Field_ETEvent_ExpEntry_Subcate}}, {{variable.Field_ETEvent_ExpEntr_TransDat}}, and {{variable.Field_ETEvent_ExpEntr_VendAcct}}. *You don't need to define the {{variable.Object_BudgetExpense}}. If you already created one with that {{variable.Field_ETEvent_ExpEntry_Categor}}/{{variable.Field_ETEvent_ExpEntry_Subcate}}, it will be automatically added.* ![New Expense Entry](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/New%20Expense%20Entry.png){height=\"\" width=\"\"} 3. Click {{variable.Button_Save}}. ## Auto Populate Data If you add a new {{variable.Object_ExpenseEntry}}, and define the {{variable.Field_ETEvent_ExpEntry_BudgExp}} field you don't need to define the {{variable.Field_ETEvent_ExpEntry_Categor}} or {{variable.Field_ETEvent_ExpEntry_Subcate}}. This will automatically populate from the Budget and Expense record. If the Budget & Expense record is associated with an {{variable.Object_Event}}, the {{variable.Object_Event}} is auto-populated on the {{variable.Object_ExpenseEntry}}. ![Auto populate expense data](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Auto%20populate%20expense%20data.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "expense",
+    "budget",
+    "object_event",
+    "https",
+    "height",
+    "width",
+    "record",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "expenses",
+    "object_budgetexpense",
+    "object_expenseentry",
+    "create"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click {{variable",
+    "2. Enter the {{variable",
+    "3. Select the {{variable",
+    "4. Click {{variable",
+    "1. Click {{variable",
+    "2. Enter the actual {{variable",
+    "3. Click {{variable"
+  ],
+  "troubleshooting": []
+}

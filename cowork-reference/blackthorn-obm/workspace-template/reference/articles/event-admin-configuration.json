@@ -1,0 +1,32 @@
+{
+  "id": "event-admin-configuration",
+  "title": "event-admin-configuration.md",
+  "content": "## Metadata_Start ## code: en ## title: Configuration ## slug: event-admin-configuration ## seoTitle: Configuration ## description: ## contentType: Markdown ## Metadata_End Before Events can be used, you must complete the multi-step configuration process. Use the Configuration tab to set up Events for first-time users. The additional tabs give you an easy way to deploy and make automatic updates. :::(Warning) (**Consider Using an Integration User**) Before configuring the Events app or activating Scheduled Jobs, we recommend logging in as an Integration User. An Integration User is a dedicated full Salesforce license that has a custom Permission Set and is used for any 3rd party integrations. This can help reduce issues related to configuration, authorization, and individual employee user access. ::: ![events admin 4_v2\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/events%20admin%204_v2%281%29.png){height=\"\" width=\"\"} ## Authorize the App {{snippet.ETADMIN_Config_Authorize}} ## Assign Events Permission Sets to All Users {{snippet.ETADMIN_Config_AssignPSAllUsers}} ## Advanced Permission Assignments {{snippet.ETADMIN_Config_AdvancedPermissionAssign}} ## Create Test Records {{snippet.ETADMIN_Config_CreateTestRecords}} ## Create Email Templates {{snippet.ETADMIN_Config_CreateEmailTemplates}} * * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. :::",
+  "keywords": [
+    "events",
+    "configuration",
+    "snippet",
+    "user",
+    "admin",
+    "integration",
+    "permission",
+    "before",
+    "used",
+    "users",
+    "warning",
+    "using",
+    "help",
+    "create",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "event",
+    "seotitle"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click"
+  ],
+  "troubleshooting": []
+}

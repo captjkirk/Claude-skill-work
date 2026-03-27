@@ -1,0 +1,34 @@
+{
+  "id": "api-flow",
+  "title": "api-flow.md",
+  "content": "## Metadata_Start ## code: en ## title: API Flow ## slug: api-flow ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Blackthorn no longer supports Payments APIs.) The documentation provided is a self-help resource for legacy implementations only. ::: The typical API order of record creation is as follows: **REST API** 1. The first step in a typical custom payments flow is to get your customer's card data. You'll want to tokenize the card number for PCI compliance reasons. From your frontend use Stripe.js to do this. Here are some samples of what you can use. 2. Stripe.js will return a token. After you receive this token, you'll want to pass the token to your Salesforce Sites endpoint with the Blackthorn | Payments Apex class behind it. From the link in #1 above, the code reference is: ``` var endpoint = 'https://p360-dev8-developer-edition.na40.force.com/endpoint/services/apexrest/v1'; ``` ...replace the p360-dev8-developer-edition with your domain. 3. You'll likely then want to create your {{variable.Object_Transaction}} so you can charge the {{variable.Object_PaymentMethod}}. Follow the examples towards the bottom of this page to do so. Reference example #1 for additional context and/or an altered process on how to create a {{variable.Object_PaymentMethod}} + a {{variable.Object_PaymentGatewayCustomer}} before you'd create your Transaction. **Apex API** Currently, we support sending raw card data to {{variable.Product_Stripe}}, but we are deprecating this functionality soon. At the moment, passing a token to the Apex API is not supported, but will be supported soon (Q2 '18). For the time being, follow the 'Basic example' referenced here, but if you want to 'future proof' your integration, we'd suggest using our REST API for now.",
+  "keywords": [
+    "your",
+    "variable",
+    "want",
+    "token",
+    "flow",
+    "payments",
+    "card",
+    "endpoint",
+    "apex",
+    "create",
+    "code",
+    "blackthorn",
+    "typical",
+    "rest",
+    "data",
+    "from",
+    "stripe",
+    "here",
+    "reference",
+    "p360"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. The first step in a typical custom payments flow is to get your customer's card data",
+    "2. Stripe",
+    "3. You'll likely then want to create your {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "payments-deploy-production-spreedly-connect-test-mode",
+  "title": "payments-deploy-production-spreedly-connect-test-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Connect to Spreedly in Live Mode ## slug: payments-deploy-production-spreedly-connect-test-mode ## seoTitle: Connect to Spreedly in Live Mode ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Was the wrong object defined during the Relationship step?) 1. Navigate to Custom Settings from Setup. 2. Click **Manage** next to the Transaction parent custom setting. 3. Click **Remove** next to the object. 4. Navigate to the Transaction object and delete the lookup field to that object. ::: It's time to connect to your Payment Gateway through Spreedly! The setup process is the same as for test mode, but this time it’s in live mode. 1. Click on the App Launcher and type \"admin\". ![deploy_spreedly_connect_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_2.png){height=\"\" width=\"\"} 5. Click on \"Blackthorn | Payments (Admin)\". ![deploy_spreedly_connect_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_3.png){height=\"\" width=\"\"} 7. Click on \"Blackthorn | Payments Setup Wizard\". ![deploy_spreedly_connect_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_4.png){height=\"\" width=\"\"} 9. Watch the Overview Video then click **Let's get started**. ![deploy_spreedly_connect_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_5.png){height=\"\" width=\"\"} 11. Currently, you can't connect to Spreedly from the Setup Wizard. Please select the **Skip** button under the connect to gateway instructions. 12. If you plan to use ACH, select “Yes” and click **Make Magic Happen**. This will deploy the ACH record type for the {{variable.Object_PaymentMethod}} object. ![deploy_spreedly_connect_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_6.png){height=\"\" width=\"\"} 14. Permission Sets - Select \"No\" and click **Next**. You have already assigned permission sets. ![deploy_spreedly_connect_7](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_7.png){height=\"\" width=\"\"} 16. Relationship Settings - MOST IMPORTANT SETTING. When a business charges a customer in Salesforce, there is an object that represents what's being sold, typically Opportunity, Quote, or similar. By default, we associate Opportunities, Contacts, Accounts, and Invoices to Transactions. If you need to associate Transactions to a different object, please select that object from the drop-down. ![deploy_spreedly_connect_8](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_8.png){height=\"\" width=\"\"} 18. Watch the Virtual Terminal Overview video or click **Continue**. ![deploy_spreedly_connect_9](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_9.png){height=\"\" width=\"\"} 20. That’s it! Click **Show me my first transaction**, and you’ve completed the Payment Wizard. ![deploy_spreedly_connect_10](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/deploy_spreedly_connect_10.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "click",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "object",
+    "connect",
+    "spreedly",
+    "mode",
+    "setup",
+    "select",
+    "live",
+    "payments"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to Custom Settings from Setup",
+    "2. Click **Manage** next to the Transaction parent custom setting",
+    "3. Click **Remove** next to the object",
+    "4. Navigate to the Transaction object and delete the lookup field to that object",
+    "1. Click on the App Launcher and type \"admin\"",
+    "5. Click on \"Blackthorn | Payments (Admin)\"",
+    "7. Click on \"Blackthorn | Payments Setup Wizard\"",
+    "9. Watch the Overview Video then click **Let's get started**",
+    "11. Currently, you can't connect to Spreedly from the Setup Wizard",
+    "12. If you plan to use ACH, select “Yes” and click **Make Magic Happen**"
+  ],
+  "troubleshooting": []
+}

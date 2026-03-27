@@ -1,0 +1,30 @@
+{
+  "id": "mobile-pay-setup-field-service-lightning",
+  "title": "mobile-pay-setup-field-service-lightning.html",
+  "content": "Setup FSL and Blackthorn Payments Mobile FSL Extension Package Navigate to Setup &gt; Field Service Settings. Click Enable . &nbsp; Install the Field Service Managed Package If you haven't installed the Field Service Managed Packaged yet, click https://fsl.secure.force.com/install and follow the prompts to install the managed package in your org. You can install it on a production or sandbox org. Install the Blackthorn FSL Extension Package Prerequisite: To install the latest FSL Extension package, you must have Payments Version 5.31 or higher. Install the latest Blackthorn Payments Mobile FSL Extension Package . Configure the Transaction Object&nbsp; {{snippet.PT_FSLSetup_TransactionConfiguration}} Configure the Work Order Object&nbsp; {{snippet.PT_FSLSetup_WorkOrderConfiguration}} Assign Permission Sets {{snippet.PT_FSLSetup_AssignPermissionSets}} Add Field Service Permissions {{snippet.PT_FSLSetup_AddFieldServicePermissions}} Add Field Service Territory, Work Type, and Service Resource {{snippet.PT_FSLSetup_AddTerritoryWorkTypeServiceResource}}",
+  "keywords": [
+    "install",
+    "package",
+    "service",
+    "field",
+    "snippet",
+    "extension",
+    "blackthorn",
+    "payments",
+    "nbsp",
+    "managed",
+    "setup",
+    "mobile",
+    "click",
+    "latest",
+    "configure",
+    "object",
+    "work",
+    "navigate",
+    "settings",
+    "enable"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

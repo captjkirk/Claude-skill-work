@@ -1,0 +1,30 @@
+{
+  "id": "configure-default-and-excluded-phone-fields-by-object",
+  "title": "configure-default-and-excluded-phone-fields-by-object.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Default and Excluded Phone Fields by Object ## slug: configure-default-and-excluded-phone-fields-by-object ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When sending text messages from a record you can now configure which phone fields are displayed in the To drop-down in the Messenger. Sometimes you'll want to default a certain field and even exclude some fields from showing up. ![Configure Default and Excluded Phone Fields by Object](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Configure%20Default%20and%20Excluded%20Phone%20Fields%20by%20Object.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "configure",
+    "fields",
+    "default",
+    "phone",
+    "excluded",
+    "object",
+    "from",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "when",
+    "sending",
+    "text",
+    "messages"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

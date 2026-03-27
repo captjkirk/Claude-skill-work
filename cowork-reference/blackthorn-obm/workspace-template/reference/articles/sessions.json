@@ -1,0 +1,41 @@
+{
+  "id": "sessions",
+  "title": "sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Sessions ## slug: sessions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The {{variable.Object_Session}} page defines any {{variable.Object_Session}}s you would like added to your {{variable.Object_Event}}. Define the {{variable.Field_Session_SessionName}}, {{variable.Field_Session_Description}}, {{variable.Field_Session_Banner}}, and the {{variable.Field_Session_StartDate}} and {{variable.Field_Session_EndDate}}. Any {{variable.Object_Speaker}}s that you created in the previous step can be added to the {{variable.Object_Session}} by clicking their name. :::(Warning) (**Session Name vs Display Name**) The {{variable.Field_ETSession_DisplayName}} field on Sessions overrides the {{variable.Field_Session_SessionName}} field on the front end. ::: ![Event Wizard Sessions 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Wizard%20Sessions%201.png){height=\"\" width=\"\"} :::(Warning) (Limitation) Sessions cannot be made mandatory out of the box. ::: ## Update Existing Sessions A {{variable.Object_Session}}’s start and end dates must always fall within an Event’s start and end dates. To update a {{variable.Object_Session}}’s {{variable.Field_Session_StartDate}} and/or {{variable.Field_Session_EndDate}} in the {{variable.Component_EventWizard}}, complete the following steps. 1. Update the {{variable.Field_ETEvent_EventEndDate}} to the same date as the new {{variable.Object_Session}} {{variable.Field_Session_EndDate}}. 2. Click the **> next arrow** until you land on the Sessions page. 3. Click edit on the {{variable.Object_Session}} you need to update. 4. Enter the new {{variable.Object_Session}} {{variable.Field_Session_StartDate}} and/or {{variable.Field_Session_EndDate}}. 5. Click **Save & Close**. 6. If the {{variable.Field_ETEvent_EventStartDate}} also needs to be updated, enter the new date now. 7. Click {{variable.Button_Save}}. 8. If your {{variable.Object_Event}} was already published, go to the {{variable.Object_Event}} record, and click {{variable.Button_Events_Update}}. ### Example | **Fields** | **Original Dates** | **New Dates** | | --- | --- | --- | | Event Start Date | Oct 4, 2026 | Oct 4, 2026 | | Event End Date | Oct 5, 2026 | Oct 4, 2026 | | Session Start Date | Oct 5, 2026 | Oct 4, 2026 | | Session End Date | Oct 5, 2026 | Oct 4, 2026 | 1. Change the {{variable.Field_ETEvent_EventEndDate}} to \"Oct 4, 2026\". 2. Click the **> next arrow** until you land on the Sessions page. 3. Click edit on the {{variable.Object_Session}} you need to update. 4. Change the {{variable.Object_Session}} {{variable.Field_Session_StartDate}} to \"Oct 4, 2026\". 5. Change the {{variable.Object_Session}} {{variable.Field_Session_EndDate}} = \"Oct 4, 2026\". 6. Click **Save & Close**. 9. Click {{variable.Button_Save}}. 10. If your {{variable.Object_Event}} was already published, go to the {{variable.Object_Event}} record, and click {{variable.Button_Events_Update}}. ## Enhancements Users can only add a {{variable.Object_Session}} to a {{variable.Picklist_EventItem_Ticket}} once; however, once a {{variable.Object_Session}} has been added, users can duplicate that {{variable.Object_Session}} from the “Sessions Table” on the Offers page. The default sort for the added {{variable.Object_Session}}s is alphabetical, and all text will be aligned to the left and justified. :::(Info) () To include previously created {{variable.Object_Session}} in {{variable.Task_Checkout}}, those {{variable.Object_Session}} must be associated with {{variable.Object_EventItem}}s. ::: ### Event Admins A new fieldset has been added to edit custom fields if different fields need to be displayed. The custom fields are displayed in the {{variable.Object_Session}} block of {{variable.Picklist_EventItem_Ticket}}s. ### Event Managers The following tasks can be performed on the Edit {{variable.Picklist_EventItem_Ticket}} screen: * Add single or bulk groups of previously created {{variable.Object_Session}}s to {{variable.Picklist_EventItem_Ticket}}s and sort by the {{variable.Field_ETSession_StartDate}}. * Modify {{variable.Object_Session}} fields and details within the Sessions’ block of the Ticket view. * Add a {{variable.Field_Session_Price}} to a {{variable.Object_Session}} or mark the {{variable.Object_Session}} as {{variable.Field_ETWizardSession_Free}} in order to share the cost of a {{variable.Object_Session}} with registrants. Use the {{variable.Component_EventWizard}} to complete the following tasks: * Search all previously created {{variable.Object_Session}}s and choose which {{variable.Object_Session}} should be added to a {{variable.Picklist_EventItem_Ticket}}. * Use the Tickets section to view the number of {{variable.Object_Session}}s in each {{variable.Picklist_EventItem_Ticket}} without having to first edit the {{variable.Picklist_EventItem_Ticket}}. ### Sorting Sessions {{snippet.EV_Sessions_SortingSessions}}",
+  "keywords": [
+    "variable",
+    "object_session",
+    "sessions",
+    "2026",
+    "click",
+    "event",
+    "picklist_eventitem_ticket",
+    "added",
+    "date",
+    "object_event",
+    "field_session_enddate",
+    "update",
+    "edit",
+    "fields",
+    "page",
+    "field_session_startdate",
+    "created",
+    "start",
+    "dates",
+    "your"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Update the {{variable",
+    "2. Click the **> next arrow** until you land on the Sessions page",
+    "3. Click edit on the {{variable",
+    "4. Enter the new {{variable",
+    "5. Click **Save & Close**",
+    "6. If the {{variable",
+    "7. Click {{variable",
+    "8. If your {{variable",
+    "1. Change the {{variable",
+    "2. Click the **> next arrow** until you land on the Sessions page"
+  ],
+  "troubleshooting": []
+}

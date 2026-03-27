@@ -1,0 +1,41 @@
+{
+  "id": "event-images",
+  "title": "event-images.md",
+  "content": "## Metadata_Start ## code: en ## title: Images ## slug: event-images ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Sizing Specifications To get the best {{glossary.user experience}} on your {{variable.Object_Event}} pages, we recommend using the following sizing specification for your images. If you are not using the following ratios, the images may be distorted. * {{variable.Object_Event}} {{variable.Field_ETEvent_ImageURL}}: 820px x 410px (ratio 2:1) * {{variable.AttendeeLink}} image: 820px x 410px (ratio 2:1) * {{variable.Object_Session}} {{variable.Field_Session_ImageURL}}: 810px x 250px (ratio 3:1) * {{variable.Object_Speaker}} {{variable.Field_Speaker_ImageURL}}: 128px x 128px (ratio 1:1) * {{variable.Object_Attendee}}'s avatar image: 128px x 128px (ratio 1:1) * {{variable.Object_Sponsor}} {{variable.Field_Sponsor_ImageURL}}: 320px x 128px (ratio 2.5:1) * {{variable.Object_EventGroup}} {{variable.Field_ETGroup_LogoURL}}: 185.25px x 92.63px (ratio 2:1) ## Image Sources :::(Warning) (Important: URL links need to be HTTPS, not HTTP.) ::: There are two kinds of images you may set in {{variable.Object_Event}}s (Salesforce). * Images in string fields * Images in rich text fields ![Image Sources](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Image%20Sources.png){height=\"\" width=\"\"} ### Public images You can always use a public image from third parties if they allow you to use the images out of their platform, such as Imgur. Review the steps below for each type of {{variable.Product_Salesforce}} {{glossary.user interface (UI)}}. #### Classic User Interface (UI) 1. Paste the public image URL into a string field directly. 2. Use the public image URL in a rich text field, like this: ![Public Images](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Public%20Images.png){height=\"\" width=\"\"} #### Lightning User Interface (UI) 1. Paste the public image URL into a string field directly. 2. Unfortunately, the Lightning UI doesn't provide a way to use a third party image URL in rich text fields. ### Upload Images from Salesforce Files Blackthorn recommends using Salesforce Files to upload images. Complete the steps below to store a file in {{variable.Product_Salesforce}}. 1. Save the image to your desktop. 2. Navigate to Files in {{variable.Product_Salesforce}}. ![CustomCSS_UploadFiles_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_1.png){height=\"\" width=\"\"} 4. Click **Upload Files** to upload the image to Files. 5. Select the uploaded file and click Public Link at the top of the page. ![CustomCSS_UploadFiles_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_2.png){height=\"\" width=\"\"} 7. Make sure the {{variable.SF_File_ExpirationDate}} and {{variable.SF_File_Password}} are toggled “Off” and click **Create Link**. ![CustomCSS_UploadFiles_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_3.png){height=\"\" width=\"\"} 9. Click **Copy Link** to copy the generated link. 10. Open the URL in a new browser and click **Download**. ![CustomCSS_UploadFiles_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_4.png){height=\"\" width=\"\"} 12. Navigate to all downloads and find the image file. 13. Copy the URL (downloaded file). You may need to right-click the file and click **Copy Link Address**. 14. Go to the record where you want to add the image. 15. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_EventItem_ImageURL}} or {{variable.Field_ETGroup_LogoURL}} field. 16. Paste the copied URL in the {{variable.Field_EventItem_ImageURL}} or {{variable.Field_ETGroup_LogoURL}} field. 17. Click {{variable.Button_Save}}. 18. Go to the related {{variable.Object_Event}} record. 19. Click {{variable.Button_Events_Update}}. ## FAQ Q: Do you support image versioning? A: At this time, we do not. When inserting a new URL, please ensure it is a unique URL. This will allow the image to update properly on the {{variable.Object_Event}}. Q: Are there any size or file type limitations? A: Yes. * Size of 100 MBs * Files formats supported include: .docx, .pdf, .ppt, .pptx, .xls, and .xlsx * Image files supported include: .gif, .jpg, and .png",
+  "keywords": [
+    "variable",
+    "images",
+    "image",
+    "click",
+    "public",
+    "ratio",
+    "https",
+    "files",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "documentation",
+    "height",
+    "width",
+    "file",
+    "object_event",
+    "128px"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Paste the public image URL into a string field directly",
+    "2. Use the public image URL in a rich text field, like this: ![Public Images](https://cdn",
+    "1. Paste the public image URL into a string field directly",
+    "2. Unfortunately, the Lightning UI doesn't provide a way to use a third party image URL in rich text fields",
+    "1. Save the image to your desktop",
+    "2. Navigate to Files in {{variable",
+    "4. Click **Upload Files** to upload the image to Files",
+    "5. Select the uploaded file and click Public Link at the top of the page",
+    "7. Make sure the {{variable",
+    "9. Click **Copy Link** to copy the generated link"
+  ],
+  "troubleshooting": []
+}

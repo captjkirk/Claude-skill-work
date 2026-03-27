@@ -1,0 +1,41 @@
+{
+  "id": "write-off-allocations-scenarios",
+  "title": "write-off-allocations-scenarios.md",
+  "content": "## Metadata_Start ## code: en ## title: Scenarios ## slug: write-off-allocations-scenarios ## seoTitle: Scenarios ## description: ## contentType: Markdown ## Metadata_End ## When the write off is less than the full balance of single Line Item 1. Create an {{variable.Object_Invoice}} with a {{variable.Object_LineItem}}. 2. Manually create a write-off {{variable.Object_Transaction}} for an amount less than the {{variable.Field_Invoice_BalanceDue}}. 3. Verify that an {{variable.Object_Allocation}} with {{variable.Field_Allocation_Type}} = \"Write Off\" was created. 1. The {{variable.Field_Allocation_LineItem}}, {{variable.Field_Allocation_Invoice}}, and {{variable.Field_Allocation_Transaction}} lookups should be populated. 2. The {{variable.Field_Allocation_Amount}} should equal the {{variable.Field_Invoice_WriteOffAmount}}. When a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” is created manually for an {{variable.Field_Transaction_Amount}} that is less than the {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}}, then the {{variable.Object_Allocation}}’s {{variable.Field_Allocation_LineItem}}, {{variable.Field_Allocation_Invoice}}, and {{variable.Field_Allocation_Transaction}} lookups will be populated, and the {{variable.Object_Allocation}} {{variable.Field_Allocation_Amount}} will be equal to the {{variable.Object_Transaction}}'s ({{variable.Field_Transaction_TransactType}} = “Write Off”) {{variable.Field_Transaction_Amount}}. ## When the write off is less than full balance of multiple Line Items 1. Create an {{variable.Object_Invoice}} with multiple {{variable.Object_LineItem}}s. 2. Manually create a write-off {{variable.Object_Transaction}} for an amount more than the {{variable.Field_LineItem_BalanceDue}} on line 1 but less than the total Invoice's {{variable.Field_Invoice_BalanceDue}}. 3. Verify that an {{variable.Object_Allocation}} with {{variable.Field_Allocation_Type}} = \"Write Off\" was created. 1. The {{variable.Field_Allocation_LineItem}}, {{variable.Field_Allocation_Invoice}}, and {{variable.Field_Allocation_Transaction}} lookups should be populated. 2. The first {{variable.Object_Allocation}} should equal the full {{variable.Field_LineItem_BalanceDue}} for line 1. 3. The second {{variable.Object_Allocation}} should be for the remainder of the {{variable.Field_Invoice_WriteOffAmount}}. When a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” is created manually for an {{variable.Field_Transaction_Amount}} that is less than the Invoice’s {{variable.Field_Invoice_BalanceDue}}, then the {{variable.Object_Allocation}}’s {{variable.Field_Allocation_LineItem}}, {{variable.Field_Allocation_Invoice}}, and {{variable.Field_Allocation_Transaction}} lookups will be populated. The first {{variable.Object_Allocation}} {{variable.Field_Allocation_Amount}} will be equal to the first {{variable.Object_LineItem}}’s {{variable.Field_LineItem_BalanceDue}}. The second {{variable.Object_Allocation}} {{variable.Field_Allocation_Amount}} will include the remainder of the write-off Transaction {{variable.Field_Transaction_Amount}}. ## When the write-off balance is part of a partially paid Invoice 1. Create an {{variable.Object_Invoice}} with one or more {{variable.Object_LineItem}}s. 2. Process a partial payment for less than the {{variable.Object_Invoice}}'s {{variable.Field_Invoice_BalanceDue}}. 3. Create a write-off {{variable.Object_Transaction}} for the remaining balance on the {{variable.Object_Invoice}}. 4. Verify that {{variable.Object_Allocation}}s with {{variable.Field_Allocation_Type}} = \"Write Off\" was created correctly based on the {{variable.Object_LineItem}}s you created. The {{variable.Object_Allocation}} should be applied only to lines with a {{variable.Field_LineItem_BalanceDue}}. When a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” is created manually for a partially paid {{variable.Object_Invoice}} with multiple {{variable.Object_LineItem}}s, the write-off {{variable.Object_Allocation}}s will only be applied to the {{variable.Object_LineItem}}(s) with a {{variable.Field_LineItem_BalanceDue}}. The {{variable.Object_Allocation}}’s {{variable.Field_Allocation_LineItem}}, {{variable.Field_Allocation_Invoice}}, and {{variable.Field_Allocation_Transaction}} look-up fields will also be populated.",
+  "keywords": [
+    "variable",
+    "write",
+    "object_allocation",
+    "than",
+    "less",
+    "object_invoice",
+    "object_lineitem",
+    "object_transaction",
+    "created",
+    "when",
+    "create",
+    "manually",
+    "field_invoice_balancedue",
+    "field_allocation_lineitem",
+    "field_allocation_invoice",
+    "field_allocation_transaction",
+    "populated",
+    "field_lineitem_balancedue",
+    "balance",
+    "line"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create an {{variable",
+    "2. Manually create a write-off {{variable",
+    "3. Verify that an {{variable",
+    "1. The {{variable",
+    "2. The {{variable",
+    "1. Create an {{variable",
+    "2. Manually create a write-off {{variable",
+    "3. Verify that an {{variable",
+    "1. The {{variable",
+    "2. The first {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "initial-setup-event-wizard",
+  "title": "initial-setup-event-wizard.md",
+  "content": "## Metadata_Start ## code: en ## title: Initial Setup ## slug: initial-setup-event-wizard ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Please Read) We will no longer be adding new functionality to the Wizard. Please use the [Event Builder](https://docs.blackthorn.io/docs/welcome-event-builder); it’s the future of Blackthorn Events. ::: The {{variable.Component_EventWizard}} was created to simply create and launch a professional registration presence for any {{variable.Object_Event}} with little time and effort. ![Initial Setup 1 new pic](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Initial%20Setup%201%20new%20pic.png){height=\"\" width=\"\"} ## Required Permissions *We recommend using the {{variable.PS_ET_Admin}} or the {{variable.PS_ET_Organizer}} permission set. If you cannot assign either of these permission sets to users, please make sure users have Create, Read, and Edit access to the following objects and all related fields in the objects.* * Event * Event Settings * Recurring Event * Webinar Account * Payment Gateway * Forms * Speaker * Session Speaker * Sessions * Attendee * ContentVersion(Files) * Read access to the Blackthorn Event Wizard tab in Object settings *Read Access to the following:* * Contact * Account * Lead * Reports *Apex Class Access to the following:* * EventWizardController *Ensure Email Deliverability is accessible for your users (for the \"Give Feedback\" button):* * In Lightning Experience: Setup | Administration | Email | Deliverability, verify access level is set to 'All emails' * 'Respect SendEmail API' and 'SendEmail API.' ## Additional Configuration * The {{variable.Component_EventWizard}} can be launched from the App Launcher. If you want to make updates to an existing {{variable.Object_Event}} through the {{variable.Component_EventWizard}}, please add the **Wizard** button to the {{variable.Object_Event}} page layout. * Duplicate Attendee records created via the Event Wizard cannot be blocked at the package level via the BT Event Attendee Duplicate Rule. To stop duplicate Attendee records from being created, users must perform one of the following tasks. * To prevent duplicate Attendee records from being created, users can set {{variable.Field_ETSetting_1UniqAttEmail}} = “True” on the Event Settings. * Update the [BT Event Attendee Duplicate Rule](https://docs.blackthorn.io/docs/matching-in-salesforce#event-settings-and-matching){target=`_blank`} to block duplicate Attendee records from being created via the Event Wizard. This logic will ONLY be applied to the Event Wizard logic in your org. If you are unable to make a new record and need to, please contact your administrator for additional permissions.",
+  "keywords": [
+    "event",
+    "variable",
+    "wizard",
+    "attendee",
+    "duplicate",
+    "please",
+    "created",
+    "users",
+    "access",
+    "initial",
+    "setup",
+    "read",
+    "docs",
+    "blackthorn",
+    "following",
+    "settings",
+    "from",
+    "records",
+    "https",
+    "component_eventwizard"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * Event * Event Settings * Recurring Event * Webinar Account * Payment Gateway * Forms * Speaker * Session Speaker * Sessions * Attendee * ContentVersion(Files) * Read access to the Blackthorn Event Wizard tab in Object settings *Read Access to the following:* * Contact * Account * Lead * Reports *Apex Class Access to the following:* * EventWizardController *Ensure Email Deliverability is accessible for your users (for the \"Give Feedback\" button):* * In Lightning Experience: Setup"
+  ],
+  "troubleshooting": []
+}

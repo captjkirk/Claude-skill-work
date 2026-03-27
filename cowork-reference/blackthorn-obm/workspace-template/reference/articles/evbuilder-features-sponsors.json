@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-features-sponsors",
+  "title": "evbuilder-features-sponsors.md",
+  "content": "## Metadata_Start ## code: en ## title: Sponsors ## slug: evbuilder-features-sponsors ## seoTitle: Sponsors ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Sponsors_FeaturesCreate}} On the Sponsor’s Detail Page, a user can edit a Sponsor card by clicking the {{variable.Button_Pencil}} icon or delete a Sponsor card by clicking the {{variable.Button_WasteBin}} icon.",
+  "keywords": [
+    "sponsors",
+    "sponsor",
+    "card",
+    "clicking",
+    "variable",
+    "icon",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "evbuilder_sponsors_featurescreate",
+    "detail"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

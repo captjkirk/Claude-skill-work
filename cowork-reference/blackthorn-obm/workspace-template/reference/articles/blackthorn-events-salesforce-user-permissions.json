@@ -1,0 +1,35 @@
+{
+  "id": "blackthorn-events-salesforce-user-permissions",
+  "title": "blackthorn-events-salesforce-user-permissions.md",
+  "content": "## Metadata_Start ## code: en ## title: Permissions - Restricting Event Visibility ## slug: blackthorn-events-salesforce-user-permissions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End To limit Salesforce user visibility of {{variable.Object_Event}}s to only the organizer and select users: 1. In Setup, navigate to Sharing Settings. 2. Edit Sharing Settings and set {{variable.Object_Event}}s to \"Private\". Users of the organizer's Mobile Check-in App will then only see {{variable.Object_Event}}s they have access to within Salesforce. The Owner of the {{variable.Object_Event}} will have access and each {{variable.Object_Event}} record will follow standard Salesforce sharing controls. **NOTE:** If you set \"Grant Access Using Hierarchies\", you can update your hierarchies by searching for Roles within setup. [https://help.salesforce.com/articleView?id=admin_roles.htm&type=5](https://help.salesforce.com/articleView?id=admin_roles.htm&type=5){target=\"_blank\"} 3. Add the **Sharing** button onto the {{variable.Object_Event}} page layout to share individual {{variable.Object_Event}}s. :::(Warning) (Setting Object Visibility) The Blackthorn Events app utilizes Lookup relationships, so each object you wish to restrict visibility for must be set to private in this way. Other objects to highlight: * Attendees * Sessions * Session Attendee * Invoice :::",
+  "keywords": [
+    "variable",
+    "object_event",
+    "salesforce",
+    "visibility",
+    "sharing",
+    "access",
+    "permissions",
+    "blackthorn",
+    "events",
+    "user",
+    "only",
+    "organizer",
+    "users",
+    "setup",
+    "settings",
+    "private",
+    "within",
+    "each",
+    "hierarchies",
+    "https"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. In Setup, navigate to Sharing Settings",
+    "2. Edit Sharing Settings and set {{variable",
+    "3. Add the **Sharing** button onto the {{variable",
+    "* If you set \"Grant Access Using Hierarchies\", you can update your hierarchies by searching for Roles within setup"
+  ],
+  "troubleshooting": []
+}

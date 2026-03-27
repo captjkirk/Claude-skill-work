@@ -1,0 +1,38 @@
+{
+  "id": "communities-billing-portal",
+  "title": "communities-billing-portal.md",
+  "content": "## Metadata_Start ## code: en ## title: Communities & Billing Portal ## slug: communities-billing-portal ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Have you considered using the new BT Payments LWC Virtual Terminal?) Use the {{variable.Component_BTLWCVirtualTerminal}} on a publicly accessible Lightning Experience Cloud page. Guest users can access publicly available pages without any licensing or authentication. They can also create up to 100 sites for free without buying community licenses. ::: Blackthorn {{variable.Product_Payments}} works within Communities and is often used as a Billing Portal. ![H_02_02 communities billing portal 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_02%20communities%20billing%20portal%201.png){height=\"\" width=\"\"} To set up the {{variable.Product_Payments}} app to work in Communities or to have the {{variable.Component_BTPayVirtualTerminal}} show in Communities, complete the following steps: 1. Set up a [Payment Gateway](https://docs.blackthorn.io/docs/payment-gateway-setup-instructions){target=`_blank`}, if you haven't already done so. 2. You many also need to create the following records: {{variable.Object_PaymentGatewayCustomer}}, {{variable.Object_Account}}/{{variable.Object_Contact}}/{{variable.Object_Opportunity}}, and {{variable.Object_PaymentMethod}}. 3. Expose {{variable.Object_Invoice}}s or a different object to represent what the customer is paying for. The {{variable.Object_Invoice}} {{variable.Field_PTInvoice_RecordType}} can be set to Order or Invoice. You can also have an object(s) for Invoice, Order, Case, or other. If other, set the Transaction Parent as this object in the Setup Wizard (Payments Admin App has the tab). 4. Add the {{variable.Component_BTPayVirtualTerminal}} Visualforce component to the layout. The {{variable.Component_BTPayVirtualTerminal}} Visualforce component works in Classic and Lightning. It uses the Lightning Design System and functions as a Lightning Component does. See our {{variable.Component_BTPayVirtualTerminal}} [documentation](/v1/docs/vt-setup){target=`_blank`} for instructions to add it to your layout. 5. Enable the correct Audience to view the {{variable.Component_BTPayVirtualTerminal}}. In the top right after adding the Visualforce page, assign the Audience and see the screen shot below for where to click. ![H_02_02 communities billing portal 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_02%20communities%20billing%20portal%202.png){height=\"\" width=\"\"} 5. Add the {{variable.PS_PT_CommunityPlatformUser}} permission set to the Communities User. (Setup > Users > Any Communities User > Assign the Permission Set). For large Communities, [auto-assign the Permission Set](https://automationchampion.com/learning-flow/) to new users. Blackthorn also offers a Site-wide License so individual user licenses do not need to be assigned, and can advise on company-wide profile-based permissions to assign for all Community Users. 6. Set applicable fields to read-only and pre-populate fields such as {{variable.Field_VT_Amount}}, {{variable.Field_VT_Currency}}, {{variable.Field_VT_Description}}, {{variable.Field_VT_RelatedTo}}, or any custom fields to the desired value. See the {{variable.Component_VirtualTerminal}} [documentation](/v1/docs/vt-overview){target=`_blank`} for instructions.",
+  "keywords": [
+    "variable",
+    "communities",
+    "billing",
+    "portal",
+    "component_btpayvirtualterminal",
+    "lightning",
+    "users",
+    "also",
+    "h_02_02",
+    "https",
+    "documentation",
+    "docs",
+    "setup",
+    "assign",
+    "blackthorn",
+    "instructions",
+    "target",
+    "_blank",
+    "object",
+    "visualforce"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Set up a [Payment Gateway](https://docs",
+    "2. You many also need to create the following records: {{variable",
+    "3. Expose {{variable",
+    "4. Add the {{variable",
+    "5. Enable the correct Audience to view the {{variable",
+    "5. Add the {{variable",
+    "6. Set applicable fields to read-only and pre-populate fields such as {{variable"
+  ],
+  "troubleshooting": []
+}

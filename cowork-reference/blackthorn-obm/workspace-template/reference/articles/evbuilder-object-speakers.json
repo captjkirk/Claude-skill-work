@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-object-speakers",
+  "title": "evbuilder-object-speakers.md",
+  "content": "## Metadata_Start ## code: en ## title: Speakers ## slug: evbuilder-object-speakers ## seoTitle: Speakers ## description: ## contentType: Markdown ## Metadata_End The following updates were made to the {{variable.Object_Speaker}} object. ## New Fields ### Speaker Object * {{variable.Field_Speaker_Salutation}} * {{variable.Field_Speaker_FeaturedSpeaker}} * {{variable.Field_Speaker_Instagram}} * {{variable.Field_Speaker_LinkedIn}} * {{variable.Field_Speaker_Twitter}} ### Contact Object * {{variable.Field_Contact_Website}} * {{variable.Field_Contact_Twitter}} * {{variable.Field_Contact_Instagram}} * {{variable.Field_Contact_LinkedIn}} ## Field Mapping The field mapping between the Speaker and Contact objects is as follows. | **Source Field** | **Target Field** | | --- | --- | | Contact Image URL | Speaker Image URL | | Contact Bio | Speaker Bio | | Contact Salutation | Speaker Salutation | | Contact First Name | Speaker First Name | | Contact Last Name | Speaker Last Name | | Contact Title | Speaker Title | | Contact Email | Speaker Email | | Contact Phone | Speaker Phone | | Contact Account | Speaker Account | ### General Info * Use the {{variable.Field_Speaker_Contact}} lookup field to populate the {{variable.Object_Speaker}} record with the {{variable.Object_Contact}} record’s data. The {{variable.Object_Speaker}} record will include the {{variable.Field_Speaker_ImageURL}} and {{variable.Field_Speaker_AltTextVisualImp}}. * Note: Images uploaded via the Event Builder will only be added to the {{variable.Object_Speaker}} record. If there is an existing, related {{variable.Object_Contact}} record, the {{variable.Object_Speaker}} {{variable.Field_Speaker_ImageURL}} and {{variable.Field_Speaker_AltTextVisualImp}} must be added manually to the existing {{variable.Object_Contact}} record. * A Speaker card includes the {{variable.Object_Speaker}}’s photo ({{variable.Field_Speaker_ImageURL}}), full name ({{variable.Field_Speaker_FirstName}}, {{variable.Field_Speaker_LastName}}), and title ({{variable.Field_Speaker_Title}}). * {{variable.Object_Speaker}}s are ordered by Featured and then the {{variable.Object_Speaker}}'s full name. * Deleting a {{variable.Object_Speaker}} from an {{variable.Object_Event}} or {{variable.Object_Session}} only removes the {{variable.Object_Speaker}} from the {{variable.Object_Event}}. It does not delete the record from your org.",
+  "keywords": [
+    "variable",
+    "speaker",
+    "contact",
+    "object_speaker",
+    "record",
+    "name",
+    "field",
+    "title",
+    "object",
+    "speakers",
+    "object_contact",
+    "field_speaker_imageurl",
+    "from",
+    "mapping",
+    "image",
+    "salutation",
+    "first",
+    "last",
+    "email",
+    "phone"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

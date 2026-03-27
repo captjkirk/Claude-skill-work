@@ -1,0 +1,35 @@
+{
+  "id": "use-the-process-builder-to-send-an-automated-text-message",
+  "title": "use-the-process-builder-to-send-an-automated-text-message.md",
+  "content": "## Metadata_Start ## code: en ## title: Use the Process Builder to Send an Automated Text Message ## slug: use-the-process-builder-to-send-an-automated-text-message ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Watch this video tutorial on using Blackthorn Messaging's invocable apex action in the Process Builder to send an automated text message. The Messaging managed package includes an invocable Apex action that sends an outbound text message. Invocable Apex can be used within your Process Builder and Flows. When setting up a process in the Process Builder, at the point in your process where you want to send the text message, do the following: 1. Click **Add Action**. 2. Select Apex. 3. Name your action. 4. Select \"Send Messaging Message\" from the `Apex Class` field. ## Required Fields You will then be prompted with four required fields: * **From Phone:** the phone number that the text message will be sent from. This must be one of your text-enabled phone numbers provisioned through Messaging. * **To Phone:** the recipient's phone number. * **Parent Id:** the Id of the record to relate the SMS Message record to. The Parent Id record will also be used to gather any merge data referenced in a template. For example, if you are sending a text to a Lead and using a template that merges data from that Lead, then you would put the Lead Id into this field. * **Owner Id:** the Id of a Salesforce user or queue that will own the SMS Message record. ## Additional Fields * **Template Code:** when using an SMS Template for your outbound text message, enter the template code into this field. To find the code, go to the SMS Template that you want to use and copy the value from the Code field. It will look something like this \"Lead-1234\". * **Message:** if you do not want to use a template you can enter the wording for your text directly into this value. * **Timezone Id:** if you have a template that merges in a date/time field, you can set the time zone that the date/time is converted to. If you do not set at TimeZone Id then your template will display the date/time in GMT. For example, if you want to convert to Eastern Daylight Time you would enter America/New_York. See here for a list of supported time zones - [Supported Time Zones](https://help.salesforce.com/s/articleView?id=sf.admin_supported_timezone.htm&type=5){target=\"_blank\"} * **Additional Parent Field Name:** you can relate the SMS Message record to a second record. Enter the name of the field on the SMS Message object that you want to populate. For example, if you are sending a text message to a Contact but want to also relate the SMS Message to the Account, you can populate this field with a value of simplesmsAccountc. This is the API name of the Account lookup field on the SMS Message object. * **Additional Parent Id:** this is used in conjunction with the Additional Parent Field Name. Enter the Id of the record that you want to relate the SMS Message to. Using our example from above, you would create a field reference to [Contact].AccountId to input relate the SMS Message to the Contact's Account. The `Template Code` and `Message` fields are mutually exclusive. You should only populate one of them, not both. If both are populated then the `Template Code` will take precedent.",
+  "keywords": [
+    "message",
+    "text",
+    "field",
+    "template",
+    "code",
+    "process",
+    "your",
+    "want",
+    "record",
+    "time",
+    "from",
+    "builder",
+    "send",
+    "apex",
+    "name",
+    "phone",
+    "parent",
+    "relate",
+    "enter",
+    "using"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Click **Add Action**",
+    "2. Select Apex",
+    "3. Name your action",
+    "4. Select \"Send Messaging Message\" from the `Apex Class` field"
+  ],
+  "troubleshooting": []
+}

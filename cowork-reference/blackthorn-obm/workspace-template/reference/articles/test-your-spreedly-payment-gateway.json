@@ -1,0 +1,30 @@
+{
+  "id": "test-your-spreedly-payment-gateway",
+  "title": "test-your-spreedly-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Test Your Spreedly Payment Gateway ## slug: test-your-spreedly-payment-gateway ## seoTitle: Test Your Spreedly Payment Gateway ## description: ## contentType: Markdown ## Metadata_End {{snippet.PGSetup_TestSpreedly_Intro}} ## Test Spreedly Card {{snippet.PGSetup_TestSpreedly_Card}} {{snippet.Spreedly_ACH_Limitation}} ## Test Spreedly ACH Bank Account {{snippet.PGSetup_TestSpreedly_ACHAcct}} ## Next Steps * Review [optional add-ons](/v1/docs/add-ons). * Learn about [Entity Relationship Diagrams](/v1/docs/entity-relationship-diagram).",
+  "keywords": [
+    "test",
+    "spreedly",
+    "snippet",
+    "your",
+    "payment",
+    "gateway",
+    "docs",
+    "entity",
+    "relationship",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "pgsetup_testspreedly_intro",
+    "card"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

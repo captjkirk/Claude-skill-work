@@ -1,0 +1,30 @@
+{
+  "id": "payments-move-historical-data-start-here",
+  "title": "payments-move-historical-data-start-here.md",
+  "content": "## Metadata_Start ## code: en ## title: Start Here ## slug: payments-move-historical-data-start-here ## seoTitle: Start Here ## description: ## contentType: Markdown ## Metadata_End If you need to move any historical data from your current gateway or different objects, into Blackthorn Objects - look no further. * Stripe * Authorize.net * Dataload Historical Transactions into Blackthorn",
+  "keywords": [
+    "start",
+    "here",
+    "historical",
+    "move",
+    "data",
+    "objects",
+    "into",
+    "blackthorn",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "need",
+    "from"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "payments-configure-paylink",
+  "title": "payments-configure-paylink.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure PayLink ## slug: payments-configure-paylink ## seoTitle: Configure PayLink ## description: ## contentType: Markdown ## Metadata_End Follow the steps below to configure {{variable.Product_PayLink}}. 1. Navigate to the Blackthorn {{variable.Product_PayLink}} app. 2. Click the PayLink Configuration tab. 3. Click {{variable.button_new}}. 4. Enter the {{variable.Field_PLConfig_Name}} (required). 5. Add information to additional fields, as needed. 6. Add the {{variable.Field_PLConfig_AcceptLanguage}}, if using. 7. Add the {{variable.Field_PLConfig_TermsConditions}} URL, if using. 8. Click {{variable.Button_Save}}. ## Acceptance Language and Terms & Conditions Functionality :::(Warning) (Pre-requisite) The {{variable.Field_PLConfig_AcceptLanguage}} field must be filled. ::: If the {{variable.Field_PLConfig_AcceptLanguage}} field has a value, the following will occur. * A checkbox will appear on the PayLink checkout. * The text entered in the {{variable.Field_PLConfig_AcceptLanguage}} field will be the checkbox label. ![Yes Checkbox_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Yes%20Checkbox_2.png){height=\"\" width=\"\"} If the {{variable.Field_PLConfig_AcceptLanguage}} field has a value AND the {{variable.Field_PLConfig_TermsConditions}} field contains a URL, then the checkbox label will be hyperlinked with the URL. *BUT* if the {{variable.Field_PLConfig_AcceptLanguage}} field is empty, the checkbox and the accompanying hyperlinked text *WILL NOT* be visible. ![No Checkbox_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/No%20Checkbox_1.png){height=\"\" width=\"\"} * * * ![No Checkbox_2\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/No%20Checkbox_2%281%29.png){height=\"\" width=\"\"} ## Image Size Considerations When using the {{variable.Field_PLConfig_BackgrdImageURL}} field to add a background image to PayLink, consider the following. * We recommend using an image file no larger than 1MB. * The image you use will cover the whole page. * All images have a certain ratio (height and width). You may need to adjust your image outside of Salesforce based on the viewport of the devices being used. * If your image includes text, make sure it won’t be cropped on different devices (desktop, tablet, or mobile). You may need to edit your image outside of Salesforce to reorient the text. ## Additional Configuration We've added a few fields that allow users to further customize their PayLink. The following fields can be added to the {{variable.Object_PayLinkConfiguration}} object's page layout. * {{variable.Field_PLConfig_DueDateLabel}} : This overrides the {{variable.Object_Transaction}} {{variable.Field_Transaction_DueDate}} field. * {{variable.Field_PLConfig_AmtDueLabel}}: This overrides the {{variable.Object_Transaction}} {{variable.Field_Transaction_Amount}} field. * {{variable.Field_PLConfig_RequesteByLabel}}: This overrides the Requested By label when a value is added to the {{variable.Object_Transaction}} {{variable.Field_Transaction_Account}} field.",
+  "keywords": [
+    "variable",
+    "field",
+    "paylink",
+    "image",
+    "field_plconfig_acceptlanguage",
+    "configure",
+    "using",
+    "checkbox",
+    "text",
+    "images",
+    "height",
+    "width",
+    "click",
+    "fields",
+    "value",
+    "following",
+    "label",
+    "https",
+    "document360",
+    "f977eec0"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the Blackthorn {{variable",
+    "2. Click the PayLink Configuration tab",
+    "3. Click {{variable",
+    "4. Enter the {{variable",
+    "5. Add information to additional fields, as needed",
+    "6. Add the {{variable",
+    "7. Add the {{variable",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

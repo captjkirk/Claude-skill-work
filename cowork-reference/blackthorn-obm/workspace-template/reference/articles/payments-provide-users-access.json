@@ -1,0 +1,38 @@
+{
+  "id": "payments-provide-users-access",
+  "title": "payments-provide-users-access.md",
+  "content": "## Metadata_Start ## code: en ## title: Provide Users Access ## slug: payments-provide-users-access ## seoTitle: Provide Users Access ## description: ## contentType: Markdown ## Metadata_End It’s time to grant your users access to Blackthorn {{variable.Product_Payments}}. ## Assign Licenses You will need to assign the Blackthorn {{variable.Product_Payments}} license to all users who need access. To assign licenses, perform the following steps: {{snippet.PTST_AssignLicenses}} If you purchased unlimited users, you can skip this step. ## Assign Permission Sets Next, you will need to add the appropriate Permission Sets to your users. This will grant them the ability to see all of the Blackthorn objects/records within Salesforce. For a breakdown of what each permission set does, [please read this documentation](https://docs.blackthorn.io/docs/payments-permission-sets){target=\"_blank\"}. You can assign one or more users to a permission set by [assigning a user to a permission set](/v1/docs/payments-provide-users-access#assign-a-user-to-a-permission-set). Or you can assign one or more permission sets to your users by [assigning a permission set to a user](/v1/docs/payments-provide-users-access#assign-a-permission-set-to-a-user). ### Assign a User to a Permission Set {{snippet.PTST_AssignUserToPermissionSet}} ### Assign a Permission Set to a User 1. Go to Setup. 2. Search for the user. 3. Click the user’s name. 4. Click **Edit Assignments**. 5. Click “Blackthorn | Payments (Admin)” in the Available Permission Sets box. 6. Click **Add**. To remove a permission set, highlight it in the Enabled Permission Sets box, click the left Remove arrow, and click **Save**. 8. Click {{variable.Button_Save}}. :::(Info) (**Manager vs. User**) Manager and User are essentially the same with the exception that Managers can delete payment records. :::",
+  "keywords": [
+    "permission",
+    "users",
+    "assign",
+    "user",
+    "access",
+    "click",
+    "sets",
+    "provide",
+    "payments",
+    "blackthorn",
+    "docs",
+    "your",
+    "variable",
+    "need",
+    "grant",
+    "product_payments",
+    "licenses",
+    "snippet",
+    "records",
+    "more"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Search for the user",
+    "3. Click the user’s name",
+    "4. Click **Edit Assignments**",
+    "5. Click “Blackthorn | Payments (Admin)” in the Available Permission Sets box",
+    "6. Click **Add**",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

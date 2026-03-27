@@ -1,0 +1,35 @@
+{
+  "id": "mobile-actions-for-field-service",
+  "title": "mobile-actions-for-field-service.md",
+  "content": "## Metadata_Start ## code: en ## title: FSL Mobile Actions (without our iOS/Android app) ## slug: mobile-actions-for-field-service ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (This doc is for use without our iOS/Android apps. No card reader.) Use the below instructions if you want to use our native Salesforce Payments app within the FSL app. We packaged a few actions you can use for this. It's not as seamless as using our mobile apps, either with or without the card readers, but it allows you to process payments within FSL without an external app. If you're looking for our FSL & mobile app integration, see the section in the navigation on our Mobile Payments add-on. ::: ## Simple Mobile Payments We package two Lightning Actions - one on the Account object and the other our Payment Method object that can be used in the Salesforce Mobile or Field Service apps to quickly create a Card Payment Method and Charge the Card. ### Add Card Allows a mobile user to enter Credit Card info to create a Card - Payment Method record. Once the record is created in Salesforce, our Payments code will create a corresponding record in the processor's system. Check the Payment Method Status on the created record to make sure the Payment Method is valid. ### Charge Card Allows a mobile user to enter Charge info to create a Charge -Transaction and capture it. Once the record is created in Salesforce, our Payments code will create a corresponding record in the processor's system. Check the Transaction Status on the created record to make sure the charge was successful. ## Typical Mobile Use Case 1. From an Account record, click the Add Card button. Enter Card fields and save. 2. Navigate to the Payment Method record and check the Payment Method Status field to make sure it is \"Valid\". Then click the Charge Card button on the Payment Method, enter the Amount and Description and save. This creates a Charge Transaction that will be \"Captured\" in the processors's system and it copies over the Account, Contact, Payment Method, and Payment Gateway fields. It also uses the default Currency defined on the Charge Record Type. 3. Navigate to the Transaction and check that the Transaction Status = Completed. ## Setup To make these actions visible to Salesforce Mobile or Field Service app users, edit the Account Page layout for the user and drag the **Add Card** Mobile and Lightning Actions to the **Salesforce Mobile and Lightning Experience Actions** section at the top of the Page Layout and save. The **Charge Card** action should already be on the Payment Method page layout. If it's not, follow the same instructions above to add it to the page layout. ## Customize for Your Needs If you need the \"Add Card\" action on some other custom or standard object, you can use the action we created as a template for a new one. Go to the **Buttons, Links and Actions** section of any object and click the **New Action** button. When creating the Action, look at how the \"Add Card\" Action is configured on the Account. You can also use pre-populate some fields using the **Predefined Field Values** section that's available after you create the Action. ## Authorize, Capture or Refund Users can now authorize, capture, and partially refund transactions through the mobile app. ![H_02_07_authorize capture refund](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_07_authorize%20capture%20refund.jpeg){height=\"\" width=\"\"}",
+  "keywords": [
+    "card",
+    "mobile",
+    "payment",
+    "method",
+    "record",
+    "charge",
+    "actions",
+    "action",
+    "salesforce",
+    "payments",
+    "create",
+    "field",
+    "account",
+    "created",
+    "transaction",
+    "without",
+    "section",
+    "object",
+    "enter",
+    "check"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. From an Account record, click the Add Card button",
+    "2. Navigate to the Payment Method record and check the Payment Method Status field to make sure it is \"Valid\"",
+    "3. Navigate to the Transaction and check that the Transaction Status = Completed",
+    "* section of any object and click"
+  ],
+  "troubleshooting": []
+}

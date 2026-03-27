@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-object-sponsor",
+  "title": "evbuilder-object-sponsor.md",
+  "content": "## Metadata_Start ## code: en ## title: Sponsors ## slug: evbuilder-object-sponsor ## seoTitle: Sponsors ## description: ## contentType: Markdown ## Metadata_End The following updates were made to the {{variable.Object_Sponsor}} object. ## Field Mapping The field mapping between the {{variable.Object_Sponsor}} and {{variable.Object_Account}}objects is as follows. | **Source Field** | **Target Field** | | --- | --- | | Account Bio | Sponsor Description | | Account Name | Sponsor Display Name | |Account Website | Sponsor Website | | Account Image URL | Sponsor Image URL | ## Tiers * {{variable.Object_Sponsor}}s can be grouped by standard Tiers or by custom Tiers. The standard options include \"Platinum\", \"Gold\", \"Silver\", and \"Bronze\". They appear at the top of the {{variable.Object_Sponsor}}s section. * Custom Tiers are located below the standard options and are ordered by Name A to Z. * {{variable.Object_Sponsor}}s who are not assigned a {{variable.Field_Sponsor_Tier}} will be located below the Custom Tiers section in the Additional Sponsors section.",
+  "keywords": [
+    "variable",
+    "sponsor",
+    "object_sponsor",
+    "tiers",
+    "field",
+    "account",
+    "sponsors",
+    "name",
+    "standard",
+    "custom",
+    "section",
+    "object",
+    "description",
+    "mapping",
+    "website",
+    "image",
+    "options",
+    "located",
+    "below",
+    "metadata_start"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

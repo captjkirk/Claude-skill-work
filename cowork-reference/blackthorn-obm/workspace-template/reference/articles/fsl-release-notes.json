@@ -1,0 +1,32 @@
+{
+  "id": "fsl-release-notes",
+  "title": "fsl-release-notes.md",
+  "content": "## Metadata_Start ## code: en ## title: FSL Extension Package Release Notes ## slug: fsl-release-notes ## seoTitle: FSL Release Notes ## description: ## contentType: Markdown ## Metadata_End ## Package 1.67 *Released 03 January 2024* Sandbox & Scratch Org: [https://test.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002Oy93QAC](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002Oy93QAC){target=`_blank`} Production & Dev Org: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002Oy93QAC](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002Oy93QAC){target=`_blank`} ### Bug Fix * The `Offline Mobile Pay URL` field was removed from the Work Order page layout URLs section as the system only uses the field to launch the Mobile Payments app. ## Package 1.65 *Released 25 April 2023* Production & Dev Org: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJqm](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJqm){target=`_blank`} ### Bug Fix * “Disable Transaction Create From WO,” a new custom setting, was added to the Blackthorn Payments | FSL Settings. When the setting is checked, the automation that creates a Transaction related to a Work Order will be disabled. ## Package 1.64 *Released 12 December 2022* Production & Dev Org: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJlh](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJlh){target=`_blank`} ### Enhancement * The `Balance Due` and `Balance Paid` fields on a Work Order will update automatically when a Transaction with an amount less than the `Balance Due` on the Work Order is authorized. This change allows these fields to be used with authorized charges. ## Package 1.63 *Released 20 December 2022* Production & Dev Org: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJIu](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4P000002GJIu){target=`_blank`} ### Bug Fixes * An error affecting Virtual Terminal users has been resolved for customers who previously used and uninstalled our Blackthorn FSL extension package. * When Work Order Line Items are deleted from a Work Order, the amount of the related Transaction record will update accordingly. ### Enhancements * A new lookup field, `Payment Method`, was added to the Work Order object. The new field allows users to add a Payment Method to a Work Order in the Field Service Mobile extension package. NOTE: Users must have the Blackthorn | Payments FSL and Blackthorn | Payments (User) permission set to access the field. * Field Label: `Payment Method` * API Name: Payment_Method__c * Data Type: Lookup * An FSL user can add and authorize a payment or add a new Payment Method while connected to a Spreedly Payment Gateway. The authorized Transaction will be associated with an FSL Work Order to be used later. To perform these tasks, two new fields -- `Mobile Add Card` and `Mobile Authorize` -- have been added to the Work Order object. The fields store links that launch the Mobile Payments app and take the user directly to the correct screen to complete the selected action. Both fields include the Blackthorn | Payments FSL permission set with `Read Access` = “True”. * Field Label: `Mobile Add Card` * API Name: Mobile_AddCard__c * Description: Contains the URL that will launch the Mobile Payments app directly to the add card screen. * Field Label: `Mobile Authorize` * API Name: Mobile_Auth__c * Description: Contains the URL that will launch the Mobile Payments app directly to the authorize screen. * A Field Service Lightning (FSL) user can add and authorize a payment or add a new Payment Method while connected to a Spreedly Payment Gateway. The authorized Transaction or Payment Method will be associated with an FSL Work Order to be used later.",
+  "keywords": [
+    "work",
+    "order",
+    "https",
+    "salesforce",
+    "packaging",
+    "installpackage",
+    "apexp",
+    "mobile",
+    "field",
+    "payment",
+    "login",
+    "payments",
+    "package",
+    "transaction",
+    "method",
+    "target",
+    "_blank",
+    "blackthorn",
+    "fields",
+    "authorize"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error affecting Virtual Terminal users has been resolved for customers who previously used and uninstalled our Blackthorn FSL extension package."
+  ]
+}

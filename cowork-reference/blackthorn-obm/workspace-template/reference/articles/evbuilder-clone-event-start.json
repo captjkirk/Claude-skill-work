@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-clone-event-start",
+  "title": "evbuilder-clone-event-start.html",
+  "content": "Cloning an Event in the Event Builder allows you to edit all Event fields before saving the cloned record.&nbsp; Click Clone an Event . Select an existing {{variable.Field_ETEvent_EventName}} . (required) Click {{variable.Button_Next}} . STOP: Please Read If the Event you are cloning contains Email Templates and you DON’T want the templates cloned, please follow the steps below. If you scroll down to edit the Event, the Email Templates will automatically be cloned. Otherwise, click the General Info tab. Click Emails in the left-hand navigation. If you don’t want to clone the Email Templates that were related to the original Event, set the Clone toggle to “Inactive.” If you do, leave the toggle set to “Active.” Click General Info. Since you are now working on the cloned or new Event, you will see that Begin From Scratch is selected. In addition to the original Event’s information, the newly cloned Event will also include the following: Cloned Event’s {{variable.Field_ETEvent_EventName}} = “Copy of [Original Event Name]” Cloned Event’s start/end dates = the original Event’s {{variable.Field_ETEvent_EventStartDate}} and {{variable.Field_ETEvent_EventEndDate}} Cloned Session’s start/end dates = the original Session’s {{variable.Field_Session_StartDate}} and {{variable.Field_Session_EndDate}} Cloning an Event with an empty {{variable.Field_ETEvent_EventLocation}} field will result in a newly cloned Event with {{variable.Field_ETEvent_EventLocation}} = “Hybrid” by default.&nbsp; Review the remaining fields and click {{variable.Button_Next}} to go to the Hero Section. Important Note: Not all junction objects and fields, such as the Session Speaker and Session Keyword objects and Event Settings’ fields such as {{variable.Field_EVSettings_Form}} and {{variable.Field_ETETSettings_Font}} , can be cloned.",
+  "keywords": [
+    "event",
+    "variable",
+    "cloned",
+    "click",
+    "original",
+    "fields",
+    "templates",
+    "session",
+    "cloning",
+    "clone",
+    "email",
+    "edit",
+    "nbsp",
+    "field_etevent_eventname",
+    "button_next",
+    "please",
+    "want",
+    "general",
+    "info",
+    "toggle"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

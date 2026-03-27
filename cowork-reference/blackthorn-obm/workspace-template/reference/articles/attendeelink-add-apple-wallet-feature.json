@@ -1,0 +1,41 @@
+{
+  "id": "attendeelink-add-apple-wallet-feature",
+  "title": "attendeelink-add-apple-wallet-feature.md",
+  "content": "## Metadata_Start ## code: en ## title: Add to Apple Wallet Feature ## slug: attendeelink-add-apple-wallet-feature ## seoTitle: Add to Apple Wallet Feature ## description: ## contentType: Markdown ## Metadata_End ## Prerequisite At this time, Android users cannot see the \"Add to Wallet\" button. We are in the process of adding that functionality. Currently, Attendees must have an iOS device to use this feature. ## Overview Simplify the check-in experience for your {{variable.Object_Attendee}}s with the **Add to Apple Wallet** button. Registered {{variable.Object_Attendee}}s who use iOS devices will see the **Add to Apple Wallet** button on their {{variable.AttendeeLink}}. Clicking the button adds their Ticket and QR code to their Apple Wallet so they can access it quickly during check in without needing to search their email for their {{variable.AttendeeLink}}. ## Manage the Add to Wallet Button The {{variable.Object_EventSettings}} {{variable.Field_EVSetting_EnablAddWallet}} (conference360__Enable_Add_to_Wallet_from_AttendeeLink__c ) field, which controls the visibility of the **Add to Apple Wallet** button on the {{variable.AttendeeLink}}, is set to “Show” by default. This means you don’t need to make any changes if you want your {{variable.Object_Attendee}}s to see the **Add to Apple Wallet** button on their {{variable.AttendeeLink}}s. If you want to hide the button on the {{variable.AttendeeLink}}, complete the following steps. 1. Ensure you have the correct permissions for the field. * READ/EDIT: Admin, Organizer, and Community/Platform User * READ: Lite User, Read Only, and Limited Access 2. Add the {{variable.Object_EventSettings}} {{variable.Field_EVSetting_EnablAddWallet}} field to the {{variable.Object_EventSettings}} page layout. 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, enter and click \"Event Settings.\" 4. Click the Page Layout tab. 5. Click the name of the page layout. 6. Locate the {{variable.Field_EVSetting_EnablAddWallet}} field. 7. Drag and drop it onto the page layout. 8. Click {{variable.Button_Save}}. 3. Open the relevant {{variable.Object_EventSettings}} record. 4. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_EVSetting_EnablAddWallet}} field. 5. Set {{variable.Field_EVSetting_EnablAddWallet}} to “Hide.” 6. Click {{variable.Button_Save}}. ## Viewing a Ticket If an {{variable.Object_Attendee}} uses the **Add to Apple Wallet** button after registering for an {{variable.Object_Event}}, they will see the following information when they open the Ticket from their mobile wallet. * QR code * Logo (Event Settings {{variable.Field_ETETSettings_FaviconUrl}}) * Title ({{variable.Field_ETEvent_EventName}}) * Start Date/Time ({{variable.Field_ETEvent_EventStartDate}} and {{variable.Field_ETEvent_EventStartTime}}) * Short Description ({{variable.Field_ETEvent_ShortDescription}}) or Banner ({{variable.Field_ETEvent_ImageURL}}) * Venue name and address, if available.",
+  "keywords": [
+    "variable",
+    "wallet",
+    "apple",
+    "button",
+    "their",
+    "click",
+    "attendeelink",
+    "field_evsetting_enabladdwallet",
+    "field",
+    "feature",
+    "object_attendee",
+    "object_eventsettings",
+    "page",
+    "layout",
+    "code",
+    "ticket",
+    "they",
+    "read",
+    "title",
+    "description"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Ensure you have the correct permissions for the field",
+    "2. Add the {{variable",
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, enter and click \"Event Settings",
+    "4. Click the Page Layout tab",
+    "5. Click the name of the page layout",
+    "6. Locate the {{variable",
+    "7. Drag and drop it onto the page layout",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

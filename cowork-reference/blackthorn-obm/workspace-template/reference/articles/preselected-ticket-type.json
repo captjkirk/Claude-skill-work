@@ -1,0 +1,36 @@
+{
+  "id": "preselected-ticket-type",
+  "title": "preselected-ticket-type.md",
+  "content": "## Metadata_Start ## code: en ## title: Preselected Event Items ## slug: preselected-ticket-type ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (**Pre-populate Attendee Information Limitation**) An Event Item cannot be defined in the lookup on the underlying Attendee record in a multi-ticket scenario. Previously, when there were multiple Event Items (Tickets) and none of them were pre-related to an Attendee, registering for an Event via an AttendeeLink created duplicate Attendee records. To redeem multiple Event Items, an Attendee must first click the **Redeem** button. The Attendee can then add additional Event Items and complete the checkout process without creating duplicate Attendee records. ::: ## Preselect an Event Item Define a specific {{variable.Object_EventItem}} for the {{variable.Object_Attendee}}. If you want the {{variable.Object_Attendee}} to be associated with one {{variable.Object_EventItem}}, define the specific {{variable.Object_EventItem}} on the {{variable.Object_Attendee}} record. 1. Add the {{variable.Field_Attendee_EventItem}} field to your {{variable.Object_Attendee}} page layout and click {{variable.Button_Save}}. ![Preselect ticket type 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Preselect%20ticket%20type%201.png){height=\"\" width=\"\"} 2. Set the {{variable.Field_Attendee_EventItem}} field with the respective {{variable.Object_EventItem}} (Ticket). ![Preselect ticket type 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Preselect%20ticket%20type%202.png){height=\"\" width=\"\"} 3. When your {{variable.Object_Attendee}} checks out, that {{variable.Object_EventItem} type will be automatically selected for them. ![AttendeeLink: Preselect Ticket Type](https://youtu.be/_ag4SdCgn7U){height=\"480\" width=\"640\"} ## Hide Other Event Items (Ticket Types) Want to invite an {{variable.Object_Attendee}} to register for a particular {{variable.Object_EventItem}} (Ticket) and hide all other options? Now you can with our \"Hide Other Tickets\" feature. 1. Navigate to an {{variable.Object_Attendee}} record and check the {{variable.Field_Attendee_HideOtherTicket}} field. ![Hide other ticket types 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hide%20other%20ticket%20types%201.png){height=\"\" width=\"\"} :::(Info) (Can't find the `Hide Other Tickets` field?) Edit the Attendee page layout and add the `Hide Other Tickets` field to the layout. ::: 2. When the {{variable.Object_Attendee}} goes to register, they will see the predefined {{variable.Object_EventItem}} (Ticket) and have no ability to register for any other {{variable.Object_EventItem}}s (Tickets). ![Hide other ticket types 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hide%20other%20ticket%20types%202.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "ticket",
+    "hide",
+    "event",
+    "attendee",
+    "object_eventitem",
+    "object_attendee",
+    "other",
+    "preselect",
+    "items",
+    "type",
+    "tickets",
+    "field",
+    "https",
+    "height",
+    "width",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Add the {{variable",
+    "2. Set the {{variable",
+    "3. When your {{variable",
+    "1. Navigate to an {{variable",
+    "2. When the {{variable"
+  ],
+  "troubleshooting": []
+}

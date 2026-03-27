@@ -1,0 +1,38 @@
+{
+  "id": "vt-schedule-payment",
+  "title": "vt-schedule-payment.md",
+  "content": "## Metadata_Start ## code: en ## title: Payment Process Type ## slug: vt-schedule-payment ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Update) The logic in the Virtual Terminal has been updated to prevent users from receiving the \"Cannot read properties of null\" error when trying to add a Payment Method. The user should now select a Related To record before adding a new Payment Method. ::: The Virtual Terminal can also schedule payments. 1. Define the {{variable.Field_VT_RelatedTo}}, {{variable.Field_VT_ParentObject}}, {{variable.Field_VT_Description}}, {{variable.Field_VT_Amount}}, and {{variable.Field_VT_Currency}} fields. 2. Define the {{variable.Field_VT_PaymentMethod}}. 3. Change the {{variable.Field_VT_ProcessType}} to \"Auto Process\". 4. Define the {{variable.Field_VT_CaptureDate}}. 5. Click **Process**. ![J_03_schedule_payment](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/J_03_schedule_payment.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "payment",
+    "process",
+    "define",
+    "schedule",
+    "virtual",
+    "terminal",
+    "method",
+    "j_03_schedule_payment",
+    "metadata_start",
+    "code",
+    "title",
+    "type",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "info"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Define the {{variable",
+    "2. Define the {{variable",
+    "3. Change the {{variable",
+    "4. Define the {{variable",
+    "5. Click **Process**"
+  ],
+  "troubleshooting": [
+    "error when trying to add a Payment Method."
+  ]
+}

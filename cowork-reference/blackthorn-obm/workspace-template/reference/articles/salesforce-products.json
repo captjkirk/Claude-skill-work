@@ -1,0 +1,30 @@
+{
+  "id": "salesforce-products",
+  "title": "salesforce-products.md",
+  "content": "## Metadata_Start ## code: en ## title: Salesforce Products ## slug: salesforce-products ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you already have or want to track {{variable.Object_Event}} Tickets with standard Products, we have added a lookup to products on the {{variable.Object_EventItem}} object with a process that pulls over the product's information to the {{variable.Object_EventItem}} record. ## Initial Setup Update the {{variable.Object_EventItem}} page layout with the product fields, {{variable.Field_ETEventItem_Product}} and {{variable.Field_ETEventItem_PriceBook}}. ![salesforce products](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/salesforce%20products.png){height=\"\" width=\"\"} ## Set the Product and Price Book If you just define the {{variable.Field_ETEventItem_Product}} field, the {{variable.Field_ETEventItem_Description}}, {{variable.Field_ETEventItem_Price}}, and {{variable.Field_ETEventItem_PriceBook}} (standard price book) fields will be set. If you define the {{variable.Field_ETEventItem_Product}} and {{variable.Field_ETEventItem_PriceBook}} fields, the {{variable.Field_ETEventItem_Description}}, {{variable.Field_ETEventItem_Price}} (from the defined price book), and {{variable.Field_ETEventItem_PriceBook}} will be set. ![Salesforce Products and Event Items](https://youtu.be/NdGLo3AxnGM){height=\"480\" width=\"640\"}",
+  "keywords": [
+    "variable",
+    "products",
+    "salesforce",
+    "field_eteventitem_pricebook",
+    "object_eventitem",
+    "product",
+    "fields",
+    "field_eteventitem_product",
+    "price",
+    "book",
+    "standard",
+    "https",
+    "height",
+    "width",
+    "define",
+    "field_eteventitem_description",
+    "field_eteventitem_price",
+    "metadata_start",
+    "code",
+    "title"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

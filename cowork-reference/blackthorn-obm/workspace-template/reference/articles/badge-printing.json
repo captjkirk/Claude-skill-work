@@ -1,0 +1,30 @@
+{
+  "id": "badge-printing",
+  "title": "badge-printing.html",
+  "content": "Print {{variable.Object_Attendee}} badges from the {{variable.Product_MobileCheck-inApp}} . Recommended Printers We recommend using a badge/label printer from Brother. The models Brother QL820NWB (black &amp; white) and VC-500W (color) have been fully tested. Both models support AirPrint, which the app requires, and AirPrint meets the app’s limitations. &nbsp; If those models don't meet your needs, we suggest finding a similar Brother model that supports AirPrint and meets your business needs. For more information about additional printing options, please click here . Instructions Limitation Please note that only one label can be printed at a time as we currently don’t support mass printing. To print badges for {{variable.Object_Attendee}} s, go to the {{variable.Object_Attendee}} list screen for an {{variable.Object_Event}} , and select an {{variable.Object_Attendee}} from the list. You can now see the badge preview, check-in the {{variable.Object_Attendee}} , and take their photo to display on the badge. Next, define the badge settings. Badge settings include the size, including height and width, orientation, and fields to display. You can also rearrange the fields. By default, the size of the badge is 2.4\" x 3.9\" (width x height). After you've updated the badge settings, tap the back arrow, and your badge size preference will be saved on your device. Tap the Print Badge button on the {{variable.Object_Attendee}} details page.&nbsp; Select a printer. For iOS, select an AirPrint-enabled printer.&nbsp; For Android, users can print via WIFI-direct within the Mobile Check-in app. Android phones also have a \"Samsung print service\" app that allows for printing to most WIFI-enabled printers. Once you've selected a printer, tap Print .",
+  "keywords": [
+    "badge",
+    "variable",
+    "print",
+    "object_attendee",
+    "printer",
+    "airprint",
+    "your",
+    "from",
+    "brother",
+    "models",
+    "nbsp",
+    "printing",
+    "select",
+    "settings",
+    "size",
+    "badges",
+    "printers",
+    "label",
+    "support",
+    "meets"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

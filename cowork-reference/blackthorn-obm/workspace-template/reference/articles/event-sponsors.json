@@ -1,0 +1,41 @@
+{
+  "id": "event-sponsors",
+  "title": "event-sponsors.md",
+  "content": "## Metadata_Start ## code: en ## title: Sponsors ## slug: event-sponsors ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Recognize your {{variable.Object_Event}} {{variable.Object_Sponsor}}s by displaying them on your {{variable.Object_Event}} for everyone to see! ## Event Sponsor Visibility To show the {{variable.Object_Sponsor}}s on the {{variable.Object_Event}}, complete the following: 1. Navigate to the {{variable.Object_EventSettings}} record. 2. Set the {{variable.Field_ETETSettings_Sponsors}} field to {{variable.picklist_Always}}. 3. Make sure the {{variable.Field_Sponsor_HideOnEventPage}} field is unchecked on the {{variable.Object_Sponsor}} record. ![Sponsors](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Sponsors.png){height=\"\" width=\"\"} ## Create a Sponsor 1. From your {{variable.Object_Event}} record, navigate to the {{variable.Object_Sponsor}} record's Related List. ![Create a Sponsor 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Sponsor%201.png){height=\"\" width=\"\"} 2. Click {{variable.button_new}}. 3. Complete the following fields for the {{variable.Object_Sponsor}}. * {{variable.Field_Sponsor_DisplayName}} * {{variable.Field_Sponsor_Tier}} (This field will automatically sort your {{variable.Object_Sponsor}}s in priority.) * {{variable.Field_Sponsor_ImageURL}} * {{variable.Field_Sponsor_AltTextVisualImp}} - This field is required when the {{variable.Field_Sponsor_ImageURL}} field has a value. The following default value was added to this field. “[{{variable.Object_Sponsor}} {{variable.Field_Sponsor_DisplayName}}] logo\" (Note: Default values can be overwritten.) * {{variable.Field_Sponsor_Description}} ![Sponsor_New_Text Visual Impairment](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Sponsor_New_Text%20Visual%20Impairment.png){height=\"\" width=\"\"} 4. Set {{variable.Field_Sponsor_Status}} = {{variable.Picklist_Sponsor_Status_Confir}} when you are ready to show the {{variable.Object_Sponsor}} on your {{variable.Object_Event}}'s link. Use the {{variable.Field_Sponsor_Status}} field to keep track of the all {{variable.Object_Sponsor}}s for your {{variable.Object_Event}}! 5. Click {{variable.Button_Save}} and see your new {{variable.Object_Sponsor}} record! ![Create a Sponsor 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Sponsor%203.png){height=\"\" width=\"\"} * * * ![Create a Sponsor 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Sponsor%204.png){height=\"\" width=\"\"} ## Define a Related Account If your new {{variable.Object_Sponsor}} is an existing {{variable.Object_Account}}, we have included an {{variable.Field_Sponsor_Account}} lookup field on the {{variable.Object_Sponsor}} record. This field will pull the {{variable.Object_Account}}'s {{variable.Field_Account_ImageURL}}, {{variable.Field_Account_Bio}}, and {{variable.Field_Account_AccountName}} into the {{variable.Object_Sponsor}} record. 1. Add the {{variable.Field_Account_ImageURL}} field to your {{variable.Object_Account}} page layout. 2. Fill in the {{variable.Field_Account_ImageURL}} and {{variable.Field_Account_Bio}}. 3. Add the {{variable.Field_Sponsor_Account}} field to your {{variable.Object_Sponsor}} page layout. 4. When creating a new {{variable.Object_Sponsor}}, set the {{variable.Field_Sponsor_Account}} field instead of the {{variable.Field_Sponsor_DisplayName}}, {{variable.Field_Sponsor_ImageURL}}, and {{variable.Field_Sponsor_Description}} fields. ![Delete related account 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Delete%20related%20account%201.png){height=\"\" width=\"\"} 5. Click {{variable.Button_Save}}. All the information is then pulled from the related {{variable.Object_Account}} record. After saving, the {{variable.Object_Sponsor}} record should look similar to this. ![Delete related account 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Delete%20related%20account%202.png){height=\"\" width=\"\"} ## Hide a Sponsor from the Event Page If your {{variable.Object_Sponsor}} shouldn't be publically shown on the {{variable.Object_Event}}, you can use the {{variable.Field_Sponsor_HideOnEventPage}} field to ensure it is only visible internally. 1. Add the {{variable.Field_Sponsor_HideOnEventPage}} field to your {{variable.Object_Sponsor}} page layout. 2. Check the {{variable.Field_Sponsor_HideOnEventPage}} checkbox. ![Hide Sponsor 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hide%20Sponsor%201.png){height=\"\" width=\"\"} * * * ![Hide Sponsor 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hide%20Sponsor%202.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "object_sponsor",
+    "field",
+    "your",
+    "record",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "sponsor",
+    "object_event",
+    "create",
+    "related"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Set the {{variable",
+    "3. Make sure the {{variable",
+    "1. From your {{variable",
+    "2. Click {{variable",
+    "3. Complete the following fields for the {{variable",
+    "4. Set {{variable",
+    "5. Click {{variable",
+    "1. Add the {{variable",
+    "2. Fill in the {{variable"
+  ],
+  "troubleshooting": []
+}

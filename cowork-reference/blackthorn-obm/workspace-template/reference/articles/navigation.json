@@ -1,0 +1,32 @@
+{
+  "id": "navigation",
+  "title": "navigation.html",
+  "content": "The includes a navigation menu to access different sections in the application. Home This is the main screen of the application where users enter details about their s and associate them with an and/or a . Tokenize Card This section of the application allows users to enter credit card details. The information is then tokenized and added to as a , which can be associated with an and/or a . The Payment Gateway selected on the Home screen will be the Payment Gateway you see populated on the Payment Method that is created through this Tokenize method. Reader The Reader page allows users to connect the to a card reader. This is also where you can update the firmware of your card reader. When searching for a card reader, it may take up to two to three minutes for it to appear on the screen. Mobile Payments will search for firmware updates each time you connect a card reader. If your reader needs an update, an install link will be presented. Otherwise, a message stating that your reader has the latest update will be displayed. Support The Support page allows users to contact our Customer Success team. This is where they can submit a case or access our documentation. About The About page will display the app version. This can be helpful for troubleshooting, or if you want to check that you've installed the latest version. Logout This is the basic option for logging out of the app.",
+  "keywords": [
+    "reader",
+    "card",
+    "users",
+    "application",
+    "screen",
+    "where",
+    "about",
+    "allows",
+    "payment",
+    "page",
+    "update",
+    "your",
+    "access",
+    "home",
+    "enter",
+    "details",
+    "tokenize",
+    "gateway",
+    "method",
+    "connect"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "troubleshooting, or if you want to check that you've installed the latest version."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-edit-existing-event-sessions",
+  "title": "evbuilder-edit-existing-event-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Sessions ## slug: evbuilder-edit-existing-event-sessions ## seoTitle: Sessions ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Session_CloneEdit_1}} ## Edit or Delete a Session {{snippet.EVBuilder_Session_CloneEdit_ED}} ## Add Sessions {{snippet.EVBuilder_Session_CloneEdit_AD}}",
+  "keywords": [
+    "sessions",
+    "snippet",
+    "edit",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "existing",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_session_cloneedit_1",
+    "delete",
+    "session",
+    "evbuilder_session_cloneedit_ed",
+    "evbuilder_session_cloneedit_ad"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

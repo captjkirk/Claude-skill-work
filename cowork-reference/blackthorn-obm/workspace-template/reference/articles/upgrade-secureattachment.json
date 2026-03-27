@@ -1,0 +1,41 @@
+{
+  "id": "upgrade-secureattachment",
+  "title": "upgrade-secureattachment.md",
+  "content": "## Metadata_Start ## code: en ## title: Upgrade SecureAttachment ## slug: upgrade-secureattachment ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## BEFORE you upgrade the package 1. Check that the AuditBatchSize for Attachment and ContentVersion is 10. * Navigate to Setup > Custom Code > Custom Metadata Types > Manager. ![audit batch size](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/audit%20batch%20size.png){height=\"\" width=\"\"} 2. Update your DetectionFields for ContentVersion and Attachment. * Navigate to Setup > Custom Code > Custom Metadata Types > Manager. ![detection fields](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/detection%20fields.png){height=\"\" width=\"\"} * **ContentVersion:** VersionData, FileType, FileExtension, Title, ContentDocumentId * **Attachment:** Body, ContentType, Name, ParentId ## NEXT follow the steps below to upgrade your SecureAttachment package 1. Navigate to the AppExchange from your Salesforce org, or go directly to Blackthorn's [Candy Shop listing for Compliance](https://candyshop.blackthorn.io/products/blackthorn-compliance/latest). 2. Click **Get It Now** on the AppExchange listing, and follow the install prompts. 3. Once the upgrade is complete, check the following configurations. 4. Re-enter API Credentials provided by Blackthorn Compliance Support (contact support if you need them again). ![check credentials](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/check%20credentials.png){height=\"\" width=\"\"} 5. Check that your Remote Site Setting URLs are exactly as follows and active. * Navigate to Setup > Security > Remote Site Settings > FilesAPI > Edit. ![edit](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/edit.png){height=\"\" width=\"\"} 6. Check your SecureAttachment Settings: ![settings detail](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/settings%20detail.png){height=\"\" width=\"\"} You should only have APIs enabled for the credentials that you previously entered. If you entered two API credentials (Images API and Files API) then both APIs should be enabled. If you only entered credentials for Files API, then uncheck the checkbox for Images API. Congratulations! You have finished upgrading SecureAttachment.",
+  "keywords": [
+    "images",
+    "check",
+    "https",
+    "upgrade",
+    "secureattachment",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "documentation",
+    "height",
+    "width",
+    "your",
+    "credentials",
+    "navigate",
+    "custom",
+    "blackthorn",
+    "settings"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Check that the AuditBatchSize for Attachment and ContentVersion is 10",
+    "2. Update your DetectionFields for ContentVersion and Attachment",
+    "1. Navigate to the AppExchange from your Salesforce org, or go directly to Blackthorn's [Candy Shop listing for Compliance](https://candyshop",
+    "2. Click **Get It Now** on the AppExchange listing, and follow the install prompts",
+    "3. Once the upgrade is complete, check the following configurations",
+    "4. Re-enter API Credentials provided by Blackthorn Compliance Support (contact support if you need them again)",
+    "5. Check that your Remote Site Setting URLs are exactly as follows and active",
+    "6. Check your SecureAttachment Settings: ![settings detail](https://cdn",
+    "* Navigate to Setup",
+    "* Navigate to Setup"
+  ],
+  "troubleshooting": []
+}

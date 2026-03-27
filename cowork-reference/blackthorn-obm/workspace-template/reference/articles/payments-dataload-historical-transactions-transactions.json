@@ -1,0 +1,30 @@
+{
+  "id": "payments-dataload-historical-transactions-transactions",
+  "title": "payments-dataload-historical-transactions-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Transactions ## slug: payments-dataload-historical-transactions-transactions ## seoTitle: Transactions ## description: ## contentType: Markdown ## Metadata_End ### Source: CSV Turn off all Transaction-related custom settings or check the Blackthorn Pay - Trigger Settings' custom setting {{variable.CS_PTTriggerSetting_DisableAll}} checkbox. :::(Info) (Double Check Your Mapping) Map your org's Charge Record Type ID value, not the word \"Charge\". This can be found by navigating to the object's Record Type listing, clicking **Charge**, and pulling the ID from the URL. ::: #### Required Fields * {{variable.Field_Transaction_RecordType}} = \"Charge\" * {{variable.Field_Transaction_Amount}} * {{variable.Field_Transaction_CurrencyISO}} * {{variable.Field_Transaction_TransaStatus}} = \"Completed\" * {{variable.Field_Transaction_PaymentStatu}} = \"Captured\" * {{variable.Field_Transaction_NonGateway}} = \"True\" #### Suggested Fields * {{variable.Field_Transaction_Account}} * {{variable.Field_Transaction_Contact}} * {{variable.Field_Transaction_ProcessedDat}} (map a date field if a date/time field isn't available) #### Suggested Fields if Records Originated from a Stripe Account * {{variable.Field_Transaction_PaymentGatew}} * {{variable.Field_Transaction_TransactioID}} * {{variable.Field_Transaction_CustomerID}} Upon completion, the {{variable.Field_Transaction_Source}} field on each {{variable.Object_Transaction}} will be set to \"Sync\".",
+  "keywords": [
+    "variable",
+    "transactions",
+    "charge",
+    "fields",
+    "field",
+    "custom",
+    "settings",
+    "check",
+    "your",
+    "record",
+    "type",
+    "from",
+    "suggested",
+    "date",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "dataload"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

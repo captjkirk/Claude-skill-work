@@ -1,0 +1,38 @@
+{
+  "id": "messaging-version-34311",
+  "title": "messaging-version-34311.md",
+  "content": "## Metadata_Start ## code: en ## title: November 2023 - Version 3.43.11 ## slug: messaging-version-34311 ## seoTitle: November 2023 - Version 3.43.11 ## description: ## contentType: Markdown ## Metadata_End ## Bug Fixes ### Non-Admin User License Issue #### Description When a non-admin user attempts to send a bulk SMS via a Campaign, they are unable to access the lightning components and receive an error message stating that they do not have a license. #### Resolution This issue, which was caused by a separate issue where non-admin users with Site User account licenses encountered an error in the Messaging component, has been resolved. ### \"Inbox Conversation List\" Apex Trace Error #### Description Random Apex errors that referenced a tracing issue in the “Inbox Conversion List” occurred when accessing Lead, Contact, and Account records. #### Resolution The Apex Trace Error in the “Inbox Conversation List” was found to occur where the component was integrated into the Utility. The problem, which was caused by network issues that disrupted data transactions, has been resolved. ### EU Accounts - Cannot Add Phone Numbers #### Description Users cannot add phone numbers on EU Accounts from the Messaging Admin tab if A2P is not processed. The user received the following error message. “Error creating phone number: You can only use a tollfree number while A2P registration is pending approval, please upgrade your package to purchase tollfree numbers.” #### Resolution Users with EU Accounts can now add new phone numbers without completing the A2P registration process as it is no longer required. ### EU Account Errors - Account Activation #### Description For EU Accounts, users received an error when working in the Account Activation section of the Account Setup Process if the A2P registration was not competed. #### Resolution * Users registered to an EU server will not be blocked due to an incomplete or unsubmitted A2P registration. * A green mark will appear to indicate a complete Account activation status. * All other users will receive an error if the A2P information is incomplete or has not been submitted.",
+  "keywords": [
+    "error",
+    "account",
+    "users",
+    "description",
+    "admin",
+    "user",
+    "issue",
+    "resolution",
+    "accounts",
+    "phone",
+    "numbers",
+    "registration",
+    "version",
+    "messaging",
+    "when",
+    "inbox",
+    "list",
+    "apex",
+    "activation",
+    "november"
+  ],
+  "category": "payments",
+  "procedures": [
+    "- Account Activation #### Description For EU Accounts, users received an error when working in the Account Activation section of the Account Setup"
+  ],
+  "troubleshooting": [
+    "error message stating that they do not have a license.",
+    "error in the Messaging component, has been resolved.",
+    "Error #### Description Random Apex errors that referenced a tracing issue in the “Inbox Conversion List” occurred when accessing Lead, Contact, and Account records.",
+    "Error in the “Inbox Conversation List” was found to occur where the component was integrated into the Utility.",
+    "error message."
+  ]
+}

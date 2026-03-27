@@ -1,0 +1,30 @@
+{
+  "id": "attendee-navigator-tasks",
+  "title": "attendee-navigator-tasks.html",
+  "content": "Register for Free Sessions Use one of the following methods to register for a free {{variable.Object_Session}} . To register for a paid {{variable.Object_Session}} , please contact your {{variable.Object_Event}} organizer. Option 1: On a Session’s Page Open an {{variable.Object_Event}} . In the Agenda, you will see all available {{variable.Object_Session}} s. Click on the (free) {{variable.Object_Session}} you want to register for. Review the {{variable.Object_Session}} ’s details. Click Register . If the {{variable.Object_Session}} has available space, you will see a confirmation message. Option 2: The Swipe Method Open an {{variable.Object_Event}} . On the Full Agenda tab, locate the {{variable.Object_Session}} you want to register for. Slide the {{variable.Object_Session}} to the left and click Add to Agenda . The registration will be processed, and if it is successful, the word \"Registered\" will appear next to the {{variable.Object_Session}} name. Cancel Free Session Registrations You can cancel a free {{variable.Object_Session}} registration using one of the following methods. To cancel a registration for a paid {{variable.Object_Session}} , please contact your Event Organizer. Option 1: On a Session’s Page Log in to the Blackthorn Event Navigator app. On the Upcoming Event page, click Open Event . Review the Agenda with all available {{variable.Object_Session}} s. Locate the {{variable.Object_Session}} you need to cancel. Click the {{variable.Object_Session}} name. On the {{variable.Object_Session}} detail screen, click Cancel Register . Click Yes to confirm that you want to cancel your registration for the {{variable.Object_Session}} . The {{variable.Object_Session}} will return to its original state. Option 2: The Swipe Method Open an {{variable.Object_Event}} . On the Full Agenda tab, locate the {{variable.Object_Session}} you want to register for. Slide the {{variable.Object_Session}} to the left and click Remove from Agenda . Click Yes to confirm that you want to cancel your registration for the {{variable.Object_Session}} . The {{variable.Object_Session}} will return to its original state. Search Functionality Sessions You can search for a {{variable.Object_Session}} from the Full Agenda and My Agenda pages. Open the {{variable.Object_Event}} . Open the Full Agenda tab. (If you aren’t already there.) Click the search icon. Enter a search term. Click on a {{variable.Object_Session}} to review a {{variable.Object_Session}} ’s details. If you search from the My Agenda page, you will only see the {{variable.Object_Session}} s you registered for. If you search from the Full Agenda page, you will see all {{variable.Object_Session}} s at the Event. Any {{variable.Object_Session}} s that you registered for will have a “Registered” label. Attendee Listing {{variable.Object_Attendee}} s can search for other {{variable.Object_Attendee}} s at the {{variable.Object_Event}} by name or organization. Open an {{variable.Object_Event}} . In the navigation at the bottom of the screen, click Attendees . Click the Search icon. Search for an {{variable.Object_Attendee}} who is registered for the {{variable.Object_Event}} . NOTE: {{variable.Object_Attendee}} s who have hidden their Attendee profile will not be visible in search results. Edit Your Attendee Profile {{variable.Object_Attendee}} s can edit their social media URLs and/or hide their profile from the Attendee List or the More tab. Log in to the Blackthorn Event Navigator app. On the Upcoming Event page, click Open Event . In the navigation at the bottom of the screen, click More . Click your name. Click Edit . Click the following fields to edit your social media URLs. X (Twitter) LinkedIn Instagram To hide your Attendee profile from the Attendee List, click the Hide from the Attendee list toggle. Click {{variable.Button_Save}} . Click Close .",
+  "keywords": [
+    "variable",
+    "object_session",
+    "click",
+    "agenda",
+    "search",
+    "register",
+    "your",
+    "object_event",
+    "open",
+    "event",
+    "cancel",
+    "from",
+    "attendee",
+    "page",
+    "free",
+    "want",
+    "full",
+    "registration",
+    "registered",
+    "object_attendee"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

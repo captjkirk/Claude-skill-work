@@ -1,0 +1,30 @@
+{
+  "id": "link-google-analytics-to-corporate-tracking",
+  "title": "link-google-analytics-to-corporate-tracking.md",
+  "content": "## Metadata_Start ## code: en ## title: Link Google Analytics to Corporate Tracking ## slug: link-google-analytics-to-corporate-tracking ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Do you need to set up a (GA4) Google Analytics account?) For more information about setting up a (GA4) Google Analytic account, click [here](https://docs.blackthorn.io/docs/en/google-tag-manager){target=\"_blank\"}. ::: Track the number of users that visit the Blackthorn Event webpage from your website. Link the Google Analytics (GA) tracking ID to the parent account or vice versa. The process is different if the parent (corporate site tracker) is using a plain web tracker or the \"Apps and web\" tracker. Web tracker: ![web tracker 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/web%20tracker%201.png){height=\"\" width=\"\"} Apps and web tracker is found deep within the property options under \"Data Streams\", then Selecting a website: ![web tracker 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/web%20tracker%202.png){height=\"\" width=\"\"} Here you can find a link to an existing GTM account to another analytics using the traditional GA tracker. ![web tracker 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/web%20tracker%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "tracker",
+    "google",
+    "analytics",
+    "link",
+    "account",
+    "https",
+    "corporate",
+    "tracking",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20tracker",
+    "height",
+    "width",
+    "here"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "write-custom-apex-triggers",
+  "title": "write-custom-apex-triggers.md",
+  "content": "## Metadata_Start ## code: en ## title: How To Write Custom Blackthorn Compliance Apex Triggers ## slug: write-custom-apex-triggers ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Blackthorn Compliance comes with native Apex Triggers on select standard objects included in the Compliance package. But if you want to use your own triggers instead, you simply need to change the Manager field \"Use Own Trigger\". This field controls whether or not Compliance will execute its native triggers. In other words, you can override our apex triggers on: Case, CaseComment, Task, EmailMessage, LiveChatTranscript, FeedItem, FeedComment, Attachment, and ContentVersion. **Important:** If you are writing triggers on a Salesforce object not included in the Compliance package, you do not need to check the field `Use Own Trigger`. 1. Navigate to the Manager Setting for the standard object, Setup > Develop > Custom Metadata Types > Manager > Manage Records > Click on the object name. 2. Press **Edit**. ![manager detail edit](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/manager%20detail%20edit.png){height=\"\" width=\"\"} 3. Check `Use Custom Trigger`. ![check use custom trigger](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/check%20use%20custom%20trigger.png){height=\"\" width=\"\"} 4. Press {{variable.Button_Save}}. ![use custom trigger is checked](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/use%20custom%20trigger%20is%20checked.png){height=\"\" width=\"\"} 5. Create your own Apex Trigger using the code snippet below as an example. **Sample Custom PCIFY Apex Trigger** ``` trigger InboundEmailMessageTrigger on EmailMessage (before insert) { List incomingEms = new List(); // check if Detection is turned on for Email Message if (pcify.Manager.getManager('EmailMessage').pcifyisActivec) { // collect incoming emails for (EmailMessage em : Trigger.new) { if (em.Incoming) { incomingEms.add(em); } } // process only incoming emails with PCIFY pcify.Processor.maskCreditCards( incomingEms, pcify.Manager.getMaskFields('EmailMessage'), 'EmailMessage' ); }} ``` ## PCIFY Class Methods List of methods you can call from the Compliance namespace. | Class | Method | Parameters | Description | | --- | --- | --- | --- | | pcify.Processor | maskCreditCards() | records: List | Void method for scanning text for PII | | | | fieldNames: List | | | | | objectName: String | | | pcify.Manager | getManager() | objectName: String | Returns Manager Custom Metadata Type for a given object | | pcify.Manager | getMaskFields() | objectName: String | Returns list of field names for a given object | | pcify.Manager | getDetectionAction() | objectName: String | Returns the DetectionAction for a given object |",
+  "keywords": [
+    "manager",
+    "pcify",
+    "trigger",
+    "custom",
+    "triggers",
+    "compliance",
+    "apex",
+    "emailmessage",
+    "object",
+    "list",
+    "check",
+    "field",
+    "objectname",
+    "string",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Navigate to the Manager Setting for the standard object, Setup > Develop > Custom Metadata Types > Manager > Manage Records > Click on the object name",
+    "2. Press **Edit**",
+    "3. Check `Use Custom Trigger`",
+    "4. Press {{variable",
+    "5. Create your own Apex Trigger using the code snippet below as an example"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "messaging-inbox-sticky-sidebar",
+  "title": "messaging-inbox-sticky-sidebar.md",
+  "content": "## Metadata_Start ## code: en ## title: Sticky Sidebar in the Inbox ## slug: messaging-inbox-sticky-sidebar ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you open the sidebar on the Blackthorn Messaging Inbox, it will remain open as you click into different conversations. ![Sticky sidebar on the Textey Inbox](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Sticky%20sidebar%20on%20the%20Textey%20Inbox.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "sticky",
+    "sidebar",
+    "inbox",
+    "messaging",
+    "open",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "blackthorn",
+    "remain",
+    "click",
+    "into",
+    "different",
+    "conversations"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

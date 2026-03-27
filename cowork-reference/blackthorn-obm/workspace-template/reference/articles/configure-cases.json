@@ -1,0 +1,41 @@
+{
+  "id": "configure-cases",
+  "title": "configure-cases.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Cases ## slug: configure-cases ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Use the steps below to configure the Case object for SMS messaging. ## Create a Do Not SMS Field If the {{variable.Field_Lead_DoNotSMS}} field hasn’t been added to your Case object, add it now. 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, enter and click “Case.” 4. Click the Fields & Relationships tab. 5. Click {{variable.button_new}}. 6. Select “Checkbox” and click {{variable.Button_Next}}. ![Messaging_Case_New SMS Field_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Case_New%20SMS%20Field_1.png){height=\"\" width=\"\"} 8. Enter the following information. * {{variable.Field_Messaging_FieldLabel}}: “Do Not SMS” * {{variable.Field_Messaging_FieldName}}: “Do_Not_SMS” * Help Text: “Check this box to stop an SMS message from being sent to this Case.” * Set the remaining fields based on your requirements. ![Messaging_Case_New SMS Field_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Case_New%20SMS%20Field_2.png){height=\"\" width=\"\"} 9. Click {{variable.Button_Next}}. 10. Select the profile access for this field. 11. Click {{variable.Button_Next}}. 12. Select the layouts you want to add the field to. 13. Click {{variable.Button_Save}}. ## Update the Page Layout and Related List ### Add the Do Not SMS Field 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, search for and click “Case.” 4. Click the Page Layouts tab. 5. Select the layout type you need to update. 6. Click the Fields tab. 7. In the Quick Find box, search for the {{variable.Field_Lead_DoNotSMS}} field. 8. Drag and drop the {{variable.Field_Lead_DoNotSMS}} field onto the page layout. ![Messaging_Case_Add Do Not SMS Filed](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Case_Add%20Do%20Not%20SMS%20Filed.png){height=\"\" width=\"\"} ### Add the Related List 1. Click the Related Lists tab. 2. In the Quick Find box, search for the “SMS Messages” Related List. 3. Drag and drop the Related List onto the page layout. 4. Click the **Wrench** icon to open the Properties for this related list. ![Messaging_Case_Add Related List](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Case_Add%20Related%20List.png){height=\"\" width=\"\"} 6. Add these fields in the following order: * {{variable.Field_SMS_RList_MessageDate}} * {{variable.Field_SMS_RList_Direction}} * {{variable.Field_SMS_RList_MessageFull}} * {{variable.Field_SMS_RList_Status}} * {{variable.Field_SMS_RList_FromPhone}} * {{variable.Field_SMS_RList_ToPhone}} * {{variable.Field_SMS_RList_SMSMsgNumber}} 7. In the Sort By drop-down, choose \"SMS Message Number\" and \"Descending\". 8. Click the **plus sign (+)** located in the Buttons section. 9. Uncheck the box next to New and click **Ok**. 10. Click {{variable.Button_Save}}. ## Lightning Record Page Layout 1. Click the Lightning Record Pages tab. 2. Click the name of the layout you want to modify. 3. Click {{variable.Button_SF_Edit}}. 4. If you don't see any Lightning page layouts listed, complete the following steps. 1. Click {{variable.button_new}}. 2. Choose Record Page. 3. Click {{variable.Button_Next}}. 4. Enter a {{variable.Field_SF_PageLayout_Label}} (i.e. Case Layout). 5. Set {{variable.Field_SF_PageLayout_Object}} = “Case.” 6. Click {{variable.Button_Next}}. 7. Click the Clone Salesforce Default Page tab. 8. Select a layout. 9. Click {{variable.Button_Done}}. 5. You should now be in the Lightning App Builder. 6. On the left-hand navigation bar, scroll down to the Custom-Managed section. 7. Locate the Blackthorn Messaging Messenger component. 8. Drag and drop the component onto the page layout. 9. The right-hand column will have the configuration options. We recommend keeping the {{variable.Field_SF_PageLayout_MaxHeight}} = \"400px\", but you can modify it as needed. * If you've added the component to a sidebar, set {{variable.Field_SF_PageLayout_Columns}} = “One Column.” * If you've added it to a wide section of the page, you can set {{variable.Field_SF_PageLayout_Columns}} = “Two Column” to maximize the space. 10. Click {{variable.Button_Save}}. ![Messaging_Case_Add component to Lightning page](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Case_Add%20component%20to%20Lightning%20page.png){height=\"\" width=\"\"} 12. Click **Activation**. 13. Review the settings. 14. Click **Close**. Refresh your browser for the changes to take effect. 15. Open a Case record to see the Blackthorn Messaging Messenger component on your page. ![Messagine_Case_Record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messagine_Case_Record.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "click",
+    "page",
+    "layout",
+    "case",
+    "field",
+    "related",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "list",
+    "messaging_case_add"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, enter and click “Case",
+    "4. Click the Fields & Relationships tab",
+    "5. Click {{variable",
+    "6. Select “Checkbox” and click {{variable",
+    "8. Enter the following information",
+    "9. Click {{variable",
+    "10. Select the profile access for this field",
+    "11. Click {{variable"
+  ],
+  "troubleshooting": []
+}

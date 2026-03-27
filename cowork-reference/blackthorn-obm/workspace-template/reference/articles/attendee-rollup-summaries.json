@@ -1,0 +1,36 @@
+{
+  "id": "attendee-rollup-summaries",
+  "title": "attendee-rollup-summaries.md",
+  "content": "## Metadata_Start ## code: en ## title: Events Attended ## slug: attendee-rollup-summaries ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Overview The {{variable.Field_Contact_EventsAttended}} field on the Contact record lets Event Organizers know how many times their Contacts or Leads have attended their Events. This will show the total count of attended Events for that Attendee when the {{variable.Field_ETAttendee_AttendStatus}} field = {{variable.Picklist_AttendStatus_Attended}}. ## Instructions 1. Make sure you have scheduled the [{{variable.SchBatJob_AttendeeParentRollup}}](/v1/docs/scheduled-batch-jobs-events) scheduled job from the {{variable.Tab_ET_BTEventAdmin}} tab. 2. Add the {{variable.Field_Contact_EventsAttended}} field on the Contact and Lead objects to their respective page layouts. ![Events Attended](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Attended.png){height=\"\" width=\"\"} 3. When an {{variable.Object_Attendee}} record is created in Salesforce, the duplication logic will link an Attendee to a related Contact or Lead. 4. The Events Attended field on the Contact or Lead will populate the count of Attendees who have {{variable.Field_ETAttendee_AttendStatus}} = {{variable.Picklist_AttendStatus_Attended}}. 5. There is an {{variable.Field_Attendee_EventsAttended}} formula field on the Attendee object that will also show the total count of attended Events for that related Contact or Lead that will be reference in the future by the AttendeeLink. For now, the rollup on Contact and Lead can be used internally. The {{variable.Field_Attendee_EventsAttended}} field on the Attendee object will be used in the future to let Event Organizers and Attendees know how many Events they have attended with the organization.",
+  "keywords": [
+    "variable",
+    "events",
+    "attended",
+    "field",
+    "contact",
+    "attendee",
+    "lead",
+    "their",
+    "count",
+    "scheduled",
+    "rollup",
+    "field_contact_eventsattended",
+    "record",
+    "event",
+    "organizers",
+    "know",
+    "many",
+    "show",
+    "total",
+    "when"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Make sure you have scheduled the [{{variable",
+    "2. Add the {{variable",
+    "3. When an {{variable",
+    "4. The Events Attended field on the Contact or Lead will populate the count of Attendees who have {{variable",
+    "5. There is an {{variable"
+  ],
+  "troubleshooting": []
+}

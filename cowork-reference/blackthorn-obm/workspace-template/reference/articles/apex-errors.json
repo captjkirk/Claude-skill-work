@@ -1,0 +1,42 @@
+{
+  "id": "apex-errors",
+  "title": "apex-errors.md",
+  "content": "## Metadata_Start ## code: en ## title: Apex Errors ## slug: apex-errors ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## System.LimitException: pcify:Too many SOQL queries: 101 ### Resolution If one of Blackthorn Compliance Apex Triggers or your custom Apex Triggers are giving you this error message, then you need to update your Compliance version to 3.71 or newer. The newer versions of Compliance have been rearchitected to require zero SOQL queries in processing new records in Triggers. ## System.SObjectException: Invalid field CustomFieldName__ for Case ### Cause You are over the 255 character limit for DetectionFields. All characters over 255 are getting automatically truncated, which is causing Compliance to throw an exception when attempting to access a field with an incorrect API name. ### Resolution 1. Upgrade Compliance to the [latest version](https://candyshop.blackthorn.io/products/blackthorn-compliance/latest){target=\"_blank\"}. 2. Add the new field DetectionFieldsPlus to the Manager Custom Metadata Type Page Layout. 3. Put field API names in excess of 255 characters into the new field DetectionFieldsPlus. ![detection field plus\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/detection%20field%20plus%281%29.png){height=\"\" width=\"\"} ## System.ListException: Row with duplicate DeveloperName ### Cause This error is caused by having multiple active Detection Patterns with the same DeveloperName. ### Solution Please navigate to Setup > Custom Code > Custom Metadata Types > DetectionPattern > Manage DetectionPattern. ![duplicate developer name](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/duplicate%20developer%20name.png){height=\"\" width=\"\"} If any of these Detection Patterns have the same Label, then you'll need to either change the name, deactivate the pattern, or delete it. ## CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY : pcifye2c.EmailMessageTrigger: data changed by trigger for field HTML Body: data value too large ### Cause Salesforce automatically truncates very long emails that are over 32,000 characters. In older versions of PCIFY, processing Cases or Email Messages that are being truncated by Salesforce caused these errors. ### Resolution Update your Compliance version to 3.7 or newer. Newer versions of Compliance automatically truncate these fields. ## pcify.CaseTrigger: execution of BeforeUpdate caused by: System.NullPointerException: Attempt to de-reference a null object ### Cause There is either an extra space, a non-text field, a comma, or the field API name not being used as a delimiter in the \"Detection Fields\" field. ### Resolution Make sure you use a text field when adding new fields to Compliance Detection ## System.LimitException: Apex CPU time limit exceeded If your org has a lot of synchronous triggers or Process Builder flows, you may occasionally see a message like \"Apex CPU time limit exceeded\" when inserting or updating records. It may look like the following:pcify.CaseTrigger: System.LimitException: Apex CPU time limit exceeded. This may appear to be a Compliance (PCIFY) error because it says \"pcify,\" but that isn't the case. Here's why. Salesforce puts limits in place to prevent one customer from using all the server resources. Limiting CPU time per transaction is one of these limits. This also prevents issues like infinite loops that would run forever if not stopped. For insert and update operations, Salesforce limits the amount of CPU time to 10 seconds. This may seem like plenty of time but this quota can quickly be eaten up by inefficient triggers, Process Builder Flows, and more. A key concept to understand is that this limit is shared by all Apex code executing. This includes the customer's code, Process Builder Flows, and all other managed packages installed (like Compliance). This CPU limit can be thought of as a bucket of resources. Every time something runs that requires CPU time, it will reach in to the bucket and take a little bit of CPU time. This is fine until some part of the process reaches into the bucket and there is nothing left. This is when the code gets in trouble and displays an error like \"Apex CPU time limit exceeded.\" There may have been another process using 9.9 seconds seconds of that CPU time, but the next process that runs for only 0.1 seconds is the code that meets trouble for hitting the limit. This is why the error message sometimes says a Compliance trigger caused the error. But in reality, it was simply that the piece of code hit the limit, and not the piece of code using all the resources. We have performed significant amounts of diligence to make sure our triggers follow all best practices and are tuned for performance. In our testing, most of our triggers use less than 100ms of CPU time. Apex Triggers and Process Builder flows are likely using most of the CPU time. **What can I do to reduce CPU time? ** * If you are performing mass inserts or updates, reduce the batch size. * Use [@future calls and asynchronous processing](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_invoking_future_methods.htm){target=\"_blank\"} to move non-critical business logic out of triggers. * Convert Process Builder flows to Apex Triggers if possible. * See this [Salesforce.com article](https://help.salesforce.com/s/articleView?id=000339361&type=1){target=\"_blank\"} on writing efficient Apex code. * Follow best practices for [Triggers and Bulk processing](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_bestpract.htm){target=\"_blank\"}. * Vote for [this idea](https://ideas.salesforce.com/s/idea/a0B8W00000Gdn6PUAR/improve-the-performance-of-process-builder-flows){target=\"_blank\"} on the Salesforce Idea Exchange. ## 'pcifyfiles.FileDetector' for job id '7071T00007dzffQ' : Attempt to de-reference a null object ### Cause This error is specific to the SecureAttachment extension package (pcifyfiles namespace). Usually this means there's a problem with the API credentials for the app. ### Resolution 1. Re-enter the API credentials provided by Compliance support. ![API credentials](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/API%20credentials.png){height=\"\" width=\"\"} 2. Check that the Remote Site Settings for SecureAttachment are active, and the Remote Site URLs are correct. ![active and correct](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/active%20and%20correct.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "time",
+    "compliance",
+    "apex",
+    "triggers",
+    "field",
+    "salesforce",
+    "code",
+    "limit",
+    "https",
+    "process",
+    "error",
+    "system",
+    "pcify",
+    "detection",
+    "builder",
+    "flows",
+    "like",
+    "resolution",
+    "cause",
+    "target"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Upgrade Compliance to the [latest version](https://candyshop",
+    "2. Add the new field DetectionFieldsPlus to the Manager Custom Metadata Type Page Layout",
+    "3. Put field API names in excess of 255 characters into the new field DetectionFieldsPlus",
+    "1. Re-enter the API credentials provided by Compliance support",
+    "2. Check that the Remote Site Settings for SecureAttachment are active, and the Remote Site URLs are correct"
+  ],
+  "troubleshooting": [
+    "Errors ## slug: apex-errors ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## System.",
+    "error message, then you need to update your Compliance version to 3.",
+    "error is caused by having multiple active Detection Patterns with the same DeveloperName.",
+    "errors.",
+    "error because it says \"pcify,\" but that isn't the case."
+  ]
+}

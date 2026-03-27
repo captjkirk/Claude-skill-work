@@ -1,0 +1,32 @@
+{
+  "id": "sharing-via-social-media",
+  "title": "sharing-via-social-media.html",
+  "content": "Encourage Attendees to share your Event on social media! Use the Share button to generate a URL for Attendees to share Events via email or on LinkedIn, X/Twitter, or Facebook. The shareable link includes metadata like OG tags to generate a URL preview for the image, title, and description. Please note that the Share button is not available for Event Groups. Clicking the Share button from an Event webpage, the Experience Cloud, or an unregistered Attendee’s AttendeeLink opens a window with a shareable link and buttons for each platform. When you click the Email , LinkedIn , X/Twitter , or Facebook &nbsp;icon, the following happens. Email: Enter a \"To\" email address, add the remainder of the email's text, and click Send . LinkedIn: Enter a message to accompany the link and click Post . Twitter: Use the following message: “I am looking forward to attending [Event Name] - you can check it out here: [event social URL]\") or edit it and click Post . Facebook: Enter a message to accompany the link and click Share . Sharing Links to Facebook Facebook will only correctly render images larger than 200x200px in Facebook posts. Set Up and Enable",
+  "keywords": [
+    "share",
+    "facebook",
+    "event",
+    "email",
+    "click",
+    "link",
+    "button",
+    "linkedin",
+    "twitter",
+    "enter",
+    "message",
+    "attendees",
+    "social",
+    "generate",
+    "shareable",
+    "following",
+    "accompany",
+    "post",
+    "encourage",
+    "your"
+  ],
+  "category": "events",
+  "procedures": [
+    "- you can check it out here: [event social URL]\") or edit it and click"
+  ],
+  "troubleshooting": []
+}

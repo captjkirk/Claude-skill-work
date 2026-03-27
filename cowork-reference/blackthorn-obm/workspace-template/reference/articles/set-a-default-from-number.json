@@ -1,0 +1,30 @@
+{
+  "id": "set-a-default-from-number",
+  "title": "set-a-default-from-number.md",
+  "content": "## Metadata_Start ## code: en ## title: Set a Default from Number ## slug: set-a-default-from-number ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When a user has access to send text messages from multiple phone numbers, they can now choose which one shows as the default. ![Set a Default From Number](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20a%20Default%20From%20Number.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "default",
+    "from",
+    "number",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "when",
+    "user",
+    "access",
+    "send",
+    "text",
+    "messages",
+    "multiple",
+    "phone"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

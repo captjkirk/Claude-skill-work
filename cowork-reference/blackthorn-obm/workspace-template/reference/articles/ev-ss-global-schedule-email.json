@@ -1,0 +1,41 @@
+{
+  "id": "ev-ss-global-schedule-email",
+  "title": "ev-ss-global-schedule-email.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule an Email ## slug: ev-ss-global-schedule-email ## seoTitle: Schedule an Email ## description: ## contentType: Markdown ## Metadata_End ## Important Definitions ### What are the Base and Related objects? * Base Object = the container/parent record * Related Object = the audience inside the Base Object or “container or parent record” or who should receive the message ### When should I use the Global Scheduler? The Global Scheduler provides users with additional Attendee filter options, such as {{variable.Field_Attendee_VisibilityContr}} and {{variable.Field_Attendee_DietaryPreferen}}, to use as trigger elements. The Event-level scheduler only sends an email to Event or Session Attendees based on the value in one of two statuses: {{variable.Field_ETAttendee_RegistrStatus}} or {{variable.Field_Attendee_AttendancStatus}}. ## Use Case Examples ### Example 1: Invite Attendees across all Events * Base Object: Event (no criteria) * Related Object: Attendee with {{variable.Field_Attendee_VisibilityContr}} = “Member” * Result: Send a reminder email to all Attendees who are Members across all Events. ### Example 2: Workshops this week with extra Attendee filters * Base Object = Event with {{variable.Field_ETEvent_EventStartDate}} = “this week” AND {{variable.Field_ETEvent_Category}} = “Workshop” * Related Object: Attendee with {{variable.Field_ETAttendee_RegistrStatus}} = Registered AND {{variable.Field_Attendee_VisibilityContr}} = “Member” * Result: Send a message only to registered members who are attending workshops this week. ## Schedule an Email Let’s explore how to create a schedule and send an Email via the Global Scheduler. 1. Go to Blackthorn | Scheduler Admin > Administration > Messages. 2. Click **New Message**. ### Recipients Section 1. Select Schedule “an Email”. 2. Choose a Base Object or parent record. 3. Choose a Related Object or who will receive the email. 4. Complete the mandatory fields. * {{variable.Field_SmartSche_ScheduleName}} * {{variable.Field_SmartSche_FromEmailAddre}} * {{variable.Field_SmartSche_ToEmail}} 5. Enter filter criteria for the Base and/or Related Objects. 6. Click {{variable.Button_Next}}. NOTE: Always define the Base Object (parent record) for the Related Object (recipient), regardless of whether you are setting filter criteria for the parent. ### Schedule Section Enter the required information to schedule the email. ### Message Section There are two ways to create an email: use an Email Template or compose an email here. #### Email Template 1. Select Template. 2. Select an {{variable.Field_SmartSche_EmailTemplate}} 3. Click {{variable.Button_Next}}. #### Compose Email 1. Select Compose Email. 2. Enter a {{variable.Field_EmailMsg_Subject}}. 3. Enter a {{variable.Field_SmartSche_Body}}. 4. Click {{variable.Button_Next}}. ### Send Test Section 1. Enter a {{variable.Field_SmartSche_TestEmail}}. Make sure to use an email that can be checked easily. Using your email is a good option. 2. Select a {{variable.Field_SmartSche_TestRecord}}. 3. Click **Send Test**. 4. After you receive the success message, click **Schedule**. Your recipients will receive the email per the scheduled date and time. ![Create Scheduled Job Global Scheduler_Pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20Scheduled%20Job%20Global%20Scheduler_Pic%201.png){height=\"\" width=\"\"} ## Batch Jobs and Email Frequency Batch jobs function similarly for the Global Scheduler and the Smart Scheduler (from the Event record). The primary difference is that if the Email Notification Settings {{variable.Field_MSG_ConsolidEmailFrequen}} is set to “Once in a day,” the batch volume for the Global Scheduler can be much higher when many record updates occur in a single day. This scenario will not occur with the Smart Scheduler. If you want to update the {{variable.Field_MSG_ConsolidEmailFrequen}} field, go to the Smart Scheduler Admin tab, click the **Configuration Settings** icon in the left-hand navigation, and set {{variable.Field_MSG_ConsolidEmailFrequen}} to “Once in a day.”",
+  "keywords": [
+    "variable",
+    "email",
+    "object",
+    "scheduler",
+    "schedule",
+    "base",
+    "global",
+    "related",
+    "click",
+    "record",
+    "parent",
+    "message",
+    "event",
+    "send",
+    "select",
+    "enter",
+    "receive",
+    "attendee",
+    "create",
+    "section"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Blackthorn | Scheduler Admin > Administration > Messages",
+    "2. Click **New Message**",
+    "1. Select Schedule “an Email”",
+    "2. Choose a Base Object or parent record",
+    "3. Choose a Related Object or who will receive the email",
+    "4. Complete the mandatory fields",
+    "5. Enter filter criteria for the Base and/or Related Objects",
+    "6. Click {{variable",
+    "1. Select Template",
+    "2. Select an {{variable"
+  ],
+  "troubleshooting": []
+}

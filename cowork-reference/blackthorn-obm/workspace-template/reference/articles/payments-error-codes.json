@@ -1,0 +1,46 @@
+{
+  "id": "payments-error-codes",
+  "title": "payments-error-codes.md",
+  "content": "## Metadata_Start ## code: en ## title: Payments Error Codes ## slug: payments-error-codes ## seoTitle: Payments Error Codes ## description: ## contentType: Markdown ## Metadata_End If you still have questions after looking through our Troubleshooting documentation please contact {{variable.Link_BlackthornSupport}}. We're happy to help! ## Keys for Idempotent Requests Error **Error:** \"Keys for idempotent requests can only be used with the same parameters they were first used with.\" To resolve the error, complete the following steps. 1. Remove any value from the {{variable.Field_Transaction_Key}} field on the {{variable.Object_Transaction}}. 2. Change the {{variable.Field_Transaction_TransaStatus}} to “Open”. 3. Reprocess the {{variable.Object_Transaction}}. ## Your request to install the package Blackthorn Payments was unsuccessful If you see long error messages while installing the app, please verify the following. * You're the system administrator of your {{variable.Product_Salesforce}} instance. * If you have {{variable.Product_Salesforce}} shield running in your org, follow our guide [here](/v1/docs/salesforce-shield-platform-encryption-with-all-blackthorn-apps). ## Troubleshooting General Errors :::(Warning) (Blackthorn no longer supports Payments APIs.) The documentation provided is a self-help resource for legacy implementations only. ::: Check the automated processes and rules in place on the following sources and related objects: **Objects:** {{variable.Object_PaymentGatewayCustomer}}, {{variable.Object_PaymentMethod}}, {{variable.Object_Transaction}}, {{variable.Object_Account}}, {{variable.Object_Contact}}, and any Transaction Parent you set in the Setup Wizard, such as an {{variable.Object_Opportunity}} **Look at:** * Process Builders * Workflows * Validations * Apex Triggers * Field Level Permissions * Object Level Permissions (Sharing Settings) * If by a custom UI, Salesforce API or our Payments API ## {\"success\":false,\"errors\":{\"E_UNKOWN_ERROR\":\"PDF Generator Error\"}} OR A time-out message: Application Error - an error occurred in the application and your page could not be served.... Click [here](https://auth.blackthorn.io/salesforce?packages=03361000000DksxAAC){target=`_blank`} to reauthorize your production org. Click [here](https://auth.blackthorn.io/salesforce?packages=03361000000DksxAAC&environment=sandbox){target=`_blank`} to reauthorize your sandbox org. ## Facing error while setting up webhook endpoint in Stripe OR Authorize.net OR in Experience Clouds with Virtual Terminal You may see the following errors while setting up the endpoint in Stripe/Auth.net dashboard or if you are using the {{variable.Component_VirtualTerminal}} in the {{variable.Product_Salesforce}} {{variable.Feature_ExperienceCloud}}. 1. Test Webhook Error:500 (stripe) 2. Test Webhook Error:400 (stripe) 3. Error occurred in connecting to endpoint (Auth.net) 4. Result:[id=null, message=Problem with finding PG by label primary . List size: 0, success=false]” with an error 400 (stripe) 5. Unable to find a Payment Gateway for id=null (Virtual Terminal in the {{variable.Feature_ExperienceCloud}}) To resolve this, please follow the steps below. 1. Login to {{variable.Product_Salesforce}}, navigate to Setup > Sharing settings > Payment Gateway > Change the Default External Access from Private to Public Read Only. 2. Uncheck the Secure guest user record access option. It overrides the Default External Access and sets it to private for every object including the {{variable.Object_PaymentGateway}} (PG). ## btcombobox error when trying to upgrade. If you receive this issue when installing or upgrading {{variable.Product_Payments}}, *the component must implement at least one of flexipage:availableForAllPageTypes,flexipage:availableForRecordHome interface. BT_comboboxResult: The component must implement at least one of flexipage:availableForAllPageTypes,flexipage:availableForRecordHome interface.* Please remove the `btcombobox` component from a lightning page. Odds are you have it on the Opportunity lightning page layout. ## Permission error: bt_stripe.SObjectSelector.FLSException: You do not have permission to read the field OtherStreet: (bt_stripe) To resolve this error, please upgrade to the latest version of {{variable.Product_Payments}} from [here](https://candyshop.blackthorn.io/products/blackthorn-payments/latest){target=\"_blank\"}. ## Row with duplicate name at index:2 ![I_02_troubleshooting 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/I_02_troubleshooting%202.png){height=\"\" width=\"\"} This occurs when there are duplicate entries created for the Transaction parent. You will not be able to proceed ahead until you delete the duplicates. To do this, go to Setup > Custom Settings > Transaction parents > Manage. Click \"Del\" next to the duplicate item in the list. ## The Transaction can't be authorized. ![I_02_troubleshooting 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/I_02_troubleshooting%203.png){height=\"\" width=\"\"} If you have received this error, check to make sure the {{variable.Object_PaymentMethod}} related to this {{variable.Object_Transaction}} is not an ACH {{variable.Object_PaymentMethod}}. ACH {{variable.Object_PaymentMethod}}s are not able to authorize {{variable.Object_Transaction}}s. ## Test webhook error: Domain unknown. ![I_02_troubleshooting 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/I_02_troubleshooting%204.png){height=\"\" width=\"\"} If you have received this error, check your Webhook URL. If you are using Blackthorn {{variable.Product_Payments}} with a developer account remove the \".secure\". If you are using any other account, make sure the \".secure\" is included. ## Customer cus_AwROhSB7FyifGc does not have a linked source with ID ba_1AaYW9BQbf3hbNo9B8juK4lo This error means that the related {{variable.Object_PaymentMethod}} on the {{variable.Object_Transaction}} no longer has a valid Card ID Token. What this means is most likely the card or ACH token was deleted in {{variable.Product_Stripe}}. Please view related Stripe {{variable.Object_PaymentGatewayCustomer}} record to verify if there is a valid {{variable.Object_PaymentMethod}} form. If there is no longer a valid {{variable.Object_PaymentMethod}} form, create a new payment for this Stripe {{variable.Object_PaymentGatewayCustomer}} OR edit the existing {{variable.Object_PaymentMethod}} with the updated card/ACH information, remove the values from the card id and customer id, select save and this {{variable.Object_PaymentMethod}} will sync back to {{variable.Product_Stripe}}. ## Terminal error on new record screen ![I_02_troubleshooting 4_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/I_02_troubleshooting%204_5.png){height=\"\" width=\"\"} This error means you have a required field that needs a value in order to create the new record and most likely that field is not in the {{variable.Component_VirtualTerminal}}'s new record screen. To fix, verify all required fields are in the {{variable.Component_VirtualTerminal}}'s new record screen. Click [here](/v1/docs/vt-setup) for instructions on adding fields to your {{variable.Component_VirtualTerminal}}. ## “No such customer: 'cus_**************'” Error **Q: I am trying to create a new Payment Method, but got “No such customer: 'cus'.” What does it mean?** A: The “No such customer: 'cus_**************'” error means that the customer does not exist on the connected account that you are trying to charge. Please create a new [Payment Gateway Customer](https://docs.blackthorn.io/docs/stripe-customer){target=`_blank`} and try again.",
+  "keywords": [
+    "variable",
+    "error",
+    "blackthorn",
+    "object_paymentmethod",
+    "your",
+    "https",
+    "stripe",
+    "i_02_troubleshooting",
+    "customer",
+    "payments",
+    "please",
+    "documentation",
+    "object_transaction",
+    "record",
+    "from",
+    "field",
+    "here",
+    "webhook",
+    "payment",
+    "following"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Remove any value from the {{variable",
+    "2. Change the {{variable",
+    "3. Reprocess the {{variable",
+    "1. Test Webhook Error:500 (stripe) 2",
+    "3. Error occurred in connecting to endpoint (Auth",
+    "4. Result:[id=null, message=Problem with finding PG by label primary ",
+    "5. Unable to find a Payment Gateway for id=null (Virtual Terminal in the {{variable",
+    "1. Login to {{variable",
+    "2. Uncheck the Secure guest user record access option"
+  ],
+  "troubleshooting": [
+    "Error Codes ## slug: payments-error-codes ## seoTitle: Payments Error Codes ## description: ## contentType: Markdown ## Metadata_End If you still have questions after looking through our Troubleshooting documentation please contact {{variable.",
+    "Error **Error:** \"Keys for idempotent requests can only be used with the same parameters they were first used with.",
+    "error, complete the following steps.",
+    "error messages while installing the app, please verify the following.",
+    "Errors :::(Warning) (Blackthorn no longer supports Payments APIs."
+  ]
+}

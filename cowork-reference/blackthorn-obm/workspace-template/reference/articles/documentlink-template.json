@@ -1,0 +1,41 @@
+{
+  "id": "documentlink-template",
+  "title": "documentlink-template.md",
+  "content": "## Metadata_Start ## code: en ## title: DocumentLink Template ## slug: documentlink-template ## seoTitle: DocumentLink Template ## description: ## contentType: Markdown ## Metadata_End This {{variable.Object_DocumentLinkTemplate}} object contains the fields that allow users to configure the presentation of the {{variable.Product_DocumentLink}}. ![K_02_DocLink Template pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%201.png){height=\"\" width=\"\"} ## Define Custom Acceptance Language Use the following fields to customize the acceptance language on your {{variable.Object_DocumentLinkTemplate}}. {{variable.Field_DocLinkTemp_TermsandCond}}: Use this field to link your custom terms and conditions to the {{variable.Object_DocumentLinkTemplate}}. {{variable.Field_DocLinkTemp_AccLangACH}} and {{variable.Field_DocLinkTemp_AccLangCard}}: Use these fields to craft custom messaging. ![K_02_DocLink Template pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%202.png){height=\"\" width=\"\"} If these fields aren’t already included in the {{variable.Object_DocumentLinkTemplate}} page layout, complete the following steps to add them. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. Click the Object Manager tab. 4. In the Quick Find box, enter and click “DocumentLink Template.” 5. Click the Page Layouts tab. 6. Click “Document Link Layout.” 7. Drag and drop each field onto the page layout. 8. Click {{variable.Button_Save}} once all three fields have been added. ### Examples #### Credit Card DocumentLink Checkout ![K_02_DocLink Template pic 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%203.png){height=\"\" width=\"\"} #### Bank DocumentLink Checkout ![K_02_DocLink Template pic 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%204.png){height=\"\" width=\"\"} :::(Info) (Is the date format on your DocumentLink Template incorrect?) Check your browser's location setting. All date fields on the DocumentLink Template are formatted based on your browser's location setting. ::: ## Add Company Logo and Details to DocumentLink To add company details and a logo to your {{variable.Product_DocumentLink}} Invoice, complete the following steps. 1. From the App Launcher, navigate to the {{variable.Object_CompanyInfo}} object. 2. Click {{variable.button_new}} to create a new record. 3. Complete the following fields. * {{variable.Field_CompInfo_CompInfoName}} (required) * {{variable.Field_CompInfo_Email}} (required) * {{variable.Field_CompInfo_Logo}} - enter a URL to your logo. NOTE: Use the Documents object in the Classic UI to store images. From there, right-click the image, select \"Copy Image Address\", and add it to the {{variable.Field_CompInfo_Logo}} field. 4. Add additional details such as a website and address. 5. Click {{variable.Button_Save}}. 6. Add the {{variable.Object_CompanyInfo}} record to either the {{variable.Object_DocumentLinkTemplate}} record or directly on the {{variable.Object_Invoice}} record. Click [Company Info](/v1/docs/company-info) for more information about the {{variable.Object_CompanyInfo}} object. ## Add Custom Fields and Footer Use the following fields to customize the Invoice created by {{variable.Product_DocumentLink}}: * {{variable.Field_DocLinkTemp_Field1Label}} * {{variable.Field_DocLinkTemp_Field1}} * {{variable.Field_DocLinkTemp_Field2Label}} * {{variable.Field_DocLinkTemp_Field2}} * {{variable.Field_DocLinkTemp_Footer}} :::(Info) (What other changes can I make?) Additional customizations such as changes to the font, font size, and wording are not able to be made at this time. ::: ## Multilingual Support - In Progress The DocumentLink Template object includes a new field called {{variable.Field_DocLinkTemp_DisplayLangu}}. The field contains a list of languages an Admin can choose from to display to the DocumentLink end user. * Field Name: {{variable.Field_DocLinkTemp_DisplayLangu}} * API Name: Display_Language__c * Data Type: picklist * Description: List of supported display languages for the DocumentLink. This field is set to English by default. ## Automatically Apply DocumentLink Template to Invoices 1. Create a simple process (Process Builder, Flow etc) to accomplish this. 2. In your automated process, you would set the {{variable.Field_Invoice_DocumentLinkTemp}} field on the {{variable.Object_Invoice}} Record. 3. Set it to fill in the {{variable.Field_Invoice_DocumentLinkTemp}} any time an {{variable.Object_Invoice}} is created. ## Deprecated Fields If you are upgrading your Blackthorn {{variable.Product_Payments}} package and notice that some fields on the {{variable.Object_DocumentLinkTemplate}} object have the ability to be deleted feel free to take advantage of this to clean your org. Otherwise, if a field has the ability to be deleted and can no longer be added to your page layout that means we no longer support it. You'll need to navigate to Setup in the classic UI to see the option to delete. **Fields No Longer Supported:** * {{variable.Field_DocLinkTemp_BackgndColor}} * {{variable.Field_DocLinkTemp_ButtonColor}} * {{variable.Field_DocLinkTemp_CardColorThe}} * {{variable.Field_DocLinkTemp_Logo}} * {{variable.Field_DocLinkTemp_DueDateLabel}} * {{variable.Field_DocLinkTemp_RequebyLabel}} * {{variable.Field_DocLinkTemp_AmountDueLab}} * {{variable.Field_DocLinkTemp_Documentatio}}",
+  "keywords": [
+    "variable",
+    "documentlink",
+    "template",
+    "fields",
+    "your",
+    "click",
+    "field",
+    "k_02_doclink",
+    "object",
+    "object_documentlinktemplate",
+    "images",
+    "following",
+    "record",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. Click the Object Manager tab",
+    "4. In the Quick Find box, enter and click “DocumentLink Template",
+    "5. Click the Page Layouts tab",
+    "6. Click “Document Link Layout",
+    "7. Drag and drop each field onto the page layout",
+    "8. Click {{variable",
+    "1. From the App Launcher, navigate to the {{variable",
+    "2. Click {{variable"
+  ],
+  "troubleshooting": []
+}

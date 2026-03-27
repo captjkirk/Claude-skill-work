@@ -1,0 +1,30 @@
+{
+  "id": "conversations",
+  "title": "conversations.md",
+  "content": "## Metadata_Start ## code: en ## title: Conversations ## slug: conversations ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## What is a Conversation? You can think of a Conversation as a container for a group of text messages. Each Conversation is defined by attributes such as `Start Time` and `End Time` and is unique to the phone numbers involved (your internal Messaging phone number and the recipient's phone number). A Conversation is either **Open** or **Closed**, and it will have a status such as \"Needs Response\" or \"Responded\" so that you can easily surface those conversations that need attention. ## How is a Conversation created? The good news is you don't need to create Conversations manually. They will be created automatically based on logical rules. A Conversation is only created from an inbound text message. When you send a text message to someone a Conversation isn’t immediately created. After all, it's just an outbound text message. If that person responds back, a new Conversation will be created, and both text messages (your outbound and their inbound) will be part of the new Conversation. If someone sends you an inbound text and an existing Open Conversation between your phone numbers doesn’t exist, a new Conversation will be created. ## How does a Conversation work after it's created? Once a Conversation is created between two phone numbers, any text messages sent between those two phone numbers will be contained within that Conversation while it is open. Each time a message is added to the Conversation, the status updates to reflect whether the last message was inbound or outbound. * If the last message is inbound, the status is \"Needs Response\". * If the last message is outbound, the status is \"Responded\". When the Conversation is closed, no further text messages will be added to that particular Conversation. ## Where do I view Conversations? The existing Messaging Conversations page has been updated to include some new features. Also, the Messaging Messenger component that you access on the record pages has been updated to include new features related to the Conversations. ### Messaging Conversations Component ![Conversation_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Conversation_1.png){height=\"\" width=\"\"} * * * ### Messaging Messenger Component (on Record pages) ![Conversation_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Conversation_2.gif){height=\"\" width=\"\"} * * * ### Conversation History Component (New) ![Conversation_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Conversation_3.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "conversation",
+    "conversations",
+    "text",
+    "created",
+    "message",
+    "phone",
+    "messaging",
+    "inbound",
+    "messages",
+    "numbers",
+    "status",
+    "outbound",
+    "component",
+    "time",
+    "your",
+    "open",
+    "between",
+    "last",
+    "https",
+    "document360"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

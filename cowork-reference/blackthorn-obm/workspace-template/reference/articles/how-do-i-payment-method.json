@@ -1,0 +1,30 @@
+{
+  "id": "how-do-i-payment-method",
+  "title": "how-do-i-payment-method.md",
+  "content": "## Metadata_Start ## code: en ## title: How Do I Update my Payment Method? ## slug: how-do-i-payment-method ## seoTitle: How Do I Update my Payment Method ## description: ## contentType: Markdown ## Metadata_End Users can change the Payment Method at any time. ## Update a Card’s Information {{snippet.Messaging_UpdatePM_UpdateCardInfo}} ## Change the Default Payment Method {{snippet.Messaging_ChgDefaultPM}} ## Delete a Payment Method {{snippet.Messaging_UpdatePM_DeletePM}}",
+  "keywords": [
+    "payment",
+    "method",
+    "update",
+    "snippet",
+    "change",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "users",
+    "time",
+    "card",
+    "information",
+    "messaging_updatepm_updatecardinfo",
+    "default"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

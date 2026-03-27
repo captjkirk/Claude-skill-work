@@ -1,0 +1,32 @@
+{
+  "id": "matching-duplication",
+  "title": "matching-duplication.md",
+  "content": "## Metadata_Start ## code: en ## title: Matching and Duplication ## slug: matching-duplication ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Relationship Settings give you better control over Lead, Contact, and Account matching and creation. With this feature, you can define which records should be matched and created when a Payment Gateway Customer is created. ## Before You Start {{snippet.EVPTST_MD_BeforeYouStart}} ## How Does It Work? {{snippet.EVPTST_MD_HowDoesItWork}} :::(Info) (Did you upgrade Payments?) Users upgrading Payments will need to manually deactivate the current “Payment Gateway Customer Dup Rule” matching rule and activate the new Payment_Gateway_Customer_Matching_Rule2 matching rule. The new matching rule will be installed automatically for new installations. ::: ## Configure Your Relationship Settings {{snippet.EVPTST_MD_ConfigRelatioSetting}} ### Example {{snippet.EVPTST_MD_Example}} ## Additional Fields for Matching Logic Variations ### Match Records {{snippet.EVPTST_MD_MatchRecords}} :::(Info) (Important) If you leave the {{variable.Field_RelatSettin_MatchRecords}} field blank and don't have active duplicate rules for Lead, Contact, and Account, you will receive an error in the Blackthorn Logs. Additionally, if this field is blank your current matching logic will not continue to find matches. ::: ### Match All Email Fields {{snippet.EVPTST_MD_MatchAllEmailFields}} ### Use Case {{snippet.PTST_MD_UseCase}}",
+  "keywords": [
+    "matching",
+    "snippet",
+    "rule",
+    "duplication",
+    "relationship",
+    "settings",
+    "lead",
+    "contact",
+    "account",
+    "records",
+    "created",
+    "payment",
+    "gateway",
+    "customer",
+    "info",
+    "payments",
+    "current",
+    "your",
+    "fields",
+    "logic"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error in the Blackthorn Logs."
+  ]
+}

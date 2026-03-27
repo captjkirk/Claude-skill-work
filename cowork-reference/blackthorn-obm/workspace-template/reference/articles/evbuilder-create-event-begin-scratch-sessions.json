@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-create-event-begin-scratch-sessions",
+  "title": "evbuilder-create-event-begin-scratch-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Sessions ## slug: evbuilder-create-event-begin-scratch-sessions ## seoTitle: Sessions ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Limitation) Sessions cannot be made mandatory out of the box. ::: {{snippet.EVBuilder_Sessions_FeaturesCreate}} ## FAQ {{snippet.SessionFAQ_SessionHiddenChecko}}",
+  "keywords": [
+    "sessions",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "create",
+    "event",
+    "begin",
+    "scratch",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "warning",
+    "limitation",
+    "cannot",
+    "made"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

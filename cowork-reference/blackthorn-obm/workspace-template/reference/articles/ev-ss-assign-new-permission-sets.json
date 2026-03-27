@@ -1,0 +1,40 @@
+{
+  "id": "ev-ss-assign-new-permission-sets",
+  "title": "ev-ss-assign-new-permission-sets.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign New Permission Sets ## slug: ev-ss-assign-new-permission-sets ## seoTitle: Assign New Permission Sets ## description: ## contentType: Markdown ## Metadata_End After upgrading the {{variable.Product_Payments}} and {{variable.Product_Events}}, assign new permission sets to users so they can use the new components and features. * **{{variable.PS_Base_Admin}}**: This permission set allows users to register a Smart Scheduler Account and authenticate the user. The user also has access to all components including the ability to schedule and send Global and Record Level SMS and email. * **{{variable.PS_Base_User}}**: This permission set allows users to access components including the ability to schedule and send Global and Record Level SMS and email. Complete the steps below to assign the permission sets. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, enter and click “Users.” 4. Click the name of the user whose permissions need to be updated. 5. On the user’s record, scroll down to the Permission Set Assignments. ![SS_Permission Set 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/SS_Permission%20Set%201.png){height=\"\" width=\"\"} 7. Click **Edit Assignments**. 8. Add the permission sets related to Base (Blackthorn | Base (Admin) or Blackthorn | Base (User)), Payments, and Events. 9. Select the Assignments as shown below and add them. ![SS_Permission Set 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/SS_Permission%20Set%202.png){height=\"\" width=\"\"} 11. Click {{variable.Button_Save}}. ![SS_Permission Set 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/SS_Permission%20Set%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "permission",
+    "variable",
+    "sets",
+    "click",
+    "ss_permission",
+    "assign",
+    "user",
+    "users",
+    "components",
+    "record",
+    "assignments",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. In the Quick Find box, enter and click “Users",
+    "4. Click the name of the user whose permissions need to be updated",
+    "5. On the user’s record, scroll down to the Permission Set Assignments",
+    "7. Click **Edit Assignments**",
+    "8. Add the permission sets related to Base (Blackthorn | Base (Admin) or Blackthorn | Base (User)), Payments, and Events",
+    "9. Select the Assignments as shown below and add them",
+    "11. Click {{variable"
+  ],
+  "troubleshooting": []
+}

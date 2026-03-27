@@ -1,0 +1,30 @@
+{
+  "id": "google-analytics-conversions",
+  "title": "google-analytics-conversions.md",
+  "content": "## Metadata_Start ## code: en ## title: Conversions ## slug: google-analytics-conversions ## seoTitle: Conversions ## description: ## contentType: Markdown ## Metadata_End Use Google Tag Manager and conversions to track specific user actions such as purchasing a Ticket for an Event. Per [Google](https://support.google.com/analytics/answer/9267568?hl=en#){target=`_blank`}, > The primary way to measure a Google Analytics conversion is to create or identify an event that measures the important user interaction and then [mark the event as a conversion](https://support.google.com/analytics/answer/13128484){target=`_blank`}. For example, if you use the Google tag or Tag Manager, you would create the event for your website and then go to Google Analytics to mark the event as a conversion. Use the instructions [here](https://support.google.com/analytics/answer/12966437){target=`_blank`} to set up a conversion in Google Analytics 4.",
+  "keywords": [
+    "google",
+    "analytics",
+    "event",
+    "conversions",
+    "conversion",
+    "https",
+    "support",
+    "answer",
+    "target",
+    "_blank",
+    "manager",
+    "user",
+    "create",
+    "then",
+    "mark",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

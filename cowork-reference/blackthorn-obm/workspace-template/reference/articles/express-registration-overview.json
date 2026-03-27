@@ -1,0 +1,39 @@
+{
+  "id": "express-registration-overview",
+  "title": "express-registration-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: express-registration-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End When enabled, Express Registration allows registered Attendees logged into a Experience Cloud to register any other Contact in their Account with just a couple of clicks. Previously, Attendees could only complete the registration process once per Event. This scenario also applies to authenticated users accessing an Event via iframe. (Please note that additional Event Items are only available if the Event organizer has not set a {{variable.Field_ETEventItem_MaxQuantity}} for an Event Item.) A user with vision impairments can use the Express Registration feature with only their keyboard, including opening the picklist, tabbing through the list, making a selection, and changing their selection. ## Limitations and Dependencies ### Limitations: * The pre-fill does not apply to pre-registration Forms. * The person completing the registration can still make edits to the pre-filled data, but those edits will only be reflected on the Attendee. The updates will not be saved to the Contact record. * Express Registration is not available for AttendeeLink at this time. * Express Registration is enabled for all Experience Cloud sites within a Salesforce org or none of them. It is not possible to enable Express Registration for a single site. ### Dependencies: * The feature is only available via the Blackthorn Events component in a Experience Cloud site. * The person completing the registration can only see other Contacts within their Account in Salesforce. ## Updates ### New Field There is a new field on the Contact record. * Field Name: {{variable.Field_Contact_ExpressRegExpSit}} * API Name: Express_Reg_For_Experience_Site__c * Data Type: picklist; includes “Someone Else” option that allows the user to enter information in blank fields. * Description: In your Experience Cloud site(s), allow authenticated users to select contacts within their own account to pre-fill registration data. * There is no default selection. ### Updated Custom Setting: Blackthorn | Event Settings #### OLD * Label: {{variable.CS_EVSetting_ExpreRegfrmExpReg}} * API Name: Express_Reg_For_Digital_Experience_c * Description: In your Experience Cloud site(s), allow authenticated users to select contacts within their own account to pre-fill registration data. #### NEW * Label: {{variable.CS_EVSetting_ExprRegExperiSite}} * API Name: Express_Reg_For_Experience_Site_c * Description: In your Experience Cloud site(s), allow authenticated users to select contacts within their own account to pre-fill registration data. * The default value is “False” (unchecked). * If {{variable.CS_EVSetting_ExprRegExperiSite}} = “True”, then authenticated users can select from the Contacts within their own Account to pre-fill registration data. If a user reaches the registration page for an Event and any of the following are true, then Express Registration will not be available. * {{variable.CS_EVSetting_ExprRegExperiSite}} = “False” * {{variable.CS_EVSetting_ExprRegExperiSite}} = “True” AND the user is a guest user. * The user visits the Event webpage via an AttendeeLink or a public website. ### Definitions of Registration Types **Regular Registration:** The Attendee record is linked to a Lead/Contact/Account based on matching data (name, email, etc.). **Express Registration:** The selected Contact will be linked to the Attendee record. The selected Contact will remain linked to the Attendee record even if the data is updated after it has been pre-filled in the Attendee Form. ### ContactIds Each Attendee with an assigned Contact will have the contactId attached to it. * If a Contact is selected, the contactId will be attached to the Event Registration Submission record in Salesforce. * If a “Someone else” is selected, the contactId will not be attached to the Event Registration Submission record in Salesforce. * If a Contact is selected but the values are changed, the contactId will be attached to the Event Registration Submission record in Salesforce. ## Customize Your Attendees' Experience Use [Advanced Visibility](/v1/docs/advanced-visibility-overview){target=`_blank`} to optimize your site for visitors browsing for their entire Account. If any Contact within the logged-in user’s Account can see an Event, Event Item, and Session, the user will be able to see that option.",
+  "keywords": [
+    "registration",
+    "event",
+    "contact",
+    "their",
+    "account",
+    "express",
+    "user",
+    "data",
+    "record",
+    "experience",
+    "variable",
+    "within",
+    "cloud",
+    "only",
+    "attendee",
+    "site",
+    "authenticated",
+    "users",
+    "fill",
+    "salesforce"
+  ],
+  "category": "events",
+  "procedures": [
+    "* Description: In your Experience Cloud site(s), allow authenticated users to select",
+    "* There is no default select",
+    "* API Name: Express_Reg_For_Digital_Experience_c * Description: In your Experience Cloud site(s), allow authenticated users to select",
+    "* API Name: Express_Reg_For_Experience_Site_c * Description: In your Experience Cloud site(s), allow authenticated users to select",
+    "* The select",
+    "* If a Contact is select",
+    "* If a “Someone else” is select",
+    "* If a Contact is select"
+  ],
+  "troubleshooting": []
+}

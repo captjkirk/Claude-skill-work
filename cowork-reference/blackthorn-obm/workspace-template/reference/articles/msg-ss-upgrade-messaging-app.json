@@ -1,0 +1,41 @@
+{
+  "id": "msg-ss-upgrade-messaging-app",
+  "title": "msg-ss-upgrade-messaging-app.md",
+  "content": "## Metadata_Start ## code: en ## title: Upgrade the Messaging App ## slug: msg-ss-upgrade-messaging-app ## seoTitle: Upgrade the Messaging App ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Which Blackthorn Apps Do You Use?) The Smart Scheduler component can be used with our Events app, Messaging app, or both! If you are only using Events, ignore the steps about updating Messaging and Messaging’s permissions. If you want to learn more about our Messaging app, please contact your account manager! ::: 1. Go to the [Candy Shop](https://candyshop.blackthorn.io/products){target=\"_blank\"}. 2. Click **Blackthorn Messaging**. 3. Click **Product Upgrade**. 4. Click **Login to Install**. 5. Select “Production or Developer Org” or “Sandbox or Scratch Org.” 6. Complete the login process. 7. Click **Install**. 8. Review the Product Terms of Use and Licenses. 9. Check the “I confirm I have read and agree to these product terms of use and licenses” checkbox. 10. Click **Confirm**. After the upgrade process completes, you will receive an email confirming that Messaging has been installed.",
+  "keywords": [
+    "messaging",
+    "upgrade",
+    "click",
+    "blackthorn",
+    "product",
+    "events",
+    "about",
+    "login",
+    "install",
+    "process",
+    "terms",
+    "licenses",
+    "confirm",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to the [Candy Shop](https://candyshop",
+    "2. Click **Blackthorn Messaging**",
+    "3. Click **Product Upgrade**",
+    "4. Click **Login to Install**",
+    "5. Select “Production or Developer Org” or “Sandbox or Scratch Org",
+    "6. Complete the login process",
+    "7. Click **Install**",
+    "8. Review the Product Terms of Use and Licenses",
+    "9. Check the “I confirm I have read and agree to these product terms of use and licenses” checkbox",
+    "10. Click **Confirm**"
+  ],
+  "troubleshooting": []
+}

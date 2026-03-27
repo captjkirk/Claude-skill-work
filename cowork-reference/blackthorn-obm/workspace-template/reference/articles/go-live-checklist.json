@@ -1,0 +1,32 @@
+{
+  "id": "go-live-checklist",
+  "title": "go-live-checklist.md",
+  "content": "## Metadata_Start ## code: en ## title: Go Live Checklist ## slug: go-live-checklist ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Have you explored all of Blackthorn {{variable.Product_Payments}} functionality and configurations before going live? Blackthorn {{variable.Product_Payments}} allows you to begin accepting payments within minutes of installing our app. However, there are certain steps that you should follow before going live. The checklist below lists out those steps in detail. **[ ] Create a live mode {{variable.Object_PaymentGateway}} record.** When creating the {{variable.Object_PaymentGateway}} record, remember to set the {{variable.Field_PaymentGateway_Default}} checkbox to \"True\", ensuring that all live {{variable.Object_Transaction}}s, {{variable.Object_PaymentMethod}}s, and Customers that get created are captured correctly. If when you installed Blackthorn {{variable.Product_Payments}} and connected to your Stripe account in test mode, do not change your {{variable.Object_PaymentGateway}} record from Test to Live mode by clicking {{variable.Button_PG_ConnecttoGateway}}. Instead, create a new record for your {{variable.Object_PaymentGateway}} in live mode. Instructions [here](/v1/docs/payment-gateway). * * * **[ ] Create a live Webhook URL in Stripe.** If you already configured {{variable.Task_Webhook}}s when testing, the majority of steps are completed except that you need to create a Webhook URL for your Stripe account in live mode. Copy your test Webhook URL and update it with the live mode {{variable.Object_PaymentGateway}}'s {{variable.Field_PG_WebhookLabel}} value, then verify that the Webhook URL is working correctly. * * * **[ ] Enable the correct Blackthorn {{variable.Product_Payments}} Permission Sets for your team.** There are three permission sets ({{variable.PS_PT_Manager}}, {{variable.PS_PT_Admin}}, and {{variable.PS_PT_User}}) that you can assign your team members to. Each permission set provides a level of access to the Blackthorn {{variable.Product_Payments}} app. If need be, you can clone any of the permission sets to personalize the access based on your company's requirements. * * * **[ ] Update your {{variable.Object_Account}}, {{variable.Object_Contact}}, and other parent objects' page layouts to include the {{variable.Object_Transaction}}, {{variable.Object_PaymentMethod}}, {{variable.Object_PaymentGatewayCustomer}} and {{variable.Object_PaymentSchedule}} objects as {{variable.SFTerm_RelatedList}}s.** You'll notice that all the payment processing objects give you the option to relate the record to an existing {{variable.Object_Account}}, {{variable.Object_Contact}}, and/or other defined parent objects (which you should do!). Adding these objects as {{variable.SFTerm_RelatedList}}s gives you better visibility on payments for that particular {{variable.Object_Account}}, {{variable.Object_Contact}}, or {{variable.Object_Opportunity}} (example parent object) record. * * * **[ ] {{variable.Task_HistoricalSync}} of {{variable.Product_Stripe}} Data.** If you were a {{variable.Product_Stripe}} customer before installing Blackthorn {{variable.Product_Payments}} and have data in {{variable.Product_Stripe}} that needs to be in {{variable.Product_Salesforce}}, then use our {{variable.Task_HistoricalSync}} process to bring {{variable.Product_Stripe}} Customers, {{variable.Object_PaymentMethod}}s, and {{variable.Object_Transaction}}s (in that order) over. Remember, if you want existing {{variable.Object_Contact}}s to be related to your Stripe Customers, the two records' emails must match. * * * **[ ] Verify Customizations.** Verify Workflow Rules, Approval Processes, Email Alerts, Process Builders, etc. are working correctly before going live. Happy Processing!",
+  "keywords": [
+    "variable",
+    "live",
+    "your",
+    "blackthorn",
+    "product_payments",
+    "mode",
+    "record",
+    "object_paymentgateway",
+    "objects",
+    "before",
+    "create",
+    "stripe",
+    "webhook",
+    "permission",
+    "object_contact",
+    "product_stripe",
+    "checklist",
+    "going",
+    "steps",
+    "when"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* If you already configure"
+  ],
+  "troubleshooting": []
+}

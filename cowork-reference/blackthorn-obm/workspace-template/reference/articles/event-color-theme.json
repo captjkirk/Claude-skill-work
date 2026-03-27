@@ -1,0 +1,30 @@
+{
+  "id": "event-color-theme",
+  "title": "event-color-theme.md",
+  "content": "## Metadata_Start ## code: en ## title: Color Theme ## slug: event-color-theme ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (**Accessibility Standards**) Blackthorn has updated our default colors to meet accessibility standards. Customers using custom colors are responsible for ensuring their custom colors meet accessibility standards. ::: Do you want to change a few things about how the {{variable.Object_Event}} looks to your registrants? We have provided some basic modifications on the {{variable.Object_EventSettings}} record. Customize the {{variable.Object_Event}}'s theme color and background color ## Primary and Background Colors To change the primary and background colors, navigate to the {{variable.Object_EventSettings}} record related to your {{variable.Object_Event}}. From here, update the {{variable.Field_ETETSettings_BkgrndColor}} and {{variable.Field_ETETSettings_PrimaryColo}} field with a hex code. If you're looking for a certain color, try using this [website](https://htmlcolorcodes.com/). **Before changing the {{variable.Field_ETETSettings_PrimaryColo}} and {{variable.Field_ETETSettings_BkgrndColor}}** ![Primary and Background Colors](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Primary%20and%20Background%20Colors.png){height=\"\" width=\"\"} **After changing the {{variable.Field_ETETSettings_PrimaryColo}} and {{variable.Field_ETETSettings_BkgrndColor}}** ![Primary and Background Colors 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Primary%20and%20Background%20Colors%202.png){height=\"\" width=\"\"} ## Dark Theme To enable dark theme for your {{variable.Object_Event}} page, navigate to the {{variable.Object_EventSettings}} record related to your {{variable.Object_Event}} and set {{variable.Field_ETETSettings_CardClrThem}} = {{variable.Picklist_ETSettings_Card_Dark}}. ![Dark Theme 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Dark%20Theme%201.png){height=\"\" width=\"\"} * * * ![Dark Theme 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Dark%20Theme%202.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "theme",
+    "colors",
+    "primary",
+    "dark",
+    "color",
+    "object_event",
+    "background",
+    "https",
+    "your",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

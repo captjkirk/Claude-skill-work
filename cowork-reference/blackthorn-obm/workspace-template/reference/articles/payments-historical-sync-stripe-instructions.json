@@ -1,0 +1,37 @@
+{
+  "id": "payments-historical-sync-stripe-instructions",
+  "title": "payments-historical-sync-stripe-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Instructions ## slug: payments-historical-sync-stripe-instructions ## seoTitle: Instructions ## description: ## contentType: Markdown ## Metadata_End *Before you start...* There are several ways to match data that syncs into Salesforce. Before you begin, confirm that your custom data, matching logic, or metadata is set up correctly. If you need help or want to chat, go to the [Community](https://community.blackthorn.io/s/){target=\"_blank\"} where Support and Onboarding are available to help. Review the instructions below and move through each of the following sections. 1. Sync your {{variable.Product_Stripe}} records in this order. 1. Customers - wait until this job is done before proceeding. 2. Payment Methods - wait until this job is done before proceeding. 3. Charges/Refunds - wait until this job is done before proceeding. 4. Payouts 2. Start with a small date range. * Select a small date range for a few Customer records to bring into {{variable.Product_Salesforce}}. This way you can confirm that everything looks correct and has related correctly before syncing everything. 3. Review how the emails match. * During the sync, if the {{variable.Object_PaymentGatewayCustomer}}'s {{variable.Field_PGC_Email}} matches a {{variable.Product_Salesforce}} {{variable.Object_Contact}}'s {{variable.Field_Contact_Email}}, the matching {{variable.Object_Contact}} will be populated on the {{variable.Object_PaymentGatewayCustomer}}'s {{variable.Field_PGC_Contact}} lookup field. * *BUT*, if the {{variable.Object_PaymentGatewayCustomer}}'s {{variable.Field_PGC_Email}} matches with more than one {{variable.Object_Contact}} record's {{variable.Field_Contact_Email}}, then the {{variable.Object_PaymentGatewayCustomer}}'s {{variable.Field_PGC_Contact}} lookup field will not be populated.",
+  "keywords": [
+    "variable",
+    "before",
+    "instructions",
+    "object_paymentgatewaycustomer",
+    "sync",
+    "wait",
+    "until",
+    "done",
+    "proceeding",
+    "object_contact",
+    "start",
+    "match",
+    "data",
+    "into",
+    "confirm",
+    "your",
+    "matching",
+    "correctly",
+    "help",
+    "community"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Sync your {{variable",
+    "1. Customers - wait until this job is done before proceeding",
+    "2. Payment Methods - wait until this job is done before proceeding",
+    "3. Charges/Refunds - wait until this job is done before proceeding",
+    "4. Payouts 2",
+    "3. Review how the emails match"
+  ],
+  "troubleshooting": []
+}

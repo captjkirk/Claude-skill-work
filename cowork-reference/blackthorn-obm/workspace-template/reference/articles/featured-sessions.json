@@ -1,0 +1,35 @@
+{
+  "id": "featured-sessions",
+  "title": "featured-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Featured Sessions ## slug: featured-sessions ## seoTitle: Featured Sessions ## description: ## contentType: Markdown ## Metadata_End If you would like to bring a few featured {{variable.Object_Session}}s to the top of the page, the featured {{variable.Object_Session}} feature is just what you need! ## Set Up (For Admins) 1. Open the Object Manager. 2. Navigate to the {{variable.Object_Session}} object. 3. Click **Page Layouts** and **Session Layout**. 4. Add the {{variable.Field_Session_FeatureSession}} checkbox field to the page layout. **NOTE:** If end-users need access to this and they aren't associated to a managed Blackthorn Events permission set, please add this field to their profile/custom permission set. ## Test (For Event Managers) If you would like to feature {{variable.Object_Session}}s at the top of the {{variable.Object_Session}} tab in a carousel format, check the {{variable.Field_Session_FeatureSession}} checkbox field. * If you add multiple featured {{variable.Object_Session}}s, they will scroll through the featured session box every 10 seconds. * Example: There are 3 featured {{variable.Object_Session}}s added to this {{variable.Object_Event}}. There are 2 non-featured {{variable.Object_Session}}s. Featured {{variable.Object_Session}}s 1, 2, and 3 will scroll through the top margin. ![Featured Sessions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Featured%20Sessions.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "featured",
+    "variable",
+    "object_session",
+    "sessions",
+    "page",
+    "field",
+    "like",
+    "feature",
+    "need",
+    "object",
+    "session",
+    "layout",
+    "field_session_featuresession",
+    "checkbox",
+    "they",
+    "permission",
+    "scroll",
+    "through",
+    "there",
+    "metadata_start"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Open the Object Manager",
+    "2. Navigate to the {{variable",
+    "3. Click **Page Layouts** and **Session Layout**",
+    "4. Add the {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "mobile-checkin-app-external-id",
+  "title": "mobile-checkin-app-external-id.md",
+  "content": "## Metadata_Start ## code: en ## title: External ID ## slug: mobile-checkin-app-external-id ## seoTitle: External ID ## description: ## contentType: Markdown ## Metadata_End Simplify the check-in process for large, free Events with the {{variable.Product_MobileCheck-inApp}}’s External ID feature. Users can quickly check in large numbers of unregistered Attendees, ensuring an accurate and real-time Attendee count. ## Prerequisite The External ID feature only works with free Events. ## Setup The new {{variable.Field_Contact_ExternalID}} field is located on the Contact object. You will need to add it to the Contact page layout. This field is used by the Mobile Check-in app to identify Contacts with a matching ID that is found in a non-Blackthorn QR code. ![External ID Feature](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/External%20ID%20Feature.png){height=\"\" width=\"\"} **Complete the following steps before attempting to use the {{variable.Feature_ExternalID}} feature.** 1. Determine where the individuals/students within your organization will store or access their unique QR codes. 2. Create a {{variable.Object_Contact}} record for each individual/student within your organization. The following fields are required: * {{variable.Field_Contact_FirstName}} * {{variable.Field_Contact_LastName}} * {{variable.Field_Contact_Email}} * {{variable.Field_Contact_ExternalID}} 3. Populate each {{variable.Field_Contact_ExternalID}} field with a unique ID. 4. Use the {{variable.Field_Contact_ExternalID}} value to generate a unique QR code from a website such as [The QR Code Generator](https://www.the-qrcode-generator.com). 5. Provide individuals/students with their QR codes. 6. Upgrade the {{variable.Product_MobileCheck-inApp}} to the newest version. :::(Error) (**Permissions**) New installations include permissions for the {{variable.Field_Contact_ExternalID}} field. Existing users must update their permission sets. ::: ### BT External ID QR Codes and Pre-registered Attendees Matching and Duplicate rules will dictate whether scanning a {{variable.Field_Contact_ExternalID}} QR code will check in a pre-registered {{variable.Object_Attendee}} or create a new {{variable.Object_Attendee}} record. If a {{variable.Object_Contact}} pre-registered for an {{variable.Object_Event}} using {{variable.Object_Attendee}} details (name, email, etc.) that match their {{variable.Object_Contact}} record (per org Matching and Duplicate rules), scanning their {{variable.Field_Contact_ExternalID}} QR code will update the existing {{variable.Object_Attendee}}’s {{variable.Field_ETAttendee_AttendStatus}}. However, if a {{variable.Object_Contact}} pre-registered for an {{variable.Object_Event}} using {{variable.Object_Attendee}} details (name, email, etc.) that do not match their {{variable.Object_Contact}} record (per org Matching and Duplicate rules), then scanning their {{variable.Field_Contact_ExternalID}} QR code will create a second {{variable.Object_Attendee}} record with {{variable.Field_ETAttendee_AttendStatus}} = “Attended” that is related to the same {{variable.Object_Contact}}. ## At the Event 1. Using the Blackthorn {{variable.Product_MobileCheck-inApp}}, select the {{variable.Object_Event}} from the Event listing page. 2. Press the {{variable.Button_MobileCIApp_Scan}} button to scan the unregistered person’s QR code. 3. The user will see the New Attendee page with the prepopulated {{variable.Object_Contact}} information. 4. Tap **Save**. If the {{variable.Object_Attendee}} record already exists, the user will be able to check in the attendee. A new {{variable.Object_Attendee}} record will be created with the following fields already populated. * {{variable.Field_ETAttendee_FirstName}} * {{variable.Field_ETAttendee_LastName}} * {{variable.Field_Attendee_Email}} * {{variable.Field_ETAttendee_RegistrStatus}} = {{variable.Picklist_AttendeeReg_Registere}} * {{variable.Field_Attendee_AttendancStatus}} = {{variable.Picklist_AttendStatus_Attended}}",
+  "keywords": [
+    "variable",
+    "code",
+    "external",
+    "field_contact_externalid",
+    "object_attendee",
+    "their",
+    "object_contact",
+    "record",
+    "check",
+    "feature",
+    "field",
+    "matching",
+    "registered",
+    "product_mobilecheck",
+    "inapp",
+    "attendee",
+    "page",
+    "following",
+    "unique",
+    "codes"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Determine where the individuals/students within your organization will store or access their unique QR codes",
+    "2. Create a {{variable",
+    "3. Populate each {{variable",
+    "4. Use the {{variable",
+    "5. Provide individuals/students with their QR codes",
+    "6. Upgrade the {{variable",
+    "1. Using the Blackthorn {{variable",
+    "2. Press the {{variable",
+    "3. The user will see the New Attendee page with the prepopulated {{variable",
+    "4. Tap **Save**"
+  ],
+  "troubleshooting": [
+    "Error) (**Permissions**) New installations include permissions for the {{variable."
+  ]
+}

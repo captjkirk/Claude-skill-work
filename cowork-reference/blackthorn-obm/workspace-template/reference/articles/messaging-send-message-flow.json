@@ -1,0 +1,32 @@
+{
+  "id": "messaging-send-message-flow",
+  "title": "messaging-send-message-flow.md",
+  "content": "## Metadata_Start ## code: en ## title: Messaging Send Message Flow ## slug: messaging-send-message-flow ## seoTitle: Messaging Send Message Flow ## description: ## contentType: Markdown ## Metadata_End To prevent \"SOQL queries: 101 limit error\" errors when trying to send SMS messages using a flow with the Apex Class, we created a new flow called Blackthorn Messaging Send Message(Flow). ## Flow Configuration ![CRM204_Flow Configuration](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Flow%20Configuration.png){height=\"\" width=\"\"} ### Entry Criteria Defined on Account Object ![CRM204_Entry Criteria](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Entry%20Criteria.jpg){height=\"\" width=\"\"} ### Get a Contact Record from the Account ![CRM204_Set Contact Record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Set%20Contact%20Record.png){height=\"\" width=\"\"} ### Looping the Process to Handle Contacts ![CRM204_Looping the Process](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Looping%20the%20Process.png){height=\"\" width=\"\"} ### Define the Variables to get Data from the Contact Record ![CRM204_Define the Variables](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Define%20the%20Variables.png){height=\"\" width=\"\"} ### Recipient Variable ![CRM204_Recipient Variable](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Recipient%20Variable.png){height=\"\" width=\"\"} ### Collect Contact Records into a Collection Variable ![CRM204_Collect Contact Records](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Collect%20Contact%20Records.png){height=\"\" width=\"\"} ### Call the Apex Method to Send SMS to the Valid Contact Records ![CRM204_Call the Apex Method](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM204_Call%20the%20Apex%20Method.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "flow",
+    "send",
+    "contact",
+    "messaging",
+    "message",
+    "apex",
+    "record",
+    "20the",
+    "variable"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error\" errors when trying to send SMS messages using a flow with the Apex Class, we created a new flow called Blackthorn Messaging Send Message(Flow)."
+  ]
+}

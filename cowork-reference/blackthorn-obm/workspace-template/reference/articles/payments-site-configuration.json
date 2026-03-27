@@ -1,0 +1,30 @@
+{
+  "id": "payments-site-configuration",
+  "title": "payments-site-configuration.md",
+  "content": "## Metadata_Start ## code: en ## title: Site Configuration ## slug: payments-site-configuration ## seoTitle: Site Configuration ## description: ## contentType: Markdown ## Metadata_End ## Configure Your Site {{snippet.StripePG_WebhooksSiteConfiguration}} ## Change the Default Record Owner for Webhook Events {{snippet.StripePG_WebhookSiteCnfg_ChgOw}}",
+  "keywords": [
+    "site",
+    "configuration",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "configure",
+    "your",
+    "stripepg_webhookssiteconfiguration",
+    "change",
+    "default",
+    "record",
+    "owner"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

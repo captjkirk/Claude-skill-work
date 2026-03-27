@@ -1,0 +1,30 @@
+{
+  "id": "why-cant-i-mask-existing-emails",
+  "title": "why-cant-i-mask-existing-emails.md",
+  "content": "## Metadata_Start ## code: en ## title: Why Can't I Mask Existing Emails? ## slug: why-cant-i-mask-existing-emails ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End There is a [Salesforce limitation](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_emailmessage.htm){target=\"_blank\"} which prohibits us from updating/masking existing emails. This is the feature: > update() is supported when an email record is in Draft status, and IsPrivateDraft is false. It is also supported if Status and IsPrivateDraft are true and CreatedBy is associated with the current user. When the email record status is not in Draft status, the IsExternallyVisible field and custom fields only can be updated. This means that once an email is sent, it can no longer be updated, even manually. Since some emails will contain Personally Identifiable Information (PII), they will need to be deleted. Before deleting the emails run an Audit with the Action set to \"Report\". Once you are comfortable deleting the emails, run a second Audit with the Action set to \"Delete\" (or delete them manually).",
+  "keywords": [
+    "emails",
+    "status",
+    "existing",
+    "email",
+    "mask",
+    "salesforce",
+    "object_reference",
+    "supported",
+    "when",
+    "record",
+    "draft",
+    "isprivatedraft",
+    "updated",
+    "once",
+    "manually",
+    "deleting",
+    "audit",
+    "action",
+    "delete",
+    "metadata_start"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

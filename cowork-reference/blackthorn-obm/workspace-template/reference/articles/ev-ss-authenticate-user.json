@@ -1,0 +1,35 @@
+{
+  "id": "ev-ss-authenticate-user",
+  "title": "ev-ss-authenticate-user.md",
+  "content": "## Metadata_Start ## code: en ## title: Authenticate a User ## slug: ev-ss-authenticate-user ## seoTitle: Authenticate a User ## description: ## contentType: Markdown ## Metadata_End After successfully activating the Scheduler component, you will need to activate or authenticate the user. 1. Log in as the Salesforce user you want to authenticate. 2. Navigate to Blackthorn | Scheduler Admin using the App Selector. 3. Click **Authenticate Me** in the Authenticated User section. 4. Click **Allow** on the OAuth permissions page to grant access. You will be redirected to the Scheduler Administration page. If you need to change the authenticated user, click the delete (trash can) icon next to the authenticated user’s email. Then log in as a different user and authenticate that user. ![AuthenticateUser_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AuthenticateUser_1.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "user",
+    "authenticate",
+    "scheduler",
+    "click",
+    "authenticated",
+    "need",
+    "page",
+    "authenticateuser_1",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "after",
+    "successfully",
+    "activating"
+  ],
+  "category": "admin",
+  "procedures": [
+    "1. Log in as the Salesforce user you want to authenticate",
+    "2. Navigate to Blackthorn | Scheduler Admin using the App Selector",
+    "3. Click **Authenticate Me** in the Authenticated User section",
+    "4. Click **Allow** on the OAuth permissions page to grant access"
+  ],
+  "troubleshooting": []
+}

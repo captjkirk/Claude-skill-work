@@ -1,0 +1,35 @@
+{
+  "id": "events-admin-events-health-check",
+  "title": "events-admin-events-health-check.md",
+  "content": "## Metadata_Start ## code: en ## title: Events Health Check ## slug: events-admin-events-health-check ## seoTitle: Events Health Check ## description: ## contentType: Markdown ## Metadata_End ![Events Admin Tab_Events Health Check](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Events%20Health%20Check.png){height=\"\" width=\"\"} The Events Health Check tab lists the packaged version number, the authorized user, and other access variables. This page is helpful when troubleshooting errors. * Vanity Domain: used if you have a custom domain defined. * Has license assigned: indicates if your authorized user has an assigned Blackthorn license. * Is event admin: indicates if your authorized user has the {{variable.PS_ET_Admin}} permission set. * Object permissions: indicates if the authorized user has access to all Blackthorn {{variable.Product_Events}} objects. * * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. :::",
+  "keywords": [
+    "events",
+    "health",
+    "check",
+    "admin",
+    "authorized",
+    "user",
+    "indicates",
+    "your",
+    "blackthorn",
+    "access",
+    "page",
+    "domain",
+    "license",
+    "assigned",
+    "variable",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click"
+  ],
+  "troubleshooting": [
+    "errors.",
+    "troubleshooting errors."
+  ]
+}

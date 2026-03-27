@@ -1,0 +1,30 @@
+{
+  "id": "vt-overview",
+  "title": "vt-overview.html",
+  "content": "The is a versatile component that can be configured in multiple ways to enable payment processing for your Salesforce and Experience Cloud users. You can create new or select existing s and capture create, authorize capture, or schedule s to auto-process on a specified date. Compatible with , , and (credit cards only), the uses each supported gateway’s browse-side JavaScript library to collect payment details to maintain the highest level of PCI Compliance. Best of all, the flexible setup and configuration options allow you to create a tailored {{glossary.user experience}} that seamlessly integrates with your Salesforce business processes and self-service payments in Experience Cloud. Pre-populate fields using Custom Metadata Types Add custom fields using Field Sets Show/Hide different actions and elements of the {{glossary.user interface (UI)}} using Custom Settings Change labels using Custom Labels",
+  "keywords": [
+    "using",
+    "custom",
+    "experience",
+    "create",
+    "payment",
+    "your",
+    "salesforce",
+    "cloud",
+    "capture",
+    "glossary",
+    "user",
+    "fields",
+    "labels",
+    "versatile",
+    "component",
+    "configured",
+    "multiple",
+    "ways",
+    "enable",
+    "processing"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

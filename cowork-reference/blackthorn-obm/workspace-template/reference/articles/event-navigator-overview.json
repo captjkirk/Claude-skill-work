@@ -1,0 +1,35 @@
+{
+  "id": "event-navigator-overview",
+  "title": "event-navigator-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Navigator Overview ## slug: event-navigator-overview ## seoTitle: Event Navigator Overview ## description: ## contentType: Markdown ## Metadata_End The {{variable.Product_BlackthoEventNavigator}} app (previously codenamed “Passport”) puts critical {{variable.Object_Event}} information in your {{variable.Object_Attendee}}s' hands when they need it. {{variable.Object_Attendee}}s can manage their agenda at multi-session {{variable.Object_Event}}s, view venue maps, and access their Ticket(s) in one place. They can also add and remove free {{variable.Object_Session}}s at the {{variable.Object_Event}}, saving everyone time. Keep reading for additional benefits. ## Benefits ### Easy Setup Configuring the Navigator app is as simple as enabling it on an {{variable.Object_Event}} record, uploading necessary maps, and adjusting navigation labels. Event Organizers can make the app available to {{variable.Object_Attendee}}s immediately. ### Effortless Updates This app is an extension of the Blackthorn {{variable.Product_Events}} app, saving Event Organizers time and effort. Since {{variable.Product_Salesforce}} stores the data, organizers no longer need to migrate data or update information in multiple apps. Updates to {{variable.Object_Session}}s and registrations are reflected in the {{variable.Product_BlackthoEventNavigator}} app, creating a seamless experience for {{variable.Object_Attendee}}s. ### Real-time Notifications Event Organizers and event staff can use push notifications to send {{variable.Object_Attendee}}s just-in-time {{variable.Object_Session}} reminders, agenda updates, or last-minute venue changes. ### Attendee Connections The {{variable.Product_BlackthoEventNavigator}} app facilitates connections. {{variable.Object_Attendee}}s can browse Attendee lists and share social media profiles to forge networks that last beyond the {{variable.Object_Event}}. Event Organizers can leverage the social media profiles (LinkedIn, X (Twitter), or Instagram) shared by {{variable.Object_Attendee}}s to enrich {{variable.Object_Attendee}}s' records. ### Saves Time and Resources The {{variable.Product_BlackthoEventNavigator}} app eliminates the need for Event Organizers to print and reprint agendas, reducing waste and saving time. Updating information in multiple places or maintaining an integration is no longer necessary. Event staff can be deployed to other high-priority tasks during the {{variable.Object_Event}} since most {{variable.Object_Attendee}}s’ navigation and {{variable.Object_Session}} registrations are now self-serve. ## Blackthorn Event Navigator App Logic An {{variable.Object_Attendee}} can see an {{variable.Object_Event}} in their {{variable.Product_BlackthoEventNavigator}} app if the following is true. 1. The {{variable.Object_Event}} record’s {{variable.Field_EV_EnableNavigaAttMobApp}} field is set to “True.” 2. The {{variable.Object_Event}} record’s {{variable.Field_ETEvent_Publish}} field is set to “True” (checked). 3. The {{variable.Object_Attendee}} has a related {{variable.Object_EventItem}}, and their {{variable.Field_ETAttendee_RegistrStatus}} is set to “Registered.” 4. Past Events show {{variable.Object_Event}}s that ended within the past 30 days. Current Events include {{variable.Object_Event}}s that end today or later. ## Prerequisites ### Event Organizers * To use the Navigator app and have access to the latest changes for the Navigator personal AttendeeLink, your Salesforce org must have Events Version 5.9 or higher. * Organizations must have adequate API calls available to support the duration of the {{variable.Object_Event}}. * Example: 3,000-Attendee Event * If {{variable.Object_Attendee}}s pre-register for {{variable.Object_Session}}s, we estimate approximately 40,000 API calls within the first four hours as {{variable.Object_Attendee}}s arrive. * If {{variable.Object_Attendee}}s register for {{variable.Object_Session}}s upon arrival, we estimate approximately 90,000 API calls within the first four hours as {{variable.Object_Attendee}}s arrive. * Important Note: These estimates do not include API calls used by the (separate) {{variable.Product_MobileCheck-inApp}}. * Future releases will reduce the volume of API calls needed to support the app. * Data is currently not regionalized, causing it to be sent only to US servers. This configuration does not comply with regulations in Australia and some other countries. * Initially, the {{variable.Product_BlackthoEventNavigator}} app will use an {{variable.Object_Attendee}}’s email address as a unique identifier for each {{variable.Object_Event}}. If multiple {{variable.Object_Attendee}}s share the same email address for the same {{variable.Object_Event}}, only one person can access the {{variable.Object_Event}} on the app. * A preview mode is not available yet. To preview your {{variable.Object_Event}} in the app, you must create an {{variable.Object_Attendee}} for yourself and log into the app as that {{variable.Object_Attendee}}. ### Attendees * Available on iOS and Android mobile phones only. * *Blackthorn does not provide Attendee-facing customer support. {{variable.Object_Attendee}}s must send their inquiries to the Event Organizer. If the Event Organizer needs additional information, they should open a case with Blackthorn Support.* :::(Info) (Why do I see “Passport” in the app? What is it?) “Passport” was the internal name of the {{variable.Product_BlackthoEventNavigator}} app while we developed the app. If you see labels using “Passport,” please upgrade the app to the newest version. :::",
+  "keywords": [
+    "variable",
+    "object_attendee",
+    "object_event",
+    "event",
+    "navigator",
+    "product_blackthoeventnavigator",
+    "organizers",
+    "object_session",
+    "time",
+    "their",
+    "calls",
+    "passport",
+    "information",
+    "available",
+    "blackthorn",
+    "attendee",
+    "must",
+    "support",
+    "overview",
+    "your"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. The {{variable",
+    "2. The {{variable",
+    "3. The {{variable",
+    "4. Past Events show {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "payments-create-forcecom-domain",
+  "title": "payments-create-forcecom-domain.md",
+  "content": "## Metadata_Start ## code: en ## title: Create a Force.com Domain ## slug: payments-create-forcecom-domain ## seoTitle: Create a Force.com Domain ## description: ## contentType: Markdown ## Metadata_End ## Prerequisite To use the following instructions, you must have Salesforce administrator access to Salesforce and Stripe. ## Start Here 1. Click the **Gear Icon** in the upper right-hand corner. 2. Click Setup. 3. Type “Sites” in the Quick Find box. 4. Click **Sites**. 5. If a Force.com domain has not been set up, continue with the instructions. Otherwise, navigate to the steps for Site Configuration. 6. Enter a value for your Force.com domain. 7. Click **Check Availability**. 8. Review and accept the Site terms of use. 9. Click **Register My Force.com Domain**.",
+  "keywords": [
+    "domain",
+    "force",
+    "click",
+    "create",
+    "instructions",
+    "salesforce",
+    "sites",
+    "site",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "forcecom",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "prerequisite"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the **Gear Icon** in the upper right-hand corner",
+    "2. Click Setup",
+    "3. Type “Sites” in the Quick Find box",
+    "4. Click **Sites**",
+    "5. If a Force",
+    "6. Enter a value for your Force",
+    "7. Click **Check Availability**",
+    "8. Review and accept the Site terms of use",
+    "9. Click **Register My Force"
+  ],
+  "troubleshooting": []
+}

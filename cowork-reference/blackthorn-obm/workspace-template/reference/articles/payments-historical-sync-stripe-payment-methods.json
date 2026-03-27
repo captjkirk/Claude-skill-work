@@ -1,0 +1,39 @@
+{
+  "id": "payments-historical-sync-stripe-payment-methods",
+  "title": "payments-historical-sync-stripe-payment-methods.md",
+  "content": "## Metadata_Start ## code: en ## title: Payment Methods ## slug: payments-historical-sync-stripe-payment-methods ## seoTitle: Payment Methods ## description: ## contentType: Markdown ## Metadata_End {{snippet.PT_HistSync_StripeWarning}} 1. Navigate to the Payment Gateway object. 2. Select the \"View All\" option. 3. Click the Payment Gateway record you want to sync. 4. Click the **Sync with Stripe** button. 5. Select either the Core, Billing, or Connect tab. ![G_04 historical sync pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%201.png){height=\"\" width=\"\"} 7. In the {{variable.Field_PG_SyncStripe_From}} and {{variable.Field_PG_SyncStripe_To}} fields, choose a date/time range for the data sync, if applicable. ![G_04 historical sync pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%202.png){height=\"\" width=\"\"} 9. Click the **Payment Methods** button. ![Historical Sync Stripe Payment Methods](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Historical%20Sync%20Stripe%20Payment%20Methods.png){height=\"\" width=\"\"} 11. A message will appear telling you that the process has started. {{snippet.PT_HistSync_Stripe_Suggestion}}",
+  "keywords": [
+    "payment",
+    "sync",
+    "methods",
+    "historical",
+    "g_04",
+    "stripe",
+    "click",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20sync",
+    "height",
+    "width",
+    "snippet"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the Payment Gateway object",
+    "2. Select the \"View All\" option",
+    "3. Click the Payment Gateway record you want to sync",
+    "4. Click the **Sync with Stripe** button",
+    "5. Select either the Core, Billing, or Connect tab",
+    "7. In the {{variable",
+    "9. Click the **Payment Methods** button",
+    "11. A message will appear telling you that the process has started"
+  ],
+  "troubleshooting": []
+}

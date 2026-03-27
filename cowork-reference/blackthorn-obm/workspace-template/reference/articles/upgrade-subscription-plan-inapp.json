@@ -1,0 +1,30 @@
+{
+  "id": "upgrade-subscription-plan-inapp",
+  "title": "upgrade-subscription-plan-inapp.html",
+  "content": "Go to the Messaging Admin tab. In the Current Plan section, click Upgrade Account . Confirm that the Business Name, Business Address, Industry, and Company Website are correct. Click . Confirm that the Business Entity Type, Business Registration Number, Business Registration Number Type, and Company Status are correct. Click . Confirm the following information. Primary Contact: First Name, Last Name, Title, Job Position, Email, Phone Secondary Contact: First Name, Last Name, Title, Job Position, Email, Phone Click . Review all of the information, and if correct, click Submit . Review the available plans and click Select Plan next to your selection. For more information about pricing, click here . Review the plan you selected. Enter any additional User Licenses and/or Phone Numbers you need. Click Confirm and Pay . Enter a Payment Method and related address. Review the policy and terms agreement and click the checkbox. Click Confirm . Congratulations! You have upgraded your plan.",
+  "keywords": [
+    "click",
+    "confirm",
+    "business",
+    "name",
+    "plan",
+    "review",
+    "correct",
+    "information",
+    "phone",
+    "address",
+    "company",
+    "type",
+    "registration",
+    "number",
+    "contact",
+    "first",
+    "last",
+    "title",
+    "position",
+    "email"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "manage-opt-outs",
+  "title": "manage-opt-outs.md",
+  "content": "## Metadata_Start ## code: en ## title: Manage Opt-outs ## slug: manage-opt-outs ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Whenever someone texts one of the STOP keywords to one of your phone numbers, the `Do Not SMS` checkbox field will be checked on the parent record. ## Single Phone Numbers For example, someone texts STOP from 555-555-5555 and the incoming message is matched to a Contact named John Doe. The `Do Not SMS` checkbox will then be checked on John Doe’s Contact record. When the `Do Not SMS` checkbox is checked on a record, Blackthorn Messaging will not let you send a message to that record. The first image below shows a Contact where the `Do Not SMS` checkbox is checked. The second image shows the message that will be displayed when you attempt to send a message to that Contact. ![manage optouts_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/manage%20optouts_1.png){height=\"\" width=\"\"} * * * ![manage optouts_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/manage%20optouts_2.png){height=\"\" width=\"\"} ## Bulk Messaging When you send a bulk message or a campaign message, any records that have the `Do Not SMS` checkbox checked will be skipped and no message will be sent to those records.",
+  "keywords": [
+    "message",
+    "manage",
+    "checkbox",
+    "checked",
+    "record",
+    "contact",
+    "when",
+    "send",
+    "outs",
+    "someone",
+    "texts",
+    "stop",
+    "phone",
+    "numbers",
+    "john",
+    "messaging",
+    "image",
+    "shows",
+    "https",
+    "document360"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

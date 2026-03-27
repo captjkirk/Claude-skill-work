@@ -1,0 +1,30 @@
+{
+  "id": "msg-ss-messaging-app-not-configured",
+  "title": "msg-ss-messaging-app-not-configured.md",
+  "content": "## Metadata_Start ## code: en ## title: Messaging App Is Not Configured ## slug: msg-ss-messaging-app-not-configured ## seoTitle: Messaging App Is Not Configured ## description: ## contentType: Markdown ## Metadata_End ### Scheduler Admin When the Messaging App is not configured on a Global Scheduler after installation, a warning message tells the user to configure their Messaging Account. ![MessagingAppNotConfigured_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotConfigured_1.jpg){height=\"\" width=\"\"} The same warning message also appears on the Record Level. ![MessagingAppNotConfigured_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotConfigured_2.jpg){height=\"\" width=\"\"} ### Scheduler User The Scheduler User does not have access to the Administration Settings. When they land on the Record Level Scheduler, a warning message tells them to contact the System Administrator. ![MessagingAppNotConfigured_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotConfigured_3.jpg){height=\"\" width=\"\"}",
+  "keywords": [
+    "messaging",
+    "scheduler",
+    "configured",
+    "warning",
+    "message",
+    "user",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "when",
+    "tells",
+    "messagingappnotconfigured_1"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

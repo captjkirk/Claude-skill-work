@@ -1,0 +1,30 @@
+{
+  "id": "pay-later",
+  "title": "pay-later.md",
+  "content": "## Metadata_Start ## code: en ## title: Pay Later ## slug: pay-later ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Allow users a Pay Later option during checkout. This option will allow you to bill your {{variable.Object_Attendee}}s at a later date. Use our {{variable.Object_Invoice}} object and {{variable.Product_DocumentLink}} feature to request payment. ## Adding Pay Later Add {{variable.Picklist_ETSettings_EnPM_PayLa}} to the {{variable.Field_ETETSettings_EnabledPM}} field to enable this feature on the {{variable.Object_EventSettings}} record. Once it is added, users will see a Pay Later checkbox on the Checkout page. ![pay later 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/pay%20later%201.png){height=\"\" width=\"\"} :::(Info) (Don't see the Enabled Payment Methods field on Event Settings?) Navigate to Blackthorn | Events (Admin) > Blackthorn | Events Admin tab > Upgrade > click **Upgrade Events Layouts**. ::: Users won't be required to pay during checkout if they check the Pay Later checkbox. This will also hide the \"Pay with credit/debit card\" option. ![pay later 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/pay%20later%202.png){height=\"\" width=\"\"} Selecting Pay Later will create an {{variable.Object_Invoice}}, and email it to your customers. ## Using DocumentLink to Request Payment If you would like to use our {{variable.Object_Invoice}} object with {{variable.Product_DocumentLink}} to request payment, there are a few steps that need to be completed. Please follow these [set up instructions](/v1/docs/sales-documents).",
+  "keywords": [
+    "later",
+    "variable",
+    "payment",
+    "users",
+    "option",
+    "checkout",
+    "object_invoice",
+    "request",
+    "events",
+    "allow",
+    "during",
+    "your",
+    "object",
+    "product_documentlink",
+    "feature",
+    "field",
+    "checkbox",
+    "https",
+    "document360",
+    "f977eec0"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

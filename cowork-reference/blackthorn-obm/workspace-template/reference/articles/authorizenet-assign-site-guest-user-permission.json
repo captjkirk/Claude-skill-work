@@ -1,0 +1,27 @@
+{
+  "id": "authorizenet-assign-site-guest-user-permission",
+  "title": "authorizenet-assign-site-guest-user-permission.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign Site Guest User Permission Set ## slug: authorizenet-assign-site-guest-user-permission ## seoTitle: Assign Site Guest User Permission ## description: ## contentType: Markdown ## Metadata_End {{snippet.AuthNetPG_AssignSiteGuestUsePS}}",
+  "keywords": [
+    "assign",
+    "site",
+    "guest",
+    "user",
+    "permission",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "authnetpg_assignsiteguestuseps"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

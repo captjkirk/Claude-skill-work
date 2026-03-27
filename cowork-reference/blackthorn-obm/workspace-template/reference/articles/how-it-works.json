@@ -1,0 +1,33 @@
+{
+  "id": "how-it-works",
+  "title": "how-it-works.md",
+  "content": "## Metadata_Start ## code: en ## title: How It Works ## slug: how-it-works ## seoTitle: How It Works ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (**Existing PayLink Customers**) If you used PayLink prior to the upgrade, click [here](/v1/docs/upgrade). ::: ## Charge Transaction When you create a Transaction, a unique PayLink is generated. *This link can be emailed manually or automatically to your customer for payment. See our [Use Cases](/v1/docs/use-cases) for specific examples.* - `PayLink Configuration` field *Either set manually or if you have a default PayLink configuration record, it will be set automatically.* ![L_03_how it works 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/L_03_how%20it%20works%201.png){height=\"\" width=\"\"} - There are **five fields** that populate onto the PayLink Screen: `Amount`, `Currency`, `Contact` or `Account`, `Due Date`, and `Description` from the Transaction record. :::(Warning) (**Multiple Payment Gateways**) Enter a value in `Payment Gateway` before saving. *PayLink will use the default Payment Gateway if that field is empty.* ::: ## Payment Process When your customer receives the PayLink, they will: - Select \"Pay\" in the top right corner. - Enter their Payment Method and click **Pay**. (By default, a postal code is only required for users from the USA and Canada. It is optional for all other countries.) - Review and accept the Terms and Conditions. - Download their receipt (printer icon). *If you enabled [Email Receipts](/v1/docs/email-receipts), they will receive a receipt too.* :::(Info) (**Pay Button**) Uses Stripe.js to collect card information from the user and stays **PCI compliant**. Learn more about [Stripe.js](https://stripe.com/docs/stripe-js) ::: ## Next Steps - [Completed Card Transaction](/v1/docs/card) - [Completed ACH Payment](/v1/docs/ach)",
+  "keywords": [
+    "paylink",
+    "payment",
+    "docs",
+    "works",
+    "transaction",
+    "stripe",
+    "default",
+    "from",
+    "card",
+    "code",
+    "description",
+    "warning",
+    "upgrade",
+    "click",
+    "when",
+    "manually",
+    "automatically",
+    "your",
+    "customer",
+    "cases"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* ::: ## Payment Process When your customer receives the PayLink, they will: - Select",
+    "- Enter their Payment Method and click"
+  ],
+  "troubleshooting": []
+}

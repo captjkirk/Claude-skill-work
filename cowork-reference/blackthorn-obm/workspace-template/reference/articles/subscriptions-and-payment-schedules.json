@@ -1,0 +1,30 @@
+{
+  "id": "subscriptions-and-payment-schedules",
+  "title": "subscriptions-and-payment-schedules.md",
+  "content": "## Metadata_Start ## code: en ## title: Recurring Charges and Subscription Options ## slug: subscriptions-and-payment-schedules ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Payment Schedules Many payment gateways offer “subscriptions”, such as PayPal or Braintree, but these are just recurring charges. Blackthorn Payments has this same concept with [Payment Schedules](/v1/docs/payment-schedules). Think of a gym membership. Every month, you’re charged $80 and you get an email. There is not a multi-line invoice generated, there’s no proration calculation, there typically is no upgrade or downgrade logic, etc. The recurring charge is often just canceled and a new schedule is started at the beginning of the next month. ## Stripe Billing Subscriptions True subscriptions generate invoices with multiple line items every billing cycle. [Stripe Billing](/v1/docs/stripe-billing-overview) provides this functionality, which is also part of Blackthorn Payments. Other options include Chargify, Chargebee, Zuora, and Recurly. These systems allow for upgrade, downgrade, pause, and proration scenarios, with automatically calculated prices. Blackthorn Payments supports both use cases. For the simpler one, use our [Payment Schedules](/v1/docs/payment-schedules). For the more comprehensive one, use our support for [Stripe Billing](/v1/docs/stripe-billing-overview).",
+  "keywords": [
+    "payment",
+    "schedules",
+    "billing",
+    "stripe",
+    "subscriptions",
+    "docs",
+    "recurring",
+    "blackthorn",
+    "payments",
+    "there",
+    "charges",
+    "options",
+    "just",
+    "every",
+    "month",
+    "line",
+    "proration",
+    "upgrade",
+    "downgrade",
+    "overview"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

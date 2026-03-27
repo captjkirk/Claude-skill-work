@@ -1,0 +1,32 @@
+{
+  "id": "create-event-related-multiple-event-groups",
+  "title": "create-event-related-multiple-event-groups.html",
+  "content": "Create Event Group Records Create multiple, unique {{variable.Object_EventGroup}} records. Click here for more information about {{variable.Object_EventGroup}} s. Create an Event Record Create an {{variable.Object_Event}} record using your normal process. Add one of the {{variable.Object_EventGroup}} ’s {{variable.Field_ETGroup_EventGroupName}} to the {{variable.Object_Event}} ’s {{variable.Field_Event_PrimaryEventGroup}} field. Create Event Group Association Records Create multiple {{variable.Object_EventGroupAssociation}} records by repeating the steps below. For example, if you have five {{variable.Object_EventGroup}} s, you must create five {{variable.Object_EventGroupAssociation}} records. If you haven’t added the {{variable.Object_EventGroupAssociation}} {{variable.SFTerm_RelatedList}} to the {{variable.Object_Event}} object page layout, add it now. On the {{variable.Object_Event}} record, click {{variable.button_new}} next to the {{variable.Object_EventGroupAssociation}} {{variable.SFTerm_RelatedList}} . Complete the following fields. {{variable.Field_EVGrpAssoc_Event}} - add the Event you created in the previous step if the field doesn’t have a value. {{variable.Field_EVGrpAssoc_EventGroup}} - select a new {{variable.Object_EventGroup}} each time. Click {{variable.Button_Save}} . You now have one {{variable.Object_Event}} record related to multiple {{variable.Object_EventGroup}} s via {{variable.Object_EventGroupAssociation}} records.",
+  "keywords": [
+    "variable",
+    "create",
+    "records",
+    "object_eventgroup",
+    "object_event",
+    "object_eventgroupassociation",
+    "event",
+    "record",
+    "multiple",
+    "click",
+    "group",
+    "field",
+    "five",
+    "sfterm_relatedlist",
+    "unique",
+    "here",
+    "more",
+    "information",
+    "about",
+    "using"
+  ],
+  "category": "events",
+  "procedures": [
+    "- add the Event you created in the previous step"
+  ],
+  "troubleshooting": []
+}

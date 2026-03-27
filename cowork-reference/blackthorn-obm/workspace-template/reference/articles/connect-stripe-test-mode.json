@@ -1,0 +1,25 @@
+{
+  "id": "connect-stripe-test-mode",
+  "title": "connect-stripe-test-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Connect to Stripe in Test Mode ## slug: connect-stripe-test-mode ## seoTitle: Connect to Stripe in Test Mode ## description: ## contentType: Markdown ## Metadata_End {{snippet.PTST_ConnectStripeTestMode}}",
+  "keywords": [
+    "connect",
+    "stripe",
+    "test",
+    "mode",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ptst_connectstripetestmode"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

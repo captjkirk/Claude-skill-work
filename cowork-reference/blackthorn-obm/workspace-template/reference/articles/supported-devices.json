@@ -1,0 +1,32 @@
+{
+  "id": "supported-devices",
+  "title": "supported-devices.md",
+  "content": "## Metadata_Start ## code: en ## title: Supported Devices ## slug: supported-devices ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End We strive to ensure that Blackthorn {{variable.Product_MobilePaymentApp}} supports devices that {{variable.Product_Salesforce}} supports for their mobile app. Please review the requirements below. ## Mobile Platform Requirements The app requires that devices meet the minimum operating system requirements below. | Operating System | Version Requirement | | --- | --- | | Android | 7.0 or later* | | iOS | 13.4 or later* | **NOTE: As of June 4, 2024, both iOS and Android version requirements will be updated in 2024. Please be aware that the minimum version requirement will increase.* :::(Info) (Version Requirements) Minimum operating system requirements are subject to change. Blackthorn bears the sole responsibility of making changes to this list, with or without advanced notice. ::: ## Supported Stripe Readers The following readers are supported on the {{variable.Product_MobilePaymentApp}} (iOS and Android). We do not support any other kinds of bluetooth readers or POS terminals. * [Stripe Reader M2](https://stripe.com/docs/terminal/readers/stripe-m2){target=`_blank`} (USA only) * [BBPOS Chipper 2X BT](https://stripe.com/docs/terminal/readers/bbpos-chipper2xbt){target=`_blank`} (USA only) * [BBPOS WisePad 3](https://stripe.com/docs/terminal/readers/bbpos-wisepad3){target=`_blank`} (AUS, MYS, NZL, SGP, AUT, BEL, FRA, DEU, NLD, LUX, CHE, DNK, NOR, SWE, ESP, PRT, CZE, IRL, GBR, FIN, and CAN) *Card readers are NOT supported with non-Stripe Payment Gateways.* ## Supported Browsers * Chrome * Safari * Edge * Android Webview * Firefox * Safari (in-app) * Samsung Internet ## Supported Screen Resolutions * 1920×1080 (Desktop computers) * 1536×864 (Desktop computers) * 1366x768 (Laptops) * 360×640 (Android devices) * 414×896 (iOS devices) * 375×667 (iOS devices) :::(Info) () Supported operating systems, browsers, and screen resolutions are subject to change. Blackthorn bears the sole responsibility of making changes to this list, with or without advanced notice. Devices such as Microsoft Surface and Surface Pro devices with touch technology enabled will experience Blackthorn Payments in a non-mobile app form. :::",
+  "keywords": [
+    "devices",
+    "supported",
+    "stripe",
+    "readers",
+    "requirements",
+    "android",
+    "blackthorn",
+    "operating",
+    "version",
+    "bbpos",
+    "variable",
+    "mobile",
+    "minimum",
+    "system",
+    "https",
+    "docs",
+    "terminal",
+    "target",
+    "_blank",
+    "product_mobilepaymentapp"
+  ],
+  "category": "payments",
+  "procedures": [
+    "2024. Please be aware that the minimum version requirement will increase"
+  ],
+  "troubleshooting": []
+}

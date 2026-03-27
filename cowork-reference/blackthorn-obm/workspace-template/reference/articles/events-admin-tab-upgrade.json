@@ -1,0 +1,30 @@
+{
+  "id": "events-admin-tab-upgrade",
+  "title": "events-admin-tab-upgrade.md",
+  "content": "## Metadata_Start ## code: en ## title: Upgrade Tab ## slug: events-admin-tab-upgrade ## seoTitle: Upgrade Tab ## description: ## contentType: Markdown ## Metadata_End Use the buttons on the Upgrade tab to update your Events/Payments packages after performing an upgrade. ![Events Admin Tab_Upgrade Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab.png){height=\"\" width=\"\"} ## Upgrade Payment Layouts ![Events Admin Tab_Upgrade Tab_Upgrade Payment](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab_Upgrade%20Payment.png){height=\"\" width=\"\"} Use the **Upgrade Payment Layouts** button to make sure the recommended Event fields are visible on all our Payments page layouts. Salesforce doesn't add new fields to page layouts when upgrading a package so we made an easy way for you to do it. ## Upgrade Events Layouts ![Events Admin Tab_Upgrade Tab_Upgrade Event](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab_Upgrade%20Event.png){height=\"\" width=\"\"} Use the **Upgrade Events Layouts** button to make sure the recommended fields are visible on all Events page layouts. ## Upgrade Translation Layouts ![Events Admin Tab_Upgrade Tab_Upgrade Translations](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab_Upgrade%20Translations.png){height=\"\" width=\"\"} Use the **Upgrade Translation Layouts** button to make sure the recommended fields are visible on the Translation page layout. ## Update Picklists ![Events Admin Tab_Upgrade Tab_Update Picklists](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab_Update%20Picklists.png){height=\"\" width=\"\"} Use the **Update Picklists** button to add any new picklist values. ## Update Email Templates ![Events Admin Tab_Upgrade Tab_Update Email Templates](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Upgrade%20Tab_Update%20Email%20Templates.png){height=\"\" width=\"\"} Use the **Update Email Templates** button to update the existing Email Templates after each Events upgrade.",
+  "keywords": [
+    "events",
+    "upgrade",
+    "tab_upgrade",
+    "20tab_upgrade",
+    "layouts",
+    "admin",
+    "update",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20admin",
+    "height",
+    "width",
+    "button"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

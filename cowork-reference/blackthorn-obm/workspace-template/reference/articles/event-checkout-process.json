@@ -1,0 +1,35 @@
+{
+  "id": "event-checkout-process",
+  "title": "event-checkout-process.md",
+  "content": "## Metadata_Start ## code: en ## title: Checkout Process Overview ## slug: event-checkout-process ## seoTitle: Checkout Process Overview ## description: ## contentType: Markdown ## Metadata_End The process below describes what you, an internal Salesforce {{variable.Product_Events}} user, will see when someone completes the checkout process. ## Salesforce Event Registration Process ### Start * Step 1: An {{variable.Object_Attendee}} completes the Checkout process from the Event. ### Additional Process for Paid Events * Step 2: A {{variable.Object_PaymentMethod}} record is added to Salesforce with the Card ID (i.e the token). * Step 3: A {{variable.Object_Transaction}} is created and authorized (processed/charged). :::(Info) (Limitation) A Transaction's {{variable.Field_Transaction_Description}} will not be created after the checkout process is complete. ::: ### Immediate Action for Free and Paid Events * Step 4: A {{variable.Object_EventRegistrationSub}} record is created as a JSON file captures all related data. ![D_06_SF Event Reg Process](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/D_06_SF%20Event%20Reg%20Process.png){height=\"\" width=\"\"} ### Event Attendees * Step 5: An {{variable.Object_Attendee}} record is created and related to the Event record. * Step 6: Attendee's {{variable.Field_Attendee_RegistratStatus}} is updated to \"Registered\" or \"Waitlist Pending\". When an Attendee's {{variable.Field_Attendee_RegistratStatus}} is updated to \"Registered\", the Registration Date/Time is set. ### Scheduled Processes * Step 7: The ERS record is processed. * Step 8: Authorized {{variable.Object_Transaction}}s are captured. * Step 9: A {{variable.Object_Transaction}} receipt is sent to the donor if that's enabled as a [Workflow Rule](/v1/docs/email-receipts). * Step 10: The {{variable.Object_Contact}}/{{variable.Object_Lead}} is attempted to be matched on configured Salesforce matching and duplicate logic. If a match, the rest of the logic follows under that {{variable.Object_Contact}}/{{variable.Object_Lead}}. If there's no match, a new {{variable.Object_Contact}}/{{variable.Object_Lead}} is created. Default matching logic: {{variable.Field_Contact_FirstName}}, {{variable.Field_Contact_LastName}}, and {{variable.Field_Contact_Email}}. ### Additional Processes for Paid Events * Step 11: The Payment Method and {{variable.Object_Transaction}} from Steps 2 and 3 are updated to this new Contact (if the Contact has been created). * Step 12: An Invoice is created and all Attendees and the {{variable.Field_Invoice_ContactBillTo}} or Lead (Bill To) fields are related. ## Attendee Checkout Experiences ### Free Event Checkout Process Follow the steps [here](https://docs.blackthorn.io/docs/free-event){target=`_blank`} to see what your Attendees will experience when viewing and registering for your free {{variable.Object_Event}}. ### Paid Event Checkout Process Click [here](https://docs.blackthorn.io/docs/paid-event){target=`_blank`} to see the steps your Attendees will follow when viewing and registering for your paid {{variable.Object_Event}}. ### Checkout from an AttendeeLink If an Attendee starts the checkout process via an AttendeeLink, but the {{variable.Field_Attendee_EventItem}} field on the Attendee record is left blank, the following checkout process will now occur. 1. An {{variable.Object_Attendee}} clicks their AttendeeLink to start the checkout process. 2. The Attendee does not see the Capacity Selector for the Event Item. They only see the {{variable.Button_Attendee_RedeemItem}} button next to the Event Item. 3. Once the Attendee clicks the {{variable.Button_Attendee_RedeemItem}} button, the selected Event Item will be added to the cart, and the Capacity Selector will be visible. 4. The {{variable.Object_Attendee}} will now be able to complete the checkout process. ## Entity Relationship Diagram (ERD) ![Checkout Process ERD.png](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Checkout%20Process%20ERD%281%29.png){height=\"\" width=\"\"} ### Starting Point **Event Item Purchased:** Enables multiple quantities of a single {{variable.Object_LineItem}} to relate to multiple Attendees. Junction between Line Item and Attendee. ### Objects * **{{variable.Object_Event}}:** Overall wrapper that just about everything relates to! * **{{variable.Object_Attendee}}:** Junction between {{variable.Object_Event}}, {{variable.Object_Contact}}, and {{variable.Object_Lead}}. * **{{variable.Object_LineItem}}:** Represents the ticket or item purchased from the {{variable.Object_Event}} checkout. * **{{variable.Object_Invoice}}:** The Order that represents each Line Item purchased. Relates to the {{variable.Object_Event}}, {{variable.Object_Account}}, and {{variable.Object_Contact}}. * **{{variable.Object_EventItem}}:** The item being purchased. Can relate to a Product and Price Book but does not need to. The Line Item references the {{variable.Object_EventItem}}. To learn more about the complete {{variable.Product_Events}} ERD, click [here](https://docs.blackthorn.io/docs/entity-relationship-diagram#events-objects-diagram){target=\"_blank\"}. ## Failed Event Registrations An email alert will notify the authorized user when any registrations fail, so they can quickly manage the issue. The workflow rule is called {{variable.Workflow_ERSFailed}}, which is enabled by default and uses the email template {{variable.Template_BTEventsERSFailed}}. ![D_06_Failed Registration](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/D_06_Failed%20Registration.png){height=\"\" width=\"\"} ## Guidelines for Adding Logic Post Attendee Creation Add an after insert/update trigger since the {{variable.Object_Contact}}/Lead are mapped on {{variable.Object_Attendee}} by Blackthorn using before insert/update logic. Encapsulate your logic in a try-catch block. If anything fails in your trigger, it will cause the whole ERS process to fail.",
+  "keywords": [
+    "variable",
+    "process",
+    "checkout",
+    "event",
+    "step",
+    "attendee",
+    "item",
+    "created",
+    "docs",
+    "object_attendee",
+    "paid",
+    "record",
+    "https",
+    "object_contact",
+    "logic",
+    "your",
+    "object_event",
+    "when",
+    "attendees",
+    "salesforce"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. An {{variable",
+    "2. The Attendee does not see the Capacity Selector for the Event Item",
+    "3. Once the Attendee clicks the {{variable",
+    "4. The {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "enhanced-emails",
+  "title": "enhanced-emails.html",
+  "content": "Paid Feature Our enhanced email feature is a paid add-on with Blackthorn Events. For more information, please reach out to our team at https://community.blackthorn.io/s/ . SendGrid Integration With our SendGrid integration, you can send emails from Salesforce through SendGrid. Why is this a benefit? See the reasons below: For Admins, you won't run into your 24-hour email limit (our uses Apex to send the emails). For Admins and Event Managers, significantly fewer emails will hit spam folders. For Event Managers, you will be able to create your own , send the email through our integration, and receive metrics about your email. IE., opens, bounces, and clicks without having to solely use Pardot, Marketing Cloud, Mailchimp, etc. Salesforce developers are now able to access a global method to use Blackthorn's SendGrid integration to send email from a custom component. New Method 1 conference360.EmailService.sendEmailToAttendees(Id orgWideAddressId, Id eventId, String emailTemplateId,Set&lt;Id&gt; attIdSet); 2 orgWideAddressId =&gt; Id for org wide email address record 3 eventId - Id of the event 4 emailTemplateId - Id of the email_template__c record 5 attIdSet -&gt; Id of attendee to whom the email needs to be sent The following is a sample that can be used in a dev console. Replace with correct Id Set&lt;Id&gt; attIdSet = new Set&lt;Id&gt;{'a0n1F000002MK8KQAW'}; Id orgWideAddressId = '0D21F000000CdMTSA0'; Id eventId='a1B1F000001tISSUA2'; String emailTemplateId='a0w1F000001T6kYQAS'; conference360.EmailService.sendEmailToAttendees(orgWideAddressId,eventId,emailTemplateId,attIdSet); Admin Configuration Before You Start Please reach out to via our support form to create your account with SendGrid. In the support form, please include which email address you would like us to use in the account step. Enable Enhanced Email . Add \"https://api.sendgrid.com/v3/mail/send\" to Setup &gt; Security &gt; Remote site settings. Setup Log into SendGrid and verify your email and account. The email will look like this: Set up Sender Authentication. Navigate to Settings &gt; Sender Authentication. Click \"Get Started\" under Verify an Address. Fill in all requested information. You'll need to verify an address for each Salesforce organization-wide email address used in the email template builder. Create an API key for your SendGrid users. This will link your Salesforce instance to SendGrid. Settings &gt; API Keys &gt; Create New API Key This MUST be set to Full Access Navigate to Salesforce and click Setup &gt; Custom Settings &gt; Blackthorn | Email Settings &gt; Manage &gt; New. Add in the API Key provided in Step 4. Check the checkbox. Optional: Define the SendGrid Reply To Email for attendees that may reply to emails that have been sent to them. Create an Organization-Wide Email Address The Organization-Wide Email Address must be the same as the Single Sender. You can set up multiple Organization-Wide Email Addresses as well as multiple Single Senders to support more than one user. Optional: Add a Special Purpose Organization-Wide Email Addresses this will be the same email as SendGrid Reply To Email. Ta-da! That's all there is to setting up SendGrid! Event Managers Email Template Builder For additional instructions for items 1-4, view our Email Template Builder documentation. To test this feature out: Create an related to your . Once you have saved your , click the button on the . Define the email information and the s should receive the email based on their or . Click . Get access to SendGrid from your admin who set it up. You'll log into SendGrid to review your email metrics. Aggregated data shown on pages like the Overview and Stats Dashboards can be stored for up to three years. However, specific data such as which email was sent to whom and how the recipient engaged with the email can only be stored for up to 30 days. Once you are logged in, navigate to Category Stats on the left-hand side. This is where you'll see all the information you need about the email you sent. Future Functionality In the future, we will pull the metrics from the email sent into Salesforce on the mass email record. Once that is delivered, we'll pull individual Attendee metrics. Notes and Troubleshooting If you see the following error * Send Grid was NOT properly configured * User is not in a production org When using the Send Test option in the , these emails do NOT come from SendGrid.",
+  "keywords": [
+    "email",
+    "sendgrid",
+    "your",
+    "send",
+    "address",
+    "salesforce",
+    "create",
+    "wide",
+    "emails",
+    "from",
+    "sent",
+    "settings",
+    "organization",
+    "blackthorn",
+    "information",
+    "integration",
+    "into",
+    "event",
+    "metrics",
+    "orgwideaddressid"
+  ],
+  "category": "events",
+  "procedures": [
+    "4. Check the checkbox",
+    "* Send Grid was NOT properly configure"
+  ],
+  "troubleshooting": [
+    "error * Send Grid was NOT properly configured * User is not in a production org When using the Send Test option in the , these emails do NOT come from SendGrid.",
+    "Troubleshooting If you see the following error * Send Grid was NOT properly configured * User is not in a production org When using the Send Test option in the , these emails do NOT come from SendGrid."
+  ]
+}

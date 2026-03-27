@@ -1,0 +1,41 @@
+{
+  "id": "phone-number-setup",
+  "title": "phone-number-setup.md",
+  "content": "## Metadata_Start ## code: en ## title: Phone Number Setup ## slug: phone-number-setup ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End After your account has been activated you will need to configure a phone number so you can begin sending and receiving text messages. The phone number that you setup will be a 10-digit number (long code) that you choose from a list of available numbers using our search feature. ## Add a Phone Number Follow the steps below to search for a new phone number and instantly provision it to your account. 1. Go to the Blackthorn Messaging Administration tab. 2. Click into the Phone Numbers section. 3. Click the **Add Phone Numbers** button. 4. At this point you'll have the option to search by area code or by pattern: * **Area Code:** An area code search is a very simple search where you input an area code and available phone numbers in that area code are displayed. * **Pattern:** A pattern search lets you input a specific number (or letter) pattern and any phone numbers that match that pattern are displayed. * For example, if you type 5678 you will see a list of phone numbers with the pattern 5678 located somewhere in the number. * If you need to be more specific about where in the number the pattern is located you can use asterisks (*) as a wildcard. For example, if you type **5678 then you will only see phone numbers where 5678 is located in the last 4 digits of the phone number. 5. When you find the phone number you want, click the **Select** link next to the number. This will instantly provision the phone number to your account. You're almost ready to send your first text. ## Additional Types of Phone Numbers If you have an existing phone number (either landline or VOIP) that you would prefer to enable please contact {{variable.Link_BlackthornSupport}}. We can also provide toll-free numbers, please contact {{variable.Link_BlackthornSupport}}. ## Create the Phone Number record After you provision your phone number it will be displayed on the Messaging Administration page. The next step is to create a Phone Number custom object record so that this number can be used within Salesforce. Each phone number that you provision will need to have its own Phone Number record. 1. Go to the Messaging Administration page. 2. Click into the Phone Numbers section. 3. Click the **Create Record** button located next to your phone number. 4. Give the phone number a `Display Name`. This should be something descriptive as it will be displayed in the From Number drop-downs. For example, \"Sales\", \"Support\", or \"Sally Smith\". 5. Set to `Active` or `Inactive`. Active means the phone number can be selected, by users who have access to it, to send outbound messages. Inactive means the number will be hidden so that users cannot select it to send outbound messages. 6. The `Available for Campaign` is a special field that determines whether a phone number can be used in conjunction with a Salesforce Campaign. Do not enable this if you want to use this phone number for standard two-way text messaging. 7. Add a `Help Message` and `Stop Message` to your record. These fields define the auto-response message that is sent in certain situations. This helps you to be compliant with best practices. ## Configure Phone Number Access After you create the Phone Number record you will want to determine who has access to send outbound text messages from it. This is controlled by the record's visibility. This means that if a User has Read access to the Phone Number record then they can use it. By default the Phone Number object's org-wide sharing is set to Private, so only the Record Owner, anyone above the Record Owner in the Role hierarchy, and anyone who has been explicitly granted sharing access can see the record. Let's look at how to grant sharing access to the record: 1. Go to the Messaging Administration tab. 2. Click into the Phone Numbers section. 3. Next to your phone number click the record link which should look something like this - PhoneNumber-0000. 4. Click the **Sharing** button located on the Phone Number record page. 5. Click the **Add** button. 6. Add the Users who need access to this Phone Number. Set the `Access Level` to \"Read Only\". 7. Click **Save**.",
+  "keywords": [
+    "phone",
+    "number",
+    "record",
+    "numbers",
+    "click",
+    "your",
+    "access",
+    "code",
+    "pattern",
+    "search",
+    "messaging",
+    "area",
+    "located",
+    "need",
+    "text",
+    "messages",
+    "provision",
+    "administration",
+    "button",
+    "displayed"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to the Blackthorn Messaging Administration tab",
+    "2. Click into the Phone Numbers section",
+    "3. Click the **Add Phone Numbers** button",
+    "4. At this point you'll have the option to search by area code or by pattern: * **Area Code:** An area code search is a very simple search where you input an area code and available phone numbers in that area code are displayed",
+    "5. When you find the phone number you want, click the **Select** link next to the number",
+    "1. Go to the Messaging Administration page",
+    "2. Click into the Phone Numbers section",
+    "3. Click the **Create Record** button located next to your phone number",
+    "4. Give the phone number a `Display Name`",
+    "5. Set to `Active` or `Inactive`"
+  ],
+  "troubleshooting": []
+}

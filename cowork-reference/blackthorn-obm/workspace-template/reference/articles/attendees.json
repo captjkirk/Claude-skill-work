@@ -1,0 +1,33 @@
+{
+  "id": "attendees",
+  "title": "attendees.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendees ## slug: attendees ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End On the {{variable.Object_Attendee}} page, you can invite {{variable.Object_Attendee}}s to your {{variable.Object_Event}}. This can be done by searching for an {{variable.Object_Account}}, {{variable.Object_Contact}}, {{variable.Object_Campaign}}, {{variable.Object_Event}}, {{variable.Object_Lead}}, or Report! **Note:** If importing {{variable.Object_Attendee}}s from a summary or matrix report, the first column needs to be \"{{variable.Object_Attendee}}: ID\". ![Event Wizard Attendees 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Wizard%20Attendees%201.png){height=\"\" width=\"\"} ## Exiting the Event Wizard After filling in an {{variable.Object_Event}}’s information, there are two options; either click **Save & Publish Later** or **Save & Publish Now**. * If **Save & Publish Later** is clicked, the **Publish** button will be located at the top left. * If **Save & Publish Now** is clicked, the **Unpublish** button will be located at the top left. Attempting to close the {{variable.Component_EventWizard}} before an {{variable.Object_Event}}’s information has been saved will result in the following warning message. “You have unsaved changes. Before closing, click Save.”",
+  "keywords": [
+    "variable",
+    "save",
+    "publish",
+    "object_attendee",
+    "object_event",
+    "attendees",
+    "event",
+    "report",
+    "wizard",
+    "information",
+    "click",
+    "later",
+    "clicked",
+    "button",
+    "located",
+    "left",
+    "before",
+    "metadata_start",
+    "code",
+    "title"
+  ],
+  "category": "events",
+  "procedures": [
+    "* If **Save & Publish Later** is click",
+    "* If **Save & Publish Now** is click"
+  ],
+  "troubleshooting": []
+}

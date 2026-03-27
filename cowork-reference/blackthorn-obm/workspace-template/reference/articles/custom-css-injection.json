@@ -1,0 +1,41 @@
+{
+  "id": "custom-css-injection",
+  "title": "custom-css-injection.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom CSS Injection ## slug: custom-css-injection ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Overview Not a fan of our out-of-the-box experience? Want to add something to your page that Blackthorn doesn't offer? We support injecting custom CSS into {{variable.Object_Event}}s, {{variable.Object_EventSettings}}, and {{variable.Object_EventGroup}}s. CSS injection is supported on 3 levels: {{variable.Object_EventSettings}}, {{variable.Object_Event}}, and {{variable.Object_EventGroup}}s and is applied additively (multiple CSS files are loaded simultaneously). Before adding a CSS file, it is important to understand how CSS code is applied at the different levels. If the {{variable.Object_EventGroup}} has a CSS file in the {{variable.Field_EVGroup_CustomCSSUrl}} field AND the {{variable.Field_EVGroup_EventSettings}} field contains a related {{variable.Object_EventSettings}} record with a different CSS file in the {{variable.Object_EventSettings}} {{variable.Field_ETETSettings_CustmCSSUrl}} field, then the CSS file in the related {{variable.Object_EventSettings}} {{variable.Field_ETETSettings_CustmCSSUrl}} field will be applied. If the {{variable.Object_EventSettings}} {{variable.Field_ETETSettings_CustmCSSUrl}} field is blank but the {{variable.Object_EventGroup}} {{variable.Field_EVGroup_CustomCSSUrl}} field contains a CSS file that includes {{variable.Object_Event}}-specific styling, the Event Organizer will see the changes to all {{variable.Object_Event}}s in the {{variable.Object_EventGroup}}. For example, if the file in the {{variable.Object_EventGroup}}’s {{variable.Field_EVGroup_CustomCSSUrl}} field includes code that will change the color of the **Share** button, the color will be updated for all {{variable.Object_Event}}s in the {{variable.Object_EventGroup}}. **Note:** Using the “!important” tag in a CSS file will overwrite all other CSS files or styling rules for that specific feature on the element. ## Store Custom CSS Files :::(Warning) (Limitation) Hosting custom CSS files in static resources is not supported. ::: We recommend hosting your custom CSS files in {{variable.Product_Salesforce}} as a Salesforce File. Complete the steps below to store a file in {{variable.Product_Salesforce}}. 1. Create a .css file and save it to your desktop. 2. Navigate to Files in {{variable.Product_Salesforce}}. ![CustomCSS_UploadFiles_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_1.png){height=\"\" width=\"\"} 3. Click **Upload Files** to upload the .css file to Files. ## Copy CSS Files 1. Select the newly created .css file in {{variable.Product_Salesforce}} and click **Public Link** at the top of the page. ![CustomCSS_UploadFiles_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_2.png){height=\"\" width=\"\"} 2. Make sure the {{variable.SF_File_ExpirationDate}} and {{variable.SF_File_Password}} are toggled “Off” and click **Create Link**. ![CustomCSS_UploadFiles_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_3.png){height=\"\" width=\"\"} 3. Click **Copy Link** to copy the generated link. 4. Open the URL in a new browser and click **Download**. ![CustomCSS_UploadFiles_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CustomCSS_UploadFiles_4.png){height=\"\" width=\"\"} 5. Navigate to all downloads and find the .css file. 6. Copy the URL (downloaded file). You may need to right-click the file and click **Copy Link Address**. ## Add a CSS File 1. Open the {{variable.Object_Event}}, {{variable.Object_EventSettings}}, or {{variable.Object_EventGroup}} record where you want to add the CSS. The {{variable.Field_EVGroup_CustomCSSUrl}} field is located on all three. 2. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_EVGroup_CustomCSSUrl}} field. 3. Paste the file URL in the {{variable.Field_EVGroup_CustomCSSUrl}} field. 4. Click {{variable.Button_Save}}. 5. Go to the related {{variable.Object_Event}} record. 6. Click {{variable.Button_Events_Update}}. The new Custom CSS will now be visible. **Note:** Custom CSS must be correctly served as a public file with a MIME type of 'text/css' for it to load correctly. ### Desktop vs. Mobile Some elements are not shared between desktop and mobile displays. Therefore, they need different code in the CSS. For example, the CSS class used to hide the registration button on a mobile device is different from the CSS class used on a desktop computer. * The `.get-tickets-button` class works for devices wider than 600px. * The `.mobile-registration-action-container.ng-star-inserted` class works for phone and tablet devices smaller than 600px. Sample code snippet: ``` .get-tickets-button, .mobile-registration-action-container.ng-star-inserted { display: none; } ``` Both code snippets serve the same purpose and hide all **Get Tickets** or **Register** buttons on mobile, tablet, and desktop devices. ## Target and Modify CSS Check out this video to learn how to target classes and modify CSS. ![Target and Modify CSS Video](https://youtu.be/Os3ZjXHnbvQ){height=\"480\" width=\"640\"} ## Examples ### Example 1: Remove the Date and Time By default, the {{variable.Object_Event}} overview page would look similar to this: ![example 1 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/example%201%201.png){height=\"\" width=\"\"} By adding the following CSS, it will hide the \"Date & Time\" section, as well as the calendar date above the {{variable.Object_Event}} title. ``` .welcome.ng-star-inserted { display: hidden; } .start-dates { display:none !important; } #date-and-time { display:none !important; } ``` ![example 1 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/example%201%202.png){height=\"\" width=\"\"} ### Example 2: Change the Greeting After registering for an {{variable.Object_Event}}, an {{variable.Object_Attendee}} would be greeted with this message by default: ![example 2 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/example%202%201.png){height=\"\" width=\"\"} By adding the following CSS, it will hide the green checkmark. ``` .check { display:none !important; } ``` ![example 2 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/example%202%202.png){height=\"\" width=\"\"} ### Example 3: Add a Custom Font The example below imports the Gilroy font and applies it to the body of the document. This results in the Event webpage using the Gilroy font. ``` @import url('https://fonts.cdnfonts.com/css/svn-gilroy'); @import url('https://fonts.cdnfonts.com/css/gilroy-bold'); body { /*font-family: 'SVN-Gilroy', sans-serif; font-family: 'Gilroy-Regular', sans-serif; font-family: 'Gilroy-Heavy', sans-serif; font-family: 'Gilroy-Light', sans-serif; font-family: 'Gilroy-Medium', sans-serif;*/ font-family: 'Gilroy-Bold', sans-serif; } ```",
+  "keywords": [
+    "variable",
+    "file",
+    "example",
+    "https",
+    "object_event",
+    "field",
+    "click",
+    "gilroy",
+    "custom",
+    "files",
+    "height",
+    "width",
+    "font",
+    "object_eventgroup",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Create a ",
+    "2. Navigate to Files in {{variable",
+    "3. Click **Upload Files** to upload the ",
+    "1. Select the newly created ",
+    "2. Make sure the {{variable",
+    "3. Click **Copy Link** to copy the generated link",
+    "4. Open the URL in a new browser and click **Download**",
+    "5. Navigate to all downloads and find the ",
+    "6. Copy the URL (downloaded file)",
+    "1. Open the {{variable"
+  ],
+  "troubleshooting": []
+}

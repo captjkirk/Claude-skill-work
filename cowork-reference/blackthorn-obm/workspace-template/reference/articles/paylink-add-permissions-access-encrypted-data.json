@@ -1,0 +1,26 @@
+{
+  "id": "paylink-add-permissions-access-encrypted-data",
+  "title": "paylink-add-permissions-access-encrypted-data.md",
+  "content": "## Metadata_Start ## code: en ## title: Add Permissions to Access Encrypted Data ## slug: paylink-add-permissions-access-encrypted-data ## seoTitle: Add Permissions to Access Encrypted Data ## description: ## contentType: Markdown ## Metadata_End {{snippet.StripeChkout_ConfPG_encryptda}}",
+  "keywords": [
+    "permissions",
+    "access",
+    "encrypted",
+    "data",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "paylink",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "stripechkout_confpg_encryptda"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

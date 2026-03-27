@@ -1,0 +1,30 @@
+{
+  "id": "payments-fsl-install-setup-create-records",
+  "title": "payments-fsl-install-setup-create-records.md",
+  "content": "## Metadata_Start ## code: en ## title: Create FSL Records ## slug: payments-fsl-install-setup-create-records ## seoTitle: Create FSL Records ## description: ## contentType: Markdown ## Metadata_End Once you have installed and set up the FSL Extension, it's time to create FSL records. ## Create a Work Order {{snippet.PT_FSLRecord_CreateWorkOrder}} ## Create a Work Order Line Item {{snippet.FSLRecord_CreateWorkOrderLineItem}} :::(Info) (The Magic of the Blackthorn FSL Extension) When a Work Order Line Item is added to the Work Order and the Work Order's {{variable.Field_WorkOrder_TotalPrice}} > 0 or the {{variable.Field_WorkOrder_TotalPrice}} changes, a Transaction with {{variable.Field_Transaction_TransaStatus}} = \"Open\" is automatically created. If a Transaction with {{variable.Field_Transaction_TransaStatus}} = \"Open\" already exists, it will be updated to reflect the Work Order's {{variable.Field_WorkOrder_BalanceDue}} amount. ::: ![P_03_create fsl rec 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/P_03_create%20fsl%20rec%203.png){height=\"\" width=\"\"} ## Create a Service Appointment :::(Info) (Service Appointments) If {{variable.Field_WorkOrder_WorkType}} = \"Auto-Create Service Appointment\" on a {{variable.Object_WorkOrder}} or Work Order Line Item record, a child service appointment will be created. Review the Salesforce documentation about creating [Service Appointments](https://help.salesforce.com/s/articleView?id=sf.fs_create_appointments.htm&type=5){target=\"_blank\"} for more information. ::: {{snippet.PT_FSLRecord_CreateServiceAppointment}} ## Add a Service Resource {{snippet.PT_FSLRecord_AddServiceResource}} ## View Records in the FSL Mobile App {{snippet.PT_FSLRecord_ViewRecordsFSLMobileApp}}",
+  "keywords": [
+    "create",
+    "work",
+    "order",
+    "variable",
+    "service",
+    "records",
+    "snippet",
+    "line",
+    "item",
+    "appointment",
+    "extension",
+    "info",
+    "field_workorder_totalprice",
+    "transaction",
+    "field_transaction_transastatus",
+    "open",
+    "created",
+    "p_03_create",
+    "https",
+    "documentation"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

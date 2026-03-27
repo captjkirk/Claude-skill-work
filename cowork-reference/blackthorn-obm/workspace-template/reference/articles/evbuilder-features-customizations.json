@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-features-customizations",
+  "title": "evbuilder-features-customizations.md",
+  "content": "## Metadata_Start ## code: en ## title: Customizations ## slug: evbuilder-features-customizations ## seoTitle: Customizations ## description: ## contentType: Markdown ## Metadata_End There are a couple ways that users can customize the {{variable.Component_EventBuilder}}. * Select fields from a predefined field set that excludes fields hard-coded into the Builder’s UI. * Add Standard, packaged, and custom fields to each section. :::(Info) (Important Functionality) Fields added to the field set will respect the required option as designated by field set or field metadata and not the page layout. ::: ## Customize Fields Fields can be added to the sections that allow customization. For this example, let’s place the {{variable.Field_ETEvent_PaymentProcesFee}} field in the Event Details section. {{snippet.AddFieldToEventBuilder}}",
+  "keywords": [
+    "fields",
+    "field",
+    "customizations",
+    "customize",
+    "variable",
+    "section",
+    "added",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "there",
+    "couple"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

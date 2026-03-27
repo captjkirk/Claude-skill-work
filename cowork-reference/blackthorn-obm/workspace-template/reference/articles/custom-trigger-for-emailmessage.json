@@ -1,0 +1,30 @@
+{
+  "id": "custom-trigger-for-emailmessage",
+  "title": "custom-trigger-for-emailmessage.md",
+  "content": "## Metadata_Start ## code: en ## title: Example: Custom Trigger for EmailMessage ## slug: custom-trigger-for-emailmessage ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ``` trigger InboundEmailMessageTrigger on EmailMessage (before insert) { List incomingEms = new List (); // if use own trigger boolean is false, then stop this trigger and use the PCIFY managed package one if (!pcify.Manager.useOwnTrigger(pcify.StaticUtils.EMAILMESSAGE)) { return; } // if Detection is turned on for Email Message if (pcify.Manager.getManager(pcify.StaticUtils.EMAILMESSAGE).pcify__isActive__c) { // collect incoming emails for (EmailMessage em : Trigger.new) { if (em.Incoming) { incomingEms.add(em); } } // process all incoming with PCIFY pcify.Processor.maskCreditCards( incomingEms, pcify.Manager.getMaskFields(pcify.StaticUtils.EMAILMESSAGE), pcify.StaticUtils.EMAILMESSAGE ); } } ```",
+  "keywords": [
+    "pcify",
+    "emailmessage",
+    "trigger",
+    "staticutils",
+    "incomingems",
+    "manager",
+    "incoming",
+    "custom",
+    "list",
+    "metadata_start",
+    "code",
+    "title",
+    "example",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "inboundemailmessagetrigger"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

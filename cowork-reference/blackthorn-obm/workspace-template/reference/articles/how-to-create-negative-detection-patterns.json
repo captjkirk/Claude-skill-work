@@ -1,0 +1,40 @@
+{
+  "id": "how-to-create-negative-detection-patterns",
+  "title": "how-to-create-negative-detection-patterns.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Create Negative Detection Patterns ## slug: how-to-create-negative-detection-patterns ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ![create negative detection patterns](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/create%20negative%20detection%20patterns.png){height=\"\" width=\"\"} Have you ever experienced a false positive before? Was it a tracking number that resembled a credit card number? With Negative Detection Patterns, you can effectively exclude these numbers from Blackthorn Compliance detection. All you need to do is create your own patterns for international phone numbers, UPS, USPS, Fedex, and other common false positives numbers. Important: * Numbers matched with Negative Patterns ***are not masked nor are logs created.*** No action is the correct action for Negative Patterns. * It is possible for a record to have both valid credit card numbers and false positives. * It is also possible for the same number to be both a valid credit card number and a false positive. ## Create Negative Detection Patterns 1. Navigate to Setup > Custom Code > Custom Metadata Types > DetectionPattern > Manage DetectionPattern. 2. Click {{variable.button_new}}. 3. Enter a `Label`. Must be unique - cannot be the same as other pattern names 4. Enter a `DetectionPattern Name`. Must be unique - cannot be the same as other pattern names 5. Enter a `Pattern`. This pattern must be a ***valid*** Regular Expression. Try a free tool like [this](https://regexr.com/){target=\"_blank\"} to check whether your regex is valid. 6. Check `Negative Pattern`. This field must be true 7. Check `Partial Match`. [Optional] skips the entire field if a negative pattern is matched. 8. Check the box `IsActive`. 9. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "negative",
+    "patterns",
+    "create",
+    "detection",
+    "pattern",
+    "numbers",
+    "false",
+    "number",
+    "valid",
+    "must",
+    "check",
+    "credit",
+    "card",
+    "other",
+    "same",
+    "detectionpattern",
+    "enter",
+    "code",
+    "https",
+    "positive"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Navigate to Setup > Custom Code > Custom Metadata Types > DetectionPattern > Manage DetectionPattern",
+    "2. Click {{variable",
+    "3. Enter a `Label`",
+    "4. Enter a `DetectionPattern Name`",
+    "5. Enter a `Pattern`",
+    "6. Check `Negative Pattern`",
+    "7. Check `Partial Match`",
+    "8. Check the box `IsActive`",
+    "9. Click {{variable"
+  ],
+  "troubleshooting": []
+}

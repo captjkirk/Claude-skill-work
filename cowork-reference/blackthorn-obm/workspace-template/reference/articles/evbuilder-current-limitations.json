@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-current-limitations",
+  "title": "evbuilder-current-limitations.md",
+  "content": "## Metadata_Start ## code: en ## title: Current Limitations ## slug: evbuilder-current-limitations ## seoTitle: Current Limitations ## description: ## contentType: Markdown ## Metadata_End * The {{variable.Component_EventBuilder}} is not optimized for mobile use. * The {{variable.Component_EventBuilder}} does not save as you work. If you lose connection to {{variable.Product_Salesforce}} or refresh your page before you save, the data is lost. * Custom primary and background colors will not appear in the {{variable.Component_EventBuilder}}, even though they appear on the published {{variable.Object_Event}}’s webpage. * The {{variable.Component_EventBuilder}} is designed to work primarily with the new Dynamic UI. * Users can edit existing {{variable.Object_Event}}s with any UI from the {{variable.Component_EventBuilder}} and maintain the {{variable.Object_Event}}’s original UI. However, the {{variable.Component_EventBuilder}} will show the {{variable.Object_Event}} as if the user were using the Dynamic UI, which will differ from the published site. * Users cannot change an {{variable.Object_Event}} to one of the older UI options from the {{variable.Component_EventBuilder}}. Instead, users must select the UI from the picklist on the {{variable.Object_Event}} record.",
+  "keywords": [
+    "variable",
+    "component_eventbuilder",
+    "object_event",
+    "from",
+    "current",
+    "limitations",
+    "users",
+    "save",
+    "work",
+    "appear",
+    "published",
+    "dynamic",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

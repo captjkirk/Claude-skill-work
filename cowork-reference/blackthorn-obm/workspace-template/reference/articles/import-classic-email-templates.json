@@ -1,0 +1,41 @@
+{
+  "id": "import-classic-email-templates",
+  "title": "import-classic-email-templates.md",
+  "content": "## Metadata_Start ## code: en ## title: Import Classic Email Templates ## slug: import-classic-email-templates ## seoTitle: Import Classic Email Templates ## description: ## contentType: Markdown ## Metadata_End Complete the steps below to import Classic email templates into Blackthorn Events. 1. Go to Setup. 2. In the Quick Find box, enter and click “Classic Email Templates”. 3. Select the Blackthorn | Events folder. 4. Click **Event Invite Email (HTML)**. 5. Copy the email template Id from the search bar. It should look like “00XP0000003IG5J”. 6. Open a new tab. 7. Add the copied text to the domain after ”/“. It should look like this. “yourorgname.lightning.force.com/lightning/_classic/%2F00XP0000003IG5J” 8. It will then be processed to another Id that will look like this. “yourorgname.lightning.force.com/lightning/r/EmailTemplate/00XP0000003ig5JMAQ/view” 10. Copy the Email Template Id. 11. Go to the Email Template tab. If you haven’t created one yet, ceate a tab for email templates. 12. Switch to Salesforce Classic. 13. Go to the Email Template tab. 14. Click {{variable.button_new}}. 15. Enter the following information. * {{variable.Field_ClassicEmailTem_TempName}} * {{variable.Field_ClassicEmailTemp_Event}} - Select an Event in the lookup field. * {{variable.Field_ClassicEmailTem_SFTempId}} - Enter the Id Created in Step 8. * Add “{}” (curly brackets) in the {{variable.Field_ClassicEmailTemp_JSONFi1}} field. 16. Click {{variable.Button_Save}}. 17. Your email template will be created in Salesforce Classic. 18. Click **Switch to Lightning Experience** to go to Salesforce Lightning Experience. 19. The Email Template Builder will open. 20. Drag and drop the HTML tile (to the blue box). 21. Click into the new HTML block. 22. In a new tab, go to Setup. 23. In the Quick Find box, enter and click “Classic Email Templates”. 24. Click **Event Invite Email (HTML)**. 25. Click **Edit HTML Version**. 26. Copy the text in the {{variable.Field_ClassicEmailTemp_HTMLBod}} field. 27. Go back to the open Email Template Builder. 28. Paste the HTML code. 29. Click {{variable.Button_Save}}. 30. Review the Email Template Details. 31. Click {{variable.Button_Save}}. ![Import Classic Email Templates](https://youtu.be/oDx5-mAKRcs){height=\"480\" width=\"640\"}",
+  "keywords": [
+    "email",
+    "click",
+    "classic",
+    "variable",
+    "templates",
+    "template",
+    "html",
+    "lightning",
+    "import",
+    "enter",
+    "event",
+    "copy",
+    "look",
+    "like",
+    "open",
+    "created",
+    "salesforce",
+    "field",
+    "button_save",
+    "code"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, enter and click “Classic Email Templates”",
+    "3. Select the Blackthorn | Events folder",
+    "4. Click **Event Invite Email (HTML)**",
+    "5. Copy the email template Id from the search bar",
+    "6. Open a new tab",
+    "7. Add the copied text to the domain after ”/“",
+    "8. It will then be processed to another Id that will look like this",
+    "10. Copy the Email Template Id",
+    "11. Go to the Email Template tab"
+  ],
+  "troubleshooting": []
+}

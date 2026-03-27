@@ -1,0 +1,38 @@
+{
+  "id": "prohibit-sending-attachments-custom-permission",
+  "title": "prohibit-sending-attachments-custom-permission.md",
+  "content": "## Metadata_Start ## code: en ## title: Prohibit Sending Attachments (Custom Permission) ## slug: prohibit-sending-attachments-custom-permission ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Disallow Users from Sending Attachments in Messages (Custom Permission) In the new January '22 release, we introduced a Custom Permission that controls which users are allowed to send attachments in their SMS messages. ## Prevent Users from Sending Attachments in Messages (Custom Permission) 1. Go to Setup. 2. Create a new Permission Set. 3. Assign one or more users to the Permission Set. 4. Apps > Custom Permissions. 5. Click **Edit**. 6. Add the Custom Permission: \"simplesms.Prevent Textey Attachments\". 7. Click **Save**. Now Login to the assigned user and check the Blackthorn Messsaging Messenger!",
+  "keywords": [
+    "permission",
+    "custom",
+    "attachments",
+    "sending",
+    "users",
+    "messages",
+    "prohibit",
+    "from",
+    "prevent",
+    "click",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "disallow"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Create a new Permission Set",
+    "3. Assign one or more users to the Permission Set",
+    "4. Apps > Custom Permissions",
+    "5. Click **Edit**",
+    "6. Add the Custom Permission: \"simplesms",
+    "7. Click **Save**"
+  ],
+  "troubleshooting": []
+}

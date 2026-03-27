@@ -1,0 +1,30 @@
+{
+  "id": "tap-to-pay",
+  "title": "tap-to-pay.html",
+  "content": "Mobile Payments app users now have the option to use the Tap to Pay feature to accept contactless payments via the Stripe Terminal SDK. Prerequisites Tap to Pay on iPhone is currently only available in the US. Tap to Pay on Android is currently in beta in Australia, Canada, New Zealand, Singapore, the United Kingdom, and the United States. To read more about using iOS devices with Stripe’s Tap to Pay feature, click here . To read more about using Android devices with Stripe’s Tap to Pay feature, click here . Mobile Wallet Tokens Mobile wallet tokens are not reusable on either iOS or Android mobile devices. iOS Tap to Pay for iOS is now a supported Payment Method for Stripe transactions in the Mobile Payments app. As of today, Tap to Pay is only supported on Stripe. The SDK for Tap to Pay on iPhone requires iOS mobile devices to meet the following criteria: Running iOS 16.0 or later iPhone XS or later The device Is not jailbroken; the device bootloader is locked and unchanged. Note: iPads do not have NFC reading capabilities, so they are not currently supported. Functionality To use the Tap to Pay feature, set {{variable.Field_PG_AcceptedPaymentMethod}} = \"Tap to Pay\" on the Payment Gateway, Transaction, and Payment User Override objects. Tap to Pay requires an active internet connection and will not be supported if the Mobile Payments app is in offline mode. Tap to Pay supports existing Terminal functionality that saves card details for future online reuse. However, the Save Card functionality applies only to physical cards, not mobile wallets. Used Payment details cannot be stored and reused if the payment is made using a mobile wallet (e.g., Google Pay, Apple Pay, etc.), as mobile wallet tokens cannot be reused. For more detailed information, please read this article from Stripe . The Payments Mobile app does not support PIN entry as a fallback for payments that require an additional layer of authentication. Android Tap to Pay for Android is now a supported Payment Method for Stripe transactions in the Mobile Payments app. As of today, Tap to Pay is only supported on Stripe. The SDK for Tap to Pay on Android requires Android mobile devices to meet the following criteria: Contains a functioning NFC antenna and chipset It isn’t rooted, and the device bootloader is locked and unchanged Runs a current version of Android (Android 10 or above) Uses Google Mobile Services Has a hardware-backed keystore Access to a stable connection to the internet Functionality To use the Tap to Pay feature, set {{variable.Field_PG_AcceptedPaymentMethod}} = \"Tap to Pay\" on the Payment Gateway, Transaction, and Payment User Override objects. Tap to Pay requires an active internet connection and will not be supported if the Mobile Payments app is in offline mode. Tap to Pay supports existing Terminal functionality that saves card details for future online reuse. However, the Save Card functionality applies only to physical cards, not mobile wallets. Used Payment details cannot be stored and reused if the payment is made using a mobile wallet (e.g., Google Pay, Apple Pay, etc.), as mobile wallet tokens cannot be reused. For more detailed information, please read this article from Stripe . The Payments Mobile app does not support PIN entry as a fallback for payments that require an additional layer of authentication. Tap to Pay for Android may require additional verification for transactions over a certain amount. To learn more about regional limits, click here .",
+  "keywords": [
+    "mobile",
+    "payments",
+    "android",
+    "payment",
+    "stripe",
+    "supported",
+    "wallet",
+    "functionality",
+    "feature",
+    "only",
+    "more",
+    "devices",
+    "read",
+    "using",
+    "tokens",
+    "requires",
+    "card",
+    "details",
+    "cannot",
+    "reused"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

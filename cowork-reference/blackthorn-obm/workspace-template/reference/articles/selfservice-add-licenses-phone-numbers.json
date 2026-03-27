@@ -1,0 +1,41 @@
+{
+  "id": "selfservice-add-licenses-phone-numbers",
+  "title": "selfservice-add-licenses-phone-numbers.md",
+  "content": "## Metadata_Start ## code: en ## title: Add User Licenses and Phone Numbers ## slug: selfservice-add-licenses-phone-numbers ## seoTitle: Add User Licenses and Phone Numbers ## description: ## contentType: Markdown ## Metadata_End Existing users with the Blackthorn Messaging Admin permission set can add additional user licenses and phone numbers via the Messaging Admin tab. 1. Go to the Messaging Admin page. 2. In the Current Plan section, click the **Manage Subscription** button. ![Click%20Manage%20Subscription](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Click%20Manage%20Subscription.png){height=\"\" width=\"\"} 4. Complete the following steps in the pop-up window. * To add more user licenses, click the **+ sign** in the User Licenses(s) column. * To add more phone numbers, click the **+ sign** in the Phone Number(s) column. * The **- sign** will be disabled to prevent reducing number of user licenses and phone numbers from going below the previous amount. ![Upgrade%20Plan](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Upgrade%20Plan.jpg){height=\"\" width=\"\"} 5. The pricing details for the new licenses/phone numbers will be visible in the Additional Subscription column. 6. The revised balance, that will be effective on the next billing date, is shown in the New Subscription column. 7. In this example, the user already has a default payment method set up. 8. Click **Checkout** and complete the checkout process. ![Add%20Licenses%20and%20Phone%20Numbers](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Add%20Licenses%20and%20Phone%20Numbers.png){height=\"\" width=\"\"} ## Add a New Payment Method Complete the steps below if you need to enter a new payment method to complete the checkout process. ![Checkout_No%20Payment%20Method](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Checkout_No%20Payment%20Method.jpg){height=\"\" width=\"\"} 1. After adding additional licenses or phone numbers, click **Checkout**. 2. In the pop-up window, complete the following steps. 3. Click in the Choose a Payment Method field. ![Choose%20Payment%20Method](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Choose%20Payment%20Method.png){height=\"\" width=\"\"} 5. Click **Add a new card** to add a new payment method. ![Add%20a%20New%20Card](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Add%20a%20New%20Card.png){height=\"\" width=\"\"} 7. In the Add Payment Method window, enter a Payment Method and related address. 8. Review the policy and terms agreement and click the checkbox. 9. Click **Confirm**. ![Add%20a%20Payment%20Method%20Window](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Add%20a%20Payment%20Method%20Window.jpg){height=\"\" width=\"\"}",
+  "keywords": [
+    "click",
+    "licenses",
+    "phone",
+    "numbers",
+    "user",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "payment",
+    "method",
+    "20payment",
+    "20method"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to the Messaging Admin page",
+    "2. In the Current Plan section, click the **Manage Subscription** button",
+    "4. Complete the following steps in the pop-up window",
+    "5. The pricing details for the new licenses/phone numbers will be visible in the Additional Subscription column",
+    "6. The revised balance, that will be effective on the next billing date, is shown in the New Subscription column",
+    "7. In this example, the user already has a default payment method set up",
+    "8. Click **Checkout** and complete the checkout process",
+    "1. After adding additional licenses or phone numbers, click **Checkout**",
+    "2. In the pop-up window, complete the following steps",
+    "3. Click in the Choose a Payment Method field"
+  ],
+  "troubleshooting": []
+}

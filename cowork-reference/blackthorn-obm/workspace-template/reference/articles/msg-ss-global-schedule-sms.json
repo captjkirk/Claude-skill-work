@@ -1,0 +1,23 @@
+{
+  "id": "msg-ss-global-schedule-sms",
+  "title": "msg-ss-global-schedule-sms.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule an SMS ## slug: msg-ss-global-schedule-sms ## seoTitle: Schedule an SMS ## description: ## contentType: Markdown ## Metadata_End {{snippet.SS_GS_ScheduleAnSMS_GlobalScheduler}}",
+  "keywords": [
+    "schedule",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "global",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ss_gs_scheduleansms_globalscheduler"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

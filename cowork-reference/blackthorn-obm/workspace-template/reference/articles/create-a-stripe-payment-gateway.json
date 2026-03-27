@@ -1,0 +1,41 @@
+{
+  "id": "create-a-stripe-payment-gateway",
+  "title": "create-a-stripe-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Create a Stripe Payment Gateway ## slug: create-a-stripe-payment-gateway ## seoTitle: Create a Stripe Payment Gateway ## description: ## contentType: Markdown ## Metadata_End Each {{variable.Product_Stripe}} account mode (test and live) needs its own {{variable.Object_PaymentGateway}} record. This will keep your [test data](/v1/docs/test-your-stripe-payment-gateway){target=`_blank`} separated from your live data. If you connect to your account in test mode during setup, you will need to create a new {{variable.Object_PaymentGateway}} record for live mode. :::(Info) () When setting up Blackthorn Payments, we suggest connecting your Payment Gateway in Test Mode so that you can create test Transactions, Payment Methods, and Customers. ::: 1. Click the App Launcher. ![Set Up Gateway_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Gateway_1.png){height=\"\" width=\"\"} 2. Type “Payment Gateway” and click Payment Gateways (Blackthorn Object). ![Set Up Gateway_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Gateway_2.png){height=\"\" width=\"\"} 3. Click {{variable.button_new}}. ![Set Up Gateway_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Gateway_3.png){height=\"\" width=\"\"} 4. Enter a {{variable.Field_PG_PaymentGatewayName}}. ![Set Up Gateway_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Gateway_4.png){height=\"\" width=\"\"} 5. Set {{variable.Field_PaymentGateway_Provider}} = {{variable.Picklist_PG_Provider_Stripe}}. ![Set Up Stripe Gateway_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_5.png){height=\"\" width=\"\"} 6. Set {{variable.Field_PG_TestMode}} = “True” to select test mode. ![Set Up Stripe Gateway_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_6.png){height=\"\" width=\"\"} 7. Click {{variable.Button_Save}}. ![Set Up Stripe Gateway_7](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_7.png){height=\"\" width=\"\"} 8. Click {{variable.Button_PG_ConnecttoGateway}}. ![Set Up Stripe Gateway_8](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_8.png){height=\"\" width=\"\"} 9. Click **Skip this form**. ![Set Up Stripe Gateway_9](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_9.png){height=\"\" width=\"\"} 10. Sign into your Salesforce org. ![Set Up Stripe Gateway_10](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20Up%20Stripe%20Gateway_10.png){height=\"\" width=\"\"} Once you have signed in, the Gateway Information section fields will be populated. :::(Info) () The \"Related Lists\" section will not include data. Connecting your Stripe account does not automatically sync existing data to Salesforce. If you have data in your Stripe account that needs to be moved to Salesforce, see the [Historical Sync](https://docs.blackthorn.io/docs/historical-sync) documentation. :::",
+  "keywords": [
+    "stripe",
+    "https",
+    "documentation",
+    "variable",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "20up",
+    "height",
+    "width",
+    "payment",
+    "your",
+    "gateway",
+    "test",
+    "click",
+    "20stripe"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the App Launcher",
+    "2. Type “Payment Gateway” and click Payment Gateways (Blackthorn Object)",
+    "3. Click {{variable",
+    "4. Enter a {{variable",
+    "5. Set {{variable",
+    "6. Set {{variable",
+    "7. Click {{variable",
+    "8. Click {{variable",
+    "9. Click **Skip this form**",
+    "10. Sign into your Salesforce org"
+  ],
+  "troubleshooting": []
+}

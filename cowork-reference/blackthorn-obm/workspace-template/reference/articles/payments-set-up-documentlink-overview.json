@@ -1,0 +1,33 @@
+{
+  "id": "payments-set-up-documentlink-overview",
+  "title": "payments-set-up-documentlink-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: payments-set-up-documentlink-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Is DocumentLink a paid add-on?) No, the DocumentLink feature is included in your Payments package. ::: {{variable.Product_DocumentLink}} renders streamlined, mobile-responsive, and payable invoices on the web that can easily be shared via a link. Itemized {{variable.Object_Invoice}}s can be paid using Blackthorn Payments while remaining PCI Compliant. ![K_01_DocumentLink Overview](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_01_DocumentLink%20Overview.png){height=\"\" width=\"\"} Check out our overview of {{variable.Product_DocumentLink}} [here](https://youtu.be/XNibO4ot7pQ){target=\"_blank\"}! ## Authorize To send Invoices from Salesforce via {{variable.Product_DocumentLink}}, you need to authorize {{variable.Product_DocumentLink}} with Blackthorn's Connect App. :::(Warning) (Oauth Link) For the authorization to work properly, you can only be logged into one Salesforce org. ::: ### Production Org Please click the [oauth link](https://auth.blackthorn.io/salesforce?packages=03361000000DksxAAC){target=\"_blank\"} to complete the {{variable.Product_DocumentLink}} setup. ### Sandbox Org {{snippet.DocumentLink_AuthorizeSandbox}} :::(Info) (Did you receive an error?) If you receive an error, view the [DocumentLink Error Codes And Messages](https://docs.blackthorn.io/docs/documentlink-error-codes-and-messages). :::",
+  "keywords": [
+    "variable",
+    "overview",
+    "documentlink",
+    "product_documentlink",
+    "blackthorn",
+    "https",
+    "error",
+    "payments",
+    "link",
+    "salesforce",
+    "info",
+    "paid",
+    "invoices",
+    "k_01_documentlink",
+    "target",
+    "_blank",
+    "authorize",
+    "oauth",
+    "receive",
+    "codes"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error?) If you receive an error, view the [DocumentLink Error Codes And Messages](https://docs.",
+    "error-codes-and-messages)."
+  ]
+}

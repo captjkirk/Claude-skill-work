@@ -1,0 +1,41 @@
+{
+  "id": "event-use-cases",
+  "title": "event-use-cases.md",
+  "content": "## Metadata_Start ## code: en ## title: Use Cases ## slug: event-use-cases ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Updates in Process) We are proactively migrating all Workflow and Process Builder logic in our managed packages to Flows [by the end of 2025](https://help.salesforce.com/s/articleView?id=001096524&type=1){target=`_blank`}. ::: Auto-register your {{variable.Object_Attendee}}s to mandatory {{variable.Object_Session}}s of the {{variable.Object_Event}} using a visual flow and process builder. ## Introduction You can now automatically have {{variable.Object_SessionAttendee}}s created in Salesforce for all your {{variable.Object_Attendee}}s who have registered for the {{variable.Object_Event}} with only clicks no code. ## Setup Steps ![Flow Diagram](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Flow%20Diagram.png){height=\"\" width=\"\"} ### A. Create a Flow Navigate to Setup > Flows > New Flow > Select \"Autolaunched Flow (No Trigger)\" > Create. #### Flow Elements **1. Get Attendee:** This element will pass the {{variable.Object_Attendee}} record ID via process builder into the flow. ``` Object > Attendee Condition Requirements ID = AttendeeID (Text Variable) How Many Records to Store: Only the first record How to Store Record Data: Automatically store all fields ``` **2. Get Sessions:** Get the {{variable.Object_Session}} records where Mandatory = \"True\" AND the {{variable.Object_Session}} record Event ID = {{variable.Object_Attendee}} record Event ID. ``` Object >Session Condition Requirements - Conditions are Met Mandatory = True (Custom checkbox on session) Event = Attendee.Event.id (Getting the related Attendee's Event ID) How Many Records to Store: All records Select Variable to Store Session Records > Mandatory Sessions (New Record Collection Variable) Select Session Fields to Store in Variable > ID ``` **3. Get {{variable.Object_SessionAttendee}} Records:** Get all existing {{variable.Object_SessionAttendee}} records to find one already exists for our {{variable.Object_Attendee}}. ``` Object >Session Attendee Condition Requirements - Conditions are Met Attendee = AttendeeID (Variable) How Many Records to Store: All records How to Store Record Data: Automatically store all fields ``` **4. Decision to check if mandatory {{variable.Object_Session}} exists:** Here we check to see if the {{variable.Object_Session}} collection variable from Step 2 is empty. This prevents the flow from failing if the particular {{variable.Object_Event}} has no {{variable.Object_Session}} records marked mandatory or has no {{variable.Object_Session}} records at all. ``` Outcome label - mandatory sessions exist When to Execute Outcome: All Conditions Are Met Mandatory Session (Record collection variable) Is Null False ``` **5. Session Loop:** This element takes individual records from our {{variable.Object_Session}} collection variable from Step 2 and iterates over them to pull out the individual Session IDs for further processing. ``` Specify Direction for Iterating Over Collection > First item to last item. ``` **6. Decision to check if there are existing {{variable.Object_SessionAttendee}} records:** here we check to see if any records were returned from our Get Session Attendee Records element from Step 3. ``` Outcome label - session attendees exist? When to Execute Outcome: All Conditions Are Met Get Session Attendee Records (Record collection variable) Is Null False ``` If the outcome of the Decision from Step 6 is Default Outcome, meaning there are no existing {{variable.Object_SessionAttendee}} records at the beginning of this Flow interview, the flow will proceed to Steps 7 and 8. **7. Assign {{variable.Object_SessionAttendee}}s:** This assignment element takes the Session ID from the loop variable along with the Attendee ID variable and assigns them to the appropriate fields within a record variable called NewSessionAttendee. It also sets {{variable.Field_ETAttendee_RegistrStatus}} of the new {{variable.Object_SessionAttendee}} records to {{variable.Picklist_AttendeeReg_Registere}}. **8. Assignment to Record Collection:** This assignment element adds the current values of the NewSessionAttendee record variable from Step 5 to a record collection variable called NewSessionAttendeeCollection. We will use this record collection variable in the last element to create all {{variable.Object_SessionAttendee}} records all at once with a single element. *****Steps 7 and 8 repeats for each record in the collection from Step 2.*** Steps 9 and 10 are a nested loop within our primary Loop (Step 5). The purpose of this nested loop is to first check any existing {{variable.Object_SessionAttendee}} records to ensure we aren't creating any duplicate {{variable.Object_SessionAttendee}} records in Steps 7 through 9 **9 and 10. Existing Session Attendee Loop & Decision:** If there are any existing {{variable.Object_SessionAttendee}}s associated with the current Attendee ID and Session ID, this element will handle all records from the Step 3 and no further processing will be required. **11. Create Records:** This final step creates the {{variable.Object_SessionAttendee}} records from the NewSessionAttendeeCollection variable. ### B. Activate Flow ### C. Create a process builder. ``` New >Process Name>Create session attendees for mandatory sessions Process starts when > A record changes Choose object > Attendee Define Criteria > Criteria Name > Check Registration status Conditions > Attendee = Registered (Status field) Immediate Action >Flow Set Flow Variable = AttendeeID = Attendee.Id. ``` ### D. Activate Process Builder ### E. Test 1. Navigate to your {{variable.Object_Event}}. 2. Click the {{variable.Field_ETEvent_EventURL}}. 3. Register an {{variable.Object_Attendee}}. 4. Visit the {{variable.Object_Attendee}} record in Salesforce and see your registered {{variable.Object_SessionAttendee}}s! ![Test](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Test.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "records",
+    "record",
+    "session",
+    "flow",
+    "attendee",
+    "object_sessionattendee",
+    "from",
+    "collection",
+    "mandatory",
+    "store",
+    "step",
+    "process",
+    "object_session",
+    "element",
+    "object_attendee",
+    "event",
+    "create",
+    "existing",
+    "check"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Get Attendee:** This element will pass the {{variable",
+    "2. Get Sessions:** Get the {{variable",
+    "3. Get {{variable",
+    "4. Decision to check if mandatory {{variable",
+    "5. Session Loop:** This element takes individual records from our {{variable",
+    "6. Decision to check if there are existing {{variable",
+    "3. ``` Outcome label - session attendees exist? When to Execute Outcome: All Conditions Are Met Get Session Attendee Records (Record collection variable) Is Null False ``` If the outcome of the Decision from Step 6 is Default Outcome, meaning there are no existing {{variable",
+    "8. **7",
+    "8. Assignment to Record Collection:** This assignment element adds the current values of the NewSessionAttendee record variable from Step 5 to a record collection variable called NewSessionAttendeeCollection",
+    "10. Existing Session Attendee Loop & Decision:** If there are any existing {{variable"
+  ],
+  "troubleshooting": []
+}

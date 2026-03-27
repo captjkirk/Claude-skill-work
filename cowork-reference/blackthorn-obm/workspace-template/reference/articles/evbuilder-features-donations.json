@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-features-donations",
+  "title": "evbuilder-features-donations.md",
+  "content": "## Metadata_Start ## code: en ## title: Donations ## slug: evbuilder-features-donations ## seoTitle: Donations ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Donations_FeaturesCreate}} ## Other Settings ### Sort Order To [change the order](https://docs.blackthorn.io/docs/event-items-overview#sort-event-items){target=`_blank`} of the {{variable.Object_EventItem}}s on the registration page, add the {{variable.Field_EventItem_SortOrder}} field to the {{variable.Object_EventItem}} object and enter a value. ### Separate from Tickets {{snippet.DisplayDonationProductSeparate}}",
+  "keywords": [
+    "donations",
+    "variable",
+    "snippet",
+    "sort",
+    "order",
+    "docs",
+    "event",
+    "items",
+    "object_eventitem",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

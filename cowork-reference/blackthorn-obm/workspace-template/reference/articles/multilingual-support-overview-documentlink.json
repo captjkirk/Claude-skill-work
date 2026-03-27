@@ -1,0 +1,32 @@
+{
+  "id": "multilingual-support-overview-documentlink",
+  "title": "multilingual-support-overview-documentlink.md",
+  "content": "## Metadata_Start ## code: en ## title: DocumentLink Multilingual Support Overview ## slug: multilingual-support-overview-documentlink ## seoTitle: DocumentLink Multilingual Support Overview ## description: ## contentType: Markdown ## Metadata_End The [Data Dictionary](https://docs.blackthorn.io/v1/docs/select-method-documentlink-multilingual-support#data-dictionary){target=`_blank`} provides multilingual support, allowing Admins to establish a default language that serves as the primary language for all users. For example, you can override button labels and other static text on your web-based invoices. Admins can also [override the default language](https://docs.blackthorn.io/v1/docs/select-method-documentlink-multilingual-support#default-languages){target=`_blank`} and customize users' language experiences when specific predefined criteria are met. For example, an Admin can change the language for users in a particular region. Content will be presented in a user’s preferred language or default to English if a language isn’t pre-selected. Users won’t have to manually select their language each time they interact with the system, and they can change the displayed language according to their preferences. ## New Fields ### Data Dictionary Group The {{variable.Field_DataDict_DataDictionaGrp}} field creates a link between the Data Dictionary Group and the DocumentLink Template object. • Field Name: {{variable.Field_DataDict_DataDictionaGrp}} • API Name: bt_stripe__Data_Dictionary_Group__c • Data Type: Lookup(Data Dictionary Group) • Description: Select the appropriate Data Dictionary Group containing the translated override values (Data Dictionary Entries) for the chosen language. ### Display Language The {{variable.Field_DataDict_DisplayLanguage}} contains a list of languages an Admin can choose from to display to the DocumentLink end user. • Field Name: {{variable.Field_DataDict_DisplayLanguage}} • API Name: Display_Language__c • Data Type: picklist • Description: List of supported display languages for the DocumentLink. This field is set to English by default.",
+  "keywords": [
+    "language",
+    "data",
+    "documentlink",
+    "dictionary",
+    "multilingual",
+    "support",
+    "default",
+    "docs",
+    "select",
+    "users",
+    "group",
+    "variable",
+    "field",
+    "name",
+    "overview",
+    "description",
+    "override",
+    "languages",
+    "display",
+    "https"
+  ],
+  "category": "payments",
+  "procedures": [
+    "• API Name: bt_stripe__Data_Dictionary_Group__c • Data Type: Lookup(Data Dictionary Group) • Description: Select"
+  ],
+  "troubleshooting": []
+}

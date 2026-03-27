@@ -1,0 +1,37 @@
+{
+  "id": "ach-direct-debit-mandate",
+  "title": "ach-direct-debit-mandate.md",
+  "content": "## Metadata_Start ## code: en ## title: ACH Direct Debit Mandate ## slug: ach-direct-debit-mandate ## seoTitle: ACH Direct Debit Mandate ## description: ## contentType: Markdown ## Metadata_End The {{variable.Component_VirtualTerminal}} now supports ACH Direct Debit payment methods using Payment Intents with {{variable.Product_Stripe}} for enhanced NACHA regulation compliance. Users are now required to give permission or a mandate to process charges against their bank account. Information about the permission will be stored in mandate fields. What is an ACH mandate? According to [Stripe](https://stripe.com/docs/payments/ach-debit#mandates){target=`_blank`}, the definition of a ACH mandate is “a written notice of authorization to debit a bank account, agreed to by the customer before the first debit.” When collecting mandate details in the {{variable.Component_VirtualTerminal}}, the Statement Descriptor from your {{variable.Product_Stripe}} account (located under Settings > Public details) will be displayed in the mandate text. You can read more about using ACH Direct Debits with {{variable.Product_Stripe}} [here](https://stripe.com/docs/payments/ach-debit){target=`_blank`}. ## New Fields on the Payment Method Object The following mandate fields have been added to the {{variable.Object_PaymentMethod}} object: * Field Label: {{variable.Field_PM_MandateAcceptedAt}} * API Name: bt_stripe__Mandate_Accepted_At__c * Data Type: Date/Time * Description: The date/time that customer accepted mandate for ACH payment methods. * Field Label: {{variable.Field_PM_CustomerAcceptancType}} * API Name: bt_stripe__Customer_Acceptance_Type__c * Data Type: Text(7) * Description: Indicates whether the mandate acceptance was performed online or offline. * Field Label: {{variable.Field_PM_IPAddress}} * API Name: bt_stripe__IP_Address__c * Data Type: Text(15) * Description: The IP address from which the mandate was accepted by the customer. * Field Label: {{variable.Field_PM_UserAgent}} * API Name: bt_stripe__User_Agent__c * Data Type: Text(255) * Description: The user agent of the browser from which the mandate was accepted by the customer. ![Payment%20Method_Mandate%20Fields](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Payment%20Method_Mandate%20Fields.png){height=\"\" width=\"\"} The ACH (Bank Account) page layout was updated to include the new Mandate Data section where the new fields are visible. ![Payment%20Method%20Record_Mandate](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Payment%20Method%20Record_Mandate.png){height=\"\" width=\"\"} ## Permission Sets {{variable.PS_PT_User}} and {{variable.PS_PT_Admin}} permission sets have EDIT access to the fields. ## Custom Setting The {{variable.CS_EnablePaymentIntentACHPMs}} custom setting was added to {{variable.CS_BlackthornPayTriggerSetting}}. Enabling this setting allows users to send ACH payments through {{variable.Product_Stripe}}’s Payment Intents endpoint (ACHv2). Complete the following steps to turn on the setting. 1. Go to Setup. 2. Enter and click “Custom Settings” in the Quick Find box. 3. Click {{variable.Button_SF_Manage}} next to {{variable.CS_BlackthornPayTriggerSetting}}. 4. Click {{variable.Button_SF_Edit}}. 5. Set {{variable.CS_EnablePaymentIntentACHPMs}} = “True” (checked). 6. Click {{variable.Button_Save}}. ## How It Works When the {{variable.CS_EnablePaymentIntentACHPMs}} custom setting is enabled, users will see the mandate acceptance text in the {{variable.Component_VirtualTerminal}} if the selected ACH {{variable.Object_PaymentMethod}} does not already have the required mandate details. (i.e., the mandate fields are empty.) Then, when a user charges a new or existing {{variable.Product_Stripe}} ACH {{variable.Object_PaymentMethod}} via the {{variable.Component_VirtualTerminal}}, the mandate details are recorded in the following fields on the new {{variable.Object_PaymentMethod}} record. * {{variable.Field_PM_MandateAcceptedAt}} (date/time of acceptance) * {{variable.Field_PM_CustomerAcceptancType}} (online) * {{variable.Field_PM_IPAddress}} * {{variable.Field_PM_UserAgent}} (browser details)",
+  "keywords": [
+    "variable",
+    "mandate",
+    "payment",
+    "debit",
+    "fields",
+    "direct",
+    "description",
+    "product_stripe",
+    "details",
+    "text",
+    "data",
+    "setting",
+    "component_virtualterminal",
+    "permission",
+    "account",
+    "https",
+    "customer",
+    "object_paymentmethod",
+    "field",
+    "label"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Enter and click “Custom Settings” in the Quick Find box",
+    "3. Click {{variable",
+    "4. Click {{variable",
+    "5. Set {{variable",
+    "6. Click {{variable"
+  ],
+  "troubleshooting": []
+}

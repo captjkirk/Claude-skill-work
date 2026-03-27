@@ -1,0 +1,32 @@
+{
+  "id": "mobile-checkin-app-settings",
+  "title": "mobile-checkin-app-settings.html",
+  "content": "Offline Mode Please be aware of the following. When using offline mode, the external ID feature does not work. Creating large amounts of concurrent data in offline mode can lead to data errors. The app's Offline Mode setting is accessed on the new Settings page. If the Offline Mode setting is set to “ON”, the check-in and check-out requests are stored in a queue until the Offline Mode setting is changed to “OFF” when all queued requests are processed. A yellow indicator on the listing means that an was either checked in or out while the Mobile Check-In app was offline. The indicator will turn green once the device is back online and is manually synced. s can also be added to an Event in offline mode, but they will not be synced to Salesforce until the device is online. If the Offline Mode setting is set to “OFF”, the check-in/check-out requests process immediately, and each ’s is changed to \"Attended\". Additional requests are added to the queue until no new requests have come in for one minute when the processing starts again. The default setting for this feature is “OFF”. Print Badge Popup A new global setting has been added to the Mobile Check-In app. The new setting controls the behavior of the Badge Printing pop-up after a QR code is scanned and is disabled by default.&nbsp; To enable the setting, complete the steps below. Go to Settings.&nbsp; Select “QR-Scan Badge Print Popup”.&nbsp; Choose “Enable”.&nbsp;",
+  "keywords": [
+    "offline",
+    "mode",
+    "setting",
+    "check",
+    "requests",
+    "nbsp",
+    "when",
+    "until",
+    "added",
+    "badge",
+    "feature",
+    "data",
+    "settings",
+    "queue",
+    "changed",
+    "indicator",
+    "mobile",
+    "device",
+    "online",
+    "synced"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "errors."
+  ]
+}

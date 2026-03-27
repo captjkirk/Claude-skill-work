@@ -1,0 +1,30 @@
+{
+  "id": "speakers",
+  "title": "speakers.md",
+  "content": "## Metadata_Start ## code: en ## title: Speakers ## slug: speakers ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The {{variable.Object_Speaker}}'s page defines any speakers that will be attending your {{variable.Object_Event}}. * You can use the search bar to search for existing {{variable.Object_Contact}}s. The selected {{variable.Object_Contact}} record will populate the {{variable.Object_Speaker}}' record with the {{variable.Object_Contact}} record’s data. The {{variable.Object_Speaker}}' record will include the {{variable.Field_Speaker_ImageURL}} and {{variable.Field_Speaker_AltTextVisualImp}}. * Alternatively, if the {{variable.Object_Speaker}} is not a {{variable.Object_Contact}}, click the {{variable.Button_CreateNew}} button. * Uploading a photo will add the speaker's photo to the {{variable.Object_Speaker}}'s page * Setting the {{variable.Field_Speaker_Status}} field will determine whether your speaker is \"Invited,\" \"Confirmed,\" or \"Declined,\" etc. ![Speakers 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Speakers%201.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "speakers",
+    "object_speaker",
+    "object_contact",
+    "record",
+    "page",
+    "your",
+    "search",
+    "photo",
+    "speaker",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "defines"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

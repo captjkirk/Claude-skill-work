@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-create-event-begin-scratch-start",
+  "title": "evbuilder-create-event-begin-scratch-start.html",
+  "content": "Click Begin from Scratch . Enter an {{variable.Field_ETEvent_EventName}} . Click one of the Location Type buttons. (This will populate the {{variable.Field_ETEvent_EventLocation}} field.)&nbsp; Virtual Venue Hybrid Complete the fields in The Fundamentals section. {{variable.Field_ETEvent_Description}} {{variable.Field_ETEvent_EventStartDate}} {{variable.Field_ETEvent_EventStartTime}} {{variable.Field_ETEvent_EventEndDate}} {{variable.Field_ETEvent_EventEndTime}} {{variable.Field_ETEvent_TimeZone}} {{variable.Field_ETEvent_EventSettings}} &nbsp; Complete the following {{variable.Object_RecurringEvent}} s Details fields. Build From Scratch-Normal Scheduling:&nbsp; {{variable.Field_ETWizard_Recurring}} &nbsp; {{variable.Field_ETWizard_FirstETStartDat}} {{variable.Field_ETWizard_FirstETEndDate}} &nbsp; {{variable.Field_ETWizard_FirstETStartTim}} &nbsp; {{variable.Field_ETWizard_FirstETEndTime}} Build From Scratch-Advanced Scheduling: &nbsp; {{variable.Field_ETWizard_Recurring}} = “Custom”&nbsp; In the Custom Recurrence popup window, complete the following fields.&nbsp; {{variable.Field_RecEvent_Repeats}} &nbsp; {{variable.Field_RecEvent_Count}} Repeats On – The options available will change based on the value you selected in Repeats. {{variable.Field_RecEvents_RecurrenceMeth}} &nbsp; Click {{variable.Button_Save}} . &nbsp; {{variable.Field_ETWizard_FirstETStartDat}} {{variable.Field_ETWizard_FirstETEndDate}} {{variable.Field_ETWizard_FirstETStartTim}} {{variable.Field_ETWizard_FirstETEndTime}} Complete the following Event Details fields. {{variable.Field_ETEvent_EventGroup}} {{variable.Field_ETEvent_Category}} Keywords (Event Keyword record) &nbsp; Complete the following Organizer Details fields. {{variable.Field_ETEvent_OrganizerContact}} &nbsp; {{variable.Field_ETEvent_OrganizerAccount}} - This field will be overwritten by the {{variable.Field_ETEvent_OrganizerContact}} field if both fields are populated. {{variable.Field_ETEvent_ContactUsEmail}} &nbsp; Complete the following Venue fields, if necessary. {{variable.Field_ETEvent_Venue}} {{variable.Field_ETEvent_VenueName}} {{variable.Field_ETEvent_VenueStreet}} {{variable.Field_ETEvent_VenueCity}} {{variable.Field_ETEvent_VenueStateProvin}} {{variable.Field_ETEvent_VenueCountry}} {{variable.Field_ETEvent_VenuePostalCode}} &nbsp; Complete the following Webcast Account fields, if necessary. {{variable.Field_ETEvent_WebinMeetingAcct}} = “Zoom” {{variable.Field_ETEvent_ZoomType}} = “Meeting” or “Webinar”. &nbsp; {{variable.Field_ETEvent_WebinMeetingAcct}} = Paste webinar URL ( {{variable.Field_ETEvent_WebinarMtgURL}} ) field is on the {{variable.Object_Event}} object.) &nbsp; {{variable.Field_ETEvent_WebinMeetingAcct}} = Click + Create New . Fill out the fields on the New Webinar Account screen. {{variable.Field_WebinarAcct_WebinarName}} {{variable.Field_WebinarAcct_Provider}} {{variable.Field_WebinarAcct_FirstName}} {{variable.Field_WebinarAcct_LastName}} {{variable.Field_WebinarAcct_Email}} {{variable.Field_WebinarAcct_OrganizerKey}} {{variable.Field_WebinarAcct_AccountKey}} Click {{variable.Button_Save}} . &nbsp; Click {{variable.Button_Next}} .",
+  "keywords": [
+    "variable",
+    "nbsp",
+    "fields",
+    "complete",
+    "click",
+    "following",
+    "field",
+    "from",
+    "scratch",
+    "details",
+    "field_etevent_webinmeetingacct",
+    "webinar",
+    "venue",
+    "build",
+    "scheduling",
+    "field_etwizard_recurring",
+    "field_etwizard_firstetstartdat",
+    "field_etwizard_firstetenddate",
+    "field_etwizard_firstetstarttim",
+    "field_etwizard_firstetendtime"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

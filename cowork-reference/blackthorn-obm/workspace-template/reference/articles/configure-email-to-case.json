@@ -1,0 +1,35 @@
+{
+  "id": "configure-email-to-case",
+  "title": "configure-email-to-case.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure for Email-to-Case ## slug: configure-email-to-case ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Are you interested in this extension package?) The Configure for Email-to Case extension package is a paid add-on for Blackthorn Compliance. Please contact your Account Manager to learn more about purchasing it. ::: 1. Install the Email-to-Case Extension Package: * [production](https://login.salesforce.com/?ec=302&startURL=%2Fpackaging%2FinstallPackage.apexp%3Fp0%3D04tf4000004Tm8o%26isdtp%3Dp1){target=\"_blank\"} * [sandbox](https://test.salesforce.com/?ec=302&startURL=%2Fpackaging%2FinstallPackage.apexp%3Fp0%3D04tf4000004Tm8o%26isdtp%3Dp1){target=\"_blank\"} 2. Once installation is complete, Turn on Detection for EmailMessage. 3. You should receive the following notification: ![detection turned on](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/detection%20turned%20on.png){height=\"\" width=\"\"} 4. Congratulations! You have successfully configured Email Messages for Blackthorn Compliance. :::(Warning) () You still need to install Compliance from the Blackthorn {{variable.Link_CandyShop}}, but we will upgrade your existing package to include Email-to-Case support. :::",
+  "keywords": [
+    "email",
+    "case",
+    "package",
+    "configure",
+    "extension",
+    "blackthorn",
+    "compliance",
+    "https",
+    "detection",
+    "your",
+    "install",
+    "salesforce",
+    "starturl",
+    "2fpackaging",
+    "2finstallpackage",
+    "apexp",
+    "3fp0",
+    "3d04tf4000004tm8o",
+    "26isdtp",
+    "3dp1"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Install the Email-to-Case Extension Package: * [production](https://login",
+    "2. Once installation is complete, Turn on Detection for EmailMessage",
+    "3. You should receive the following notification: ![detection turned on](https://cdn",
+    "4. Congratulations! You have successfully configured Email Messages for Blackthorn Compliance"
+  ],
+  "troubleshooting": []
+}

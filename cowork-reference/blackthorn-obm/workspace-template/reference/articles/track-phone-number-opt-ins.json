@@ -1,0 +1,38 @@
+{
+  "id": "track-phone-number-opt-ins",
+  "title": "track-phone-number-opt-ins.md",
+  "content": "## Metadata_Start ## code: en ## title: Track Phone Number Opt-ins ## slug: track-phone-number-opt-ins ## seoTitle: Track Phone Number Opt-ins ## description: ## contentType: Markdown ## Metadata_End The date and time that an SMS message recipient gives consent will be recorded on the record page. To see the new settings, go to Messaging Admin Tab > Configuration Setting > Messaging Tab. * Under the Outbound Message Settings heading, the Consent Settings now includes the {{variable.Field_MSG_ConsentPopupFrequenc}} field with the “Once per Recipient (Opt-In)” option. * Select the object that you want to capture the consent date and time. By default, all objects configured to send SMS will be selected. * When {{variable.Field_MSG_ConsentPopupFrequenc}} is set to “Once per Recipient (Opt-In),” you will see the following pop-up message. * “Please make sure you have created the field {{variable.Field_MSG_SMSOptinDateTime}} on the selected Objects before enabling this setting or else the consent date time will not get captured. See our documentation for more info.” ![Consent Frequency_Once per recipient](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Once%20per%20recipient.png){height=\"\" width=\"\"} #### Expected Behavior * If the {{variable.Field_MSG_SMSOptinDateTime}} field value is blank, message recipients will receive an SMS Consent pop-up modal since consent is happening today. * When a message recipient selects the checkbox and clicks the **Send** button, the current date and time will populate the {{variable.Field_MSG_SMSOptinDateTime}} field. * If no conversation record exists, the Consent Signature will be appended to the message since it is happening today. * If the {{variable.Field_MSG_SMSOptinDateTime}} field is not blank, then message recipients will not see the SMS Consent pop-up modal, and the SMS will be sent. * If the {{variable.Field_MSG_SMSOptinDateTime}} field has a future date, then message recipients will see the SMS Consent pop-up modal. * When a message recipient selects the checkbox and clicks the **Send** button, the current date and time will replace the future date in the {{variable.Field_MSG_SMSOptinDateTime}} field. * The following will occur if the Task trigger or Invocable Method is used to send SMS. * If the {{variable.Field_MSG_SMSOptinDateTime}} field is blank, the recipient will not receive the SMS. * The SMS Message record will not be created when {{variable.Field_SMSMessage_Status}} = “Error.” The error message will be “This person has not Opt-In for SMS communication.” * If the {{variable.Field_MSG_SMSOptinDateTime}} field has a value, recipients will receive the SMS. * If the {{variable.Field_MSG_SMSOptinDateTime}} field contains a future date, the recipient will not receive the SMS. * The SMS Message record will not be created when {{variable.Field_SMSMessage_Status}} = “Error.” The error message will be “This person has not Opt-In for SMS communication.”",
+  "keywords": [
+    "message",
+    "variable",
+    "consent",
+    "field",
+    "field_msg_smsoptindatetime",
+    "date",
+    "recipient",
+    "time",
+    "when",
+    "record",
+    "send",
+    "recipients",
+    "receive",
+    "error",
+    "track",
+    "phone",
+    "number",
+    "settings",
+    "once",
+    "created"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "* When a message recipient selects the checkbox and click",
+    "* When a message recipient selects the checkbox and click"
+  ],
+  "troubleshooting": [
+    "Error.",
+    "error message will be “This person has not Opt-In for SMS communication.",
+    "Error.",
+    "error message will be “This person has not Opt-In for SMS communication."
+  ]
+}

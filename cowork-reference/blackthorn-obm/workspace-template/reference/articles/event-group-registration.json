@@ -1,0 +1,30 @@
+{
+  "id": "event-group-registration",
+  "title": "event-group-registration.md",
+  "content": "## Metadata_Start ## code: en ## title: Group Registration ## slug: event-group-registration ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Allows you to register more than one person at a time with or without a single transaction. Each person is considered their own registered {{variable.Object_Attendee}}. When multiple {{variable.Object_Attendee}}s are added, an {{variable.Object_AttendeeGroup}} record is automatically created. ![Group Registration 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Group%20Registration%201.png){height=\"\" width=\"\"} **Note:** The {{variable.Object_AttendeeGroup}} naming structure is [Event Name - Ordered Number]. ![Group Registration 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Group%20Registration%202.png){height=\"\" width=\"\"} {{variable.Object_AttendeeGroup}}s can be seen in the {{variable.SFTerm_RelatedList}} of your {{variable.Object_Event}} record for easy tracking. This lets you know who will be grouped together. Click [here](https://docs.blackthorn.io/docs/attendee-group-checkout-process){target=`_blank`} to see the Attendee Group checkout experience. ### Copy Form Responses to the Group When an {{variable.Object_Attendee}} registers a group, they can now click the **Copy related info to all the responses** button to copy their {{variable.Object_Form}} responses to all {{variable.Object_Attendee}}s in the {{variable.Object_AttendeeGroup}} if the new {{variable.Object_EventSettings}} {{variable.Field_EVSetting_FormRespAttGrp}} field (conference360__Allow_Form_Responses_for_Attendee_Group__c) is set to “Yes.” The field removes the repeated copy-paste step and decreases the time it takes to register everyone. Picklist options include Yes, No, and None, and the default value is None. Please Note: * The Forms must be identical and have the same Form record ID. * The **Copy related info to all the responses** button will only be displayed if the first {{variable.Object_EventItem}} shown has custom questions.",
+  "keywords": [
+    "variable",
+    "group",
+    "copy",
+    "registration",
+    "object_attendee",
+    "object_attendeegroup",
+    "responses",
+    "record",
+    "https",
+    "event",
+    "register",
+    "person",
+    "time",
+    "their",
+    "when",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "enable-phone-number-lookup-automations",
+  "title": "enable-phone-number-lookup-automations.md",
+  "content": "## Metadata_Start ## code: en ## title: Enable Phone Number Lookup Automations ## slug: enable-phone-number-lookup-automations ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When you first install Blackthorn Messaging (or upgrade from a version earlier than 3.12), you will most likely want to run the initial batch process to lookup all of your existing phone numbers. However, after that process is complete, you will want to be able to lookup phone numbers automatically on a go-forward basis as they're captured within your various records in Salesforce. Let's explore the options for automating these lookups. ## Enable Automatic Phone Number Lookups Configuration Setting ![Enable automations_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Enable%20automations_1.png){height=\"\" width=\"\"} On the Messaging Administration page, there is a configuration setting that you can activate named \"Enable Automatic Phone Number Lookups\". It's important to understand exactly what this setting does. This setting only affects individual text messages sent from the Messaging Messenger component, or from the Messaging Conversations page. When a user sends a text message to a phone number that has not been looked up, the phone number will first be looked up in real-time using the Messaging phone number lookup service. If the phone number is mobile or VoIP, the text will immediately be sent. If the phone number is a landline or bad/invalid phone number, then the user will be prompted with a pop-up alert to let them know this and they can choose to not send the text. Keep in mind that this will consume one lookup credit from your lookup balance. The trade-off is that by looking up the phone number you will prevent sending to a landline or invalid phone number thus wasting that text message. Also, this process will create the Phone Number Lookup record in Salesforce. The good news is that after you lookup the phone number once it will continue to prevent/alert any user that tries to send a text to that number. ## Messaging Lookup Number (Process Builder) Another option for automating phone number lookups is to use the new Messaging Lookup Number action from within the Process Builder. This is a new custom Apex action that you can leverage from anywhere in your processes. This action is ideal for the Process Builder because it performs the phone number lookup asynchronously. Since the phone number lookup makes an Apex callout to the Messaging lookup service, this async process lets you invoke this action directly after a record insert or update without error. The phone number will be looked up and then the Phone Number Lookup record will be created. This callout is wrapped in an asynchronous queued job, so it may take a few seconds to execute the lookup and create the data. Let's look at a scenario for using this action in the process builder. In this quick video tutorial, we'll demonstrate creating a Process to automatically lookup Lead phone numbers as soon as the Lead is created. ## Messaging Lookup Number (Flow) This is a custom Apex action that can be inserted into your flows. This particular action is more suited for use within a Flow (as opposed to the above action for process builders) because it makes a synchronous callout to the phone number lookup service. This allows you to get the lookup response back in real time and possibly branch your logic using this information.",
+  "keywords": [
+    "number",
+    "phone",
+    "lookup",
+    "process",
+    "messaging",
+    "action",
+    "enable",
+    "from",
+    "your",
+    "text",
+    "lookups",
+    "setting",
+    "builder",
+    "numbers",
+    "after",
+    "within",
+    "user",
+    "looked",
+    "using",
+    "service"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error."
+  ]
+}

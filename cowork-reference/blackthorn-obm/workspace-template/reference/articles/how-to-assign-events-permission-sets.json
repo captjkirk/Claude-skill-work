@@ -1,0 +1,41 @@
+{
+  "id": "how-to-assign-events-permission-sets",
+  "title": "how-to-assign-events-permission-sets.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Assign Events Permission Sets ## slug: how-to-assign-events-permission-sets ## seoTitle: How to Assign Events Permission Sets ## description: ## contentType: Markdown ## Metadata_End :::(Info) (**Important**) When a user installs Blackthorn Events via the Candy Shop, we automatically assign the Blackthorn Events Admin and Blackthorn Payments Admin Permission Sets to the installing user. ::: There are two starting points for assigning permissions: the {{variable.Tab_ET_BTEventAdmin}} tab and the Setup menu. You can assign one or more users to a permission set by *[Assigning a User to a Permission Set](/v1/docs/how-to-assign-events-permission-sets#assign-a-user-to-a-permission-set)*. Or you can assign one or more permission sets to your users by *[Assigning a Permission Set to a User](/v1/docs/how-to-assign-events-permission-sets#assign-a-permission-set-to-a-user)*. :::(Info) () If any of your users need access to financial data related to paid registrations or Discount Codes, they will need a Payments license and will need to be related to one of the packaged Payments permission sets or a custom permission set. Financial data includes data from Invoices, Discount Codes, Transactions, Payment Methods, and Payment Gateway objects. ::: ## Assign a User to a Permission Set 1. Click the **Gear Icon** in the upper right-hand corner. ![Assign Licenses_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Licenses_1.png){height=\"\" width=\"\"} 2. Click **Setup**. ![Assign Licenses_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Licenses_2.png){height=\"\" width=\"\"} 3. Type “Permission Sets” in the Quick Find box. 4. Click **Permission Sets**. ![Assign Permission Sets_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Permission%20Sets_1.png){height=\"\" width=\"\"} 5. Click the permission set you need to manage. ![Assign Permission Sets_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Permission%20Sets_2.png){height=\"\" width=\"\"} 6. Click **Manage Assignments**. ![Assign Permission Sets_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Permission%20Sets_3.png){height=\"\" width=\"\"} 7. Click **Add Assignment** to assign users to the permission set. ![Assign Permission Sets_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20Permission%20Sets_4.png){height=\"\" width=\"\"} 8. Add your users and click **Assign**. 9. If any users need access to the {{variable.Object_Payment}} records, assign them the {{variable.PS_PT_Admin}} or {{variable.PS_PT_Manager}} permission set. ## Assign a Permission Set to a User 1. Go to Setup. 2. Search for the user. 3. Click the user’s name. ![Assign PS to User_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20PS%20to%20User_1.png){height=\"\" width=\"\"} 4. Click **Edit Assignments**. ![Assign PS to User_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20PS%20to%20User_2.png){height=\"\" width=\"\"} 5. Click “Blackthorn | Events (Admin)” in the Available Permission Sets box. 6. Click **Add**. To remove a permission set, highlight it in the Enabled Permission Sets box, click the left Remove arrow, and click **Save**. ![Assign PS to User_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20PS%20to%20User_3.png){height=\"\" width=\"\"} 7. Click “Blackthorn | Payments (Admin)” in the Available Permission Sets box. 8. Click **Add**. To remove a permission set, highlight it in the Enabled Permission Sets box, click the left Remove arrow, and click **Save**. ![Assign PS to User_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20PS%20to%20User_4.png){height=\"\" width=\"\"} 9. Click **Save**. ![Assign PS to User_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Assign%20PS%20to%20User_5.png){height=\"\" width=\"\"} ## Important Things to Remember If you create a custom permission set, you must modify it after each {{variable.Product_Events}} release to make sure that users continue to have access. 1. Go to the {{variable.Tab_ET_BTEventAdmin}} tab. 2. Click one or both of the following buttons. * Click {{variable.Button_ETAdmin_AssignPSAllUser}} to assign the most common permissions sets. * Click {{variable.Button_ETAdmin_AdvPermisAssign}} to assign/remove multiple permission sets at once. More information about {{variable.Product_Events}} [permission sets can be found here](https://docs.blackthorn.io/docs/permission-sets-1). More information about {{variable.Product_Payments}} [permission sets can be found here](https://docs.blackthorn.io/docs/payments-permission-sets).",
+  "keywords": [
+    "assign",
+    "permission",
+    "click",
+    "sets",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "user",
+    "variable",
+    "events",
+    "blackthorn",
+    "users"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the **Gear Icon** in the upper right-hand corner",
+    "2. Click **Setup**",
+    "3. Type “Permission Sets” in the Quick Find box",
+    "4. Click **Permission Sets**",
+    "5. Click the permission set you need to manage",
+    "6. Click **Manage Assignments**",
+    "7. Click **Add Assignment** to assign users to the permission set",
+    "8. Add your users and click **Assign**",
+    "9. If any users need access to the {{variable",
+    "1. Go to Setup"
+  ],
+  "troubleshooting": []
+}

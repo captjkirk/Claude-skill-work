@@ -1,0 +1,41 @@
+{
+  "id": "update-event-object-page-layout",
+  "title": "update-event-object-page-layout.md",
+  "content": "## Metadata_Start ## code: en ## title: Update the Event Object Page Layout ## slug: update-event-object-page-layout ## seoTitle: Update the Event Object Page Layout ## description: ## contentType: Markdown ## Metadata_End The following fields need to be added to the Event object page layout. * {{variable.Field_ETEvent_SalesEndDate}} (conference360__Ticket_Sales_End_Date__c) * {{variable.Field_ETEvent_SalesEndTime}} (conference360__Ticket_Sales_End_Time__c) * {{variable.Field_ETEvent_SalesStartDate}} (conference360__Ticket_Sales_Start_Date__c) * {{variable.Field_ETEvent_SalesStartTime}} (conference360__Ticket_Sales_Start_Time__c) 1. Click the **Gear icon** in the upper right hand corner. 2. Click **Setup**. 3. Click the Object Manager tab. 4. In the Quick Find box, enter “Event.” 5. Click Event (conference360__Event__c). 6. Click Page Layout. 7. Click Event Layout. 8. Locate the {{variable.Field_ETEvent_SalesEndDate}} field. 9. Decide where on the page layout the field should go and drag and drop it there. 10. Repeat Steps 8 and 9 for the {{variable.Field_ETEvent_SalesEndTime}}, {{variable.Field_ETEvent_SalesStartDate}}, and {{variable.Field_ETEvent_SalesStartTime}} fields. 11. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "variable",
+    "event",
+    "layout",
+    "click",
+    "page",
+    "object",
+    "update",
+    "fields",
+    "field_etevent_salesenddate",
+    "field_etevent_salesendtime",
+    "field_etevent_salesstartdate",
+    "field_etevent_salesstarttime",
+    "field",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the **Gear icon** in the upper right hand corner",
+    "2. Click **Setup**",
+    "3. Click the Object Manager tab",
+    "4. In the Quick Find box, enter “Event",
+    "5. Click Event (conference360__Event__c)",
+    "6. Click Page Layout",
+    "7. Click Event Layout",
+    "8. Locate the {{variable",
+    "9. Decide where on the page layout the field should go and drag and drop it there",
+    "10. Repeat Steps 8 and 9 for the {{variable"
+  ],
+  "troubleshooting": []
+}

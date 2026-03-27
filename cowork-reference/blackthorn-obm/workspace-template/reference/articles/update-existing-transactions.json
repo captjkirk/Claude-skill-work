@@ -1,0 +1,30 @@
+{
+  "id": "update-existing-transactions",
+  "title": "update-existing-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Update Existing Transactions ## slug: update-existing-transactions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you need to update your existing Transactions with the new PayLink field, please paste the below code and execute in the developer console. *This script will only update Transactions with a Charge Record Type and with a Transaction Status of Open. You'll need to keep executing this script in the Developer Console until you see, \"ALL DONE - NO MORE RECORDS TO UPDATE\" in the log.* :::(Warning) (Default PayLink) Before mass updating your Transactions with the new PayLink, make sure you have marked a configuration record as the default. ::: * * * ``` Map transactionRecordTypes = Schema.SObjectType.bt_stripe__Transaction__c.getRecordTypeInfosByName(); Id chargeRtId = transactionRecordTypes.get('Charge').getRecordTypeId(); List transactionsToTouch = [select Id from bt_stripe__Transaction__c where bt_paylink__PayLink__c = null and RecordTypeId = :chargeRtId and bt_stripe__Transaction_Status__c = 'Open' limit 100]; if (transactionsToTouch.size() > 0) { for (bt_stripe__Transaction__c t : transactionsToTouch) { System.debug(LoggingLevel.INFO, 'touching record id = ' + t.Id); } update transactionsToTouch; } else { System.debug(LoggingLevel.INFO, 'ALL DONE - NO MORE RECORDS TO UPDATE'); } ```",
+  "keywords": [
+    "update",
+    "transactions",
+    "transactionstotouch",
+    "existing",
+    "paylink",
+    "record",
+    "bt_stripe__transaction__c",
+    "code",
+    "need",
+    "your",
+    "developer",
+    "console",
+    "script",
+    "charge",
+    "open",
+    "done",
+    "more",
+    "records",
+    "default",
+    "transactionrecordtypes"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

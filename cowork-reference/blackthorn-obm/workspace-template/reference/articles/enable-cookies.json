@@ -1,0 +1,30 @@
+{
+  "id": "enable-cookies",
+  "title": "enable-cookies.md",
+  "content": "## Metadata_Start ## code: en ## title: Enable Cookies ## slug: enable-cookies ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End With the implementation of [Google Tag Manager](/v1/docs/google-tag-manager), Blackthorn Events is now required to meet GDPR and California data law standards. This includes allowing users to accept or reject the usage of cookies. Cookies are messages that web servers pass to your web browser when you visit internet sites. Your browser stores each message in a small file, called \"cookie.txt\". When you request another page from the server, your browser sends the cookie back to the server. These files typically contain information about your visit to the webpage, as well as any information you've volunteered, such as your name and interests. While the text in the Cookie policy can be moderately customized, the underlying hyperlink redirect for the Cookie prompt cannot be changed. The Cookie Consent Banner that appears after clicking into an {{variable.Field_ETEvent_EventURL}} includes **Accept** and **Reject** buttons. A user must select **Accept** for tracking to occur. Otherwise, cookies will not be used. This feature is disabled by default, if you would like this feature to be enabled, please reach out to {{variable.Link_BlackthornSupport}}. Below is an example of what accepting cookies would look like in your {{variable.Object_Event}}. ![accept cookies](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/accept%20cookies.gif){height=\"\" width=\"\"} ### Third-Party Platforms Event Organizers who use Google Analytics for tracking can now use a third-party platform to collect cookie consent instead of using the Blackthorn cookie consent banner. If you are using a 3rd party tool, you can set Blackthorn to automatically start tracking without a consent banner. However, if you turn off Blackthorn’s cookie consent banner, we expect you will use a third-party tool. We do not endorse skipping the consent banner. Please contact {{variable.Link_BlackthornSupport}} to deactivate and hide the Blackthorn consent banner.",
+  "keywords": [
+    "cookie",
+    "cookies",
+    "consent",
+    "your",
+    "banner",
+    "blackthorn",
+    "accept",
+    "variable",
+    "party",
+    "google",
+    "browser",
+    "tracking",
+    "third",
+    "enable",
+    "manager",
+    "includes",
+    "reject",
+    "when",
+    "visit",
+    "server"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

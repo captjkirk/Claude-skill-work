@@ -1,0 +1,41 @@
+{
+  "id": "migrating-subscriptions",
+  "title": "migrating-subscriptions.md",
+  "content": "## Metadata_Start ## code: en ## title: Migrating Subscriptions ## slug: migrating-subscriptions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End There's no right or wrong way to do this. You can enter Products and Prices in {{variable.Product_Stripe}}, {{variable.Object_Subscription}} data in {{variable.Product_Salesforce}}, {{variable.Object_StripeBillingPriceTier}}s in {{variable.Product_Stripe}}, or {{variable.Object_PaymentGatewayCustomer}}s in {{variable.Product_Salesforce}}; whatever floats your boat. This is our guide on an opinionated way to do it! Typical entities to manage * {{variable.Product_Salesforce}} {{variable.Object_Account}}s * {{variable.Product_Salesforce}} {{variable.Object_Contact}}s * {{variable.Product_Stripe}} {{variable.Object_PaymentGatewayCustomer}}s * {{variable.Product_Stripe}} Charges * {{variable.Product_Stripe}} Cards & Bank Accounts * {{variable.Product_Stripe}} Products * {{variable.Product_Stripe}} Prices * {{variable.Product_Stripe}} Subscriptions {{variable.Product_Salesforce}} and {{variable.Product_Stripe}} have records that relate to each other, so it's important to migrate records in the order in which one entity requires the other. For instance, you can't create a {{variable.Product_Stripe}} Subscription without a Stripe {{variable.Object_PaymentGatewayCustomer}}. ## Steps 1. Backup your data. 2. Setup [Webhooks](/v1/docs/webhook-event). This creates a data mirror between {{variable.Product_Salesforce}} and {{variable.Product_Stripe}}. ### Migrating from outside of Stripe to using Stripe 3. Set the [Data Loader](https://help.salesforce.com/s/articleView?id=sf.data_loader.htm&type=5){target=\"_blank\"} batch size to \"1\" (each insert will fire an outbound Stripe REST callout and a few triggers will fire). 4. Export your {{variable.Product_Salesforce}} {{variable.Object_Account}}s to a CSV file. 5. In the {{variable.Object_Account}} CSV file, add the columns \"Email\" and \"Description\". Keep the ID (Account ID) column and the Account Name. Delete the other columns. 6. Now it's time to create Stripe {{variable.Object_PaymentGatewayCustomer}}s. With Data Loader, insert {{variable.Object_PaymentGatewayCustomer}} records. Map the ID field to the Account ID, Email should be the primary email used to either identify this Account (your main contact) or the main billing contact, and the Description should be either the Account Name, Contact Name, or something like \"Account - Contact\" such as \"Matrix - Morpheus Neo\". 7. With the success file, you can now go in a few directions. You can next migrate {{variable.Object_PaymentMethod}}s if you have raw card data or you can migrate Products and Prices next. 8. If {{variable.Object_PaymentMethod}}s, prepare a file with the correct Record Type (Charge Card vs ACH), Account and Contact IDs, the Stripe {{variable.Object_PaymentGatewayCustomer}} Salesforce record ID, and the respective raw card ID data. 9. Products. If you want to go right into migrating Subscriptions, Stripe Subscriptions require three things: a [Stripe] {{variable.Object_PaymentGatewayCustomer}}, at least one Product, and its associated Price. They may also include a Coupon (discount code). Prices may contain Tiers. So first, you want to migrate Products. Products can start in either {{variable.Product_Salesforce}} that push to {{variable.Product_Stripe}}, or in {{variable.Product_Stripe}} that then push to {{variable.Product_Salesforce}}. Product sync 1:1 between {{variable.Product_Salesforce}} and {{variable.Product_Stripe}}. 10. Prices. Prices are similar to Price Book Entries in {{variable.Product_Salesforce}}, but they have a lot more data, such as the frequency (interval) of the billing. You can enter these in {{variable.Product_Salesforce}} or {{variable.Product_Stripe}} once you have your Products entered. 11. OPTIONAL Tiers. If you have tiered-based pricing, you can create Tier records related to your Prices in either {{variable.Product_Stripe}} or {{variable.Product_Salesforce}}. 12. Subscriptions. If you have one Product & Price per Subscription, you only need 1 CSV to migrate these into {{variable.Product_Salesforce}}. If you have multiple Products & Prices per Subscription, you'll need 2 (parent/child relationship). Stripe has a shortcut when you only have 1 Product & Price per Subscription. Your first CSV needs: Account ID, 13. (Stripe) Payment Gateway Customer ID, and applicable Subscription field values to see (see our [Subscriptions & Subscription Items](/v1/docs/https://docs.blackthorn.io/docs/stripe-billing-subscriptions-subscription-items) documentation for details. Your second CSV needs: Quantity, Price, and other Subscription Item fields as applicable. 14. ({{variable.Product_Stripe}}) {{variable.Object_PaymentGatewayCustomer}}s push to {{variable.Product_Stripe}} automatically. Products, Prices, and Subscriptions each have Push to Stripe checkbox fields you can set either on import or update once you're confident the data migrated correctly. This will trigger the push to Stripe. If you're creating these records in {{variable.Product_Stripe}}, they'll appear in {{variable.Product_Salesforce}} via Webhooks every 5 minutes as part of our batch. ### Currently using Stripe and want to use Blackthorn Payments with Stripe Billing 1. Go to the Payment Gateway tab, click on your {{variable.Object_PaymentGateway}}. Click Sync with Stripe. 2. Make sure you have {{variable.Object_Account}} and {{variable.Object_Contact}} records in your {{variable.Product_Salesforce}} org that align with your {{variable.Product_Stripe}} records. We attempt to match Stripe {{variable.Object_PaymentGatewayCustomer}} emails against {{variable.Object_Contact}} emails to set lookups. 3. Click each button from left to right, one at a time, waiting for the process to finish as viewed in Setup | Apex Jobs. Start with {{variable.Object_PaymentGatewayCustomer}}s.",
+  "keywords": [
+    "variable",
+    "product_stripe",
+    "stripe",
+    "product_salesforce",
+    "your",
+    "object_paymentgatewaycustomer",
+    "subscriptions",
+    "products",
+    "prices",
+    "data",
+    "subscription",
+    "account",
+    "records",
+    "migrate",
+    "either",
+    "contact",
+    "price",
+    "push",
+    "migrating",
+    "object_account"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Backup your data",
+    "2. Setup [Webhooks](/v1/docs/webhook-event)",
+    "3. Set the [Data Loader](https://help",
+    "4. Export your {{variable",
+    "5. In the {{variable",
+    "6. Now it's time to create Stripe {{variable",
+    "7. With the success file, you can now go in a few directions",
+    "8. If {{variable",
+    "9. Products",
+    "10. Prices"
+  ],
+  "troubleshooting": []
+}

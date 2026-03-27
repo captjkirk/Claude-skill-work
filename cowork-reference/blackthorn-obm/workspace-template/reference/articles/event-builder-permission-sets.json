@@ -1,0 +1,28 @@
+{
+  "id": "event-builder-permission-sets",
+  "title": "event-builder-permission-sets.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Builder Permission Sets ## slug: event-builder-permission-sets ## seoTitle: Event Builder Permission Sets ## description: ## contentType: Markdown ## Metadata_End To use the Event Builder with a custom permission set, the following permissions must be included in the custom permission set.",
+  "keywords": [
+    "permission",
+    "event",
+    "builder",
+    "sets",
+    "custom",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "following",
+    "permissions",
+    "must",
+    "included"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

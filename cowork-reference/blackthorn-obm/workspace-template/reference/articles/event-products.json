@@ -1,0 +1,36 @@
+{
+  "id": "event-products",
+  "title": "event-products.md",
+  "content": "## Metadata_Start ## code: en ## title: Products ## slug: event-products ## seoTitle: Products ## description: ## contentType: Markdown ## Metadata_End Out of the box, you can create a {{variable.Object_Product}}, provide a description, define the sales start and end dates, and track the quantity sold. In addition to the items just described, we also provide the features covered below. ## Sandbox Pre-requisite If you create an {{variable.Object_EventItem}} with {{variable.Field_EventItem_Address}} set to “Optional” or “Required” in a Sandbox, you must set the {{variable.Field_EventItem_Country}} field to “Required.” You will get an error if the {{variable.Field_EventItem_Country}} field is set to “Hide” (default setting). ## Event Page Layout The section “Products” was added to the {{variable.Object_Event}} page layout. The Products section will include the following fields: {{variable.Field_LineItem_LineItemName}}, {{variable.Field_LineItem_Attendee}}, {{variable.Field_LineItem_AttendeeFullNam}}, {{variable.Field_LineItem_Event}}, and {{variable.Field_LineItem_UnitPrice}}. ![Products Section on Event Object](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Products%20Section%20on%20Event%20Object.png){height=\"\" width=\"\"} * * * ![ev1807 pic 5_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/ev1807%20pic%205_2.png){height=\"\" width=\"\"} ### New Fields You may need to manually add new fields to the Attendee page layout, as they may not be added by default. #### Event Item Type * Field Label: {{variable.Field_LineItem_EventItemType}} * Field Name: conference360__Event_Item_Type__c * Data Type: Formula(Text) * Location: {{variable.Object_LineItem}} object * Purpose: a text formula field that shows the type of {{variable.Object_EventItem}} ![Line Item_Products](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Line%20Item_Products.png){height=\"\" width=\"\"} #### Purchased Products * Field Label: {{variable.Field_Attendee_PurchasedProduc}} * Field Name: conference360__Purchased_Products__c * Data Type: Checkbox * Location: {{variable.Object_Attendee}} object * Purpose: a checkbox field that shows whether an {{variable.Object_Attendee}} purchased a Product ![Attendee_Purchased Products](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Attendee_Purchased%20Products.png){height=\"\" width=\"\"} ### Functionality #### Event Item Record * The Event Item {{variable.Field_ETEventItem_Type}} for a Product is \"Other\". * If a Product is added on the {{variable.Object_EventItem}}, it will be carried to the Line Item on the Invoice. #### Line Item Record * The {{variable.Field_LineItem_Event}} lookup field has been added to the Line Item record to show which Event the Product is related to. #### Checkout Process * A Product’s information is added to a selected Attendee when the Product is added to the cart. * If a Product’s information has not been added to an {{variable.Object_Attendee}}, the Product’s information will be added to the first {{variable.Object_Attendee}}. ## Create a Product 1. Once a Main event ticket has been created, open a New Event Item window and add the following information to create a Product. ### Information & Description * Enter a {{variable.Field_ETEventItem_PublicItemNa}} (required). * Select an {{variable.Field_ETEventItem_Event}}. * Enter an amount in the {{variable.Field_ETEventItem_Price}} field. * Set {{variable.Field_ETEventItem_Type}} = \"Other\". * Select a {{variable.Field_ETEventItem_VisibilityCo}}, if using. * Check {{variable.Field_ETEventItem_WaitlistEnab}} to enable waitlisting. * Enter a {{variable.Field_ETEventItem_Description}}. * Enter a value in the {{variable.Field_EventItem_SortOrder}} field to change the order of the {{variable.Object_EventItem}}s on the registration page. ![Event Item Object_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Item%20Object_2.png){height=\"\" width=\"\"} ### Availability & Limits {{snippet.EV_EventItem_Create_AvailLimit}} ### Capacity & Waitlisting {{snippet.EV_EventItem_Create_CapWaitlis}} ![Create Tickets Capacity Waitlisting](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20Event%20Item_new%20default%20qty%20selection%20field.png){height=\"\" width=\"\"} ### Attendee Form There are multiple fields on the Attendee Form that you can hide, make required, or show as optional for each Donation. For example, if you have a \"Child Under 3 Yrs\" ticket for sale, it is very unlikely that the child does not have an email address. You can hide the {{variable.Field_EventItem_Email}} field from this Event Item's Attendee Form. ![Event Item_Attendee Form Settings ](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Item_Attendee%20Form%20Settings%20.png){height=\"\" width=\"\"} {{snippet.EV_EventItem_Create_AttendForm}} #### Live Attendee Form Example ![View Live Attendee Form\\(2\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/View%20Live%20Attendee%20Form%282%29.png){height=\"\" width=\"\"} 2. Click **Save & New** to create a new {{variable.Object_EventItem}} or click **Save**. ### Other Settings {{snippet.EV_EventItem_Create_Settings}} ## Data Dictionary and Product Counts {{snippet.Checkout_DataDictionaryCounts1}} ### Create a Data Dictionary Group {{snippet.Checkout_DataDictionaryCounts2}} ### Create Data Dictionary Entries {{snippet.Checkout_DataDictionaryCounts3}}",
+  "keywords": [
+    "variable",
+    "event",
+    "field",
+    "product",
+    "products",
+    "create",
+    "item",
+    "added",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "attendee"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Once a Main event ticket has been created, open a New Event Item window and add the following information to create a Product",
+    "2. Click **Save & New** to create a new {{variable",
+    "* A Product’s information is added to a select"
+  ],
+  "troubleshooting": [
+    "error if the {{variable."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "schedule-audits-via-apex",
+  "title": "schedule-audits-via-apex.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule Audits via Apex ## slug: schedule-audits-via-apex ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End 1. Create a Schedulable Interface using the following example to call the Compliance namespace. ``` global class ScheduleAudit implements Schedulable { global void execute(SchedulableContext sc){ String objectName = 'Case'; // or pass another object name pcify__Manager__mdt manager = pcify.Manager.getManager(objectName); pcify.Batch batchJob = new pcify.Batch(); batchJob.objectName = manager.MasterLabel; batchJob.fieldNames = manager.pcify.Manager.getMaskFields(objectName); batchJob.startDate = manager.pcify__BatchStartDate__c; // or pass your own datetime value batchJob.endDate = manager.pcify__BatchEndDate__c; // or pass your own datetime value batchJob.filterField = manager.pcify__BatchFilterField__c; batchJob.queryLimit = Integer.valueOf(manager.pcify__BatchQueryLimit__c); batchJob.batchSize = Integer.valueOf(manager.pcify__BatchSize__c); batchJob.action = manager.pcify__AuditAction__c; batchJob.loadQuery(); database.executebatch(batchJob, batchJob.batchSize); } } ``` 2. From Setup, enter Apex Classes in the Quick Find box, select Apex Classes, and then click **Schedule Apex**. ![schedulde audits](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/schedulde%20audits.png){height=\"\" width=\"\"} 3. Specify the name of a class that you want to schedule (i.e. \"ScheduleAudit\"). 4. Specify how often the Apex class is to run. * For Weekly—specify one or more days of the week the job is to run (such as Monday and Wednesday). * For Monthly—specify either the date the job is to run or the day (such as the second Saturday of every month). 5. Specify the start and end dates for the Apex scheduled class. If you specify a single day, the job only runs once. 6. Specify a preferred start time. The exact time the job starts depends on service availability. 7. Click {{variable.Button_Save}}. ![audit specifics](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/audit%20specifics.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "batchjob",
+    "manager",
+    "apex",
+    "specify",
+    "schedule",
+    "class",
+    "objectname",
+    "pcify",
+    "audits",
+    "pass",
+    "schedulable",
+    "global",
+    "scheduleaudit",
+    "name",
+    "batch",
+    "your",
+    "datetime",
+    "value",
+    "integer",
+    "valueof"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Create a Schedulable Interface using the following example to call the Compliance namespace",
+    "2. From Setup, enter Apex Classes in the Quick Find box, select Apex Classes, and then click **Schedule Apex**",
+    "3. Specify the name of a class that you want to schedule (i",
+    "4. Specify how often the Apex class is to run",
+    "5. Specify the start and end dates for the Apex scheduled class",
+    "6. Specify a preferred start time",
+    "7. Click {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "custom-domains",
+  "title": "custom-domains.html",
+  "content": "Prerequisites This feature can only be configured if your organization already uses Blackthorn Events, as significant set-up work is required. If you need to migrate your domain to another domain , contact {{variable.Link_BlackthornSupport}} with your domain at least 48 hours before you need to use the custom/migrating domain. Once you receive the CNAME and TXT endpoints, go to Step 3 and complete the process. Configuration Requirements You may only use one domain per Salesforce org. This includes Sandboxes and any secondary organizations that may be configured. When creating a custom domain, a hyphen is the accepted type of dash to use in a URL. En and Em dashes that are not encoded will cause an error. Overview Blackthorn {{variable.Product_Events}} supports custom domains. Currently, we cannot take over a root domain since it has to be forwarded to our service via CNAME. The event slug will automatically reflect the {{variable.Field_ETEvent_EventName}} . If the {{variable.Field_ETEvent_EventName}} is “Sample Event”, the slug will appear as expected. Any additional customizations are not supported. The {{variable.Object_Event}} domain can be customized, but it requires set-up on our end. Please contact {{variable.Link_BlackthornSupport}} for more information. Blackthorn supports custom slugs for {{variable.Object_EventGroup}} s. You can have a subdomain on your main domain with the {{variable.Object_Event}} record slugs, such as subdomain.yourdomain.com/event-slug. For example, the {{variable.Field_ETEvent_EventPageURL}} can look like \"https://events.yourdomain.com/sample-event\" or you can also make it look like \"https://www.yourdomain.com/event-slug\" (in this case \"www\" works as a subdomain) Instructions What we need from you: an available domain and subdomain DNS Configuration To enter a vanity domain, complete the following steps. Go to the {{variable.Tab_ET_BTEventAdmin}} tab. Click Settings. Enter your “Vanity Domain”. Submit this information to {{variable.Link_BlackthornSupport}} at least 48 hours before you need to use the custom domain. We will provide you with the CNAME and TXT endpoints for you to update in your DNS records. If your DNS provider doesn’t allow TXT and CNAME records with the same key, this step will need to be split into two parts. First, you’ll add the TXT records, and then we will generate your SSL Cert. Second, you’ll remove the TXT records, add the CNAME endpoint, and we will generate your SSL Cert. We will generate your SSL Cert and enable this feature in your org. After this has been completed, please update the following objects and fields to use your customized {{variable.Field_ETEvent_EventPageURL}} . Salesforce Configuration Note: All communication and email templates should be updated to use these customized URLs. After the DNS configuration has been completed and the vanity domain is live, please update the following objects and fields to use your customized {{variable.Field_ETEvent_EventPageURL}} . NOTE: Replace the word domain with your actual vanity domain. Ex. If my vanity domain is events.university.edu, then I would replace the word domain with events.university.edu. {{variable.Object_EventGroup}} : Create a formula text field Custom Event Group URL with the following formula on the {{variable.Object_EventGroup}} object: 'domain/' &amp; $Organization.Id &amp; \"/g/\" &amp; conference360__ Key__c {{variable.Object_Event}} : Create a formula text field Custom Event Page URL with the following formula on the {{variable.Object_Event}} object: SUBSTITUTE(conference360__ Event_Page_URL__c , 'events.blackthorn.io', 'domain') {{variable.Object_Attendee}} : Create a formula text field Custom AttendeeLink with the following formula on the {{variable.Object_Attendee}} object: SUBSTITUTE(conference360__ AttendeeLink__c , 'events.blackthorn.io', 'domain') Update your Events Domain. Click the Gear icon located in the upper right-hand corner. Click Setup . Scroll down and click Security. Click Remote Site Settings. Click Events_Domain Click Edit . Change the Remote Site URL from \"https://events.blackthorn.io\" to \"https://events.YourDomainName.com\" Update the Platform Domain field in the Blackthorn | Events Settings custom settings to match the Remote Site URL. Click the Gear icon located in the upper right-hand corner. Click Setup . In the Quick Find box, enter and click “Custom Settings.” Click Manage next to Blackthorn | Events Settings. Click Edit . Enter the Remote Site URL in the Platform Domain field. Click {{variable.Button_Save}} . For the SSL text you can use the following: Cloudflare verifies ownership of each new hostname before a SSL certificate is generated and traffic is allowed to proxy to your vanity domain. The validation mechanism Cloudflare uses for this type of SSL certificate is through the creation of a TXT record. Removing the CNAME record for the vanity domain detaches the SSL from the (sub)domain also. So the control is still guaranteed to be on the domain owner's side. If you still have questions following the documentation please contact {{variable.Link_BlackthornSupport}} . We're happy to help! RESOURCE: https://www.websitetoolbox.com/support/adding-a-cname-record-127",
+  "keywords": [
+    "domain",
+    "variable",
+    "your",
+    "click",
+    "events",
+    "custom",
+    "blackthorn",
+    "following",
+    "cname",
+    "event",
+    "vanity",
+    "settings",
+    "formula",
+    "need",
+    "https",
+    "update",
+    "field",
+    "link_blackthornsupport",
+    "configuration",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-clone-event-event-items-tickets",
+  "title": "evbuilder-clone-event-event-items-tickets.md",
+  "content": "## Metadata_Start ## code: en ## title: Tickets ## slug: evbuilder-clone-event-event-items-tickets ## seoTitle: Tickets ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Tickets_CloneEdit_1}} ## Edit or Delete a Ticket {{snippet.EVBuilder_Tickets_CloneEdit_ED}} ## Create a Ticket {{snippet.EVBuilder_Tickets_CloneEdit_AD}} Click [here](/v1/docs/evbuilder-clone-event-event-items-donations) to add Donations or click [here](/v1/docs/evbuilder-clone-event-event-items-products) to add Products.",
+  "keywords": [
+    "event",
+    "tickets",
+    "evbuilder",
+    "clone",
+    "items",
+    "snippet",
+    "ticket",
+    "click",
+    "here",
+    "docs",
+    "donations",
+    "products",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

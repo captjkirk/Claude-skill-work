@@ -1,0 +1,30 @@
+{
+  "id": "phone-number-lookups-with-bulk-messages",
+  "title": "phone-number-lookups-with-bulk-messages.html",
+  "content": "When you send a bulk message, either from a List View or a Campaign, you will now see a checkbox labeled Exclude Landlines and Bad Numbers . This box will be checked by default. When you send the bulk message each phone number that's either a landline or a bad/invalid number will be skipped. This makes it very simple to prevent you from unnecessarily wasting messages from your balance. For this feature to work properly you must have already performed a lookup on your phone numbers, either using the batch process or through an automation. Phone numbers will not be looked up at the point of sending the bulk message. The bulk message will leverage the existing Phone Number Lookup data that exists at the time you send the text.",
+  "keywords": [
+    "bulk",
+    "message",
+    "phone",
+    "send",
+    "either",
+    "from",
+    "numbers",
+    "number",
+    "when",
+    "your",
+    "lookup",
+    "list",
+    "view",
+    "campaign",
+    "checkbox",
+    "labeled",
+    "exclude",
+    "landlines",
+    "checked",
+    "default"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

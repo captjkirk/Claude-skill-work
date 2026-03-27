@@ -1,0 +1,41 @@
+{
+  "id": "event-speakers",
+  "title": "event-speakers.md",
+  "content": "## Metadata_Start ## code: en ## title: Speakers ## slug: event-speakers ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When planning an {{variable.Object_Event}}, one of the critical elements to its overall success is having the right speakers. Here, you can display who will be speaking at your {{variable.Object_Event}}s, as well as give a brief overview of who they are. ## Event Speaker Visibility To show the {{variable.Object_Speaker}}s on the {{variable.Object_Event}}, complete the following: 1. Navigate to the {{variable.Object_EventSettings}} record. 2. Set the {{variable.Field_ETETSettings_Speakers}} field to {{variable.picklist_Always}}. 3. Make sure the {{variable.Field_Speaker_HideOnEventPage}} field is unchecked on the {{variable.Object_Speaker}} record. ![Speakers](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Speakers.png){height=\"\" width=\"\"} ## Create a {{variable.Object_Speaker}} 1. From your {{variable.Object_Event}} record, navigate to the {{variable.Object_Speaker}} record's {{variable.SFTerm_RelatedList}} 2. Click {{variable.button_new}}. ![Creating a Speaker 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Creating%20a%20Speaker%201.png){height=\"\" width=\"\"} 3. Complete the following fields for the {{variable.Object_Speaker}}. * {{variable.Field_Speaker_FirstName}} * {{variable.Field_Speaker_LastName}} * {{variable.Field_Speaker_Phone}} * {{variable.Field_Speaker_Email}} * {{variable.Field_Speaker_Bio}} * {{variable.Field_Speaker_ImageURL}} * {{variable.Field_Speaker_AltTextVisualImp}} - This field is required if the {{variable.Field_Speaker_ImageURL}} field contains a value. The following default value was added to this field. \"Portrait of [{{variable.Object_Contact}} {{variable.Field_Contact_FirstName}}] [{{variable.Object_Contact}} {{variable.Field_Contact_LastName}}]\" (Note: Default values can be overwritten.) ![Speaker_New_Visual Impairment Info Field](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Speaker_New_Visual%20Impairment%20Info%20Field.png){height=\"\" width=\"\"} 4. Set the {{variable.Field_Speaker_Status}} = \"Confirmed\" when you are ready to show the {{variable.Object_Speaker}} on your {{variable.Object_Event}}'s link. View your newly created {{variable.Object_Speaker}}! ![Creating a Speaker 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Creating%20a%20Speaker%203.png){height=\"\" width=\"\"} ## Create a Session Speaker 1. Navigate to the {{variable.Object_Speaker}}'s record Session Speakers {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}}. 3. Define the related {{variable.Field_SessionSpeaker_Session}}. 4. Click {{variable.Button_Save}}. Your {{variable.Object_SessionSpeaker}} is ready to be viewed on your {{variable.Object_Event}}! ![Creating a Session Speaker](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Creating%20a%20Session%20Speaker.png){height=\"\" width=\"\"} ## Define a Related Contact If your new {{variable.Object_Speaker}} is an existing {{variable.Object_Contact}}, we have included a {{variable.Field_Speaker_Contact}} lookup field on the {{variable.Object_Speaker}} record. This field will pull the {{variable.Object_Contact}}'s {{variable.Field_Contact_FirstName}}, {{variable.Field_Contact_LastName}}, and {{variable.Field_Contact_Email}} into the {{variable.Object_Speaker}} record. 1. Add the {{variable.Field_Speaker_Contact}} field to your {{variable.Object_Speaker}} page layout. 2. When adding a new {{variable.Object_Speaker}}, set the {{variable.Field_Speaker_Contact}} field instead of filling the {{variable.Field_Speaker_FirstName}}, {{variable.Field_Speaker_LastName}}, and {{variable.Field_Speaker_Email}} fields. 3. Click {{variable.Button_Save}}. ## Hide Speaker from the Event Page If your {{variable.Object_Speaker}} shouldn't be publicly shown on the {{variable.Object_Event}}, check the {{variable.Field_Speaker_HideOnEventPage}} field and the information will be for internal eyes only. * When the {{variable.Field_Speaker_HideOnEventPage}} field is checked, the {{variable.Object_Speaker}} will not show up under the Speaker tab. * If the {{variable.Object_Speaker}} is related to a {{variable.Object_Session}}, it will not show up under the Session details.",
+  "keywords": [
+    "variable",
+    "object_speaker",
+    "field",
+    "your",
+    "object_event",
+    "speaker",
+    "record",
+    "speakers",
+    "creating",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Set the {{variable",
+    "3. Make sure the {{variable",
+    "1. From your {{variable",
+    "2. Click {{variable",
+    "3. Complete the following fields for the {{variable",
+    "4. Set the {{variable",
+    "1. Navigate to the {{variable",
+    "2. Click {{variable",
+    "3. Define the related {{variable"
+  ],
+  "troubleshooting": []
+}

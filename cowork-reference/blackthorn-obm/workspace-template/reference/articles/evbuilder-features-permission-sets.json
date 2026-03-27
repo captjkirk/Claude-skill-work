@@ -1,0 +1,35 @@
+{
+  "id": "evbuilder-features-permission-sets",
+  "title": "evbuilder-features-permission-sets.md",
+  "content": "## Metadata_Start ## code: en ## title: Permission Sets ## slug: evbuilder-features-permission-sets ## seoTitle: Permission Sets ## description: ## contentType: Markdown ## Metadata_End ## Standard Permission Sets Set default answers on the {{variable.Component_EventBuilder}}'s Basic Information Page to customize the {{variable.Object_Event}} page for company purposes. Users with the Blackthorn | Events (Admin) Permission Set can perform the following steps. 1. Open the {{variable.Component_EventBuilder}}. 2. Click {{variable.Button_BeginfromScratch}} and select an {{variable.Object_Event}} Type (Venue, Virtual, or Hybrid). 3. Customize the fields in each section. Users who do not have the Blackthorn | Events (Admin) permission set will see the following message at the end of each section. “If you need to change these fields, contact your admin. Admins will have the Blackthorn | Events (Admin) permission set assigned.“ ## Custom Permission Sets The following is a list of new permissions that must be added to custom permission sets. ### Update Next Permissions * Apex classes enabled=true * ReferPeopleController * FieldSetDataWrapper * FieldSetSelector * V2Constants * V2EventWizardController * V2EventWizardControllerTest * V2EventWizardRecurrenceModalController ### Field Permissions Update the fields below so the following is true. ``` {{Fields}} true and true ``` * Event_Content__c.Format__c * Event_FAQ__c.Key__c * Event_Keyword__c.Keyword__c * Event__c.Image_Name__c * Event__c.Show_Event_Information__c * Event__c.Short_Description__c * Event__c.Show_Gradient__c * Event__c.Event_Location__c * Session_Speaker__c.Speaker_Name__c * Speaker__c.Short_Description2__c * Speaker__c.Bio_Rich__c * Speaker__c.Company__c * Speaker__c.Instagram__c * Speaker__c.Key__c * Speaker__c.LinkedIn__c * Speaker__c.Salutation__c * Speaker__c.Short_Description2__c * Speaker__c.Speaker_Visibility__c * Speaker__c.Image_Name__c * Speaker__c.Twitter__c * Sponsor__c.Image_URL__c * Sponsor__c.Key__c ### Object Permissions Update the object permissions so the following is true. ``` * * true * Contact * true * * * true * Account * true * * * true * true * true * true * false * Session_Keyword__c ```",
+  "keywords": [
+    "true",
+    "speaker__c",
+    "permission",
+    "sets",
+    "variable",
+    "following",
+    "permissions",
+    "event__c",
+    "admin",
+    "fields",
+    "blackthorn",
+    "events",
+    "update",
+    "key__c",
+    "component_eventbuilder",
+    "page",
+    "customize",
+    "object_event",
+    "users",
+    "each"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Open the {{variable",
+    "2. Click {{variable",
+    "3. Customize the fields in each section",
+    "* Apex classes enabled=true * ReferPeopleController * FieldSetDataWrapper * FieldSetSelect"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "assign-site-guest-user-permission-set",
+  "title": "assign-site-guest-user-permission-set.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign Site Guest User Permission Set ## slug: assign-site-guest-user-permission-set ## seoTitle: Assign Site Guest User Permission Set ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (**IMPORTANT**) To use the following instructions, you must have Salesforce administrator access to Salesforce and Stripe. ::: 1. Navigate back to the Site you created. 2. Click **Public Access Settings**. ![H_02_21_assign site guest user per 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_21_assign%20site%20guest%20user%20per%201.png){height=\"\" width=\"\"} 3. Click the **View Users** or **Assign Users** button. 4. Click the link for the site guest user. ![H_02_21_assign site guest user per 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_21_assign%20site%20guest%20user%20per%202.png){height=\"\" width=\"\"} 5. Add the {{variable.PS_PT_SiteGuestUser}} permission set to this user's record. 6. Click {{variable.Button_Save}}. ![H_02_21_assign site guest user per 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_21_assign%20site%20guest%20user%20per%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "site",
+    "user",
+    "guest",
+    "h_02_21_assign",
+    "assign",
+    "permission",
+    "click",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20site",
+    "20guest",
+    "20user",
+    "20per"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate back to the Site you created",
+    "2. Click **Public Access Settings**",
+    "3. Click the **View Users** or **Assign Users** button",
+    "4. Click the link for the site guest user",
+    "5. Add the {{variable",
+    "6. Click {{variable"
+  ],
+  "troubleshooting": []
+}

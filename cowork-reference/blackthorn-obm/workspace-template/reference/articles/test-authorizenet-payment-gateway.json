@@ -1,0 +1,37 @@
+{
+  "id": "test-authorizenet-payment-gateway",
+  "title": "test-authorizenet-payment-gateway.html",
+  "content": "The next step is to test your using either the test Authorize.net card or the test Authorize.net ACH bank account. Test an Authorize.net Card Test an Authorize.net ACH Bank Account NOTE: For testing purposes, eCheck.Net transactions under $100 will be accepted. To generate a decline, submit a over $100. A monthly limit of $5000 is also configured in the sandbox. If you exceed this amount, your eCheck s will fail with a \"This transaction has been declined.\" error message. Test for Specific Responses and Errors Cards Create a using the following postal codes to generate a declined . * = \"46282\" - This will be declined. * = \"46205\" - The will be declined because of an AVS mismatch. The address provided does not match the cardholder's billing address. ACH To generate a decline using an ACH bank account, submit a over $100. Duplicate Payment Methods Create two s with the same name and email address to generate \"A duplicate record with ID [auth.net id] already exists error\" for the second .",
+  "keywords": [
+    "test",
+    "authorize",
+    "generate",
+    "declined",
+    "using",
+    "bank",
+    "account",
+    "address",
+    "your",
+    "card",
+    "echeck",
+    "decline",
+    "submit",
+    "over",
+    "error",
+    "create",
+    "duplicate",
+    "next",
+    "step",
+    "either"
+  ],
+  "category": "payments",
+  "procedures": [
+    "100. A monthly limit of $5000 is also configured in the sandbox",
+    "100. Duplicate Payment Methods Create two s with the same name and email address to generate \"A duplicate record with ID [auth"
+  ],
+  "troubleshooting": [
+    "error message.",
+    "Errors Cards Create a using the following postal codes to generate a declined .",
+    "error\" for the second ."
+  ]
+}

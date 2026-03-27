@@ -1,0 +1,30 @@
+{
+  "id": "list-published-ip-addresses",
+  "title": "list-published-ip-addresses.md",
+  "content": "## Metadata_Start ## code: en ## title: Do You Have a List of Published IP Addresses? ## slug: list-published-ip-addresses ## seoTitle: Do You Have a List of Published IP Addresses? ## description: ## contentType: Markdown ## Metadata_End ## Product Data Usage The following IP address is being used for BT Product Data Usage. * 54.236.121.198 ## Static IP Addresses The following table shows which apps support fixed or static IP addresses. | Application | AWS Region | AWS IPs | | --- | --- | --- | | {{variable.Product_Events}} webapp** / Connect360 | us-east-1 (Virginia) | 35.175.67.37 | | | | 54.83.187.87 | | | us-west-2 (London) | 3.9.71.98 | | | | 13.43.139.207 | | | ap-southeast-2 (Sydney) | 13.238.52.100 | | | | 3.24.236.249 | | | ap-southeast-1 (Singapore) | 54.251.181.141 | | | | 13.228.230.156 | | {{variable.Product_Storefront}} (Storefront) | us-east-1 (Virginia) | 35.175.67.37 | | | | 54.83.187.87 | | {{variable.Product_DocumentLink}} | us-east-1 (Virginia) | 35.175.67.37 | | | | 54.83.187.87 | | {{variable.Product_PayLink}} | us-east-1 (Virginia) | 35.175.67.37 | | | | 54.83.187.87 | | Authorization app | us-east-1 (Virginia) | 35.175.67.37 | | | | 54.83.187.87 | ** The {{variable.Product_Events}} webapp, by default, uses the proxy for {{variable.Product_CashNet}} and {{variable.Product_TouchNet}}. If you enable IP restrictions for {{variable.Product_CashNet}} and {{variable.Product_TouchNet}}, you must also update those systems directly.",
+  "keywords": [
+    "variable",
+    "addresses",
+    "east",
+    "virginia",
+    "list",
+    "published",
+    "product",
+    "data",
+    "usage",
+    "following",
+    "static",
+    "product_events",
+    "webapp",
+    "southeast",
+    "product_cashnet",
+    "product_touchnet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

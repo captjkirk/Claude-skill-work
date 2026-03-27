@@ -1,0 +1,32 @@
+{
+  "id": "payment-gateway-setup-instructions",
+  "title": "payment-gateway-setup-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Instructions ## slug: payment-gateway-setup-instructions ## seoTitle: Instructions ## description: ## contentType: Markdown ## Metadata_End In Blackthorn Payments, a {{variable.Object_PaymentGateway}} record is synonymous with a gateway (i.e. Stripe, Authorize.net, etc.) account. Each {{variable.Object_PaymentGateway}} record you create connects your Salesforce org to one gateway account, in either test or live mode. To start, we suggest connecting to your {{variable.Object_PaymentGateway}} in test mode. When you are ready to go live, then you can create another {{variable.Object_PaymentGateway}} record connecting to your {{variable.Object_PaymentGateway}} in live mode. :::(Warning) (** Note About Payment Gateway Records**) Do not change your Payment Gateway record from Test to Live mode or vice versa by clicking **Connect to Gateway** or checking/unchecking the `Test Mode` checkbox. Instead, create a new record for the other mode you wish to enable. ::: Blackthorn supports several gateway providers. The primary gateway providers are Stripe, Authorize.net, and Spreedly. Please click on the link below for your gateway and follow the instructions to connect your Payment Gateway in Salesforce. ### [Connect to Stripe](/v1/docs/connect-stripe-test-mode) ### [Connect to Authorize.net](/v1/docs/create-authorizenet-sandbox-account) ### [Connect to Spreedly](https://docs.blackthorn.io/docs/payments-connect-spreedly-test-mode)",
+  "keywords": [
+    "gateway",
+    "mode",
+    "connect",
+    "your",
+    "test",
+    "variable",
+    "object_paymentgateway",
+    "record",
+    "instructions",
+    "payment",
+    "stripe",
+    "create",
+    "live",
+    "docs",
+    "blackthorn",
+    "authorize",
+    "account",
+    "spreedly",
+    "payments",
+    "salesforce"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* Note About Payment Gateway Records**) Do not change your Payment Gateway record from Test to Live mode or vice versa by click"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "vt-lwc-lightning-record-page",
+  "title": "vt-lwc-lightning-record-page.md",
+  "content": "## Metadata_Start ## code: en ## title: LWC Lightning Record Page ## slug: vt-lwc-lightning-record-page ## seoTitle: LWC Lightning Record Page ## description: ## contentType: Markdown ## Metadata_End ![LWC Lightning Record Page](https://youtu.be/6VXEj9Z1dRU){height=\"480\" width=\"640\"} * * * 1. Find the {{variable.Component_BTLWCVirtualTerminal}} component in the list of Custom-Managed components. 4. Drag the component into the section of the page you wish to display it. 6. Set the Input Variables. * {{variable.Field_VT_PaymentGatewayID}}: Record Id of the {{variable.Object_PaymentGateway}} you’d like the {{variable.Component_BTLWCVirtualTerminal}} to default to. If left blank, the component will use the default gateway of the org. * {{variable.Field_VT_PaymentMethodID}}: If you store a default {{variable.Object_PaymentMethod}} on a field on the record, you can reference that field here to ensure the terminal defaults to that {{variable.Field_VT_PaymentMethodID}}. Otherwise, the user can choose an available {{variable.Object_PaymentMethod}} from the list or create a new {{variable.Object_PaymentMethod}} to use. * {{variable.Field_VT_Amount}}: Identify a field on the underlying object you want to use to pre-populate the {{variable.Field_VT_Amount}} field in the {{variable.Component_BTLWCVirtualTerminal}}. * {{variable.Field_VT_Currency}}: The value from the related {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field will automatically populate this field. If the {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field is blank, the Virtual Terminal will use the {{variable.Object_PaymentGateway}}’s {{variable.Field_PG_DefaultCurrency}} value. * {{variable.Field_VT_Description}}: This can be a static message, or it can be mapped to a field on the record. This also populates as the {{variable.Field_Transaction_Description}} of the {{variable.Object_Transaction}} created from a payment made in the {{variable.Component_BTLWCVirtualTerminal}}. * {{variable.Field_VT_ProcessType}}: Set the default {{variable.Field_VT_ProcessType}} of the component. * “Capture Now” * “Authorize Now” * “Auto-Process” * {{variable.Field_VT_HideAmount}}: Hides the {{variable.Field_VT_Amount}} field so a user cannot edit it manually. * {{variable.Field_VT_HideCurrency}}: Hides the {{variable.Field_VT_Currency}} field so a user cannot edit it manually. * {{variable.Field_VT_ShowAddress}}: Displays the Billing Address fields for {{variable.Object_PaymentGateway}}s with full billing address requirements. * {{variable.Field_VT_HideProcessType}}: Hides the {{variable.Field_VT_ProcessType}} field so a user cannot manually change it. * {{variable.Field_VT_EnableLiteVersion}}: A lightweight version of the {{variable.Component_BTLWCVirtualTerminal}} is available for quick entry of a new credit card and payment within the same page. Optimized for self-service and/or mobile experiences where surfacing existing {{variable.Object_PaymentMethod}}s may not be desirable. * {{variable.Field_MgVTCustmSet_HideBankTab}}: If enabled, Bank details will be hidden from the list of available options when creating a {{variable.Object_PaymentMethod}} via the {{variable.Component_BTLWCVirtualTerminal}}. * {{variable.Field_MgVTCustomSet_MakeCVCOpt}}: If enabled, the {{variable.Field_VT_CVC}} field will be optional when adding a {{variable.Object_PaymentMethod}} via the {{variable.Component_BTLWCVirtualTerminal}}. 6. Set Component Visibility (optional). 8. Click {{variable.Button_Save}} and navigate back to the record.",
+  "keywords": [
+    "variable",
+    "field",
+    "record",
+    "component_btlwcvirtualterminal",
+    "page",
+    "object_paymentmethod",
+    "component",
+    "lightning",
+    "default",
+    "user",
+    "from",
+    "list",
+    "object_paymentgateway",
+    "available",
+    "field_vt_amount",
+    "field_vt_processtype",
+    "hides",
+    "cannot",
+    "manually",
+    "blank"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Find the {{variable",
+    "4. Drag the component into the section of the page you wish to display it",
+    "6. Set the Input Variables",
+    "6. Set Component Visibility (optional)",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

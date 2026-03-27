@@ -1,0 +1,32 @@
+{
+  "id": "blackthorn-community",
+  "title": "blackthorn-community.html",
+  "content": "The Blackthorn Community page is the entry point for all things support and learning-related. Use the page to contact Support, access user documentation and help articles, start product training, explore the Blackthorn roadmap, offer ideas, and more. FAQ Q: How do I review the comments connected to my case? A: We have received feedback that it's hard to view case comments when logged into our Community. We have a quick fix for that. Log in to the Community. Select one of your cases. Click the Case Comments Related List. Click the drop-down icon in the Comment header. Select “Wrap Text.” Here is a video that shows you how to do it! Your browser does not support the video element. Q: How do I reopen a closed case? A: Previously, customers were only able to reopen a case via email. We have added a new feature that allows Community Users to reopen newly closed cases directly from our Community. A case must have been closed within the previous 7 days. If the case was closed more than seven days ago, a new case must be submitted. Please use our support request form found here. Click the Case Number for the case you want to reopen. Click the Reopen Case button. In the field, describe why you need to reopen the case. Click Reopen Case . Here is a video walking through this new feature! Your browser does not support the video element. Escalate your Case to Blackthorn Support from the Community Use the Escalate button in the top right corner of Cases to route your case to the relevant teams in real time and eliminate multiple steps in the process. Instead of directly contacting your CSM or Blackthorn Executive Sponsor, copying comments into cases, etc., the Escalate button will alert the relevant parties within Customer Success and Support. It will also flag your case for review by the Escalation Team, who will follow up with the next steps &amp; action items. The Escalate button can also request phone support for customers with “Premier Support.” Paid Support Plan Information Paid Support Plan customers have received an invite to our Customer Portal (limit 2 users per company) and chime in on Chatter. Login to submit a new case, check the status of an open ticket, and view your support history. Part of a team? All team members can view and submit cases from one centralized location, eliminating the need to search for answers and circulate follow-up communications. Collaborate on Chatter - Connect and engage on our community forums. Share ideas, contribute best practices, troubleshoot issues, and track content and topics relevant to your industry. If you didn't receive a login request or need to upgrade to a paid support plan to receive this feature, please submit a request here .",
+  "keywords": [
+    "case",
+    "support",
+    "your",
+    "community",
+    "reopen",
+    "cases",
+    "click",
+    "blackthorn",
+    "comments",
+    "here",
+    "video",
+    "closed",
+    "request",
+    "button",
+    "escalate",
+    "view",
+    "customers",
+    "feature",
+    "from",
+    "need"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": [
+    "troubleshoot issues, and track content and topics relevant to your industry."
+  ]
+}

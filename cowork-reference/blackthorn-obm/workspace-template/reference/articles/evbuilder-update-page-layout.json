@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-update-page-layout",
+  "title": "evbuilder-update-page-layout.html",
+  "content": "The new {{variable.Component_EventBuilder}} is enabled by default, but its tab will not be visible the first time you use it. To make the tab visible, a Salesforce System Administrator must complete the steps below. Add the Tab Click the {{variable.Button_GearIcon}} in the upper right-hand corner. Click {{variable.Button_Setup}} . Type and click “App Manager” in the Quick Find box. &nbsp; Locate Events (Admin) app. Use the dropdown arrow on the right to click {{variable.Button_SF_Edit}} for the Classic or Lightning Events (Admin). &nbsp; Select Navigation Items . &nbsp; Select and move the Event Builder tab from Available Items to Selected Items. &nbsp; Click {{variable.Button_Save}} . Repeat steps 4 - 10 for the Events (Organizer) app and any other custom Event apps. Add the Button Click the {{variable.Button_GearIcon}} in the upper right-hand corner. Click {{variable.Button_Setup}} . Click the Object Manager tab. Search for and click “Event”. ( Make sure to select the conference360__Event__c object, not the standard Salesforce Event object. ) &nbsp; Click Page Layouts . Click Event Layout . Click Mobile &amp; Lightning Actions . &nbsp; Remove the Wizard button from the page layout. &nbsp; Add the {{variable.Button_EventBuilder}} button to the page layout. Repeat steps 5 - 9 for any custom page layouts. Once the tab and button are added, the {{variable.Component_EventBuilder}} can be accessed via the tab or an {{variable.Object_Event}} record’s {{variable.Button_EventBuilder}} button.",
+  "keywords": [
+    "click",
+    "variable",
+    "nbsp",
+    "event",
+    "button",
+    "page",
+    "steps",
+    "right",
+    "events",
+    "select",
+    "items",
+    "object",
+    "layout",
+    "component_eventbuilder",
+    "visible",
+    "make",
+    "salesforce",
+    "button_gearicon",
+    "upper",
+    "hand"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

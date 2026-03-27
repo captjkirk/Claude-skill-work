@@ -1,0 +1,30 @@
+{
+  "id": "av-bt-rule-fields",
+  "title": "av-bt-rule-fields.html",
+  "content": "The BT Rule (bt_base__Rule__c) object was added to the Base package and can be added as a tab. The BT Rule object is also a container for the BT Rule Conditions and dictates the logic used to combine them. Field Label API Name Data Type Description Active bt_base__Active__c Checkbox Only active rules can be added to other records. Inactive rules will not be evaluated by Blackthorn automation. Condition Type bt_base__Condition_Type__c Picklist Select “AND,” “OR,” or “Custom.” Created By CreatedById Lookup(User) The user who created this record. Custom Filter Logic bt_base__Custom_Filter_Logic__c Text(255) If a user designates custom logic to combine conditions (instead of AND or OR for all conditions), this field will store the custom logic. For example, “Condition A OR (Condition B and Condition C)” Description bt_base__Description__c Long Text Area(32768) Helps event organizers understand the intent and context of the rule. Extend Eligibility to Account bt_base__Extend_Eligibility_To_Account__c Checkbox Indicates whether the contact is eligible to register for the item based on eligibility within the bucket account of this contact. If one of the contacts is evaluated as eligible, all contacts within the account are eligible. The default value is false (unchecked). Extend Visibility to Account bt_base__Extend_Visibility_To_Account__c Checkbox When checked, visibility will be extended from one contact who meets the rule criteria to all contacts within the account. When a contact meets the criteria, all contacts in the account gain access. Last Modified By LastModifiedById Lookup(User) The user who last modified this record. Last Update Date bt_base__Last_Updatet_Date__c Date/Time The date and time this record was last updated. Owner OwnerId Lookup(User) The user to which a record is assigned. Process bt_base__Process__c Checkbox When this box is checked, the record will be processed using the Advanced Visibility logic. The box will be automatically unchecked after being checked. Rule Name Name Text(80) A name that helps users understand the intent and context of the rule. NOTE: The (bt_base__Extend_Contact_Visibility_To_Account__c) and Visibility Options (Deprecated ) (bt_base__Visibility_Options__c) fields were deprecated.",
+  "keywords": [
+    "rule",
+    "user",
+    "account",
+    "logic",
+    "record",
+    "name",
+    "checkbox",
+    "condition",
+    "custom",
+    "contact",
+    "contacts",
+    "visibility",
+    "last",
+    "added",
+    "conditions",
+    "lookup",
+    "text",
+    "eligible",
+    "within",
+    "when"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

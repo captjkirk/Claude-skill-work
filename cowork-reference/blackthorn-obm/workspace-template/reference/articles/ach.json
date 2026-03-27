@@ -1,0 +1,38 @@
+{
+  "id": "ach",
+  "title": "ach.md",
+  "content": "## Metadata_Start ## code: en ## title: ACH ## slug: ach ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Completed ACH Payment Method ![PayLink: Capturing a Bank Account](https://youtu.be/c1Z4jTUrt-g){height=\"480\" width=\"640\"} * A Payment Method will be created in Salesforce with a Status of Pending. * Two micro-deposits will be deposited into their Bank Account within the next 3-5 days. :::(Warning) (Micro-Deposit with Stripe vs Authorize.net) This is with Stripe. If you're using Authorize.net with a merchant that does not require a micro-deposit, the micro-deposit verification is not needed and your Payment Method will be immediately Valid and available to use. ::: * Enter the two micro-deposits on the Pending ACH Payment Method record ![L_03_02_ACH](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/L_03_02_ACH.png){height=\"\" width=\"\"} * Payment Method Status updates to Verified *Refresh the page for the updated status.* * Navigate to the related lists, Transactions * Manually capture all related Open Transactions ![PayLink: Capture an Open Transaction](https://youtu.be/DAqTF-XGphA){height=\"480\" width=\"640\"} ## Enable the Skip ACH Validation Custom Setting 1. Go to Setup. 2. In the Quick Find box, search for and click “Custom Settings.” 3. Click {{variable.Button_SF_Manage}} next to Blackthorn Pay - Trigger Settings. 4. Click {{variable.Button_SF_Edit}}. 5. Set {{variable.CS_SkipACHValidation}} = “True” (checked). 6. Click {{variable.Button_Save}}. To ensure the ACH Micro-Deposit Verification is fully waived, contact Stripe support to have ACH micro verification turned off for your account.",
+  "keywords": [
+    "micro",
+    "payment",
+    "method",
+    "deposit",
+    "click",
+    "variable",
+    "account",
+    "https",
+    "height",
+    "width",
+    "status",
+    "stripe",
+    "verification",
+    "paylink",
+    "bank",
+    "youtu",
+    "pending",
+    "deposits",
+    "next",
+    "authorize"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, search for and click “Custom Settings",
+    "3. Click {{variable",
+    "4. Click {{variable",
+    "5. Set {{variable",
+    "6. Click {{variable",
+    "* * Navigate"
+  ],
+  "troubleshooting": []
+}

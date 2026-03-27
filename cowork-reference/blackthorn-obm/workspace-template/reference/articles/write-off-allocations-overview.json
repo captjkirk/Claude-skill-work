@@ -1,0 +1,41 @@
+{
+  "id": "write-off-allocations-overview",
+  "title": "write-off-allocations-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: write-off-allocations-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End When an {{variable.Object_Allocation}} with {{variable.Field_Allocation_Type}} = “Write Off” is created, then the related {{variable.Object_Invoice}}’s {{variable.Field_Invoice_WriteOffAmount}} field will include - “the sum of all the amounts in the {{variable.Object_Invoice}}’s related {{variable.Object_LineItem}}’s {{variable.Field_LineItem_AmtWrittenOff}} fields.” The {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}} should be reduced by the {{variable.Object_Invoice}}’s {{variable.Field_Invoice_WriteOffAmount}}. ({{variable.Object_Invoice}} {{variable.Field_Invoice_BalanceDue}} = {{variable.Object_Invoice}} {{variable.Field_Invoice_TotalAmount}} - ({{variable.Object_Invoice}} {{variable.Field_Invoice_BalancePaid}} + {{variable.Object_Invoice}} {{variable.Field_Invoice_WriteOffAmount}})) If a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” is created, then an {{variable.Object_Allocation}} with {{variable.Field_Allocation_Type}} = “Write Off” will be created. When a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” and an {{variable.Field_Transaction_Amount}} less than the {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}} is created, then a related {{variable.Object_Allocation}} record with {{variable.Field_Allocation_Type}} = “Write Off” will be created. If a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off” or {{variable.Field_Transaction_TransactType}} = “Charge” is created and the {{variable.Object_Transaction}} {{variable.Field_Transaction_Amount}} = {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}}, then an {{variable.Object_Allocation}} with {{variable.Field_Allocation_Type}} = “Write Off” will be created and the {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Charge” will have {{variable.Object_Transaction}}’s {{variable.Field_Transaction_PaymentStatu}} = “Captured”. When the {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}} = ”0”, then the {{variable.Object_Invoice}} {{variable.Field_Invoice_Status}} = “Completed” and the {{variable.Object_Transaction}}’s {{variable.Field_Transaction_PaymentStatu}} = “Paid”. ## Create a Write-off Allocation 1. Go to Custom Setting > Blackthorn Pay – Trigger Settings. 2. Set {{variable.Field_CS_AutoCreateAllocation}} = “True” (checked). 3. Create an {{variable.Object_Invoice}} with one or more {{variable.Object_LineItem}}s that have a {{variable.Field_LineItem_BalanceDue}}. 4. Create a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off”. 5. Verify a related {{variable.Object_Allocation}} record was created. 6. Create a new {{variable.Object_Transaction}} with {{variable.Field_Transaction_RecordType}} = “Charge” a. Enter an {{variable.Field_Transaction_Amount}}. b. Change the {{variable.Field_Transaction_TransactType}} to “Write Off”. c. Change {{variable.Field_Transaction_TransaStatus}} to “Complete”. 7. The {{variable.Object_Invoice}}’s {{variable.Field_Invoice_WriteOffAmount}} = “the sum of all the amounts in the {{variable.Object_Invoice}}’s related {{variable.Object_LineItem}}’s {{variable.Field_LineItem_AmtWrittenOff}} fields.” 8. {{variable.Object_Invoice}}’s {{variable.Field_Invoice_BalanceDue}} = {{variable.Object_Invoice}} {{variable.Field_Invoice_TotalAmount}} - {{variable.Object_Invoice}} {{variable.Field_Invoice_WriteOffAmount}} 9. The{{variable.Object_Invoice}}’s {{variable.Field_Invoice_Status}} should change to “Completed” when the {{variable.Field_Invoice_BalanceDue}} = “0”. 10. The {{variable.Field_Invoice_PaymentStatus}} will update to “Partially Paid` once the {{variable.Field_Invoice_BalanceDue}} is less than the {{variable.Field_Invoice_TotalAmount}}. The {{variable.Field_Invoice_PaymentStatus}} will update to “Paid” once the {{variable.Field_Invoice_BalanceDue}} = “0”. ### Rollup Allocation Amounts and the Invoice Payment Status When an {{variable.Object_Invoice}} is manually charged through a {{variable.Object_Transaction}} with {{variable.Field_Transaction_TransactType}} = “Write Off”, the following is true. * The {{variable.Object_Invoice}} {{variable.Field_Invoice_WriteOffAmount}} value is the same as the {{variable.Object_Allocation}}’s {{variable.Field_Allocation_Amount}} field. * An {{variable.Object_Allocation}} record with {{variable.Field_Allocation_Type}} = “Write Off” is created. * The {{variable.Object_LineItem}} {{variable.Field_LineItem_AmtWrittenOff}} value is the same as the {{variable.Object_Allocation}}’s {{variable.Field_Allocation_Amount}} field. When an {{variable.Object_Invoice}} is manually captured, the following in true. * The {{variable.Object_LineItem}} {{variable.Field_LineItem_BalancePaid}} is the same as the {{variable.Object_Allocation}} ({{variable.Field_Allocation_Type}} = “Payment”)’s {{variable.Field_Allocation_Amount}} field. When an {{variable.Object_Invoice}} with the {{variable.Field_Invoice_PaymentStatus}} set to “Paid” or “Partially Paid” is refunded, the following is true. * The {{variable.Object_LineItem}} {{variable.Field_LineItem_AmountRefunded}} is the same as the {{variable.Object_Allocation}} ({{variable.Field_Allocation_Type}} = “Payment”)’s {{variable.Field_Allocation_Amount}} field.",
+  "keywords": [
+    "variable",
+    "object_invoice",
+    "write",
+    "object_allocation",
+    "object_transaction",
+    "created",
+    "field_invoice_balancedue",
+    "field_transaction_transacttype",
+    "when",
+    "field_allocation_type",
+    "field_invoice_writeoffamount",
+    "object_lineitem",
+    "then",
+    "related",
+    "field",
+    "paid",
+    "create",
+    "true",
+    "same",
+    "field_allocation_amount"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Go to Custom Setting > Blackthorn Pay – Trigger Settings",
+    "2. Set {{variable",
+    "3. Create an {{variable",
+    "4. Create a {{variable",
+    "5. Verify a related {{variable",
+    "6. Create a new {{variable",
+    "7. The {{variable",
+    "8. {{variable",
+    "9. The{{variable",
+    "10. The {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "msg-ss-schedule-sms",
+  "title": "msg-ss-schedule-sms.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule an SMS ## slug: msg-ss-schedule-sms ## seoTitle: Schedule an SMS ## description: ## contentType: Markdown ## Metadata_End {{snippet.SS_GS_ScheduleAnSMS}}",
+  "keywords": [
+    "schedule",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ss_gs_scheduleansms"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "evbuilder-create-event-begin-scratch-hero-section",
+  "title": "evbuilder-create-event-begin-scratch-hero-section.md",
+  "content": "## Metadata_Start ## code: en ## title: Hero Section ## slug: evbuilder-create-event-begin-scratch-hero-section ## seoTitle: Hero Section ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Hero_Limitation}} {{snippet.EVBuilder_Hero_FeaturesCreate}}",
+  "keywords": [
+    "hero",
+    "section",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "create",
+    "event",
+    "begin",
+    "scratch",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_hero_limitation",
+    "evbuilder_hero_featurescreate"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

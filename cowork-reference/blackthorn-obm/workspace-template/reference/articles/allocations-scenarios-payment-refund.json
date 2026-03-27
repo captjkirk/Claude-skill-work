@@ -1,0 +1,41 @@
+{
+  "id": "allocations-scenarios-payment-refund",
+  "title": "allocations-scenarios-payment-refund.md",
+  "content": "## Metadata_Start ## code: en ## title: Scenarios for Payment and Refund Types ## slug: allocations-scenarios-payment-refund ## seoTitle: Scenarios for Payment and Refund Types ## description: ## contentType: Markdown ## Metadata_End ## Pre-requisite Determine the {{variable.Field_Allocation_Amount}} that you will use for the allocation before you begin the process. You cannot allocate more than the amount that is submitted. ## Allocate Funds to Multiple Line Items on One Invoice 1. Navigate to the {{variable.Object_Allocation}} object. **Lightning:** *Click the App Launcher > Search for and click Allocations.* **Classic:** *Click \"All Tabs\" (\"+\" icon in the top right) > Click Allocation.* ![H_01_01_Create an Allocation](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Create%20an%20Allocation.png){height=\"\" width=\"\"} 2. Click {{variable.button_new}}. 3. Enter information in the following fields. - {{variable.Field_Allocation_Amount}}: The amount to allocate to the related {{variable.Object_Invoice}} or {{variable.Object_LineItem}}. - {{variable.Field_Allocation_Transaction}}: The {{variable.Object_Transaction}} that paid for the {{variable.Object_LineItem}}. - {{variable.Field_Allocation_LineItem}}: The {{variable.Object_LineItem}} the {{variable.Object_Allocation}} is associated with. - {{variable.Field_Allocation_Invoice}} (optional): Automatically populates if the {{variable.Field_Allocation_LineItem}} field is set. Populate this field only if the {{variable.Object_Allocation}} is not associated with a {{variable.Object_LineItem}}. - {{variable.Field_Allocation_Type}}: Set this field to either {{variable.Picklist_AllocationType_Paymen}} or {{variable.Picklist_AllocationType_Refund}} depending on the type of {{variable.Object_Allocation}}. The default setting is {{variable.Picklist_AllocationType_Paymen}}. 4. Click {{variable.Button_Save}}. ![H_01_01_Fields](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Fields.png){height=\"\" width=\"\"} ## Allocate Funds to Multiple Invoices 1. Navigate to the {{variable.Object_Allocation}} object. **Lightning:** *Click the App Launcher > Search for and click Allocations.* **Classic:** *Click \"All Tabs\" (\"+\" icon in the top right) > Click Allocation.* ![H_01_01_Create an Allocation](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Create%20an%20Allocation.png){height=\"\" width=\"\"} 2. Click {{variable.button_new}}. 3. Enter information in the following fields. - {{variable.Field_Allocation_Amount}}: The amount to allocate to the related {{variable.Object_Invoice}} or {{variable.Object_LineItem}}. - {{variable.Field_Allocation_Transaction}}: The {{variable.Object_Transaction}} that paid for the {{variable.Object_LineItem}}. - {{variable.Field_Allocation_Invoice}}: This field determines which {{variable.Object_Invoice}} this {{variable.Object_Allocation}} is associated with. - {{variable.Field_Allocation_Type}}: Set this field to either {{variable.Picklist_AllocationType_Paymen}} or {{variable.Picklist_AllocationType_Refund}} depending on the type of {{variable.Object_Allocation}}. The default setting is {{variable.Picklist_AllocationType_Paymen}}. 4. Click {{variable.Button_Save}}. ![H_01_01_Fields](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Fields.png){height=\"\" width=\"\"} ## Use Allocation to show Refunds on Line Item and Invoice You can use {{variable.Object_Allocation}}s to handle refunds against the {{variable.Object_LineItem}}s or the {{variable.Object_Invoice}}. 1. Create an {{variable.Object_Allocation}} record. 2. Set {{variable.Object_Allocation}} type = {{variable.Picklist_AllocationType_Refund}}. 3. Set the {{variable.Field_Allocation_LineItem}}/{{variable.Field_Allocation_Invoice}} lookup field. Setting a {{variable.Field_Allocation_LineItem}} lookup will auto-populate the {{variable.Field_Allocation_Invoice}}. 4. Select the refund {{variable.Field_Allocation_Transaction}} for the {{variable.Object_Allocation}}. 5. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "variable",
+    "click",
+    "object_allocation",
+    "object_lineitem",
+    "allocation",
+    "field",
+    "allocate",
+    "refund",
+    "h_01_01_create",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Click {{variable",
+    "3. Enter information in the following fields",
+    "4. Click {{variable",
+    "1. Navigate to the {{variable",
+    "2. Click {{variable",
+    "3. Enter information in the following fields",
+    "4. Click {{variable",
+    "1. Create an {{variable",
+    "2. Set {{variable"
+  ],
+  "troubleshooting": []
+}

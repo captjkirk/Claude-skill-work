@@ -1,0 +1,45 @@
+{
+  "id": "payments-deploy-production-connect-authorizenet-live-mode",
+  "title": "payments-deploy-production-connect-authorizenet-live-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Connect to Authorize.net in Live Mode ## slug: payments-deploy-production-connect-authorizenet-live-mode ## seoTitle: Connect to Authorize.net in Live Mode ## description: ## contentType: Markdown ## Metadata_End :::(Error) (Are you ready to go live?) You cannot update the existing test Payment Gateway to live. This will result in an error. Please create a new Payment Gateway. ::: If you have refreshed a partial or full sandbox from Production, please create a template that does not include the {{variable.Object_PaymentGateway}} object. *Otherwise, scheduled {{variable.Object_Transaction}}s in production will be recaptured in the sandbox.* It's time to connect to your {{variable.Product_Authorizenet}} account! Follow the steps below to configure you live {{variable.Product_Authorizenet}} gateway. 1. Click the App Launcher. ![authnet_deploy_connect_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_1.png){height=\"\" width=\"\"} 3. Type \"Payment Gateways\". ![authnet_deploy_connect_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_2.png){height=\"\" width=\"\"} 5. Click \"Payment Gateways\". 6. Click {{variable.button_new}}. 7. Enter a {{variable.Field_PG_PaymentGatewayName}}. 8. Set {{variable.Field_PaymentGateway_Provider}} = “Authorize.net”. ![authnet_deploy_connect_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_3.png){height=\"\" width=\"\"} 10. Click {{variable.Button_Save}}. ![authnet_deploy_connect_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_4.png){height=\"\" width=\"\"} 12. Click the {{variable.Button_PG_ConnecttoGateway}} button. ![authnet_deploy_connect_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_5.png){height=\"\" width=\"\"} 14. {{variable.Product_Authorizenet}}'s [login page will launch in a new tab](https://logintest.authorize.net/?cobrand=sandbox&sub=oauth&client_id=8FmLgAg1pC&state=https%3a%2f%2fblackthornio-ad-dev-ed.my.salesforce.com%2fapex%2fbt_stripe__PaymentGateway_AuthCallback%3ba0M8c00000dS4X0%3b&scope=read%2cwrite&redirect_uri=https%3a%2f%2fpayments-auth.blackthorn.io%2foauthRedirect2){target=\"_blank\"}. 15. Enter your Username & Password. ![authnet_deploy_connect_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_6.png){height=\"\" width=\"\"} 17. Click **LOG IN**. ![authnet_deploy_connect_7](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_7.png){height=\"\" width=\"\"} 19. Click **Allow**. ![authnet_deploy_connect_8](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/authnet_deploy_connect_8.png){height=\"\" width=\"\"} The page will redirect back to {{variable.Product_Salesforce}} and you're all set! ## Troubleshooting **Q:** I think I defined the wrong object during the Relationship step. What do I do? A: Complete the following steps to remove the relationship. 1. Go to Setup. 2. In the Quick Find box, enter and click \"Custom Settings.\" 3. Click **Manage** next to \"Blackthorn Pay - Transaction Parents.\" 4. Find the object/field you want to remove. 5. Click **Del** (Delete) next to the object/field. 6. Go to the Object Manager tab. 7. In the Quick Find box, enter and click \"Transaction.\" 8. Open the relevant Transaction page layout. 9. Delete the lookup field to the object you removed in Step 5. 10. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "variable",
+    "click",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "live",
+    "object",
+    "connect",
+    "authorize",
+    "payment",
+    "enter",
+    "mode"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the App Launcher",
+    "3. Type \"Payment Gateways\"",
+    "5. Click \"Payment Gateways\"",
+    "6. Click {{variable",
+    "7. Enter a {{variable",
+    "8. Set {{variable",
+    "10. Click {{variable",
+    "12. Click the {{variable",
+    "14. {{variable",
+    "15. Enter your Username & Password"
+  ],
+  "troubleshooting": [
+    "Error) (Are you ready to go live?) You cannot update the existing test Payment Gateway to live.",
+    "error.",
+    "Troubleshooting **Q:** I think I defined the wrong object during the Relationship step."
+  ]
+}

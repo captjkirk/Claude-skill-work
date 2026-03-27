@@ -1,0 +1,41 @@
+{
+  "id": "historical-sync",
+  "title": "historical-sync.md",
+  "content": "## Metadata_Start ## code: en ## title: Historical Sync ## slug: historical-sync ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction If you were a {{variable.Product_Stripe}} customer before coming to Blackthorn {{variable.Product_Payments}}, you may want to sync your {{variable.Object_PaymentGatewayCustomer}}s, {{variable.Object_PaymentMethod}}s (Cards and Bank Accounts), and {{variable.Object_Transaction}}s (payments) from {{variable.Product_Stripe}} to {{variable.Product_Salesforce}}. During the sync, if the {{variable.Object_PaymentGatewayCustomer}} email matches a {{variable.Product_Salesforce}} {{variable.Object_Contact}}'s {{variable.Field_Contact_Email}}, the matching {{variable.Object_Contact}} will be populated on the {{variable.Object_PaymentGatewayCustomer}}'s Contact lookup field. *If the {{variable.Object_PaymentGatewayCustomer}}'s email matches with more than one {{variable.Object_Contact}} record {{variable.Field_Contact_Email}}, the {{variable.Object_PaymentGatewayCustomer}}'s Contact lookup field will not be populated.* Blackthorn {{variable.Product_Payments}} has no Contact creation logic. :::(Warning) (Related record matching on 4.163 and beyond) We no longer have hard-coded matching based on email and first name. Matching is now handled using your active Salesforce Duplicate Rules. Click [here](/v1/docs/stripe-customer) for more information. ::: *If you want a Contact record created, either create/update the {{variable.Product_Salesforce}} {{variable.Object_Contact}} record with the same email from {{variable.Product_Stripe}}. Do this before syncing/creating a {{variable.ProcessBuilder}} to create a {{variable.Product_Salesforce}} {{variable.Object_Contact}} when the {{variable.Object_PaymentGatewayCustomer}} record is created in {{variable.Product_Salesforce}}.* The sync process is only to migrate your records from that moment backward. Syncing {{variable.Product_Stripe}} with {{variable.Product_Salesforce}} going forward can be done through [Webhooks](/v1/docs/quick-start), but you should not be originating records outside of {{variable.Product_Salesforce}}. ## Syncing Historical Customers and Payment Methods 1. Navigate to the {{variable.Object_PaymentGateway}} record that you want to sync. ***Lightning/Classic:** Payments (Admin) App > Click the \"Payment Gateways\" Tab* 2. Select the \"View All\" option. 3. Click on {{variable.Object_PaymentGateway}} record you want to sync. 4. Click the **Sync with Stripe** button at the top of the page (Classic User Interface) or the blue drop-down arrow in the top right (Lightning User Interface). 5. Select from 3 different tabs. (Core, Billing, or Connect) ![G_04 historical sync pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%201.png){height=\"\" width=\"\"} 6. Choose a date/time range for the data sync by entering values in the {{variable.Field_PG_SyncStripe_From}} and {{variable.Field_PG_SyncStripe_To}} fields, if applicable. ![G_04 historical sync pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%202.png){height=\"\" width=\"\"} 7. Click the button for the object you'd like to sync. ![G_04 historical sync pic 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%203.png){height=\"\" width=\"\"} 8. A message will appear letting you know the process has started. *When using this function, there are no \"undo\" calls, so be careful with your button click. If you want to make sure everything comes over correctly, sync a short amount of records before syncing them all.* ![G_04 historical sync pic 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%204.png){height=\"\" width=\"\"} :::(Info) ( If you have a lot of records (10,000+), click the **Sync** button and let it run all night.) ::: ![Historical Sync from Stripe to Salesforce: Customers and Payment Methods](https://youtu.be/K3ygrg-Tews){height=\"480\" width=\"640\"} ## Syncing Historical Transactions Once your Customers and {{variable.Object_PaymentMethod}}s have completely synced over, sync your historical {{variable.Object_Transaction}}s. ![Historical Sync from Stripe to Salesforce: Transactions with Blackthorn | Payments](https://www.youtube.com/watch?v=TCfZwBrsHs8){height=\"480\" width=\"640\"} If you want to sync all your {{variable.Object_Transaction}}s from {{variable.Product_Stripe}}, click the **Sync with Stripe** button. If you only want to sync records from a certain date(s), enter the date(s) in the {{variable.Field_PG_SyncStripe_From}} and {{variable.Field_PG_SyncStripe_To}} fields. Upon completion, the {{variable.Field_Transaction_Source}} field on each {{variable.Object_Transaction}} will be set to \"Sync\". :::(Warning) (*When using this function, there are no \"undo\" calls, so be careful with your button click. If you want to make sure everything comes over correctly, sync a short amount of records before syncing them all.*) ::: ## Historical Apex Job - To monitor each {{variable.Task_HistoricalSync}}, navigate to Apex Jobs. ***Lightning/Classic:** Setup > In Quick Find, Search and Click: \"Apex Jobs\".* - The Apex Class is called \"PaymentGateway_SyncBatchable\". ![G_04 historical sync pic 5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/G_04%20historical%20sync%20pic%205.png){height=\"\" width=\"\"} :::(Info) (Click **Abort** next to the \"In Progress\" job if you need to cancel the job.) :::",
+  "keywords": [
+    "variable",
+    "sync",
+    "historical",
+    "click",
+    "g_04",
+    "want",
+    "your",
+    "from",
+    "product_salesforce",
+    "record",
+    "https",
+    "height",
+    "width",
+    "object_paymentgatewaycustomer",
+    "syncing",
+    "records",
+    "button",
+    "product_stripe",
+    "object_contact",
+    "stripe"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Select the \"View All\" option",
+    "3. Click on {{variable",
+    "4. Click the **Sync with Stripe** button at the top of the page (Classic User Interface) or the blue drop-down arrow in the top right (Lightning User Interface)",
+    "5. Select from 3 different tabs",
+    "6. Choose a date/time range for the data sync by entering values in the {{variable",
+    "7. Click the button for the object you'd like to sync",
+    "8. A message will appear letting you know the process has started",
+    "* Payments (Admin) App > Click",
+    "* Setup > In Quick Find, Search and Click"
+  ],
+  "troubleshooting": []
+}

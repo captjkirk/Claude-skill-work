@@ -1,0 +1,40 @@
+{
+  "id": "install-from-salesforce-appexchange",
+  "title": "install-from-salesforce-appexchange.md",
+  "content": "## Metadata_Start ## code: en ## title: Install from Salesforce AppExchange ## slug: install-from-salesforce-appexchange ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Blackthorn Messaging can be installed from the Blackthorn {{variable.Link_CandyShop}} into your environment with these simple steps. 1. Go to the Blackthorn Messaging CandyShop [listing](https://candyshop.blackthorn.io/products/blackthorn-sms/latest){target=\"_blank\"}. 2. Click the **Install Blackthorn SMS - Click Here for Details** button. 3. Login with the credentials to your Salesforce account. 4. Select Install in Production or Install in Sandbox based on where you want to install the package. 5. Choose one of the profiles below: * **Install for Admins Only:** this option will assign the Messaging profile permissions to only those users with a System Administrator profile. * **Install for All Users:** this option will assign the Messaging profile permissions to ALL users in your Salesforce org. * **Install for Specific Profiles:** this option will let you choose which profiles to assign the Messaging profile permissions. :::(Info) (Recommendation) We generally advise choosing the Install for Specific Profiles option. This gives you the greatest level of control over which users will initially have access to Messaging. ::: 6. Accept the remote site named \"api.textey.io\". 7. Messaging should now begin installing into your Salesforce org. The installation process can take several minutes and there's a possibility you will see a message that says \"it's taking a long time\". Don't worry, you'll receive an email when the installation is complete. So far, so good! 8. Once installation is complete, navigate to the Messaging App in the drop-down menu located at the top right-hand corner of Salesforce. 9. Click on the Messaging Administration tab to continue with the setup.",
+  "keywords": [
+    "install",
+    "messaging",
+    "salesforce",
+    "blackthorn",
+    "your",
+    "profiles",
+    "option",
+    "profile",
+    "users",
+    "from",
+    "click",
+    "assign",
+    "permissions",
+    "installation",
+    "appexchange",
+    "into",
+    "candyshop",
+    "choose",
+    "only",
+    "specific"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to the Blackthorn Messaging CandyShop [listing](https://candyshop",
+    "2. Click the **Install Blackthorn SMS - Click Here for Details** button",
+    "3. Login with the credentials to your Salesforce account",
+    "4. Select Install in Production or Install in Sandbox based on where you want to install the package",
+    "5. Choose one of the profiles below: * **Install for Admins Only:** this option will assign the Messaging profile permissions to only those users with a System Administrator profile",
+    "6. Accept the remote site named \"api",
+    "7. Messaging should now begin installing into your Salesforce org",
+    "8. Once installation is complete, navigate to the Messaging App in the drop-down menu located at the top right-hand corner of Salesforce",
+    "9. Click on the Messaging Administration tab to continue with the setup"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "authorizenet-site-configuration",
+  "title": "authorizenet-site-configuration.md",
+  "content": "## Metadata_Start ## code: en ## title: Site Configuration ## slug: authorizenet-site-configuration ## seoTitle: Site Configuration ## description: ## contentType: Markdown ## Metadata_End {{snippet.AuthNetPG_SiteConfiguration}}",
+  "keywords": [
+    "site",
+    "configuration",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "authnetpg_siteconfiguration"
+  ],
+  "category": "admin",
+  "procedures": [],
+  "troubleshooting": []
+}

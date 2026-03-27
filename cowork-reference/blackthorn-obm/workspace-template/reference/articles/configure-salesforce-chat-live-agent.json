@@ -1,0 +1,37 @@
+{
+  "id": "configure-salesforce-chat-live-agent",
+  "title": "configure-salesforce-chat-live-agent.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure for Salesforce Chat (Live Agent) ## slug: configure-salesforce-chat-live-agent ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Are you interested in this extension package?) The Configure for Salesforce Chat (Live Agent) extension package is a paid add-on for Blackthorn Compliance. Please contact your Account Manager to learn more about purchasing it. ::: 1. Install the Salesforce Chat Extension Package: * [production](https://login.salesforce.com/?ec=302&startURL=%2Fpackaging%2FinstallPackage.apexp%3Fp0%3D04t1U0000009G3n){target=\"_blank\"} * [sandbox](https://test.salesforce.com/?ec=302&startURL=%2Fpackaging%2FinstallPackage.apexp%3Fp0%3D04t1U0000009G3n){target=\"_blank\"} 2. Install our package in a sandbox or testing environment. 3. Once installation is complete, Turn on Detection for Live Chat in custom metadata settings. 4. You should see the following alert notification: ![turned on for livechat transcripts\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/turned%20on%20for%20livechat%20transcripts%281%29.png){height=\"\" width=\"\"} 4. Leverage [Salesforce Sensitive Data Rules](https://help.salesforce.com/s/articleView?id=sf.live_agent_block_sensitive_data.htm&type=5){target=\"_blank\"} & Disable Agent Sneak Peak URL. 5. Congratulations! You have successfully configured Salesforce Chat for Blackthorn Compliance. If you are using Salesforce standard feature Sensitive Data Rules, you can use them in tandem with Compliance. Sensitive Data Rules mask known patterns during Live Chats, in browser. Compliance will mask known patterns after the chat has ended, in the Live Chat Transcript object. To read more about Sensitive Data Rules, click [here](https://help.salesforce.com/s/articleView?id=sf.live_agent_block_sensitive_data.htm&type=5){target=\"_blank\"}. :::(Warning) () You still need to install Compliance from the Blackthorn {{variable.Link_CandyShop}}, but we will upgrade your existing package to include Live Agent support. :::",
+  "keywords": [
+    "salesforce",
+    "chat",
+    "live",
+    "agent",
+    "package",
+    "compliance",
+    "https",
+    "target",
+    "_blank",
+    "sensitive",
+    "data",
+    "rules",
+    "configure",
+    "extension",
+    "blackthorn",
+    "install",
+    "your",
+    "more",
+    "about",
+    "starturl"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Install the Salesforce Chat Extension Package: * [production](https://login",
+    "2. Install our package in a sandbox or testing environment",
+    "3. Once installation is complete, Turn on Detection for Live Chat in custom metadata settings",
+    "4. You should see the following alert notification: ![turned on for livechat transcripts\\(1\\)](https://cdn",
+    "4. Leverage [Salesforce Sensitive Data Rules](https://help",
+    "5. Congratulations! You have successfully configured Salesforce Chat for Blackthorn Compliance"
+  ],
+  "troubleshooting": []
+}

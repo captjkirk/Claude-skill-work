@@ -1,0 +1,41 @@
+{
+  "id": "bulk-transactions",
+  "title": "bulk-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Bulk Transactions ## slug: bulk-transactions ## seoTitle: Bulk Transactions ## description: ## contentType: Markdown ## Metadata_End ## Auto-Process/Scheduled Transactions Blackthorn {{variable.Product_Payments}} has separate, scheduled batch jobs to process the daily charge, authorized, payout, transfer and refund {{variable.Object_Transaction}}s. Find details for each scheduled job [here](/v1/docs/scheduled-batch-jobs). :::(Info) (Do you need to configure reattempt logic for your scheduled Transactions?) If you want a new {{variable.Object_Transaction}} automatically created and queued for auto-processing when the original {{variable.Object_Transaction}} fails, click [here](/v1/docs/transaction-reattempt-logic). ::: ## Checkboxes for Declarative Automation The {{variable.Field_Transaction_Authorize}}, {{variable.Field_Transaction_Capture}}, and {{variable.Field_Transaction_Refund}} checkboxes also allow you to process {{variable.Object_Transaction}}s in bulk. When Auto-Process runs, if {{variable.Field_Transaction_Authorize}}, {{variable.Field_Transaction_Capture}}, or {{variable.Field_Transaction_Refund}} are checked, the {{variable.Object_Transaction}} will be authorized, captured, or refunded. Each checkbox performs the same process as if you clicked the {{variable.Button_Transaction_Authorize}}, {{variable.Button_Capture}}, or {{variable.Button_Refund}} button. (The {{variable.Field_Transaction_Authorize}}, {{variable.Field_Transaction_Capture}}, and {{variable.Field_Transaction_Refund}} fields are on the {{variable.Object_Transaction}} object but are not on the {{variable.Field_Transaction_RecordType}} = \"Charge\" {{variable.Object_Transaction}} page layout.) ## Capture Multiple Transactions In List View ![Mass Capture Transactions in a List View](https://youtu.be/AyJ_mZvq7qc){height=\"480\" width=\"640\"} {{variable.Object_Transaction}}s can also be processed manually in batches. Each batch can include up to 200 records through a {{variable.Product_Salesforce}} list view. To capture multiple {{variable.Object_Transaction}}s at one time: 1. In the App Launcher, enter and click “Transaction.” 2. In the {{variable.Object_Transaction}} object navigation, click the \"Scheduled for Auto-Process (Future)\" list view. 4. Use the checkboxes to select the records that will be processed. 5. Click {{variable.Button_Capture}}. (If the {{variable.Button_Capture}} button is not available in your List View, go to the {{variable.Object_Transaction}} object in Setup and add the button to your available List View buttons.) 6. On the next screen, verify which {{variable.Object_Transaction}}s to process. 7. Click {{variable.Button_Capture}}. ## Troubleshooting If you have received an error with your {{variable.Object_Transaction}}s or have a question, please view our [Troubleshooting](/v1/docs/troubleshooting-payments) page.",
+  "keywords": [
+    "variable",
+    "object_transaction",
+    "transactions",
+    "process",
+    "view",
+    "scheduled",
+    "list",
+    "click",
+    "bulk",
+    "auto",
+    "your",
+    "button_capture",
+    "batch",
+    "each",
+    "docs",
+    "checkboxes",
+    "field_transaction_authorize",
+    "field_transaction_capture",
+    "field_transaction_refund",
+    "button"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. In the App Launcher, enter and click “Transaction",
+    "2. In the {{variable",
+    "4. Use the checkboxes to select the records that will be processed",
+    "5. Click {{variable",
+    "6. On the next screen, verify which {{variable",
+    "7. Click {{variable"
+  ],
+  "troubleshooting": [
+    "error with your {{variable.",
+    "Troubleshooting If you have received an error with your {{variable.",
+    "Troubleshooting](/v1/docs/troubleshooting-payments) page."
+  ]
+}

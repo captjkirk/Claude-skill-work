@@ -1,0 +1,30 @@
+{
+  "id": "configure-campaigns",
+  "title": "configure-campaigns.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Campaigns ## slug: configure-campaigns ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You can send a bulk message to all of the Campaign Members on your Campaigns. This article will cover how to configure the Campaign object for bulk sending. ## Add Custom Fields There are four fields that you should add to your Campaign page layout. * `Phone Number` (simplesmsPhone_Numberc) * `Phone Number Display` (simplesmsPhone_Number_Displayc) * `SMS Keyword` (simplesmsSMS_Keywordc) * `Enforce Single Conversation` (simplesmsEnforce_Single_Conversationc) We suggest creating a new \"Messaging\" section on your page layout and adding these four fields to it. ![configure campaigns_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/configure%20campaigns_1.png){height=\"\" width=\"\"} ## Add Custom Button Add the custom button named **Send SMS**. You may see multiple Send SMS buttons, so hover over them to find the one with the API Name of simplesms__Send_SMS_ltng. This is the button you should drag and drop onto your page. ![configure campaigns_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/configure%20campaigns_2.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "configure",
+    "your",
+    "campaigns",
+    "send",
+    "campaign",
+    "custom",
+    "fields",
+    "page",
+    "button",
+    "bulk",
+    "four",
+    "layout",
+    "phone",
+    "number",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

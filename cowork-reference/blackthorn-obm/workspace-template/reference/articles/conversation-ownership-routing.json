@@ -1,0 +1,35 @@
+{
+  "id": "conversation-ownership-routing",
+  "title": "conversation-ownership-routing.md",
+  "content": "## Metadata_Start ## code: en ## title: Conversation Ownership Routing ## slug: conversation-ownership-routing ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Conversation Routing allows you to designate how new conversations are assigned ownership when they are created. * The routing is configured at the phone number level, allowing you to set a different routing option for each of your phone numbers. * The ownership can be routed to a user, queue, or to the related record owner. ## Setting Up Ownership Routing Is Important When a customer sends you a text message, a new Conversation record is created (assuming there is not already an open Conversation between your two phone numbers. This Conversation record needs to be owned by someone so that it can be looked at and responded to. Conversation Routing lets you determine who that someone is so that the conversation can be assigned to the appropriate person. The routing for each phone number can be customized in the Blackthorn Messaging Administration page. 1. Go to the Messaging Administration page. 2. Click into the Phone Numbers section (phone icon). 3. Click the pencil icon under Ownership Routing. ![ownership routing_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/ownership%20routing_1.png){height=\"\" width=\"\"} ## Let's Look at Each of the Routing Options ### User You can assign all new conversations for a phone number to a specific User. This is a good option when you have a unique phone number configured for each user. You can assign all new conversations for the phone number to that one particular user. ### Queue Assign new conversations for a phone number to a Queue. Here we are referring to a standard Salesforce Queue. You would first need to create a Queue and configure it to own Conversation and SMS Message objects. This type of routing is a good option when you have a generic phone number that multiple users are responsible for monitoring. For example, let's say you publish a phone number on your website for your customers to text you. You then have a group of Salesforce users who are responsible for monitoring the inbound texts to that phone number. ### Related Record Owner This option will dynamically set the owner of the new conversation based on the user who owns the related record. For example, suppose one of your Leads sends a text message to you and a new Conversation is created. That Conversation will then be assigned ownership to the Lead Owner. ### Last Sent Message Owner This option will dynamically route the new Conversation to the user who sent the last outbound text message to this recipient. As an example, let's say you have a Contact record named Arthur Blank. You have two users, Julio and Matt. Matt owns the Contact record, but Julio sends a text message. When Arthur responds the conversation is routed to Julio as he was the last outbound sender to Arthur.",
+  "keywords": [
+    "conversation",
+    "phone",
+    "routing",
+    "ownership",
+    "number",
+    "user",
+    "record",
+    "message",
+    "when",
+    "option",
+    "your",
+    "queue",
+    "owner",
+    "text",
+    "conversations",
+    "each",
+    "assigned",
+    "created",
+    "numbers",
+    "related"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to the Messaging Administration page",
+    "2. Click into the Phone Numbers section (phone icon)",
+    "3. Click the pencil icon under Ownership Routing",
+    "* The routing is configure"
+  ],
+  "troubleshooting": []
+}

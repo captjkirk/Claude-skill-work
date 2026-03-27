@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-create-event-begin-scratch-event-items-tickets",
+  "title": "evbuilder-create-event-begin-scratch-event-items-tickets.md",
+  "content": "## Metadata_Start ## code: en ## title: Tickets ## slug: evbuilder-create-event-begin-scratch-event-items-tickets ## seoTitle: Tickets ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Tickets_FeaturesCreate}} Click [Donations](/v1/docs/evbuilder-create-event-begin-scratch-event-items-donations) to add Donations or click [Products](/v1/docs/evbuilder-create-event-begin-scratch-event-items-products) to add Products.",
+  "keywords": [
+    "event",
+    "tickets",
+    "evbuilder",
+    "create",
+    "begin",
+    "scratch",
+    "items",
+    "donations",
+    "products",
+    "click",
+    "docs",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

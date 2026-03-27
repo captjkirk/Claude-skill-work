@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-create-event-begin-scratch-event-items-products",
+  "title": "evbuilder-create-event-begin-scratch-event-items-products.md",
+  "content": "## Metadata_Start ## code: en ## title: Products ## slug: evbuilder-create-event-begin-scratch-event-items-products ## seoTitle: Products ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Products_FeaturesCreate}} ## Other Settings ### Sort Order To [change the order](https://docs.blackthorn.io/docs/event-items-overview#sort-event-items){target=`_blank`} of the {{variable.Object_EventItem}}s on the registration page, add the {{variable.Field_EventItem_SortOrder}} field to the {{variable.Object_EventItem}} object and enter a value. ### Separate from Tickets {{snippet.DisplayDonationProductSeparate}} Click [Donations](/v1/docs/evbuilder-create-event-begin-scratch-event-items-donations) to add Donations or click [Tickets](/v1/docs/evbuilder-create-event-begin-scratch-event-items-tickets) to add Tickets.",
+  "keywords": [
+    "event",
+    "items",
+    "docs",
+    "tickets",
+    "products",
+    "evbuilder",
+    "create",
+    "begin",
+    "scratch",
+    "variable",
+    "donations",
+    "snippet",
+    "sort",
+    "order",
+    "object_eventitem",
+    "click",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

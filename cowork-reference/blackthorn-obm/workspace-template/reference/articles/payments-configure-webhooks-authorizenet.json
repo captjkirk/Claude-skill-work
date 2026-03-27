@@ -1,0 +1,26 @@
+{
+  "id": "payments-configure-webhooks-authorizenet",
+  "title": "payments-configure-webhooks-authorizenet.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Webhooks in Authorize.net ## slug: payments-configure-webhooks-authorizenet ## seoTitle: Configure Webhooks in Authorize.net ## description: ## contentType: Markdown ## Metadata_End {{snippet.PG_ConfigWebhooksAuthNet}}",
+  "keywords": [
+    "configure",
+    "webhooks",
+    "authorize",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "pg_configwebhooksauthnet"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

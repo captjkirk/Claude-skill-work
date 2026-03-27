@@ -1,0 +1,43 @@
+{
+  "id": "account-activation",
+  "title": "account-activation.md",
+  "content": "## Metadata_Start ## code: en ## title: Account Activation ## slug: account-activation ## seoTitle: Account Activation ## description: ## contentType: Markdown ## Metadata_End The A2P submission process is crucial for businesses and organizations that send automated messages to users' phone numbers. To enhance this process, we added a new step called Account Activation that will occur between the Account Registration and Phone Number Setup steps. The Account Activation step requires users to activate their account before adding phone numbers for A2P messaging. The goal is to help prevent errors that may occur due to incomplete or inaccurate account information. ![A2P pic_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20pic_1.png){height=\"\" width=\"\"} After completing the initial Account Registration, users will see the Account Activation screen. Users must enter the Contact Information, Business Information and Usage & Content details. ### Account Setup Process Perform the following steps to set up your account. 1. Complete the Account Registration by providing the Account Number and API key provided by Blackthorn Support. 2. Click the Account Activation tab. 3. Complete the fields in the General Business Information window. * Business Name (required) * Business Address (required) * Industry (required) * Company Website (required) ![A2P Account Activation_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_1.png){height=\"\" width=\"\"} 4. Click {{variable.Button_Next}}. 5. Complete the fields in the Business Entity Information window. * Business Entity Type (required) * Business Registration Number (required) * Business Registration Number Type (required) * Company Status (required) ![A2P Account Activation_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_2.png){height=\"\" width=\"\"} 6. Click {{variable.Button_Next}}. 7. Complete the fields in the Usage & Content window. * Message Volume * Use Case * Opt In Type * Opt In Proof Url ![A2P Account Activation_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_3.png){height=\"\" width=\"\"} 8. Click {{variable.Button_Next}}. 9. Complete the fields in the Contact Information (Primary & Secondary) window. * Primary Contact * First Name * Last Name * Title * Job Position * Email * Phone * Secondary Contact * First Name * Last Name * Title * Job Position * Email * Phone ![A2P Account Activation_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_4.png){height=\"\" width=\"\"} 10. Click {{variable.Button_Next}}. 11. Review the information in the Review & Submit window. ![A2P Account Activation_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_5.png){height=\"\" width=\"\"} 13. Click {{variable.Button_Submit}}. After successful completion of all the steps, the Account Activation gets submitted to Twilio. ![A2P Account Activation_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Account%20Activation_6.png){height=\"\" width=\"\"} ### Phone Number Searching API #### Validating A2P Details Validating A2P details is a crucial step that occurs when sending automated messages to users via platforms like Twilio. This step includes reviewing and verifying the information provided by the business or organization who intends to use the A2P messaging services. Twilio, for example, follows a meticulous validation process before approving the submission. The validation process typically takes about 2 to 3 weeks. During that time, the submitted information is carefully examined to ensure compliance with regulations and best practices. #### Searching Phone Numbers During Twilio’s review and approval period, users can search for and use Phone Numbers by utilizing toll-free phone numbers. This feature ensures that businesses can continue their operations and prepare for A2P messaging without causing any interruptions.",
+  "keywords": [
+    "account",
+    "phone",
+    "information",
+    "business",
+    "activation",
+    "required",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "users",
+    "click",
+    "20account"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Complete the Account Registration by providing the Account Number and API key provided by Blackthorn Support",
+    "2. Click the Account Activation tab",
+    "3. Complete the fields in the General Business Information window",
+    "4. Click {{variable",
+    "5. Complete the fields in the Business Entity Information window",
+    "6. Click {{variable",
+    "7. Complete the fields in the Usage & Content window",
+    "8. Click {{variable",
+    "9. Complete the fields in the Contact Information (Primary & Secondary) window",
+    "10. Click {{variable"
+  ],
+  "troubleshooting": [
+    "errors that may occur due to incomplete or inaccurate account information."
+  ]
+}

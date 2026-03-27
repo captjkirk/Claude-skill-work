@@ -1,0 +1,30 @@
+{
+  "id": "payments-quick-start-guide-overview",
+  "title": "payments-quick-start-guide-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview ## slug: payments-quick-start-guide-overview ## seoTitle: Overview ## description: ## contentType: Markdown ## Metadata_End This Payments Quick Start Guide (QSG) will teach you how to download and install the {{variable.Product_Payments}} app and set up a {{variable.Object_PaymentGateway}}. In this QSG, you will learn how to: * Download and install the {{variable.Product_Payments}} app. * Assign Licenses (if in production). * Assign Permission Sets. * Setup your {{variable.Object_PaymentGateway}}(s). * Stripe * Authorize.net * Spreedly * Set up {{variable.Product_PayLink}}, {{variable.Component_VirtualTerminal}}, and {{variable.Product_DocumentLink}}. * Move historical data to Blackthorn. * Set up FSL (optional). * Go live in production.",
+  "keywords": [
+    "variable",
+    "overview",
+    "payments",
+    "quick",
+    "start",
+    "guide",
+    "download",
+    "install",
+    "product_payments",
+    "object_paymentgateway",
+    "assign",
+    "production",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

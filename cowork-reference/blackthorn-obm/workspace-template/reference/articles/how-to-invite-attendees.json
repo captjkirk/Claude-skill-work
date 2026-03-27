@@ -1,0 +1,34 @@
+{
+  "id": "how-to-invite-attendees",
+  "title": "how-to-invite-attendees.md",
+  "content": "## Metadata_Start ## code: en ## title: Inviting Attendees ## slug: how-to-invite-attendees ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Do you have a list of people that you want to invite to your {{variable.Object_Event}}? You can add them as {{variable.Object_Attendee}} records. These {{variable.Object_Attendee}} records will generate an {{variable.AttendeeLink}}; a unique link that you can send through Salesforce or any integrated email service. When the recipient clicks the link, they are brought to your {{variable.Object_Event}} page with a personal welcome message. Best part? Their information is prefilled when selecting a Ticket. Cool huh?! There are two ways that {{variable.Object_Attendee}} records can be created: * Manually create each {{variable.Object_Attendee}} record. <- quick way if you have a select few to invite. * Automatically create {{variable.Object_Attendee}} records through a process flow, Campaign And Event Sync, or process builder. <- efficient way if you have many {{variable.Object_Attendee}}s that need to be invited. For the instructions below, we will be manually creating one {{variable.Object_Attendee}} record to show you the process. ![Creating and Inviting an Attendee](https://youtu.be/Wy-Jm_2q2eg){height=\"480\" width=\"640\"} ## Create an Attendee Record 1. Navigate to your {{variable.Object_Event}}s {{variable.SFTerm_RelatedList}}s and click {{variable.button_new}} next to Attendees. 2. Either set the {{variable.Field_ETAttendee_Contact}} or {{variable.Field_ETAttendee_Lead}} lookup or create a new one. * Existing {{variable.Field_ETAttendee_Contact}} or {{variable.Field_ETAttendee_Lead}} Lookup: If the person you are inviting already has a {{variable.Object_Contact}} or {{variable.Object_Lead}} record in Salesforce, just set the respective lookup and click {{variable.Button_Save}}. * Create a new {{variable.Object_Contact}} or {{variable.Object_Lead}}: If the person you are inviting does not have a {{variable.Object_Contact}} or {{variable.Object_Lead}} record in Salesforce, define the \"Attendee Info\" fields and click {{variable.Button_Save}}. **NOTE** * {{variable.Object_Contact}} creation is based on your Salesforce matching/duplicate rules. The default matching logic references the {{variable.Object_Contact}}s or {{variable.Object_Lead}}s first name, last name, and email. Click [here](/v1/docs/matching-in-salesforce) for more information regarding our matching logic. * If you didn't define an {{variable.Object_Account}}, but did provide a Bucket Account for this {{variable.Object_Event}} in the {{variable.Object_EventSettings}} record, the new {{variable.Object_Contact}} will be added to that account. ## Set the Registration Status to \"Invited\" When setting the {{variable.Field_ETAttendee_RegistrStatus}} to {{variable.Picklist_AttendeeReg_Invited}} (this can happen automatically with our [Send Invite](/v1/docs/campaign-to-event-sync) button), it tells the {{variable.AttendeeLink}} to show the [personal message](/v1/docs/welcome-message) and prefill the {{variable.Object_Attendee}}'s information when they click on the link. If you have activated our {{variable.Workflow_SendBTEventInvitemail}} [workflow](/v1/docs/email-management-event-invites-reminders-more), when the {{variable.Field_ETAttendee_RegistrStatus}} is updated to {{variable.Picklist_AttendeeReg_Invited}}, an email will be immediately sent to the {{variable.Object_Attendee}}.",
+  "keywords": [
+    "variable",
+    "object_attendee",
+    "record",
+    "object_contact",
+    "salesforce",
+    "when",
+    "create",
+    "click",
+    "inviting",
+    "invite",
+    "your",
+    "object_event",
+    "records",
+    "email",
+    "object_lead",
+    "matching",
+    "docs",
+    "attendees",
+    "link",
+    "message"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to your {{variable",
+    "2. Either set the {{variable",
+    "- quick way if you have a select"
+  ],
+  "troubleshooting": []
+}

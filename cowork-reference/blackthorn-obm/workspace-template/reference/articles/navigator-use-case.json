@@ -1,0 +1,32 @@
+{
+  "id": "navigator-use-case",
+  "title": "navigator-use-case.md",
+  "content": "## Metadata_Start ## code: en ## title: Navigator Use Case ## slug: navigator-use-case ## seoTitle: Navigator Use Case ## description: ## contentType: Markdown ## Metadata_End ## Event: Blackthorn University’s Alumni Reunion Weekend ### Users **User Type 1:** Alumni ({{variable.Object_Attendee}}s) * A Blackthorn University graduate will travel back to campus. * They want to connect with others from their class and enjoy a sense of nostalgia. * They use the {{variable.Product_BlackthoEventNavigator}} app. **User Type 2:** Event Organizer (Salesforce User) * This individual is an employee of Blackthorn University who plans reunion events and other alum gatherings throughout the year. * They create or configure the Salesforce {{variable.Object_Event}} record for the reunion. * They use the {{variable.Product_MobileCheck-inApp}} to check in {{variable.Object_Attendee}}s. ### Event Objectives * Maintain a strong alumni network. * Maintain relationships between the university and the alumni, which results in more fundraising. * Create connections to help build relationships that result in donations in the future. ### About the Attendees * Usually, 10-50% of any specific class year will attend. * A single reunion may include the classes of ‘80, ‘85, ‘90, ‘95, etc. * Most reunions have between 1,000 and 3,000 attendees, who can be split into different graduation years. ### The Event The Event Organizer(s) plans the {{variable.Object_Event}} and invites {{variable.Object_Attendee}}s using {{variable.Product_Salesforce}} and the {{variable.Product_Events}} app. At the {{variable.Object_Event}}, Event Organizers use the {{variable.Product_MobileCheck-inApp}} to check in {{variable.Object_Attendee}}s for the {{variable.Object_Event}} and Sessions. {{variable.Object_Attendee}}s use the Navigator app to keep track of their schedule, sign up or cancel registrations for free {{variable.Object_Session}}s, check in for {{variable.Object_Session}}s, see who else is attending the {{variable.Object_Event}}, receive essential notifications, and review important information the Event Organizers want to share (maps and other documentation). After the {{variable.Object_Event}}, organizers can use data from the Navigator app and Salesforce to plan future events, examine ROI, and guide relationship-building for future donations.",
+  "keywords": [
+    "variable",
+    "event",
+    "object_event",
+    "navigator",
+    "object_attendee",
+    "university",
+    "alumni",
+    "reunion",
+    "they",
+    "case",
+    "blackthorn",
+    "user",
+    "salesforce",
+    "check",
+    "future",
+    "organizers",
+    "type",
+    "want",
+    "from",
+    "their"
+  ],
+  "category": "events",
+  "procedures": [
+    "* They create or configure"
+  ],
+  "troubleshooting": []
+}

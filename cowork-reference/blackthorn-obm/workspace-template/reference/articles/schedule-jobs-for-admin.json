@@ -1,0 +1,30 @@
+{
+  "id": "schedule-jobs-for-admin",
+  "title": "schedule-jobs-for-admin.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule Jobs for Admin ## slug: schedule-jobs-for-admin ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Select a date and time in the future and rest assured that your message will be sent whether you're at your desk or on the go. Whenever a message is scheduled to be sent at a later time, whether a single message or bulk SMS, all the messages will appear under the Scheduled Jobs. Messaging Administration -> Configuration Settings -> Scheduled Jobs ## Actions to Perform on Scheduled Jobs * **Start:** To begin or set out the scheduled job for individual messages. * **Stop:** Puts a pause to the scheduled job, which will cease all the individual planned messages from sending. * **Delete:** Cancels or removes the scheduled bulk SMS from sending. You cannot restart it once you delete the bulk SMS schedule. ![sched jobs for admin 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/sched%20jobs%20for%20admin%201.jpeg){height=\"\" width=\"\"} **Note:** The individually scheduled messages will automatically get started/resumed if any user sends an SMS from the Blackthorn Messaging Messenger. ## Actions to Perform on Scheduled Messages An insight of all the messages scheduled individually. You can separately perform additional actions on these messages. * **Edit Message:** Change the body of the message * **Reschedule Message:** You can schedule the message for another time * **Send Now:** Sends the message right away * **Cancel Message:** Calls off the message * **Delete Message:** Removes the message ![sched jobs for admin 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/sched%20jobs%20for%20admin%202.jpeg){height=\"\" width=\"\"}",
+  "keywords": [
+    "message",
+    "scheduled",
+    "jobs",
+    "messages",
+    "schedule",
+    "admin",
+    "sched",
+    "time",
+    "bulk",
+    "actions",
+    "perform",
+    "from",
+    "delete",
+    "your",
+    "sent",
+    "whether",
+    "messaging",
+    "individual",
+    "sending",
+    "removes"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

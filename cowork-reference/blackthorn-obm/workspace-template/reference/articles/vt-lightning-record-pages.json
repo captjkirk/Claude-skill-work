@@ -1,0 +1,40 @@
+{
+  "id": "vt-lightning-record-pages",
+  "title": "vt-lightning-record-pages.md",
+  "content": "## Metadata_Start ## code: en ## title: Lightning Record Pages ## slug: vt-lightning-record-pages ## seoTitle: Lightning Record Pages ## description: ## contentType: Markdown ## Metadata_End The most common location for the {{variable.Component_BTPayVirtualTerminal}} is on a Lightning Record Page. Follow the steps below to add the {{variable.Component_BTPayVirtualTerminal}} to a Lightning Record Page. 1. Navigate to the Lightning Record Page where you want to place the {{variable.Component_BTPayVirtualTerminal}}. 2. Click the **Gear icon** in the upper right-hand corner. 3. Click **Edit Page** to open the Lightning App Builder. 4. Scroll down to the Custom - Managed section in the Components sidebar. ![Lightning Record Pages_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20Record%20Pages_1.png){height=\"\" width=\"\"} 6. Locate the {{variable.Component_BTPayVirtualTerminal}} component in the list. 7. Drag and drop it onto the section, tab, or location of your choosing on the Lightning Record Page. ![Lightning Record Pages_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20Record%20Pages_2.png){height=\"\" width=\"\"} 9. To ensure the {{variable.Component_BTPayVirtualTerminal}} uses the correct record as the Parent Object, set the {{variable.Field_VT_RecordID}} input to \"{record.id}\". ![Lightning Record Pages_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20Record%20Pages_3.png){height=\"\" width=\"\"} 11. You can also add filters for component visibility if you want the {{variable.Component_BTPayVirtualTerminal}} to only appear on a page when the specified criteria are met. 12. Click {{variable.Button_Save}} when you are done making the desired changes. You can now make additional configurations such as adding fields, pre-populating values, customizing labels, or further customizing the visible actions and defaults on the user interface.",
+  "keywords": [
+    "lightning",
+    "record",
+    "variable",
+    "component_btpayvirtualterminal",
+    "page",
+    "pages",
+    "click",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20record",
+    "height",
+    "width",
+    "location"
+  ],
+  "category": "ui-experience",
+  "procedures": [
+    "1. Navigate to the Lightning Record Page where you want to place the {{variable",
+    "2. Click the **Gear icon** in the upper right-hand corner",
+    "3. Click **Edit Page** to open the Lightning App Builder",
+    "4. Scroll down to the Custom - Managed section in the Components sidebar",
+    "6. Locate the {{variable",
+    "7. Drag and drop it onto the section, tab, or location of your choosing on the Lightning Record Page",
+    "9. To ensure the {{variable",
+    "11. You can also add filters for component visibility if you want the {{variable",
+    "12. Click {{variable"
+  ],
+  "troubleshooting": []
+}

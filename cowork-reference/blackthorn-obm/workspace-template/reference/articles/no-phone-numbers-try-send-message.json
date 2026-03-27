@@ -1,0 +1,39 @@
+{
+  "id": "no-phone-numbers-try-send-message",
+  "title": "no-phone-numbers-try-send-message.md",
+  "content": "## Metadata_Start ## code: en ## title: Why don’t I see any phone numbers when I try to send a message? ## slug: no-phone-numbers-try-send-message ## seoTitle: Why don’t I see any phone numbers when I try to send a message? ## description: ## contentType: Markdown ## Metadata_End ## Grant Access If the phone nummber is already configured, perform the following steps. 1. If you're in Lightning, switch to Salesforce Classic. 2. Go to the Phone Number record that the User should have access to. ![Messaging_Cannot See Phone Number_Sharing](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Cannot%20See%20Phone%20Number_Sharing.png){height=\"\" width=\"\"} 4. Click **Sharing**. 6. Add the User who sees the warning message, and grant Read access. ![Messaging_Cannot See Phone Number_Sharing2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Cannot%20See%20Phone%20Number_Sharing2.png){height=\"\" width=\"\"} ## Update Phone Number Record If you've confirmed the user has access to the record but still can’t see phone numbers, complete the following steps. 1. Go to the Phone Number record. 2. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_Phone_AvailabForCampaign}} field. ![Messaging_Cannot See Phone Number_Available Campaign Field](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Cannot%20See%20Phone%20Number_Available%20Campaign%20Field.png){height=\"\" width=\"\"} 4. Uncheck the {{variable.Field_Phone_AvailabForCampaign}} checkbox. 5. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "phone",
+    "messaging_cannot",
+    "numbers",
+    "message",
+    "access",
+    "record",
+    "variable",
+    "send",
+    "number",
+    "user",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20see"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. If you're in Lightning, switch to Salesforce Classic",
+    "2. Go to the Phone Number record that the User should have access to",
+    "4. Click **Sharing**",
+    "6. Add the User who sees the warning message, and grant Read access",
+    "1. Go to the Phone Number record",
+    "2. Click the {{variable",
+    "4. Uncheck the {{variable",
+    "5. Click {{variable"
+  ],
+  "troubleshooting": []
+}

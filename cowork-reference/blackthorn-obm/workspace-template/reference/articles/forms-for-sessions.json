@@ -1,0 +1,41 @@
+{
+  "id": "forms-for-sessions",
+  "title": "forms-for-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Forms for Sessions ## slug: forms-for-sessions ## seoTitle: Forms for Sessions ## description: ## contentType: Markdown ## Metadata_End The Forms for Sessions feature allows Event Organizers to tie questions, or a {{variable.Object_Form}}, to a single {{variable.Object_Session}}. This is especially helpful if you require specific information from Session Attendees, such as selecting an entree for a dinner. ## Benefits Customize the registration experience by asking questions of only those Attendees who sign up for a specific {{variable.Object_Session}} in the context of the {{variable.Object_Session}}-selection step. Reduce the amount of time Event Organizers need to spend on follow-up activities, such as asking for entrée selections. ## Use Cases An alumni event includes a {{variable.Object_Session}} with a formal dinner. Event Organizers can ask only those Attendees who registered for the dinner about their entrée selection and if they have any table companion preferences. An organization has planned a weekend event for its clients. One of the optional activities is an off-site gathering. With Forms for Sessions, Event Organizers can ask Attendees who select that {{variable.Object_Session}} to indicate whether they will use the provided shuttle or drive themselves. A local healthcare organization offers different classes or {{variable.Object_Session}}s as part of its community outreach. Before the {{variable.Object_Session}} starts, organizers would like to gather information about the participants’ level of experience with the topic. ## Setup :::(Warning) (When to Use Forms for Sessions) Forms for Sessions can only be used during the pre-registration or check-out phase of registering for an Event. A Form attached to a Session will not be visible if a registered Attendee later goes to their AttendeeLink to register for a free Session. In this case, an Event Organizer must contact the Attendee to ask those questions. ::: The {{variable.Object_Session}} object includes the {{variable.Field_Session_Form}} (conference360__Form__c) field which links a {{variable.Object_Form}} to the {{variable.Object_Session}}. 1. Add the {{variable.Field_Session_Form}} field to the {{variable.Object_Session}} object’s page layout. 1. Go to Setup. 2. Click the Object Manager tab. 3. Locate and click the link for the Session object. 4. Click the Page Layout tab. 5. Click the layout you want to update. 6. Enter \"Form\" in the search box. 7. Drag and drop the {{variable.Field_Session_Form}} field onto the page layout. 8. Click {{variable.Button_Save}}. 2. [Create a Form](https://docs.blackthorn.io/docs/custom-questions){target=`_blank`}. *Important Note:* As of August 2025, Conditional Questions do not work for Forms for Sessions. 3. Add the {{variable.Object_Form}} to the {{variable.Object_Session}}’s {{variable.Field_Session_Form}} field. When an Attendee registers for the Event and adds the Session to their cart, they will see the questions that are related to the Session. After they answer the questions from the {{variable.Object_Form}} and the checkout process, Salesforce will create a related Form Submission Answer record and link it to the correct Session. The {{variable.Object_ET_FormSubmission}} record’s {{variable.Field_FrmSub_Session}} field will be populated with the related Session and tied to the Form Submission Answers.",
+  "keywords": [
+    "variable",
+    "object_session",
+    "event",
+    "forms",
+    "sessions",
+    "session",
+    "questions",
+    "organizers",
+    "form",
+    "field",
+    "click",
+    "object_form",
+    "attendees",
+    "they",
+    "object",
+    "field_session_form",
+    "layout",
+    "dinner",
+    "only",
+    "their"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Add the {{variable",
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. Locate and click the link for the Session object",
+    "4. Click the Page Layout tab",
+    "5. Click the layout you want to update",
+    "6. Enter \"Form\" in the search box",
+    "7. Drag and drop the {{variable",
+    "8. Click {{variable",
+    "2. [Create a Form](https://docs"
+  ],
+  "troubleshooting": []
+}

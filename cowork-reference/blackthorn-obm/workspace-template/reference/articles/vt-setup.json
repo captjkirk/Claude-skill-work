@@ -1,0 +1,30 @@
+{
+  "id": "vt-setup",
+  "title": "vt-setup.html",
+  "content": "The is supported for use on Lightning Record Pages, Experience Cloud Sites (both authenticated and un-authenticated), and in Screen Flows. Click the link below to set up the for your specific use case. BT Payments Virtual Terminal Lightning Record Pages Custom Aura Component (Advanced) Custom Component Scenario BT Payments LWC Virtual Terminal LWC Experience Cloud (Beta) LWC Lightning Record Page (Beta) LWC Screen Flow Component (Beta)",
+  "keywords": [
+    "lightning",
+    "record",
+    "component",
+    "beta",
+    "pages",
+    "experience",
+    "cloud",
+    "authenticated",
+    "screen",
+    "payments",
+    "virtual",
+    "terminal",
+    "custom",
+    "supported",
+    "sites",
+    "both",
+    "flows",
+    "click",
+    "link",
+    "below"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

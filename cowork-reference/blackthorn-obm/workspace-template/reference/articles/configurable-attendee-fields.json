@@ -1,0 +1,30 @@
+{
+  "id": "configurable-attendee-fields",
+  "title": "configurable-attendee-fields.html",
+  "content": "Overview The {{variable.Product_MobileCheck-inApp}} ’s \"Configurable Attendee Fields\" feature provides an additional level of customization by allowing Event Organizers to tailor the information visible to Event Staff during {{variable.Object_Attendee}} and {{variable.Object_SessionAttendee}} check-ins. Organizers can add a variety of fields to the {{variable.Product_MobileCheck-inApp}} ’s Attendee Details screen. Previously, only basic {{variable.Object_Attendee}} details were shown. This feature leverages {{variable.Product_Salesforce}} 's field set functionality by permitting users to select both standard and custom fields, such as a {{variable.Field_Event_Seat_SeatNumber}} , {{variable.Field_Event_Table_TableNumber}} , {{variable.Field_ETEvent_EventName}} , and personal data, to suit their specific needs. It also streamlines the check-in process and ensures it aligns perfectly with individual {{variable.Object_Event}} requirements. Using Configurable Attendee Fields The new field set is on the {{variable.Object_Attendee}} and {{variable.Object_Seat}} objects and allows users to incorporate a wide range of information by leveraging available fields and object relationships. In addition to the custom fields on the {{variable.Object_Attendee}} , {{variable.Object_Seat}} , and {{variable.Object_Table}} objects, users can add fields from the {{variable.Object_Contact}} , {{variable.Object_Account}} , and {{variable.Object_Lead}} objects and the dynamic fields defined in the {{variable.Object_Attendee}} , {{variable.Object_Seat}} , and {{variable.Object_Table}} field sets. Once the field sets are configured in {{variable.Product_Salesforce}} , the {{variable.Product_MobileCheck-inApp}} automatically detects these changes and displays the fields. No additional manual configuration is required within the app itself. Mobile Check-in app users can query {{variable.Object_Attendee}} data, including data in custom fields defined in field sets. Queries will return data from the {{variable.Object_Attendee}} , {{variable.Object_Seat}} , {{variable.Object_Table}} , and related {{variable.Object_Contact}} or {{variable.Object_Account}} objects and the dynamic fields defined in the {{variable.Object_Attendee}} , {{variable.Object_Seat}} , and {{variable.Object_Table}} field sets. New Field Sets Attendee Object Event Organizers can use the following field set on the {{variable.Object_Attendee}} object to customize the fields displayed on the Attendee Details page in the Mobile Check-In app. Field Set Label: Blackthorn | Mobile Check In Attendee Details API Name: conference360__BT_Mobile_Check_in_Attendee_Details__c Description: This field set controls which Attendee fields are visible on the Attendee Detail screen in the Mobile Check-In app. Seat Object Event Organizers can use the following field set on the {{variable.Object_Seat}} object to customize the fields displayed on the Attendee Details page in the Mobile Check-In app. Field Set Label: Blackthorn | Mobile Check In Attendee Details API Name: conference360__BT_Mobile_Check_in_Attendee_Details__c Description: This field set controls which Table and Seat fields are visible on the Attendee Detail screen in the Mobile Check-in app. Limitation To ensure optimal performance and user experience, we suggest displaying no more than 10 fields at a time. Add Fields to a Field Set Configure a field set to display fields on the Attendee Details screen. For the following example, we will use the {{variable.Object_Attendee}} object. Use the same steps to customize the field set on the {{variable.Object_Seat}} object. Go to Setup. Click the Object Manager tab. In the Quick Search box, enter and select “Attendee.” Click Attendees. Click the Field Set tab. Click “Blackthorn | Mobile Check In Attendee Details”. Locate the field(s) you want to add. Drag and drop the field(s) into the “In the Field Set” box. Click {{variable.Button_Save}} . NOTE: Custom fields can also be created on the {{variable.Object_Attendee}} and {{variable.Object_Seat}} objects and then added to their respective field sets. Example The Event Organizer updates the Attendee object’s “Blackthorn | Mobile Check In Attendee Details” field set to include the {{variable.Field_Attendee_DietaryPreferen}} field. They then update the Seat object’s “Blackthorn | Mobile Check In Attendee Details” field set to include the Seat record’s {{variable.Field_Seat_TableName}} and {{variable.Field_Event_Seat_SeatNumber}} fields. Now, when an Attendee selects a dietary preference when registering for an Event and is assigned a Table and Seat, the Mobile Check-in app user will see the information on the Attendee’s information screen.",
+  "keywords": [
+    "variable",
+    "field",
+    "fields",
+    "attendee",
+    "check",
+    "object_attendee",
+    "mobile",
+    "details",
+    "object",
+    "object_seat",
+    "event",
+    "sets",
+    "screen",
+    "objects",
+    "blackthorn",
+    "seat",
+    "click",
+    "organizers",
+    "information",
+    "users"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

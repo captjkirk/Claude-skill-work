@@ -1,0 +1,30 @@
+{
+  "id": "navigator-app-release-notes",
+  "title": "navigator-app-release-notes.html",
+  "content": "Version 1.2 Released September 2025 Bug Fixes Android Devices When using a smartphone running Android 15 or higher, the user can see the app’s content, the phone’s system status bar (top notification bar), and the bottom navigation bars. Previously, the app’s content covered the phone’s system status bar and bottom navigation bars. Magic Links When a user clicks an expired magic link, the app redirects them to the “Credentials” screen, where they are prompted to request a new magic link or OTP code. Previously, the app remained stuck on the “Welcome” screen. When a user receives and clicks a new magic link, the Events list will load. Previously, the app remained stuck on the “Credentials” screen. Enhancements Push Notifications: If an Attendee using the Navigator app receives a push notification with a clickable (deep) link to an Event, Session, or Speaker, they can click the link and go to the specific location within the app. Upcoming Events If users open the Navigator app when no upcoming Events are on the Event list, they will see a message instructing them to sign out/sign in, switch organizations, or contact their Event Organizer. Previously, there was no way to sign out of the app. Users could only switch to a different organization or uninstall/reinstall the app. If an Attendee cancels their registration for an Event (Attendee {{variable.Field_Attendee_RegistratStatus}} = “Canceled”), then the Event will no longer be visible on the “Upcoming Events” page. Events will only appear on the “Upcoming Events” page if an Attendee has a {{variable.Field_Attendee_RegistratStatus}} of “Registered” or “Invited.” UX Updates In the Attendee list, long Attendees’ names will take up more space and no longer be cut off. The text in an Event’s description will no longer be cut off mid-word when it reaches the end of a row. Instead, the word/text will wrap to the following line. Version 1.1 Released August 2025 The Blackthorn Event Navigator app puts critical Event information in your Attendees' hands when they need it. Attendees can manage their agenda at multi-session Events, view venue maps, and access their Ticket(s) in one place. They can also add and remove free Sessions at the Event, saving everyone time. Easy Setup - It’s as simple as enabling the app on an Event record , uploading necessary maps, and adjusting navigation labels. Effortless Updates – Make changes to your Event and watch them appear in the Navigator app, creating a seamless experience for Attendees. Real-time Notifications – send push notifications with just-in-time Session reminders, agenda updates, or last-minute venue changes to Attendees. Attendee Connections – both you and your Attendees can use the app to build connections by exploring the Attendee List and sharing social media profiles. Save Time and Resources – Gone are the days of printing and reprinting agendas and updating information in multiple places. Discover the benefits of your event staff focusing on other high-priority tasks. Click Attendee for information about the Attendee experience, or click Event Organizer to explore how the app works. To sign up for the app, please fill out the Navigator Free Trial form, and your Customer Success Manager will contact you.",
+  "keywords": [
+    "event",
+    "attendee",
+    "events",
+    "when",
+    "attendees",
+    "link",
+    "they",
+    "navigator",
+    "your",
+    "previously",
+    "magic",
+    "list",
+    "upcoming",
+    "sign",
+    "their",
+    "time",
+    "user",
+    "navigation",
+    "them",
+    "screen"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

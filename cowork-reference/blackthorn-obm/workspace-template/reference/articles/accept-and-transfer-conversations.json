@@ -1,0 +1,30 @@
+{
+  "id": "accept-and-transfer-conversations",
+  "title": "accept-and-transfer-conversations.md",
+  "content": "## Metadata_Start ## code: en ## title: Accept and Transfer Conversations ## slug: accept-and-transfer-conversations ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You now have the ability to Accept or Transfer conversations within Blackthorn Messaging. Accepting a conversation means assigning ownership of that conversation to yourself. While Transferring a conversation means assigning ownership of that conversation to another user or queue.",
+  "keywords": [
+    "conversation",
+    "accept",
+    "transfer",
+    "conversations",
+    "means",
+    "assigning",
+    "ownership",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "ability",
+    "within",
+    "blackthorn",
+    "messaging"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

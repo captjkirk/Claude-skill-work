@@ -1,0 +1,30 @@
+{
+  "id": "allocation-fields",
+  "title": "allocation-fields.md",
+  "content": "## Metadata_Start ## code: en ## title: Allocation Fields ## slug: allocation-fields ## seoTitle: Allocation Fields ## description: ## contentType: Markdown ## Metadata_End | Field Label | Field Name | Data Type | Description | | --- | --- | --- | --- | | Allocation Name | Name | Auto Number | The automatically assigned name of the Allocation. | | Amount | bt_stripe__Amount__c | Currency(16, 2) | The amount to allocate to the related Invoice or Line Item. | | Created By | CreatedById | Lookup(User) | | | Invoice | bt_stripe__Sales_Document__c | Lookup(Invoice) | The related Invoice | | Last Modified By | LastModifiedById | Lookup(User) | | | Line Item | bt_stripe__Line_Item__c | Lookup(Line Item) | The Line Item that the Allocation is related to. | | Owner | OwnerId | Lookup(User,Group) | | | Transaction | bt_stripe__Transaction__c | Lookup(Transaction) | The Transaction that the Allocation is related to. | | Type | bt_stripe__Type__c | Picklist | Select the type of Allocation - Payment, Refund, or Write Off |",
+  "keywords": [
+    "allocation",
+    "lookup",
+    "name",
+    "related",
+    "invoice",
+    "line",
+    "item",
+    "fields",
+    "type",
+    "user",
+    "transaction",
+    "description",
+    "field",
+    "amount",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "contenttype"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-features-general-info",
+  "title": "evbuilder-features-general-info.md",
+  "content": "## Metadata_Start ## code: en ## title: General Information ## slug: evbuilder-features-general-info ## seoTitle: General Information ## description: ## contentType: Markdown ## Metadata_End * Users can return to the General Information page at any point during the {{variable.Object_Event}} creation process, and they will see all the information that was previously entered. * After a user modifies any part of an {{variable.Object_Event}} with the {{variable.Component_EventBuilder}} and saves the changes, they will be redirected to the relevant {{variable.Component_EventBuilder}} section. * Featured Events appear in the {{variable.Component_EventBuilder}} as they are added.",
+  "keywords": [
+    "variable",
+    "general",
+    "information",
+    "they",
+    "component_eventbuilder",
+    "object_event",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "info",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "users",
+    "return"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

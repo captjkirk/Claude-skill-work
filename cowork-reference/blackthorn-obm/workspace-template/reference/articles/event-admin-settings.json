@@ -1,0 +1,34 @@
+{
+  "id": "event-admin-settings",
+  "title": "event-admin-settings.md",
+  "content": "## Metadata_Start ## code: en ## title: Settings ## slug: event-admin-settings ## seoTitle: Settings ## description: ## contentType: Markdown ## Metadata_End ![Events Admin Tab_Settings Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Settings%20Tab.png){height=\"\" width=\"\"} ## Vanity Domain The {{variable.Field_Domain_VanityDomain}} field allows users to set a domain other than https://events.blackthorn.io for the remote site \"Events_Domain.\" To confirm if the update is successful, check the following: * For the remote site \"Events_Domain,\" go to Setup > Security > Remote Site Settings > Events_Domain. * For the Platform Domain field, go to Custom Settings > Blackthorn | Events Settings > Click \"Manage\" > Platform Domain. For more information about custom domains, go to [Customized Blackthorn Events Domain](https://docs.blackthorn.io/docs/custom-domains). ## Favicon URL Users with {{variable.PS_ET_Admin}} permissions can add a favicon URL to the {{variable.Field_ETETSettings_FaviconUrl}} field. The favicon URL is stored in the {{variable.Object_EventSettings}} record. For more information, go to [Favicon URL](https://docs.blackthorn.io/docs/event-settings-1#favicon-url). * * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. :::",
+  "keywords": [
+    "settings",
+    "events",
+    "blackthorn",
+    "domain",
+    "favicon",
+    "https",
+    "variable",
+    "docs",
+    "admin",
+    "field",
+    "remote",
+    "site",
+    "events_domain",
+    "custom",
+    "event",
+    "users",
+    "platform",
+    "click",
+    "more",
+    "information"
+  ],
+  "category": "events",
+  "procedures": [
+    "* For the remote site \"Events_Domain,\" go to Setup",
+    "* For the Platform Domain field, go to Custom Settings > Blackthorn | Events Settings > Click",
+    "* * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click"
+  ],
+  "troubleshooting": []
+}

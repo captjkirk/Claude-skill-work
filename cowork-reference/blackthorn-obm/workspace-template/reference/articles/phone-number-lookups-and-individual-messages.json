@@ -1,0 +1,30 @@
+{
+  "id": "phone-number-lookups-and-individual-messages",
+  "title": "phone-number-lookups-and-individual-messages.md",
+  "content": "## Metadata_Start ## code: en ## title: Lookups and Individual Messages ## slug: phone-number-lookups-and-individual-messages ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The Blackthorn Messaging Messenger component will leverage your Phone Number Lookup data in a few new ways. * Display phone number types in the To drop-down. * Alert you if you try to send a text to a landline (optional). * Automatically lookup a phone number when you send a text (optional). Let's look at each one. The component can now display the phone type next to each phone field listed in the To drop-down. This will help you quickly identify which phone numbers are not capable of receiving SMS. When you're selecting a phone field to send a text message to, you will see one of the following icons: ![individual messages_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/individual%20messages_1.jpeg){height=\"\" width=\"\"} This indicates the phone number is either a Mobile or VoIP number. Mobile phone numbers are SMS-capable and are the type of phone numbers associated with a recipient's mobile phone. VoIP phone numbers are typically SMS-capable and are associated with an internet phone service, such as Google Voice, Skype, etc. ![individual messages_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/individual%20messages_2.jpeg){height=\"\" width=\"\"} This indicates the phone number is a landline. This is a business, home phone, or a phone number that is otherwise incapable of receiving SMS. ![individual messages_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/individual%20messages_3.jpeg){height=\"\" width=\"\"} This indicates the phone number has not been looked up, yet. Thus, we cannot determine what type of phone number it is. You would need to perform a lookup on the phone number before one of the above icons would be displayed. You can turn on a setting that will alert you if you try to send a text to a landline. You will see a pop-up that lets you cancel sending the message. You can turn on a setting to enable automatic lookups. When you send a text to a number that has not been looked up, it will first perform a lookup on the phone number. If the phone number is a landline, you will see a pop-up alerting you and allowing you to choose to proceed or cancel. If the phone number is not a landline the text message will be sent.",
+  "keywords": [
+    "phone",
+    "number",
+    "individual",
+    "text",
+    "send",
+    "landline",
+    "lookup",
+    "numbers",
+    "lookups",
+    "when",
+    "type",
+    "capable",
+    "message",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

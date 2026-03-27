@@ -1,0 +1,33 @@
+{
+  "id": "payments-dataload-historical-transactions-payment-methods",
+  "title": "payments-dataload-historical-transactions-payment-methods.md",
+  "content": "## Metadata_Start ## code: en ## title: Payment Methods ## slug: payments-dataload-historical-transactions-payment-methods ## seoTitle: Payment Methods ## description: ## contentType: Markdown ## Metadata_End ### Source: Raw credit card data Turn off all Payment Method-related custom settings or check the Blackthorn Pay - Trigger Settings' custom setting {{variable.CS_PTTriggerSetting_DisableAll}} checkbox. :::(Info) (Double Check Your Mapping) Map your org's Record Type ID value, not the text word. This can be found by navigating to the object's RT listing, clicking **Charge Card** or **ACH**, and pulling the ID from the URL. ::: #### Required Fields * {{variable.Field_PM_RecordType}} = \"Charge Card\" or \"ACH\" * {{variable.Field_PM_Contact}} #### Suggested Fields * {{variable.Field_PM_Account}} * {{variable.Field_PM_Email}} * Address fields 1. Using the Data Loader, set your Batch Size to \"1\". 2. Stripe export with Card IDs & Customer IDs. #### Map these Fields: * {{variable.Field_PM_Last4Digits}} * {{variable.Field_PM_CurrencyISO}} * {{variable.Field_PM_CountryISO}} * {{variable.Field_PM_PaymentMethodStatus}} = \"Valid\"",
+  "keywords": [
+    "variable",
+    "payment",
+    "card",
+    "fields",
+    "methods",
+    "your",
+    "data",
+    "custom",
+    "settings",
+    "check",
+    "charge",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "dataload",
+    "historical",
+    "transactions",
+    "seotitle"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Using the Data Loader, set your Batch Size to \"1\"",
+    "2. Stripe export with Card IDs & Customer IDs"
+  ],
+  "troubleshooting": []
+}

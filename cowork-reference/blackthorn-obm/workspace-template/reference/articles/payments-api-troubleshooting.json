@@ -1,0 +1,36 @@
+{
+  "id": "payments-api-troubleshooting",
+  "title": "payments-api-troubleshooting.md",
+  "content": "## Metadata_Start ## code: en ## title: API Troubleshooting/FAQ ## slug: payments-api-troubleshooting ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Blackthorn no longer supports Payments APIs.) The documentation provided is a self-help resource for legacy implementations only. ::: ## How can I create a valid \"test\" Payment Method? * Create a Mock Class to mock the response of a valid stripe customer and Payment Method. * In the test class use this mock class. * Register this Payment Method by calling pm.registerPM(); Then invoke the commitWork. ##Running doc of API errors ## Automatically capture authorized charges when running a Batch Job **Problem:** The batch job could set the (completed/authorized) charge to capture = true, but the transaction is then just stuck at transaction status = Process. You won't see a failure and nothing is updated on the transaction in Stripe. **Solution:** The Apex API doesn't have any future calls because it doesn't use triggers, it makes the Stripe API calls first and then updates SF records. Using the Apex API is the safest route for any customers that are working with Payments/Transactions in Apex code. The Capture checkbox should only be used with config processes like workflows. Here's the code to capture a charge for an existing Transaction: ``` Id tranId = 'a0Of400001ANM2e'; bt_stripe.P360_API_v1.Tra tran = bt_stripe.P360_API_v1.transactionFactory(tranId); tran.capture(); // captures a charge bt_stripe.P360_API_v1.commitWork(); // updates SF record ``` ## How to use Stripe.js with our custom infrastructure? ### Implementation Details Lightning components does not allow loading of the third-party libraries. But third-party libraries are allowed to be loaded in Visualforce pages. In the initial version or our terminal, we used a Lightning container to invoke Stripe.js, but the approach had various issues regarding my domain, {{variable.Feature_ExperienceCloud}}s & load time. In the new approach, Stripe.js was loaded in a Visualforce page. ### How does the tokenization happen? When the user enters the credit card details in the Lighting framework and hits submit, the magic happens. Lightning is an event-driven framework, which can listen to or publish events to establish a communication channel. When the submit button is clicked by the user, the Lightning Component fires a token request event. An event listener for this type of event is defined in a Visualforce page. Along with the event, Lightning sends data to the Visualforce page. The listener on the Visualforce page parses the data, creates a Stripe object, sends data to Stripe and gets the token back. Once the token is received from Stripe, the Visualforce page creates a response and sends the response event back. This event is listened to by the Lightning framework and it handles the token to create new a Payment Method using the Apex API. Below is a sample code of how the token is consumed in the APEX API to create Payment Methods. ``` try{ bt_stripe.P360_API_v1.PM pm = bt_stripe.P360_API_v1.paymentMethodFactory(); pm.customer = cus; pm.paymentGatewayId = pgId; pm.cardHolderName = cardHolderName; pm.stripeToken = stripeToken; pm.email = email; pm.postalCode = postalCode; pm.defaultpm = setAsDefault == true ? setAsDefault : false; pm.registerPM(); //bt_stripe.P360_API_v1.P360_Exception if something goes wrong with creating Payment Method in Stripe pm.registerPM(); /* look for error messages on the Payment Method - this field is set if Stripe returns a decline code or if the card fails the fraud/cvv/zip check */ if (String.isNotBlank(pm.record.bt_stripe__Error_Message__c)) { // if you're in this if statement, the Payment Method was declined System.debug('bt_stripe__Payment_Method_Status__c = ' + pm.record.bt_stripe__Payment_Method_Status__c); System.debug('bt_stripe__Error_Message__c = ' + pm.record.bt_stripe__Error_Message__c); } //bt_stripe.P360_API_v1.P360_Exception if something goes wrong with committing records in database bt_stripe.P360_API_v1.commitWork(); } catch (Exception ex) { //do error handling here } ``` ## METHOD_NOT_ALLOWED ``` METHOD_NOT_ALLOWED HTTP Method 'GET' not allowed. Allowed are POST ``` * If you receive this error - * Make sure all code methods = POST. We only support POST calls in the REST API. * If using HTTPS, SF sticks \".secure\" in production URL. Make sure the URL looks like this: [https://smartframe-io.secure.force.com/stripeapi/services/apexrest/bt_stripe/v1](https://smartframe-io.secure.force.com/stripeapi/services/apexrest/bt_stripe/v1){target=\"_blank\"} * Test URL from the customer with [https://apitester.com/](https://apitester.com/){target=\"_blank\"}. * Values you can copy/paste - * url = https://smartframe-io.secure.force.com/stripeapi/services/apexrest/bt_stripe/v1 * Add Header: Content-Type = application/json * Body: {\"action\" : \"createPaymentMethod\"} In the response body you should see this from our api: {\"transactionList\":null,\"success\":false,\"paymentMethodList\":null,\"errorParam\":\"paymentGatewayId\",\"errorMessage\":\"paymentGatewayId or publishableKey is required.\",\"defaultPublishableKey\":\"pk_live_3qzy0Te9FqWyHpJsTWsuzZzI\",\"defaultGatewayId\":\"a2N1v000000Bs91EAC\",\"customerList\":null} That means the call is getting to our API with the right url & header & method (POST) & body. If you run into an error with our REST API, open up Developer Tools in your browser, and recreate your scenario. There is an Error Message field under response that should provide insight into your issue. ## Error on PG PM registration You do not have permission to read the field bt_stripe_Account__c (bt_stripe) If you have received this error, check to make sure... * Your users have read, write, create access to the Stripe Customer object. * Your users have read access to Account and Contact objects. *Access to these fields is needed for matching email logic.* **If you still have API questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!**",
+  "keywords": [
+    "stripe",
+    "bt_stripe",
+    "method",
+    "payment",
+    "p360_api_v1",
+    "event",
+    "error",
+    "code",
+    "lightning",
+    "visualforce",
+    "https",
+    "create",
+    "response",
+    "capture",
+    "apex",
+    "page",
+    "token",
+    "your",
+    "customer",
+    "transaction"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "errors ## Automatically capture authorized charges when running a Batch Job **Problem:** The batch job could set the (completed/authorized) charge to capture = true, but the transaction is then just stuck at transaction status = Process.",
+    "error messages on the Payment Method - this field is set if Stripe returns a decline code or if the card fails the fraud/cvv/zip check */ if (String.",
+    "Error_Message__c)) { // if you're in this if statement, the Payment Method was declined System.",
+    "Error_Message__c = ' + pm.",
+    "Error_Message__c); } //bt_stripe."
+  ]
+}

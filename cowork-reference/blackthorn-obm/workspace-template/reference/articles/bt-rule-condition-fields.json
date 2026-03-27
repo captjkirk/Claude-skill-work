@@ -1,0 +1,30 @@
+{
+  "id": "bt-rule-condition-fields",
+  "title": "bt-rule-condition-fields.md",
+  "content": "## Metadata_Start ## code: en ## title: BT Rule Condition Fields ## slug: bt-rule-condition-fields ## seoTitle: BT Rule Condition Fields ## description: ## contentType: Markdown ## Metadata_End The BT Rule Condition (bt_base__Rule_Condition__c) object is located in the Base package and is an individual condition within a larger parent rule (BT Rule object) that may combine multiple conditions. BT Rule Conditions only reference {{variable.Object_Contact}} data. | Field Label | API Name | Data Type | Decription | | --- | --- | --- | --- | | Created By | CreatedById | Lookup(User) | The user who created this record. | | Field | bt_base__Field__c | Text(255) | The field referenced in the condition. Includes functions such as greater than, less than, equal to, contains, does not contain, etc. | | Last Modified By | LastModifiedById | Lookup(User) | The user who last modified this record. | | Operator | bt_base__Operator__c | picklist | The function that connects the field to the value. Functions may include “Equals” or “Contains”. | | Order | bt_base__Order__c | Number(18,0) | Number that specifies the sequence in which rule conditions are evaluated. | | Owner | OwnerId | Lookup(User,Group) | The user to which a record is assigned. | | Rule | bt_base__Rule_Lookup__c | Lookup | Rule conditions belong to a single parent rule, which dictates the website visitor’s visibility of and access to events, event items, sessions, products, and more. | | Rule Condition Name | Name | Auto Number | The number that is automatically assigned to the BT Rule Condition record. | | Value | bt_base__Value__c | Text(255) | The data value will be compared to the Contact data. In the example above, the value would be “Student”. |",
+  "keywords": [
+    "rule",
+    "condition",
+    "user",
+    "conditions",
+    "data",
+    "field",
+    "lookup",
+    "record",
+    "value",
+    "number",
+    "fields",
+    "name",
+    "which",
+    "object",
+    "parent",
+    "created",
+    "text",
+    "functions",
+    "than",
+    "contains"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

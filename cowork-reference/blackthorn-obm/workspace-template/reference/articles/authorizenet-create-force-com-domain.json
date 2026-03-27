@@ -1,0 +1,25 @@
+{
+  "id": "authorizenet-create-force-com-domain",
+  "title": "authorizenet-create-force-com-domain.md",
+  "content": "## Metadata_Start ## code: en ## title: Create a Force.com Domain ## slug: authorizenet-create-force-com-domain ## seoTitle: Create a Force.com Domain ## description: ## contentType: Markdown ## Metadata_End {{snippet.AuthNetPG_CreateForceDomain}}",
+  "keywords": [
+    "create",
+    "force",
+    "domain",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "authnetpg_createforcedomain"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

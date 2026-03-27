@@ -1,0 +1,30 @@
+{
+  "id": "how-to-assign-licenses",
+  "title": "how-to-assign-licenses.html",
+  "content": "Click the Gear icon in the upper right-hand corner. Click Setup . Type “Installed Packages” in the Quick Find box.&nbsp; Click Installed Packages . Click Manage Licenses next to the package you need to assign. ( and licenses are separate.) Click Add Users . Check the box next to the Available Users that you need to assign licenses to. Click Add . Repeat Steps 5-8 for any additional package licenses you need to assign.",
+  "keywords": [
+    "click",
+    "licenses",
+    "need",
+    "assign",
+    "installed",
+    "packages",
+    "next",
+    "package",
+    "users",
+    "gear",
+    "icon",
+    "upper",
+    "right",
+    "hand",
+    "corner",
+    "setup",
+    "type",
+    "quick",
+    "find",
+    "nbsp"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

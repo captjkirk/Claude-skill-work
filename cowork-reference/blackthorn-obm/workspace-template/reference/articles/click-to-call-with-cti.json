@@ -1,0 +1,38 @@
+{
+  "id": "click-to-call-with-cti",
+  "title": "click-to-call-with-cti.md",
+  "content": "## Metadata_Start ## code: en ## title: Click to Call with CTI ## slug: click-to-call-with-cti ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End In this article, we'll explore the feature that allows users to call within Salesforce! ## What happens when CTI is disabled? When the CTI option is disabled, you won’t be able make any calls. A line over the phone icon also indicates that this feature won’t work. ![Phone 2 black_Click to Call with CTI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Phone%202%20black_Click%20to%20Call%20with%20CTI.png){height=\"\" width=\"\"} When the CTI option is enabled, the phone icon and phone number will appear as indicated below. ![Phone 2 blue_Click to Call with CTI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Phone%202%20blue_Click%20to%20Call%20with%20CTI.png){height=\"\" width=\"\"} ## Enable CTI in Salesforce 1. Go to Setup. 2. In the Quick Find box, search for and click \"Call Centers.\" 3. Open a Call Center App. (if installed eg: Zoom Phone Call Center) 4. Click **Manage Call Centers Users**. 5. Add a user to the App. 6. Log in to Blackthorn Messaging as the assigned user. 7. Click the Phone Number from Messaging Conversations and make your call. Let's have a quick look! ![Enable CTI in Salesforce](https://youtu.be/WeQl13Vdn8Y){height=\"480\" width=\"640\"}",
+  "keywords": [
+    "call",
+    "phone",
+    "click",
+    "salesforce",
+    "when",
+    "https",
+    "height",
+    "width",
+    "feature",
+    "users",
+    "disabled",
+    "option",
+    "make",
+    "icon",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, search for and click \"Call Centers",
+    "3. Open a Call Center App",
+    "4. Click **Manage Call Centers Users**",
+    "5. Add a user to the App",
+    "6. Log in to Blackthorn Messaging as the assigned user",
+    "7. Click the Phone Number from Messaging Conversations and make your call"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "define-the-gateway-user-id",
+  "title": "define-the-gateway-user-id.md",
+  "content": "## Metadata_Start ## code: en ## title: Define the Gateway User ID ## slug: define-the-gateway-user-id ## seoTitle: Define the Gateway User ID ## description: ## contentType: Markdown ## Metadata_End Now that you are connected to your {{variable.Object_PaymentGateway}}, you need to manually copy the “API Login ID” from your Authorize.net account and paste it in the {{variable.Object_PaymentGateway}} {{variable.Field_PG_GatewayUserID}} field. 1. Log into your Authorize.net account. 2. Click **Account** and then **API Credentials and Keys**. ![H_02_01_define gateway user id 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_01_define%20gateway%20user%20id%201.png){height=\"\" width=\"\"} 3. Copy the “API Login ID”. ![H_02_01_define gateway user id 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_01_define%20gateway%20user%20id%202.png){height=\"\" width=\"\"} 4. Enter the “API Login ID” in the {{variable.Field_PG_GatewayUserID}} field. ![H_02_01_define gateway user id 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_01_define%20gateway%20user%20id%203.png){height=\"\" width=\"\"} 5. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "gateway",
+    "user",
+    "h_02_01_define",
+    "variable",
+    "define",
+    "your",
+    "login",
+    "account",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20gateway",
+    "20user",
+    "20id"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Log into your Authorize",
+    "2. Click **Account** and then **API Credentials and Keys**",
+    "3. Copy the “API Login ID”",
+    "4. Enter the “API Login ID” in the {{variable",
+    "5. Click {{variable"
+  ],
+  "troubleshooting": []
+}

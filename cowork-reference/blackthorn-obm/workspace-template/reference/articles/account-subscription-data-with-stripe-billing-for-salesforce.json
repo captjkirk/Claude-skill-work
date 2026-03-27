@@ -1,0 +1,35 @@
+{
+  "id": "account-subscription-data-with-stripe-billing-for-salesforce",
+  "title": "account-subscription-data-with-stripe-billing-for-salesforce.md",
+  "content": "## Metadata_Start ## code: en ## title: Account Subscription Data ## slug: account-subscription-data-with-stripe-billing-for-salesforce ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End See all of an Account's subscription and revenue data from fields on the Account. ![M_02_01_acct subscr data 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_02_01_acct%20subscr%20data%201.png){height=\"\" width=\"\"} Let's find out how the metrics are evaluated! They are divided into mainly two sets of fields ~ 1. Upcoming ARR/MRR/QRR -This field indicates the total upcoming amounts of annual/monthly/quarterly recurring subscription invoices. It gets populated only when there is an upcoming Invoice in Stripe. 2. Last Finalized ARR/MRR/QRR - This indicates the total finalized or paid amounts of annual/monthly/quarterly billing subscription invoices. It gets populated when the Account's subscription has a Paid [Invoice](/v1/docs/stripe-billing-invoices). All the above metrics rollup from the Account's related Subscriptions where `Status` = \"Active\". If `Status` = \"Canceled\", the Upcoming MRR/ARR/QRR is set to 0. The rollup is triggered from the Subscription Item and Invoice. Note: The subscription rollups only calculate correctly where the pricing is per-unit (vs usage-based billing). 3. Historical Account Value rolls up from the Account's related Transactions. ## Account Subscription Status When an account has a subscription associated with it, we are showcasing the Subscription Status at account level using the \"Subscription Status\" field. This field will be auto-populated. ![M_02_01_acct subscr data 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_02_01_acct%20subscr%20data%202.png){height=\"\" width=\"\"} For more than one subscription, this field will update to \"See Subscriptions\". (Please add the field onto the page layout)",
+  "keywords": [
+    "subscription",
+    "account",
+    "data",
+    "field",
+    "status",
+    "billing",
+    "from",
+    "m_02_01_acct",
+    "upcoming",
+    "stripe",
+    "invoices",
+    "populated",
+    "when",
+    "invoice",
+    "fields",
+    "subscr",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Upcoming ARR/MRR/QRR -This field indicates the total upcoming amounts of annual/monthly/quarterly recurring subscription invoices",
+    "2. Last Finalized ARR/MRR/QRR - This indicates the total finalized or paid amounts of annual/monthly/quarterly billing subscription invoices",
+    "0. The rollup is triggered from the Subscription Item and Invoice",
+    "3. Historical Account Value rolls up from the Account's related Transactions"
+  ],
+  "troubleshooting": []
+}

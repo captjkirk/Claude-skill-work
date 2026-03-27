@@ -1,0 +1,30 @@
+{
+  "id": "supported-detection-patterns",
+  "title": "supported-detection-patterns.md",
+  "content": "## Metadata_Start ## code: en ## title: Supported Detection Patterns ## slug: supported-detection-patterns ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Blackthorn Compliance comes with a number of officially supported Detection Patterns. These patterns match with common Personally Identifiable Information (PII) and other sensitive data types. Below is a list of all Detection Patterns which comes with a Compliance subscription. | Name | Description | Type | Active by Default | | --- | --- | --- | --- | | AMERICANEXPRESS | Matching pattern for an American Express credit card. | Credit Card | On | | CHINAUNIONPAY | Matching pattern for a China Union Pay credit card. | Credit Card | On | | DANKORT | Matching pattern for a Dankort credit card. | Credit Card | On | | DINERSCLUB | Matching pattern for a Diner's Club credit card. | Credit Card | On | | DINERSCLUBBLANCE | Matching pattern for a Diner's Club Blanche credit card. | Credit Card | On | | DISCOVER | Matching pattern for a Discover credit card. | Credit Card | On | | INSTAPAYMENT | Matching pattern for an Instapayment credit card. | Credit Card | On | | INTERPAYMENT | Matching pattern for an Interpayment credit card. | Credit Card | On | | JCB | Matching pattern for a Japanese Credit Bureau credit card. | Credit Card | On | | MAESTRO | Matching pattern for a Maestro credit card. | Credit Card | On | | MASTERCARD | Matching pattern for a Master Card credit card. | Credit Card | On | | SOLO | Matching pattern for a Solo credit card. | Credit Card | On | | UATP | Matching pattern for a Universal Air Travel Plan credit card. | Credit Card | On | | VISA | Matching pattern for a Visa credit card. | Credit Card | On | | SSN_US | Matching pattern for an American Social Security Number. | PII | Off | | UPS | Anti-pattern to exclude UPS tracking numbers. | Negative Pattern | Off | | USPS | Anti-pattern to exclude USPS tracking numbers. | Negative Pattern | Off | | CREDITCARD | Combination pattern of American Express, Discover, MasterCard, and Visa. For improved performance, disable the major credit card patterns and enable this pattern. Masking will show \"CREDITCARD*\" | Credit Card | Off | ## Don't see what you need? If you have other sensitive data you want to mask or remove from your Salesforce, then you will need to create your own Detection Patterns. This is a simple process of adding a new regular expression to Compliance's metadata.",
+  "keywords": [
+    "credit",
+    "card",
+    "pattern",
+    "matching",
+    "patterns",
+    "detection",
+    "supported",
+    "compliance",
+    "american",
+    "discover",
+    "visa",
+    "description",
+    "comes",
+    "number",
+    "other",
+    "sensitive",
+    "data",
+    "express",
+    "dankort",
+    "diner"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

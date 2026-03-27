@@ -1,0 +1,39 @@
+{
+  "id": "flow-screen-charge-translate-custom-labels",
+  "title": "flow-screen-charge-translate-custom-labels.md",
+  "content": "## Metadata_Start ## code: en ## title: Translate Custom Labels ## slug: flow-screen-charge-translate-custom-labels ## seoTitle: Translate Custom Labels ## description: ## contentType: Markdown ## Metadata_End Blackthorn Payments users can translate the labels the user sees (and override the Standard out-of-the-box values) when using the Flow Screen Charge component. ## Pre-requisite Step Before proceeding, you must enable Translations in your Salesforce org. Follow the steps below to configure the Flow Screen Charge component custom labels. 1. Navigate to Setup. 2. In the Quick Find box, type \"Custom Labels\". 3. Click **Custom Labels**. 4. Find the Custom Labels in the \"PaymentChargeFlow\" category or the ones with \"ChargeFlow\" as a prefix. (See the chart above.) 5. Click the Label you would like to modify. 6. Click **New Local Translations/ Overrides**. 7. Select your {{variable.Field_Translation_Language}}. 8. Add the text for the label you would like to see displayed in the {{variable.Field_CustomLabel_TranslatText}} field. The language displayed will depend on the Language configured in the User Setting of the Salesforce user. ## Custom Labels The custom labels are as follows. | Custom Label Name | API Name | Standard Label (English) | | --- | --- | --- | | ChargeFlow Account | ChargeFlow_Account | Account | | ChargeFlow Amount | ChargeFlow_Amount | Amount | | ChargeFlow Card Holder Name | ChargeFlow_Card_Holder_Name | Card Holder Name | | ChargeFlow Card Number | ChargeFlow_Card_Number | Card Number | | ChargeFlow Charge Card | ChargeFlow_Charge_Card | Charge Card | | ChargeFlow_Charge Description | ChargeFlow_Charge_Description | Charge Description | | ChargeFlow_Contact | ChargeFlow_Contact | Contact | | ChargeFlow Currency | ChargeFlow_Currency | Currency | | ChargeFlow CVV | ChargeFlow_CVV | CVV | | ChargeFlow Email | ChargeFlow_Email | Email | | ChargeFlow Exp Month | ChargeFlow_Exp_Month | Exp Month | | ChargeFlow Exp_Year | ChargeFlow_Exp_Year | Exp Year | | ChargeFlow Payment Details | ChargeFlow_Payment_Details | Payment Details | | ChargeFlow Payment Gateway | ChargeFlow_Payment_Gateway | Payment Gateway | | ChargeFlow_Please_Wait | ChargeFlow_Please_Wait | Please Wait | | ChargeFlow Postal Code | ChargeFlow_Postal_Code | Postal Code | | ChargeFlow Related To | ChargeFlow_Related_To | Related To |",
+  "keywords": [
+    "chargeflow",
+    "custom",
+    "labels",
+    "charge",
+    "card",
+    "translate",
+    "label",
+    "name",
+    "payment",
+    "code",
+    "flow",
+    "screen",
+    "description",
+    "user",
+    "click",
+    "standard",
+    "component",
+    "translations",
+    "your",
+    "salesforce"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to Setup",
+    "2. In the Quick Find box, type \"Custom Labels\"",
+    "3. Click **Custom Labels**",
+    "4. Find the Custom Labels in the \"PaymentChargeFlow\" category or the ones with \"ChargeFlow\" as a prefix",
+    "5. Click the Label you would like to modify",
+    "6. Click **New Local Translations/ Overrides**",
+    "7. Select your {{variable",
+    "8. Add the text for the label you would like to see displayed in the {{variable"
+  ],
+  "troubleshooting": []
+}

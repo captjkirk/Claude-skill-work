@@ -1,0 +1,9 @@
+{
+  "name": "blackthorn-obm",
+  "version": "2.0.0",
+  "description": "Blackthorn team plugin with specialized OBM workflows. Includes skills for day prep, Fathom research, email templates, product support, and memory management — plus OBM-specific tools for customer dossiers, COM updates, kickoff decks, and flagged syncs. Works for any Blackthorn team member; OBM features activate based on your department. Run the begin skill to set up your workspace.",
+  "author": {
+    "name": "Blackthorn Onboarding Team"
+  },
+  "keywords": ["blackthorn", "onboarding", "salesforce", "crm", "customer-success"]
+}

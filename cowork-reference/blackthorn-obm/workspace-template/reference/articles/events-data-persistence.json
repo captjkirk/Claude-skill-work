@@ -1,0 +1,30 @@
+{
+  "id": "events-data-persistence",
+  "title": "events-data-persistence.md",
+  "content": "## Metadata_Start ## code: en ## title: Data Persistence ## slug: events-data-persistence ## seoTitle: Data Persistence ## description: ## contentType: Markdown ## Metadata_End ## What is Data Persistence? Data persistence enhances the architecture of Blackthorn Events’ back-end processing when Attendees access Events on a website. This is especially important for those who use {{variable.Object_FormBigListGroup}}s and frequently update active Events. ### Benefits * Events that switch from one {{variable.Object_EventGroup}} to another will be updated on the website. * Updates to {{variable.Object_FormBigListGroup}}s will be visible on the website faster. * {{variable.Object_FormBigListGroup}}s with up to 60,000 values will load on the website. * {{variable.Product_Salesforce}} data remains the source of truth. * {{variable.Object_Attendee}}-related data is not stored outside of Salesforce. Data regulation concerns (PII, GDPR) are not introduced. ## How Does Data Persistence Work? :::(Warning) (We recommend performing the upgrade during your organization’s least active time. ) The initial sync of data triggered by the update will require a higher-than-usual number of API calls. We have taken steps to ensure the Salesforce API call limit is not reached. ::: Data persistence runs automatically in the background after upgrading {{variable.Product_Events}} to Version 4.5 or greater. No setup is required. After the initial sync, data persistence will automatically reduce the number of API calls used by the {{variable.Product_Events}} webapp. ### Limitations * Data persistence does not fix long load times that are caused by regional infrastructure issues, such as those seen by some Australian customers. We are addressing those challenges separately and expect to resolve them in the near future. * We have not implemented data persistence for {{variable.Product_Storefront}} yet, but we plan to implement it soon. ### Dependency * To experience the benefits of data persistence, you must upgrade your {{variable.Product_Events}} webapp to Version 4.5 or higher.",
+  "keywords": [
+    "data",
+    "persistence",
+    "variable",
+    "events",
+    "website",
+    "object_formbiglistgroup",
+    "product_events",
+    "update",
+    "active",
+    "benefits",
+    "load",
+    "salesforce",
+    "upgrade",
+    "your",
+    "initial",
+    "sync",
+    "higher",
+    "number",
+    "calls",
+    "automatically"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

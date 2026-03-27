@@ -1,0 +1,26 @@
+{
+  "id": "events-connect-spreedly-test-mode",
+  "title": "events-connect-spreedly-test-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Connect to Spreedly in Test Mode ## slug: events-connect-spreedly-test-mode ## seoTitle: Connect to Spreedly in Test Mode ## description: ## contentType: Markdown ## Metadata_End {{snippet.PGSetup_Spreedly_ConneTestMode}}",
+  "keywords": [
+    "connect",
+    "spreedly",
+    "test",
+    "mode",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "events",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "pgsetup_spreedly_connetestmode"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

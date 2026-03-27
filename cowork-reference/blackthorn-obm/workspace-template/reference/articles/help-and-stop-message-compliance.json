@@ -1,0 +1,30 @@
+{
+  "id": "help-and-stop-message-compliance",
+  "title": "help-and-stop-message-compliance.md",
+  "content": "## Metadata_Start ## code: en ## title: HELP and STOP Message Compliance ## slug: help-and-stop-message-compliance ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Before initiating an SMS campaign, there are certain compliance guidelines that you should be aware of. Wireless carriers require certain information to be included in HELP and STOP message content for all US short codes. :::(Info) () We recommend handling those keywords for your long codes (10-digit phone numbers) also. ::: The recommended best practice is to include information in the following format. This ensure that your HELP and STOP messages are considered compliant if your number is tested by a carrier. ## HELP Message A compliant response is required whenever users text HELP or INFO to one of your phone numbers. Here’s an example: * **End User:** HELP or INFO * **Response:** {Company Name} {Description}. Help at {Email} or {Phone Number}. Msg&Data rates may apply. {Message frequency}. Text STOP to cancel. * The “description” should be a single word that defines the type of messages. For example, “Sales”, “Support”, or “Promo”. * The “email” should be a business email like support@blackthorn.io. * The “phone number” should be a business phone number like your main office phone number. * The “message frequency” must be specific but can be any interval. For example, “1 msg per day”, “4 messages per month”, etc. If the message frequency will vary based on user interaction, you can use “1 msg per user request”. You should configure a HELP message for each phone number that is provisioned to your account. You can do this by going to the Phone Number record and typing your message into the `Help Message` field. This way, whenever someone texts the words HELP or INFO to that phone number, Blackthorn Messaging will reply automatically with your help message. ## STOP Message A compliant response is required whenever users text STOP, END, CANCEL, UNSUBSCRIBE, or QUIT to one of your phone numbers. Here’s an example: * **End User:** STOP, END, CANCEL, UNSUBSCRIBE, QUIT * **Response:** You are unsubscribed from {Company Name} alerts. No more messages will be sent. Reply HELP for help or {Phone Number}. You should configure a STOP message for each phone number that is provisioned to your account. You can do this by going to the Phone Number record and typing your message into the `Stop Message` field. Whenever someone texts the words STOP, END, CANCEL, UNSUBSCRIBE, or QUIT to that phone number, Messaging will auto-reply with your help message. Messaging will also check the `Do Not SMS` checkbox on the related parent record. :::(Info) (Do you need to change the consent popup frequency?) Click [here](https://docs.blackthorn.io/docs/configuration-settings#consent-popup-frequency){target=`_blank`} to learn how to configure how frequently an SMS consent popup will be displayed. :::",
+  "keywords": [
+    "message",
+    "help",
+    "phone",
+    "your",
+    "number",
+    "stop",
+    "info",
+    "frequency",
+    "messages",
+    "response",
+    "whenever",
+    "example",
+    "user",
+    "cancel",
+    "compliance",
+    "description",
+    "numbers",
+    "compliant",
+    "text",
+    "here"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

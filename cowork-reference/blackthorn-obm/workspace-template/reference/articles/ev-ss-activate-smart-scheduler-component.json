@@ -1,0 +1,40 @@
+{
+  "id": "ev-ss-activate-smart-scheduler-component",
+  "title": "ev-ss-activate-smart-scheduler-component.md",
+  "content": "## Metadata_Start ## code: en ## title: Activate the Smart Scheduler's Feature Toggle ## slug: ev-ss-activate-smart-scheduler-component ## seoTitle: Activate the Event Scheduler Component ## description: ## contentType: Markdown ## Metadata_End To activate the Smart Scheduler's Feature Toggle, you can either contact {{variable.Link_BlackthornSupport}} or follow the steps below. 1. Go to Setup. 2. In the Quick Find box, enter and click \"Custom Metadata Types.\" 4. Click **Manage Records** next to Blackthorn Feature Toggle. 6. Click **Edit** next to Smart Scheduler Activation Record. 7. Check the {{variable.Field_FeatureToggle_Active}} checkbox. ![Activate Event Scheduler Comp 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Activate%20Event%20Scheduler%20Comp%201.png){height=\"\" width=\"\"} 8. Click {{variable.Button_Save}}. 9. Return to the Blackthorn | Scheduler Admin tab. 10. Refresh the page. 11. You will be taken to the Account Registration page. ![Activate Event Scheduler Comp 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Activate%20Event%20Scheduler%20Comp%202.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "activate",
+    "scheduler",
+    "smart",
+    "click",
+    "feature",
+    "toggle",
+    "event",
+    "variable",
+    "component",
+    "next",
+    "blackthorn",
+    "comp",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, enter and click \"Custom Metadata Types",
+    "4. Click **Manage Records** next to Blackthorn Feature Toggle",
+    "6. Click **Edit** next to Smart Scheduler Activation Record",
+    "7. Check the {{variable",
+    "8. Click {{variable",
+    "9. Return to the Blackthorn | Scheduler Admin tab",
+    "10. Refresh the page",
+    "11. You will be taken to the Account Registration page"
+  ],
+  "troubleshooting": []
+}

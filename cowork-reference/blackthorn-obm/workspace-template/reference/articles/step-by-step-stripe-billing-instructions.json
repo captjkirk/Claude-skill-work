@@ -1,0 +1,41 @@
+{
+  "id": "step-by-step-stripe-billing-instructions",
+  "title": "step-by-step-stripe-billing-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Step-by-Step Instructions ## slug: step-by-step-stripe-billing-instructions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Initial Setup 1. Install Blackthorn Payments from the {{variable.Link_CandyShop}}. 2. Complete the [Payments Setup Wizard](/v1/docs/quick-start) and connect to your Stripe account in test mode. *Webhooks are required for Stripe Billing.* 3. Send {{variable.Link_BlackthornSupport}} your org ID to enable Stripe Billing. 4. Once enabled, navigate to the Payments Admin tab, under Stripe Billing, click the \"Deploy Stripe Billing Fields\" button. 5. Follow these instructions and install the [Stripe Billing Screen Flow](https://www.notion.so/blackthorn/8969fe0df482438483db1d945269d5f8?v=6fff461335a04455861f0c162249e0dc){target=\"_blank\"} unmanaged package. *This unmanaged package allows you to launch a screen flow from the Opportunity record when a subscription needs to be generated.* :::(Info) (Webhooks) When you set up webhooks, changes that are made in Stripe will push to Salesforce, so please have your [relationship settings defined](/v1/docs/matching-duplication) on the Payment Gateway before enabling webhooks. ::: ## If you only have Products and Prices (Plans) in Stripe *This information needs to be in Salesforce so that you can generate subscriptions in Salesforce.* 1. Navigate to your test Payment Gateway record. 2. Click the \"Sync With Stripe\" button. 3. Underneath \"Billing,\" click Product. *Let all products sync before clicking the \"Prices\" button.* 4. Then click the \"Prices\" button. *Let all Prices sync before clicking the \"Coupon\" button.* 5. Then click the \"Coupons\" button. ## If you have Products in Salesforce, but nothing in Stripe Please follow the instructions for syncing a [Product to Stripe](/v1/docs/stripe-billing-products). Then you can create a [Price for the Product](/v1/docs/stripe-billing-prices-tiers) that syncs to Stripe. ## Time to test it out! You should be able to create a subscription from an Opportunity record that syncs over to Stripe. After 1 hour (not sure why it takes so long on the Stripe side), an invoice will sync back to Salesforce related to the Subscription, Customer, and Account record. ## Testing other scenarios Give your billing scenarios a test. IE., upgrading or downgrading an existing subscription. This update will only work for future invoices. If you change a subscription when there is an open invoice, the open invoice will not be updated. Please reach out {{variable.Link_BlackthornSupport}} if you have questions regarding use cases. Our team uses the feature for our app subscriptions! ## Migrating Records from Stripe to Salesforce - Go to the Payment Gateway tab, click on your Payment Gateway. Click Sync with Stripe. - Make sure you have Account and Contact records in your Salesforce org that align with your Stripe records. We attempt to match Stripe Customer Emails against Contact Emails using the [relationship setting feature](/v1/docs/matching-duplication). - Click each button from left to right, one at a time, waiting for the process to finish as viewed in Setup | Apex Jobs. Start with Customers. :::(Warning) (No Matching) If you need to match Payment Gateway Customers (Stripe Customers) to Contacts and Accounts with custom matching IE., Billing ID, relate the Relationship Setting to the Payment Gateway record, and then for the matching logic, set it to \"No Matching or Record Creation. :::",
+  "keywords": [
+    "stripe",
+    "billing",
+    "your",
+    "click",
+    "button",
+    "salesforce",
+    "record",
+    "matching",
+    "payment",
+    "gateway",
+    "from",
+    "docs",
+    "subscription",
+    "prices",
+    "sync",
+    "step",
+    "instructions",
+    "test",
+    "webhooks",
+    "products"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Install Blackthorn Payments from the {{variable",
+    "2. Complete the [Payments Setup Wizard](/v1/docs/quick-start) and connect to your Stripe account in test mode",
+    "3. Send {{variable",
+    "4. Once enabled, navigate to the Payments Admin tab, under Stripe Billing, click the \"Deploy Stripe Billing Fields\" button",
+    "5. Follow these instructions and install the [Stripe Billing Screen Flow](https://www",
+    "1. Navigate to your test Payment Gateway record",
+    "2. Click the \"Sync With Stripe\" button",
+    "3. Underneath \"Billing,\" click Product",
+    "4. Then click the \"Prices\" button",
+    "5. Then click the \"Coupons\" button"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "relate-session-and-event-item-to-event-item-session",
+  "title": "relate-session-and-event-item-to-event-item-session.md",
+  "content": "## Metadata_Start ## code: en ## title: Relate a Session and an Event Item to an Event Item Session ## slug: relate-session-and-event-item-to-event-item-session ## seoTitle: Relate a Session and an Event Item to an Event Item Session ## description: ## contentType: Markdown ## Metadata_End An {{variable.Object_Event}}’s {{variable.Object_Session}} and {{variable.Object_EventItem}} must be related to an {{variable.Object_EventItemSession}} record so the {{variable.Object_EventItemSession}} can be included in the {{variable.AttendeeLink}} and checkout process. ![New Event Item Session.png](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/New%20Event%20Item%20Session.png){height=\"\" width=\"\"} Once you have created {{variable.Object_Session}}s for your {{variable.Object_Event}}, complete the following steps. 1. Open the relevant {{variable.Object_Session}} record and locate the {{variable.Object_EventItemSession}}’s {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}}. 3. In the {{variable.Field_EventItemSession_EvenIte}} field, select the {{variable.Object_EventItem}} you want to attach the {{variable.Object_Session}} to. 4. Click {{variable.Button_Save}}. You can also perform the process from an {{variable.Object_EventItem}} record. 1. Go to the {{variable.Object_EventItemSession}}'s {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}}. 3. In the {{variable.Field_EventItemSession_Session}} field, select the {{variable.Object_Session}} you want to attach the {{variable.Object_EventItem}} to. 4. Click {{variable.Button_Save}}. After selecting an {{variable.Object_EventItem}} and entering their information during checkout, Attendees will see a **Review Sessions** button. They can then select an {{variable.Object_EventItemSession}} before completing the registration process.",
+  "keywords": [
+    "variable",
+    "session",
+    "event",
+    "item",
+    "object_session",
+    "object_eventitem",
+    "object_eventitemsession",
+    "click",
+    "relate",
+    "record",
+    "process",
+    "select",
+    "object_event",
+    "checkout",
+    "sfterm_relatedlist",
+    "button_new",
+    "field",
+    "want",
+    "attach",
+    "button_save"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Open the relevant {{variable",
+    "2. Click {{variable",
+    "3. In the {{variable",
+    "4. Click {{variable",
+    "1. Go to the {{variable",
+    "2. Click {{variable",
+    "3. In the {{variable",
+    "4. Click {{variable"
+  ],
+  "troubleshooting": []
+}

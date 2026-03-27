@@ -1,0 +1,30 @@
+{
+  "id": "getting-started-1",
+  "title": "getting-started-1.html",
+  "content": "Access for Event Managers Unless you have a System Admin profile or were assigned the {{variable.PS_ET_Admin}} or {{variable.PS_ET_Organizer}} permission set, your Salesforce administrator will need to give you access to the {{variable.Component_EventWizard}} . Navigation The {{variable.Component_EventWizard}} is accessible from your App Launcher. Open the App Launcher Type \"Event Wizard\" and select the {{variable.Component_EventWizard}} tab. Getting Started This is where you'll define the following: {{variable.Field_EV_RecordType}} , if applicable. Note: Required fields will not be respected based upon Page Layout settings for the {{variable.Field_EV_RecordType}} selected. If you have Record Types created, a prompt will appear to select the {{variable.Field_EV_RecordType}} you'd like to use. {{variable.Field_ETEvent_EventName}} {{variable.Field_ETEvent_EventStartDate}} and {{variable.Field_ETEvent_EventEndDate}} The {{variable.Field_ETEvent_TimeZone}} the {{variable.Object_Event}} will be hosted in. If the event is recurring or not. Alternatively, if you have an {{variable.Object_Event}} already created that you would like to clone, you can clone that {{variable.Object_Event}} . Avoid Duplicate Events To prevent custom recurring {{variable.Object_Event}} , that are cloned from an {{variable.Object_Event}} in the {{variable.Component_EventWizard}} , from generating duplicate events, please complete the following fields under the {{variable.Field_ETWizard_Recurring}} field on the {{variable.Component_EventWizard}} . {{variable.Field_ETWizard_FirstETStartDat}} {{variable.Field_ETWizard_FirstETStartTim}} {{variable.Field_ETWizard_FirstETEndDate}} {{variable.Field_ETWizard_FirstETEndTime}} Look and Feel Choosing an option here will display the layout of your {{variable.Object_Event}} page. This is what an {{variable.Object_Attendee}} will see when visiting the registration page. Tabbed: our traditional checkout for free and paid {{variable.Object_Event}} s Simple: single page UI only for free {{variable.Object_Event}} BYO-CSS: this is an alteration of our UI where you inject custom CSS to tweak the {{variable.Object_Event}} page to your liking.",
+  "keywords": [
+    "variable",
+    "object_event",
+    "component_eventwizard",
+    "page",
+    "your",
+    "event",
+    "from",
+    "field_ev_recordtype",
+    "access",
+    "launcher",
+    "select",
+    "where",
+    "following",
+    "fields",
+    "layout",
+    "created",
+    "like",
+    "recurring",
+    "clone",
+    "duplicate"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

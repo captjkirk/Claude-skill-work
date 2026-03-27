@@ -1,0 +1,30 @@
+{
+  "id": "marketing-communication",
+  "title": "marketing-communication.md",
+  "content": "## Metadata_Start ## code: en ## title: Marketing Communication ## slug: marketing-communication ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Find tips & tricks below for better integrating Blackthorn {{variable.Product_Events}} with your Marketing Software. ## Using Pardot Automation Rules * Automation rules allow you to perform certain marketing and sales actions based on criteria that you specify. For example, you may want to suppress {{variable.Object_Attendee}}s that registered for an {{variable.Object_Event}} on a list for the reminder invitation. * You could use Pardot Automation Rules to remove Prospects once an {{variable.Object_Attendee}} registers and their {{variable.Object_CampaignMember}} {{variable.Field_CampaignMember_Status}} = \"Responded\". * [Here](https://www.salesforce.com/products/marketing-cloud/marketing-automation/?redirect=pardot.com#:~:text=Automation%20rules%20allow%20you%20to,your%20North%20American%20sales%20representative) is some documentation on Pardot Automation Rules.",
+  "keywords": [
+    "marketing",
+    "variable",
+    "automation",
+    "pardot",
+    "rules",
+    "communication",
+    "your",
+    "object_attendee",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "find",
+    "tips",
+    "tricks"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

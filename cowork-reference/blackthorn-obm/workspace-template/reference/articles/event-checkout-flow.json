@@ -1,0 +1,38 @@
+{
+  "id": "event-checkout-flow",
+  "title": "event-checkout-flow.md",
+  "content": "## Metadata_Start ## code: en ## title: Checkout Flow ## slug: event-checkout-flow ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When an {{variable.Object_Attendee}} completes the checkout process for an {{variable.Object_Event}}, many records are created and updated automatically. ## Matching and Duplication * Blackthorn {{variable.Product_Events}} will attempt to match an existing {{variable.Object_Contact}}, {{variable.Object_Lead}}, or {{variable.Object_Account}} by active duplicate rules. By default, we use the out of the box Salesforce Matching and Duplication rules, but we support custom rules as well. * If there is a match, the following steps will relate to the existing {{variable.Object_Contact}}. If there isn't a match, a {{variable.Object_Contact}} record will be created. **Where does the information go?** All of the following records go to the log in the {{variable.Object_Contact}} record. For more information about Matching and Duplication, click [here](https://docs.blackthorn.io/docs/matching-in-salesforce){target=\"_blank\"}. ## Order of Execution in Salesforce 1. An {{variable.Object_Attendee}} record is created in Salesforce. The {{variable.Object_Attendee}} record related to the {{variable.Object_Contact}}, {{variable.Object_Lead}}, or {{variable.Object_Account}} and the {{variable.Object_Event}}. The {{variable.Field_Attendee_RegistratStatus}} is set to {{variable.Picklist_AttendeeReg_Registere}}. 2. {{variable.Object_FormElements_plural}} are processed next. This includes any {{variable.Object_CustomQuestion}}s added to the {{variable.Object_Event}}. 3. {{variable.Object_Invoice}} & {{variable.Object_LineItem}}s are created. * **{{variable.Object_Invoice}}:** An {{variable.Object_Invoice}} is created, and the Contact, Lead, or Account related fields, {{variable.Field_PTInvoice_Status}} field, {{variable.Field_PTInvoice_SubjectLine}} field, and additional fields are populated. * **{{variable.Object_LineItem}}(s):** One {{variable.Object_LineItem}} is created for each {{variable.Object_EventItem}} in the checkout. Each {{variable.Object_EventItem}} purchased will create one {{variable.Object_LineItem}}, referencing the {{variable.Field_LineItem_EventItem}} purchased, {{variable.Field_LineItem_Quantity}}, {{variable.Field_LineItem_UnitPrice}}, and {{variable.Field_LineItem_Event}}. 4. The {{variable.Field_Invoice_ContactBillTo}} is linked to the {{variable.Object_Invoice}}. 5. The {{variable.Object_Contact}} is set on the {{variable.Object_PaymentMethod}} and {{variable.Object_Transaction}}. * **{{variable.Object_PaymentMethod}} (Paid Events):** * The {{variable.Object_PaymentMethod}}'s sensitive information is sent immediately to Stripe and a token is received (PCI compliant fashion, Blackthorn does not store sensitive {{variable.Object_PaymentMethod}} information, such as card numbers and banking account/routing information). * The token along with the rest of the payload (card holder name, address, etc.) is inserted to Salesforce to create the {{variable.Object_PaymentMethod}}. Stripe's response with a valid 'Card ID' or similar {{variable.Field_PM_PaymentMethodID}} (for other {{variable.Object_PaymentMethod}}) is updated on the {{variable.Object_PaymentMethod}} record. The {{variable.Object_PaymentMethod}} {{variable.Field_PM_Contact}} is populated. * **{{variable.Object_Transaction}}:** A {{variable.Object_Transaction}} is created with the related {{variable.Object_PaymentMethod}}, populating applicable fields ({{variable.Field_Transaction_CurrencyISO}}, {{variable.Field_Transaction_Amount}}, {{variable.Field_Transaction_Contact}}, and additional fields as configured), can be Captured immediately. The response is returned to the Attendee if the {{variable.Object_Transaction}} fails. If it's successful, the checkout process continues. * **Transaction Update:** The {{variable.Object_Transaction}} is updated to reference the {{variable.Object_Invoice}}, setting the {{variable.Field_PTInvoice_PaymentStatus}} to {{variable.Picklist_Invoice_Paid}}. 6. {{variable.Object_EventItem}} records are created. * **{{variable.Object_LineItem}}:** The {{variable.Object_LineItem}} record is updated to reference the {{variable.Object_Attendee}} record.",
+  "keywords": [
+    "variable",
+    "object_paymentmethod",
+    "created",
+    "record",
+    "object_contact",
+    "object_lineitem",
+    "checkout",
+    "salesforce",
+    "information",
+    "object_invoice",
+    "object_transaction",
+    "object_attendee",
+    "updated",
+    "matching",
+    "fields",
+    "object_event",
+    "records",
+    "duplication",
+    "blackthorn",
+    "match"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. An {{variable",
+    "2. {{variable",
+    "3. {{variable",
+    "4. The {{variable",
+    "5. The {{variable",
+    "6. {{variable",
+    "* If there is a match, the following step"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "vt-add-remove-virtual-terminal-fields",
+  "title": "vt-add-remove-virtual-terminal-fields.md",
+  "content": "## Metadata_Start ## code: en ## title: Add or Remove Virtual Terminal Fields ## slug: vt-add-remove-virtual-terminal-fields ## seoTitle: Add or Remove Virtual Terminal Fields ## description: ## contentType: Markdown ## Metadata_End Adding, removing, and modifying fields on the Virtual Terminal is done through [Field Sets](https://help.salesforce.com/s/articleView?id=sf.fields_about_field_sets.htm&type=5){target=\"_blank\"}. A Field Set is a grouping of fields that can be displayed on Lightning Components. A user can then add, remove, or rearrange fields from the Field Set, without altering the Lightning Component. :::(Info) (Limitation) Formula and auto-number fields cannot be added to the field set. :::",
+  "keywords": [
+    "fields",
+    "remove",
+    "virtual",
+    "terminal",
+    "field",
+    "lightning",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "adding",
+    "removing",
+    "modifying",
+    "done",
+    "through"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

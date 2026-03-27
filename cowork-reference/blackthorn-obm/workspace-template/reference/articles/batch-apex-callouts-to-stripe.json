@@ -1,0 +1,37 @@
+{
+  "id": "batch-apex-callouts-to-stripe",
+  "title": "batch-apex-callouts-to-stripe.md",
+  "content": "## Metadata_Start ## code: en ## title: Batch Apex Callouts to Stripe ## slug: batch-apex-callouts-to-stripe ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Some customers use batch apex to make callouts to Stripe. This is supported for Product, Price, Coupon, Subscription, Subscription Item, Subscription Schedules, and Stripe Invoices. This functionality is available in conjunction with Salesforce's [Change Data Capture](https://developer.salesforce.com/docs/atlas.en-us.change_data_capture.meta/change_data_capture/cdc_intro.htm){target=\"_blank\"} feature. ## Setup 1. Optional: Add a batch apex class to your org that will work with the Change Data Capture feature. (This code will be dependent on your business use case. Use your in-house development team to decide what works best for your org.) :::(Info) () Some use cases use declarative means to identify new Stripe Billing objects. The apex code snippet below is only an example. Your setup may differ. ::: Example of a batch apex class: @(Embed)(https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/batch%20apex%20class%20example.pdf){height=\"320\" width=\"640\"} 2. Add the object you would like to use to the Change Data Capture setting in Setup. ![M_11_batch callouts](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_11_batch%20callouts.png){height=\"\" width=\"\"} 3. Navigate to Setup > Custom Settings > Blackthorn Pay - Trigger Settings > Enable Change Data Capture = TRUE. 4. Create the records you would like sent to Stripe. 5. Optional: Execute apex code that will tell the Change Data Capture logic which records to send to Stripe. :::(Info) () The code snippet below is only an example of a way to call the apex class from step 1. Your use case may differ and may use other declarative means for sending new records to Stripe. ::: Example of code used in an Execute Anonymous window of the developer console: ```Java Set recordIds = new Set {recordId1, recordId2, recordId3, recordId4}; SendingToStripeBatch batch = new SendingToStripeBatch(new Map ([SELECT Id, bt_stripeTest__Push_To_Stripe__c FROM Product2 WHERE Id IN :recordIds]).keySet(), 1); Database.executeBatch(batch); ``` Once the steps above have been configured and the code executed you will notice the related records are sent to Stripe.",
+  "keywords": [
+    "stripe",
+    "batch",
+    "apex",
+    "code",
+    "your",
+    "change",
+    "data",
+    "capture",
+    "callouts",
+    "setup",
+    "example",
+    "records",
+    "subscription",
+    "https",
+    "class",
+    "some",
+    "salesforce",
+    "developer",
+    "change_data_capture",
+    "feature"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Optional: Add a batch apex class to your org that will work with the Change Data Capture feature",
+    "2. Add the object you would like to use to the Change Data Capture setting in Setup",
+    "3. Navigate to Setup > Custom Settings > Blackthorn Pay - Trigger Settings > Enable Change Data Capture = TRUE",
+    "4. Create the records you would like sent to Stripe",
+    "5. Optional: Execute apex code that will tell the Change Data Capture logic which records to send to Stripe",
+    "1. Your use case may differ and may use other declarative means for sending new records to Stripe"
+  ],
+  "troubleshooting": []
+}

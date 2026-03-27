@@ -1,0 +1,32 @@
+{
+  "id": "custom-trigger-for-attachment",
+  "title": "custom-trigger-for-attachment.md",
+  "content": "## Metadata_Start ## code: en ## title: Example: Custom Trigger for Attachment ## slug: custom-trigger-for-attachment ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Apex Trigger ``` trigger CustomAttachmentTrigger on Attachment (after insert) { List caseAttachments = new List (); // if Detection is turned on for Attachment if (pcify.Manager.getManager('Attachment').pcify__isActive__c) { // collect Case Attachments for (Attachment att : Trigger.new) { if (att.ParentId.getSobjectType() == Case.getSObjectType()) { caseAttachments.add(att); } } // process only case Attachments with PCIFY if (!caseAttachments.isEmpty()) { CustomAttachmentTriggerHandler.scanFiles(caseAttachments); } } } ``` ## Apex Handler Class ``` public with sharing class CustomAttachmentTriggerHandler { public static void scanFiles(List files) { List fileIds = new List (); pcify__Manager__mdt manager = pcify.Manager.getManager('Attachment'); for (SObject file : files) { fileIds.add(file.Id); } pcifyfiles.FileDetector batchJob = new pcifyfiles.FileDetector(); batchJob.objectName = 'Attachment'; batchJob.fieldNames = manager.pcify__MaskFields__c.deleteWhitespace().split(','); batchJob.fileIds = fileIds; batchJob.queryLimit = Integer.valueOf(manager.pcify__BatchQueryLimit__c); batchJob.batchSize = Integer.valueOf(manager.pcify__BatchSize__c); batchJob.action = manager.pcify__AuditAction__c; batchJob.loadQuery(); database.executebatch(batchJob, batchJob.batchSize); } } ``` ## Test Class ``` @isTest public with sharing class CustomAttachmentTriggerHandlerTEST { @isTest static void testCustomAttachmentTrigger() { Case c = new Case(); c.Origin = 'Email'; c.Description = 'testing'; insert c; Attachment file = new Attachment(); file.ParentId = c.Id; file.Name = 'test'; file.ContentType = 'application/msword'; String body = '{\\\"ParsedResults\\\":[{\\\"TextOverlay\\\":{\\\"Lines\\\":[],\\\"HasOverlay\\\":false,\\\"Message\\\":\\\"Text overlay is not provided as it is not requested\\\"},'+ '\\\"TextOrientation\\\":\\\"0\\\",\\\"FileParseExitCode\\\":1,\\\"ParsedText\\\":\\\"Demo Cards 4355230837762992 4355-2308-3776-2992\\\",'+ '\\\"ErrorMessage\\\":\\\"\\\",\\\"ErrorDetails\\\":\\\"\\\"}],\\\"OCRExitCode\\\":1,\\\"IsErroredOnProcessing\\\":false,\\\"ProcessingTimeInMilliseconds\\\":\\\"669\\\",'+ '\\\"SearchablePDFURL\\\":\\\"Searchable PDF not generated as it was not requested.\\\"}'; Blob mockbody = Blob.valueof(body); file.Body = mockbody; Test.startTest(); insert file; Test.stopTest(); List attachments = [SELECT Id FROM Attachment]; System.assertEquals(attachments.size(), 1); List logs = [SELECT Id, pcify__Object__c, pcify__Category__c, pcify__RecordId__c FROM pcify__Log__c]; System.assertEquals(2, logs.size()); System.assertEquals(logs[0].pcify__Category__c, 'Record Reported'); System.assertEquals(logs[0].pcify__Object__c, 'Attachment'); System.assertEquals(logs[0].pcify__RecordId__c, attachments[0].Id); } } ```",
+  "keywords": [
+    "attachment",
+    "batchjob",
+    "file",
+    "list",
+    "manager",
+    "trigger",
+    "case",
+    "attachments",
+    "system",
+    "assertequals",
+    "logs",
+    "caseattachments",
+    "class",
+    "fileids",
+    "test",
+    "insert",
+    "pcify",
+    "public",
+    "valueof",
+    "body"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": [
+    "ErrorMessage\\\":\\\"\\\",\\\"ErrorDetails\\\":\\\"\\\"}],\\\"OCRExitCode\\\":1,\\\"IsErroredOnProcessing\\\":false,\\\"ProcessingTimeInMilliseconds\\\":\\\"669\\\",'+ '\\\"SearchablePDFURL\\\":\\\"Searchable PDF not generated as it was not requested."
+  ]
+}

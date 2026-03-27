@@ -1,0 +1,35 @@
+{
+  "id": "automate-allocation-creation-event-checkout",
+  "title": "automate-allocation-creation-event-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Automate the Allocation Creation for Event Checkout ## slug: automate-allocation-creation-event-checkout ## seoTitle: Automate the Allocation Creation for Event Checkout ## description: ## contentType: Markdown ## Metadata_End You can automate the {{variable.Object_Allocation}} creation for {{variable.Object_Event}} checkouts. 1. Navigate to Blackthorn | Payment Trigger Settings (Setup > Custom Settings). ![H_01_01_Automate 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Automate%201.png){height=\"\" width=\"\"} 2. Click **Manage**. ![H_01_01_Automate 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Automate%202.png){height=\"\" width=\"\"} 3. Set the {{variable.Field_CS_AutoCreateAllocation}} = {{variable.Checkbox_True}}. ![H_01_01_Automate 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_01_Automate%203.png){height=\"\" width=\"\"} 4. Click {{variable.Button_Save}}. When this setting is enabled and an {{variable.Object_Invoice}} is created by the checkout process, the {{variable.Object_Allocation}}s are automatically created for the {{variable.Object_LineItem}}s and {{variable.Object_Invoice}}.",
+  "keywords": [
+    "variable",
+    "h_01_01_automate",
+    "automate",
+    "creation",
+    "checkout",
+    "allocation",
+    "event",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "object_allocation",
+    "settings"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to Blackthorn | Payment Trigger Settings (Setup > Custom Settings)",
+    "2. Click **Manage**",
+    "3. Set the {{variable",
+    "4. Click {{variable"
+  ],
+  "troubleshooting": []
+}

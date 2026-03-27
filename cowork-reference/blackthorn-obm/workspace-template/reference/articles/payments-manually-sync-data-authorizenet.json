@@ -1,0 +1,43 @@
+{
+  "id": "payments-manually-sync-data-authorizenet",
+  "title": "payments-manually-sync-data-authorizenet.md",
+  "content": "## Metadata_Start ## code: en ## title: Manually Sync Your Data ## slug: payments-manually-sync-data-authorizenet ## seoTitle: Manually Sync Your Data ## description: ## contentType: Markdown ## Metadata_End If you do not have an existing Authorize.net gateway account, complete the following steps to move your data to Authorize.net. 1. Set your webhooks to ***inactive***. If webhooks are turned on, your data will automatically sync from Authorize.net to Salesforce. 2. Reach out to [Authorize.net](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=KA-04061){target=\"_blank\"} to start the next step. 3. Once your Authorize.net gateway account is active, go to the next step. :::(Error) (Before you execute this task...) Confirm that your matching logic is set up correctly. Matching logic determines how this data will relate to your Contacts/Accounts. ::: ## Migrate Payment Methods and Customers If you were an Authorize.net customer before coming to Blackthorn or you recently migrated your data to Authorize.net, you can manually sync your Authorize.net customers (Customer Profile), Payment Methods (Payment Profiles), and Transactions to Salesforce. This guide will help you understand our object model so you can easily sync the information using the Data Loader tool. Start by reviewing the tables below. ### Customer Field Map | Salesforce Field Name | Authorize.net Label | | --- | --- | | Payment Gateway Customer | Payment Profile | | Email | Email | | Name | First Name + Last Name | | Customer ID | Customer Profile ID | | Description | Description | | Billing City (Optional) | City | | Company | Company | | Postal Code(optional) | ZipPostal Code | | Billing Street 1 (Optional) | Address | | Billing State (Optional) | StateProvince | | Billing Country | Country | | Phone | Phone | ### Payment Field Map | Salesforce Field Name | Authorize.net Label | | --- | --- | | Payment Method | Payment Profile | | Holder’s Name | First Name + Last Name | | Email (Optional) | Email | | Card ID | Payment Profile ID | | Customer ID | Customer Profile ID | | Record Type(Card/ACH) | Payment Type (CreditCard/Bank Account) | | Street(Optional) | Address | | City(Optional) | City | | State (Optional) | StateProvince | | Country (Optional) | Country | | Last 4 Digits | CardNumber (last 4 digits) | | Payment Gateway (lookup) | Hardcode the PG id | | Payment Gateway Customer(lookup) | Fetch id from SF | | Payment Method Status | Valid | 1. Create a [Payment Gateway](/v1/docs/payment-gateway-setup-1){target=\"_blank\"} in Salesforce and connect it to your Authorize.net account. 2. Export your customers and cards information from the Authorize.net gateway to an Excel document. 3. Convert the file to a CSV-type file. 4. The information in the CSV file will be mapped to the Payment Gateway Customer and Payment Method Salesforce objects. Prepare a second excel spreadsheet with the customer information mapping to respective fields on the Payment Gateway Customer/Payment Method objects. 5. In Salesforce, go to Custom Settings > Blackthorn | Payment Triggers > Edit > Disable all triggers. 6. Contact Blackthorn Support to disable CVV and Postal Code checks. (If you have information about the postal code, we can skip disabling this for you.) 7. Download the CSV file and import it into the Payment Gateway Customer using the Data Loader. 8. Export the new Payment Gateway Customer list from Salesforce and locate the Record ID. 9. Map the record ID in your Excel spreadsheet to the Payment Gateway Customer lookup field on the Payment Method before importing. 10. Import the Payment Methods into Salesforce. 1. Go to Custom Settings to “Enable all triggers”. ## Migrate Contacts and/or Accounts To link the Contacts and/or Accounts to the Payment Gateway Customer or Payment Method records, complete the following steps. 1. Create a report in Salesforce for Contacts with the {{variable.Field_Contact_FirstName}}, {{variable.Field_Contact_LastName}}, {{variable.Field_Contact_Email}}, and {{variable.Field_Contact_RecordID}} fields. 3. Export them to a CSV file. 4. Create and export a report of all Payment Gateway Customer records with {{variable.Field_PGC_Name}}, {{variable.Field_PGC_Email}}, and {{variable.Field_PGC_RecordID}} fields. 5. In Sheet B, create a new column \"Contact\" and add the formula to match the contacts to the Payment Gateway Customer via email. 6. Download to CSV, and then import them back into Salesforce with size 1. 7. Once the {{variable.Field_PGC_Contact}} lookup is set on the Payment Gateway Customer, it will auto-update the related Account as well as update all associated Payment Methods with the set Contact and Account. This sync process only migrates your records from that moment backward. Syncing Authorize.net with Salesforce going forward can be done through webhooks, but you should not originate records outside of Salesforce. :::(Info) (Do you need to create a Contact record?) You can do so by creating a Process Builder that creates a Salesforce Contact record when the Authorize.net Customer record is created in Salesforce. :::",
+  "keywords": [
+    "payment",
+    "customer",
+    "gateway",
+    "authorize",
+    "salesforce",
+    "your",
+    "data",
+    "optional",
+    "name",
+    "variable",
+    "sync",
+    "code",
+    "account",
+    "profile",
+    "method",
+    "record",
+    "from",
+    "contacts",
+    "information",
+    "field"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Set your webhooks to ***inactive***",
+    "2. Reach out to [Authorize",
+    "3. Once your Authorize",
+    "1. Create a [Payment Gateway](/v1/docs/payment-gateway-setup-1){target=\"_blank\"} in Salesforce and connect it to your Authorize",
+    "2. Export your customers and cards information from the Authorize",
+    "3. Convert the file to a CSV-type file",
+    "4. The information in the CSV file will be mapped to the Payment Gateway Customer and Payment Method Salesforce objects",
+    "5. In Salesforce, go to Custom Settings > Blackthorn | Payment Triggers > Edit > Disable all triggers",
+    "6. Contact Blackthorn Support to disable CVV and Postal Code checks",
+    "7. Download the CSV file and import it into the Payment Gateway Customer using the Data Loader"
+  ],
+  "troubleshooting": [
+    "Error) (Before you execute this task."
+  ]
+}

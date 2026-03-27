@@ -1,0 +1,30 @@
+{
+  "id": "set-up-experience-cloud-pages",
+  "title": "set-up-experience-cloud-pages.html",
+  "content": "As an Event Organizer, do you have volunteers managing regional s or university student groups that need a way to manage s? can help. Volunteers or students can create s with the , configure emails, create s, and add s with an license. Community User Permissions users with the permission set can perform the following tasks. Create and edit s and s and add them to s or s. Preview s and see and edit s and s. Edit existing s and s if the record has been created by or shared with the user making the edits. View s created by other users (Cannot add s to s created by other users.) Community Users will need view access to the object to view s created by other users. You can also give Community Users edit permissions to existing s, depending on your use case. Report Access Community Profile users need access to the Blackthorn | Events Reports folder to use the Lightning Quick Actions for different reports. Create Page Layouts Use the following examples to create your page layouts in the . Page Title: BUILDER The is now available in the . Users can create a tab on their Experience Site and add the component. users can then create, edit, and clone s. Component: Event Builder This component requires no additional configuration. Sample Pages from the Event Builder Page Title: EVENTS organizers can perform the following tasks. Preview an before publishing it using the BT Events Preview component. Register Attendees from the BT Events Preview component. Use the iframe preview feature to preview an page. Component: BT Events Attendee Builder = “{!recordId}” Component: Record Banner = “{!recordId}” (required) Component: Record Information Tabs = “{!recordId}” (required) = “Record Details” (required) = “Related Records” = “Feed” = “None” = “Details” = “Related” = “Feed” = “Activity” Component: BT Events Email Config = “{!recordId}” Page Title: EVENT LIST Component: Record List = “25” = “Full” (required) = “Page’s Object Name” (required) = “Page’s Filter Name” (required) = “True” (checked) = “True” (checked) Header Properties = “True” (checked) = “True” (checked) = “True” (checked) = “True” (checked) = “True” (checked) = “True” (checked) = “True” (checked) = “True” (checked) - (required) Page Title: RELATED LIST Component: Related Record List = {!recordId} = “Child Relationship Name”__r or {!relationshipApiName} List Elements to Show = “True” (checked) = “True” (checked) = “True” (checked)",
+  "keywords": [
+    "true",
+    "checked",
+    "component",
+    "users",
+    "page",
+    "create",
+    "required",
+    "preview",
+    "record",
+    "events",
+    "edit",
+    "recordid",
+    "list",
+    "event",
+    "community",
+    "created",
+    "title",
+    "builder",
+    "related",
+    "need"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "level-3-processing",
+  "title": "level-3-processing.md",
+  "content": "## Metadata_Start ## code: en ## title: Level 3 Processing ## slug: level-3-processing ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Blackthorn supports \"level 3 processing\" via Stripe as part of Blackthorn Payments. We have internal documentation for level 3 processing that we'll share with you upon request. In short, level 3 gets you the best processing rate available by providing the gateway and processor full transaction details, such as you would see on an order. These include line-item level details, such as the quantity, product, and pricing details of each item that's part of the transaction. Here are some requirements that Stripe calls out in their documentation: * Only Visa and Mastercard are supported. * You must provide the customer billing details—name, address, city, state, ZIP code—associated with the card. Assuming this means that the Payment Method used for the Transaction has all of these fields populated. * Only e-commerce is supported, not physical retail. * Total Amount Check - The sum of all the line items in the Level 3 data, including any discounts, taxes, and shipping costs, must exactly match the total amount collected. Attempting to collect more or less than the sum of all the line items will result in an error and a declined payment. ## Salesforce Requirements Any customer that wants to send Level 3 data to Stripe must: * Get Level 3 Charge Data enabled with Stripe * Check the Level 3 checkbox on their Stripe Payment Gateway record(s) * Generate an Invoice with Line Items and associate the Invoice to a Transaction before it’s captured. Note: from Stripe, “Level 3 data cannot be modified after a charge is captured”. ## Stripe Documentation [https://stripe.com/docs/level3](https://stripe.com/docs/level3) [https://stripe.com/docs/api/payment_intents/create#create_payment_intent-level3](https://stripe.com/docs/api/payment_intents/create#create_payment_intent-level3) [https://stripe.com/docs/api/charges/object#charge_object-level3](https://stripe.com/docs/api/charges/object#charge_object-level3)",
+  "keywords": [
+    "stripe",
+    "level",
+    "https",
+    "docs",
+    "level3",
+    "processing",
+    "transaction",
+    "details",
+    "line",
+    "data",
+    "documentation",
+    "must",
+    "payment",
+    "items",
+    "code",
+    "blackthorn",
+    "part",
+    "gateway",
+    "such",
+    "item"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error and a declined payment."
+  ]
+}

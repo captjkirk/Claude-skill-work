@@ -1,0 +1,36 @@
+{
+  "id": "vt-virtual-terminal-transaction-configuration",
+  "title": "vt-virtual-terminal-transaction-configuration.md",
+  "content": "## Metadata_Start ## code: en ## title: Virtual Terminal Transaction Configuration ## slug: vt-virtual-terminal-transaction-configuration ## seoTitle: Virtual Terminal Transaction Configuration ## description: ## contentType: Markdown ## Metadata_End 1. Navigate to the {{variable.Object_Transaction}} object in Setup. 2. Click **Field Sets**. 3. Click **Edit** next to Virtual Terminal. 4. Remove, add, and modify the fields within that box to fit your use case. *Fields \"In the Field Set\" box are the fields currently on the {{variable.Component_VirtualTerminal}}'s Transaction screen.* 6. Click **Save**. ![VT Transaction Configuration_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/VT%20Transaction%20Configuration_1.png){height=\"\" width=\"\"} ![VT Transaction Configuration_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/VT%20Transaction%20Configuration_2.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "transaction",
+    "virtual",
+    "terminal",
+    "configuration",
+    "click",
+    "fields",
+    "variable",
+    "field",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20transaction",
+    "height",
+    "width"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Click **Field Sets**",
+    "3. Click **Edit** next to Virtual Terminal",
+    "4. Remove, add, and modify the fields within that box to fit your use case",
+    "6. Click **Save**"
+  ],
+  "troubleshooting": []
+}

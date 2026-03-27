@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-features-attendees",
+  "title": "evbuilder-features-attendees.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendees ## slug: evbuilder-features-attendees ## seoTitle: Attendees ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Attendees_FeaturesCreate_1}} ## Add Attendees from Accounts, Contacts, and Leads {{snippet.EVBuilder_Attendees_AcctContactLead}} ## Add Attendees from Campaigns {{snippet.EVBuilder_Attendees_Campaign}} ## Add Attendees from Events {{snippet.EVBuilder_Attendees_Events}} ## Add Attendees from Reports {{snippet.EVBuilder_Attendees_Report}} ## Add New Attendees {{snippet.EVBuilder_Attendees_AddNew}}",
+  "keywords": [
+    "attendees",
+    "snippet",
+    "from",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_attendees_featurescreate_1",
+    "accounts",
+    "contacts",
+    "leads",
+    "evbuilder_attendees_acctcontactlead",
+    "campaigns"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "blackthorn-scheduled-jobs",
+  "title": "blackthorn-scheduled-jobs.md",
+  "content": "## Metadata_Start ## code: en ## title: Blackthorn | Scheduled Jobs ## slug: blackthorn-scheduled-jobs ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You can find the scheduled jobs below in Setup. In the Quick Find box, enter and click \"Scheduled Jobs\". All of the Payments job names start with Blackthorn | Payments. * **Blackthorn | Payments Send Stripe Invoices** - It runs at 6 am each day to send the {{variable.Object_Invoice}} to the customer when {{variable.Field_Invoice_SendOnDate}} = \"TODAY\" on the {{variable.Object_Invoice}}. * **Blackthorn | Payments Past Due Invoices** - It runs at 5 am each day to update the {{variable.Object_Invoice}} {{variable.Field_Invoice_PaymentStatus}} = \"Past Due\" when the Due Date < Today and {{variable.Field_Invoice_PaymentStatus}} = \"Unpaid\". You can schedule the jobs listed above by clicking the **Schedule Billing Jobs** button in the Blackthorn | Payment Admin tab. ## Process Stripe Billing Webhook Types Asynchronously {{snippet.Webhooks_ProcessSBwebhookTypesAsync}}",
+  "keywords": [
+    "blackthorn",
+    "jobs",
+    "variable",
+    "scheduled",
+    "payments",
+    "object_invoice",
+    "find",
+    "send",
+    "stripe",
+    "invoices",
+    "runs",
+    "each",
+    "when",
+    "today",
+    "past",
+    "field_invoice_paymentstatus",
+    "schedule",
+    "billing",
+    "metadata_start",
+    "code"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

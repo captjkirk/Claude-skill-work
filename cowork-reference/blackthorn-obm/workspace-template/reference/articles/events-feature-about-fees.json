@@ -1,0 +1,30 @@
+{
+  "id": "events-feature-about-fees",
+  "title": "events-feature-about-fees.md",
+  "content": "## Metadata_Start ## code: en ## title: About Fees ## slug: events-feature-about-fees ## seoTitle: About Fees ## description: ## contentType: Markdown ## Metadata_End The {{variable.Object_Fee}} feature for {{variable.Object_Event}} checkout and Invoices allows Event Organizers to collect the credit card processing {{variable.Object_Fee}} separately from the total amount due and apply required taxes. The {{variable.Object_Fee}} will be dynamically applied based on the {{variable.Object_PaymentMethod}} selected. ## Benefits * **Cost recovery:** {{variable.Object_Event}} organizers can cover transaction costs by collecting the {{variable.Object_Fee}} separately, ensuring profitability while offering credit card payments. * **Dynamic application:** The {{variable.Object_Fee}} is dynamically applied when the {{variable.Object_Attendee}} selects a credit card as their {{variable.Object_PaymentMethod}}. It is dynamically removed when the {{variable.Object_Attendee}} selects an alternate {{variable.Object_PaymentMethod}}. * **Pricing flexibility:** It enables competitive base prices while adding the {{variable.Object_Fee}} separately, attracting {{variable.Object_Attendee}}s and covering credit card expenses. * **Streamlined management:** Separation simplifies accounting, providing a clear breakdown of revenue and fees for better financial tracking and analysis. * **Customer relationships:** Transparent fee disclosure builds trust while fostering satisfaction, loyalty, and stronger customer relationships. * **Compliance and adaptability:** It ensures compliance with regulations and allows our clients to adapt to market changes in fees or regulations. ## Permission Sets Only users with the {{variable.PS_PT_Admin}} permission set can Read, Create and Edit {{variable.Object_Fee}} records. The following permission sets have Read Only access: * {{variable.PS_PT_User}} * {{variable.PS_PT_Manager}} * {{variable.PS_PT_CommunityPlatformUser}} * {{variable.PS_PT_SiteGuestUser}} * {{variable.PS_PT_StripeBilling}} The {{variable.Field_ETEvent_PaymentProcesFee}} field on the {{variable.Object_Event}} record is editable with any Blackthorn | Events permission set except for the Read-only permission sets. ## Add the Payment Processing Fee to the Event Builder In addition to adding the {{variable.Field_ETEvent_PaymentProcesFee}} field to the {{variable.Object_Event}} record's page layout, you will need to add the {{variable.Field_ETEvent_PaymentProcesFee}} field to the Event Builder. Complete the steps below to add the {{variable.Field_ETEvent_PaymentProcesFee}} field to the Event Details section. {{snippet.AddFieldToEventBuilder}} ## Prerequisites: Configuring Fees Please review the following scenarios to ensure you are meeting local laws and regulations when configuring Fees. If {{variable.Field_Fee_Type}} = “Payment Processing”... You are responsible for properly configuring your payment processing fee. Do not enter the exact rate charged by your payment gateway to cover the full cost of credit card fees. Verify your calculation with your payment gateway provider first. Please [review this guide](https://www.bankrate.com/finance/credit-cards/can-a-business-charge-for-using-credit-card/#fees){target=`_blank`} to help determine the rate to pass on to your customers. If {{variable.Field_Fee_Type}} = \"Tax\"... You are responsible for ensuring that your tax configuration complies with your local laws and regulations. Certain regions require tax-inclusive pricing. :::(Warning) (For Blackthorn Customers in the USA) The Federal Trade Commission (FTC) [recently passed the Junk Fees Rule](https://www.ftc.gov/news-events/news/press-releases/2024/12/federal-trade-commission-announces-bipartisan-rule-banning-junk-ticket-hotel-fees){target=`_blank`}. The new rule requires that businesses do the following: * Provide consumers with pricing and fee information up front. * Clearly present the total price, including all mandatory fees. * If allowable fees are excluded from the price, state them clearly and disclose the purpose and amount before a consumer agrees to pay. To comply with this rule, we recommend the following: * Use the Tabbed or Full-Width UI if you host events with fees that fall within the new rule. (The Dynamic UI is scheduled for updates to make fees more visible.) * For additional caution, [use tax-inclusive pricing](https://docs.blackthorn.io/docs/events-feature-using-fees#taxinclusive-pricing){target=`_blank`}, which advertises the tax as part of the price in all but the final payment step, where it is a separate line item. * Finally, it is your organization’s responsibility to use the Fee-related features as intended and to remain compliant with the new rule. :::",
+  "keywords": [
+    "variable",
+    "fees",
+    "your",
+    "object_fee",
+    "credit",
+    "card",
+    "payment",
+    "rule",
+    "events",
+    "pricing",
+    "permission",
+    "object_event",
+    "event",
+    "processing",
+    "regulations",
+    "following",
+    "field_etevent_paymentprocesfee",
+    "field",
+    "about",
+    "feature"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

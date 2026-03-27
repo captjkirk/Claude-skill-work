@@ -1,0 +1,30 @@
+{
+  "id": "a2p-messaging-form",
+  "title": "a2p-messaging-form.md",
+  "content": "## Metadata_Start ## code: en ## title: A2P Form in Admin Page ## slug: a2p-messaging-form ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End To support the new A2P Messaging routes we have included the required registration form directly in the signup process located in the Messaging Administration page. **NOTE:** Users must complete the [A2P submission process](https://docs.blackthorn.io/docs/account-activation){target=`_blank`} for both Production and Sandbox orgs. ![A2P Messaging Form included in Textey Administration Page](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/A2P%20Messaging%20Form%20included%20in%20Textey%20Administration%20Page.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "form",
+    "messaging",
+    "page",
+    "included",
+    "process",
+    "administration",
+    "https",
+    "docs",
+    "metadata_start",
+    "code",
+    "title",
+    "admin",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "support",
+    "routes"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

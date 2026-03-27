@@ -1,0 +1,35 @@
+{
+  "id": "email-notification-settings",
+  "title": "email-notification-settings.md",
+  "content": "## Metadata_Start ## code: en ## title: Email Notification Settings ## slug: email-notification-settings ## seoTitle: Email Notification Settings ## description: ## contentType: Markdown ## Metadata_End ## Update the Primary Email Address Follow the steps below to change the {{variable.Field_SS_PrimaryEmailAddress}}. 1. Click the Smart Scheduler Admin tab. ![Events_SmartSched_Smart Scheduler Admin Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events_SmartSched_Smart%20Scheduler%20Admin%20Tab.png){height=\"\" width=\"\"} 3. Click the Configuration Settings tab in the left-hand navigation bar. ![Events_SmartSched_Click Configuration Settings tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events_SmartSched_Click%20Configuration%20Settings%20tab.png){height=\"\" width=\"\"} 5. Click the Pencil icon next to the {{variable.Field_SS_PrimaryEmailAddress}} field and enter an email address. ![Events_SmartSched_Change Primary Email Address](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events_SmartSched_Change%20Primary%20Email%20Address.png){height=\"\" width=\"\"} 8. Click **Update Setting**.",
+  "keywords": [
+    "email",
+    "settings",
+    "click",
+    "notification",
+    "address",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "update",
+    "primary",
+    "variable",
+    "field_ss_primaryemailaddress"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the Smart Scheduler Admin tab",
+    "3. Click the Configuration Settings tab in the left-hand navigation bar",
+    "5. Click the Pencil icon next to the {{variable",
+    "8. Click **Update Setting**"
+  ],
+  "troubleshooting": []
+}

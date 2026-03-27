@@ -1,0 +1,37 @@
+{
+  "id": "gateway-orders",
+  "title": "gateway-orders.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Gateway Orders ## slug: gateway-orders ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Stripe Gateway Order records in Salesforce are copies of the Order records in Stripe. These records get synced via webhooks. Note that you can't create Orders manually within the Stripe Dashboard. ![M_03_05 stripe gateway orders 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_05%20stripe%20gateway%20orders%201.png){height=\"\" width=\"\"} * `Order Id` is the Stripe Id of the order record. * Related Gateway Order Items carry Stripe Id's as well. * Related Gateway Order Items connect the SKU records to the Order; so they are the junction object between Orders and Products. ![M_03_05 stripe gateway orders 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_05%20stripe%20gateway%20orders%202.png){height=\"\" width=\"\"} ## Create Stripe Gateway Orders from Salesforce You can create a Stripe Gateway Order record with Line Items and push it into Stripe. 1. Create a Stripe Gateway Order record. 2. Set Customer and Currency ISO fields. 3. Set Shipping Street field (the rest of address-related fields are optional). 4. Create at least one related Gateway Order Item record. * Set the Gateway SKU lookup * Set the Quantity 5. Click **Push to Stripe** button on the layout. 6. You should see populated Status, Amount and Order Id fields.",
+  "keywords": [
+    "stripe",
+    "gateway",
+    "order",
+    "orders",
+    "create",
+    "records",
+    "m_03_05",
+    "record",
+    "related",
+    "items",
+    "fields",
+    "salesforce",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create a Stripe Gateway Order record",
+    "2. Set Customer and Currency ISO fields",
+    "3. Set Shipping Street field (the rest of address-related fields are optional)",
+    "4. Create at least one related Gateway Order Item record",
+    "5. Click **Push to Stripe** button on the layout",
+    "6. You should see populated Status, Amount and Order Id fields"
+  ],
+  "troubleshooting": []
+}

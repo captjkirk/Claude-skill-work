@@ -1,0 +1,33 @@
+{
+  "id": "touchnet",
+  "title": "touchnet.html",
+  "content": "Overview Looking for ? You've come to the right place! We officially support for our Events checkout only. Let's take a look at what you'll need to configure the Payment Gateway, prepare a Salesforce org, and configure and enable the gateway. Requirements A dedicated TouchNet site connected to Blackthorn is required to configure Blackthorn Events to use TouchNet for payments. With a properly configured UPay site, the following information is required to configure a TouchNet Payment Gateway. T-Link Service URL Site ID Site URL Prepare TouchNet for Blackthorn TouchNet uPay Site Setup In the top navigation bar, go to Applications &gt; Marketplace. Click Touchnet Ready &gt; uPay Sites &gt; Payment Settings. Set Site Uses T-Link = \"Yes\". Set Partner Name = \"Blackthorn Events\". IMPORTANT: Contact TouchNet Before the integration with Blackthorn can be officially supported, you must contact TouchNet to open a partner connection project. Prepare your Salesforce Org for TouchNet Add a TouchNet Payment Provider The value \"TouchNet\" must be added to the existing picklist field (bt_stripe__Provider__c) on the packaged Payment Gateway object (bt_stripe__Payment_Gateway__c). Navigate to: Object Manager &gt; Payment Gateway &gt; Fields and Relationships &gt; Provider In the Values section, click . Enter “TouchNet” and click . Add Custom Fields to the Payment Gateway The following fields must be added to the object (bt_stripe__Payment_Gateway__c): Field Name: TouchNet T-Link URL API Name: TouchNet_T_Link_URL__c Data Type: Text(255) Description: Service endpoint for the TouchNet T-Link web service Field Name: TouchNet uPay Site ID API Name: TouchNet_uPay_Site_ID__c Data Type: Text(15) Description: A numeric non-negative integer value that identifies the site responsible for processing the transaction Field Name: TouchNet uPay Site URL API Name: TouchNet_uPay_Site_URL__c Data Type: Text(255) Description: Corresponding UPay Site URL for the given Site ID Field Name: TouchNet uPay Form Parameters API Name: TouchNet_uPay_Form_Parameters__c Data Type: Long Text(32768) Description: Key/value pairs to submit to as additional form parameters. Each key/value must be separated by a new line with each line formatted as \"MY_PARAMETER_KEY=Some value\" Assign Field Level Security permissions for the new fields to the Salesforce User account used by the Blackthorn external service. Enable TouchNet Payment Gateway Support Create the Form Parameter in TouchNet If you need to create the new parameter, go to Marketplace Home &gt; TouchNet Ready &gt; UPay Sites &gt; Blackthorn &gt; Form Parameters. Open your site. Click Form Parameters in the left-hand column. Add the EVENT_ID parameter to track the individual . NOTE: The TRANSACTION_ID is also supported. To view the posted IDs navigate to TouchNet &gt; Marketplace &gt; Marketplace Reports &gt; Posted Parameters. Once an Attendee pays for the , the EVENT_ID value is then passed through to . Using TouchNet in an Experience Cloud If a user tries to use in an&nbsp; , they will see the following error because the domain was blocked from loading. \"This content is blocked error\". To avoid this issue, complete the steps below. Go to Setup. In the Quick Find box, search for and click “Trusted URLs.” Click New Trusted URL . Enter an . Set = “https://test.secure.touchnet.net:8443/” Set connect-src (scripts) = “True” (checked) Set frame-src (iframe content) = “True” (checked) Review the other settings as needed. Click . checkout will now load correctly on the registration page. Other Helpful Information How to Test For testing purposes, create a Payment Gateway and use the following values: Field Value TouchNet UPay Site ID 242 TouchNet UPay Site URL https://test.secure.touchnet.net:8443/C30002test_upay/web/index.jsp TouchNet uPay Form Parameters DEPARTMENT=any Use the Payment Gateway with any Event and perform a normal (paid) checkout. You should be able to successfully complete a checkout as well as perform failing checkouts that should be handled appropriately. Use the following test card numbers: Brand Number CVC/CVV Expiration Date Visa 4111111111111111 125 Any future date American Express 343434343434343 1250 Any future date Discover 6011111111111117 125 Any future date Mastercard 5121212121212124 125 Any future date Update Payment Details To update any settings (required fields, supported cards, ...), go to Applications &gt; MarketPlace Home &gt; TouchNet Ready &gt; UPay Sites &gt; Blackthorn &gt; Payment Settings. Now you can see all available options on the Blackthorn: Payment Settings form.",
+  "keywords": [
+    "touchnet",
+    "site",
+    "payment",
+    "upay",
+    "gateway",
+    "blackthorn",
+    "name",
+    "click",
+    "value",
+    "field",
+    "form",
+    "parameters",
+    "following",
+    "marketplace",
+    "settings",
+    "fields",
+    "date",
+    "checkout",
+    "configure",
+    "link"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error because the domain was blocked from loading.",
+    "error\"."
+  ]
+}

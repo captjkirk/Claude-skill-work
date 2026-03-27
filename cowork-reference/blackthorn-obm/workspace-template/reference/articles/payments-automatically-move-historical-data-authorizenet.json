@@ -1,0 +1,33 @@
+{
+  "id": "payments-automatically-move-historical-data-authorizenet",
+  "title": "payments-automatically-move-historical-data-authorizenet.md",
+  "content": "## Metadata_Start ## code: en ## title: Automatically Move Historical Data ## slug: payments-automatically-move-historical-data-authorizenet ## seoTitle: Automatically Move Historical Data ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Are webhooks active?) Before you begin, you must enable webhooks. If webhooks are on, your data will automatically sync from Authorize.net to Salesforce. ::: Before you move any historical data from your existing gateway account to Authorize.net, complete the following steps. Your data will be automatically synced to Salesforce once it's created in Authorize.net. 1. Enable webhooks. When webhooks are enabled, the data will automatically sync from Authorize.net to Salesforce. 2. Confirm that your matching logic is set up correctly. Matching logic determines how this data will relate to your Contacts/Accounts. Once those steps are complete, [reach out to Authorize.net](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=KA-04061){target=\"_blank\"} to start the next step.",
+  "keywords": [
+    "data",
+    "automatically",
+    "authorize",
+    "webhooks",
+    "your",
+    "move",
+    "historical",
+    "from",
+    "salesforce",
+    "code",
+    "before",
+    "enable",
+    "sync",
+    "complete",
+    "steps",
+    "once",
+    "matching",
+    "logic",
+    "metadata_start",
+    "title"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Enable webhooks",
+    "2. Confirm that your matching logic is set up correctly"
+  ],
+  "troubleshooting": []
+}

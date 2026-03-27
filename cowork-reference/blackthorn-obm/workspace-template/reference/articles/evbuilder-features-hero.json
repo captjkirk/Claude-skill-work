@@ -1,0 +1,26 @@
+{
+  "id": "evbuilder-features-hero",
+  "title": "evbuilder-features-hero.md",
+  "content": "## Metadata_Start ## code: en ## title: Hero Section ## slug: evbuilder-features-hero ## seoTitle: Hero Section ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Hero_Limitation}} {{snippet.EVBuilder_Hero_FeaturesCreate}}",
+  "keywords": [
+    "hero",
+    "section",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "features",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_hero_limitation",
+    "evbuilder_hero_featurescreate"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

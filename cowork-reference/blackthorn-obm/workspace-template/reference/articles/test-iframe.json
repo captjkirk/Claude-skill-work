@@ -1,0 +1,21 @@
+{
+  "id": "test-iframe",
+  "title": "test-iframe.md",
+  "content": "## Metadata_Start ## code: en ## title: Test iframe ## slug: test-iframe ## seoTitle: Test iframe ## description: ## contentType: Markdown ## Metadata_End",
+  "keywords": [
+    "test",
+    "iframe",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

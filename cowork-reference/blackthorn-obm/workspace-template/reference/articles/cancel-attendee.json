@@ -1,0 +1,30 @@
+{
+  "id": "cancel-attendee",
+  "title": "cancel-attendee.html",
+  "content": "This Cancel Attendee Registration feature allows the to cancel their registration without having to contact the Event Planner/Organizer. This feature is applicable for free s only. Do you want to replace the default cancelation message? Go to the Event Settings for the Event. Add the custom message to the field on the Event Settings record. If your Attendee cancels their registration via their AttendeeLink, they will see the custom cancelation message. Go to your existing record and set the and fields to a future date/time. Click . Note: If the and are in the past, the will not be able to cancel the registration. The goes through the free process and gets a confirmation email with the . In Salesforce, the field is set to . To cancel the registration, the clicks the and clicks . In Salesforce, the is set to and the 's is updated. Once an cancels their registration from their , the values in the fields on the and/or records will not be removed, The fields are populated automatically to specify that an is related to specific and/or . If you want the values in the fields to be removed, you must remove them manually. Limitation When an Attendee is manually created/added to the Event and has = \"Registered\", the button will not be displayed on the AttendeeLink.",
+  "keywords": [
+    "registration",
+    "their",
+    "event",
+    "cancel",
+    "fields",
+    "attendee",
+    "message",
+    "feature",
+    "free",
+    "want",
+    "cancelation",
+    "settings",
+    "custom",
+    "field",
+    "record",
+    "your",
+    "cancels",
+    "attendeelink",
+    "salesforce",
+    "clicks"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

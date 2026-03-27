@@ -1,0 +1,30 @@
+{
+  "id": "mobile-checkin-app-attendee-search",
+  "title": "mobile-checkin-app-attendee-search.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendee Search ## slug: mobile-checkin-app-attendee-search ## seoTitle: Attendee Search ## description: ## contentType: Markdown ## Metadata_End Mobile Check-in app users can filter Attendees using additional criteria to create better optimized results. Example: A large Event is in progress. The Mobile Check-in user needs to filter the Attendee list by specific criteria quickly and without using too many API calls. To start, the user can set the “Last Modified Date” to a specific Day/Month/Year so only Attendee records that were modified after that date appear in the results. The user can then use the qualifiers “and” and/or “or\" and select from the Attendee object’s fields to further narrow the results. Finally, the user can set a value to limit the number of Attendee records in the results. For example, if 5000 is entered, the results will include up to 5000 records. If a value is not specified, the default value of 3000 records will be used. If all the filter criteria are left blank, the user will see all the Attendee records in the results.",
+  "keywords": [
+    "attendee",
+    "results",
+    "user",
+    "records",
+    "search",
+    "mobile",
+    "filter",
+    "criteria",
+    "value",
+    "check",
+    "using",
+    "example",
+    "specific",
+    "modified",
+    "date",
+    "5000",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

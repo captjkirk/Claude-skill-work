@@ -1,0 +1,30 @@
+{
+  "id": "mobile-check-in-attendee-listing",
+  "title": "mobile-check-in-attendee-listing.html",
+  "content": "App Prerequisite To use the QR code scan feature, the Mobile Check-in app must be updated to Version 1.0.10 or higher. Check-in Options QR Code To check in an {{variable.Object_Attendee}} using the {{variable.Feature_QRCode}} scan feature press the capture a QR code button on the home screen and scan the {{variable.Feature_QRCode}} . A valid {{variable.Feature_QRCode}} will start the check-in process and provide the user with relevant details about the {{variable.Object_Event}} . If you are using an iOS device and need to close the QR code scanning feature without scanning a QR code, click the Cancel button. Attendee Name Select an {{variable.Object_Event}} from the Event listing screen. On the Attendee listing screen, you can see the registered {{variable.Object_Attendee}} s for the {{variable.Object_Event}} . There is a refresh button on the top right for manually refreshing the list in case there are data changes from Salesforce. Also, the sub-header displays the total checked-in {{variable.Object_Attendee}} count as well as total registered {{variable.Object_Attendee}} count. To check someone in, swipe their name from right to left, or tap their name to see their {{variable.Object_Attendee}} details and check them in from there. The Attendee is now checked in. Attendee Badge To check someone in using their badge {{variable.Feature_QRCode}} , tap the floating scan button to trigger the camera like so: Once a {{variable.Feature_QRCode}} is accepted and found, you will be taken to the {{variable.Object_Attendee}} details screen, otherwise, an alert message will be prompted saying no one is found. Review the Check-in History To review the check-in history for an Event’s Attendees, complete the following steps. Go to the Event. Tap the Attendees tab.&nbsp; Click the three dots in the top right corner. Click Check In History .",
+  "keywords": [
+    "variable",
+    "check",
+    "object_attendee",
+    "code",
+    "feature_qrcode",
+    "scan",
+    "button",
+    "screen",
+    "attendee",
+    "from",
+    "their",
+    "feature",
+    "using",
+    "details",
+    "object_event",
+    "click",
+    "name",
+    "event",
+    "there",
+    "right"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

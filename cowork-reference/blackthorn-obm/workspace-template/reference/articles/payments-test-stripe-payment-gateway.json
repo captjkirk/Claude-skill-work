@@ -1,0 +1,36 @@
+{
+  "id": "payments-test-stripe-payment-gateway",
+  "title": "payments-test-stripe-payment-gateway.html",
+  "content": "Test a Stripe Card Test a Stripe ACH Bank Account Test for Specific Responses and Errors Use the test cards below to create a that produces a specific response. Incorrect CVC Code Error Use this number to create an error about an incorrect . The error message will be in the Stripe data fields. • &nbsp; &nbsp;&nbsp; = 4000000000000127 Fail to Capture This number will create a valid Payment Method, but when you capture a Transaction with the Payment Method, the Transaction will fail. The error message will be in the Stripe data fields. • &nbsp; &nbsp; = 4000000000000341 Additional testing for specific responses and errors can be found here . Disputes Use the card below in test mode to simulate a disputed . This number will create a valid , but when you capture a with the , a record will be created. = \"4000000000000259\" Test Winning a Dispute Enter the words \"winning_evidence\" in the field on the &nbsp; record to simulate the dispute being won and the funds being returned to your account as an adjustment . Test Losing a Dispute Enter the words \"losing_evidence\" in the field on the record to simulate the dispute being closed and marked as lost. (Your account will not be credited.) Click here for more information about Disputes. Delete Test Data Navigate to your Dashboard. Toggle \"ON\" the switch. (left-hand column). Click Business settings . (left-hand column) Select \"Data\". Next to Test data, click Delete all test data . Click Delete Now . Salesforce Whether you are in a Production or Sandbox Org, you will need to temporarily deactivate all triggers so that you can delete , , and records. Navigate to Custom Settings. Click next to Blackthorn - Pay Trigger Settings. Click . Check the checkbox. Click . Delete all of your test data. Navigate back to Custom Settings and UNCHECK .",
+  "keywords": [
+    "test",
+    "data",
+    "click",
+    "nbsp",
+    "delete",
+    "stripe",
+    "create",
+    "error",
+    "dispute",
+    "your",
+    "settings",
+    "account",
+    "specific",
+    "number",
+    "capture",
+    "simulate",
+    "record",
+    "being",
+    "navigate",
+    "card"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "Errors Use the test cards below to create a that produces a specific response.",
+    "Error Use this number to create an error about an incorrect .",
+    "error message will be in the Stripe data fields.",
+    "error message will be in the Stripe data fields.",
+    "errors can be found here ."
+  ]
+}

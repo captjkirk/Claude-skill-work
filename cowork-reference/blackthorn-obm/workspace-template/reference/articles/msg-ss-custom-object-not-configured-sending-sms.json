@@ -1,0 +1,40 @@
+{
+  "id": "msg-ss-custom-object-not-configured-sending-sms",
+  "title": "msg-ss-custom-object-not-configured-sending-sms.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Object Is Not Configured for Sending SMS ## slug: msg-ss-custom-object-not-configured-sending-sms ## seoTitle: Custom Object Is Not Configured for Sending SMS ## description: ## contentType: Markdown ## Metadata_End Complete the steps below to configure a custom object for messaging. 1. Click the **Gear icon** in the upper right-hand corner. 2. Click **Setup**. 3. Click **Create**. 4. Click **Objects**. 5. Click **SMS Message**. 6. Click **New** in the Custom Fields & Relationships section. 7. Create a Lookup Relationship field that is related to your custom object. In this example, we used a custom object named Student. 8. Complete the remainder of the new field wizard as you would for any new Lookup field. 9. After the new Lookup field is created, Messaging will detect the relationship. You can now add the Messaging Messenger component to this object's pages. You will also be able to create Templates for this object. To send text messages to this object, add a Phone field with {{variable.Field_Messaging_DataType}} = “Phone”. Messaging does not detect phone numbers in text formula fields.",
+  "keywords": [
+    "object",
+    "custom",
+    "click",
+    "field",
+    "messaging",
+    "configured",
+    "sending",
+    "create",
+    "lookup",
+    "phone",
+    "complete",
+    "fields",
+    "relationship",
+    "detect",
+    "text",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Click the **Gear icon** in the upper right-hand corner",
+    "2. Click **Setup**",
+    "3. Click **Create**",
+    "4. Click **Objects**",
+    "5. Click **SMS Message**",
+    "6. Click **New** in the Custom Fields & Relationships section",
+    "7. Create a Lookup Relationship field that is related to your custom object",
+    "8. Complete the remainder of the new field wizard as you would for any new Lookup field",
+    "9. After the new Lookup field is created, Messaging will detect the relationship"
+  ],
+  "troubleshooting": []
+}

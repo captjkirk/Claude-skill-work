@@ -1,0 +1,30 @@
+{
+  "id": "events-features-fees-set-up-gst",
+  "title": "events-features-fees-set-up-gst.html",
+  "content": "Limitation Do not use the Virtual Terminal to process a Transaction that includes Fees (Payment Processing or Tax). Fees are not supported by the Virtual Terminal. Prerequisites Before you can add taxes to an , create an with at least one paid and then complete the sections below. (In this example, ’s = “100.00.”) Add the Fee Fields to the Event Page Layout Go to the relevant record. Click the . Click Edit Object . Click the Page Layouts tab. Click Event Layout. Click the Fields tab. In the Quick Fix box, enter and click “Fee.\" Drag and drop the following fields on the page layout. , Click . Create a Data Dictionary Group Before you create a new , you must create a new and populate it with . One-to-One Relationship for Keys and Values There can only be one per for each . Creating a new entry for an existing will replace the current with the new one. From the App Launcher, enter and click “Data Dictionary Group”. Click . Set = “GST Labels.” Click . Click next to Data Dictionary Entry. Set the to “English.” Set the to “LBL_EIN” and the to “ABN.”&nbsp; Capital letters must be used in the&nbsp; &nbsp;field. Click Add Row . Set the to “LBL_INVOICE” and the to “Tax Invoice.” See the DocumentLink Data Dictionary (a Google document) for more and options. Click . Click Back to return to the record. Add Taxes to the Event To add taxes to an , you must start by creating a new record with = “Tax.” In this example, we will use tax-inclusive pricing. Go to the record. Click the icon next to the field. Search for an existing or click + New Fee to create a new . In this example, we need to create a new . = \"GST\" (If you need the to say HST, set the to “HST.”) = “True” (checked) = “10” = “Tax” = “Tax-Inclusive Pricing” Click . Click to save the changes to your . Click to make sure the changes are published on the webpage. Attendee Experience For this example, we set the ’s to “100.00.” Click the to open the webpage. The “Starting from” price includes the 10% markup for the configured . Click Get Tickets . Add a Ticket ( ) to the cart. The Ticket price shows the tax-inclusive price. Click Checkout . Enter the Attendee Information and click Payment . In the Order Summary column, you'll see the cost breakdown. Enter the payment details and click Pay . The order is complete. View the Tax Fees on Invoices Navigate back to the record in . You will see a new record for the completed registration. Click the . The record now has a related . In the s , click the . The Totals section shows the amounts that are seen during the checkout process, including the tax amounts. You can also see the (s). Click the to view it. records show the breakdown of the amounts, including the and seen during the checkout process. Important Things to Know The ’s won’t be displayed on the . The ’s is automatically saved to the ’s field. The text in the ’s field will override the out-of-the-box \"Tax\" label under the Subtotal when viewing an in a . Configure DocumentLink for GST Go back to the record. Click the icon next to the field. Click the field to select an existing or click + New DocumentLink Template to create a new template. Enter a (required). Fill in any other necessary fields. Click in the field and click + New Company Info . Enter a , , and (required). Add the Australian Business Number (ABN) to the field. The ABN must be included on all s. Click . To override the \"EIN\" label and display \"ABN,\" add the you created at the beginning to the field. Click . On the record, click . Click the field.",
+  "keywords": [
+    "click",
+    "field",
+    "record",
+    "create",
+    "enter",
+    "example",
+    "fields",
+    "data",
+    "dictionary",
+    "must",
+    "process",
+    "fees",
+    "payment",
+    "taxes",
+    "event",
+    "page",
+    "layout",
+    "existing",
+    "next",
+    "nbsp"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

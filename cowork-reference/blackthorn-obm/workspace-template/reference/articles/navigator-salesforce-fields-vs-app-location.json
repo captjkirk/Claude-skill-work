@@ -1,0 +1,30 @@
+{
+  "id": "navigator-salesforce-fields-vs-app-location",
+  "title": "navigator-salesforce-fields-vs-app-location.html",
+  "content": "Use the table below to see the relationship between the information in the app and the corresponding Salesforce fields. Object Field Navigator App Location Event {{variable.Field_ETEvent_EventName}} Info tab {{variable.Field_ETEvent_TimeZone}} Full Agenda, My Agenda, and Ticket tabs, and the Session screen {{variable.Field_ETEvent_EventStartDate}} Info tab {{variable.Field_ETEvent_EventStartTime}} Info tab {{variable.Field_ETEvent_EventEndDate}} Info tab {{variable.Field_ETEvent_EventEndTime}} Info tab {{variable.Field_ETEvent_Description}} Info tab {{variable.Field_ETEvent_ContactUsEmail}} Email address that the Contact Us form goes to {{variable.Field_ETEvent_VenueName}} Info tab {{variable.Field_ETEvent_VenueStreet}} Info tab {{variable.Field_ETEvent_VenueCity}} Info tab {{variable.Field_ETEvent_VenueStateProvin}} Info tab {{variable.Field_ETEvent_VenueCountry}} Info tab {{variable.Field_ETEvent_VenuePostalCode}} Info tab {{variable.Field_ETEvent_ImageURL}} Full Agenda and Info tabs Event Item {{variable.Field_ETEventItem_PublicItemNa}} Ticket tab Session {{variable.Field_ETSession_DisplayName}} Session screen {{variable.Field_Session_Location}} Session screen {{variable.Field_Session_Price}} Session screen {{variable.Field_Session_Description}} Session screen {{variable.Field_Session_StartDate}} Session screen {{variable.Field_ETSession_StartTime}} Session screen {{variable.Field_ETSession_EndDate}} Session screen {{variable.Field_ETSession_EndTime}} Session screen Speaker {{variable.Field_Speaker_FirstName}} Speaker screen - Large Name {{variable.Field_Speaker_LastName}} Speaker screen - Large Name {{variable.Field_Speaker_Company}} Speaker screen {{variable.Field_Speaker_Title}} Speaker screen {{variable.Field_Speaker_ImageURL}} Speaker screen {{variable.Field_Speaker_Bio}} Speaker screen {{variable.Field_Speaker_Twitter}} Speaker screen {{variable.Field_Speaker_LinkedIn}} Speaker screen {{variable.Field_Speaker_Instagram}} Speaker screen Attendee {{variable.Field_Attendee_AttendFullName}} Attendees tab and Attendee Profile {{variable.Field_Attendee_X}} Attendees tab and Attendee Profile {{variable.Field_Attendee_LinkedIn}} Attendees tab and Attendee Profile {{variable.Field_Attendee_Instagram}} Attendees tab and Attendee Profile Account {{variable.Field_Account_AccountName}} Speaker screen - small name - displays the Account name associated with the Speaker",
+  "keywords": [
+    "variable",
+    "screen",
+    "info",
+    "speaker",
+    "session",
+    "attendee",
+    "name",
+    "attendees",
+    "profile",
+    "agenda",
+    "event",
+    "full",
+    "ticket",
+    "tabs",
+    "large",
+    "account",
+    "table",
+    "below",
+    "relationship",
+    "between"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

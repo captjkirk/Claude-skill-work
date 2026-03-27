@@ -1,0 +1,30 @@
+{
+  "id": "tabbed-user-interface",
+  "title": "tabbed-user-interface.md",
+  "content": "## Metadata_Start ## code: en ## title: Tabbed User Interface ## slug: tabbed-user-interface ## seoTitle: Tabbed UI ## description: ## contentType: Markdown ## Metadata_End ![Tabbed UI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Tabbed%20UI.png){height=\"\" width=\"\"} ## What Is Supported by Each User Interface? The following chart shows the features we currently support for each {{glossary.user interface (UI)}}. {{snippet.EV_Table_SupportedEachUI}} ## UI Experience Field Setup {{snippet.EV_UIExperienceSetup}} ## Using the Tabbed UI The Tabbed UI is the default UI for {{variable.Object_Event}}s created with {{variable.Component_EventWizard}}. (For {{variable.Object_Event}}s created with the {{variable.Component_EventBuilder}}, the default UI is the Dynamic UI.) The Tabbed UI will be used for all {{variable.Object_Event}}s unless the {{variable.Field_ETEvent_UIExperience}} field is changed. The \"Tabbed\" UI supports both FREE and PAID {{variable.Object_Event}}s and as many {{variable.Object_EventItem}}s as you want. ![Tabbed UI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Tabbed%20UI.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "tabbed",
+    "variable",
+    "user",
+    "interface",
+    "object_event",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20ui",
+    "height",
+    "width",
+    "each",
+    "snippet",
+    "field"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

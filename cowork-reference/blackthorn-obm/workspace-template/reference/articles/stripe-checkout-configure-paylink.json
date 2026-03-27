@@ -1,0 +1,30 @@
+{
+  "id": "stripe-checkout-configure-paylink",
+  "title": "stripe-checkout-configure-paylink.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure PayLink ## slug: stripe-checkout-configure-paylink ## seoTitle: Configure PayLink ## description: ## contentType: Markdown ## Metadata_End ### Add Stripe Checkout to the PayLink Configuration Object {{snippet.StripeChkout_ConfPG_AddToPLObj}} ### Set the Value on the Paylink Configuration Record {{snippet.StripeChkout_ConfPG_SetValue}}",
+  "keywords": [
+    "paylink",
+    "configure",
+    "stripe",
+    "checkout",
+    "configuration",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "object",
+    "stripechkout_confpg_addtoplobj",
+    "value",
+    "record",
+    "stripechkout_confpg_setvalue"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

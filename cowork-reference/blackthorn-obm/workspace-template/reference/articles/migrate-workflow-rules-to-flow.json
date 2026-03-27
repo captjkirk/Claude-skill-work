@@ -1,0 +1,47 @@
+{
+  "id": "migrate-workflow-rules-to-flow",
+  "title": "migrate-workflow-rules-to-flow.md",
+  "content": "## Metadata_Start ## code: en ## title: Migrate Workflow Rules to Flow ## slug: migrate-workflow-rules-to-flow ## seoTitle: Migrate Workflow Rules to Flow ## description: ## contentType: Markdown ## Metadata_End Workflow Rules have been converted to Flows to provide the benefits listed below. * Better Performance * The ability to refine and streamline high-volume automation via features like Run Asynchronously, Fast Field Updates (Before Save), and Entry Conditions. * Improved error handling, troubleshooting, and debugging * Click into the flow from an error email and see the path that was run. * Try different record updates straight from the debugger in triggered flows. * See how their governor limits will be impacted while debugging. * Exceptional extensibility with invocable actions and sub-flows * Users can package pieces of automation, either in Flow or Apex, to create building blocks that empower Admins and standardize common interactions. ## New Messaging Flows ### SMS Message Record Actions and Related Record 1. **Trigger:** The flow starts when a new {{variable.Object_SMSMessage}} (simplesms__ SMS_Message__c) record is created. 2. **Decision Check:** The flow checks if the new message is of type \"Incoming.” 3. **Action:** If it is an incoming message, an email alert is sent to the owner of the message. 4. **End:** If the conditions aren’t met, the flow takes no further action. **Summary:** This Salesforce flow automates a process for sending an email alert to the owner of an SMS message whenever a new \"Incoming\" SMS message is created. It ensures that owners are notified promptly when they receive new messages, improving responsiveness. ### SMS Campaign Response Rule Record Fast Field Updates 1. **Trigger:** The flow starts when a new {{variable.Object_SMSCampaignResponseRule}} (simplesms__SMS_Campaign_Response_Rule__c) record is created or updated. 2. **Decision Check:** The flow checks if the {{variable.Field_SMSCRR_AutoRespTempConta}} (simplesms__Auto_Response_Template_Contact__c) field is filled or contains a new value. 3. **Action on True:** Set the {{variable.Field_SMSCRR_AutoRespMsgContac}} (simplesms__Auto_Response_Message_Contact__c) field with the related {{variable.Field_SMSCRR_AutoRespTempConta}} field’s value (Auto_Response_Template_Contact__r.Body__c). 4. **Decision Check:** The flow checks if the {{variable.Field_SMSCRR_AutoRespTempLead}} (simplesms__Auto_Response_Template_Lead__c) field is filled or contains a new value. 5. **Action on True:** Set the {{variable.Field_SMSCRR_AutoRespMsgLead}} (simplesms__Auto_Response_Message_Lead__c) with the related {{variable.Field_SMSCRR_AutoRespTempLead}} field’s value (Auto_Response_Template_Lead__r.Body__c). 6. **End:** If the conditions aren’t met, the flow takes no further action. **Summary:** This {{variable.Product_Salesforce}} flow sets the value of the auto-response template body related to a {{variable.Object_Contact}} or {{variable.Object_Lead}} if the template is selected in an SMS campaign. ### SMS Message Record Fast Field Updates 1. **Trigger:** The flow starts when a new {{variable.Object_SMSMessage}} (simplesms__ SMS_Message__c) record is created or updated. 2. **Decision Check:** The flow checks whether the {{variable.Field_SMSMessage_From}} (simplesms__From_Num__c) field was changed or if it has a new value. 3. **Action on True:** Verify if the {{variable.Field_SMSMessage_From}} (simplesms__From_Num__c) field has a length of 5 characters; if so, keep it as is. Otherwise, set the {{variable.Field_SMSMessage_From}} (simplesms__From_Num__c) field to the last 10 characters. 4. **Decision Check:** The flow checks whether the {{variable.Field_SMSMessage_To}} (simplesms__To__c) field was changed or contains a new value. 5. **Action on True:** Check if the {{variable.Field_SMSMessage_To}} (simplesms__To__c) field has a length of 5 characters; if so, keep it as is. Otherwise, remove the following characters: \"(', ')\", and \"-\" and set the {{variable.Field_SMSMessage_To}} (simplesms__To__c) field to the last 10 characters. 6. **End:** If the conditions aren’t met, the flow takes no further action. **Summary:** This {{variable.Product_Salesforce}} flow automates setting the values of {{variable.Field_SMSMessage_From}} and {{variable.Field_SMSMessage_To}} based on the field length. If the length is 5, it remains unchanged. If it exceeds 10, only the last 10 characters are kept. ### Number Lookup Status Record Actions and Related Record 1. **Trigger:** The flow starts when a new {{variable.Object_NumberLookupStatus}} (simplesms__Number_Lookup_Status__c record is created or updated. 2. **Decision Check:** The flow checks whether the record is new or if its {{variable.Field_NumberLookupStatu_Status}} (simplesms__Status__c) field has changed to “Complete” or “Error.” 3. **Action on True:** Send an email to the current user to inform them that Blackthorn Messaging has finished looking up phone numbers. (Textey Lookup Number Complete Notification) 4. **End:** If the conditions aren’t met, the flow takes no further action. **Summary:** This {{variable.Product_Salesforce}} flow sends an email when the number lookup process is finished and the {{variable.Field_NumberLookupStatu_Status}} is set to “Complete” or “Error.” ## *Old Workflow Rules - No Longer in Use* ### Email Owner When SMS Message Received * **Criteria:** (SMS Message: Message NOT EQUAL TO null) AND (SMS Message: Direction EQUALS Incoming) * **Description:** It will send an email to the SMS message's owner when the SMS message is received. ### Number Status Success/Failure * **Criteria:** Number Lookup Status: Status EQUALS Complete,Error * **Description:** It will send an email to the Number Lookup State's owner when the Status changes to either \"Complete\" or \"Error\". ### Populate From Phone Field * **Criteria:** SMS Message: From NOT EQUAL TO null * **Description:** Updates the SMS Messages From Phone field. ### Populate To Phone Field * **Criteria:** SMS Message: To NOT EQUAL TO null * **Description:** It will update the SMS Messages To Phone field. ### Update Template Message Contact * **Criteria:** OR( ISNEW() ,ISCHANGED( simplesms__Auto_Response_Template_Contact__c ) ) * **Description:** It will update the SMS Campaign Response Rule's Auto Response Message Contact field. ### Update Template Message Lead * **Criteria:** OR( ISNEW() ,ISCHANGED( simplesms__Auto_Response_Template_Lead__c ) ) * **Description:** It will update the SMS Campaign Response Rule's Auto Response Message Lead field.",
+  "keywords": [
+    "variable",
+    "flow",
+    "field",
+    "message",
+    "record",
+    "action",
+    "when",
+    "email",
+    "description",
+    "check",
+    "value",
+    "error",
+    "decision",
+    "checks",
+    "response",
+    "characters",
+    "number",
+    "criteria",
+    "workflow",
+    "rules"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. **Trigger:** The flow starts when a new {{variable",
+    "2. **Decision Check:** The flow checks if the new message is of type \"Incoming",
+    "3. **Action:** If it is an incoming message, an email alert is sent to the owner of the message",
+    "4. **End:** If the conditions aren’t met, the flow takes no further action",
+    "1. **Trigger:** The flow starts when a new {{variable",
+    "2. **Decision Check:** The flow checks if the {{variable",
+    "3. **Action on True:** Set the {{variable",
+    "4. **Decision Check:** The flow checks if the {{variable",
+    "5. **Action on True:** Set the {{variable",
+    "6. **End:** If the conditions aren’t met, the flow takes no further action"
+  ],
+  "troubleshooting": [
+    "error handling, troubleshooting, and debugging * Click into the flow from an error email and see the path that was run.",
+    "Error.",
+    "Error.",
+    "Error * **Description:** It will send an email to the Number Lookup State's owner when the Status changes to either \"Complete\" or \"Error\".",
+    "troubleshooting, and debugging * Click into the flow from an error email and see the path that was run."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "event-items-overview",
+  "title": "event-items-overview.html",
+  "content": "Please read before adding custom Event Items. To use a custom Event Item, users need to create a new, unique custom picklist value in the field on the Event Item. A custom Event Item behaves like an Event Item with = \"Main event ticket\". This will resolve the “ticket type is not supported for registration” error. The Event Item = \"Other\" should only be used for Products. Event Item Types There are three primary types of s that can be added to an : Tickets Includes free and paid Main event tickets and Guest tickets. = “Main event item” or = “Guest” An with = \"Main event ticket\" must be included to publish an with a \"Guest\" . Donations Gives s an easy way to make a donation. = “Donation” An with = \"Main event ticket\" must be included to publish an with a \"Donation\" . Products Used to offer a product to s. = “Other” An with = \"Main event ticket\" must be included to publish an with a \"Product\" . Sort Event Items",
+  "keywords": [
+    "event",
+    "item",
+    "main",
+    "ticket",
+    "custom",
+    "tickets",
+    "guest",
+    "must",
+    "included",
+    "publish",
+    "donation",
+    "items",
+    "other",
+    "used",
+    "products",
+    "types",
+    "product",
+    "please",
+    "read",
+    "before"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error."
+  ]
+}

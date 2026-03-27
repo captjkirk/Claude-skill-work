@@ -1,0 +1,38 @@
+{
+  "id": "mobile-checkin-attendee-group-checkin",
+  "title": "mobile-checkin-attendee-group-checkin.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendee Group Check-in ## slug: mobile-checkin-attendee-group-checkin ## seoTitle: Attendee Group Check-in ## description: ## contentType: Markdown ## Metadata_End Event organizers can use the Attendee Group Check-in feature to check-in all {{variable.Object_Attendee}}s that belong to an {{variable.Object_AttendeeGroup}} with the click of one button. If an organizer wants to check in only one {{variable.Object_Attendee}} that belongs to an {{variable.Object_AttendeeGroup}}, the original check-in method is still an option. When an {{variable.Object_Attendee}} belongs to an {{variable.Object_AttendeeGroup}} and an Event organizer navigates to that {{variable.Object_Attendee}}’s details screen, the Event organizer will see a tab called “Group.” Associated members of that group are listed under the Group tab and will be sorted alphabetically by last name. This process can also be completed by using an {{variable.Object_Attendee}}’s {{variable.Feature_QRCode}}. When an Event organizer scans a {{variable.Feature_QRCode}} for an {{variable.Object_Attendee}} who belongs to an {{variable.Object_AttendeeGroup}}, a pop-up window will appear asking if the user wants to either individually check in the {{variable.Object_Attendee}} or navigate to the Group tab. NOTE: This feature is available when the Mobile Check-in app is online and offline. ## Manually Select an Attendee 1. Select an {{variable.Object_Event}} that has {{variable.Object_Attendee}}s who belong to an {{variable.Object_AttendeeGroup}}. 2. On the Attendee listing screen, select an {{variable.Object_Attendee}} who belongs to the {{variable.Object_AttendeeGroup}}. 3. Click the Group tab on the Attendee details screen. 4. Click **CHECK IN FOR ALL** to check-in the entire {{variable.Object_AttendeeGroup}}. To check-in an individual {{variable.Object_Attendee}} who belongs to the {{variable.Object_AttendeeGroup}}, swipe left. To check-out an {{variable.Object_Attendee}}, swipe right. ## Use a QR Code 1. Select an {{variable.Object_Event}} that has {{variable.Object_Attendee}}s who belong to an {{variable.Object_AttendeeGroup}}. 2. Scan the {{variable.Feature_QRCode}} for an {{variable.Object_Attendee}}. * If the {{variable.Object_Attendee}} is part of the {{variable.Object_AttendeeGroup}}, a pop-up window will appear with the option to either check-in the {{variable.Object_Attendee}} individually or go to the Group tab. Clicking **Group** will take you to the Attendee details screen where you can click **CHECK IN FOR ALL** to check-in the entire {{variable.Object_AttendeeGroup}}. * If the {{variable.Object_Attendee}} does not belong to the {{variable.Object_AttendeeGroup}}, the regular check-in buttons will be visible.",
+  "keywords": [
+    "variable",
+    "check",
+    "object_attendee",
+    "object_attendeegroup",
+    "group",
+    "attendee",
+    "belongs",
+    "event",
+    "belong",
+    "click",
+    "organizer",
+    "screen",
+    "select",
+    "when",
+    "details",
+    "feature_qrcode",
+    "code",
+    "mobile",
+    "checkin",
+    "feature"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Select an {{variable",
+    "2. On the Attendee listing screen, select an {{variable",
+    "3. Click the Group tab on the Attendee details screen",
+    "4. Click **CHECK IN FOR ALL** to check-in the entire {{variable",
+    "1. Select an {{variable",
+    "2. Scan the {{variable",
+    "* will take you to the Attendee details screen where you can click"
+  ],
+  "troubleshooting": []
+}

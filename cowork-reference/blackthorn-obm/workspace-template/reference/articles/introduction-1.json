@@ -1,0 +1,30 @@
+{
+  "id": "introduction-1",
+  "title": "introduction-1.html",
+  "content": "is our beautiful, mobile-responsive payment request, add-on. For every that's created, a unique link (PayLink) is created. This link can be rolled up to the 's parent, such as an , as well as automatically emailed to your customer. Supported Payment Methods Cards ACH (automated clearing house) Payments can be processed in over 100+ currencies. List of Supported Currencies . is mobile responsive, which means it automatically adjusts the sizing, layout, and proportions to display properly on any device. If accepting ACH (Bank Account) for payment in , our system will detect an identical bank account that already exists in for the customer and will re-use that ACH instead of creating a new record. This is done because does not allow duplicate bank accounts for a customer. Getting Started Follow our Payments quick start instructions and install PayLink from the Setup Wizard.",
+  "keywords": [
+    "payment",
+    "customer",
+    "bank",
+    "mobile",
+    "responsive",
+    "created",
+    "link",
+    "paylink",
+    "automatically",
+    "supported",
+    "payments",
+    "currencies",
+    "account",
+    "beautiful",
+    "request",
+    "every",
+    "unique",
+    "rolled",
+    "parent",
+    "such"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

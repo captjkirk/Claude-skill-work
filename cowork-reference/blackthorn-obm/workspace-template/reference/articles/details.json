@@ -1,0 +1,30 @@
+{
+  "id": "details",
+  "title": "details.html",
+  "content": "Known Issue Users working in a scratch org with enhanced domains may experience issues with the Event’s banner/image displaying incorrectly when uploading it in the Event Wizard. The details page defines the core information for your {{variable.Object_Event}} . The {{variable.Field_ETEvent_Banner}} is the image that will be displayed on your {{variable.Object_Event}} page. (Image Recommendations: 820 x 410 pixels; 2:1 ratio; png or jpg) The {{variable.Field_ETEvent_Description}} will appear below the banner on your {{variable.Object_Event}} page. The {{variable.Field_ETEvent_WebinarMtgURL}} will determine if your {{variable.Object_Event}} is virtual or not. . Note: When populating this field with a Zoom/Webex/GoToWebinar account, the {{variable.Field_ETEvent_WebinarMtgURL}} will automatically populate and a meeting/webinar will be created in your associated service. The {{variable.Field_ETEvent_PaymentGateway}} field is used if your {{variable.Object_Event}} is paid, otherwise, this field can be left blank. This will be the {{variable.Object_PaymentGateway}} the {{variable.Object_Attendee}} will pay through. The {{variable.Field_ETEvent_BeforeCheckout}} field will define the {{variable.Object_Form}} s / {{variable.Object_CustomQuestion}} s the {{variable.Object_Attendee}} will answer while registering for the {{variable.Object_Event}} . The {{variable.Field_ETEvent_AfterCheckout}} field will define the {{variable.Object_Form}} s / {{variable.Object_CustomQuestion}} s the {{variable.Object_Attendee}} will answer after they finish registering for the {{variable.Object_Event}} , and will receive these questions via an {{variable.AttendeeLink}} . The {{variable.Field_ETEvent_AfterEvent}} field will define the {{variable.Object_Form}} s / {{variable.Object_CustomQuestion}} s the {{variable.Object_Attendee}} will answer once the {{variable.Object_Event}} has completed, and will receive these questions via {{variable.AttendeeLink}} . Please note you can also add your own custom fields to the Details page layout by following the steps below: Navigate to Salesforce Setup &gt; Object Manager. Search for and click into the {{variable.Object_Event}} object. Click Field Sets . Click \"Event Fields\" on the {{variable.Component_EventWizard}} . Drag and drop the custom field into list. To make the field required, hover over the field listed \"In the Field Set\" and click the wrench. Click {{variable.Button_Save}} .",
+  "keywords": [
+    "variable",
+    "field",
+    "object_event",
+    "your",
+    "click",
+    "page",
+    "object_attendee",
+    "event",
+    "image",
+    "define",
+    "object_form",
+    "object_customquestion",
+    "answer",
+    "banner",
+    "when",
+    "details",
+    "below",
+    "field_etevent_webinarmtgurl",
+    "note",
+    "registering"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

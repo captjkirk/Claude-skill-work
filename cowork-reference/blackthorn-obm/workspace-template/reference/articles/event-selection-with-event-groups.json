@@ -1,0 +1,37 @@
+{
+  "id": "event-selection-with-event-groups",
+  "title": "event-selection-with-event-groups.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Selection ## slug: event-selection-with-event-groups ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When using the {{variable.AttendeeLink}} where you define an {{variable.Object_EventGroup}} instead of an {{variable.Object_Event}}, the {{variable.Object_Attendee}} being invited will have the ability to select any (one) {{variable.Object_Event}} from the list. Once they select the {{variable.Object_Event}} of their choice, their contact information will be prepopulated. :::(Warning) (Update the Attendee Page Layout) Edit the Attendee page layout and uncheck the requirement for the `Event` field and add the `Event Group` field to the layout. ::: 1. Create an {{variable.Object_EventGroup}}. 2. Update each of the {{variable.Object_Event}}s that will be part of the {{variable.Object_EventGroup}} by defining the {{variable.Field_ETEvent_EventGroup}} field on the {{variable.Object_Event}} and check the Visible field. 3. Create an {{variable.Object_Attendee}} record. * Navigate to the Attendee tab, click {{variable.button_new}}. * Define as many fields as you want, then set the {{variable.Field_Attendee_EventGroup}}. Don't define the {{variable.Field_Attendee_Event}} field. * {{variable.Button_Save}}. 4. Click on the {{variable.AttendeeLink}} ![Event Selection 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Selection%201.png){height=\"\" width=\"\"} * * * ![Event Selection 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Selection%202.png){height=\"\" width=\"\"} The user can now access the {{variable.Object_Event}}s in the {{variable.Object_EventGroup}}. Once they select an invite, the process will be the same as how the {{variable.AttendeeLink}} works.",
+  "keywords": [
+    "variable",
+    "event",
+    "object_event",
+    "field",
+    "selection",
+    "object_eventgroup",
+    "attendeelink",
+    "define",
+    "select",
+    "attendee",
+    "layout",
+    "object_attendee",
+    "once",
+    "they",
+    "their",
+    "update",
+    "page",
+    "create",
+    "click",
+    "https"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Create an {{variable",
+    "2. Update each of the {{variable",
+    "3. Create an {{variable",
+    "4. Click on the {{variable",
+    "* Navigate to the Attendee tab, click",
+    "* * * ![Event Select"
+  ],
+  "troubleshooting": []
+}

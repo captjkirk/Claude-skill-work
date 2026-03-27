@@ -1,0 +1,37 @@
+{
+  "id": "auto-recharge-your-message-balance",
+  "title": "auto-recharge-your-message-balance.md",
+  "content": "## Metadata_Start ## code: en ## title: Auto Recharge your Message Balance ## slug: auto-recharge-your-message-balance ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Never run out of messages again. You can now automatically add more messages to your account when your balance falls below your desired threshold. To enable this functionality, please complete the following steps: 1. Navigate to the Messaging/Textey Administration tab. 2. Ensure that a Payment Method is added in the Account Information section. 3. Click the SMS icon. 4. Set `Auto-recharge` to \"TRUE\". 5. Select a Payment Method and the upper and lower limits for adding new messages. 6. Click {{variable.Button_Save}}. This functionality is available on recent releases of the application. If you are unable to view the fields listed in the steps above, it may require an upgrade to the Messaging Application. We recommend upgrading your sandbox environment and testing first before upgrading your live production environment. ![Auto Recharge Your Message Balance](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Auto%20Recharge%20Your%20Message%20Balance.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "your",
+    "auto",
+    "recharge",
+    "balance",
+    "message",
+    "messages",
+    "account",
+    "functionality",
+    "steps",
+    "messaging",
+    "payment",
+    "method",
+    "click",
+    "application",
+    "upgrading",
+    "environment",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the Messaging/Textey Administration tab",
+    "2. Ensure that a Payment Method is added in the Account Information section",
+    "3. Click the SMS icon",
+    "4. Set `Auto-recharge` to \"TRUE\"",
+    "5. Select a Payment Method and the upper and lower limits for adding new messages",
+    "6. Click {{variable"
+  ],
+  "troubleshooting": []
+}

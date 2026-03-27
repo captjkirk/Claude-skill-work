@@ -1,0 +1,30 @@
+{
+  "id": "guest-checkout-process",
+  "title": "guest-checkout-process.html",
+  "content": "You can check out multiple guests without the need for defining any information (name, email address, etc.) for each through our guest checkout process! Example use case: I am a student registering for a graduation ceremony. I am allowed to bring 5 guests. Through this process, I can register myself and the names of my guests. Guests will not be able to register for the Event without having a primary created. Setup Create an . Create a new . Set = . Define the fields you want the to define for the guest. Guest Checkout Navigate to page. Select the Tickets ( s) to purchase and add in the number of guests. NOTE: In this example, the Significant Other would not be able to register without adding an Admitted Student. Define the contact information and proceed to checkout! Salesforce users can view Attendee information for guests without having to create new Contacts in the org. The guests are stored in the same . FAQ Q: How many guests can a user check out at one time? A: Each Guest Ticket is capped at 25 people. If you want to check out larger groups, use one of the following options. Add multiple s with = “Guest” to the . Instruct the person completing the registration process to repeat the process multiple times.&nbsp;",
+  "keywords": [
+    "guests",
+    "guest",
+    "without",
+    "process",
+    "check",
+    "multiple",
+    "information",
+    "checkout",
+    "register",
+    "create",
+    "define",
+    "each",
+    "through",
+    "example",
+    "student",
+    "able",
+    "having",
+    "want",
+    "need",
+    "defining"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

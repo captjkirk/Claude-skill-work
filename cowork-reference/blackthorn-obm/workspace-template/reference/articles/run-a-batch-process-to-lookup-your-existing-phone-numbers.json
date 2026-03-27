@@ -1,0 +1,35 @@
+{
+  "id": "run-a-batch-process-to-lookup-your-existing-phone-numbers",
+  "title": "run-a-batch-process-to-lookup-your-existing-phone-numbers.md",
+  "content": "## Metadata_Start ## code: en ## title: Run a Batch Process to Lookup Your Existing Phone Numbers ## slug: run-a-batch-process-to-lookup-your-existing-phone-numbers ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Blackthorn Messaging now includes functionality to help you eliminate wasted messages, conserve your message balance, and save money by identifying landline and badly formatted phone numbers and preventing you from sending text messages to them. For these features to work, however, it is crucial to perform a lookup on each of your phone numbers. Performing a lookup means that Messaging processes the phone number and stores information about that phone number in your Salesforce org. This information is then used by various Messaging components. When you first install Messaging (or upgrade to version 3.12 or higher), you will not have any Phone Number Lookup data in your org. This means that the Messaging components cannot infer any information about your phone numbers. The first step is to run an initial batch process to gather up your phone numbers and process them through the Messaging lookup service. Once this process is complete you will have Phone Number Lookup records in your org that provide carrier information about each phone number. ## Step 1: Find New Numbers ![Run a batch process_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Run%20a%20batch%20process_1.png){height=\"\" width=\"\"} When you click the **Find New Numbers** button, you can select the objects you want Messaging to include when searching for new phone numbers. This list includes standard objects such as Accounts, Contacts, Leads, Cases, and Opportunities. Custom objects that have been configured for texting will also be available to select. The objects that you select will be the only objects included when searching for phone numbers. Another option is to choose the age of any existing Phone Number Lookup records that you want to exclude. By default, Messaging will place a 6-month expiration date on the record so that you know how long ago you last looked up the phone number. Once you've made the above choices, you will click the **Run** button. This will begin the process of finding any new phone numbers in your org that have not been looked up yet. :::(Info) () Keep in mind that this process is not yet sending the phone numbers to the Messaging lookup service, we're just trying to identify any numbers that need to be looked up. ::: There are a few points to consider here: * This process will create Phone Number Lookup records in your org. * There will only be one Phone Number Lookup record for each unique phone number that is found. If you have a particular phone number that exists on more than one record, there will only be one Phone Number Lookup record created for that phone number. * This process will normalize the phone numbers into E.164 format which means that if you've entered the same phone number in multiple variations, Messaging should be able to account for that and still only create one Phone Number Lookup record. For example, Messaging will treat 555-555-5555, (555) 555-5555, 555.555.5555, 5555555555 to be the same phone number and put it into the format of +15555555555. * The Status of these Phone Number Lookup records will be set to \"New\". * Any phone numbers that are found to exist on a record that has opted-out (Do Not SMS = true) will be flagged. This will prevent them from being looked up in the subsequent step. ## Step 2: Purchase Lookups ![run a batch process_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/run%20a%20batch%20process_2.png){height=\"\" width=\"\"} After you run the first step to find new phone numbers, you will need to ensure that you have an adequate amount of phone number lookup credits on your balance. Each phone number that is successfully looked up will deduct one lookup credit from your balance. You can easily purchase lookups by clicking the **Purchase Lookups** button shown above. If you do not have an adequate amount of lookup credits on your balance you won't be able to proceed to Step 3. ## Step 3: Lookup Numbers ![run a batch process_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/run%20a%20batch%20process_3.png){height=\"\" width=\"\"} Start the final step in the process by clicking the **Lookup Numbers** button. At this point, all of the phone numbers that have been calculated as part of the Ready to Lookup set will be processed through the Messaging lookup service. The results will be updated back onto the Phone Number Lookup records that were created in Step 1. The length of time that it takes this process to complete will depend on the amount of phone numbers that are being processed. For large datasets > 100K phone numbers, it could take several hours to complete. You will see the job progress information in the middle of the page once this job starts. You can always leave the page and come back to monitor the progress. An email notification will be sent once the process is complete.",
+  "keywords": [
+    "phone",
+    "lookup",
+    "numbers",
+    "number",
+    "your",
+    "process",
+    "messaging",
+    "step",
+    "batch",
+    "record",
+    "information",
+    "records",
+    "objects",
+    "looked",
+    "balance",
+    "each",
+    "when",
+    "once",
+    "complete",
+    "button"
+  ],
+  "category": "events",
+  "procedures": [
+    "15555555555. * The Status of these Phone Number Lookup records will be set to \"New\"",
+    "3. ## Step 3: Lookup Numbers ![run a batch process_3](https://cdn",
+    "1. The length of time that it takes this process to complete will depend on the amount of phone numbers that are being processed",
+    "* button, you can select"
+  ],
+  "troubleshooting": []
+}

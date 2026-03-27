@@ -1,0 +1,36 @@
+{
+  "id": "blackthorn-logs",
+  "title": "blackthorn-logs.md",
+  "content": "## Metadata_Start ## code: en ## title: Blackthorn Logs ## slug: blackthorn-logs ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The {{variable.Object_BlackthornLog}} object captures errors and performance issues related to Blackthorn {{variable.Product_Payments}} so that you can trace, report, and troubleshoot issues. *Records are automatically created and related to the records that threw an error.* ![H_01_02_Blackthorn logs 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_02_Blackthorn%20logs%201.png){height=\"\" width=\"\"} ## Use Cases ### Troubleshooting Event Registration Issues {{variable.Object_BlackthornLog}}s are instrumental in identifying why an {{variable.Object_EventRegistrationSub}} record might fail. This capability is crucial for ensuring {{variable.Object_Attendee}}s receive confirmation emails and that their registration process is smooth ### Preventing Data Loss {{variable.Object_BlackthornLog}}s play a vital role in preventing the loss of registration data or payments, which is essential for maintaining the integrity of the event registration process​ ### Batch Processing of Records In scenarios with high concurrent registrations, {{variable.Object_BlackthornLog}}s can be used to monitor and manage batch processing of {{variable.Object_ERS}} records, ensuring that the registration process is efficient and error-free ## Blackthorn | Payments Log Record Cleanup {{variable.Object_BlackthornLog}}s older than 30 days are deleted by the {{variable.SchBatJob_LogRecordCleanup}} scheduled batch job. All processed {{variable.Object_WebhookEvent}}s are also retained for 30 days but this can be customized by changing the {{variable.Object_BTPayTriggerSettings}} - {{variable.Field_CS_RetaiWebhookRecordDay}} custom setting field. The {{variable.SchBatJob_WebhookRecordCleanup}} scheduled job runs these deletes. ![H_01_02_Blackthorn logs 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_02_Blackthorn%20logs%202.png){height=\"\" width=\"\"} We don't start the scheduled jobs from the install handler. You need to schedule them to run from the {{variable.Tab_BTPTAdmin_ScheduledJobs}} tab on the {{variable.Tab_PT_BTPayAdmin}} screen. ![H_01_02_Blackthorn logs 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_02_Blackthorn%20logs%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "h_01_02_blackthorn",
+    "logs",
+    "object_blackthornlog",
+    "registration",
+    "blackthorn",
+    "records",
+    "issues",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20logs",
+    "height",
+    "width"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "errors and performance issues related to Blackthorn {{variable.",
+    "error.",
+    "error-free ## Blackthorn | Payments Log Record Cleanup {{variable.",
+    "troubleshoot issues.",
+    "Troubleshooting Event Registration Issues {{variable."
+  ]
+}

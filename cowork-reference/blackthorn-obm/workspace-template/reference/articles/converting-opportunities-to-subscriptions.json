@@ -1,0 +1,43 @@
+{
+  "id": "converting-opportunities-to-subscriptions",
+  "title": "converting-opportunities-to-subscriptions.md",
+  "content": "## Metadata_Start ## code: en ## title: Creating Subscriptions from Opportunities ## slug: converting-opportunities-to-subscriptions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You can generate Subscriptions from Opportunities and automatically push them to Stripe. In order to set the fields on the Opportunity and the Opportunity Product layouts, use the settings on the \"Blackthorn | Payments Admin\" tab, \"Stripe Features\" left-hand tab, then the \"Deploy Stripe Billing\" button. ## Set up the Opportunity 1. Create an Opportunity or go to an existing one. 2. Add Opportunity Line Items. 3. Set the `Customer` lookup. 4. Add additional optional field values as needed: - Set the `Payment Method` lookup field. If not set, the default will be used. - Set the `Billing Method` field. If left blank, Charge Automatically will be used - Set the `Trial End (Billing Start Date)` field. If left blank, Subscription uses the Price default or starts immediately. - If `Billing Method` field set to \"Send Invoice\", set the `Days Until Due` field. - Set the `Stripe Coupon` field to apply any discounts. - Set the `Memo` field so it is included in invoice PDFs, invoice emails, and the Hosted Invoice Page. - Set the `Trial Period Days` field to defined the number of trial period days before the customer is charged for the first time. Both `Trial End` and `Trial Period Days` fields if left blank, Subscription uses the Stripe Price default or starts immediately. - Set the `Default Tax` field so tax rates will apply to any subscription item that does not have tax_rates set. - Set the `Billing Cycle Anchor (First Invoice)` field to determine the date of the first full invoice, and, for plans with Month or Year intervals, the day of the month for subsequent invoices. - `Proration Behavior` : Determines how to handle prorations when the billing cycle changes (e.g., when switching plans, resetting billing_cycle_anchor=now, or starting a trial), or if an item’s quantity changes. 5. Save the record. :::(Warning) (**Proration Behavior Update**) If a Stripe Billing Subscription `Proration Behavior` = “--None--” or is left blank, any changes made to the Subscription will no longer be prorated. ::: ## Opportunity Products 1. Navigate to the \"Products\" related list on the \"Opportunity\" record 2. Create an Opportunity Product - In order to make an Opportunity Line Item a Subscription Item in the generated Subscription: - Set the related `Price` on the `Opportunity Line Item` lookup field. The Stripe Price must be related to the selected Product. - Set the `Product Type` picklist to *Plan*. - In order to add an Opportunity Line item to the Subscription Customer's first invoice as a one-time item: - Set the `Product Type` picklist to *One-Time*. ## Push to Stripe 1. Check the `Push to Stripe` checkbox and save, or automate an Opportunity Stage to trigger this checkbox with a Workflow, Process Builder, or other. :::(Info) (Create Subscription Button) On Payments packages v5.1 and above users can add the 'Create Subscription' button to their page layout and use that button to push data to Stripe and create a new Subscription. ::: 2. If successful, the `Subscription` field will be populated, which is a lookup to the generated Subscription. 3. Stripe will create an invoice for the Subscription. After webhooks process (depending on your org's webhook event processing frequency) a \"Stripe Invoice\" record will be created in the org and listed on the Subscription's Invoice related list. *Note: An Invoice that is created for a `Subscription pushed from Opportunity`, will have the `Opportunity` lookup updated on it. If the Opportunity is selected as a Transaction's parent object, then related Transaction records also populate the `Opportunity` lookup derived from the Invoice* ## Opportunity validations when generating subscriptions | Validation when | Error Message | | --- | --- | | No customer defined on opportunity | Please select the Customer. | | No payment method is added to the customer and trying to set the billing method to charge automatically or leaving it blank | If the Payment Gateway Customer has no Payment Method then the \"Send Invoice\" Billing Method should be used. | | Billing method = Send Invoice and Days until Due field is left blank | When the Billing Method is \"Send Invoice\", days Until Due should be populated. | | Billing method = Send invoice but customer email is blank | In order to create invoices that are sent to customers, the Customer must have a valid email. | | Trial End < NOW | Trial End Date should be in the future. | | Trying to push a price with no Price ID populated | The related Price is not yet pushed to Stripe. | | Product associated with the price does not match opportunity product | The Product on the Opportunity Line Item should match the Price's Product. | | Creating subscriptions from opportunities without adding the line items | A subscription cannot be created when Opportunity Line Items have missing data. | | Product’s PG doesn’t match with customer’s PG | The Price's Payment Gateway should match the Customer's Payment Gateway. | | Price is Inactive | The Price is marked as inactive and no new subscriptions can be created to on Price. Set the Price as Active and confirm the Stripe Price ID is populated. | Product Type set to Plan, but no price added | Please select a Price. | | Product Type set to Do Not Include and no other items with Product Type set to Plan have been added. | A subscription/invoice cannot be created without line items. |",
+  "keywords": [
+    "opportunity",
+    "subscription",
+    "price",
+    "invoice",
+    "stripe",
+    "field",
+    "product",
+    "billing",
+    "customer",
+    "method",
+    "line",
+    "trial",
+    "item",
+    "create",
+    "blank",
+    "subscriptions",
+    "left",
+    "lookup",
+    "payment",
+    "days"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Create an Opportunity or go to an existing one",
+    "2. Add Opportunity Line Items",
+    "3. Set the `Customer` lookup",
+    "4. Add additional optional field values as needed: - Set the `Payment Method` lookup field",
+    "5. Save the record",
+    "1. Navigate to the \"Products\" related list on the \"Opportunity\" record 2",
+    "1. Check the `Push to Stripe` checkbox and save, or automate an Opportunity Stage to trigger this checkbox with a Workflow, Process Builder, or other",
+    "2. If successful, the `Subscription` field will be populated, which is a lookup to the generated Subscription",
+    "3. Stripe will create an invoice for the Subscription",
+    "* ## Opportunity validations when generating subscriptions | Validation when | Error Message | | --- | --- | | No customer defined on opportunity | Please select"
+  ],
+  "troubleshooting": [
+    "Error Message | | --- | --- | | No customer defined on opportunity | Please select the Customer."
+  ]
+}

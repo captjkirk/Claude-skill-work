@@ -1,0 +1,41 @@
+{
+  "id": "event-contents",
+  "title": "event-contents.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Content ## slug: event-contents ## seoTitle: Event Content ## description: ## contentType: Markdown ## Metadata_End {{variable.Object_EventContent}} records can be various file types, such as DOC, HTML, PDF, URL, and ZIP. A list of {{variable.Object_EventContent}}s (attachments) is a great way to provide additional information about the {{variable.Object_Event}}. This could be a PDF file with directions to the {{variable.Object_Event}} venue or an image file for {{variable.Object_Event}} coupons. It could also be a video file (linked to YouTube or downloadable) that introduces the upcoming event, etc... Your {{variable.Object_Attendee}}s will see the {{variable.Object_EventContent}} under the webpage’s Content tab. ## Before You Start To ensure the {{variable.Object_EventContent}}s for your {{variable.Object_Event}} are visible, complete the following steps. 1. Navigate to your {{variable.Object_Event}} record. 2. Click the {{variable.Object_EventSettings}} record. 3. In the Tab Visibility section, set the {{variable.Field_ETETSettings_Content}} field to {{variable.picklist_Always}}. **NOTE:** If there are no {{variable.Object_EventContent}}s/attachments associated with the {{variable.Object_Event}}, the Content tab will be hidden by default. ## Create an Event Content Record 1. Navigate to your {{variable.Object_Event}}'s {{variable.SFTerm_RelatedList}} and click {{variable.button_new}} next to Event Content. ![New Event Content](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/New%20Event%20Content.png){height=\"\" width=\"\"} 2. Enter the file's name in the {{variable.Field_EventContent_ContentName}} field. 3. Select the {{variable.Field_EventContent_Type}} from the drop-down field. 4. Enter the {{variable.Field_EventContent_URL}} type 5. Enter the {{variable.Field_EventContent_Description}}. ![Define Event Content](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Define%20Event%20Content.png){height=\"\" width=\"\"} 6. Click {{variable.Button_Save}}. 7. Navigate to the {{variable.Object_Event}} and check out the Content's tab to see your new links! ![Content Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Content%20Tab.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "content",
+    "event",
+    "object_event",
+    "object_eventcontent",
+    "file",
+    "your",
+    "navigate",
+    "record",
+    "click",
+    "field",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to your {{variable",
+    "2. Click the {{variable",
+    "3. In the Tab Visibility section, set the {{variable",
+    "1. Navigate to your {{variable",
+    "2. Enter the file's name in the {{variable",
+    "3. Select the {{variable",
+    "4. Enter the {{variable",
+    "5. Enter the {{variable",
+    "6. Click {{variable",
+    "7. Navigate to the {{variable"
+  ],
+  "troubleshooting": []
+}

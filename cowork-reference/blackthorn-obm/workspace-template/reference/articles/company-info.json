@@ -1,0 +1,34 @@
+{
+  "id": "company-info",
+  "title": "company-info.md",
+  "content": "## Metadata_Start ## code: en ## title: Company Info ## slug: company-info ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (\"Company Info\" was previously known as \"Legal Entity.\") As of the Payments v4.169 release, the Legal Entity object has been renamed to Company Info. The API Name did not change. ::: The {{variable.Object_CompanyInfo}} record contains information about your individual company or companies. This record can be used to relate multiple {{variable.Object_PaymentGateway}}s under one Entity. For example, if you have two separate {{variable.Product_Stripe}} accounts, both can be connected to one {{variable.Object_CompanyInfo}} record. Thus, ensuring the monies are separated per {{variable.Product_Stripe}} account but under one Entity making, audits and tax information simple. For Blackthorn {{variable.Product_Payments}}, enter as much or as little information as you would like to in the {{variable.Object_CompanyInfo}} record. ## Create a Company Info Record 1. From the App Launcher, enter and click “Company Info.” 2. Click {{variable.button_new}}. ![Company Info_Create New Record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Company%20Info_Create%20New%20Record.png){height=\"\" width=\"\"} ### Company Information Complete the following fields. * {{variable.Field_CompanyInfo_CompInfoName}} – name of the company * {{variable.Field_CompanyInfo_EIN}} - Employer Identification Number * {{variable.Field_CompanyInfo_RegistNumber}} – Company Registration Number; different than the EIN * {{variable.Field_CompanyInfo_VAT}} – Value Added Tax * {{variable.Field_CompInfo_MerchantCatCode}} – classifies a business based on the goods or services they provide. * {{variable.Field_CompInfo_GoogleTagMgrID}} - used on all Event webpages built in Blackthorn Events * {{variable.Field_CompanyInfo_CurrencyISO}} – the currency the company uses to report its financial information * {{variable.Field_CompanyInfo_FYStartMonth}} – the month the company’s fiscal year starts * {{variable.Field_CompanyInfo_FaviconURL}} – the URL to the Favicon icon/image used on the Events platform * {{variable.Field_CompInfo_UseForAllEvents}} - Check to use this Company Info record for all Event platform pages. #### EIN vs Registration Number You can add an Employer Identification Number ({{variable.Field_CompanyInfo_EIN}}) or registration number ({{variable.Field_CompanyInfo_RegistNumber}}) to your {{variable.Object_CompanyInfo}} record. The {{variable.Field_CompanyInfo_EIN}} or {{variable.Field_CompanyInfo_RegistNumber}} will be visible below the company’s address on the DocumentLink {{variable.Object_Invoice}}. The following logic explains when each number is used. * The {{variable.Field_CompanyInfo_EIN}} will be listed on the {{variable.Object_Invoice}} if the related {{variable.Object_CompanyInfo}} record’s {{variable.Field_CompanyInfo_EIN}} field or both the {{variable.Field_CompanyInfo_EIN}} and {{variable.Field_CompanyInfo_RegistNumber}} fields have a value. * The Registration Number will be displayed when only the {{variable.Field_CompanyInfo_RegistNumber}} field has a value. The {{variable.Field_CompanyInfo_EIN}} field must be blank. * \"EIN\" is the {{variable.Field_CompanyInfo_EIN}} field’s default label on the {{variable.Object_Invoice}}. Customers can use the [Data Dictionary](https://docs.blackthorn.io/docs/multilingual-support-overview-documentlink){target=`_blank`} to override the \"EIN\" label. For example, Australian customers might change the label to \"ABN\" instead. ### Primary Contact Information Complete the following fields. * {{variable.Field_CompanyInfo_Phone}} * {{variable.Field_CompanyInfo_Email}} * {{variable.Field_CompanyInfo_Website}} * {{variable.Field_CompanyInfo_Description}} * {{variable.Field_CompanInfo_StreetAddress}} * {{variable.Field_CompanyInfo_City}} * {{variable.Field_CompanInfo_StateProvince}} * {{variable.Field_CompanyInfo_PostalCode}} * {{variable.Field_CompanyInfo_Country}} ### PayLink/DocumentLink Branding Complete the following field. * {{variable.Field_CompanyInfo_Logo}} – the logo that will be displayed on the company’s PayLink and DocumentLink ![H_01_03_Company Info](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_03_Company%20Info.png){height=\"\" width=\"\"} 3. Click {{variable.Button_Save}}. Instructions for the Company Info record and each add-on are in each feature’s documentation.",
+  "keywords": [
+    "variable",
+    "company",
+    "info",
+    "record",
+    "field_companyinfo_ein",
+    "number",
+    "information",
+    "object_companyinfo",
+    "field_companyinfo_registnumber",
+    "field",
+    "entity",
+    "used",
+    "following",
+    "registration",
+    "documentlink",
+    "blackthorn",
+    "click",
+    "https",
+    "documentation",
+    "complete"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. From the App Launcher, enter and click “Company Info",
+    "2. Click {{variable",
+    "3. Click {{variable"
+  ],
+  "troubleshooting": []
+}

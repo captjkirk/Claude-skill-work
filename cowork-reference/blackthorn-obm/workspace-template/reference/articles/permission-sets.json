@@ -1,0 +1,30 @@
+{
+  "id": "permission-sets",
+  "title": "permission-sets.html",
+  "content": "Prerequisite The following is a required permission that is NOT included in the Blackthorn Payments Stripe Billing permission set, but is required to use Stripe Billing. Object Read Write Delete View All Product ✅ ✅ ✅ ❌ Blackthorn | Payments (Stripe Billing) This permission set has all the permissions to the objects and fields included in the Stripe Billing functionality. This should be used by customers who want to give access to users who use the Stripe Billing feature. Custom Permission Sets Use the steps below to create custom permission sets. If you want users to create and edit Product records, add the permissions to the custom permission set. Install the latest Blackthorn | Payments Salesforce AppExchange package in a sandbox. Log in to the sandbox org as a System Admin. Navigate to Setup. In the Quick Find box, enter \"Users.\" Click Permission Sets. Click Blackthorn | Payments (Stripe Billing). Review all permissions and compare them to the custom permission sets you created. Ensure that all permissions granted by our out-of-the-box standard permission sets are recreated in your permission set. Site Guest Users Guest users must be assigned a custom permission set plus the {{variable.PS_PT_SiteGuestUser}} permission set to have Read access to several standard objects that are required to process webhooks. The custom permission set must include the following: Account - Read Opportunity - Read Product - Read NOTE: Whether webhooks are processed manually or via batch jobs, sharing rules apply. Using a custom trigger allows webhooks to be processed in system mode, bypassing sharing rules. You may experience limitations for use cases, depending on your specific scenario.",
+  "keywords": [
+    "permission",
+    "custom",
+    "stripe",
+    "billing",
+    "read",
+    "users",
+    "sets",
+    "blackthorn",
+    "payments",
+    "permissions",
+    "required",
+    "product",
+    "webhooks",
+    "following",
+    "included",
+    "objects",
+    "want",
+    "access",
+    "create",
+    "sandbox"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

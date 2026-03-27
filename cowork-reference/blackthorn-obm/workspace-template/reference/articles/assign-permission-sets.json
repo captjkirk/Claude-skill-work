@@ -1,0 +1,30 @@
+{
+  "id": "assign-permission-sets",
+  "title": "assign-permission-sets.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign Permission Sets ## slug: assign-permission-sets ## seoTitle: Assign Permission Sets ## description: ## contentType: Markdown ## Metadata_End Access to {{variable.Product_Events}} is managed by permission sets. After installation, it is necessary to assign permission sets to designated users to ensure that they have the necessary level of access. Permission sets can be assigned from the {{variable.Tab_ET_BTEventAdmin}} tab or in Setup. To automatically assign all non-system admin users the {{variable.PS_ET_Admin}} permission set, click the {{variable.Button_ETAdmin_AdvPermisAssign}} button. ![Event Admin Configuration Tab_Assign ET Permission Set to All Users Button](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Admin%20Configuration%20Tab_Assign%20ET%20Permission%20Set%20to%20All%20Users%20Button.png){height=\"\" width=\"\"} {{snippet.EV_BuilderUserAccess}} ## Disclaimer ### View All Data View All Data is not necessary for using Blackthorn Products. We require Payments and Events Admins to View/Modify/Delete for all our Blackthorn custom objects. That is a per object permission, not global. Typically, Payments and Events Admins already have a System Admin profile, and this merely extends their already elevated access. Authorization is an infrequent task best handled by a System Administrator using a common task-specific service account. For general usage of Blackthorn apps, users can be assigned more restricted Blackthorn permission sets, which vary record and object access as appropriate for the defined persona (Ex. Event (Organizer)). ### Customize Application Customize Application permission is necessary for users who are either the authorizing user for the Events application or will be using the Blackthorn Email Template Builder. Blackthorn customers can control who in their organization is granted this access, but access is required for both authorizing the Events application and viewing or creating templates in the Blackthorn Email Template Builder. The Customize Application permission is a technical requirement for utilizing the Salesforce Tooling API, including the deep cloning feature in the Blackthorn Email Template Builder.",
+  "keywords": [
+    "permission",
+    "blackthorn",
+    "sets",
+    "access",
+    "assign",
+    "users",
+    "application",
+    "variable",
+    "necessary",
+    "events",
+    "system",
+    "admin",
+    "event",
+    "view",
+    "using",
+    "customize",
+    "email",
+    "template",
+    "builder",
+    "assigned"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

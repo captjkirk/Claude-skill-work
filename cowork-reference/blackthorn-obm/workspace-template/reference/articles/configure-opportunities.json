@@ -1,0 +1,30 @@
+{
+  "id": "configure-opportunities",
+  "title": "configure-opportunities.html",
+  "content": "Use the steps below to configure the {{variable.Object_Opportunity}} object for SMS messaging. A {{variable.Field_Contact_Phone}} field is required on any object you want to use for text messaging. The {{variable.Object_Opportunity}} object do not come with a standard {{variable.Field_Contact_Phone}} field, so you will need to ensure that you have created at least one custom {{variable.Field_Contact_Phone}} field. Lightning Create a Do Not SMS Field If the {{variable.Field_Lead_DoNotSMS}} field hasn’t been added to your {{variable.Object_Opportunity}} object, add it now. Go to Setup. Click the Object Manager tab. In the Quick Find box, enter and click “Opportunity.” Click the Fields &amp; Relationships tab. Click {{variable.button_new}} . Select “Checkbox” and click {{variable.Button_Next}} . &nbsp; Enter the following information. {{variable.Field_Messaging_FieldLabel}} : “Do Not SMS” {{variable.Field_Messaging_FieldName}} : “Do_Not_SMS” Help Text : “Check this box to stop an SMS message from being sent to this Opportunity.” Set the remaining fields based on your requirements. Click {{variable.Button_Next}} . &nbsp; Select the profile access for this field. Click {{variable.Button_Next}} . Select the layouts you want to add the field to. Click {{variable.Button_Save}} . Update the Page Layout and Related List Add the Do Not SMS Field Go to Setup. Click the Object Manager tab. In the Quick Find box, search for and click “Opportunity.” Click the Page Layouts tab. Select the layout type you need to update. Click the Fields tab. In the Quick Find box, search for the {{variable.Field_Lead_DoNotSMS}} field. Drag and drop the {{variable.Field_Lead_DoNotSMS}} field onto the page layout. &nbsp; Add the Related List Click the Related Lists tab. In the Quick Find box, search for the “SMS Messages” Related List. Drag and drop the Related List onto the page layout. Click the Wrench icon to open the Properties for this related list. &nbsp; Add these fields in the following order: {{variable.Field_SMS_RList_MessageDate}} {{variable.Field_SMS_RList_Direction}} {{variable.Field_SMS_RList_MessageFull}} {{variable.Field_SMS_RList_Status}} {{variable.Field_SMS_RList_FromPhone}} {{variable.Field_SMS_RList_ToPhone}} {{variable.Field_SMS_RList_SMSMsgNumber}} In the Sort By drop-down, choose \"SMS Message Number\" and \"Descending\". Click the plus sign (+) located in the Buttons section. Uncheck the box next to New and click Ok . Click {{variable.Button_Save}} . Lightning Record Page Layout Click the Lightning Record Pages tab. Click the name of the layout you want to modify. Click {{variable.Button_SF_Edit}} . If you don't see any Lightning page layouts listed, complete the following steps. Click {{variable.button_new}} . Choose Record Page. Click {{variable.Button_Next}} . Enter a {{variable.Field_SF_PageLayout_Label}} (i.e. Opportunity Layout). Set {{variable.Field_SF_PageLayout_Object}} = “Opportunity.” Click {{variable.Button_Next}} . Click the Clone Salesforce Default Page tab. Select a page layout. Click Done . You should now be in the Lightning App Builder. On the left-hand navigation bar, scroll down to the Custom-Managed section. Locate the Blackthorn Messaging Messenger component. Drag and drop the component onto the page layout. The right-hand column will have the configuration options. We recommend keeping the {{variable.Field_SF_PageLayout_MaxHeight}} = \"400px\", but you can modify it as needed. If you've added the component to a sidebar, set {{variable.Field_SF_PageLayout_Columns}} = “One Column.” If you've added it to a wide section of the page, you can set {{variable.Field_SF_PageLayout_Columns}} = “Two Column” to maximize the space. Click {{variable.Button_Save}} . &nbsp; Click Activation . Review the settings. Click Close . Refresh your browser for the changes to take effect. Open an {{variable.Object_Opportunity}} record to see the Blackthorn Messaging Messenger component on your page. &nbsp;",
+  "keywords": [
+    "variable",
+    "click",
+    "page",
+    "field",
+    "layout",
+    "object",
+    "nbsp",
+    "related",
+    "lightning",
+    "opportunity",
+    "select",
+    "button_next",
+    "list",
+    "object_opportunity",
+    "messaging",
+    "your",
+    "quick",
+    "find",
+    "fields",
+    "drop"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

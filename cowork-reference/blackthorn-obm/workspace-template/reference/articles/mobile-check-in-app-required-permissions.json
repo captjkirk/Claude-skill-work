@@ -1,0 +1,30 @@
+{
+  "id": "mobile-check-in-app-required-permissions",
+  "title": "mobile-check-in-app-required-permissions.md",
+  "content": "## Metadata_Start ## code: en ## title: Mobile Check-in App Required Permissions ## slug: mobile-check-in-app-required-permissions ## seoTitle: Mobile Check-in App Required Permissions ## description: ## contentType: Markdown ## Metadata_End The following objects, fields, and permissions are used in Version 1.1.7 and higher of the {{variable.Product_MobileCheck-inApp}}. ## Object: Event (conference360__Event__c) The following fields on the {{variable.Object_Event}} object are used when listing the {{variable.Object_Event}}s in the main screen under the \"Upcoming,\" \"Past,\" and \"No Date\" tabs | Field API Name | Permission Required | | --- | --- | | Id | Read | | Name | Read | | conference360__Event_Start_Date__c | Read | | conference360__Event_Start_Time__c | Read | | conference360__Event_End_Date__c | Read | | conference360__Event_End_Time__c | Read | | conference360__Time_Zone__c | Read | | conference360__Image_URL__c | Read | | conference360__Status__c | Read | | conference360__Status_Formula__c | Read | | conference360__Event_Settings__c | Read | ## Object: Event Settings(conference360__Event_Settings__c) The following fields on the {{variable.Object_EventSettings}} object hold settings information for an {{variable.Object_Event}}. | Field API Name | Permission Required | | --- | --- | | Id | Read | | Name | Read | | conference360__Badge_Printing_Configuration__c | Read | | conference360__One_Unique_Attendee_Email_Per_Event__c | Read | ## Object: Badge Printing Configuration (conference360__Badge_Printing_Configuration__c) The following fields on the {{variable.Object_BadgePrintingConfig}} object control badge printing information, including the width, height, and orientation. | Field API Name | Permission Required | | --- | --- | | Id | Read | | conference360__Length_Unit__c | Read | | conference360__Orientation__c | Read | | conference360__Page_Height__c | Read | | conference360__Page_Width__c | Read | ## Object: Session (conference360__Session__c) The following fields on the {{variable.Object_Session}} object store information about {{variable.Object_Session}}s, which is displayed on the “Sessions” tab of an {{variable.Object_Event}}. | Field API Name | Permission Required | | --- | --- | | Id | Read | | Name | Read | | conference360__Start_Date__c | Read | | conference360__Start_Time__c | Read | | conference360__End_Date__c | Read | | conference360__End_Time__c | Read | | conference360__Image_URL__c | Read | | conference360__Status__c | Read | ## Object: Attendee (conference360__Attendee__c) The following fields on the {{variable.Object_Attendee}} object store information about an {{variable.Object_Event}}’s {{variable.Object_Attendee}}s. The information includes basic personal data like name, last name, email, phone, etc., and the {{variable.Object_Attendee}}'s {{variable.Field_Attendee_RegistratStatus}} and {{variable.Field_ETAttendee_AttendStatus}}. | Field API Name | Permission Required | | --- | --- | | Id | Read | | conference360__Salutation__c | Read, Edit | | conference360__First_Name2__c | Read, Edit | | conference360__Last_Name2__c | Read, Edit | | conference360__Attendance_Status__c | Read, Edit | | conference360__Approval_Status__c | Read | | conference360__Registration_Status__c | Read, Edit | | conference360__Email2__c | Read, Edit | | conference360__Phone2__c | Read, Edit | | conference360__Title__c | Read, Edit | | conference360__Account_Name__c | Read, Edit | | LastModifiedDate | Read | | conference360__Attendee_Group__c | Read | | conference360__Event__c | Read, Edit | | conference360__Contact__c | Read, Edit | | conference360__Source__c | Read, Edit | | conference360__Member__c | Read, Edit | | conference360__Country__c | Read, Edit | ## Object: Session Attendee (conference360__Session_Attendee__c) The following fields on the {{variable.Object_SessionAttendee}} object store information about {{variable.Object_SessionAttendee}}s. The {{variable.Object_SessionAttendee}} object represents the relationship between {{variable.Object_Attendee}}s and {{variable.Object_Session}}s. One {{variable.Object_Attendee}} can be registered for one or many {{variable.Object_Session}}s. | Field API Name | Permission Required | | --- | --- | | Id | Read | | conference360__Attendee__c | Read, Edit | | conference360__Registration_Status__c | Read, Edit | | conference360__Attendance_Status2__c | Read, Edit | | conference360__Session__c | Read, Edit | | LastModifiedDate | Read | ## Object: Event Item Purchase (conference360__Event_Item_Purchase__c) The following fields on the Event Item Purchase object store information about purchased Tickets. If they are visible, they are displayed on the {{variable.Object_Attendee}} details screen before the {{variable.Field_ETEvent_EventName}}. | Field API Name | Permission Required | | --- | --- | | Id | Read | | conference360__Event_Item_Name__c | Read | ## Object: Contact The following fields are used when scanning a QR code to check for a {{variable.Object_Contact}} with a matching ID. | Field API Name | Permission Required | | --- | --- | | Id | Read | | Salutation | Read | | FirstName | Read | | LastName | Read | | Email | Read | | Phone | Read | | Title | Read | | conference360__BT_External_ID__c | Read |",
+  "keywords": [
+    "read",
+    "variable",
+    "edit",
+    "object",
+    "name",
+    "required",
+    "following",
+    "fields",
+    "field",
+    "permission",
+    "information",
+    "object_attendee",
+    "object_event",
+    "check",
+    "permissions",
+    "event",
+    "object_session",
+    "store",
+    "about",
+    "mobile"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

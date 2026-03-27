@@ -1,0 +1,30 @@
+{
+  "id": "payments-dataload-historical-transactions-instructions",
+  "title": "payments-dataload-historical-transactions-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Instructions ## slug: payments-dataload-historical-transactions-instructions ## seoTitle: Instructions ## description: ## contentType: Markdown ## Metadata_End If you have Transactional data outside of Authorize.net or Stripe and want it in Blackthorn, complete the following sections. * [Transactions](/v1/docs/payments-dataload-historical-transactions-transactions) * [Payment Methods](/v1/docs/payments-dataload-historical-transactions-payment-methods) * [Recreating Records](/v1/docs/payments-dataload-historical-transactions-recreating-records) :::(Info) (Do you need to turn off callouts and Apex validations?) To temporarily turn off Stripe callouts and Apex validations, update the applicable custom settings under Blackthorn Pay - Trigger Settings. :::",
+  "keywords": [
+    "transactions",
+    "payments",
+    "dataload",
+    "historical",
+    "instructions",
+    "docs",
+    "stripe",
+    "blackthorn",
+    "payment",
+    "methods",
+    "recreating",
+    "records",
+    "turn",
+    "callouts",
+    "apex",
+    "validations",
+    "settings",
+    "metadata_start",
+    "code",
+    "title"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

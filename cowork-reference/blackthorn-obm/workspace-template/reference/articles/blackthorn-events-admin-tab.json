@@ -1,0 +1,30 @@
+{
+  "id": "blackthorn-events-admin-tab",
+  "title": "blackthorn-events-admin-tab.html",
+  "content": "Consider Using an Integration User Before configuring the Events app or activating Scheduled Jobs, we recommend logging in as an Integration User. An Integration User is a dedicated full Salesforce license that has a custom Permission Set and is used for any 3rd party integrations. This can help reduce issues related to configuration, authorization, and individual employee user access. Discover the Blackthorn | Events Admin Tab The Blackthorn | Events Admin tab is the place to go for easy access to configuration, settings, jobs, and more for the Events app. Visit each of the following sections to learn more about what each button does. Configuration Settings Upgrades Batch Jobs Schedule Jobs Allowlist Domains Events Health Check Meet the New Welcome Mat! After installing/upgrading the app, you will see the Welcome Mat or in-app guidance on the page. Choose to dismiss the Welcome Mat, preventing it from loading after navigating to the page, or select one of the following options: Watch the Quick Set-Up video to learn how to configure the app. See a pre-created example. Create your own with the In-App guidance. Read about configuring an Event on your own. View the express tour. Talk to our trial assistant.",
+  "keywords": [
+    "events",
+    "user",
+    "jobs",
+    "integration",
+    "configuration",
+    "welcome",
+    "configuring",
+    "access",
+    "blackthorn",
+    "admin",
+    "settings",
+    "more",
+    "each",
+    "following",
+    "learn",
+    "about",
+    "after",
+    "guidance",
+    "page",
+    "your"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

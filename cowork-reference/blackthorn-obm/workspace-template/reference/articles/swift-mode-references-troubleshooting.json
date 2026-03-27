@@ -1,0 +1,35 @@
+{
+  "id": "swift-mode-references-troubleshooting",
+  "title": "swift-mode-references-troubleshooting.md",
+  "content": "## Metadata_Start ## code: en ## title: References and Troubleshooting ## slug: swift-mode-references-troubleshooting ## seoTitle: References and Troubleshooting ## description: ## contentType: Markdown ## Metadata_End ## Cheat Sheet: Swift Check-In Quick Reference | Action | Steps | | --- | --- | | Enable {{variable.Feature_SwiftMode}} | Settings > *Swift Check-In Mode* (Beta): ON | | Load {{variable.Object_Attendee}}s | Connect to Wi-Fi and open the relevant {{variable.Object_Event}} | | Rapid QR Scan | Turn ON *Continuous Scan Mode* in Settings | | Search for an {{variable.Object_Attendee}} | Enter full {{variable.Field_ETAttendee_FirstName}}, full {{variable.Field_ETAttendee_LastName}}, full {{variable.Field_Attendee_Email}}, or company ({{variable.Field_ETAttendee_Account}}) | | Check In | Swipe left on the {{variable.Object_Attendee}} name or tap for more details | | Add New {{variable.Object_Attendee}} Manually | Tap the **\"+\"** button (bottom right) | | Add New {{variable.Object_Attendee}} with a {{variable.Field_Attendee_BTExternalID}} | Connect to the Wi-Fi and scan the {{variable.Field_Attendee_BTExternalID}} QR code | | Sync Check-Ins | Connect to Wi-Fi and tap the **Cloud** icon (top right) | | View Status/Errors | Recent Check-Ins tab, Sync Manager (**Cloud** icon) | | Need help? | Copy the {{variable.Field_MobCkInSub_RequestId}} from the Sync Manager, and contact {{variable.Link_BlackthornSupport}} | ## Troubleshooting | Problem | Solution | | --- | --- | | Can’t find an {{variable.Object_Attendee}} | Double-check spelling; Try searching by email; Connect to Wi-Fi and tap **CHECK SF FOR NEW ATTENDEES**; Add manually if still not found | | Search returns no results | Must use the {{variable.Object_Attendee}}'s full {{variable.Field_ETAttendee_FirstName}}, full {{variable.Field_ETAttendee_LastName}}, full {{variable.Field_Attendee_Email}}, or company ({{variable.Field_ETAttendee_Account}})—no partial matches. Must have loaded the {{variable.Object_Event}} with Wi-Fi connectivity before going offline. | | Check-ins say “Pending” | Not yet synced; connect to the internet, tap the **Cloud** icon, then tap the **SYNC X CHANGES** button. | | Sync fails / error shown | Tap **Retry** in the Sync Manager; copy the {{variable.Field_MobCkInSub_RequestId}} and contact {{variable.Link_BlackthornSupport}} if it persists. | | The QR code isn’t working | If there is low light, try turning on your phone flashlight by clicking the lightning icon when your scanner is open. If that fails, try searching by name or email instead. | | The device is slow or unresponsive | Connect to the Wi-Fi to download the {{variable.Object_Event}} before going offline. If thousands of {{variable.Object_Event}}s are active, try unpublishing past {{variable.Object_Event}}s. | | Accidentally closed the app during sync | Don’t worry—sync will continue when you reopen the app. | | Still need help? | Copy the {{variable.Field_MobCkInSub_RequestId}} from Sync Manager and contact the event supervisor or {{variable.Link_BlackthornSupport}}. | ## FAQs **Q: What if I can’t find someone in the search?** A: Try their full email address. If still not found, use the **“+”** button to add them manually. **Q: What does “Pending” mean?** A: The check-in is not yet synced. Tap the cloud icon when you’re online to finish syncing. **Q: Can I use {{variable.Feature_SwiftMode}} check-in on iOS and Android?** A: Yes, {{variable.Feature_SwiftMode}} is available on iOS and Android devices. **Q: Can I skip the Attendee Detail page to scan multiple QR codes quickly?** A: Yes, turn on *Continuous Scan Mode* for faster scanning. **Q: What should I do if sync fails?** A: Tap **Retry** in the Sync Manager. If it still fails, copy the {{variable.Field_MobCkInSub_RequestId}} and contact {{variable.Link_BlackthornSupport}}. **Q: What if I forget to sync the data updates?** A: Your updates will be stored on your device and can be synced at any time unless you delete the app from your device entirely. ## Support For unresolved issues, copy the {{variable.Field_MobCkInSub_RequestId}} from the Sync Manager and contact your event supervisor or {{variable.Link_BlackthornSupport}}.",
+  "keywords": [
+    "variable",
+    "sync",
+    "check",
+    "object_attendee",
+    "full",
+    "connect",
+    "manager",
+    "your",
+    "object_event",
+    "scan",
+    "icon",
+    "copy",
+    "field_mobckinsub_requestid",
+    "contact",
+    "link_blackthornsupport",
+    "troubleshooting",
+    "mode",
+    "cloud",
+    "from",
+    "still"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "Errors | Recent Check-Ins tab, Sync Manager (**Cloud** icon) | | Need help? | Copy the {{variable.",
+    "error shown | Tap **Retry** in the Sync Manager; copy the {{variable.",
+    "Troubleshooting ## slug: swift-mode-references-troubleshooting ## seoTitle: References and Troubleshooting ## description: ## contentType: Markdown ## Metadata_End ## Cheat Sheet: Swift Check-In Quick Reference | Action | Steps | | --- | --- | | Enable {{variable.",
+    "Troubleshooting | Problem | Solution | | --- | --- | | Can’t find an {{variable."
+  ]
+}

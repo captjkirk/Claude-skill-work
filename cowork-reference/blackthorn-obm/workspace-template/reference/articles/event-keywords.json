@@ -1,0 +1,39 @@
+{
+  "id": "event-keywords",
+  "title": "event-keywords.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Keywords ## slug: event-keywords ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Use specific keywords or phrases to help improve the searchability of your {{variable.Object_Event}}! ## Use Case If you are hosting an outdoor cooking event, your keywords might include: BBQ, barbeque, outdoor event, grilling, cookout, etc. Adding these as keywords will increase searchability for people looking to attend your event! ![Blackthorn Events - Keywords Feature](https://youtu.be/qBLuDYukBEs){height=\"480\" width=\"640\"} ## Instructions Follow along to set up your keywords! 1. Navigate to an {{variable.Object_Event}} record. 2. Click **Manage Keywords**. ![Instructions 1\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%201%281%29.png){height=\"\" width=\"\"} 3. Type in a keyword, and click {{variable.Button_CreateNewKeyword}}. ![Instructions 2\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%202%281%29.png){height=\"\" width=\"\"} 4. Create as many {{variable.Object_Keyword}}s as you'd like for an {{variable.Object_Event}}. When you are done, click {{variable.Button_Save}}. 5. Once you have several {{variable.Object_Event}}s with {{variable.Object_Keyword}}s, navigate to the {{variable.Object_EventGroup}} that your {{variable.Object_Event}}s are a part of. 6. Change the {{variable.Field_ETGroup_UIExperience}} value to {{variable.Picklist_ETGrp_UI_Aspen}}, {{variable.Picklist_ETGrp_UI_Maple}}, or {{variable.Picklist_ETGrp_UI_List}}. ![Instructions 3\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%203%281%29.png){height=\"\" width=\"\"} 7. Click on the {{variable.Field_ETGroup_EventGroupURL}} to load the {{variable.Object_EventGroup}} webpage. 8. Check it out and play around! ## Examples The left hand column is an example of all {{variable.Object_Keyword}}s associated with the {{variable.Object_Event}}s in the {{variable.Object_EventGroup}}. In this example, \"Interest,\" \"Type,\" and \"Location\" are all Categories. * Maple UI: Everything under the dotted line is a {{variable.Object_Keyword}} without the {{variable.Object_Keyword}} {{variable.Field_ETEvent_Category}} field defined. * Aspen and List UI: {{variable.Object_Keyword}}s without a defined {{variable.Field_ETEvent_Category}} will appear in the Undefined section. ### Aspen UI ![Keywords_EventGroup_AspenUI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Keywords_EventGroup_AspenUI.png){height=\"\" width=\"\"} ### Maple UI ![Keywords_EventGroup_MapleUI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Keywords_EventGroup_MapleUI.png){height=\"\" width=\"\"} ### List UI ![Keywords_EventGroup_ListUI](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Keywords_EventGroup_ListUI.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "keywords",
+    "https",
+    "height",
+    "width",
+    "instructions",
+    "object_event",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "object_keyword",
+    "event",
+    "your",
+    "click",
+    "object_eventgroup"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to an {{variable",
+    "2. Click **Manage Keywords**",
+    "3. Type in a keyword, and click {{variable",
+    "4. Create as many {{variable",
+    "5. Once you have several {{variable",
+    "6. Change the {{variable",
+    "7. Click on the {{variable",
+    "8. Check it out and play around! ## Examples The left hand column is an example of all {{variable"
+  ],
+  "troubleshooting": []
+}

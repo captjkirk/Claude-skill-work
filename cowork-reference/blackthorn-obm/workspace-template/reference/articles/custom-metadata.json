@@ -1,0 +1,38 @@
+{
+  "id": "custom-metadata",
+  "title": "custom-metadata.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Metadata Types ## slug: custom-metadata ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction Custom Metadata Types are used in Blackthorn apps to automatically install metadata records into your org. Many packaged apex triggers use these records. The purpose of this documentation is a reference for these records' functions. For example, we have a Custom Metadata Type called \"Stripe Currency Setting\" that stores all the {{variable.Product_Stripe}} currency information like the ISO code, minimum amount, supported bank accounts, etc. and is used to validate your {{variable.Object_PaymentMethod}}s and {{variable.Object_Transaction}}s. ## Custom Metadata Types There are two Custom Metadata Type records: Stripe Connect Country Specs and Stripe Currency Setting. 1. Navigate to Custom Metadata Types. ***Lightning:** Setup > In the Quick Find, search and click \"Custom Metadata Types.\"* 2. Click \"Manage Records\" next to either Custom Metadata Type. You can update the records by clicking Edit next to the record name. ### Stripe Currency Setting ![H_01_04_Stripe Currency Setting](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_04_Stripe%20Currency%20Setting.png){height=\"\" width=\"\"} ### Stripe Connect Country Specs ![H_01_04_Stripe Connect Country Specs](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_04_Stripe%20Connect%20Country%20Specs.png){height=\"\" width=\"\"} ## Troubleshooting If you have received an error with your Custom Metadata Types or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page.",
+  "keywords": [
+    "metadata",
+    "custom",
+    "types",
+    "records",
+    "stripe",
+    "currency",
+    "setting",
+    "h_01_04_stripe",
+    "https",
+    "docs",
+    "blackthorn",
+    "your",
+    "documentation",
+    "type",
+    "variable",
+    "connect",
+    "country",
+    "specs",
+    "troubleshooting",
+    "code"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to Custom Metadata Types",
+    "2. Click \"Manage Records\" next to either Custom Metadata Type",
+    "* Setup > In the Quick Find, search and click"
+  ],
+  "troubleshooting": [
+    "error with your Custom Metadata Types or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with your Custom Metadata Types or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

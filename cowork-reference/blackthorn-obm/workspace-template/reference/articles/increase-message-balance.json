@@ -1,0 +1,37 @@
+{
+  "id": "increase-message-balance",
+  "title": "increase-message-balance.md",
+  "content": "## Metadata_Start ## code: en ## title: How Do I Increase our Message Balance? ## slug: increase-message-balance ## seoTitle: How Do I Increase our Message Balance? ## description: ## contentType: Markdown ## Metadata_End ## Add Messages To add additional messages to your balance, you can do the following: 1. In Salesforce, go to the Messaging Administration page. 2. Navigate to the SMS section (SMS icon on the left-hand side). 3. Click the **Add Messages** button. 4. Enter the Quantity of messages you want to purchase. You will see a confirmation of the price for these additional messages. 5. Click **Checkout**. 6. Confirm your payment method and click **Buy Messages**. If the payment is processed successfully, your messages will be immediately added to your balance and your account will be placed back into \"Active\" status. ## Update Your Payment Method Users can change the Payment Method at any time. ### Update a Card’s Information {{snippet.Messaging_UpdatePM_UpdateCardInfo}} ### Change the Default Payment Method {{snippet.Messaging_ChgDefaultPM}} ### Delete a Payment Method {{snippet.Messaging_UpdatePM_DeletePM}}",
+  "keywords": [
+    "messages",
+    "your",
+    "payment",
+    "balance",
+    "method",
+    "increase",
+    "message",
+    "click",
+    "snippet",
+    "additional",
+    "update",
+    "change",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. In Salesforce, go to the Messaging Administration page",
+    "2. Navigate to the SMS section (SMS icon on the left-hand side)",
+    "3. Click the **Add Messages** button",
+    "4. Enter the Quantity of messages you want to purchase",
+    "5. Click **Checkout**",
+    "6. Confirm your payment method and click **Buy Messages**"
+  ],
+  "troubleshooting": []
+}

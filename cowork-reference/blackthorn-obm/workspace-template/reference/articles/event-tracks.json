@@ -1,0 +1,33 @@
+{
+  "id": "event-tracks",
+  "title": "event-tracks.md",
+  "content": "## Metadata_Start ## code: en ## title: Tracks ## slug: event-tracks ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Add {{variable.Object_Track}}s to divide {{variable.Object_Session}}s into categories and enable {{variable.Object_Attendee}}s to filter out the agenda based on individual tracks. For example, if you create a \"Salesforce Developer\" {{variable.Object_Track}}, {{variable.Object_Attendee}}s can click on that specific {{variable.Object_Track}} and register for related {{variable.Object_Session}}s. ## Create a Track 1. Navigate to your {{variable.Object_Event}} record and click {{variable.button_new}} next to the {{variable.Object_Track}}'s {{variable.SFTerm_RelatedList}}. ![Create a Track](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Track.png){height=\"\" width=\"\"} 2. Create all {{variable.Object_Track}} for this {{variable.Object_Event}}. ## Relate Tracks to Sessions Create a {{variable.Object_TrackSession}} record (related list) on all applicable {{variable.Object_Session}}s. ![Relate Tracks to Sessions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Relate%20Tracks%20to%20Sessions.png){height=\"\" width=\"\"} ## Pre-assign Attendees to Tracks Pre-assigning {{variable.Object_Track}}s to {{variable.Object_Attendee}}s limit the {{variable.Object_Session}}s that they can see and register for. *For example, if the developer should only see and register for \"Developer\" {{variable.ObjectSession}}s, add them to the \"Developer\" {{variable.ObjectTrack}} as a {{variable.Object_TrackAttendee}}.* ## Create a Track Attendee Record Create a {{variable.Object_TrackAttendee}} record (related list) from the {{variable.Object_Attendee}}'s record. ![Create Track Attendee Record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20Track%20Attendee%20Record.png){height=\"\" width=\"\"} Once assigned, the {{variable.Object_Attendee}} can only see and register for {{variable.Object_Session}}'s related to this {{variable.Object_Track}}. ## Use Case **Invite Only, Including a Private Dinner** If you have a private dinner that only certain {{variable.Object_Attendee}}s can register for, create a {{variable.Object_Track}} that includes all public {{variable.Object_Session}}s plus the private dinner {{variable.Object_Session}}. Check the private dinner {{variable.Object_Session}}'s {{variable.Field_Session_HideOnEventPage}} field. This will hide the {{variable.Object_Session}} from the general public, but allow the invited {{variable.Object_Attendee}} to register for the private {{variable.Object_Session}}.",
+  "keywords": [
+    "variable",
+    "create",
+    "object_session",
+    "object_track",
+    "object_attendee",
+    "tracks",
+    "register",
+    "record",
+    "private",
+    "developer",
+    "related",
+    "track",
+    "only",
+    "dinner",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to your {{variable",
+    "2. Create all {{variable"
+  ],
+  "troubleshooting": []
+}

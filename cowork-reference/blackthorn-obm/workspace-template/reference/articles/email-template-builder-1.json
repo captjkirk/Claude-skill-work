@@ -1,0 +1,36 @@
+{
+  "id": "email-template-builder-1",
+  "title": "email-template-builder-1.md",
+  "content": "## Metadata_Start ## code: en ## title: Email Template Builder ## slug: email-template-builder-1 ## seoTitle: Email Template Builder ## description: ## contentType: Markdown ## Metadata_End The {{variable.Component_EmailTemplateBuilder}} is a user-friendly tool that creates great-looking email templates for your {{variable.Object_Event}}. Use the builder and our {{variable.Component_EmailConfiguration}} component to add custom email templates for * Confirmation emails, * Waitlist emails, and * Waitlist pending emails. *Note: If you are using the {{variable.Component_EmailConfiguration}} component to set up emails on a per {{variable.Object_Event}} basis, you will need to disable the corresponding workflow rule. Or the {{variable.Object_Attendee}}s will receive both emails! Click {{variable.Button_CreateEmailTemplates}} to create our out-of-the-box email templates. ![Create Email Templates Button](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20Email%20Templates%20Button.png){height=\"\" width=\"\"} For more information about using email templates, click [here](https://docs.blackthorn.io/docs/email-management-event-invites-reminders-more). Please give users who need to access to the Blackthorn {{variable.Component_EmailTemplateBuilder}} these instructions: [Email Template Builder](https://docs.blackthorn.io/docs/email-template-builder){target=\"_blank\"}. ## Did you receive a refused to connect error? If you receive a refused to connect error (i.e., 'domain.csxyz.visual.force.com refused to connect') when using the builder to create an email template, you must allowlist a couple of domains in {{variable.Product_Salesforce}}. ## How to Allowlist a Domain 1. Go to Setup. 2. Search for and go to “Session Settings.” 3. Allowlist these domains for Visualforce Pages: * lightning.force.com (http://lightning.force.com/) * my.salesforce.com (http://my.salesforce.com/)",
+  "keywords": [
+    "email",
+    "variable",
+    "builder",
+    "template",
+    "templates",
+    "emails",
+    "create",
+    "docs",
+    "using",
+    "receive",
+    "https",
+    "blackthorn",
+    "refused",
+    "connect",
+    "force",
+    "allowlist",
+    "component_emailtemplatebuilder",
+    "object_event",
+    "component_emailconfiguration",
+    "component"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Search for and go to “Session Settings",
+    "3. Allowlist these domains for Visualforce Pages: * lightning"
+  ],
+  "troubleshooting": [
+    "error? If you receive a refused to connect error (i."
+  ]
+}

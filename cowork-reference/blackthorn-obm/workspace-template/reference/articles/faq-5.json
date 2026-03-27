@@ -1,0 +1,36 @@
+{
+  "id": "faq-5",
+  "title": "faq-5.md",
+  "content": "## Metadata_Start ## code: en ## title: FAQ ## slug: faq-5 ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you receive the error below from a user accessing PayLink, it is because they don't have the permission set assigned to them. ERROR: ``` Error element myRule_1_A1 (FlowRecordCreate). This error occurred when the flow tried to create records: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY: bt_paylink.TransactionTrigger: execution of AfterInsert caused by: bt_paylink.SObjectService.SObjectAccessException: Paylink: You do not have permission to update this object: Transaction Class.bt_paylink.SObjectService: line 88, column 1 Class.bt_paylink.Transaction_GeneratePaylink: line 26, column 1 Class.bt_paylink.SObjectTrigger.handle: line 96, column 1 Class.bt_paylink.TriggerHandler.manage: line 125, column 1 Trigger.bt_paylink.TransactionTrigger: line 2, column 1. ``` FIX: Assign user to the Blackthorn | PayLink (User) permission set.",
+  "keywords": [
+    "bt_paylink",
+    "line",
+    "column",
+    "error",
+    "class",
+    "user",
+    "paylink",
+    "permission",
+    "transactiontrigger",
+    "sobjectservice",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "receive"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. ``` FIX: Assign user to the Blackthorn | PayLink (User) permission set"
+  ],
+  "troubleshooting": [
+    "error below from a user accessing PayLink, it is because they don't have the permission set assigned to them.",
+    "ERROR: ``` Error element myRule_1_A1 (FlowRecordCreate).",
+    "error occurred when the flow tried to create records: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY: bt_paylink."
+  ]
+}

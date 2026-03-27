@@ -1,0 +1,30 @@
+{
+  "id": "stripe-billing-usage",
+  "title": "stripe-billing-usage.md",
+  "content": "## Metadata_Start ## code: en ## title: Usage ## slug: stripe-billing-usage ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Creating Usage Based Billing * Create a Stripe Price where `Usage Type` is set to \"Metered\". Using the `Aggregate Usage` field you can set the summing up behavior (see Price documentations for details). * Create a Subscription using this Stripe Price. *Quantities on a Subscription using a Metered Price can't be set.* * Push the Subscription to Stripe. * Navigate to the Subscription Item on the Subscription related list. Select a Subscription Item. * Create a related Usage record on the related Usage list. * Set the `Quantity` field. * Save the record. * You should see the `Usage ID` field populated after a few minutes.",
+  "keywords": [
+    "usage",
+    "subscription",
+    "stripe",
+    "price",
+    "create",
+    "using",
+    "field",
+    "related",
+    "billing",
+    "metered",
+    "item",
+    "list",
+    "record",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

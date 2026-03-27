@@ -1,0 +1,32 @@
+{
+  "id": "blackthorn-events-admin-page-overview",
+  "title": "blackthorn-events-admin-page-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: Blackthorn Events Admin Page Overview ## slug: blackthorn-events-admin-page-overview ## seoTitle: Blackthorn Events Admin Page Overview ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (**Consider Using an Integration User**) Before configuring the Events app or activating Scheduled Jobs, we recommend logging in as an Integration User. An Integration User is a dedicated full Salesforce license that has a custom Permission Set and is used for any 3rd party integrations. This can help reduce issues related to configuration, authorization, and individual employee user access. ::: ## Meet the New Welcome Mat! After installing/upgrading the {{variable.Product_Events}} app, you will see the Welcome Mat or in-app guidance on the {{variable.Tab_ET_BTEventAdmin}} page. Choose to dismiss the Welcome Mat, preventing it from loading when after navigating to the {{variable.Tab_ET_BTEventAdmin}} page, or select one of the following options: * Watch the Quick Set-Up video to learn how to configure the {{variable.Product_Events}} app. * See a pre-created {{variable.Object_Event}} example. * Create your own {{variable.Object_Event}} with the In-App guidance. * Read about configuring an Event on your own. * View the express tour. * Talk to our trial assistant.",
+  "keywords": [
+    "variable",
+    "page",
+    "events",
+    "user",
+    "blackthorn",
+    "admin",
+    "overview",
+    "integration",
+    "welcome",
+    "configuring",
+    "after",
+    "product_events",
+    "guidance",
+    "tab_et_bteventadmin",
+    "object_event",
+    "your",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [
+    "* Watch the Quick Set-Up video to learn how to configure"
+  ],
+  "troubleshooting": []
+}

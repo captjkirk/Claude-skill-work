@@ -1,0 +1,32 @@
+{
+  "id": "schedule-sms-messages",
+  "title": "schedule-sms-messages.md",
+  "content": "## Metadata_Start ## code: en ## title: Schedule SMS Messages ## slug: schedule-sms-messages ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you haven't done so already, please [review the steps](https://docs.blackthorn.io/docs/configuration-settings#scheduled-jobs){target=`_blank`} for starting and stopping scheduled jobs and messages. SMS Messages can be scheduled via two interfaces. * Record Page Messenger * Bulk SMS :::(Info) (Which Message field should I use?) End users will see the message in the {{variable.Field_SMSMessage_MessageFull}} field. They won’t receive the message in the {{variable.Field_SMSMessage_Message}} field. Understanding this is especially important for messages over 256 characters, which will appear cut off in the {{variable.Field_SMSMessage_Message}} field. ::: ## Record Page Messenger ![additional features-schedule_sms_msgs 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/additional%20features-schedule_sms_msgs%201.jpeg){height=\"\" width=\"\"} An insight of all the messages scheduled individually. You can separately perform furthermore actions on these messages. * Edit Message: Change the body of the message * Reschedule Message: You can schedule the message for another time * Send Now: Sends the message right away * Cancel Message: Calls off the message * Delete Message: Removes the message ![additional features-schedule_sms_msgs 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/additional%20features-schedule_sms_msgs%202.png){height=\"\" width=\"\"} When you are not the owner of the messages that are scheduled, you will not be able to view them or perform any actions. ![additional features-schedule_sms_msgs 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/additional%20features-schedule_sms_msgs%203.png){height=\"\" width=\"\"} ## Bulk SMS ![additional features-schedule_sms_msgs 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/additional%20features-schedule_sms_msgs%204.jpeg){height=\"\" width=\"\"} * * * :::(Info) (Do you want to send SMS messages from an Event?) If you have Messaging installed and would like to send SMS messages from an Event using the Smart Scheduler, click [here](https://docs.blackthorn.io/docs/ev-ss-add-event-scheduler-component-event-record){target=`_blank`}. :::",
+  "keywords": [
+    "message",
+    "messages",
+    "additional",
+    "schedule_sms_msgs",
+    "https",
+    "scheduled",
+    "docs",
+    "field",
+    "features",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20features",
+    "height",
+    "width"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * * :::(Info) (Do you want to send SMS messages from an Event?) If you have Messaging installed and would like to send SMS messages from an Event using the Smart Scheduler, click"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "static-translations",
+  "title": "static-translations.md",
+  "content": "## Metadata_Start ## code: en ## title: Static Translations ## slug: static-translations ## seoTitle: Static Translations ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Are you interested in Static Translations?) Static Translations is currently feature flagged and only available in Events. If you would like to use it, please contact {{variable.Link_BlackthornSupport}} with your Org ID to have it turned on. ::: Similar to the functionality of the Data Dictionary override capability, Static Translations (Beta) allows Event Planners to override or write their own Translations instead of using Google Translate's auto-translation. ## Objects and Fields Available for Translation ### Object: Event {{snippet.Translation_AvailEventFields}} ### Object: Event Item {{snippet.Translation_AvailEVItemFields}} ### Object: Session {{snippet.Translation_AvailSessionFields}} ### Object: Form {{snippet.Translation_AvailFormFields}} ### Object: Form Element {{snippet.Translation_AvailFormEleFields}} ### Object: Form Element Condition {{snippet.Translation_AvailFormElCoField}} ### Object: Form Big List Option {{snippet.Translation_AvailFmBigLiOField}} ### Object: Speaker {{snippet.Translation_AvailSpeakerFields}} ### Object: Sponsor {{snippet.Translation_AvailSponsorField}} ### Object: Track {{snippet.Translation_AvailTrackField}} ### Object: Custom Content {{snippet.Translation_AvailCustEVTaField}} ### Object: Event Content {{snippet.Translation_AvailEVContenField}} ### Object: Event FAQ {{snippet.Translation_AvailEventFAQField}} ### Object: FAQ Category {{snippet.Translation_AvailFAQCategField}} ### Object: FAQ Question {{snippet.Translation_AvailFAQQuestField}} ### Object: Keyword {{snippet.Translation_AvailKeywordField}} ## Translation Object Page Layout {{snippet.TranslationObject_PageLayout}} Click [here](/v1/docs/translations-multi-language-events) for more information about how to use Static Translations (Beta).",
+  "keywords": [
+    "object",
+    "snippet",
+    "translations",
+    "static",
+    "event",
+    "form",
+    "translation",
+    "available",
+    "events",
+    "override",
+    "beta",
+    "element",
+    "content",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

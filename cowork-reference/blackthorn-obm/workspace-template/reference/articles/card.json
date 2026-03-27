@@ -1,0 +1,30 @@
+{
+  "id": "card",
+  "title": "card.md",
+  "content": "## Metadata_Start ## code: en ## title: Card ## slug: card ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Completed Transaction The following {{variable.Object_Transaction}} fields are updated: * {{variable.Field_Transaction_TransaStatus}} = \"Completed\" * {{variable.Field_Transaction_PaymentStatu}} = \"Captured\" * {{variable.Field_Transaction_ProcessedDat}} = date and time of submitted payment * {{variable.Field_Transaction_PaymenMethod}} is added to the {{variable.Object_Transaction}} record. A new {{variable.Object_PaymentMethod}} and {{variable.Object_PaymentGatewayCustomer}} record are created (if this is the first payment) or a new {{variable.Object_PaymentMethod}} will be created and linked to the existing {{variable.Object_PaymentGatewayCustomer}} (based on email matching). ![PayLink: Completed Card Transaction](https://youtu.be/B7tetTwdwjY){height=\"480\" width=\"640\"} :::(Info) (PayLink Link) The unique link always works, so if the customer needs to view the payment or print another receipt, they can reopen it anytime, but it can only be paid once. :::",
+  "keywords": [
+    "variable",
+    "card",
+    "completed",
+    "payment",
+    "transaction",
+    "object_transaction",
+    "record",
+    "object_paymentmethod",
+    "object_paymentgatewaycustomer",
+    "created",
+    "paylink",
+    "link",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

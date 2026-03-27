@@ -1,0 +1,41 @@
+{
+  "id": "payments-paylink-provide-user-access",
+  "title": "payments-paylink-provide-user-access.md",
+  "content": "## Metadata_Start ## code: en ## title: Provide User Access ## slug: payments-paylink-provide-user-access ## seoTitle: Provide Users Access ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Does your user have a Payments license?) Users must have a Payments license before they can be given access to PayLink. ::: ## Assign PayLink Licenses You will need to assign the Blackthorn PayLink license to all users who need access. To assign users a PayLink license, complete the following steps. 1. Click the **Gear** icon in the upper right-hand corner. 2. Click **Setup**. 3. Type “Installed Packages” in the Quick Find box. 4. Click Installed Packages. 5. Click **Manage Licenses** next to Blackthorn | PayLink. 6. Click **Add Users**. 7. Check the box next to the Available Users that you need to assign licenses to. 8. Click **Add**. ## Assign Permission Sets Next, you will need to add the appropriate Permission Sets to your users. This will grant them the ability to see the necessary Blackthorn objects/records within Salesforce. Administrative users will need the {{variable.PS_PayLink_Admin}} permission set while Managers and End Users will need the {{variable.PS_PayLink_User}} permission set. You can assign one or more users to a permission set by [Assigning a User to a Permission Set](/v1/docs/paylink-provide-user-access#assign-a-user-to-a-permission-set). Or you can assign one or more permission sets to your users by [Assigning a Permission Set to a User](/v1/docs/paylink-provide-user-access#assign-a-permission-set-to-a-user). ### Assign a User to a Permission Set 1. Click the **Gear** Icon in the upper right-hand corner. 2. Click **Setup**. 3. Type “Permission Sets” in the Quick Find box. 4. Click Permission Sets. 5. Click the permission set you need to manage. 6. Click **Manage Assignments**. 7. Click **Add Assignment** to assign users to the permission set. 8. Add your users and click **Assign**. ### Assign a Permission Set to a User 1. Go to Setup. 2. Search for the user. 3. Click the user’s name. 4. Click **Edit Assignments**. 5. Click either {{variable.PS_PayLink_Admin}} or {{variable.PS_PayLink_User}} in the Available Permission Sets box. 6. Click **Add**. 7. To remove a permission set, highlight it in the Enabled Permission Sets box, click the left Remove arrow, and click {{variable.Button_Save}}. 8. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "click",
+    "permission",
+    "user",
+    "users",
+    "assign",
+    "paylink",
+    "access",
+    "need",
+    "sets",
+    "variable",
+    "provide",
+    "your",
+    "license",
+    "payments",
+    "licenses",
+    "blackthorn",
+    "setup",
+    "manage",
+    "next",
+    "gear"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Click the **Gear** icon in the upper right-hand corner",
+    "2. Click **Setup**",
+    "3. Type “Installed Packages” in the Quick Find box",
+    "4. Click Installed Packages",
+    "5. Click **Manage Licenses** next to Blackthorn | PayLink",
+    "6. Click **Add Users**",
+    "7. Check the box next to the Available Users that you need to assign licenses to",
+    "8. Click **Add**",
+    "1. Click the **Gear** Icon in the upper right-hand corner",
+    "2. Click **Setup**"
+  ],
+  "troubleshooting": []
+}

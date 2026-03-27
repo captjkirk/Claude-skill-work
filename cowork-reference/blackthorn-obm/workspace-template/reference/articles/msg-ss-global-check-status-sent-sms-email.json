@@ -1,0 +1,30 @@
+{
+  "id": "msg-ss-global-check-status-sent-sms-email",
+  "title": "msg-ss-global-check-status-sent-sms-email.md",
+  "content": "## Metadata_Start ## code: en ## title: Check the Status of Each Sent SMS and Email ## slug: msg-ss-global-check-status-sent-sms-email ## seoTitle: Check the Status of Each Sent SMS and Email ## description: ## contentType: Markdown ## Metadata_End The ability to check the status of an individual message in a Scheduled Job is available. However, to check the status of an individual message, the Scheduler {{variable.Field_SmartSched_Status}} must be “Active”. #### SMS ![CheckStatusSentSMS](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CheckStatusSentSMS.png){height=\"\" width=\"\"} #### EMAIL ![CheckStatusSentEmail](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CheckStatusSentEmail.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "check",
+    "status",
+    "email",
+    "sent",
+    "each",
+    "individual",
+    "message",
+    "checkstatussentsms",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "checkstatussentemail"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

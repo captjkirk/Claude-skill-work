@@ -1,0 +1,30 @@
+{
+  "id": "session-check-in-qr",
+  "title": "session-check-in-qr.html",
+  "content": "Click on s within the to search, swipe, and QR check-in your s. If a QR code is scanned at the level, the registrant will only be listed as “Attended” for the . None of the s will be marked as “Attended” on the Attendee’s records. For example, if a registrant is registered for five s, but only attends three, the following will be true. &nbsp; If the QR code is scanned from the in the app, s one, two, and three will be marked as “Attended” on the ’s records. s four and five will not be marked as “Attended.” List all s for your . A ’s will only be visible after clicking the individual . This functionality also occurs on the Event registration checkout page while selecting s. Search, scroll, or QR scan your registered s to check them into the . Do you need to close the QR code scanning feature? Click the Cancel button to close the QR code scan feature on iOS devices without scanning a QR code.",
+  "keywords": [
+    "code",
+    "attended",
+    "your",
+    "only",
+    "marked",
+    "click",
+    "search",
+    "check",
+    "scanned",
+    "registrant",
+    "records",
+    "registered",
+    "five",
+    "three",
+    "scan",
+    "close",
+    "scanning",
+    "feature",
+    "within",
+    "swipe"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

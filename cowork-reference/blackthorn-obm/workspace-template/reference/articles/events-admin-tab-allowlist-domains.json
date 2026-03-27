@@ -1,0 +1,30 @@
+{
+  "id": "events-admin-tab-allowlist-domains",
+  "title": "events-admin-tab-allowlist-domains.md",
+  "content": "## Metadata_Start ## code: en ## title: Allowlist Domains Tab ## slug: events-admin-tab-allowlist-domains ## seoTitle: Allowlist Domains Tab ## description: ## contentType: Markdown ## Metadata_End ![Events Admin Tab_Allowlist Domains](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Allowlist%20Domains.png){height=\"\" width=\"\"} Use the Allowlist Domains tab to manage existing domains and create new ones. {{snippet.URL_Limitation}}",
+  "keywords": [
+    "domains",
+    "allowlist",
+    "events",
+    "admin",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "tab_allowlist",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

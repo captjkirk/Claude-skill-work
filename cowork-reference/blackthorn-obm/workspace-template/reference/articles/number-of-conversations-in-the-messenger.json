@@ -1,0 +1,30 @@
+{
+  "id": "number-of-conversations-in-the-messenger",
+  "title": "number-of-conversations-in-the-messenger.md",
+  "content": "## Metadata_Start ## code: en ## title: Number of Conversations in the Messenger ## slug: number-of-conversations-in-the-messenger ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End For better performance in the Blackthorn Messaging Messenger component, you can set a default page size of the number of messages that load when the component loads. ![Set the number of messages that load in the Textey Messenger](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20the%20number%20of%20messages%20that%20load%20in%20the%20Textey%20Messenger.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "number",
+    "messenger",
+    "conversations",
+    "component",
+    "messages",
+    "load",
+    "20the",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "better",
+    "performance",
+    "blackthorn",
+    "messaging"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "payments-fsl-overview",
+  "title": "payments-fsl-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: FSL Overview ## slug: payments-fsl-overview ## seoTitle: FSL Extension Package Overview ## description: ## contentType: Markdown ## Metadata_End {{snippet.PT_FSLOverview}}",
+  "keywords": [
+    "overview",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "seotitle",
+    "extension",
+    "package",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "pt_fsloverview"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

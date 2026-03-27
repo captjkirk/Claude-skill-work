@@ -1,0 +1,41 @@
+{
+  "id": "prefilled-attendee-information",
+  "title": "prefilled-attendee-information.md",
+  "content": "## Metadata_Start ## code: en ## title: Prefilled Information ## slug: prefilled-attendee-information ## seoTitle: Prefilled Information ## description: ## contentType: Markdown ## Metadata_End When you predefine the {{variable.Object_Attendee}}'s information, the Events app prefills it during {{variable.Task_Checkout}}. ![Video](https://youtu.be/KwX4o2BYLPI){height=\"480\" width=\"640\"} ## Update the Event Settings' Page Layout Before an {{variable.Object_Attendee}} can update their pre-filled information, the {{variable.Object_EventSettings}}’ {{variable.Field_ETSetting_AllowEditAtten}} field must be added to the page layout and checked. 1. Go to Setup. 3. Click the Object Manager tab. 4. In the Quick Find box, enter and click “Event Settings.” 5. Click the Page Layouts tab. 6. Click \"Event Settings Layout.\" 7. Drag and drop the {{variable.Field_ETSetting_AllowEditAtten}} field onto the page layout. 8. Click {{variable.Button_Save}}. 9. Open the relevant {{variable.Object_EventSettings}} record. 10. Click the **Pencil** icon in the {{variable.Field_ETSetting_AllowEditAtten}} field. 1. Set {{variable.Field_ETSetting_AllowEditAtten}} = “True” (checked). 2. Click {{variable.Button_Save}}. ## Editing the Attendee Form The {{variable.Object_Attendee}} can now update any fields on the Attendee Form except the Name and Email fields. This will not update the related {{variable.Object_Contact}} or {{variable.Object_Lead}} record. ![update the attendee form](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/update%20the%20attendee%20form.png){height=\"\" width=\"\"} ### Event Item Restriction If an {{variable.Object_Event}} offers multiple Tickets ({{variable.Object_EventItem}}s), a specific {{variable.Object_EventItem}} cannot be predefined on an {{variable.Object_Attendee}} record’s {{variable.Field_Attendee_EventItem}} field. This prevents duplicate {{variable.Object_Attendee}} records from being created if an {{variable.Object_Attendee}}’s record doesn’t have an {{variable.Object_EventItem}} preselected and the {{variable.Object_Attendee}} registers for the {{variable.Object_Event}}. To redeem multiple {{variable.Object_EventItem}}s, an {{variable.Object_Attendee}} must start by clicking the **Redeem** button. The {{variable.Object_Attendee}} can then add additional {{variable.Object_EventItem}}s and complete the checkout process without creating duplicate {{variable.Object_Attendee}} records. ## Mapping Custom Questions When an {{variable.Object_Attendee}} clicks on their AttendeeLink, custom questions ({{variable.Object_Form}}s and {{variable.Object_FormElement}}s) will be pre-filled with the {{variable.Object_Attendee}}’s data from their {{variable.Object_Contact}}, {{variable.Object_Lead}}, {{variable.Object_Account}}, or {{variable.Object_Attendee}} record(s). If the {{variable.Object_Attendee}} makes any changes via their AttendeeLink, the information will be updated automatically in the org. This functionality works for any standard/custom field on the {{variable.Object_Account}}, {{variable.Object_Contact}}, {{variable.Object_Lead}}, or {{variable.Object_Attendee}} records. :::(Warning) (**Please Read**) For those using Events Version 3.68+, the AttendeeLink Custom Questions mapping prefill of data no longer requires a feature flag. If you are using an earlier version, please contact [Blackthorn Support](https://community.blackthorn.io/s/support) with your Org ID to have it turned on. :::",
+  "keywords": [
+    "variable",
+    "object_attendee",
+    "click",
+    "information",
+    "update",
+    "field",
+    "record",
+    "object_eventitem",
+    "attendee",
+    "event",
+    "page",
+    "layout",
+    "their",
+    "field_etsetting_alloweditatten",
+    "custom",
+    "prefilled",
+    "https",
+    "settings",
+    "form",
+    "object_contact"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "3. Click the Object Manager tab",
+    "4. In the Quick Find box, enter and click “Event Settings",
+    "5. Click the Page Layouts tab",
+    "6. Click \"Event Settings Layout",
+    "7. Drag and drop the {{variable",
+    "8. Click {{variable",
+    "9. Open the relevant {{variable",
+    "10. Click the **Pencil** icon in the {{variable",
+    "1. Set {{variable"
+  ],
+  "troubleshooting": []
+}

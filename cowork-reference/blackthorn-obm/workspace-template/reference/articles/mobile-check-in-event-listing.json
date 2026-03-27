@@ -1,0 +1,30 @@
+{
+  "id": "mobile-check-in-event-listing",
+  "title": "mobile-check-in-event-listing.html",
+  "content": "After successfully logging in, you will see a list of future {{variable.Object_Event}} s for your org. The Mobile Check-in app can fetch the most recent 4000 active {{variable.Object_Event}} records. You can also perform the following tasks from the Event Listing page. View Events View Upcoming Events Click the Upcoming tab to view&nbsp; {{variable.Object_Event}} s in the future. View Past Events Click the Past tab to view&nbsp; {{variable.Object_Event}} s that happened in the past. View Events with No Date Click the No Date tab to view&nbsp; {{variable.Object_Event}} s that are not scheduled. Keyword Search You can also search the {{variable.Object_Event}} s with keywords. Click the search icon, enter a keyword, and click enter. Add Attendees Complete the steps below to add {{variable.Object_Attendee}} s to an {{variable.Object_Event}} . {{variable.Object_Attendee}} s can be added in online or offline mode. Click on an Event. Click the three dots on the top right-hand side of the page. Click Add Attendee . Fill in the appropriate fields. Click Save . FAQs Q: I don’t see any Events in my Mobile Check-in app. How do I fix that? A: If you don’t see any Events, please follow the steps below to fix the issue. Go to the particular Profile. Click System Permissions . Set the API ENABLED checkbox to “True” (checked). Click {{variable.Button_Save}} .",
+  "keywords": [
+    "click",
+    "variable",
+    "object_event",
+    "view",
+    "events",
+    "nbsp",
+    "past",
+    "search",
+    "future",
+    "mobile",
+    "check",
+    "also",
+    "event",
+    "page",
+    "upcoming",
+    "date",
+    "keyword",
+    "enter",
+    "steps",
+    "below"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

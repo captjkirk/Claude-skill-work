@@ -1,0 +1,30 @@
+{
+  "id": "pre-installation-requirements",
+  "title": "pre-installation-requirements.md",
+  "content": "## Metadata_Start ## code: en ## title: Pre-Installation Requirements ## slug: pre-installation-requirements ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You will need a Salesforce account to begin. If you aren't a Salesforce customer yet you can sign up for a free trial [here](https://www.salesforce.com/){target=\"_blank\"}. If you have a Salesforce account, then you're all set! Blackthorn Messaging is compatible with the following Salesforce editions: Professional, Enterprise, Unlimited and Performance. ## For Professional Edition Users If you have Professional Edition, you will need to have API access enabled in your org. If you don't have API access then you can contact your Salesforce account rep to have this feature added. ## Browser Compatibility Messaging has been tested on most major browsers. We are compatible with Chrome, Safari, Firefox, Microsoft Edge, Internet Explorer 11.",
+  "keywords": [
+    "salesforce",
+    "account",
+    "professional",
+    "installation",
+    "requirements",
+    "need",
+    "then",
+    "messaging",
+    "compatible",
+    "edition",
+    "access",
+    "your",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "ui-experience",
+  "procedures": [],
+  "troubleshooting": []
+}

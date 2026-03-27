@@ -1,0 +1,40 @@
+{
+  "id": "caching-capacity-management-version-423",
+  "title": "caching-capacity-management-version-423.md",
+  "content": "## Metadata_Start ## code: en ## title: Caching 2.0 and Capacity Management - Version 4.23 ## slug: caching-capacity-management-version-423 ## seoTitle: Caching and Capacity Management - Version 4.xx ## description: ## contentType: Markdown ## Metadata_End ## Caching 2.0 Updates :::(Warning) (Early Access Signup) If you are interested in participating in the early access for Caching 2.0, please [complete this form](https://docs.google.com/forms/d/e/1FAIpQLSeWL9kLLnDfi6H38AsTdHxmZuPmuwk-KnyopLqTzQgQOM8CBg/viewform){target=`_blank`}. We look forward to hearing from you. ::: * The {{variable.Field_ETGroup_EventGroupURL}} page will consistently show all related Events in the Event Group. Previously, the caching process randomly caused Events to disappear and appear on the Event Group URL page. * The Event Group page layout includes two new buttons. * {{variable.Button_UpdateGroupListingCache}}: This button refreshes the Event Group summaries, pulling the latest Event Group list and updating the Event IDs. (It does not update Event content.) If an Event was unpublished and republished, it won't be visible until this button is pressed. * {{variable.Button_ClearGroupListingCache}}: This button performs process-heavy actions by refreshing the Event Group summaries and marking every Event in the summaries as stale, ensuring a fresh load on the next request. Despite being resource-intensive, the batch process will occur at one-minute intervals. However, this may lead to higher API calls on Salesforce's side and increased Redis load on the webapp side. * The Events webapp will show significant improvements in performance when an Event Group has fewer than 2000 Events. However, the performance is still affected linearly by the number of Events and the amount of associated data. While we support Event Groups with more than 2000 Events in Salesforce, this Caching release loads only the first 2000 visible Events per Event Group with this release. Visible, in reference to caching, is defined as an Event with the {{variable.Field_ETEvent_Publish}} (conference360__Visible__c) field checked and a {{variable.Field_ETEvent_Status}} of either “Active” or “Draft\". * Attendees will be able to visit a newly published Event without encountering an Error with error code 2006. * Improved the user experience for Attendees when they encounter errors related to Event Groups. * The dropdown for Recurring Events is dynamically loaded, and users will only see the Events that are accessible to them. This means that the Events in the dropdown list are a subset of the complete list of the Recurring Events. Events that are not visible will fall into one of the following groups. * If a Recurring Event doesn’t belong to the current Event Group, it will not be visible. * If a Recurring Event isn’t accessible to the current user, the Event will not be visible. * Post-registration Form answers given via the AttendeeLink will be appropriately mapped to the relevant Attendee, Contact, Account, and Lead objects. Previously, post-registration answers were not appropriately mapped to Salesforce objects. * Logic was added for non-English Event webpages to prevent the following rare error. “Error (4xx): Cannot read properties of undefined (reading ‘extend’).” Previously, the Error (4xx) randomly occurred when a user tried to go to an Event webpage in a language other than English instead of taking the user to the Event webpage. * Updated the functionality to match the previous caching version regarding Source Language behavior. * If a user requests one Event, the Event Source Language will be used. * If a user requests a group of Events (an Event Group), then the Event Group Source Language will be used. If the Event Group Source Language is not set, use the Top 1 Event Source Language (ensure sort order is definitive). * The AttendeeLink will use the Event Source Language. ### Known Limitations * It is possible to oversell your Event when there is a high volume of web self-registrations and, at the same time, an Admin is enrolling Attendees via Salesforce. For this reason, we advise entering enrollments via Salesforce when there is a low volume of self-registrations. * If an Event’s information is modified, there may be a small, few-minute delay before the webapp syncs with the latest changes. If the Event’s Total Capacity is modified when there is a high volume of self-registration, an over-selling situation can occur. We recommend modifying an Event’s information during times of low registration. Click [here](/v1/docs/events-caching-2){target=`_blank`} for more information about Caching 2.0. ## Capacity Management Updates * Real-time validation rules will calculate the pending & current registrations and compare them to the available quantity before confirming a registration or sale. NOTE: We do not recommend enrolling Attendees via Salesforce during periods of high volume. * If capacity isn’t available, or the Event’s {{variable.Field_ETEvent_TotalCapacity}} has been sold, after processing is complete, the user will receive the following error message and will be unable to complete the checkout process. “Warning: Some items are sold out and unavailable for checkout; please try again later.” Previously, the inventory numbers weren’t updated with accurate ticket and session availability, causing problems with overselling. ### Important Prerequisites For Capacity Management to work correctly, you must perform the following. * Upgrade your org to Salesforce Events version 4.23 or later. * Review all custom flows, as they may interfere with functionality. * Click the **Schedule Batch Event Registration Submission Job** button to turn on batching. If the Batch Event Registration Submission scheduled job is already running, click the **Disable Batch Event Registration Submission Job** button and then click **Schedule Batch Event Registration Submission Job** again to ensure that all jobs are rescheduled correctly. ![image-20240508-131739](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/image-20240508-131739.png){height=\"\" width=\"\"} Click [here](/v1/docs/events-capacity-management){target=`_blank`} for more information about capacity management.",
+  "keywords": [
+    "event",
+    "events",
+    "group",
+    "caching",
+    "capacity",
+    "registration",
+    "management",
+    "salesforce",
+    "user",
+    "language",
+    "variable",
+    "visible",
+    "when",
+    "error",
+    "source",
+    "version",
+    "button",
+    "batch",
+    "click",
+    "complete"
+  ],
+  "category": "events",
+  "procedures": [
+    "2006. * Improved the user experience for Attendees when they encounter errors related to Event Groups",
+    "0. ## Capacity Management Updates * Real-time validation rules will calculate the pending & current registrations and compare them to the available quantity before confirming a registration or sale",
+    "* button and then click"
+  ],
+  "troubleshooting": [
+    "Error with error code 2006.",
+    "errors related to Event Groups.",
+    "error.",
+    "Error (4xx): Cannot read properties of undefined (reading ‘extend’).",
+    "Error (4xx) randomly occurred when a user tried to go to an Event webpage in a language other than English instead of taking the user to the Event webpage."
+  ]
+}

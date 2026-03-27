@@ -1,0 +1,45 @@
+{
+  "id": "default-payment-method",
+  "title": "default-payment-method.md",
+  "content": "## Metadata_Start ## code: en ## title: Default Payment Method ## slug: default-payment-method ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Feature Overview * Have the ability to define your Default Payment Method for any given Contact and/or Account Record. * Automatically set the latest default payment method on all related \"Open\" Transactions. *For example: If a customer has updated their payment method, all un-processed transactions will automatically update with the newest Payment Method.* * Update default Payment Methods in Stripe and they will sync back to Salesforce with the setup of [Webhooks](/v1/docs/quick-start). ## Scope * Default payment method is supported for both Card and ACH payment methods types. * Ability to automatically default the Payment Method lookup field on a Transaction record is coming soon. ## Prerequisite 1. Install our latest [Blackthorn | Payments App](https://candyshop.blackthorn.io/){target=\"_blank\"}. 2. Update your Contact, Transaction, and Payment Method Layouts to include below-highlighted fields and related lists. **Object: Contact*** | Fields | Related Lists | | --- | --- | | Default Payment Method | Payment Method | | Default Payment Gateway | Payment Gateway Customers | | | Transactions | **Including the related lists for Contact/Account will provide insights into your Contact/Account’s related Stripe Customers, Transactions, and Payment Methods records.* * * * **Object: Account*** | Fields | Related Lists | | --- | --- | | Default Payment Method | Payment Method | | | Payment Gateway Customers | | | Transactions | **Including the related lists for Contact/Account will provide insights into your Contact/Account’s related Stripe Customers, Transactions, and Payment Methods records.* * * * **Object: Payment Method** | Fields | Related Lists | | --- | --- | | Default Payment Method | none | * * * **Object: Transaction** | Fields | Related Lists | | --- | --- | | Don’t Auto-Update Payment Method | none | :::(Info) () When adding the Payment Method related list on your Contact and/or Account record, edit the related list settings to include the `Default Payment Method` Checkbox field. ::: ## Setup ### Create a Default Payment Method 1. Navigate to an existing Contact or Account record. 2. Create New Payment Method. 3. Select Card/ACH and enter the Payment Method details. 4. Click {{variable.Button_Save}}. :::(Info) () If this is the first Payment Method for your Contact and/or Account, the Default Payment Method checkbox will be selected automatically. ::: * * * :::(Info) () If your Contact/Account has multiple Payment Method records, you will need to manually check the Default Payment Method field to define your default Payment Method. ::: ### Auto-Update \"Open\" Transaction's Payment Method Our default Payment Method logic automatically updates related \"Open\" Transactions to the latest default Payment Method. 1. Navigate to an existing Contact or Account record. 2. Click on the newest Payment Method. 3. Check `Default Payment Method`. 4. Navigate to all \"Related To\" Transactions. *You will see all \"Open\" Transactions have updated to the newest default Payment Method.* You are all set! #### Don't wish to update all related Transactions to the latest default Payment Method? *Example scenario -If you have a customer paying for only one transaction where the Payment Method should not update to the default Payment Method.* You can do one of the below two things - 1. When creating a new Transaction or updating an existing Transaction, check the `Don't Auto-Update Payment Method`. OR 2. Navigate to [Custom Settings](https://docs.blackthorn.io/docs/custom-settings), select `Manage` next to Blackthorn | Payments triggers and select `Disable Update PM Related Transactions` checkbox. ![H_02_05_update payment method](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_05_update%20payment%20method.png){height=\"\" width=\"\"} This will disable updating the Payment Method on related transaction/s. ### Update Existing Payment Method Records to set the Default Payment Method If you have been using Blackthorn | Payments now is the time to update your records in Salesforce for this feature! You can update records via [Salesforce Data Loader](https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/inserting_updating_or_deleting_data.htm){target=\"_blank\"}. 1. Verify your Payment Method Records are related to an existing Contact and/or Account. 2. When you set the related Contact and/or Account, the Payment Gateway Customer record will also update with that related Contact and/or Account automatically. 3. Run a report of all Payment Gateway Customer records that have a related Payment Method record. From that list determine which Payment Method's should be marked as the \"Default Payment Method\". 4. Set those Payment Method records `Default Payment Method` checkbox field=True. :::(Info) () If you don't want the related Transaction's Payment Method to update, **disable** this feature in [Custom Settings](/v1/docs/custom-settings) while doing the initial update of historical records. ::: ## Next Steps * Understand how [Transactions](/v1/docs/transactions) are processed. * Use [Payment Schedules](/v1/docs/payment-schedules) to create future looking Transactions in minutes. * Learn about our supported [Payment Methods](/v1/docs/payment-methods). ## Troubleshooting If you have received an error with your Default Payment Method Feature or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have Default Payment Method questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "payment",
+    "method",
+    "default",
+    "related",
+    "contact",
+    "update",
+    "account",
+    "transactions",
+    "docs",
+    "your",
+    "records",
+    "transaction",
+    "record",
+    "blackthorn",
+    "lists",
+    "automatically",
+    "methods",
+    "https",
+    "payments",
+    "fields"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Install our latest [Blackthorn | Payments App](https://candyshop",
+    "2. Update your Contact, Transaction, and Payment Method Layouts to include below-highlighted fields and related lists",
+    "1. Navigate to an existing Contact or Account record",
+    "2. Create New Payment Method",
+    "3. Select Card/ACH and enter the Payment Method details",
+    "4. Click {{variable",
+    "1. Navigate to an existing Contact or Account record",
+    "2. Click on the newest Payment Method",
+    "3. Check `Default Payment Method`",
+    "4. Navigate to all \"Related To\" Transactions"
+  ],
+  "troubleshooting": [
+    "error with your Default Payment Method Feature or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with your Default Payment Method Feature or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "documentlink-error-codes-and-messages",
+  "title": "documentlink-error-codes-and-messages.md",
+  "content": "## Metadata_Start ## code: en ## title: DocumentLink Error Codes and Messages ## slug: documentlink-error-codes-and-messages ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End | Status | API Error/Console Error | Description | Error on Client Side | | --- | --- | --- | --- | | 400 | E_INVALID_CODE: Invalid documentlink code | Invalid document code, it doesn't have a valid structure. | This DocumentLink is not valid. Please make sure you entered the correct URL. | | 402 | E_UNLICENSED: No active license available | There is no active license for that Org. | This DocumentLink account has been suspended. If you are the account owner, please contact us to have your account re-activated at {{variable.Link_BlackthornSupport}}. | | 403 | E_NOT_AUTHORIZED: App is not authorized to access org | License does not have an OAuth User, requires authentication. | This DocumentLink account is not set up correctly. If you are the account owner, please contact us for help with setting up your account at {{variable.Link_BlackthornSupport}}. | | 404 | E_NOT_FOUND: Document not found | Document isn't found, either because it doesn't exist or there is a typo in the url. The document code has a valid structure. | This document is not available. | | 500 | E_NOT_PAYABLE: Document is no payable | There is no payment gateway set. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. | | 502 | E_INVALID_CLIENT: Payments API is not enabled | Payments API is not enabled/available for this org. | This DocumentLink account is not set up correctly. If you are the account owner, please contact us for help with setting up your account at {{variable.Link_BlackthornSupport}}. | | 422 | E_CAPTURE_ERROR | Capture error, payment status is not 'Captured'. | No error shown on Client side. | | 422 | E_CAPTURE_ERROR: Failed to close transaction | Capture error, transaction status is 'Open'. | No error shown on Client side. | | 422 | E_CAPTURE_ERROR: ??????? | Payment failed, specific error message returned | No error shown on Client side. | | 424 | E_PROCESS_ERROR: No successful payment method received from response | Payment method list is empty on response when creating new payment methods. | The transaction failed after the payment capture. Please contact XXXXX and confirm payment was received and attributed to this document. | | 424 | E_PROCESS_ERROR: Cannot locate a captured transaction | Transaction list is empty on processing request. | The transaction failed after the payment capture. Please contact XXXXX and confirm payment was received and attributed to this document. | | 500 | E_SERVICE_ERROR: Payments API is disabled | Blackthorn API has not been enabled for this org. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. | | 500 | E_SERVICE_ERROR: ?????? | Server errors when sending requests to Salesforce API. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. | | 500 | E_RESPONSE_ERROR: ?????? | Error on the capture request, specific error message returned. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. | | 500 | E_RESPONSE_ERROR: No successful transactions received from response | Transaction list is empty on capture request. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. | | 500 | E_RESPONSE_ERROR: Payment was declined | Transaction status is 'Failed' on capture request. | Oops... Something unexpected just happened. Please try again or let us know if the issue persists. |",
+  "keywords": [
+    "error",
+    "please",
+    "payment",
+    "account",
+    "document",
+    "transaction",
+    "documentlink",
+    "capture",
+    "oops",
+    "something",
+    "unexpected",
+    "just",
+    "happened",
+    "again",
+    "know",
+    "issue",
+    "persists",
+    "contact",
+    "failed",
+    "code"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "Error Codes and Messages ## slug: documentlink-error-codes-and-messages ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End | Status | API Error/Console Error | Description | Error on Client Side | | --- | --- | --- | --- | | 400 | E_INVALID_CODE: Invalid documentlink code | Invalid document code, it doesn't have a valid structure.",
+    "ERROR | Capture error, payment status is not 'Captured'.",
+    "error shown on Client side.",
+    "ERROR: Failed to close transaction | Capture error, transaction status is 'Open'.",
+    "error shown on Client side."
+  ]
+}

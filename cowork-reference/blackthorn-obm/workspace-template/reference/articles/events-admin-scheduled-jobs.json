@@ -1,0 +1,32 @@
+{
+  "id": "events-admin-scheduled-jobs",
+  "title": "events-admin-scheduled-jobs.md",
+  "content": "## Metadata_Start ## code: en ## title: Scheduled Jobs ## slug: events-admin-scheduled-jobs ## seoTitle: Scheduled Jobs ## description: ## contentType: Markdown ## Metadata_End The following batch jobs can be initiated from the {{variable.Tab_ET_BTEventAdmin}}'s {{variable.Tab_BTETAdmin_BatchJobs}} tab. * * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. ::: ## Schedule Recommended Event Jobs Button Clicking the {{variable.Button_ScheduleRecommEventJobs}} button will schedule the following jobs. ### Blackthorn | Events Process No-Show Attendees * Runs nightly at 11:00 pm. * Updates an {{variable.Object_Attendee}}'s {{variable.Field_Attendee_AttendancStatus}} to \"No-Show\" if the {{variable.Field_ETEvent_EventEndDate}} has passed, and the {{variable.Field_Attendee_AttendancStatus}} is NOT \"Attended\". * This feature can be enabled/disabled using Event Settings' {{variable.Field_ETSettings_AutoUpdNoShow}} field. ### Blackthorn | Events Attendee Parent Rollup * Runs nightly at 2:00 am. * Updates the {{variable.Field_Contact_EventsAttended}} roll-up field on the {{variable.Object_Attendee}}’s parent object (i.e. Lead, Contact, etc.) based on the count of {{variable.Object_Attendee}}s with {{variable.Field_Attendee_AttendancStatus}} = \"Attended\". ### Blackthorn | Events Form Submission Processing * Runs at the top of each hour (12:00, 1:00, 2:00, etc.) * Processes Form Submission Answers and links them to the {{variable.Object_Attendee}}, {{variable.Object_Contact}}, {{variable.Object_Account}}, or {{variable.Object_Lead}} record based on the {{variable.Object_FormElements_plural}}’ mapping requirements. ### Blackthorn | Events Geocode Service * Runs nightly at 10:00 pm. * Updates the {{variable.Field_ETEvent_VenueAddrGeocode}} field on the {{variable.Object_Event}} record based on the Venue’s provided address. ### Blackthorn | Events Recurring Event Generate * Runs nightly at 3:00 am. * Updates and creates {{variable.Object_RecurringEvent}}s when {{variable.Field_RecEvents_RecurrenceMeth}} = \"Keep One Open\" or \"Auto-Renew\". ### Blackthorn | Events Status Update * Runs nightly at 1:00 am. * If there are more than 1,500 active {{variable.Object_Event}}s, this job updates any {{variable.Object_Event}} where the {{variable.Field_ETEvent_EventEndDate}} is in the past. It unpublishes the {{variable.Object_Event}} and updates the {{variable.Field_ETEvent_Status}} to \"Completed\". ### Blackthorn | Batch Event Registration Submission * Runs every minute. * Since this job processes Event Registration Submission (ERS) records in batches, there may be a delay of up to one minute before a record is processed. ### Blackthorn | Events Revenue Rollups * Once an {{variable.Object_Event}}’s {{variable.Field_ETEvent_Status}} = “Ended”, the job will run, rolling up {{variable.Object_EventItem}} and {{variable.Object_Event}} financial summaries. ## Schedule Batch Event Registration Submission Job Button * Scheduled Job Name: Blackthorn | Batch Event Registration Submission * Runs every minute. * Since this job processes Event Registration Submission (ERS) records in batches, there may be a delay of up to one minute before a record is processed. ## Schedule Event Cache Refresh Job Button * Scheduled Job Name: Blackthorn | Events Cache Refresh * This job schedules a cache refresh to run periodically and will refresh the cache to avoid any front-end caching issues.",
+  "keywords": [
+    "variable",
+    "blackthorn",
+    "events",
+    "event",
+    "runs",
+    "submission",
+    "jobs",
+    "updates",
+    "object_event",
+    "scheduled",
+    "nightly",
+    "registration",
+    "batch",
+    "schedule",
+    "button",
+    "object_attendee",
+    "record",
+    "minute",
+    "cache",
+    "refresh"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click"
+  ],
+  "troubleshooting": []
+}

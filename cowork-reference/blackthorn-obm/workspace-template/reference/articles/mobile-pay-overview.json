@@ -1,0 +1,30 @@
+{
+  "id": "mobile-pay-overview",
+  "title": "mobile-pay-overview.html",
+  "content": "Blackthorn Mobile Payments We make it easy to accept credit card, check, ACH, cash, and money order payments with your mobile phone. The charge process is super fast and easy - enter an amount, choose a {{variable.Object_PaymentMethod}} , and charge. Once the transaction is complete, you can email a receipt to the customer by entering their email. Payment Methods Use card reader support for tap, dip, and swipe credit card payment options. Charge credit cards in person to receive card present swipe rates. Other {{variable.Object_PaymentMethod}} s include ACH, cash, check, and money order. Handle the entire payment process in a PCI-compliant manner. Android Devices On Android devices, only card, cash, check, and ACH payment methods are available. The Money Order payment option is not available. Salesforce Connected App Changes Salesforce recently announced a change to its security policy around Connected Apps, effective August 28th. As a result, Blackthorn recommends verifying that these Connected Apps are installed in your Salesforce orgs. Blackthorn | Connected App - required to use Blackthorn Events and Blackthorn Payments Mobile Check-in App - required for using Blackthorn Mobile Check-in Blackthorn | Mobile Connected App - required for using Blackthorn Mobile Payments Blackthorn Message - required for using Blackthorn Messaging Please review the attached pdf for instructions to check that the required Connected Apps are installed and connected correctly. Salesforce Integration The {{variable.Product_MobilePaymentApp}} can be opened from the Salesforce mobile app and the Salesforce Field Service mobile app. The link to our app can send data to pre-populate a {{variable.Object_PaymentGateway}} , charge {{variable.Field_Transaction_Amount}} , {{variable.Field_Transaction_Description}} , and a related Salesforce record. Charge {{variable.Object_Transaction}} and {{variable.Object_PaymentMethod}} records are stored in Salesforce where they can be related to an {{variable.Object_Account}} , {{variable.Object_Contact}} , or any other standard or custom object. {{variable.Object_PaymentMethod}} s from a swipe or dip can be re-used in Salesforce for other charges or subscriptions on {{variable.Object_Transaction}} s with a Payment Intent. Checks can be scanned and processed using the {{variable.Product_Check21}} integration via the Salesforce mobile app. Users can process different {{variable.Object_Transaction}} s across different {{variable.Object_PaymentGateway}} s and create a successfully processed {{variable.Object_Transaction}} and a valid {{variable.Object_PaymentMethod}} .&nbsp; If the {{variable.Object_Transaction}} 's {{variable.Object_Contact}} / {{variable.Object_Account}} matches an existing user with the same {{variable.Object_PaymentGateway}} used for the new {{variable.Object_Transaction}} , the existing user will be attached to the new {{variable.Object_PaymentMethod}} and new {{variable.Object_Transaction}} .&nbsp; If the {{variable.Object_Transaction}} ’s {{variable.Object_Contact}} / {{variable.Object_Account}} does not match an existing user with the same {{variable.Object_PaymentGateway}} , a new {{variable.Object_PaymentGatewayCustomer}} will be created and attached to the new {{variable.Object_PaymentMethod}} and {{variable.Object_Transaction}} . Setup Mobile Payments To set up the {{variable.Product_MobilePaymentApp}} in Salesforce, please follow these instructions . Setup Field Service Lightning Payments To set up the Fields Service Lightning, please follow these instructions .",
+  "keywords": [
+    "variable",
+    "salesforce",
+    "blackthorn",
+    "mobile",
+    "object_transaction",
+    "object_paymentmethod",
+    "connected",
+    "payments",
+    "check",
+    "payment",
+    "card",
+    "charge",
+    "required",
+    "using",
+    "object_paymentgateway",
+    "credit",
+    "cash",
+    "money",
+    "order",
+    "process"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

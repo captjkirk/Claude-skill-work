@@ -1,0 +1,38 @@
+{
+  "id": "install-secureattachment",
+  "title": "install-secureattachment.md",
+  "content": "## Metadata_Start ## code: en ## title: Install SecureAttachment ## slug: install-secureattachment ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Prerequisite SecureAttachment is a paid add-on. If you are interested in using it, please contact {{variable.Link_BlackthornSupport}}. ## Installation Steps Follow the steps below to install the SecureAttachment package: 1. Contact {{variable.Link_BlackthornSupport}} to request API credentials. 2. Our support team will initiate an internal case with our engineering team to generate your API credentials. Once this process is complete, you will receive your installation links and API credentials. 5. Using the links provided, log in with your Production Salesforce credentials. 6. Select the environment where you’d like to install SecureAttachment. ![choose production enviro](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/choose%20production%20enviro.png){height=\"\" width=\"\"} 5. If you are already logged into the Salesforce instance where you will be installing, you’ll be redirected to a confirmation page for the installation. Otherwise, if you are installing to a different instance of Salesforce, you will be brought to a login screen where you can enter the credentials for that environment. 6. Select the default profile, \"Install for Admins Only\" and click **Install**. ![choose a profile](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/choose%20a%20profile.png){height=\"\" width=\"\"} 8. You will be prompted to Approve Third-Party Access for two URLs. These URLs are the endpoints needed for the OCR API to work. Select ***“Yes, grant access to these third-party web sites”*** and press **Continue**. SecureAttachment will now be installed in your Salesforce org. * In most cases, this page will automatically refresh, noting that the package was either successfully installed or it failed installation. * For orgs that have complex logic/code already applied, it may take longer to complete the installation process. In this case, an email will be sent to confirm the success or failure of the installation to the email address associated with the user who performed the installation. After installation, you can see the SecureAttachment package on the list of Salesforce Installed Packages in the Setup. ![installation complete\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/installation%20complete%281%29.png){height=\"\" width=\"\"} When Blackthorn Compliance installation is complete, you are ready to [configure SecureAttachment](/v1/docs/setup-secureattachment-after-installation){target=`_blank`}.",
+  "keywords": [
+    "installation",
+    "secureattachment",
+    "install",
+    "credentials",
+    "salesforce",
+    "your",
+    "complete",
+    "choose",
+    "package",
+    "select",
+    "where",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Contact {{variable",
+    "2. Our support team will initiate an internal case with our engineering team to generate your API credentials",
+    "5. Using the links provided, log in with your Production Salesforce credentials",
+    "6. Select the environment where you’d like to install SecureAttachment",
+    "5. If you are already logged into the Salesforce instance where you will be installing, you’ll be redirected to a confirmation page for the installation",
+    "6. Select the default profile, \"Install for Admins Only\" and click **Install**",
+    "8. You will be prompted to Approve Third-Party Access for two URLs"
+  ],
+  "troubleshooting": []
+}

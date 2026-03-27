@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-object-event-items",
+  "title": "evbuilder-object-event-items.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Items ## slug: evbuilder-object-event-items ## seoTitle: Event Items ## description: ## contentType: Markdown ## Metadata_End The following updates were made to the {{variable.Object_EventItem}} object. ## Functionality The {{variable.Component_EventBuilder}} automatically creates {{variable.Object_EventItem}}s based on the {{variable.Object_Event}}’s {{variable.Field_ETEvent_EventLocation}}. The picklist options for the {{variable.Object_Event}} {{variable.Field_ETEvent_EventLocation}} are “Venue”, “Virtual”, and “Hybrid”. ## Venue Event When a user creates a new Venue {{variable.Object_Event}} and clicks {{variable.button_new}} on the Ticket section, a new, free {{variable.Object_EventItem}} with {{variable.Field_ETEventItem_Type}} = “Main event ticket” will be created. The {{variable.Object_EventItem}}’s {{variable.Field_ETEventItem_PublicItemNa}} will be “Main Ticket {{variable.Field_ETEvent_EventName}}”. ## Virtual Event When a user creates a new Virtual {{variable.Object_Event}} and clicks {{variable.button_new}} on the Ticket section, a new free {{variable.Object_EventItem}} {{variable.Field_ETEventItem_Type}} = “Main event ticket” will be created. The {{variable.Object_EventItem}}’s {{variable.Field_ETEventItem_PublicItemNa}} will be “Main Ticket {{variable.Field_ETEvent_EventName}}”. ## Hybrid Event When a user creates a new Hybrid {{variable.Object_Event}} and clicks {{variable.button_new}} on the Ticket section, two new {{variable.Object_EventItem}}s will be created. * A free {{variable.Object_EventItem}} {{variable.Field_ETEventItem_Type}} = “Main event ticket” will be created. The {{variable.Object_EventItem}}’s {{variable.Field_ETEventItem_PublicItemNa}} will be “Venue Main Ticket {{variable.Field_ETEvent_EventName}}”. * A free {{variable.Object_EventItem}} {{variable.Field_ETEventItem_Type}} = “Main event ticket” will be created. The {{variable.Object_EventItem}}’s {{variable.Field_ETEventItem_PublicItemNa}} will be “Virtual Main Ticket {{variable.Field_ETEvent_EventName}}”.",
+  "keywords": [
+    "variable",
+    "object_eventitem",
+    "ticket",
+    "event",
+    "main",
+    "object_event",
+    "created",
+    "creates",
+    "venue",
+    "virtual",
+    "free",
+    "field_eteventitem_type",
+    "field_eteventitem_publicitemna",
+    "field_etevent_eventname",
+    "items",
+    "hybrid",
+    "when",
+    "user",
+    "clicks",
+    "button_new"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

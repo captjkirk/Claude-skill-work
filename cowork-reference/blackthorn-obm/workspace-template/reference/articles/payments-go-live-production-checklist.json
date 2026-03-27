@@ -1,0 +1,34 @@
+{
+  "id": "payments-go-live-production-checklist",
+  "title": "payments-go-live-production-checklist.md",
+  "content": "## Metadata_Start ## code: en ## title: Checklist ## slug: payments-go-live-production-checklist ## seoTitle: Checklist ## description: ## contentType: Markdown ## Metadata_End Blackthorn Payments allows you to accept payments within minutes of installing the app. However, certain steps need to be completed before going live. The checklist below lists those steps in detail. **[ ] Create a live mode {{variable.Object_PaymentGateway}} record.** When creating the {{variable.Object_PaymentGateway}} record, set the {{variable.Field_PaymentGateway_Default}} checkbox to \"True\". This ensures that all live {{variable.Object_Transaction}}s, {{variable.Object_PaymentMethod}}s, and Customers are created and captured correctly. :::(Error) (Stripe Payment Gateway) Do not change your Payment Gateway record from Test to Live mode by clicking **Connect to Gateway**. Instead, create a new record for your Payment Gateway in live mode. Review the instructions [here](https://docs.blackthorn.io/v1/docs/payment-gateway){target=\"_blank\"}. ::: **[ ] Create a live Webhook URL in Stripe.** If you configured webhooks while testing, there is one more step to complete. The last step is to create a Webhook URL for your Stripe account in live mode. Copy your test Webhook URL and update it with the live mode {{variable.Object_PaymentGateway}}'s {{variable.Field_PG_WebhookLabel}} value. Then verify that the Webhook URL works correctly. **[ ] Enable the correct Blackthorn Payments permission sets for your team.** There are three Payments permission sets - {{variable.PS_PT_Admin}}, {{variable.PS_PT_Manager}}, and {{variable.PS_PT_User}} - that you can assign to your team members. Each permission set provides a level of access to the Blackthorn Payments app. You can also clone any of the permission sets to personalize the access based on your company's requirements. [ ] **Update your Account, Contact, and other parent objects' page layouts to include the Transaction, Payment Method, Payment Gateway Customer, and Payment Schedule objects as Related Lists.** You'll notice that all the payment processing objects give you the option to relate the record to an existing Account, Contact, and/or other defined parent objects. Adding these objects as Related Lists gives you better visibility on payments for that particular Account, Contact, or Opportunity parent record. **[ ] Historical Sync of Stripe or Authorize.net Data.** Whether you were a new or existing Stripe or Authorize.net customer before installing Blackthorn Payments, there is an [Historical Sync](/v1/docs/payments-move-historical-data-start-here){target=\"_blank\"} process for you to use to move your data to Salesforce. **[ ] Verify Customizations.** Verify that workflow rules, approval processes, email alerts, process builders, etc. are working correctly before going live.",
+  "keywords": [
+    "live",
+    "variable",
+    "payments",
+    "your",
+    "payment",
+    "record",
+    "gateway",
+    "blackthorn",
+    "mode",
+    "stripe",
+    "objects",
+    "checklist",
+    "create",
+    "webhook",
+    "account",
+    "permission",
+    "before",
+    "lists",
+    "object_paymentgateway",
+    "correctly"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* If you configured webhooks while testing, there is one more step"
+  ],
+  "troubleshooting": [
+    "Error) (Stripe Payment Gateway) Do not change your Payment Gateway record from Test to Live mode by clicking **Connect to Gateway**."
+  ]
+}

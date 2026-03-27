@@ -1,0 +1,30 @@
+{
+  "id": "event-qr-code-check-in",
+  "title": "event-qr-code-check-in.html",
+  "content": "Checking in s is quick and easy with our . When s have registered for your , they can use their for check-in with a unique . A unique is shown when the 's = . We provide a confirmation email template which can be sent to each when their = . Out of the box, the is not included but can be added by updating the confirmation email template with the following code. Your browser does not support PDF.click here to download Below are the instructions for cloning the confirmation email and including the so that you can check your s in with a through the . Confirmation Email With QR Code Navigate to Setup. In the quick find/search box, type in and select \"Classic Email Templates\". Click on the confirmation email and select Clone . Rename the new email template to \"Event Confirmation Email with QR Code\". Edit the HTML version and update the following: Update the subject line to: Confirmation and Check-In for {!conference360__Attendee__c.conference360__Event_Name__c} Paste the following code between \"Thanks for registering\" and \"Event Details\" in the description: &lt;p&gt;&lt;b&gt;Please use this &lt;a href=\"{!conference360__Attendee__c.conference360__AttendeeLink__c}\"&gt;code&lt;/a&gt; to check in during the event.&lt;/b&gt;&lt;/p&gt;&lt;br&gt; Update Confirmation Email Workflow If you want the confirmation email with to be sent when any registers for any , update the . Navigate to Setup Type in and select \"Workflow Rules\". Click on the workflow rule. Click Edit next to the workflow action. Edit the action and change the email template to the \"Event Confirmation Email with QR Code\" and click . Hide the QR Code from the AttendeeLink If the field is not on the page layout, the first step is to add it. Click the Gear icon in the upper right-hand corner. Click Setup . Click Object Manager. Search for and click on “Event Settings”. Click Page Layouts. Click Event Settings Layout. Locate the field and drag and drop it where you would like it to be located. Click . Now that the field is on the page layout, complete the following steps to hide the field from the . Navigate to . Open the that relates to the (s) you want to hide the from. Set to . Done! Your will now be hidden from the .",
+  "keywords": [
+    "email",
+    "click",
+    "confirmation",
+    "code",
+    "event",
+    "when",
+    "your",
+    "check",
+    "template",
+    "following",
+    "update",
+    "workflow",
+    "from",
+    "field",
+    "navigate",
+    "setup",
+    "select",
+    "edit",
+    "hide",
+    "page"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

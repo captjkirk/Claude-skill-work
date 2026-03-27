@@ -1,0 +1,30 @@
+{
+  "id": "blackthorn-events-iframes",
+  "title": "blackthorn-events-iframes.md",
+  "content": "## Metadata_Start ## code: en ## title: About Iframes ## slug: blackthorn-events-iframes ## seoTitle: About Iframes ## description: ## contentType: Markdown ## Metadata_End Iframes allow for seamless embedding of various {{variable.Product_Events}}' elements, such as calendars, {{variable.Object_Session}} details, and specific {{variable.Object_EventItem}}s. This feature is essential for creating a more interactive and engaging online presence for your {{variable.Object_Event}}s, making it easier for {{variable.Object_Attendee}}s and interested parties to access important information directly on your website. ## Prerequisite The domain page must be HTTPS and setup with an SSL certificate. If you want this domain allowed for multiple organizations, you must manually add the domain to each organization. ## Simple vs Advanced Embedding There are two ways to use or embed iframes on an {{variable.Object_Event}} webpage. They are simple embedding (`/loader`) and advanced embedding (`/embed`). [Simple embedding](/v1/docs/iframes-simple-embedding){target=`_blank`} is just that – simple. It is a quick solution that uses two parameters to create the iframe. [Advanced embedding](/v1/docs/iframes-advanced-embedding){target=`_blank`}, on the other hand, uses Event Listeners to give you full control of every aspect of the iframe or parent website. ## Use Cases ### Use Case 1 I am an Event Organizer who wants to present my {{variable.Object_Event}}s as a calendar. Using the iframe feature, I can embed a calendar on my site to provide visitors with a quick, comprehensive view of all scheduled {{variable.Object_Event}}s, facilitating better planning and engagement. ### Use Case 2 I am an Event Organizer or marketer who wants to organize multiple {{variable.Object_Event}}s in one view. By using an iframe, I can showcase entire {{variable.Object_EventGroup}}s on my website, allowing visitors to view a collection of related {{variable.Object_Event}}s in one place. This is especially useful for series or themed {{variable.Object_Event}}s, where cohesion and ease of access are key. ### Use Case 3 I am an Event Organizer who wants to organize my {{variable.Object_Event}} by specific details. By using an iframe, I can display specific {{variable.Object_Session}} details within an {{variable.Object_Event}}, helping {{variable.Object_Attendee}}s find the {{variable.Object_Session}}s most relevant to their interests and making it easier for them to navigate the {{variable.Object_Event}}. **If you have any questions, please contact {{variable.Link_BlackthornSupport}}.**",
+  "keywords": [
+    "variable",
+    "object_event",
+    "embedding",
+    "iframes",
+    "simple",
+    "iframe",
+    "advanced",
+    "event",
+    "object_session",
+    "details",
+    "specific",
+    "website",
+    "domain",
+    "embed",
+    "case",
+    "organizer",
+    "wants",
+    "using",
+    "view",
+    "about"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

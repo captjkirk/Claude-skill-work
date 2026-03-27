@@ -1,0 +1,34 @@
+{
+  "id": "mobile-event-check-in-log-in",
+  "title": "mobile-event-check-in-log-in.html",
+  "content": "One Login Per User According to Salesforce best practices, each user should use a separate login. Before using the {{variable.Product_MobileCheck-inApp}} , make sure your org has Events installed.&nbsp; To log into the application, open the app from your home screen. If you haven't logged in before, you will see this screen allowing you to enter your {{variable.Product_Salesforce}} credentials. If you want to test the application with your org in Sandbox mode, tap the \"gear\" icon in the top right corner. This will allow you to toggle between Sandbox and Production mode like so: Once you have successfully entered your credentials, the app will request permission to access your data. Click Allow to proceed. If your org requires two-factor authentication, you must enter the 6-digit code. Mobile Check-in App Password Reset The Mobile Check-in app's login credentials are the same as the Salesforce org's login username and password.&nbsp; To reset your Mobile Check-in app password, go to your Salesforce org and generate a new password. You will then be able to log into the app. FAQ Q: Why do I get the following error when trying to log into the Mobile Check-in app? “Enter a custom domain name that contains only alphanumeric characters, periods, and hyphens.” A: Custom domains with two en dashes will an error when typed into the Mobile Check-in app. When creating a URL, the accepted type of dash to use in a URL is a hyphen. En and Em dashes will often cause an error. iOS devices automatically turn two en dashes into one em dash, which can’t be used in a URL. Apple offers a way to turn this setting off, but the setting is a mobile device-level setting outside of Blackthorn’s scope. The same scenario applies to Salesforce mobile login and any other place where double hyphens are used. Click here for more information about Apple devices. Q: Can I use SSO with the Mobile Check-in app? A: While Blackthorn doesn’t officially support SSO, users can log into the Mobile Check-in app on an iPhone using Microsoft Entra ID single sign-on, and the app will be redirected as expected.",
+  "keywords": [
+    "your",
+    "mobile",
+    "check",
+    "into",
+    "login",
+    "salesforce",
+    "password",
+    "enter",
+    "credentials",
+    "error",
+    "when",
+    "dashes",
+    "setting",
+    "user",
+    "before",
+    "using",
+    "variable",
+    "nbsp",
+    "application",
+    "screen"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error when trying to log into the Mobile Check-in app? “Enter a custom domain name that contains only alphanumeric characters, periods, and hyphens.",
+    "error when typed into the Mobile Check-in app.",
+    "error."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "subscribe-incident-maintenance-alerts",
+  "title": "subscribe-incident-maintenance-alerts.md",
+  "content": "## Metadata_Start ## code: en ## title: Subscribe to Incident and Maintenance Alerts ## slug: subscribe-incident-maintenance-alerts ## seoTitle: Subscribe to Incident and Maintenance Alerts ## description: ## contentType: Markdown ## Metadata_End Blackthorn monitors its systems through our [System Status page](https://community.blackthorn.io/s/system-status){target=`_blank`}. You can subscribe to this page for scheduled maintenance notifications. We also post notifications of unscheduled maintenance to this page as soon as we learn of an incident that affects multiple customers. For more information about Blackthorn Support, please visit [Blackthorn Support](https://community.blackthorn.io/s/support){target=`_blank`}. ## Salesforce Trust For real-time incident and maintenance alerts impacting your Salesforce org, you can also subscribe to Salesforce Trust. For more details, see [Trust Notifications](https://help.salesforce.com/s/articleView?id=000381874&type=1){target=`_blank`} in Salesforce Help.",
+  "keywords": [
+    "maintenance",
+    "subscribe",
+    "incident",
+    "blackthorn",
+    "salesforce",
+    "alerts",
+    "page",
+    "https",
+    "target",
+    "_blank",
+    "notifications",
+    "support",
+    "trust",
+    "system",
+    "status",
+    "community",
+    "also",
+    "more",
+    "help",
+    "metadata_start"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

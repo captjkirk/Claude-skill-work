@@ -1,0 +1,30 @@
+{
+  "id": "ev-upgrade-base-payments-events-apps",
+  "title": "ev-upgrade-base-payments-events-apps.html",
+  "content": "The {{variable.Component_SmartScheduler}} , which is now located in the Blackthorn {{variable.Product_BasePackage}} , is available via the Blackthorn {{variable.Product_CandyShop}} . {{variable.Product_TexteyMessaging}} customers can now use {{variable.Component_SmartScheduler}} without downloading the {{variable.Product_Events}} or {{variable.Product_Storefront}} apps. Before installing and setting up the {{variable.Component_SmartScheduler}} component, the Blackthorn {{variable.Product_BasePackage}} , {{variable.Product_Payments}} , and {{variable.Product_Events}} apps must be upgraded to their most recent versions. Since upgrading the {{variable.Product_Events}} app triggers the {{variable.Product_Payments}} app and {{variable.Product_BasePackage}} to upgrade, you do not need to upgrade each one separately. Go to the {{variable.Link_CandyShop}} . &nbsp; Click Blackthorn Events .&nbsp; Click Product Upgrade . Click Login to Install . Select “Production or Developer Org” or “Sandbox or Scratch Org.” Complete the login process. Click Install . Review the Product Terms of Use and Licenses. Check the “I confirm I have read and agree to these product terms of use and licenses” checkbox. Click Confirm . After completing the upgrade, you will receive three emails confirming that Blackthorn {{variable.Product_BasePackage}} , {{variable.Product_Events}} , and {{variable.Product_Payments}} have been installed.&nbsp; Are you creating a new sandbox? A new API Key and Account Number are required each time a new sandbox is created, and {{variable.Component_SmartScheduler}} is being used. If new credentials are not obtained, the original API Key and Account Number will be copied from Production, breaking the Production org.&nbsp; Refreshed sandboxes with configured credentials from Support will work as expected.&nbsp; Known Limitation:&nbsp; If a new sandbox is created, BUT {{variable.Component_SmartScheduler}} isn’t being used, a new API Key and Account Number are still needed. If new credentials are not obtained, production emails won’t be sent because two orgs have the same API Key and Account Number. Which Blackthorn Apps Do You Use? The {{variable.Component_SmartScheduler}} component can be used with our {{variable.Product_Events}} app, {{variable.Product_TexteyMessaging}} app, or both! If you only use {{variable.Product_Events}} , ignore the steps about updating {{variable.Product_TexteyMessaging}} and its permissions. If you want to learn more about our {{variable.Product_TexteyMessaging}} app, please get in touch with your account manager!",
+  "keywords": [
+    "variable",
+    "component_smartscheduler",
+    "blackthorn",
+    "product_events",
+    "nbsp",
+    "click",
+    "account",
+    "product_basepackage",
+    "product_texteymessaging",
+    "upgrade",
+    "production",
+    "sandbox",
+    "number",
+    "apps",
+    "product_payments",
+    "product",
+    "used",
+    "credentials",
+    "which",
+    "component"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

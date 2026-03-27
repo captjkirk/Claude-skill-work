@@ -1,0 +1,34 @@
+{
+  "id": "iframes-faq",
+  "title": "iframes-faq.md",
+  "content": "## Metadata_Start ## code: en ## title: Iframes FAQ ## slug: iframes-faq ## seoTitle: Iframes FAQ ## description: ## contentType: Markdown ## Metadata_End ### Redirect URLs #### Q: How do I set up a {{variable.Field_ETEvent_RedirectURL}} in an iframe? **A:** The redirection domain should have relaxed CSP rules (Setup > Security > CSP Trusted Sites) or the parent domain needs to be added to the frame-ancestor rule. #### Q: How do I redirect an Attendee to an Event Group’s webpage or a different Event after registering for an Event in an iframe? **A:** You need to specify the relative path instead of the whole URL in the original {{variable.Object_Event}}’s {{variable.Field_ETEvent_RedirectURL}} field. For example, use “/5a195eDuv5V” instead of “https://events.blackthorn.io/5e53zvb7/5a195eDuv5V” in the {{variable.Field_ETEvent_RedirectURL}} field. ### Iframes and Third-Party Sources #### Q: How do I set up Custom CSS Injection, Google Tag Manager, or Google Analytics to work with Iframes? **A:** Any style, media, font, etc … from third party sources / domains need to include these sources in their CSP rules. This also goes for Google Tag Manager, Google Analytics, and any other tracking tools that generate iframes. See [https://content-security-policy.com/](https://content-security-policy.com/){target=\"_blank\"} for more. ### Iframes and Payment Gateways #### Why am I having issue with my TouchNet gateway in an iframe? **A:** If your {{variable.Object_Attendee}}s cannot register for an {{variable.Object_Event}} using a TouchNet {{variable.Object_PaymentGateway}} when that {{variable.Object_Event}} is in an iframe, [click here](https://docs.blackthorn.io/docs/addressing-security-related-errors-for-iphone-users){target=`_blank`} for information about security-related errors for iPhone users. #### How do I securely authenticate Transactions with Spreedly? **A:** To ensure authentication occurs correctly when using iframed components and a Spreedly payment gateway, add the {{variable.Object_PaymentGateway}}’s {{variable.Field_PG_SpreedlyPrivateKey}} and {{variable.Field_PG_SpreedlyCertificToken}} fields to the {{variable.Object_PaymentGateway}} page layout. [Click here](https://docs.blackthorn.io/docs/spreedly#spreedly-and-iframed-components){target=`_blank`} for more information about these fields.",
+  "keywords": [
+    "variable",
+    "iframes",
+    "security",
+    "https",
+    "iframe",
+    "google",
+    "docs",
+    "spreedly",
+    "field_etevent_redirecturl",
+    "event",
+    "object_event",
+    "blackthorn",
+    "sources",
+    "target",
+    "_blank",
+    "object_paymentgateway",
+    "redirect",
+    "domain",
+    "rules",
+    "need"
+  ],
+  "category": "events",
+  "procedures": [
+    "* The redirection domain should have relaxed CSP rules (Setup"
+  ],
+  "troubleshooting": [
+    "errors-for-iphone-users){target=`_blank`} for information about security-related errors for iPhone users."
+  ]
+}

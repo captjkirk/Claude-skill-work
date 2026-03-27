@@ -1,0 +1,32 @@
+{
+  "id": "assign-licenses",
+  "title": "assign-licenses.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign Licenses ## slug: assign-licenses ## seoTitle: Assign Licenses ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (**Important: This step does not apply if you are using the free trial.**) ::: Depending on your Blackthorn subscription, you may need to assign Licenses to your users in addition to assigning permission sets. * If you are on the User Model, you must assign licenses per the instructions. * If you are on the Registration based subscription, proceed to assign permission sets. :::(Info) (**Requirement for Events Customers**) An Events authorization user must be assigned a Payments license. This prerequisite applies even if you are only offering Free Events. ::: ## Next Steps * For step-by-step instructions to assign licenses, click [here](/v1/docs/how-to-assign-licenses). * Review [assigning permission sets](/v1/docs/assign-permission-sets).",
+  "keywords": [
+    "assign",
+    "licenses",
+    "permission",
+    "sets",
+    "step",
+    "events",
+    "free",
+    "your",
+    "subscription",
+    "assigning",
+    "user",
+    "must",
+    "instructions",
+    "docs",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description"
+  ],
+  "category": "events",
+  "procedures": [
+    "* For step-by-step instructions to assign licenses, click"
+  ],
+  "troubleshooting": []
+}

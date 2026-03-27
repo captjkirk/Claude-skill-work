@@ -1,0 +1,34 @@
+{
+  "id": "how-to-set-and-restrict-your-events-capacity",
+  "title": "how-to-set-and-restrict-your-events-capacity.md",
+  "content": "## Metadata_Start ## code: en ## title: Restrict Capacity ## slug: how-to-set-and-restrict-your-events-capacity ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Capacity can be set on either the {{variable.Object_Event}} or {{variable.Object_EventItem}} (Ticket). {{snippet.TotalCapacitySetting}} :::(Warning) (Ticket Capacity Rolls up to the Event) The {{variable.Object_Event}}'s {{variable.Field_ETEvent_TotalCapacity}} is the sum of {{variable.Field_ETEventItem_QuantityAvai}} on all {{variable.Object_EventItem}}s (Tickets). ::: The Blackthorn API, by design, does NOT run capacity validations. Users must add their own logic to implement capacity restrictions. The API intentionally does not trigger the validation on capacity to allow for flexibility for all customers. When sending registrations through the API, customers can utilize their own custom logic to prevent registrations when the capacity is sold out. The {{variable.Field_EventItem_StatusFormula}} field is on the {{variable.Object_EventItem}} object. If the {{variable.Field_ETEventItem_QuantiRemain}} is \"0\", then the {{variable.Field_EventItem_StatusFormula}} field will show Sold Out. The custom code can evaluate the formula to block the registration once the {{variable.Field_ETEventItem_QuantiRemain}} is zero. For an incoming payload: * 0 is treated as a sold-out. * Null or empty Events are treated as infinite, and {{variable.Field_ETEvent_TotalCapacity}} is automatically set to “999999”. ## Restrict Capacity per {{variable.Object_EventItem}} (Ticket) When an {{variable.Object_Event}}’s {{variable.Field_ETEvent_RemainingCapacit}} = “0”, then the {{variable.Object_Event}} is sold out. If the {{variable.Field_ETEvent_TotalCapacity}} field is left blank, then the {{variable.Field_ETEvent_TotalCapacity}} is set to infinity. On the {{variable.Object_Event}} record, the {{variable.Field_ETEvent_TotalCapacity}} field will be “999999”. When {{variable.Object_EventItem}}'s {{variable.Field_ETEventItem_QuantiRemain}} = “0”, then the {{variable.Object_EventItem}} is sold out. If the {{variable.Field_ETEventItem_QuantityAvai}} field is left blank, then the {{variable.Field_ETEventItem_QuantityAvai}} is set to infinity. On the {{variable.Object_EventItem}} record, the {{variable.Field_ETEventItem_QuantityAvai}} field will be “999999”. 1. Edit your {{variable.Object_EventItem}} (Ticket). 2. Navigate to the {{variable.Field_ETEventItem_QuantityAvai}} field and enter the amount. 3. Click {{variable.Button_Save}}. This also rolls up to the {{variable.Object_Event}} Record as {{variable.Field_ETEvent_TotalCapacity}}. ![restrict capacity per ticket](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/restrict%20capacity%20per%20ticket.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "capacity",
+    "object_eventitem",
+    "field",
+    "object_event",
+    "field_etevent_totalcapacity",
+    "restrict",
+    "ticket",
+    "field_eteventitem_quantityavai",
+    "sold",
+    "then",
+    "when",
+    "field_eteventitem_quantiremain",
+    "999999",
+    "record",
+    "code",
+    "your",
+    "events",
+    "rolls",
+    "their"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Edit your {{variable",
+    "2. Navigate to the {{variable",
+    "3. Click {{variable"
+  ],
+  "troubleshooting": []
+}

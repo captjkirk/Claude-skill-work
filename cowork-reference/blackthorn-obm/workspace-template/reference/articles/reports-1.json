@@ -1,0 +1,38 @@
+{
+  "id": "reports-1",
+  "title": "reports-1.md",
+  "content": "## Metadata_Start ## code: en ## title: Reports ## slug: reports-1 ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction Basic reports are included in the app as a template to give you a sense of what fields can be filtered on and what type of metrics you can yield. We recommend starting with these Reports and editing them to reach your desired metrics. * Navigate to Reports. ***Lightning:** Click on the app launcher | Under \"All Items\" | Click on Reports.* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click on Reports.* * In the left-hand column, click on the \"Blackthorn | Payments Reports\" folder. ## Out of the Box Reports The below Reports are all accessible when installing Blackthorn | Payments. ![H_02_14_Out of the box reports](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_14_Out%20of%20the%20box%20reports.png){height=\"\" width=\"\"} - **Transactions to fix:** All Transactions that need to be fixed and have an \"Open\" status. - **Completed and failed Transactions:** All completed and failed Transactions by month. - **Historical gross revenue:** All successful Transactions. - **Reconciliation and Payouts:** All payouts with their related charges and refunds. - **Revenue forecast by month:** \"Open\" status Transaction by monthly due date. *coming soon* - **Transactions to be reattempted:** Transactions that have been created with reattempt logic. - **Transactions failed today:** Transactions that failed to capture today. - **Transactions due in the next 7 days:** Transactions with \"Open\" status and `Due Date` within 7 days. - **Transactions completed today:** Transactions that were \"Completed\" and \"Captured\" today. - **Transactions completed this month:** Transactions that were \"Completed\" and \"Captured\" this month. ## Next Steps Use our \"out of the box\" [Dashboard](/v1/docs/dashboards) to see your Report data in a variety of displayed components. ## Troubleshooting If you have received an error with our Reports or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have Default Payment Method questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "transactions",
+    "reports",
+    "completed",
+    "click",
+    "docs",
+    "blackthorn",
+    "payments",
+    "failed",
+    "month",
+    "today",
+    "https",
+    "open",
+    "status",
+    "troubleshooting",
+    "what",
+    "metrics",
+    "your",
+    "h_02_14_out",
+    "revenue",
+    "payouts"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* Click on the app launcher | Under \"All Items\" | Click",
+    "* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click",
+    "* * In the left-hand column, click"
+  ],
+  "troubleshooting": [
+    "error with our Reports or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with our Reports or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

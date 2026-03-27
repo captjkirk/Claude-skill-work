@@ -1,0 +1,30 @@
+{
+  "id": "cashnet-1",
+  "title": "cashnet-1.html",
+  "content": "Overview Looking for {{variable.Product_CashNet}} ? You've come to the right place! We officially support {{variable.Product_CashNet}} for {{variable.Product_Events}} checkout only. Let's take a look at what you'll need to configure the {{variable.Product_CashNet}} {{variable.Object_PaymentGateway}} , prepare a Salesforce org, and configure and enable the gateway. Requirements The names of the APIs used must match exactly what is listed. A dedicated {{variable.Product_CashNet}} site connected to Blackthorn is required to configure Blackthorn {{variable.Product_Events}} to use {{variable.Product_CashNet}} for {{variable.Product_Payments}} . With a properly configured {{variable.Product_CashNet}} site, the following information is required to configure a {{variable.Product_CashNet}} {{variable.Object_PaymentGateway}} . {{variable.Field_CashNet_CheckoutName}} &nbsp; {{variable.Field_CashNet_ItemCode}} {{variable.Field_CashNet_OperatorID}} {{variable.Field_CashNet_Password}} &nbsp; Prepare your Salesforce Org for Transact (Cashnet)&nbsp; Add a Transact (Cashnet) Payment Provider {{snippet.EVST_CashNet_AddPaymentProvide}} Create Fields and Update the Payment Gateway Page Layout&nbsp; {{snippet.EVST_CashNet_AddCustomFieldsPG}} Enable Transact (Cashnet) Payment Gateway Support {{snippet.EVST_CashNet_EnablePGSupport}} Set Up the Checkout Store in Transact (Cashnet)&nbsp; {{snippet.EVST_CashNet_SetUpCheckoutStor}} Other Helpful Information {{snippet.EVST_CashNet_HelpfulInfo}} How to Test {{snippet.EVST_CashNet_TestPaymentGatewa}}",
+  "keywords": [
+    "variable",
+    "product_cashnet",
+    "snippet",
+    "nbsp",
+    "configure",
+    "transact",
+    "cashnet",
+    "gateway",
+    "payment",
+    "support",
+    "product_events",
+    "checkout",
+    "what",
+    "object_paymentgateway",
+    "prepare",
+    "salesforce",
+    "enable",
+    "site",
+    "blackthorn",
+    "required"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

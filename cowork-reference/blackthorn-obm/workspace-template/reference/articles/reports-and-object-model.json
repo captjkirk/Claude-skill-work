@@ -1,0 +1,35 @@
+{
+  "id": "reports-and-object-model",
+  "title": "reports-and-object-model.md",
+  "content": "## Metadata_Start ## code: en ## title: Reports and Object Model ## slug: reports-and-object-model ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The Phone Number Lookup feature introduces a new object into the Blackthorn Messaging object model that facilitates storing information about a particular phone number. The object is named Phone Number Lookup. Let's take a look at the anatomy of a Phone Number Lookup record. **Object Name:** Phone Number Lookup **Fields:** | Field Name | Type | Description | | --- | --- | --- | | Carrier Error Code | Text | Error message provided if there is an error with the lookup | | Carrier Name | Text | Name of the phone carrier (Verizon, AT&T, etc) | | Country Code | Text | Calling code prefix of the country for which this phone number is associated. | | Do Not SMS | Checkbox | This will be TRUE if the phone number exists on a record where the Do Not SMS field is TRUE. | | Expiration Date | Date | By default, this will be 6 months after the Last Lookup Date. | | Last Lookup Date | Date | The date on which this phone number was last successfully looked up. | | Lookup Pending | Formula (Checkbox) | A flag that indicates whether this record needs to be looked up. This will be checked when the Status = New or if the Expiration Date has passed. | | Mobile Country Code | Text | Identifier for the mobile network operator. | | Mobile Network Code | Text | Identifier for the mobile network operator. | | National Format | Text | The traditional formatting of the phone number specific to the country. For example, (555) 555-5555. | | Number Type | Text | | | Phone Number | Text | The phone number in E.164 format. For example, +15555555555. | | Status | Text | The status of this lookup record. Accepted values are New, Success, Failure, or Bad Number. |",
+  "keywords": [
+    "number",
+    "phone",
+    "lookup",
+    "text",
+    "date",
+    "code",
+    "object",
+    "record",
+    "name",
+    "country",
+    "mobile",
+    "model",
+    "carrier",
+    "error",
+    "last",
+    "status",
+    "network",
+    "reports",
+    "description",
+    "field"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "5555. | | Number Type | Text | | | Phone Number | Text | The phone number in E",
+    "15555555555. | | Status | Text | The status of this lookup record"
+  ],
+  "troubleshooting": [
+    "Error Code | Text | Error message provided if there is an error with the lookup | | Carrier Name | Text | Name of the phone carrier (Verizon, AT&T, etc) | | Country Code | Text | Calling code prefix of the country for which this phone number is associated."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "event-admin-upgrade",
+  "title": "event-admin-upgrade.md",
+  "content": "## Metadata_Start ## code: en ## title: Upgrade ## slug: event-admin-upgrade ## seoTitle: Upgrade ## description: ## contentType: Markdown ## Metadata_End * * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. :::",
+  "keywords": [
+    "upgrade",
+    "admin",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "warning",
+    "need",
+    "help",
+    "while",
+    "using",
+    "blackthorn",
+    "events",
+    "page"
+  ],
+  "category": "events",
+  "procedures": [
+    "* * * :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click"
+  ],
+  "troubleshooting": []
+}

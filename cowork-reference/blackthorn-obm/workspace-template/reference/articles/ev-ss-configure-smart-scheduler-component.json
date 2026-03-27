@@ -1,0 +1,41 @@
+{
+  "id": "ev-ss-configure-smart-scheduler-component",
+  "title": "ev-ss-configure-smart-scheduler-component.md",
+  "content": "## Metadata_Start ## code: en ## title: Start Here ## slug: ev-ss-configure-smart-scheduler-component ## seoTitle: Configure the Event Scheduler Component ## description: ## contentType: Markdown ## Metadata_End ## Add the Smart Scheduler Admin Tab Once the Smart Scheduler component is installed, add the Smart Scheduler Admin tab to the Events navigation bar using one of the following methods. 1. Go to the Events app. 2. Click the App Launcher. 4. Enter and click \"Smart Scheduler Admin\". ![Go to Smart Scheduler Admin tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Go%20to%20Smart%20Scheduler%20Admin%20tab.png){height=\"\" width=\"\"} 6. Click the **Down** icon on the Smart Scheduler Admin tab. 7. Click **+ \"Add Smart Scheduler Adm\"... to Nav Bar**\". ![Add Smart Scheduler tab_Click Add to Navigation](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Add%20Smart%20Scheduler%20tab_Click%20Add%20to%20Navigation.png){height=\"\" width=\"\"} **OR** 1. Go to the Events app. 2. Click the **Pencil** icon in the navigation bar. 3. Click **Add More Items**. ![Open Add to Nav bar](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Open%20Add%20to%20Nav%20bar.png){height=\"\" width=\"\"} 5. Click the All tab. 6. Search for \"Smart Scheduler Admin\". 7. Check the box next to \"Smart Scheduler Admin\". ![Click Add 1 Nav Item](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Click%20Add%201%20Nav%20Item.png){height=\"\" width=\"\"} 9. Click **Add 1 Nav Item**. 10. Click {{variable.Button_Save}}. ![Event Record with Smart Scheduler Admin Nav](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Record%20with%20Smart%20Scheduler%20Admin%20Nav.png){height=\"\" width=\"\"} ## Next Steps 1. [Register your Account](/v1/docs/ev-ss-register-your-account) 3. [Authenticate a User](/v1/docs/ev-ss-authenticate-a-user) 4. [Add the Event Scheduler Component to the Event Record](/v1/docs/ev-ss-add-event-scheduler-component-event-record)",
+  "keywords": [
+    "scheduler",
+    "smart",
+    "click",
+    "admin",
+    "event",
+    "component",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "events",
+    "navigation",
+    "20to"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to the Events app",
+    "2. Click the App Launcher",
+    "4. Enter and click \"Smart Scheduler Admin\"",
+    "6. Click the **Down** icon on the Smart Scheduler Admin tab",
+    "7. Click **+ \"Add Smart Scheduler Adm\"",
+    "1. Go to the Events app",
+    "2. Click the **Pencil** icon in the navigation bar",
+    "3. Click **Add More Items**",
+    "5. Click the All tab",
+    "6. Search for \"Smart Scheduler Admin\""
+  ],
+  "troubleshooting": []
+}

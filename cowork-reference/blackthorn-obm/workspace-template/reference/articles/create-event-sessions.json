@@ -1,0 +1,41 @@
+{
+  "id": "create-event-sessions",
+  "title": "create-event-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Create Sessions ## slug: create-event-sessions ## seoTitle: Create Sessions ## description: ## contentType: Markdown ## Metadata_End Add {{variable.Object_Session}}s to an {{variable.Object_Event}} for breakouts, presentations, discussions, or other activities. :::(Warning) (**Important Functionality**) * Discount Codes are not supported for Sessions. * {{variable.Field_Session_SessionName}} vs {{variable.Field_ETSession_DisplayName}} * The {{variable.Field_ETSession_DisplayName}} field on Sessions overrides the {{variable.Field_Session_SessionName}} field on the front end. ::: ## Create a Session 1. From the {{variable.Object_Event}} record, navigate to the Sessions {{variable.SFTerm_RelatedList}} and click {{variable.button_new}}. ![Configure Sessions 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Configure%20Sessions%201.png){height=\"\" width=\"\"} 2. Enter the {{variable.Field_Session_SessionName}}. 3. Add {{variable.Object_Session}} details such as, * {{variable.Field_Session_Description}} * {{variable.Field_Session_ImageURL}} * {{variable.Field_Session_AltTextVisualImp}} - This field is required if the {{variable.Field_Session_ImageURL}} has a value. * {{variable.Field_Session_Location}} * {{variable.Field_Session_StartDate}} * {{variable.Field_Session_StartTime}} * {{variable.Field_Session_EndDate}} * {{variable.Field_Session_EndTime}} NOTE: The {{variable.Object_Session}}’s {{variable.Field_Session_StartDateTime}} and {{variable.Field_Session_EndDateTime}} fields are not included on the {{variable.Object_Session}}’s page layout out of the box. They standardize calculations and display the {{variable.Object_Session}}’s start and end dates/times from the perspective of the time zone set on the authorized user’s profile instead of the time zone set on the {{variable.Object_Event}} record. 4. To limit the number of people that can register and attend a {{variable.Object_Session}}, enter an amount in the {{variable.Field_Session_QuantityAvailabl}} The {{variable.Field_Session_QuantityRemainin}} is a formula field that will automatically update. Formula: {{variable.Field_Session_QuantityRemainin}} = {{variable.Field_Session_QuantityAvailabl}} - {{variable.Field_Session_Registered}} ### Session Status Functionality * If a Session’s {{variable.Field_ETSession_Status}} is set to “Active” or is left blank, the Session will be displayed on the Event’s landing page. * If a Session’s {{variable.Field_ETSession_Status}} is set to any other value, the Session will not be displayed on the Event’s landing page. ## Configure Sessions ### Sorting Sessions {{snippet.EV_Sessions_SortingSessions}} ### Sold Out When {{variable.Field_Session_WaitlistEnabled}} is not checked and {{variable.Field_Session_QuantityRemainin}} = \"0\", the {{variable.Object_Session}} will be sold out. ### Waitlisted When {{variable.Field_Session_WaitlistEnabled}} is enabled and {{variable.Field_Session_QuantityRemainin}} = \"0\", additional {{variable.Object_Session}} registrants will have a {{variable.Picklist_AttendeeReg_WaitPendi}} status and be added to the waitlist. ![Configure Sessions 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Configure%20Sessions%202.png){height=\"\" width=\"\"} ### Hide on Event Page The {{variable.Field_Session_HideOnEventPage}} checkbox allows users to hide the {{variable.Object_Session}} from the {{variable.Object_Event}}'s {{variable.Object_Session}} tab. As a result the {{variable.Object_Session}} will be invisible to the public. To prevent that from occuring, the following needs to occur: * The {{variable.Object_Session}} belongs to a specific track that is associated with an {{variable.AttendeeLink}} invitation. * The {{variable.Object_Session}} is pre-registered to an {{variable.Object_Attendee}} in the {{variable.AttendeeLink}} invitation. ![Configure Sessions 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Configure%20Sessions%203.jpeg){height=\"\" width=\"\"} 5. Once saved, view your newly created {{variable.Object_Session}} on the {{variable.Object_Event}} page. ![Configure Sessions 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Configure%20Sessions%204.png){height=\"\" width=\"\"} ### Visibility To show the {{variable.Object_Session}}s on the {{variable.Object_Event}}, navigate to the [{{variable.Object_EventSettings}} record](https://docs.blackthorn.io/docs/event-settings-1#tab-visibility-and-labels){target=`_blank`} and update the {{variable.Field_ETETSettings_Sessions}} field to \"Always\". Make sure that the {{variable.Object_Session}}'s {{variable.Field_Session_HideOnEventPage}} field is unchecked. ![Sessions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Sessions.png){height=\"\" width=\"\"} If you only want {{variable.Object_Attendee}}s to see {{variable.Object_Session}}s on their {{variable.AttendeeLink}} and not on the {{variable.Object_Event}} registration page, complete the following steps. * Relate a {{variable.Object_Session}} to an {{variable.Object_EventItem}}, creating an {{variable.Object_EventItemSession}}. * Update the {{variable.Object_EventSettings}}’ Tab Visibility setting for {{variable.Field_ETETSettings_Sessions}} to “Post Registration.” The {{variable.Object_EventItemSession}}s will now appear in an {{variable.Object_Attendee}}’s {{variable.AttendeeLink}}. ### Add Session to Calendar Complete the following steps to add a specific {{variable.Object_Session}} to a calendar from the {{variable.Object_Event}}'s webpage. 1. Go to the {{variable.Object_Event}}’s webpage. 2. Click the Sessions tab. 3. Click a {{variable.Field_Session_SessionName}}. 4. Click {{variable.Button_AddtoCalendar}}. 5. Select the calendar type. ![Session_Add%20to%20Calendar](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Session_Add%20to%20Calendar.png){height=\"\" width=\"\"} ### Data Dictionary and Session Counts {{snippet.Checkout_DataDictionaryCounts1}} #### Create a Data Dictionary Group {{snippet.Checkout_DataDictionaryCounts2}} #### Create Data Dictionary Entries {{snippet.Checkout_DataDictionaryCounts3}}",
+  "keywords": [
+    "variable",
+    "object_session",
+    "sessions",
+    "object_event",
+    "configure",
+    "session",
+    "https",
+    "create",
+    "field",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "page"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. From the {{variable",
+    "2. Enter the {{variable",
+    "3. Add {{variable",
+    "4. To limit the number of people that can register and attend a {{variable",
+    "5. Once saved, view your newly created {{variable",
+    "1. Go to the {{variable",
+    "2. Click the Sessions tab",
+    "3. Click a {{variable",
+    "4. Click {{variable",
+    "5. Select the calendar type"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "mobile-pay-installation",
+  "title": "mobile-pay-installation.md",
+  "content": "## Metadata_Start ## code: en ## title: Install & Setup ## slug: mobile-pay-installation ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Package Install 1. Install the latest version of [Blackthorn Payments](https://candyshop.blackthorn.io/products/blackthorn-payments/latest){target=\"_blank\"} and complete the setup wizard. 2. Install the Blackthorn [Mobile Payments package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf2000002FgYw){target=\"_blank\"} in a sandbox or production and assign licenses to all users that need access. 3. Install our [iOS app](https://apps.apple.com/us/app/blackthorn-mobile-payments/id1436053095){target=\"_blank\"}. ## Add Mobile Pay Action to Transaction Page Layout The Mobile Pay action can be added to the {{variable.Object_Transaction}} page layout to link the {{variable.Product_Salesforce}} mobile app to the Blackthorn {{variable.Product_MobilePaymentApp}}. This allows {{variable.Product_Salesforce}} mobile app users to take a mobile payment. Follow the steps below to add the Mobile Pay action to the {{variable.Object_Transaction}} page layout. 1. In {{variable.Product_Salesforce}}, click the **Gear** icon to go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, search for and click the {{variable.Object_Transaction}} object. 4. Click the Page Layouts tab. 5. Click the Charge Transaction Layout. 6. Click the Mobile & Lightning Actions tab. 7. Drag and drop the Mobile Pay action in the {{variable.Product_Salesforce}} Mobile and Lightning Experience Actions section. 8. Click {{variable.Button_Save}}. ## Select a Payment Gateway If you are using {{variable.Product_Stripe}}, you must confirm that a location is set for the Payment Gateway in {{variable.Product_Stripe}} before using the {{variable.Product_MobilePaymentApp}}. The user can select a {{variable.Object_PaymentGateway}} when creating a {{variable.Object_Transaction}} either in {{variable.Product_Salesforce}} or in the {{variable.Product_MobilePaymentApp}}. If there are multiple {{variable.Object_PaymentGateway}} records, the app will default to the default {{variable.Object_PaymentGateway}}. If the user creates the {{variable.Object_Transaction}} from the {{variable.Product_MobilePaymentApp}}, they can select a {{variable.Object_PaymentGateway}} on the Home page. Initially, the default {{variable.Object_PaymentGateway}} will be selected. If a user selects a different {{variable.Object_PaymentGateway}}, the app will remember the new selection the next time a new {{variable.Object_Transaction}} is created. ## Enable Send Receipt Email in Salesforce After a mobile transaction is complete, {{variable.Product_Salesforce}} can send a receipt via email to the customer if the {{variable.Field_Transaction_ReceiptEmail}} field is populated AND the {{variable.Field_Transaction_TransaStatus}} = “Completed”. Follow the steps below to enable this feature. 1. In Salesforce, go to Setup > Workflow Rules. 2. Click **Activate** next to {{variable.Workflow_SendBTPTReceiptText}}. ## Set Up Stripe Locations Before using your Stripe account, confirm that [Locations](https://docs.stripe.com/terminal/fleet/locations){target=`_blank`} have been set up. All card readers require an assigned Location. Use the following steps to set up Locations in your Stripe Dashboard if they aren’t already set up. 1. Log into your Stripe Dashboard. 2. Click **Payments**. 3. Click **Readers**. 4. Click **Locations**. 5. On the Locations page, click **New**. 6. Enter the name and address details for each physical location. 7. Click **Save**. 8. Once you’ve created each Location, click **New** in the Location’s “Reader” section to register each card reader to a Location. ## Card Reader Firmware Updates :::(Error) (**BREAKING CHANGE - iOS Devices**) Stripe users must add locations to their Stripe dashboard before upgrading their iOS mobile devices to the latest version. If you do not add locations first, you won't be able to connect to a Stripe card reader. ::: We've added the ability to update your card reader firmware inside the {{variable.Product_MobilePaymentApp}}. 1. Navigate to the Reader screen. 2. Connect your reader. 3. Notice that while connecting the reader, we are checking for firmware updates. 4. If your reader has a firmware update available, a link to install the update will appear. 5. Follow the on-screen prompts to install the update. ### Connecting to an Android Device When connecting a Stripe card reader, a modal screen will appear on the Mobile Payments app to ask for Bluetooth permissions for the following **new** permissions in Android 12 or higher. It may take up to two to three minutes for the card reader to appear on the screen. * BLUETOOTH_CONNECT: required to connect to paired Bluetooth devices. * BLUETOOTH_SCAN: required to scan and pair nearby Bluetooth devices. * BLUETOOTH_ADVERTISE: required to advertise to nearby Bluetooth devices. ## Save Card Details with the Stripe Terminal There are two options for collecting reusable card details with [Stripe Terminal](https://stripe.com/docs/terminal/features/saving-cards/overview){target=\"_blank\"}. Please click one of the options below for specific instructions from Stripe. ### SetupIntents [Collect information directly, without charging a card](https://stripe.com/docs/terminal/features/saving-cards/save-cards-directly){target=\"_blank\"}: This method uses SetupIntents, a new API endpoint, to collect a card’s details without charging the card. ### Payment Intents [Save card details after payment](https://docs.stripe.com/terminal/features/saving-payment-details/save-after-payment?terminal-sdk-platform=server-driven#create-paymentintent){target=\"_blank\"} (US only): This method uses PaymentIntents to create reusable tokens for US customers. The Payment Intent’s {{variable.Field_PayIntent_CaptureMethod}} field also includes the following picklist values: “Manual,” “Automatic,” or “Automatic Async” (automatic_async), which matches Stripe’s library. The default value for the {{variable.Field_PayIntent_CaptureMethod}} field is “Automatic Async.” ## Virtual Terminal Custom Setting {{snippet.PAY_CS_VT_ShowAddress_Spreedly}} ## Skip Receipt Screen Custom Setting iOS Mobile Payments app users can now use the Blackthorn Payments | Mobile Settings custom setting {{variable.Field_CS_SkipReceiptScreen}} to determine if the last screen will show the option to send a receipt. * If {{variable.Field_CS_SkipReceiptScreen}} = “True” (checked), the last screen won’t show the option to send a receipt. * If {{variable.Field_CS_SkipReceiptScreen}} = “False” (unchecked), the last screen will show the option to send the receipt. To update the setting, follow the steps below. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, enter and click “Custom Settings.” 4. Click {{variable.Button_SF_Manage}} next to Blackthorn Payments | Mobile Settings. 5. Click {{variable.button_new}}. 6. Check the {{variable.Field_CS_SkipReceiptScreen}} checkbox. 7. Click {{variable.Button_Save}}. ## Troubleshooting If you need to determine which software version was used for a {{variable.Object_Transaction}}, add the {{variable.Field_Transaction_MobileAppVer}} field to your {{variable.Object_Transaction}} object. The {{variable.Field_Transaction_MobileAppVer}} will automatically populate with the application platform name (iOS or Android) and the version number. If you have any questions about the setup process, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "variable",
+    "click",
+    "mobile",
+    "stripe",
+    "card",
+    "reader",
+    "payments",
+    "blackthorn",
+    "object_transaction",
+    "payment",
+    "locations",
+    "terminal",
+    "screen",
+    "install",
+    "https",
+    "target",
+    "_blank",
+    "your",
+    "page",
+    "product_salesforce"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Install the latest version of [Blackthorn Payments](https://candyshop",
+    "2. Install the Blackthorn [Mobile Payments package](https://login",
+    "3. Install our [iOS app](https://apps",
+    "1. In {{variable",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, search for and click the {{variable",
+    "4. Click the Page Layouts tab",
+    "5. Click the Charge Transaction Layout",
+    "6. Click the Mobile & Lightning Actions tab",
+    "7. Drag and drop the Mobile Pay action in the {{variable"
+  ],
+  "troubleshooting": [
+    "Error) (**BREAKING CHANGE - iOS Devices**) Stripe users must add locations to their Stripe dashboard before upgrading their iOS mobile devices to the latest version.",
+    "Troubleshooting If you need to determine which software version was used for a {{variable."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "stripe-billing-overview",
+  "title": "stripe-billing-overview.html",
+  "content": "Pre-requisite Stripe Billing integration is an optional feature for Blackthorn Payments. In order to enable it, contact {{variable.Link_BlackthornSupport}} . Blackthorn Payments consumes the Stripe Billing API, bi-directionally You can perform any API-supported action within Salesforce that you can perform within the Stripe dashboard. Some processes include: Start a Stripe subscription within Salesforce from an Account Start a Stripe subscription within Salesforce from an Opportunity Start a Stripe subscription within Stripe that pushes to Salesforce Update subscriptions from Salesforce that update in Stripe Update subscriptions from Stripe that update in Salesforce Add Usage to Salesforce that sends to Stripe to automatically Calculate Usage aligned with Tiers and Prices. Invoices are auto-created in Salesforce from Stripe Charges on Invoices are auto-created in Salesforce from Stripe Report on all of your Stripe data natively in Salesforce using native Reports and Dashboards Stripe Billing's architecture alignment with our Salesforce-native model Salesforce Product = Stripe Product Salesforce Price (Custom Object) = Stripe Price You can have multiple Prices per Product. The Price contains the amount if there are no Tiers. In this sense, it's similar to how Salesforce's Price Books work. Salesforce Tier (Custom Object) = Stripe Tier You can have multiple Tiers per Price. Salesforce Usage (Custom Object) = Stripe Usage Salesforce Subscription and Subscription Item (Custom Objects) = Stripe Subscriptions and Subscription Items Salesforce Sales Document and Line Item (Custom Object) = Stripe Invoice and Invoice Item For Stripe Billing to work properly, Salesforce records must exist in Stripe prior to creating or updating a Stripe Subscription from Salesforce. You can create Stripe records from Salesforce, or sync them back from Stripe. Stripe Billing Objects Diagram",
+  "keywords": [
+    "stripe",
+    "salesforce",
+    "from",
+    "subscription",
+    "billing",
+    "within",
+    "price",
+    "custom",
+    "update",
+    "usage",
+    "object",
+    "start",
+    "subscriptions",
+    "tiers",
+    "product",
+    "item",
+    "blackthorn",
+    "payments",
+    "perform",
+    "prices"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

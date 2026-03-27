@@ -1,0 +1,41 @@
+{
+  "id": "use-express-registration",
+  "title": "use-express-registration.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Use Express Registration ## slug: use-express-registration ## seoTitle: Use Express Registration ## description: ## contentType: Markdown ## Metadata_End ## Pre-requisites * The parent can only see the Contacts within their Account. * There are Contacts other than the parent’s Contact record connected to the parent’s Account. ## Enable Express Registration 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, enter and click \"Custom Settings.\" 4. Click {{variable.Button_SF_Manage}} next to Blackthorn | Events Settings. 5. Click {{variable.Button_SF_Edit}}. 6. Check {{variable.CS_ExpressRegExperienceSite}}. ![Enable Express Registration](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Express%20Registration%20Setup.png){height=\"\" width=\"\"} 10. Click {{variable.Button_Save}}. ## Steps 1. A parent logs into the Experience Cloud to register for an Event. They do not want to re-enter data that is already saved in their children’s Contact records. (We will only leverage existing Account/Contact data.) 2. The parent selects a Main event ticket. 3. The parent sees a list of other Contacts in their household and selects a Contact in their Account. (The Contact can be the parent or any other Contact.) 4. The Contact’s information will be pre-filled (but editable) in the Attendee and Form fields. (If “Someone else” is selected, the fields will be blank.) 5. If the Contact selection is changed, all data will be overwritten. If the Contact is unselected, all fields will be cleared. ## “Add Myself” Feature 1. A parent uses the Add Myself feature to select a Main event ticket and any other tickets to their cart. 2. The Salesforce Admin enables the Express Registration feature. 3. The parent navigates to the Contact Info page. 4. The ticket selected when using “Add Myself” will have already selected the parent’s information from the picklist and prefilled the fields. 5. The parent can then use the Express Registration feature to add all other tickets, or to reassign the ticket originally selected using “Add Myself”.",
+  "keywords": [
+    "parent",
+    "contact",
+    "express",
+    "registration",
+    "click",
+    "variable",
+    "their",
+    "other",
+    "account",
+    "ticket",
+    "fields",
+    "selected",
+    "myself",
+    "feature",
+    "contacts",
+    "event",
+    "data",
+    "only",
+    "enable",
+    "enter"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. In the Quick Find box, enter and click \"Custom Settings",
+    "4. Click {{variable",
+    "5. Click {{variable",
+    "6. Check {{variable",
+    "10. Click {{variable",
+    "1. A parent logs into the Experience Cloud to register for an Event",
+    "2. The parent selects a Main event ticket",
+    "3. The parent sees a list of other Contacts in their household and selects a Contact in their Account"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "evbuilder-clone-event-hero-section",
+  "title": "evbuilder-clone-event-hero-section.md",
+  "content": "## Metadata_Start ## code: en ## title: Hero Section ## slug: evbuilder-clone-event-hero-section ## seoTitle: Hero Section ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Hero_Limitation}} {{snippet.EVBuilder_Hero_CloneEdit}}",
+  "keywords": [
+    "hero",
+    "section",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "clone",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_hero_limitation",
+    "evbuilder_hero_cloneedit"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

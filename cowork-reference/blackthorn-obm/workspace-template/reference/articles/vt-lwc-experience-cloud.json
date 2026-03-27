@@ -1,0 +1,32 @@
+{
+  "id": "vt-lwc-experience-cloud",
+  "title": "vt-lwc-experience-cloud.md",
+  "content": "## Metadata_Start ## code: en ## title: LWC Experience Cloud (Beta) ## slug: vt-lwc-experience-cloud ## seoTitle: LWC Experience Cloud (Beta) ## description: ## contentType: Markdown ## Metadata_End Use the new {{variable.Component_BTLWCVirtualTerminal}} on any Lightning {{variable.Feature_ExperienceCloud}} page, including those with Guest User (unauthenticated) access. ![Virtual Terminal - LWC Experience Cloud](https://youtu.be/MQeEtxvwcjc){height=\"480\" width=\"640\"} :::(Warning) (IMPORTANT TO KNOW) * The LWC Experience Cloud (Beta) does not enforce sharing rules. * A guest must be assigned the site guest user permission set. * Additional configuration for Account READ/WRITE and Contact READ/WRITE need to be assigned for relationship settings to work. * The related to lookup field is not visible when enabled for a guest user. ::: **Experience Builder Component** The {{variable.Component_BTLWCVirtualTerminal}} is in the Visualforce component in the Experience Builder. ![LWCExperienceCloud_CommunityBuilder Component](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/LWCExperienceCloud_CommunityBuilder%20Component.png){height=\"\" width=\"\"} If the user cannot see the {{variable.Component_BTLWCVirtualTerminal}} in the {{variable.Component_ExperienceCloudBuild}} or receives an error, please refer to our FAQ guide [here](https://docs.blackthorn.io/docs/payments-faq#virtual-terminal){target=`_blank`}.",
+  "keywords": [
+    "experience",
+    "cloud",
+    "variable",
+    "guest",
+    "user",
+    "beta",
+    "component_btlwcvirtualterminal",
+    "https",
+    "component",
+    "virtual",
+    "terminal",
+    "height",
+    "width",
+    "assigned",
+    "read",
+    "write",
+    "builder",
+    "lwcexperiencecloud_communitybuilder",
+    "docs",
+    "metadata_start"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error, please refer to our FAQ guide [here](https://docs."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-clone-event-speakers",
+  "title": "evbuilder-clone-event-speakers.md",
+  "content": "## Metadata_Start ## code: en ## title: Speakers ## slug: evbuilder-clone-event-speakers ## seoTitle: Speakers ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Speakers_CloneEdit_1}} ## Edit or Delete a Speaker {{snippet.EVBuilder_Speaker_CloneEdit_ED}} ## Add Speakers {{snippet.EVBuilder_Speaker_CloneEdit_Ad}}",
+  "keywords": [
+    "speakers",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "clone",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_speakers_cloneedit_1",
+    "edit",
+    "delete",
+    "speaker",
+    "evbuilder_speaker_cloneedit_ed",
+    "evbuilder_speaker_cloneedit_ad"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

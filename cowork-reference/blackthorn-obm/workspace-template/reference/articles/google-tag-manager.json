@@ -1,0 +1,43 @@
+{
+  "id": "google-tag-manager",
+  "title": "google-tag-manager.md",
+  "content": "## Metadata_Start ## code: en ## title: Google Tag Manager ## slug: google-tag-manager ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Error) (The August 2024 release changed the Google Tag Manager’s default behavior. ) By default, Google Analytics cookies will only be collected when the Cookies Consent Banner is enabled. Previously, analytics were collected when the banner was disabled. For customers who have not enabled the [cookie consent banner](https://docs.blackthorn.io/docs/enable-cookies){target=`_blank`}, tracking was mistakenly disabled as of August 27, 2024. If you wish to re-enable tracking, please contact {{variable.Link_BlackthornSupport}}, and we will apply the necessary flag to your account. **Please include your org ID and desired configuration.** Configuration options: * Enable tracking analytics ***with*** a cookie consent banner in place (recommended) * Enable tracking analytics ***without*** a cookie consent banner in place (pre-August 27th default behavior; not recommended) ::: Blackthorn {{variable.Object_Event}}s supports Google Analytics and Google Tag Manager. Google Analytics can provide important insights you’re looking for. However, when used alone, Google Analytics has limitations. By using Google Tag Manager in conjunction with Google Analytics, you can collect more data on {{variable.Object_Attendee}}s. Click [here](https://support.google.com/tagmanager/answer/6106924) to see the full list of supported tags. Blackthorn supports everything in the Web column. ## Prerequisite If you are using Google Tag Manager, please reach out to {{variable.Link_BlackthornSupport}} to enable cookies for your {{variable.Object_Attendee}}s and to ensure data laws have been considered. ## Create a (GA4) Google Analytics Account If you already have a (GA4) Google Analytics account, please go to the next section. 1. Go to https://analytics.google.com. 2. Click **Start measuring**. 3. Select all options for account data sharing. 4. Click **Next**. 5. Enter a name for the property and select a time zone and currency. 6. Click **Next**. 7. Select an industry category and business size. 8. Click **Next**. 9. Select how you will use Google Analytics. 10. Click **Create**. 1. Select “WEB” for the data stream. (For the website URL, use events.blackthorn.io (https://events.blackthorn.io/).) 2. Enter a Stream name. 3. Click **Create stream**. 4. Save the measurement id (or Google Analytics Id) from the newly created data stream. It will start with 'G-'. ## Set up Google Tag Manager 1. Go to the [Tag Manager](https://tagmanager.google.com){target=\"_blank\"}. 2. Sign into your Google account. 3. Click the Accounts tab. 4. Click **Create Account**. 5. Enter an Account Name. 6. Select a Country. 7. Enter “events.blackthorn.io” (http://events.blackthorn.io/) in the Container name field. 8. Select “Web” for the Target platform. 9. Click **Create**. You will receive the installation code snippet for your website. ### Set Up Variables 1. Go to the Variables section. 2. Click **Configure**. 3. Select all checkboxes under the \"Clicks\", \"Forms\" and \"History\" sections. ### Set Up Triggers 1. Go to the Triggers section. 2. Click **New**. 3. Set Trigger Type to “History Change.” 4. Select \"All History Changes\" in the \"This trigger fires on\" section. 5. Click **Save**. 6. Enter a name for the trigger. ### Set Up Tags 1. Go to Tags section. 2. Click **New**. 3. Enter a Tag name. 4. Set the Tag type to “Google Tag.\" 5. Enter the measurement id (or Google Analytics Id) in the Measurement Id field. (See the last step in Create a (GA4) Google Analytics Account.) 6. Click **Trigger Configuration**. 7. Select the “History Change” trigger type. (unless you changed the name) 8. Click **Save**. 9. Go to the Overview section. 10. Copy/save the “GTM-“ code/id. ## Update Your Salesforce Org 1. Go to your Salesforce org. 2. In the App Launcher, enter “Company Info” and click the link. 3. Open an existing Company Info record or create a new one. 4. Confirm that the {{variable.Field_CompInfo_GoogleTagManaID}} and {{variable.Field_CompInfo_UseforAllEvents}} fields are displayed on the page layout. If they aren’t, add them. 5. On the Company Info record, enter the Google Tag Manager ID in the {{variable.Field_CompInfo_GoogleTagManaID}} field. 6. Set {{variable.Field_CompInfo_UseforAllEvents}} = \"True\" (checked). 7. Click {{variable.Button_Save}}. You should now see traffic reports on your Google Analytics account. *Please Note:* If the account is new, it may take up to 48 hours for the first traffic events to appear in Google Analytics. ### Iframes If you are using Google Tag Manager with iframes, please ensure your CSP restrictions allow adding iframes from other domains. If allowed, the Google Tag Manager will generate an iframe to perform the tracking on your site. If you don't want to relax CSP rules, please add the following cross domain frames: * https://*.google.com * https://*.gstatic.com * https://*.google-analytics.com * https://*.googletagmanager.com ## Test Your Setup To confirm that everything was configured correctly, complete the following steps. 1. Create and publish a new {{variable.Object_Event}} record in your Salesforce org. 2. Copy the {{variable.Object_Event}}’s {{variable.Field_ETEvent_EventPageURL}}. 3. Go to your Google Tag Manager account. 4. Click the **Preview** button. 5. Enter the copied {{variable.Field_ETEvent_EventPageURL}} in the “Your Website URL” field. 6. Click **Connect**. Two new tabs will appear. One will show the {{variable.Object_Event}}’s web page. The other will be a debug page with the tags that were identified on the {{variable.Object_Event}} web page. If you see your tag in the Summary’s “Tags not fired” section, then everything was configured correctly.",
+  "keywords": [
+    "google",
+    "click",
+    "analytics",
+    "variable",
+    "your",
+    "manager",
+    "account",
+    "select",
+    "enter",
+    "https",
+    "create",
+    "blackthorn",
+    "please",
+    "section",
+    "name",
+    "banner",
+    "enable",
+    "tracking",
+    "object_event",
+    "data"
+  ],
+  "category": "events",
+  "procedures": [
+    "2024. If you wish to re-enable tracking, please contact {{variable",
+    "1. Go to https://analytics",
+    "2. Click **Start measuring**",
+    "3. Select all options for account data sharing",
+    "4. Click **Next**",
+    "5. Enter a name for the property and select a time zone and currency",
+    "6. Click **Next**",
+    "7. Select an industry category and business size",
+    "8. Click **Next**",
+    "9. Select how you will use Google Analytics"
+  ],
+  "troubleshooting": [
+    "Error) (The August 2024 release changed the Google Tag Manager’s default behavior."
+  ]
+}

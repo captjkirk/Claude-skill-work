@@ -1,0 +1,44 @@
+{
+  "id": "multi-currency-1",
+  "title": "multi-currency-1.md",
+  "content": "## Metadata_Start ## code: en ## title: Multi-Currency ## slug: multi-currency-1 ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction Blackthorn | Payments can process Transactions in any currency that Stripe supports. All supported currency records live as [Custom Metadata Type](/v1/docs/custom-metadata) records in Salesforce. Processing Transactions in any currency **does not require** the Salesforce feature \"Multi-Currency\". Our amount fields are number fields, not currency fields, and thus the Salesforce Multi-Currency feature is not related to the Blackthorn | Payments' Multi-Currency feature. **Note** If you do use the Salesforce Multi-Currency feature, you may want to write a trigger whereby when the Transaction's Currency ISO field is set, update the record's SFDC Currency, just make sure you don't have any picklist value conflicts so it wouldn't block the Transaction record update. ## How it works The Transaction object has a picklist field called `Currency ISO`. When the user selects their desired processing currency, such as \"USD\", the app references the \"USD\" currency record in Custom Metadata Types and verifies a few things against the Transaction. *For example, the minimum amount for USD currency is .50 cents, so if you try capturing a Transaction for the amount of .45 cents an Apex validation error will be thrown instructing you to increase the amount.* :::(Info) () The validation has been disabled by default. To enable this validation, go to the Custom Setting, \"Blackthorn | Payment Triggers\" and check the \"Enable Transaction Min Amount Validation.\" ::: **Out-of-the-box all currency values are deployed and available under the `Currency ISO` field.** *If you don't want users to see certain currencies, complete either option below.* ### Deactivate Currency Values - Navigate to the Transaction object. ***Lightning:** Setup | In the Quick Find, Search and Click: \"Object Manager\".* ***Classic:** Setup | In the Quick Find, Search and Click: \"Objects\" under Create.* - Click on the Transaction object. - Navigate to Fields & Relationships (Lightning) or Custom Fields & Relationships (Classic). - Click on the `Currency ISO` field. - Scroll down to \"Values.\" - Click \"Deactivate\" next to the currency value(s) you don't want to be shown. ### Remove Currency Values on Record Type - Navigate to the Transaction object. ***Lightning:** Setup | In the Quick Find, Search and Click: \"Object Manager\".* ***Classic:** Setup | In the Quick Find, Search and Click: \"Objects\" under Create.* - Click on the Transaction object. - Navigate to Record Types. - Click on the \"Charge\" Record Type. - Click \"Edit\" next to Currency ISO. - Move any currency values that you don't want to be shown from \"Selected Values\" to \"Available Values\". ## Default Currency ![Defaulting the Currency ISO field](https://youtu.be/D-xkZHgD6Mk){height=\"480\" width=\"640\"} Defaulting the `Currency ISO` field should happen per Record Type within the Transaction object. Follow the \"Remove Currency Values on Record Type\" instructions above and when you click \"Edit\" next to the `Currency ISO` field, set the `Default` field. Repeat this for any additional Record Types you use. ## Next Steps * Setup a [Default Payment Method](/v1/docs/default-payment-method) for your Contact and Account Records. * Understand how [Transactions](/v1/docs/transactions) are processed. * View all of our [Custom Setting](/v1/docs/custom-settings) records. ## Troubleshooting If you have received an error with your Payment Schedule or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have Default Payment Method questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "currency",
+    "transaction",
+    "click",
+    "record",
+    "docs",
+    "field",
+    "object",
+    "values",
+    "custom",
+    "multi",
+    "default",
+    "blackthorn",
+    "type",
+    "amount",
+    "fields",
+    "payment",
+    "setup",
+    "payments",
+    "transactions",
+    "records"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* ### Deactivate Currency Values - Navigate",
+    "* Setup | In the Quick Find, Search and Click",
+    "* ***Classic:** Setup | In the Quick Find, Search and Click",
+    "* - Click",
+    "* Setup | In the Quick Find, Search and Click",
+    "* ***Classic:** Setup | In the Quick Find, Search and Click",
+    "* - Click",
+    "- Move any currency values that you don't want to be shown from \"Select"
+  ],
+  "troubleshooting": [
+    "error will be thrown instructing you to increase the amount.",
+    "error with your Payment Schedule or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with your Payment Schedule or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

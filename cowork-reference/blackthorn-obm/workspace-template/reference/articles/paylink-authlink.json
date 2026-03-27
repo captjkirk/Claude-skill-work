@@ -1,0 +1,30 @@
+{
+  "id": "paylink-authlink",
+  "title": "paylink-authlink.md",
+  "content": "## Metadata_Start ## code: en ## title: AuthLink ## slug: paylink-authlink ## seoTitle: AuthLink ## description: ## contentType: Markdown ## Metadata_End ## Overview Users can now send an authorization link (AuthLink) to customers to authorize the amount of a {{variable.Object_Transaction}} that was charged to the customer's {{variable.Object_PaymentMethod}}. This feature functions similarly to how PayLink functions, but with authorizations instead of charges. Blackthorn supports AuthLink for Stripe, Authorize.net, and our supported Spreedly payment gateways. :::(Info) (Permission Set Requirement) Access to the AuthLink field requires the Blackthorn | Payments (User) permission set. ::: ## Functionality The {{variable.Field_Transaction_AuthLink}} field will be created and stored in the {{variable.Object_Transaction}} record after the Transaction is created. * Field Label: {{variable.Field_Transaction_AuthLink}} * API Name: bt_paylink__AuthLink__c * Type: URL * Description: Unique AuthLink URL. *Paid add-on. Requires subscription. The AuthLink is generated at the same time as the PayLink. If an existing AuthLink is deleted and the record is saved, a new AuthLink will be generated. When a user authorizes a payment via AuthLink, the {{variable.Object_Transaction}}’s {{variable.Field_Transaction_PaymentStatu}} = “Authorized”.",
+  "keywords": [
+    "authlink",
+    "variable",
+    "paylink",
+    "object_transaction",
+    "field",
+    "description",
+    "authorize",
+    "functions",
+    "blackthorn",
+    "payment",
+    "permission",
+    "requires",
+    "user",
+    "field_transaction_authlink",
+    "created",
+    "record",
+    "generated",
+    "metadata_start",
+    "code",
+    "title"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

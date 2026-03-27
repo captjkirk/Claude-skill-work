@@ -1,0 +1,25 @@
+{
+  "id": "authorizenet-define-gateway-user-id",
+  "title": "authorizenet-define-gateway-user-id.md",
+  "content": "## Metadata_Start ## code: en ## title: Define the Gateway User ID ## slug: authorizenet-define-gateway-user-id ## seoTitle: Define the Gateway User ID ## description: ## contentType: Markdown ## Metadata_End {{snippet.PGSetup_AuthNet_DefineGatewayUserID}}",
+  "keywords": [
+    "define",
+    "gateway",
+    "user",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "authorizenet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "pgsetup_authnet_definegatewayuserid"
+  ],
+  "category": "admin",
+  "procedures": [],
+  "troubleshooting": []
+}

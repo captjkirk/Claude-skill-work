@@ -1,0 +1,41 @@
+{
+  "id": "payments-deploy-production-stripe-webhooks-live-mode",
+  "title": "payments-deploy-production-stripe-webhooks-live-mode.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Webhooks, Live Mode ## slug: payments-deploy-production-stripe-webhooks-live-mode ## seoTitle: Stipe Webhooks, Live Mode ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Important) To use the following instructions, you must have Salesforce administrator access to Salesforce and Stripe. ::: Once you have connected to {{variable.Product_Stripe}}, it's time to configure webhooks. Webhooks automatically send specified data from {{variable.Product_Stripe}} to {{variable.Product_Salesforce}}. 1. Go to Setup. 2. Type “Sites” in the Quick Find box. 3. Click Sites. 4. If a Force.com domain has not been set up, continue with the instructions. Otherwise, navigate to the steps for Site Configuration. 5. Enter your Force.com domain. 6. Click **Check Availability**. 7. Review and accept the Site terms of use. 8. Click **Register My Force.com Domain**. ![Deploy_Stripe_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_1.png){height=\"\" width=\"\"} 10. Click {{variable.button_new}} next to Sites. ![Deploy_Stripe_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_2.png){height=\"\" width=\"\"} 12. Set {{variable.Field_Site_SiteLabel}} = \"Webhook\". ![Deploy_Stripe_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_3.png){height=\"\" width=\"\"} 14. The {{variable.Field_Site_SiteName}} will auto-populate. 15. Click **Default Web Address** and enter the name you used for the {{variable.Field_Site_SiteLabel}}. 16. Set {{variable.Field_Site_Active}} = “TRUE”. 17. Click the **Active Site Home Page** lookup. (This will open a new window.) 18. Click **InMaintenance**. ![Deploy_Stripe_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_4.png){height=\"\" width=\"\"} 20. Click {{variable.Button_Save}}. ![Deploy_Stripe_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_5.png){height=\"\" width=\"\"} 22. Click the newly created Site Label. ![Deploy_Stripe_6](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_6.png){height=\"\" width=\"\"} 24. Click **Public Access Settings**. ![Deploy_Stripe_7](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_7.png){height=\"\" width=\"\"} 26. Click **Assigned Users**. ![Deploy_Stripe_8](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_8.png){height=\"\" width=\"\"} 28. Click \"Site Guest User, Webhook\". ![Deploy_Stripe_9](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_9.png){height=\"\" width=\"\"} 30. Add the {{variable.PS_PT_SiteGuestUser}} permission set to this user's record. For users looking to set up Webhooks with a Payments package older than v5.6, you will need to add the Blackthorn | Payments (Webhooks) permission set. Additionally, you will need to add a Sharing Rule to allow the Site Guest User to access the {{variable.Object_PaymentGateway}} object. The {{variable.PS_PT_SiteGuestUser}} permission set is now a dual-purpose permission set with packages v5.6 and beyond. This permission set will be used for webhook setup and REST API setup. ![Deploy_Stripe_10](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_10.png){height=\"\" width=\"\"} 34. Go to {{variable.Product_Stripe}} and [log into your test or production account](https://dashboard.stripe.com/login?redirect=%2Fdashboard){target=\"_blank\"}. 35. Type \"developers\" and select “Developers > Webhooks”. ![Deploy_Stripe_11](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_11.png){height=\"\" width=\"\"} 37. Click **Add an endpoint**. ![Deploy_Stripe_12](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_12.png){height=\"\" width=\"\"} 39. Copy and paste the URL below into the {{variable.Field_Stripe_EndpointURL}} field. “https://SITE_DOMAIN_NAME/SITE_PATH/services/apexrest/bt_stripe/webhook/WEBHOOK_LABEL” ![Deploy_Stripe_13](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_13.png){height=\"\" width=\"\"} 41. Without closing {{variable.Product_Stripe}}, go back to {{variable.Product_Salesforce}} and copy the Site URL you just created. ![Deploy_Stripe_14](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_14.png){height=\"\" width=\"\"} 43. Replace https://SITE_DOMAIN_NAME/SITE_PATH with your Site URL. ![Deploy_Stripe_15](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_15.png){height=\"\" width=\"\"} 45. Without closing {{variable.Product_Stripe}}, go back to Salesforce and click the App Launcher. ![Deploy_Stripe_16](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_16.png){height=\"\" width=\"\"} 47. Select Blackthorn | Payments (Admin). ![Deploy_Stripe_17](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_17.png){height=\"\" width=\"\"} 49. Click the Payment Gateways tab. ![Deploy_Stripe_18](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_18.png){height=\"\" width=\"\"} 51. Go to the {{variable.Object_PaymentGateway}} you want to connect to webhooks and copy the value you placed in the {{variable.Field_PG_WebhookLabel}}. ![Deploy_Stripe_19](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_19.png){height=\"\" width=\"\"} 53. Replace WEBHOOK_LABEL with the value from your {{variable.Object_PaymentGateway}}. ![Deploy_Stripe_20](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_20.png){height=\"\" width=\"\"} 55. In the {{variable.Field_Stripe_Version}} field, select the latest API version. ![Deploy_Stripe_21](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_21.png){height=\"\" width=\"\"} 57. Click on **Select events** under “Select events to listen to.” ![Deploy_Stripe_22](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_22.png){height=\"\" width=\"\"} 59. Check {{variable.Field_Stripe_Selectallevents}}. ![Deploy_Stripe_23](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_23.png){height=\"\" width=\"\"} 61. Click **Add events**. ![Deploy_Stripe_24](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_24.png){height=\"\" width=\"\"} 63. Click **Add endpoint**. ![Deploy_Stripe_25](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Deploy_Stripe_25.png){height=\"\" width=\"\"} You now have successfully set up your Stripe Webhook! Test the webhook connection by creating test {{variable.Object_Transaction}}s, {{variable.Object_Subscription}}s, or any other general payment processing tasks. You should see successful {{variable.Object_WebhookEvent}}s in your Stripe Dashboard.",
+  "keywords": [
+    "https",
+    "variable",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "click",
+    "webhooks",
+    "site",
+    "stripe",
+    "your",
+    "webhook",
+    "product_stripe",
+    "permission"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Type “Sites” in the Quick Find box",
+    "3. Click Sites",
+    "4. If a Force",
+    "5. Enter your Force",
+    "6. Click **Check Availability**",
+    "7. Review and accept the Site terms of use",
+    "8. Click **Register My Force",
+    "10. Click {{variable",
+    "12. Set {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "payments-authnet-test-webhook-connection",
+  "title": "payments-authnet-test-webhook-connection.md",
+  "content": "## Metadata_Start ## code: en ## title: Test Your Webhook Connection ## slug: payments-authnet-test-webhook-connection ## seoTitle: Test Your Webhook Connection ## description: ## contentType: Markdown ## Metadata_End {{snippet.AuthNetPG_TestWebhookConnect}}",
+  "keywords": [
+    "test",
+    "webhook",
+    "connection",
+    "your",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "authnet",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "authnetpg_testwebhookconnect"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

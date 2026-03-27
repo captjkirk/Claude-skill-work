@@ -1,0 +1,27 @@
+{
+  "id": "msg-ss-filter-smart-scheduler-list-view",
+  "title": "msg-ss-filter-smart-scheduler-list-view.md",
+  "content": "## Metadata_Start ## code: en ## title: Filter the Smart Scheduler List View ## slug: msg-ss-filter-smart-scheduler-list-view ## seoTitle: Filter the Event Scheduler List View ## description: ## contentType: Markdown ## Metadata_End {{snippet.SS_GS_FilterEventSchedulerListView}}",
+  "keywords": [
+    "filter",
+    "scheduler",
+    "list",
+    "view",
+    "smart",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "event",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ss_gs_filtereventschedulerlistview"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "msg-ss-update-permission-sets-messaging-app",
+  "title": "msg-ss-update-permission-sets-messaging-app.md",
+  "content": "## Metadata_Start ## code: en ## title: Update Permission Sets for the Messaging App ## slug: msg-ss-update-permission-sets-messaging-app ## seoTitle: Update Permission Sets for the Messaging App ## description: ## contentType: Markdown ## Metadata_End After the {{variable.Product_TexteyMessaging}} app is upgraded, assign permission sets to users so they can use the new components and features. (If the permission sets are not already assigned.) Complete the steps below to assign the permission sets. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, enter and click “Users.” 4. Click the name of the user whose permissions need to be updated. 5. On the user’s record, scroll down to the Permission Set Assignments. 6. Click **Edit Assignments**. 7. Add the permission sets related to the Messaging app. (Blackthorn Messaging Admin User, Blackthorn Messaging Lightning User, and Blackthorn Messaging Standard User) 8. Select the Assignments as shown below and add them. ![SS_MSG_Permission Set](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/SS_MSG_Permission%20Set.png){height=\"\" width=\"\"} 10. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "permission",
+    "sets",
+    "messaging",
+    "click",
+    "user",
+    "variable",
+    "update",
+    "assignments",
+    "blackthorn",
+    "assign",
+    "users",
+    "below",
+    "ss_msg_permission",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "ui-experience",
+  "procedures": [
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. In the Quick Find box, enter and click “Users",
+    "4. Click the name of the user whose permissions need to be updated",
+    "5. On the user’s record, scroll down to the Permission Set Assignments",
+    "6. Click **Edit Assignments**",
+    "7. Add the permission sets related to the Messaging app",
+    "8. Select the Assignments as shown below and add them",
+    "10. Click {{variable"
+  ],
+  "troubleshooting": []
+}

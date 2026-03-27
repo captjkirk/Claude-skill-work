@@ -1,0 +1,39 @@
+{
+  "id": "link-tracking",
+  "title": "link-tracking.md",
+  "content": "## Metadata_Start ## code: en ## title: Link Tracking ## slug: link-tracking ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Have you ever wondered how effective your SMS campaigns are? One great way of doing this is to add a trackable URL to your message. Blackthorn Messaging comes complete with a feature called Link Tracking that allows you to do just that! Link Tracking works by automatically shortening the URLs in your message into a trackable URL that is unique to each message. This feature works for any message that contains a URL, whether it’s a single message, bulk message, workflow message, or campaign message. When you send a bulk message that contains a URL, each individual message will receive its own unique trackable link. Tracking the clicks you receive on your SMS campaigns is important because it differentiates this from the website traffic that your receive through other marketing campaigns. When a recipient clicks on the trackable link, they will be redirected to the original URL and the click will be tracked. The SMS Message record will be immediately updated in Salesforce. :::(Info) () Only URLs that begin with http:// or https:// will be shortened. If you do not want a link to be tracked, simply omit the http:// or https://. ::: ## Enable Link Tracking To utilize the Link Tracking feature, the feature must be enabled in the app settings first. 1. Click on Messaging app in the dropdown on the top right hand corner. 2. Navigate to Administration tab. 3. Click on Configuration Settings in the Account Management page. 4. Ensure the `Enable Trackable Links` option is enabled. If this is not enabled, none of your links will be shortened. ## Send a Message with a URL Let’s try sending a message to a Contact that contains a link to Blackthorn’s website. 1. Go to the specific record. 2. Click **Send SMS**. While the message contains the URL https://www.blackthorn.io, the recipient will see a shortened version. The unique set of characters at the end of the shortened URL tracks the link back to this particular message. When the recipient clicks on the link, they are redirected to the original URL. Now, let’s take a behind-the-scenes look at the specific SMS Message record in Salesforce to see how the link tracking works. You will notice that the following fields in Link Tracking Info section have been updated. * **Clicks:** the number of times the link was clicked by the recipient. * **First Click:** a time stamp of the first click on the URL * **Last Click:** a time stamp of the last click on the URL * **Links Clicked:** the original URL of the link that was clicked * **Short Links:** the shortened URL You can set workflow rules that alerts you when the URL is clicked. Alternatively, you can run reports that show all messages when the number of clicks are greater than zero.",
+  "keywords": [
+    "link",
+    "message",
+    "tracking",
+    "click",
+    "your",
+    "trackable",
+    "when",
+    "clicks",
+    "shortened",
+    "feature",
+    "contains",
+    "recipient",
+    "links",
+    "clicked",
+    "campaigns",
+    "blackthorn",
+    "works",
+    "unique",
+    "send",
+    "receive"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Click on Messaging app in the dropdown on the top right hand corner",
+    "2. Navigate to Administration tab",
+    "3. Click on Configuration Settings in the Account Management page",
+    "4. Ensure the `Enable Trackable Links` option is enabled",
+    "1. Go to the specific record",
+    "2. Click **Send SMS**",
+    "* **Clicks:** the number of times the link was click",
+    "* **First Click:** a time stamp of the first click on the URL * **Last Click:** a time stamp of the last click on the URL * **Links Clicked:** the original URL of the link that was clicked * **Short Links:** the shortened URL You can set workflow rules that alerts you when the URL is click"
+  ],
+  "troubleshooting": []
+}

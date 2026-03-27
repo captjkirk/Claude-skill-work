@@ -1,0 +1,30 @@
+{
+  "id": "paylink-configure-payment-gateway",
+  "title": "paylink-configure-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure the Payment Gateway ## slug: paylink-configure-payment-gateway ## seoTitle: Configure the Payment Gateway ## description: ## contentType: Markdown ## Metadata_End ## Update Your Page Layout {{snippet.StripeChkout_ConfPG_PageLayout}} ## Set Values on the Payment Gateway Object {{snippet.StripeChkout_ConfPG_SetValues}}",
+  "keywords": [
+    "payment",
+    "gateway",
+    "configure",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "paylink",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "update",
+    "your",
+    "page",
+    "layout",
+    "stripechkout_confpg_pagelayout",
+    "values"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

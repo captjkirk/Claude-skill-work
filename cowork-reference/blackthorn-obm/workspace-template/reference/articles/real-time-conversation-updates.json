@@ -1,0 +1,30 @@
+{
+  "id": "real-time-conversation-updates",
+  "title": "real-time-conversation-updates.md",
+  "content": "## Metadata_Start ## code: en ## title: Real-Time Conversation Updates ## slug: real-time-conversation-updates ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End When you are managing multiple text message conversations across a team of people, it's important that the conversations stay in sync. This means that if one person has taken ownership of a conversation, or is in the middle of typing a reply, everyone else should have visibility into that. This helps teams be more productive by knowing which conversations are being responded to, and prevents your team from inadvertently stepping on each other's toes by responding to the same message. Blackthorn Messaging streams real-time updates in the following scenarios: * The conversation ownership changes. * The conversation status changes. * A user is typing a message into the conversation. * A new conversation message is sent. When one of these updates is streamed, it means that any other users who have the Messaging component on their page (either on the Messaging Conversations page, the Utility Bar, or on a record page) will see that update, too. For these updates to work properly, your users will need access to the Streaming API and specifically the StreamingChannel object in Salesforce.",
+  "keywords": [
+    "conversation",
+    "updates",
+    "message",
+    "conversations",
+    "real",
+    "time",
+    "messaging",
+    "page",
+    "when",
+    "team",
+    "means",
+    "ownership",
+    "typing",
+    "into",
+    "your",
+    "other",
+    "changes",
+    "users",
+    "metadata_start",
+    "code"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

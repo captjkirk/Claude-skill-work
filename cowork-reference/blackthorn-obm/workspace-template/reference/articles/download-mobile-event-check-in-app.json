@@ -1,0 +1,30 @@
+{
+  "id": "download-mobile-event-check-in-app",
+  "title": "download-mobile-event-check-in-app.html",
+  "content": "Prerequisites Android Devices To use the Mobile Check-in app, Android devices must have the Version 9.0 operating system or higher. Review Salesforce Connected App Changes Salesforce recently announced a change to its security policy around Connected Apps, effective August 28th. As a result, Blackthorn recommends verifying that these Connected Apps are installed in your Salesforce orgs. Blackthorn | Connected App - required to use Blackthorn Events and Blackthorn Payments Mobile Check-in App - required for using Blackthorn Mobile Check-in Blackthorn | Mobile Connected App - required for using Blackthorn Mobile Payments Blackthorn Message - required for using Blackthorn Messaging Please review the attached pdf for instructions to check that the required Connected Apps are installed and connected correctly. Start Here Download the app! Apple App Store (iOS) or Google Play Store (Android) . Then log in with your Salesforce username and password and you are off to the races. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;",
+  "keywords": [
+    "blackthorn",
+    "connected",
+    "mobile",
+    "required",
+    "nbsp",
+    "check",
+    "salesforce",
+    "android",
+    "apps",
+    "using",
+    "devices",
+    "review",
+    "installed",
+    "your",
+    "payments",
+    "store",
+    "prerequisites",
+    "must",
+    "version",
+    "operating"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

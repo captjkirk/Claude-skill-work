@@ -1,0 +1,32 @@
+{
+  "id": "events-admin-batch-jobs",
+  "title": "events-admin-batch-jobs.md",
+  "content": "## Metadata_Start ## code: en ## title: Batch Jobs ## slug: events-admin-batch-jobs ## seoTitle: Batch Jobs ## description: ## contentType: Markdown ## Metadata_End The following batch jobs can be initiated from the {{variable.Tab_ET_BTEventAdmin}}'s {{variable.Tab_BTETAdmin_BatchJobs}} tab. :::(Warning) (**Do you need help while using the Blackthorn | Events Admin page?**) Click the blue and white icon located on the bottom right side of your screen, and speak to one of our team members via Chat. ::: ### Add Sort Order on Event Items Button * Apex Class Name: EventItem_SetSortOrder * Clicking this button sets the {{variable.Field_EventItem_SortOrder}} field on {{variable.Object_EventItem}} records when the {{variable.Field_EventItem_SortOrder}} field is blank. ### Register Attendees for Webinars Button * Batch Job Name: Blackthorn | Events Attendee Webinar Registration * Use this button to register your {{variable.Object_Attendee}}s with your webinar provider so your {{variable.Object_Attendee}}s receive a personalized URL to join the webinar. ### Process Form Submissions Button Clicking this button will trigger the following batch jobs. * Batch Job Name: Blackthorn | Events FormSubmission Processing0 * Runs at the top of each hour (12:00, 1:00, 2:00, etc.) * Batch Job Name: Blackthorn | Events FormSubmission Processing53 * Runs approximately every 5 minutes ### Create Webinars for Events Button * Batch Job Name: Create Webinars for Events * Use this job to create webinars for {{variable.Object_Event}}s with a value in the {{variable.Field_ETEvent_WebinMeetingAcct}} field and no value in the {{variable.Field_ETEvent_WebinarMtgURL}} field. ### Create Webinars for Sessions Button * Apex Class Name: WebinarCreateBatch * Use this job to create webinars for {{variable.Object_Session}}s with a value in the {{variable.Field_Session_WebinarMeetiAcct}} field and no value in the {{variable.Field_Session_WebinarMtgURL}} field.",
+  "keywords": [
+    "variable",
+    "batch",
+    "button",
+    "events",
+    "name",
+    "field",
+    "webinars",
+    "jobs",
+    "create",
+    "blackthorn",
+    "your",
+    "value",
+    "webinar",
+    "admin",
+    "following",
+    "apex",
+    "class",
+    "clicking",
+    "field_eventitem_sortorder",
+    "register"
+  ],
+  "category": "events",
+  "procedures": [
+    "* Apex Class Name: EventItem_SetSortOrder * Click"
+  ],
+  "troubleshooting": []
+}

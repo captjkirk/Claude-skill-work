@@ -1,0 +1,30 @@
+{
+  "id": "stripe",
+  "title": "stripe.html",
+  "content": "Introduction Stripe is \"A suite of APIs that powers commerce for businesses of all sizes.\" is not to be confused with Square, the in-person point-of-sale solution, rather is purpose-built for back-end payment processing. Pricing 's pricing is a simple flat fee of 2.9% per transaction plus 30 cents (USD). The rate changes based on your home country. Better rates are available if you process over $80k/month. Contact us if you'd like an intro to our Stripe partner manager to discuss rates. If you're a 501(c)(3), email sales+nonprofit@stripe.com and include your Employer Identification Number (EIN) to receive a discounted Transaction fee. If you capture ACH payments, the fee is 0.8% capped at $5.00 (USD). Change your home country at the bottom of 's page. Available Currencies Blackthorn and supports processing payments in 135+ currencies. View the full list. Sign up for Stripe If you need to create an account with , this can be completed in the quick start process. Sign-up takes minutes to complete and then you can begin taking payments. The first payout to your bank account takes a week, but each payout after that is 1-2 days. New Stripe Account Navigate to the . Lightning: Navigate to app launcher &gt; select \"Payments (Admin)\" app &gt; click the tab Classic: Navigate to the application drop-down button (blue button in the upper right-hand corner) &gt; select \"Payments (Admin)\" app &gt; click the tab. Select \"Test\" then click Connect with Stripe . Enter the information below and click Create your Stripe account . Enter in additional information and click Authorize access to this account . If you don't want to add additional information regarding your account now, just click the Skip this account form at the top of the page. You are now setup with a account and that account is connected to your Org. Existing Stripe Account The instructions below are for connecting an existing account to your Org. Navigate to . Lightning: Navigate to app launcher &gt; select \"Payments (Admin)\" app &gt; click the tab. Classic: Navigate to the application drop-down button (blue button in the upper right-hand corner) &gt; select \"Payments (Admin)\" app &gt; click the tab. Select \"Test\" then click Connect with Stripe . Click Sign In next to \"Already have a Stripe account?\" If you are already signed into your account, your username will be in place of the \"Already have a Stripe account\" and you can click Skip this account form . Enter your account credentials and click Sign in to your account . Your existing account is now connected to your Org. Objects Blackthorn | Payments to Stripe Translation = Customer. = Card, Bank Account, or other. = Payment (Charge), Adjustment, Transfer, Payout (as Record Types on Transaction). Core Objects : Everything \"routes\" through a : , , and Stripe Customer. : This object houses all the (card, ACH) information for your customer. : This object captures, authorizes, and refunds all s connected with your account. Secondary Objects : (and other payment gateways) maintain their concept of what would refer to as a Person Account. The Stripe Customer is the Stripe-side data model for the entity of the holder and relations. : This object allows you to create forward-looking, scheduled s that can be automatically captured. Tertiary Objects : When sends records, we capture them in this object. They are processed every five minutes from a scheduled process that runs in the background. : The Company Info object is used by many of our other apps, such as Blackthorn . If your organization has multiple business entities, this is where they'd be defined. : Similar to Company Info, Location is used by other apps. Migrating Payment Methods and Transactions Are you currently using PayPal, Authorize.net, Braintree, CyberSource, First Data or another gateway? If you currently 'tokenize' your cards, and hopefully you do to remain PCI compliant, you'll need new tokens once you switch to so you don't need to ask your customers for their cards again. Contact your and contact at support@stripe.com. Your provider will send their data to , retaining PCI compliance. Use Blackthorn ' feature to migrate your Customers and s (cards and if you have them, bank accounts) to with new 'tokens' (in they utilize unique [Card] IDs, but you can think of them as tokens). We do not support any relational database logic to automatically associate these records to your records. These new Card IDs can be charged in the same way as a card, but keep you PCI compliant. If you're not currently 'tokenizing' your cards, after installing Blackthorn , you can re-enter the card data as new s. After this happens, the data will be 'tokenized', i.e. the card data will be erased (it's technically never saved) and you'll be left with unique Card IDs to subsequently charge your customers with. Deleting Test Data Stripe Navigate to your Dashboard. Toggle the switch to \"ON\". (left-hand column). Click Business settings . (left-hand column) Select \"Data\". Next to Test data, click Delete all test data . Click Delete Now . Salesforce Whether you are in a Production or Sandbox Org, you will need to temporarily deactivate all triggers so that you can delete , , and records. Navigate to Custom Settings. Lightning/Classic: Go to Setup &gt; In the Quick Find box, type in and select \"Custom Settings\". Click next to . Click . Check the checkbox. Click . Delete all of your test data. Navigate back to Custom Settings and UNCHECK . Next Steps Follow our quick start instructions to get Blackthorn up and running. Use our process to bring over existing data into . Complete our Go Live Checklist to make the most of Blackthorn in your Org.",
+  "keywords": [
+    "your",
+    "account",
+    "click",
+    "stripe",
+    "data",
+    "navigate",
+    "payments",
+    "select",
+    "card",
+    "blackthorn",
+    "test",
+    "object",
+    "payment",
+    "process",
+    "sign",
+    "need",
+    "admin",
+    "button",
+    "hand",
+    "enter"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

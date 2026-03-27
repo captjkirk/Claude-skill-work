@@ -1,0 +1,34 @@
+{
+  "id": "payout-transactions",
+  "title": "payout-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Payout Transactions ## slug: payout-transactions ## seoTitle: Payout Transactions ## description: ## contentType: Markdown ## Metadata_End For this type of {{variable.Object_Transaction}}, {{variable.Product_Stripe}} makes deposits (payouts) from your available account balance into your bank account. The account balance consists of different types of {{variable.Object_Transaction}}s (e.g., payments, refunds, etc.). Stripe Payouts automatically relate to charges and transfers included within them. This helps reconcile which charges are included in which bank transfers. ![H_01_12_payout transaction 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_12_payout%20transaction%201.png){height=\"\" width=\"\"} {{variable.Product_Stripe}} creates payout {{variable.Object_Transaction}}s in {{variable.Product_Salesforce}} via {{variable.Task_Webhook}}s. *Payout {{variable.Object_Transaction}}s cannot be manually created in {{variable.Product_Salesforce}}.* Once a {{variable.Object_Transaction}} with {{variable.Field_Transaction_RecordType}} = \"Payout\" has been created and {{variable.Field_Transaction_PaymentStatu}} = \"Paid\", all charge {{variable.Object_Transaction}}s are related to the payout {{variable.Object_Transaction}} through the {{variable.Field_Transaction_Payout}} field on the charge {{variable.Object_Transaction}} via the daily charges batch job. Payouts must relate to original charges, refunds, disputed refunds and transfers so you can successfully prove and document that account balances agree. ![H_01_12_payout transaction 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_12_payout%20transaction%202.png){height=\"\" width=\"\"} In addition to relating a Payout {{variable.Object_Transaction}} record to all original charges, refunds, and transfers we provide an [out-of-the-box report](/v1/docs/reports-1) on payouts and related {{variable.Object_Transaction}}s. ## Batch Job Process The Blackthorn | Payments Set Payout batch job processes payout {{variable.Object_Transaction}}s. For a payout {{variable.Object_Transaction}} to be included, the following must be true. * {{variable.Field_Transaction_RecordType}} = \"Payout\" * {{variable.Field_Transaction_TransaStatus}} = \"Completed\" * {{variable.Field_Transaction_PaymentStatu}} = \"Paid\" The payout {{variable.Object_Transaction}} record then enters a timestamp in the {{variable.Field_Transaction_PayoutProDat}} field that shows when the record was processed so the batch job does not process it again. This batch job can also be triggered manually. Go to the {{variable.Tab_PT_BTPayAdmin}} tab, click the {{variable.Tab_BTPTAdmin_BatchJobs}} tab, and click {{variable.Button_PTAdmin_Bat_PayoutHisto}}. ## Troubleshooting If you have received an error with your {{variable.Object_Transaction}}s or have a question, please view our [Troubleshooting](/v1/docs/troubleshooting-payments) page.",
+  "keywords": [
+    "variable",
+    "object_transaction",
+    "payout",
+    "charges",
+    "batch",
+    "payouts",
+    "account",
+    "refunds",
+    "transfers",
+    "h_01_12_payout",
+    "transactions",
+    "your",
+    "payments",
+    "included",
+    "record",
+    "troubleshooting",
+    "product_stripe",
+    "balance",
+    "bank",
+    "relate"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error with your {{variable.",
+    "Troubleshooting If you have received an error with your {{variable.",
+    "Troubleshooting](/v1/docs/troubleshooting-payments) page."
+  ]
+}

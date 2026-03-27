@@ -1,0 +1,30 @@
+{
+  "id": "events-features-fee-fields",
+  "title": "events-features-fee-fields.md",
+  "content": "## Metadata_Start ## code: en ## title: Fee Fields ## slug: events-features-fee-fields ## seoTitle: Fee Fields ## description: ## contentType: Markdown ## Metadata_End The Fee object is Read only for all Payments permission sets except the Blackthorn | Payments (Admin) permission set. :::(Warning) (Please manually update the Event object page payout.) Current Blackthorn users must manually add the Payment Processing Fee field to the Event record's page layout. ::: @(Embed)(https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Fee%20Object%20Fields.pdf){height=\"320\" width=\"640\"} ## Other Important Fields ### Event Object * Field Label: {{variable.Field_Event_TaxFee}} * API Name: Tax_Fee__c * Data Type: Lookup * Description: The Fee record used for Event tax calculations. The tax is applied to the {{variable.Field_Invoice_TotalAmount}} after discounts and before the {{variable.Field_ETEvent_PaymentProcesFee}}. * Field Label: {{variable.Field_Event_TaxFeeCalculatType}} * API Name: conference360__Tax_Fee_Calculation_Type__c * Data Type: Text(100) * Description: Defines whether the Tax is “Tax-Inclusive Pricing” or “Calculated at Checkout.” It is determined by the associated {{variable.Object_Fee}}'s {{variable.Field_Fee_TaxDisplaySetting}}. ### Event Item Object * Field Label: {{variable.Field_EventItem_TaxExempt}} * API Name: conference360__Tax_Exempt__c * Data Type: Checkbox * Description: If checked (“True”), the tax will not be applied to the Event Item. If unchecked (“False”), the tax designated on the Event will apply. * Default Setting = unchecked or “False” * Field Label: {{variable.Field_EventItem_TaxAmount}} * API Name: conference360__Tax_Amount__c * Data Type: Number(16, 2) * Description: Calculated as a percentage of the Event Item’s {{variable.Field_ETEventItem_Price}} based on the associated Fee. * Field Label: {{variable.Field_EventItem_PriceWithTax}} * API Name: conference360__Price_with_Tax__c * Data Type: Number(16, 2) * Description: It is the Line Item’s {{variable.Field_LineItem_Price}} plus the {{variable.Field_EventItem_TaxAmount}}. ### Event Item Session Object * Field Label: {{variable.Field_EventItemSessi_TaxAmount}} * API Name: conference360__Tax_Amount__c * Data Type: Number(16, 2) * Description: Calculated as a percentage of the Event Item Session’s {{variable.Field_EventItemSession_Price}} based on the associated Fee. It is also equal to the related Line Item’s {{variable.Field_LineItem_Tax}} amount. * Field Label: {{variable.Field_EventItemSess_PriceWiTax}} * API Name: conference360__Price_With_Tax__c * Data Type: Number(16, 2) * Description: Equals the Line Item's {{variable.Field_LineItem_Price}} plus the Event Item Session's {{variable.Field_EventItemSessi_TaxAmount}}. * Field Label: {{variable.Field_EventItemSession_TaxRate}} * API Name: conference360__Tax_Rate__c * Data Type: Percent(15, 3) * Description: The {{variable.Field_EventItemSession_TaxRate}} for the Event Item Session is set automatically based on the Event’s {{variable.Field_Event_TaxFee}} lookup. ### Invoice Object * Field Label: {{variable.Field_Invoice_DynamicFeeName}} * API Name: bt_stripe__Dynamic_Fee_Name__c * Data Type: Text * Description: The name of the label used to display the tax Fee on an Invoice. For Events, it is the {{variable.Field_Fee_FeeName}} of the Fee associated with the Event. ### Line Item Object * Field Label: {{variable.Field_LineItem_TaxRate}} * API Name: bt_stripe__Tax_Rate__c * Data Type: Percent * Description: The tax rate for this Line Item. Set by the associated Event {{variable.Field_Event_TaxFee}}. Automatically set to 0 if the Event Item’s {{variable.Field_EventItem_TaxExempt}} is set to “True” (checked).",
+  "keywords": [
+    "variable",
+    "event",
+    "item",
+    "description",
+    "field",
+    "label",
+    "name",
+    "data",
+    "type",
+    "object",
+    "associated",
+    "line",
+    "fields",
+    "number",
+    "session",
+    "field_event_taxfee",
+    "calculated",
+    "based",
+    "events",
+    "payments"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

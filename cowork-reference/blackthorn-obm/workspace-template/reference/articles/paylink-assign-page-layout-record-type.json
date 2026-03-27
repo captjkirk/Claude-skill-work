@@ -1,0 +1,28 @@
+{
+  "id": "paylink-assign-page-layout-record-type",
+  "title": "paylink-assign-page-layout-record-type.md",
+  "content": "## Metadata_Start ## code: en ## title: Assign the Page Layout to the Corresponding Record Type ## slug: paylink-assign-page-layout-record-type ## seoTitle: Assign the Page Layout to the Corresponding Record Type ## description: ## contentType: Markdown ## Metadata_End {{snippet.StripeChkout_ConfPG_asnpglayou}}",
+  "keywords": [
+    "assign",
+    "page",
+    "layout",
+    "record",
+    "type",
+    "corresponding",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "paylink",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "stripechkout_confpg_asnpglayou"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mobile-checkin-app-biometric-authentication",
+  "title": "mobile-checkin-app-biometric-authentication.html",
+  "content": "Users can configure their to use their device’s system biometric authentication to log in to the app. Enable Biometric Authentication Click the . Click . In the Quick Find box, search for and click “Manage Connected Apps.” Click next to “Mobile Check In.” Click next to Custom Attributes. Set = “ENABLE_BIOMETRIC_AUTHENTICATION.” Set = ““1”.” Click . Disable Biometric Authentication To turn off the biometric authentication, remove the custom attribute. Important Notes When biometrics is enabled in , and a user forces the app to close, the app will be locked. The user will need to authenticate again using biometrics or a password. If biometric authentication is enabled in but users don’t enable it on their phone, they must enter their username and password after force-closing the app or after the biometric authentication timeout is reached. We recommend enabling biometric authentication on your phone if biometric authorization is enabled in . Otherwise, you must enter your username and password each time after the app times out or is force-closed. Logging In for the First Time Open from a Cold Start When you enable the biometric ID app unlock feature, the feature asks users for their biometric credentials when they open the app from a cold start. A cold start occurs when the user opens the app for the first time or opens the app after closing it entirely (swiping up to quit the app). If a user has no security settings enabled, they're forced to log out of the app. The first time you log into the after enabling biometric authentication, you must complete the following steps. Enter your username and password. If biometric authentication is enabled in , a dialog will pop up asking whether you want to enable it or keep using password authentication. The next time authentication is required, a screen will pop up asking you for biometric authentication. The device’s operating system handles this screen, which can vary between manufacturers, models, operating system versions, etc. In the following screenshot, you can see the system asking the user to touch the fingerprint sensor. In other configurations, it might ask you for a face ID, iris scanner, etc. If you cancel the biometric authentication flow, you can re-launch it by tapping the Log In with Biometric button. Example When the exceeds its timeout period in the background, the login screen appears upon your return to the app. This behavior makes it appear that you logged out, even if your login session hasn’t expired. You can log in using your username and password or your device’s biometric authentication if enabled. Future Use By default, users must reenter their biometric ID credentials after the app is in the background for more than 15 minutes. You can also set your own time value requirement by adding a custom attribute. Please click here for more information about using the biometric ID app unlock feature for iOS and Android.",
+  "keywords": [
+    "biometric",
+    "authentication",
+    "your",
+    "click",
+    "their",
+    "enabled",
+    "password",
+    "after",
+    "time",
+    "when",
+    "user",
+    "users",
+    "system",
+    "enable",
+    "using",
+    "must",
+    "username",
+    "device",
+    "next",
+    "custom"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

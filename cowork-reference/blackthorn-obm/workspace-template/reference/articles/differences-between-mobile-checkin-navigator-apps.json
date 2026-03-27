@@ -1,0 +1,32 @@
+{
+  "id": "differences-between-mobile-checkin-navigator-apps",
+  "title": "differences-between-mobile-checkin-navigator-apps.html",
+  "content": "Criteria Event Navigator App Mobile Check-in App Users Attendees Event Staff Allows for navigation of an Event, including agendas and maps Yes No Enables a quick check-in with an AttendeeLink QR code Yes - Attendees can access their QR code by clicking My Ticket and scanning it to check in. Yes - Event staff can scan an Attendee’s QR code to check them into the Event and Session(s). Cost Add-on feature. Please contact your Sales or Customer Support rep for more information. Included with Blackthorn Events Mobile App Icon",
+  "keywords": [
+    "event",
+    "check",
+    "code",
+    "mobile",
+    "attendees",
+    "staff",
+    "criteria",
+    "navigator",
+    "users",
+    "allows",
+    "navigation",
+    "including",
+    "agendas",
+    "maps",
+    "enables",
+    "quick",
+    "attendeelink",
+    "access",
+    "their",
+    "clicking"
+  ],
+  "category": "events",
+  "procedures": [
+    "- Attendees can access their QR code by click"
+  ],
+  "troubleshooting": []
+}

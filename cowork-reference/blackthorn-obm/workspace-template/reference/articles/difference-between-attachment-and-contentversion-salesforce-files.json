@@ -1,0 +1,33 @@
+{
+  "id": "difference-between-attachment-and-contentversion-salesforce-files",
+  "title": "difference-between-attachment-and-contentversion-salesforce-files.md",
+  "content": "## Metadata_Start ## code: en ## title: Difference between Attachment and ContentVersion (Salesforce Files) ## slug: difference-between-attachment-and-contentversion-salesforce-files ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## What is the difference between Attachment and ContentVersion (Salesforce Files)? There are two different attachment-like objects in Salesforce. 1. [Attachment](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_attachment.htm){target=\"_blank\"}: This is the older object that many newer orgs don't use anymore, but Blackthorn supports it for customers on older orgs. 2. Files ([ContentDocument](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentdocument.htm){target=\"_blank\"}, [ContentVersion](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentversion.htm){target=\"_blank\"}): These are the newer objects known collectively as \"Salesforce Files\". Depending on how the attachments are [uploaded](https://help.salesforce.com/s/articleView?id=000352010&type=1){target=\"_blank\"}, they could end up being saved as either object. If we are dealing with Salesforce Files, then when Blackthorn Compliance detects a credit card number in the ContentVersion record, it will delete both the parent ContentDocument record and all of the child ContentVersion records. Compliance supports both types of records, but you will need to determine which object you will use for your org in order to configure the SecureAttachment extension package correctly. Please remember that SecureAttachment does not support masking within Attachment or ContentVersion records. At this time you can Report or Delete these records automatically if Personally Identifiable Information (PII) is detected.",
+  "keywords": [
+    "salesforce",
+    "contentversion",
+    "attachment",
+    "files",
+    "object_reference",
+    "https",
+    "target",
+    "_blank",
+    "records",
+    "difference",
+    "between",
+    "developer",
+    "docs",
+    "atlas",
+    "meta",
+    "object",
+    "objects",
+    "older",
+    "newer",
+    "orgs"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. [Attachment](https://developer",
+    "2. Files ([ContentDocument](https://developer"
+  ],
+  "troubleshooting": []
+}

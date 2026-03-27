@@ -1,0 +1,32 @@
+{
+  "id": "evbuilder-object-sessions",
+  "title": "evbuilder-object-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Sessions ## slug: evbuilder-object-sessions ## seoTitle: Sessions ## description: ## contentType: Markdown ## Metadata_End The following updates were made to the {{variable.Object_Session}} object. ## Functionality When a user creates an {{variable.Object_Event}} with {{variable.Object_Session}}s using the {{variable.Component_EventBuilder}}, they will see the following when reviewing the {{variable.Component_EventBuilder}} inline editor. * The Featured Sessions are ordered by {{variable.Field_Session_SessionName}}. * A Featured Session will be displayed in both the Featured Sessions section and the All Sessions section. * The {{variable.Object_Session}} card includes the following information: * Session {{variable.Field_Session_StartDate}} * Session {{variable.Field_Session_StartTime}} * Session {{variable.Field_Session_EndTime}} * Session Image ({{variable.Field_Session_ImageURL}}) * {{variable.Field_Session_ShortDescription}} * {{variable.Object_SessionSpeaker}}s * search by {{variable.Object_Keyword}}s (optional) * If the {{variable.Object_Session}} has speakers, each {{variable.Object_Speaker}}'s card will have the {{variable.Object_Speaker}}'s full name (required), {{variable.Field_Speaker_Title}}, and {{variable.Field_Speaker_AccountName}}. ### Scenario 1 #### Scenario An {{variable.Object_Event}} doesn’t have an {{variable.Field_ETEvent_EventStartDate}}, an {{variable.Field_ETEvent_EventEndDate}}, or is longer than seven days AND a {{variable.Object_Session}} is related to the {{variable.Object_Event}}. #### Result When a user goes to the Session Detail Page, they will see one tab with the {{variable.Object_Session}}s ordered by Session {{variable.Field_Session_StartDate}}, Session {{variable.Field_Session_StartTime}}, and {{variable.Field_Session_SessionName}}. ### Scenario 2 #### Scenario An {{variable.Object_Event}} has an {{variable.Field_ETEvent_EventStartDate}}, an {{variable.Field_ETEvent_EventEndDate}} AND a {{variable.Object_Session}} is related to the {{variable.Object_Event}}. #### Result When a user goes to the Session Detail Page, they will see as many tabs as there are days between the {{variable.Field_ETEvent_EventStartDate}}, an {{variable.Field_ETEvent_EventEndDate}}. By default, the \"Event Start Date\" tab will be selected. For Example, if the {{variable.Field_ETEvent_EventStartDate}} = “6/7/2022” and the {{variable.Field_ETEvent_EventEndDate}} = “6/10/2022”, there will be four tabs with the following labels: June 7, June 8, June 9, and June 10. The user will start on the June 7 tab. ### Scenario 3 #### Scenario An {{variable.Object_Event}} has an {{variable.Field_ETEvent_EventStartDate}} and {{variable.Field_ETEvent_EventEndDate}}. Only one {{variable.Object_Session}} is related to the {{variable.Object_Event}}, and it has a Session {{variable.Field_Session_StartTime}} equal to the day after the {{variable.Object_Event}} starts. #### Result When a user goes to the Session Detail Page and selects the tab that matches the Session {{variable.Field_Session_StartDate}}, they will see the following. * The {{variable.Object_Session}} cards are ordered by Session {{variable.Field_Session_StartDate}} and {{variable.Field_Session_StartTime}} * Each {{variable.Object_Session}} will have a {{variable.Object_Session}} card with an image ({{variable.Field_Session_ImageURL}}), {{variable.Field_Session_SessionName}} (required), Session {{variable.Field_Session_StartDate}}, Session {{variable.Field_Session_StartTime}}, Session {{variable.Field_Session_EndDate}}, and Session {{variable.Field_Session_EndTime}}. * Users can edit the {{variable.Object_Session}} card by clicking the {{variable.Button_Pencil}} button or delete the {{variable.Object_Session}} card by clicking the {{variable.Button_WasteBin}} button.",
+  "keywords": [
+    "variable",
+    "session",
+    "object_session",
+    "object_event",
+    "sessions",
+    "scenario",
+    "following",
+    "when",
+    "user",
+    "card",
+    "field_session_startdate",
+    "field_session_starttime",
+    "field_etevent_eventstartdate",
+    "field_etevent_eventenddate",
+    "june",
+    "they",
+    "featured",
+    "ordered",
+    "field_session_sessionname",
+    "related"
+  ],
+  "category": "events",
+  "procedures": [
+    "10. The user will start on the June 7 tab"
+  ],
+  "troubleshooting": []
+}

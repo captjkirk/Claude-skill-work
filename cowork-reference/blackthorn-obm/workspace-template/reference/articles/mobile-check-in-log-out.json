@@ -1,0 +1,30 @@
+{
+  "id": "mobile-check-in-log-out",
+  "title": "mobile-check-in-log-out.html",
+  "content": "Do you need to switch between users? Users can log out of the Mobile Check-in app by returning to the Events menu screen. Swipe left to right to bring up the main Menu, and tap Log Out . A new user can then log in. This process will also re-authenticate a user when the OAuth has expired. To log out, go to the Event listing screen. Locate the Menu button in the top, left corner. Tap the Menu button. The side menu will appear. Select the \"Log out\" option from the list.",
+  "keywords": [
+    "menu",
+    "users",
+    "screen",
+    "left",
+    "user",
+    "button",
+    "need",
+    "switch",
+    "between",
+    "mobile",
+    "check",
+    "returning",
+    "events",
+    "swipe",
+    "right",
+    "bring",
+    "main",
+    "then",
+    "process",
+    "also"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

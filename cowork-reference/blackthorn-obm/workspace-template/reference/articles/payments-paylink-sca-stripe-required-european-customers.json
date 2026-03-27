@@ -1,0 +1,30 @@
+{
+  "id": "payments-paylink-sca-stripe-required-european-customers",
+  "title": "payments-paylink-sca-stripe-required-european-customers.md",
+  "content": "## Metadata_Start ## code: en ## title: SCA (Stripe, Required for European Customers) ## slug: payments-paylink-sca-stripe-required-european-customers ## seoTitle: SCA (Stripe, Required for European Customers) ## description: ## contentType: Markdown ## Metadata_End The requirements for SCA affect our customers in Europe where the PSD2 regulation is being implemented. It's quick and easy to enable SCA with Blackthorn. Click [here for instructions](https://docs.blackthorn.io/docs/sca#how-do-i-enable-sca-in-my-org) on enabling SCA.",
+  "keywords": [
+    "customers",
+    "stripe",
+    "required",
+    "european",
+    "enable",
+    "blackthorn",
+    "docs",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "paylink",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "requirements",
+    "affect"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

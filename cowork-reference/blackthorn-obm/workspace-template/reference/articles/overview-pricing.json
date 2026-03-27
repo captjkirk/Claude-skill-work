@@ -1,0 +1,34 @@
+{
+  "id": "overview-pricing",
+  "title": "overview-pricing.md",
+  "content": "## Metadata_Start ## code: en ## title: Overview Pricing ## slug: overview-pricing ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The Overview Pricing section will display the pricing information for ALL {{variable.Picklist_ETEventItem_Mainevent}} in the {{variable.Object_Event}}. 1. To enable it, go to the {{variable.Object_EventSettings}} page. 2. Set {{variable.Field_ETETSettings_OvervwPrici}} to {{variable.Picklist_Yes}}. ![overview pricing 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/overview%20pricing%201.jpeg){height=\"\" width=\"\"} 3. Check that there is at least ONE {{variable.Object_EventItem}} {{variable.Field_ETEventItem_Type}} = {{variable.Picklist_ETEventItem_Mainevent}} with valid pricing information. ![overview pricing 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/overview%20pricing%202.jpeg){height=\"\" width=\"\"} If everything is set up correctly, you should be able to see the pricing section in the Overview page like so: ![overview pricing 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/overview%20pricing%203.jpeg){height=\"\" width=\"\"}",
+  "keywords": [
+    "overview",
+    "pricing",
+    "variable",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20pricing",
+    "jpeg",
+    "height",
+    "width",
+    "section",
+    "information",
+    "picklist_eteventitem_mainevent",
+    "page"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. To enable it, go to the {{variable",
+    "2. Set {{variable",
+    "3. Check that there is at least ONE {{variable"
+  ],
+  "troubleshooting": []
+}

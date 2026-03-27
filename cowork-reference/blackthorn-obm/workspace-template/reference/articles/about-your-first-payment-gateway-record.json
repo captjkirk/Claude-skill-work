@@ -1,0 +1,34 @@
+{
+  "id": "about-your-first-payment-gateway-record",
+  "title": "about-your-first-payment-gateway-record.md",
+  "content": "## Metadata_Start ## code: en ## title: About Your First Payment Gateway Record ## slug: about-your-first-payment-gateway-record ## seoTitle: About Your First Payment Gateway Record ## description: ## contentType: Markdown ## Metadata_End :::(Info) () Your first Payment Gateway record, named \"primary\", was created automatically during setup. ::: To view the {{variable.Object_PaymentGateway}} record, follow the steps below. 1. Navigate to the {{variable.Object_PaymentGateway}} object. * Lightning/Classic: Payments (Admin) App > Payment Gateways Tab 2. Select “All” from the list of List Views. 3. Click the record named \"primary.\" ![Primary Stripe Payment Gateway](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Primary%20Stripe%20Payment%20Gateway.png){height=\"\" width=\"\"} When the {{variable.Field_PaymentGateway_Default}} field is checked, any {{variable.Object_PaymentMethod}}s created without a related {{variable.Object_PaymentGateway}} will automatically use the default {{variable.Object_PaymentGateway}}. Only one {{variable.Object_PaymentGateway}} can be set as the default. The Gateway Information section provides the connection details. If these fields are blank, data in Salesforce will not process in the gateway. See [Step 8 in Create a Stripe Payment Gateway](/v1/docs/create-a-stripe-payment-gateway) to connect to your gateway. :::(Warning) (**Do not copy your Stripe API keys and insert them here.**) These keys are different from your Stripe keys which are OAuth keys. You can only get these keys by clicking the **Connect to Stripe** button. :::",
+  "keywords": [
+    "gateway",
+    "payment",
+    "your",
+    "variable",
+    "record",
+    "stripe",
+    "object_paymentgateway",
+    "keys",
+    "first",
+    "primary",
+    "about",
+    "named",
+    "created",
+    "automatically",
+    "from",
+    "list",
+    "default",
+    "only",
+    "create",
+    "connect"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Select “All” from the list of List Views",
+    "3. Click the record named \"primary"
+  ],
+  "troubleshooting": []
+}

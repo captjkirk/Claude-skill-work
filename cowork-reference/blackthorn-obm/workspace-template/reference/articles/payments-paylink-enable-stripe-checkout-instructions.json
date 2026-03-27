@@ -1,0 +1,35 @@
+{
+  "id": "payments-paylink-enable-stripe-checkout-instructions",
+  "title": "payments-paylink-enable-stripe-checkout-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Instructions ## slug: payments-paylink-enable-stripe-checkout-instructions ## seoTitle: Instructions ## description: ## contentType: Markdown ## Metadata_End Stripe Checkout is a prebuilt, hosted payment page that easily and securely accepts payments online. Payment options include ApplePay and GooglePay. Complete the following steps to enable Stripe Checkout. 1. Configure the Payment Gateway. 2. Add Permissions to Access Encrypted Data. 3. Assign the Proper Page Layout to the Corresponding Record Type. 4. Configure PayLink.Stripe Checkout is a prebuilt, hosted payment page that easily and securely accepts payments online. Payment options include ApplePay and GooglePay.",
+  "keywords": [
+    "payment",
+    "stripe",
+    "checkout",
+    "instructions",
+    "payments",
+    "page",
+    "paylink",
+    "enable",
+    "prebuilt",
+    "hosted",
+    "easily",
+    "securely",
+    "accepts",
+    "online",
+    "options",
+    "include",
+    "applepay",
+    "googlepay",
+    "configure",
+    "metadata_start"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Configure the Payment Gateway",
+    "2. Add Permissions to Access Encrypted Data",
+    "3. Assign the Proper Page Layout to the Corresponding Record Type",
+    "4. Configure PayLink"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "free-event",
+  "title": "free-event.html",
+  "content": "Follow the steps below to see what an {{variable.Object_Attendee}} sees when completing the checkout process for a free {{variable.Object_Event}} . We've also included images of the {{variable.Object_Event}} and {{variable.Object_Attendee}} records in {{variable.Product_Salesforce}} . Do you want a different look and feel for your Event? No problem. All colors, images, and text are 100% customizable to your specific use case! An {{variable.Object_Attendee}} views your {{variable.Object_Event}} 's webpage. They can click the Share button to generate a URL to share the Event on LinkedIn, X/Twitter, or Facebook, or they can click {{variable.Button_Register}} to start the process. The {{variable.Object_Attendee}} selects the number of {{variable.Object_EventItem}} s they want to register for and clicks {{variable.Button_Register}} . Or, if a value is in the Event Item’s {{variable.Field_EVItem_DefaultQtySelecti}} field and the Event Item isn’t sold out or isn’t a Donation, the default quantity of Tickets is automatically added to the cart the first time an Attendee reaches the Event Item selection screen. Attendees can change the number of Tickets in their cart and move around the Event’s webpage without changes being made to their cart based on the default quantity. If the number of remaining tickets is greater than 0 but less than the {{variable.Field_EVItem_DefaultQtySelecti}} , all remaining tickets will be added to the cart. For example, if the number of remaining tickets is 3, but the {{variable.Field_EVItem_DefaultQtySelecti}} is “5,” then 3 tickets will be added to the cart. NOTE: When an Attendee purchases Tickets from their AttendeeLink, the default quantity will not be added to the cart. (The original behavior is unchanged.) {{snippet.EventItem_Checkout10orLess}} The {{variable.Object_Attendee}} enters their information. If available, they can add a promo {{variable.Object_Code}} . Everything you see here can be customized to create a unique checkout experience, including the language options in the {{variable.Feature_DataDictionary}} . The {{variable.Object_Attendee}} enters any additional contact information and clicks {{variable.Button_Register}} . You can decide which fields to include and which ones should be required. If you want to show the page that asks for additional contact/payment information, set the {{variable.Object_EventSettings}} ’ {{variable.Field_EVSetting_RemoInfoFreeEV}} field to “No.” The {{variable.Object_Attendee}} receives a successful registration message!. A thank you message and all the information needed to attend the {{variable.Object_Event}} will be sent to the {{variable.Field_Attendee_Email}} the {{variable.Object_Attendee}} entered in Step 3. Salesforce users can view the related {{variable.Object_Attendee}} information. The Attendance summaries and settings are also updated immediately. This allows you to see how many people have registered for the {{variable.Object_Event}} , how many have attended or canceled, and what the remaining capacity is.",
+  "keywords": [
+    "variable",
+    "object_attendee",
+    "tickets",
+    "event",
+    "cart",
+    "object_event",
+    "information",
+    "they",
+    "number",
+    "added",
+    "their",
+    "remaining",
+    "want",
+    "your",
+    "button_register",
+    "item",
+    "field_evitem_defaultqtyselecti",
+    "default",
+    "quantity",
+    "what"
+  ],
+  "category": "events",
+  "procedures": [
+    "3. Salesforce users can view the related {{variable"
+  ],
+  "troubleshooting": []
+}

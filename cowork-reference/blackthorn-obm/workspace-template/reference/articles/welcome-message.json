@@ -1,0 +1,30 @@
+{
+  "id": "welcome-message",
+  "title": "welcome-message.md",
+  "content": "## Metadata_Start ## code: en ## title: Welcome Message & RSVP ## slug: welcome-message ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Updated Field Name) The Salesforce field \"AttendeeLink Message\" on the Event object has been relabeled as \"AttendeeLink Invite Message\" to clarify the purpose of the field. ::: ## Welcome Message By default when {{variable.Object_Attendee}} {{variable.Field_Attendee_RegistratStatus}} = {{variable.Picklist_AttendeeReg_Invited}}, we provide a generic message that your {{variable.Object_Attendee}} will see when coming to your {{variable.Field_ETEvent_EventURL}} page. ![Welcome Message 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Welcome%20Message%201.png){height=\"\" width=\"\"} You can change the message by editing the {{variable.Field_ETEvent_AttenLinkInviMes}} field on your {{variable.Object_Event}} record. Modifying this field will replace all default text with the text you define. ![Welcome Message 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Welcome%20Message%202.png){height=\"\" width=\"\"} :::(Info) () If you don't see the AttendeeLink Invite Message field on your Event page, please edit the Event page layout and add the field. ::: You can also create a personalized custom welcome message with a registered {{variable.Object_Attendee}}’s {{variable.Field_ETAttendee_FirstName}} and {{variable.Field_ETAttendee_LastName}} on the {{variable.AttendeeLink}} with the [Data Dictionary](https://docs.blackthorn.io/docs/data-dictionary){target=`_blank`}. For example, if the {{variable.Field_DataDictEnt_Key}} = “MSG_REGISTRATION_CONFIRMED” and the {{variable.Field_DataDictEnt_Value}} = “Thanks for registering {{Attendee.FirstName}} {{Attendee.LastName}}!”, the {{variable.Object_Attendee}} will see “Thanks for registering (First Name) (Last Name)!” ## RSVP Allow your customers to quickly decide if they would like to accept the invitation. This is displayed at the top right of every {{variable.AttendeeLink}}. * Selecting \"Yes\" will take them directly to the {{variable.Object_EventItem}} (Ticket) selection page, or the pre-checkout page if a {{variable.Object_EventItem}} (Ticket) type is preselected. * Selecting \"No\" will update the {{variable.Object_Attendee}}'s {{variable.Field_Attendee_RegistratStatus}} to {{variable.Picklist_AttendeeReg_Declined}} automatically, along with a friendly message as such (default): * \"Sorry that you are not able to attend this event but we hope to see you at one of our next events! If you decide to attend our event, change your registration by registering for the event.\" * Clicking **Not {First Name}?** will take them back to the general {{variable.Field_ETEvent_EventURL}} overview page and decouple them from the invitation. :::(Info) (**Edit the Calendar Invite**) Customize the information, including the description and location, your Attendees see in the Calendar Invite that is sent after an Attendee clicks the **Add to Calendar** button. ::: ### Invite Only :::(Warning) (Hide \"Not {First Name}\" Button) Starting from Event version 2.23, you will be able to disable the **Not You** button from the RSVP message banner. A common use case for this is with invite-only Events and with Attendees forwarding invite emails to block other people from registering. ::: To disable the **Not {First Name}?** button, go to the {{variable.Object_EventSettings}} page, and make sure the {{variable.Field_ETETSettings_DisableNotY}} checkbox is checked. ![RSVP](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/RSVP.jpeg){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "message",
+    "welcome",
+    "field",
+    "event",
+    "invite",
+    "your",
+    "page",
+    "name",
+    "rsvp",
+    "attendeelink",
+    "object_attendee",
+    "https",
+    "registering",
+    "first",
+    "from",
+    "button",
+    "info",
+    "default",
+    "document360"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

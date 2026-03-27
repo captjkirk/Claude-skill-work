@@ -1,0 +1,30 @@
+{
+  "id": "creating-fsl-records",
+  "title": "creating-fsl-records.html",
+  "content": "Create a Work Order Create a Work Order Line Item The Magic of the Blackthorn FSL Extension When a Work Order Line Item is added to the Work Order and the Work Order Total Price &gt; 0 or Total Price changes, a new Open Transaction is automatically created. If an Open Transaction already existed, it is updated to reflect the Balance Due amount. Create a Service Appointment Service Appointments If \"Auto-Create Service Appointment\" is selected on a work type, a child service appointment is created when a Work Order or Work Order Line Item lists that work type. Check out the Salesforce Documentation on creating Service Appointments . Add a Service Resource View Records in the FSL Mobile App",
+  "keywords": [
+    "work",
+    "order",
+    "service",
+    "create",
+    "line",
+    "item",
+    "appointment",
+    "when",
+    "total",
+    "price",
+    "open",
+    "transaction",
+    "created",
+    "appointments",
+    "type",
+    "magic",
+    "blackthorn",
+    "extension",
+    "added",
+    "changes"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

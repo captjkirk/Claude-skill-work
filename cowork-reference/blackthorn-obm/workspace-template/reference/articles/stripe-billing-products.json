@@ -1,0 +1,41 @@
+{
+  "id": "stripe-billing-products",
+  "title": "stripe-billing-products.md",
+  "content": "## Metadata_Start ## code: en ## title: Products ## slug: stripe-billing-products ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Products can be created in Salesforce or Stripe. Products define what you sell. Before you can create a Price or Subscription you need to create a Product. :::(Info) (Product Permission Limitations) Product is a standard object so it is not included in the Stripe Billing permission set. If you would like users to create and edit product records be sure to add permissions to a custom permission set. Additionally, you can have System Administrators perform actions with products. ::: ## Add Important Fields to the Page Layout You'll want to add the following fields to your Product page layout: - `Product ID` - `Type` - `Payment Gateway` ## Creating a Product 1. Create a Salesforce Product or navigate to an existing one. 2. Set the `Payment Gateway` lookup field to an active Payment Gateway (click the lookup selector and select). 3. Set the `Type` picklist to Service.*Prices can be created only for products of type 'Service'.* 4. The Product will automatically be pushed to Stripe.*You'll know it worked if you see a `Product ID` field value populated within a couple of seconds.* ## Existing Stripe Products If you already have created products in Stripe, you can sync them with your Salesforce org. 1. Go to the Payment Gateway record. 2. Click `Sync with Stripe`. 3. New Products will be created in Salesforce. ## Retrigger the Action of Pushing to Stripe There may be some instances where the Product record did not automatically push to the Payment Gateway. For times like these we've added a button labeled `Push To Stripe`. This button works very much like the buttons with the same name on the Price and Subscription objects. 1. Add the `Push To Stripe` button to your Product page layout. 2. Navigate to the Product record you would like to add to the Payment Gateway. 3. Click `Push To Stripe` 4. On the next page push `Save`. 5. You should see a green success message if this worked. 6. You'll also notice that the `Product ID` field was populated. *Note: You cannot use the `Push To Stripe` button for Product updates. Those changes are not supported.* :::(Warning) (Product prices) Note that your Salesforce Product prices don't effect the Stripe Prices of your products. :::",
+  "keywords": [
+    "product",
+    "stripe",
+    "products",
+    "payment",
+    "gateway",
+    "push",
+    "salesforce",
+    "your",
+    "created",
+    "create",
+    "like",
+    "page",
+    "prices",
+    "button",
+    "permission",
+    "layout",
+    "type",
+    "field",
+    "click",
+    "record"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create a Salesforce Product or navigate to an existing one",
+    "2. Set the `Payment Gateway` lookup field to an active Payment Gateway (click the lookup selector and select)",
+    "3. Set the `Type` picklist to Service",
+    "4. The Product will automatically be pushed to Stripe",
+    "1. Go to the Payment Gateway record",
+    "2. Click `Sync with Stripe`",
+    "3. New Products will be created in Salesforce",
+    "1. Add the `Push To Stripe` button to your Product page layout",
+    "2. Navigate to the Product record you would like to add to the Payment Gateway",
+    "3. Click `Push To Stripe` 4"
+  ],
+  "troubleshooting": []
+}

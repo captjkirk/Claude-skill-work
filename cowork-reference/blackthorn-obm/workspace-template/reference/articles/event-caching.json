@@ -1,0 +1,44 @@
+{
+  "id": "event-caching",
+  "title": "event-caching.md",
+  "content": "## Metadata_Start ## code: en ## title: Event Caching ## slug: event-caching ## seoTitle: Event Caching ## description: ## contentType: Markdown ## Metadata_End :::(Error) (Upgrade to Caching 2.0) As of the March 5, 2025 release, Caching 2.0 is turned on automatically. To ensure the upgrade is successful, you must use the {{variable.Link_CandyShop}} to upgrade the February release. If you believe you need to use a direct link, please contact {{variable.Link_BlackthornSupport}}. They can provide you with the script and instructions for performing the process manually. ::: ## What is Caching? Caching is a technique that stores a copy of a given resource and serves it back when requested. When a web cache has a requested resource in its store, it intercepts the request and returns its copy instead of re-downloading from the originating server. This achieves several goals: it eases the load of the server that doesn’t need to serve all clients itself, and it improves performance by being closer to the client, i.e., it takes less time to transmit the resource back. For a website, it is a major component in achieving high performance. On the other side, it has to be configured properly as not all resources stay identical forever: it is important to cache a resource only until it changes, not longer. ## How does Blackthorn Events Handle Caching? Blackthorn uses several caching mechanisms to deliver the best performance we can at this time. As we grow, we will identify better scenarios to serve a larger customer basis. :::(Warning) (FAQ: How many Events and Event Groups can be active per org?) The Events app supports a maximum of 1000 Event Groups with 1000 published Events per Group. Event Groups with more than 1000 published Events will cause an Error 2006 on the Event Group. ::: ### Manage Caching Requests To prevent multiple cache requests from being sent in a short amount of time after an {{variable.Object_Event}} has been modified, the Blackthorn | Events Cache Refresh (NotifyPlatformToRefreshCacheBatch) apex batch job was created. To enable the new cache batch updates, perform the following steps. 1. Go to the {{variable.Tab_ET_BTEventAdmin}} page. 2. Click the {{variable.Tab_BTPTAdmin_ScheduledJobs}} tab. 3. Click **Schedule Event Cache Refresh Job**. 5. Enter the frequency for the job to occur. The default frequency is 15 minutes. To disable the job, go to the {{variable.Tab_BTPTAdmin_ScheduledJobs}} tab on the {{variable.Tab_ET_BTEventAdmin}} page. Alternatively, you can use the {{variable.CS_BlackthornEventSettings}}’ {{variable.CS_EVSett_DisableNotifPlatform}} custom setting to disable the caching triggers. When {{variable.CS_EVSett_DisableNotifPlatform}} is checked, the {{variable.Product_Events}} platform won't be notified when an {{variable.Object_Event}} or related record is changed because the Blackthorn | Events Cache Refresh (NotifyPlatformToRefreshCacheBatch) job will disable the triggers, not the batch job. (The job will still appear with the Apex Jobs.) Complete the following steps to enable the {{variable.CS_EVSett_DisableNotifPlatform}} custom setting. 1. Navigate to Setup. 2. In the Quick Find box, enter and click “Custom Settings”. 3. Click {{variable.Button_SF_Manage}} next to {{variable.CS_BlackthornEventSettings}}. 4. Click {{variable.Button_SF_Edit}}. 5. Set {{variable.CS_EVSett_DisableNotifPlatform}} = \"True\" (checked). 6. Click {{variable.Button_Save}}. ### Create an Event The cache will be refreshed instantly. This means if an event is published or not, it will reflect accordingly on the front end. ### Update an Event Updates to the following objects will trigger a refresh. Please keep in mind updating certain fields will not trigger a refresh. If a refresh is not triggered, click the **Update** button on the {{variable.Component_EventPublish}} component on the {{variable.Object_Event}} page. Updating the following objects will trigger a refresh: * {{variable.Object_Event}} * {{variable.Object_Speaker}} * {{variable.Object_Sponsor}} * {{variable.Object_Session}} * {{variable.Object_SessionAttendee}} * {{variable.Object_Attendee}} * {{variable.Object_EventContent}} * {{variable.Object_CustomTab}} * {{variable.Object_EventFAQ}} * {{variable.Object_EventKeyword}} * {{variable.Object_Track}} * {{variable.Object_Form}} * {{variable.Object_FormBigListGroup}} * {{variable.Object_DataDictionaryEntry}} ### Change the Event’s Status If an {{variable.Object_Event}} is Published AND the {{variable.Field_ETEvent_Status}} = **{{variable.Picklist_ETStatus_Active}} or {{variable.Picklist_ETStatus_Draft}},** the {{variable.Object_Event}} is visible and cached. If an {{variable.Object_Event}} is Published AND the {{variable.Field_ETEvent_Status}} is changed to **{{variable.Picklist_Event_Status_Complete}} or {{variable.Picklist_Event_Status_Canceled}}**, the {{variable.Object_Event}} will be removed from the cache after the invalidation webhook runs successfully or someone does a hard refresh on the {{variable.Object_Event}} or {{variable.Object_EventGroup}} page. The {{variable.Object_Event}} will no longer be visible.",
+  "keywords": [
+    "variable",
+    "event",
+    "caching",
+    "object_event",
+    "cache",
+    "refresh",
+    "events",
+    "click",
+    "published",
+    "resource",
+    "when",
+    "blackthorn",
+    "following",
+    "page",
+    "cs_evsett_disablenotifplatform",
+    "upgrade",
+    "from",
+    "performance",
+    "time",
+    "groups"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to the {{variable",
+    "2. Click the {{variable",
+    "3. Click **Schedule Event Cache Refresh Job**",
+    "5. Enter the frequency for the job to occur",
+    "1. Navigate to Setup",
+    "2. In the Quick Find box, enter and click “Custom Settings”",
+    "3. Click {{variable",
+    "4. Click {{variable",
+    "5. Set {{variable",
+    "6. Click {{variable"
+  ],
+  "troubleshooting": [
+    "Error) (Upgrade to Caching 2.",
+    "Error 2006 on the Event Group."
+  ]
+}

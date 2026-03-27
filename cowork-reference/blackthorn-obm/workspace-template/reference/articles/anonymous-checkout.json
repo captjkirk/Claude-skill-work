@@ -1,0 +1,39 @@
+{
+  "id": "anonymous-checkout",
+  "title": "anonymous-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Anonymous Checkout ## slug: anonymous-checkout ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You can check out {{variable.Object_Attendee}}s without defining any of their information (name, email address, etc.) using our guest checkout process! **Example Use Case** I am a student registering for a campus {{variable.Object_Event}}, the Event Organizer doesn't require {{variable.Object_Attendee}} information, but simply needs an idea of how many {{variable.Object_Attendee}}s will show up to the {{variable.Object_Event}}. ## Setup 1. Create an {{variable.Object_Event}}. 2. Create a new {{variable.Object_EventItem}}. 3. Set {{variable.Field_ETEventItem_Type}} = {{variable.Picklist_ETEventItem_Mainevent}}. 4. Mark all Attendee Form fields as \"Hide\". 5. Done! ![D_6_10_setup](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/D_6_10_setup.png){height=\"\" width=\"\"} ## Anonymous Checkout 1. Navigate to the {{variable.Field_ETEvent_EventURL}} page. 2. Select the {{variable.Object_EventItem}}s to purchase. An {{variable.Object_Attendee}} may register for an {{variable.Object_Event}} with paid {{variable.Object_EventItem}}s, free {{variable.Object_EventItem}}s, or when the Pay Later option is available. ![D_6_10_checkout 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/D_6_10_checkout%201.png){height=\"\" width=\"\"} {{snippet.EventItem_Checkout10orLess}} ![D_6_10_checkout 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/D_6_10_checkout%202.png){height=\"\" width=\"\"} 3. Once an Attendee completes registration, an {{variable.Object_Attendee}} record will be made in Salesforce. This record will have no contact information for the {{variable.Object_Attendee}}.",
+  "keywords": [
+    "variable",
+    "object_attendee",
+    "checkout",
+    "object_event",
+    "object_eventitem",
+    "d_6_10_checkout",
+    "anonymous",
+    "information",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "create"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Create an {{variable",
+    "2. Create a new {{variable",
+    "3. Set {{variable",
+    "4. Mark all Attendee Form fields as \"Hide\"",
+    "5. Done! ![D_6_10_setup](https://cdn",
+    "1. Navigate to the {{variable",
+    "2. Select the {{variable",
+    "3. Once an Attendee completes registration, an {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rest-and-apex-api-documentation",
+  "title": "rest-and-apex-api-documentation.md",
+  "content": "## Metadata_Start ## code: en ## title: REST and Apex API Documentation ## slug: rest-and-apex-api-documentation ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Blackthorn no longer supports Payments APIs.) The documentation provided is a self-help resource for legacy implementations only. ::: Blackthorn provides multiple APIs to give you the most flexibility for custom implementations. Please go to our [repository](https://github.com/blackthornio/documentation){target=\"_blank\"} to see all of our APIs along with some working examples.",
+  "keywords": [
+    "documentation",
+    "apis",
+    "rest",
+    "apex",
+    "blackthorn",
+    "implementations",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "warning",
+    "longer",
+    "supports",
+    "payments",
+    "provided"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

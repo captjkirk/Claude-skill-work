@@ -1,0 +1,30 @@
+{
+  "id": "msg-ss-messaging-apps-not-installed",
+  "title": "msg-ss-messaging-apps-not-installed.md",
+  "content": "## Metadata_Start ## code: en ## title: Messaging App Is Not Installed ## slug: msg-ss-messaging-apps-not-installed ## seoTitle: Messaging App Is Not Installed ## description: ## contentType: Markdown ## Metadata_End ### Scheduler Admin If the BT Messaging App is not installed in your Salesforce org, a warning message tells the user to install the app in the Global Scheduler. ![MessagingAppNotInstalled_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotInstalled_1.png){height=\"\" width=\"\"} If the BT Messaging App is not installed in your Salesforce org, a warning message tells the user to install the app in the Event Record Page Scheduler. ![MessagingAppNotInstalled_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotInstalled_2.jpg){height=\"\" width=\"\"} ### Scheduler User The Scheduler User does not have access to the Administration Settings. When they land on the Record Level Scheduler, a warning message tells them to contact the System Administrator. ![MessagingAppNotInstalled_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/MessagingAppNotInstalled_3.jpg){height=\"\" width=\"\"}",
+  "keywords": [
+    "scheduler",
+    "messaging",
+    "installed",
+    "user",
+    "warning",
+    "message",
+    "tells",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "your",
+    "salesforce"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

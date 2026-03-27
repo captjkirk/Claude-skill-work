@@ -1,0 +1,30 @@
+{
+  "id": "use-flow-to-automate-outbound-text-messages",
+  "title": "use-flow-to-automate-outbound-text-messages.md",
+  "content": "## Metadata_Start ## code: en ## title: Use Flow to Automate Outbound Text Messages ## slug: use-flow-to-automate-outbound-text-messages ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Watch this video tutorial on using Blackthorn Messaging’s invocable apex action in a Flow to send automated text messages. In this example, we'll build a daily recurring \"Happy Birthday\" text message. The Flow will run every day and send a text to any Contacts who have a birthday on that day.",
+  "keywords": [
+    "text",
+    "flow",
+    "messages",
+    "automate",
+    "outbound",
+    "send",
+    "birthday",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "watch",
+    "video",
+    "tutorial",
+    "using"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

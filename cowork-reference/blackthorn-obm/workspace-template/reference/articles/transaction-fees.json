@@ -1,0 +1,43 @@
+{
+  "id": "transaction-fees",
+  "title": "transaction-fees.md",
+  "content": "## Metadata_Start ## code: en ## title: Transaction Fees ## slug: transaction-fees ## seoTitle: Transaction Fees ## description: ## contentType: Markdown ## Metadata_End ## Important Fields Several fields calculate certain fees for charge {{variable.Object_Transaction}}s. - {{variable.Field_Transaction_PayGatewaFee}}: This is the fee from your {{variable.Object_PaymentGateway}} for successful {{variable.Object_Transaction}}s. *The fee amount is based on your {{variable.Object_PaymentGateway}} plan.* - {{variable.Field_Transaction_RefundPGFee}}: This is the refunded {{variable.Object_PaymentGateway}} fee amount if your {{variable.Object_Transaction}} was fully or partially refunded. *As of November 2017, {{variable.Product_Stripe}} stopped refunding fees for new customers.* - {{variable.Field_Transaction_NetPayGatFee}}: This is the sum of the {{variable.Field_Transaction_PayGatewaFee}} minus the {{variable.Field_Transaction_RefundPGFee}}. - {{variable.Field_Transaction_ApplicatiFee}} ({{variable.Feature_StripeConnect}} only): The platform's application fee for direct charges from a {{variable.Feature_StripeConnect}} account. - {{variable.Field_Transaction_RefundAppFee}} ({{variable.Feature_StripeConnect}} only): This is the refunded application fee amount if your {{variable.Object_Transaction}} was fully or partially refunded. - {{variable.Field_Transaction_NetAppicaFee}} ({{variable.Feature_StripeConnect}} only): This is the sum of the {{variable.Field_Transaction_ApplicatiFee}} minus the {{variable.Field_Transaction_RefundAppFee}}. - {{variable.Field_Transaction_NetAmount}}: This is the amount you receive after subtracting {{variable.Field_Transaction_PayGatewaFee}} and {{variable.Field_Transaction_ApplicatiFee}} fees. - {{variable.Field_Transaction_RetainNetAmt}}: This is the amount you receive after subtracting {{variable.Field_Transaction_PayGatewaFee}} and {{variable.Field_Transaction_ApplicatiFee}} fees plus any refunds. *This amount may be negative if you performed a full refund and the {{variable.Object_PaymentGateway}} fees were not refunded.* ![H_01_12_transaction fees](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_01_12_transaction%20fees.png){height=\"\" width=\"\"} ## Currency Conversion with Stripe When processing {{variable.Object_Transaction}}s in a currency other than the one your bank account uses in {{variable.Product_Stripe}}, you will see the exchange rate and converted amount populate on the {{variable.Object_Transaction}} records. You can add two fields to your page layout or include them in reports. * {{variable.Field_Transaction_ExchangeRate}} * {{variable.Field_Transaction_CurConPayAmt}} ### Exchange Rate Example 1. My {{variable.Product_Stripe}} {{variable.Object_PaymentGateway}} is in USD. 2. My {{variable.Object_Transaction}} is in CAD. 3. The {{variable.Field_Transaction_ExchangeRate}} will populate with \"0.74\". (0.74 is the current value of CAD to USD.) ### Currency Conversion Payout Amount Example 1. My {{variable.Product_Stripe}} {{variable.Object_PaymentGateway}} is in USD. 2. My {{variable.Object_Transaction}} is in CAD. 3. I charge a customer CAD 100. 4. The {{variable.Field_Transaction_ExchangeRate}} will populate with \"0.74\". 5. I will receive \"$74\" in the {{variable.Field_Transaction_CurConPayAmt}} field. ## Troubleshooting If you have received an error with your {{variable.Object_Transaction}}s or have a question, please view our [Troubleshooting](/v1/docs/troubleshooting-payments) page.",
+  "keywords": [
+    "variable",
+    "fees",
+    "object_transaction",
+    "amount",
+    "your",
+    "object_paymentgateway",
+    "refunded",
+    "field_transaction_paygatewafee",
+    "product_stripe",
+    "field_transaction_applicatifee",
+    "feature_stripeconnect",
+    "transaction",
+    "fields",
+    "only",
+    "receive",
+    "currency",
+    "populate",
+    "field_transaction_exchangerate",
+    "troubleshooting",
+    "charge"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. My {{variable",
+    "2. My {{variable",
+    "3. The {{variable",
+    "1. My {{variable",
+    "2. My {{variable",
+    "3. I charge a customer CAD 100",
+    "4. The {{variable",
+    "5. I will receive \"$74\" in the {{variable"
+  ],
+  "troubleshooting": [
+    "error with your {{variable.",
+    "Troubleshooting If you have received an error with your {{variable.",
+    "Troubleshooting](/v1/docs/troubleshooting-payments) page."
+  ]
+}

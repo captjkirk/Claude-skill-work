@@ -1,0 +1,40 @@
+{
+  "id": "high-volume-batch-processing",
+  "title": "high-volume-batch-processing.md",
+  "content": "## Metadata_Start ## code: en ## title: High Volume Batch Processing ## slug: high-volume-batch-processing ## seoTitle: High Volume Batch Processing ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Opt-In Process) High-volume batch processing is now available. If you want to enable the feature, please contact {{variable.Link_BlackthornSupport}}. There is no additional cost. Support will guide you through testing in a sandbox before determining the final value for the batch size setting. The value is based on the specific customizations in your org. ::: High-volume batch processing enables the scalability of our batch processes. The new logic queries high volumes of {{variable.Object_Transaction}}s, splits the results, and invokes concurrent batches. Previously, the batch processes were limited to one record at a time to ensure that {{variable.Product_Payments}} was compliant with {{variable.Product_Salesforce}}'s limits. The new protected custom setting, {{variable.Field_PT_AutoChargeBatchSize}} (Auto_Charge_Batch_Size__c), controls the batch size of the scheduled job. The default setting is 1. Currently, the maximum supported value is 75. ## About the Schedule High Volume Transaction Job Button The **Schedule High Volume Transaction Job** button is located on the Blackthorn | Payments Admin page’s Scheduled Job tab. * The **Schedule High Volume Transaction Job** button is available when the auto charge batch size exceeds 1. * The **Schedule Billing Jobs** button is visible when Stripe Billing is enabled through a future date. * The **Schedule High Volume Transaction Job** button is hidden when the batch size resets to 1. * When the **Schedule High Volume Transaction Job** button is clicked, the Blackthorn | Payments Daily Captures - High Volume scheduled job will replace the Blackthorn | Payments Daily Captures job and will run at midnight. ## Schedule the Blackthorn | Payments Daily Captures – High Volume Scheduled Job Click the **Schedule High Volume Transaction Job** button to trigger the Blackthorn | Payments Daily Captures – High Volume scheduled job and schedule {{variable.Object_Transaction}} auto-charge batches using the batch size determined during testing. You should see the “Success High Volume Transaction Job has been scheduled” success message. To confirm that the scheduled job has been scheduled, complete the following steps. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, enter and click “Scheduled Jobs.” 4. Verify that the Blackthorn | Payments Daily Captures scheduled job has been deleted and replaced with the Blackthorn | Payments Daily Captures - High Volume scheduled job. 5. Confirm that the Blackthorn | Payments Daily Captures - High Volume scheduled job is scheduled to run at midnight.",
+  "keywords": [
+    "high",
+    "volume",
+    "scheduled",
+    "batch",
+    "schedule",
+    "variable",
+    "blackthorn",
+    "payments",
+    "transaction",
+    "button",
+    "daily",
+    "captures",
+    "processing",
+    "size",
+    "when",
+    "click",
+    "value",
+    "setting",
+    "available",
+    "through"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Currently, the maximum supported value is 75",
+    "1. * The **Schedule Billing Jobs** button is visible when Stripe Billing is enabled through a future date",
+    "1. * When the **Schedule High Volume Transaction Job** button is clicked, the Blackthorn | Payments Daily Captures - High Volume scheduled job will replace the Blackthorn | Payments Daily Captures job and will run at midnight",
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. In the Quick Find box, enter and click “Scheduled Jobs",
+    "4. Verify that the Blackthorn | Payments Daily Captures scheduled job has been deleted and replaced with the Blackthorn | Payments Daily Captures - High Volume scheduled job",
+    "5. Confirm that the Blackthorn | Payments Daily Captures - High Volume scheduled job is scheduled to run at midnight",
+    "* When the **Schedule High Volume Transaction Job** button is click"
+  ],
+  "troubleshooting": []
+}

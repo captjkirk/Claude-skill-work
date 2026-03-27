@@ -1,0 +1,47 @@
+{
+  "id": "stripe-checkout",
+  "title": "stripe-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Checkout ## slug: stripe-checkout ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Stripe Checkout is a solution prepackaged from Stripe. We've added an integration so users will be able to utilize its functionality right from Salesforce. Read more about Stripe Checkout [here](https://stripe.com/payments/checkout){target=\"_blank\"}. ![H_02_18_Stripe checkout 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_18_Stripe%20checkout%201.png){height=\"\" width=\"\"} ## Prerequisites 1. Contact {{variable.Link_BlackthornSupport}} to share your org ID. Support will use it to enable Stripe Checkout from the backend. This applies to both Sandbox and Production. 2. The PayLink package must be installed and configured in your org. Use the Payments Setup Wizard to install PayLink if you haven't already. 3. Stripe Checkout must be used with {{variable.Object_PaymentGateway}}s with the {{variable.Field_PaymentGateway_Provider}} set to \"Stripe\". ## Configure PayLink ### Add Stripe Checkout to the PayLink Configuration Object {{snippet.StripeChkout_ConfPG_AddToPLObj}} ### Set the Value on the Paylink Configuration Record {{snippet.StripeChkout_ConfPG_SetValue}} ## Configure the Payment Gateway ### Update Your Page Layout {{snippet.StripeChkout_ConfPG_PageLayout}} ### Set Values on the Payment Gateway Object {{snippet.StripeChkout_ConfPG_SetValues}} ## Add Permissions to Access Encrypted Data {{snippet.StripeChkout_ConfPG_encryptda}} ## Assign the Proper Page Layout to the Corresponding Record Type {{snippet.StripeChkout_ConfPG_asnpglayou}} ## Setup Webhooks If you haven't already setup webhooks in your org you'll want to do this. Stripe Checkout utilizes data that is brought into the org via webhooks. Related records like Payment Method and Payment Gateway Customer are attached to the Transaction **AFTER** the webhooks process. Check out this guide for setting up [Webhooks](/v1/docs/webhooks). ## Enable SCA If you are using [Strong Customer Authentication (SCA)](https://docs.blackthorn.io/docs/sca){target=`_blank`} and Stripe Checkout with Events, you must also enable the SCA feature. {{snippet.SCA_Setup}} ## Access Stripe Checkout from PayLink 1. Create a Transaction record. 2. At a minimum set the following: - {{variable.Field_Transaction_Amount}} - {{variable.Field_Transaction_PaymentGatew}} (Must be a Payment Gateway connected to Stripe) - {{variable.Field_Transaction_PayLinkConfi}} (Must be the PayLink Configuration with Stripe Checkout set as an {{variable.Field_PayLinkConfig_AllowedPM}}.) 3. Click the PayLink URL populated in the {{variable.Field_Transaction_PayLink}} field. ## Complete a Stripe Checkout with PayLink 1. Wait for the PayLink page to load. 2. Click **PAY**. 3. Wait for Stripe Checkout to load. 4. Complete the Stripe Checkout form. 5. Observe the success page. 6. Observe the Paylink fields \"Amount Paid\" and \"Paid on\" are displayed. *Quick Help: If you aren’t redirected to Stripe Checkout after clicking **PAY** from the PayLink, you may need to reauthorize your Payment Gateway. Open the related Payment Gateway record and click **Connect to Gateway**.* ## Stripe Checkout Considerations ### Existing Payment Methods Currently, {{variable.Object_PaymentMethod}} records created in Stripe Checkout cannot be reused for additional {{variable.Object_Transaction}}s or updated through Blackthorn. This includes capturing an authorized one-time payment. We understand this does not create a new {{variable.Object_Transaction}}, but it does change the status of an existing one-time payment. Therefore, these are considered \"one-time\" {{variable.Object_PaymentMethod}}s, which can only be refunded through Blackthorn Payments. ### Stripe Payment Method Types The {{variable.Object_PaymentMethod}} object includes the {{variable.Field_PM_Type}} field, which identifies the payment method type used for Stripe Checkout. This field differs from the {{variable.Object_PaymentMethod}}’s {{variable.Field_PM_RecordType}} field. For example, say you use iDEAL to complete a Stripe Checkout transaction. After the {{variable.Object_PaymentMethod}} record is created and the webhook has been processed, you will see that the {{variable.Object_PaymentMethod}}’s {{variable.Field_PM_RecordType}} = \"Other\" and {{variable.Field_PM_Type}} = \"Ideal.\" [Click here](https://docs.stripe.com/payments/payment-methods/overview){target=`_blank`} to see a list of Stripe-supported payment method types. We are working to incorporate most of the Stripe-supported payment method types into our solution; however, we will not support AfterPay / ClearPay. ### Apple Pay and Google Pay In order to see the option for Apple Pay or Google Pay in Stripe Checkout you must be viewing Stripe Checkout from a supported device. Discover more about wallets [here](https://stripe.com/docs/payments/wallets){target=\"_blank\"}. Example: To view the **Apple Pay** button in Stripe Checkout you must be using an iOS device AND have your Apple Wallet configured. ## Currency Errors If, while using Stripe Checkout, you encounter and error on the {{variable.Object_Transaction}} record that refers to currency there is a workaround available while we develop a long-term solution. Currently, only USD, EUR, and GBP are added to the package as values available on the Payment Intent object. You'll need to add values following the instructions below for any currency outside of those values. What you'll see on the {{variable.Object_Transaction}} record: - {{variable.Field_Transaction_ErrorMessage}} = \"Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Currency: bad value for restricted picklist field: cny: [bt_stripe_Currency_c]\" - {{variable.Field_Transaction_ErrorParamet}} = \"The Transaction/Payment Intent was captured in Stripe but failed to save correctly in Salesforce.\" The above errors were displayed when attempting to use Stripe Checkout with the AliPay Payment Method {{variable.Field_PM_Type}} and a {{variable.Object_Transaction}} with the {{variable.Field_Transaction_CurrencyISO}} = \"CNY\". **How Do You Resolve?** You'll want to add the desired currency value to the {{variable.Field_PaymentIntent_Currency}} picklist on the Payment Intent object. 1. Navigate to Setup -> Object Manager -> Payment Intent -> Fields & Relationships -> Currency. 2. Click {{variable.button_new}} in the Values section. 3. Add the {{variable.Field_PaymentIntent_Currency}} value to the list of picklist values. (ex: \"CNY\") 4. Click {{variable.Button_Save}}. ![H_02_18_Stripe checkout 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_18_Stripe%20checkout%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "stripe",
+    "variable",
+    "checkout",
+    "payment",
+    "paylink",
+    "from",
+    "must",
+    "snippet",
+    "record",
+    "gateway",
+    "https",
+    "your",
+    "object",
+    "values",
+    "webhooks",
+    "method",
+    "click",
+    "object_paymentmethod",
+    "currency",
+    "payments"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Contact {{variable",
+    "2. The PayLink package must be installed and configured in your org",
+    "3. Stripe Checkout must be used with {{variable",
+    "1. Create a Transaction record",
+    "2. At a minimum set the following: - {{variable",
+    "3. Click the PayLink URL populated in the {{variable",
+    "1. Wait for the PayLink page to load",
+    "2. Click **PAY**",
+    "3. Wait for Stripe Checkout to load",
+    "4. Complete the Stripe Checkout form"
+  ],
+  "troubleshooting": [
+    "Errors If, while using Stripe Checkout, you encounter and error on the {{variable.",
+    "ErrorMessage}} = \"Insert failed.",
+    "error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Currency: bad value for restricted picklist field: cny: [bt_stripe_Currency_c]\" - {{variable.",
+    "ErrorParamet}} = \"The Transaction/Payment Intent was captured in Stripe but failed to save correctly in Salesforce.",
+    "errors were displayed when attempting to use Stripe Checkout with the AliPay Payment Method {{variable."
+  ]
+}

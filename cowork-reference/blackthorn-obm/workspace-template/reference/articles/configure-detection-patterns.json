@@ -1,0 +1,41 @@
+{
+  "id": "configure-detection-patterns",
+  "title": "configure-detection-patterns.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Configure Detection Patterns ## slug: configure-detection-patterns ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End 1. Select the tab “Detection Patterns”. ![Detection Patterns Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Detection%20Patterns%20Tab.png){height=\"\" width=\"\"} 2. Click on the specific Detection Pattern Name. ![amex](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/amex.png){height=\"\" width=\"\"} 3. If you’re already in the Setup, navigate to: Setup > Custom Code > Custom Metadata Types > DetectionPattern > Manage DetectionPattern. 4. You should see a list of Detection Patterns. Click **Edit** on the Pattern you wish to configure. ![Edit the Pattern](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Edit%20the%20Pattern.png){height=\"\" width=\"\"} 5. Enter a Pattern. This pattern must be a ***valid*** Regular Expression. Try a free tool like [this](https://regexr.com/){target=\"_blank\"} to check whether your regex is valid. 6. Select Mask Character. Enter any single character you want to mask PII numbers with - the default is an asterix (e.g. AMERICANEXPRESS****) but you could use an X, #, @, or any other single character you need. 7. Select Mask Type. * \"Full Mask\": all characters are masked * \"Last4\": all credit card number characters are masked but the last 4 characters (AMERICANEXPRESS****1234) * \"First6andLast4\": all credit card number characters are masked but the first 6 and the last 4 characters (AMERICANEXPRESS123456**1234) 8. If the pattern is for credit card numbers, check the box `LuhnCheck`. * When this box is checked, all numbers matching this pattern will go through a Luhn algorithm check for credit card number validity. * If this box is unchecked, all numbers matching this pattern will skip the Luhn algorithm. :::(Info) (What is Luhn algorithm?) The Luhn algorithm, also known as the modulus 10 or mod 10 algorithm, is a simple checksum formula used to validate a variety of identification numbers, such as credit card numbers, IMEI numbers, Canadian Social Insurance Numbers. ::: 9. Check the box `IsActive`. 10. Press {{variable.Button_Save}}. **Tip:** It is recommended that you only store the minimum amount of credit card digits you need to verify customer accounts.",
+  "keywords": [
+    "pattern",
+    "numbers",
+    "detection",
+    "credit",
+    "card",
+    "patterns",
+    "characters",
+    "algorithm",
+    "https",
+    "check",
+    "mask",
+    "luhn",
+    "configure",
+    "select",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Select the tab “Detection Patterns”",
+    "2. Click on the specific Detection Pattern Name",
+    "3. If you’re already in the Setup, navigate to: Setup > Custom Code > Custom Metadata Types > DetectionPattern > Manage DetectionPattern",
+    "4. You should see a list of Detection Patterns",
+    "5. Enter a Pattern",
+    "6. Select Mask Character",
+    "7. Select Mask Type",
+    "8. If the pattern is for credit card numbers, check the box `LuhnCheck`",
+    "9. Check the box `IsActive`",
+    "10. Press {{variable"
+  ],
+  "troubleshooting": []
+}

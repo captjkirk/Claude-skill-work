@@ -1,0 +1,41 @@
+{
+  "id": "payments-set-up-virtual-terminal",
+  "title": "payments-set-up-virtual-terminal.md",
+  "content": "## Metadata_Start ## code: en ## title: Virtual Terminal ## slug: payments-set-up-virtual-terminal ## seoTitle: Virtual Terminal ## description: ## contentType: Markdown ## Metadata_End The {{variable.Component_VirtualTerminal}} feature gives users the ability to collect payments from almost anywhere including: * Lightning Experience Sidebar * Lightning Experience Utility Bar * Salesforce Classic * Salesforce1 Mobile App Check out this [overview video](https://youtu.be/gbifQkBgCZw){target=\"_blank\"} to learn how to use the Virtual Terminal. ## Set Up the Virtual Terminal in Salesforce Lightning Before you can test the {{variable.Component_BTPayVirtualTerminal}} component, you need to add it to your {{variable.Product_Salesforce}} org. There are several places you can add this component. If you want to take a payment from an {{variable.Object_Opportunity}}, add the {{variable.Component_VirtualTerminal}} to the {{variable.Object_Opportunity}} page layout. Or if you want to take payment from the {{variable.Object_Invoice}} object, add it to the {{variable.Object_Invoice}} page layout. While the steps to add the {{variable.Component_BTPayVirtualTerminal}} are the same, it's a good idea to decide where to put it first. Complete the steps below to set up the {{variable.Component_BTPayVirtualTerminal}} in Salesforce Lightning. 1. Navigate to the record where you want to place the {{variable.Component_BTPayVirtualTerminal}}. 2. Click the {{variable.Button_GearIcon}}. 4. Click **Edit Page**. 5. On the left-hand side, select the {{variable.Component_BTPayVirtualTerminal}} Visualforce component and drag and drop it into the Related column. 6. Set the {{variable.Field_VTPgLayout_VirtuaFPgName}} = \"Virtual Terminal\". 7. Set the {{variable.Field_VTPgLayout_Heightpixels}} = “660”. 8. Click {{variable.Button_Save}}. To add the {{variable.Component_VirtualTerminal}} to any page layout, the Salesforce Mobile App, the Lightning Utility Bar, or your {{variable.Feature_ExperienceCloud}}, click [here](https://docs.blackthorn.io/docs/vt-setup){target=\"_blank\"}. ## Customize the Virtual Terminal Now that the {{variable.Component_BTPayVirtualTerminal}} is added to your page layout, you can perform customizations that will make it even more powerful. There are two types of customizations you can perform. * Click [here](https://docs.blackthorn.io/docs/vt-pre-populate-fields) to learn about pre-filling the fields. * Click [here](https://docs.blackthorn.io/docs/vt-access-virtual-terminal-custom-settings) to learn about setting default values/actions for each field. ## Allowlist your Domain for the Virtual Terminal When using the {{variable.Component_VirtualTerminal}}, you are required to allowlist any custom domains you are using. This allows Salesforce to enable your domain for Visualforce Inline Frames. 1. Click the {{variable.Button_GearIcon}}. 2. Click {{variable.Button_Setup}}. 3. In the Quick Find box, search for and click \"Session Setting\". 4. Under the Trusted Domains for Inline Frames section, click **Add Domain**. 5. Enter \"https://.lightning.force.com\". (Example: if your domain-instance-name is \"blackthornio\", the new domain will be https://blackthornio.lightning.force.com) 6. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "variable",
+    "click",
+    "virtual",
+    "terminal",
+    "lightning",
+    "https",
+    "component_btpayvirtualterminal",
+    "your",
+    "docs",
+    "salesforce",
+    "page",
+    "domain",
+    "component_virtualterminal",
+    "layout",
+    "from",
+    "learn",
+    "component",
+    "want",
+    "here",
+    "blackthorn"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Navigate to the record where you want to place the {{variable",
+    "2. Click the {{variable",
+    "4. Click **Edit Page**",
+    "5. On the left-hand side, select the {{variable",
+    "6. Set the {{variable",
+    "7. Set the {{variable",
+    "8. Click {{variable",
+    "1. Click the {{variable",
+    "2. Click {{variable",
+    "3. In the Quick Find box, search for and click \"Session Setting\""
+  ],
+  "troubleshooting": []
+}

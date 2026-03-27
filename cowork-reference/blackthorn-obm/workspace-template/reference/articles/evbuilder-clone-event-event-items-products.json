@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-clone-event-event-items-products",
+  "title": "evbuilder-clone-event-event-items-products.md",
+  "content": "## Metadata_Start ## code: en ## title: Products ## slug: evbuilder-clone-event-event-items-products ## seoTitle: Products ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Product_CloneEdit_1}} ## Edit or Delete a Product {{snippet.EVBuilder_Product_CloneEdit_ED}} ## Create a Product {{snippet.EVBuilder_Product_CloneEdit_AD}} ## Other Settings ### Sort Order To [change the order](https://docs.blackthorn.io/docs/event-items-overview#sort-event-items){target=`_blank`} of the {{variable.Object_EventItem}}s on the registration page, add the {{variable.Field_EventItem_SortOrder}} field to the {{variable.Object_EventItem}} object and enter a value. ### Separate from Tickets {{snippet.DisplayDonationProductSeparate}} Click [here](/v1/docs/evbuilder-clone-event-event-items-tickets) to add Tickets or click [here](/v1/docs/evbuilder-clone-event-event-items-donations) to add Donations.",
+  "keywords": [
+    "event",
+    "items",
+    "snippet",
+    "docs",
+    "products",
+    "evbuilder",
+    "clone",
+    "variable",
+    "tickets",
+    "product",
+    "sort",
+    "order",
+    "object_eventitem",
+    "click",
+    "here",
+    "donations",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

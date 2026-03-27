@@ -1,0 +1,30 @@
+{
+  "id": "test-your-stripe-payment-gateway",
+  "title": "test-your-stripe-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Test Your Stripe Payment Gateway ## slug: test-your-stripe-payment-gateway ## seoTitle: Test Your Stripe Payment Gateway ## description: ## contentType: Markdown ## Metadata_End {{snippet.PGSetup_TestStripe_Intro}} ## Test a Stripe Card {{snippet.PGSetup_TestStripePG_Card}} ## Test a Stripe ACH Bank Account {{snippet.PGSetup_TestStripePG_ACHBankAccount}}",
+  "keywords": [
+    "test",
+    "stripe",
+    "your",
+    "payment",
+    "gateway",
+    "snippet",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "pgsetup_teststripe_intro",
+    "card",
+    "pgsetup_teststripepg_card",
+    "bank",
+    "account"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

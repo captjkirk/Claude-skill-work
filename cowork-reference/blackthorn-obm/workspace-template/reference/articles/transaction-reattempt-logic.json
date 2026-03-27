@@ -1,0 +1,34 @@
+{
+  "id": "transaction-reattempt-logic",
+  "title": "transaction-reattempt-logic.md",
+  "content": "## Metadata_Start ## code: en ## title: Process Scheduled Transactions and Reattempt Logic ## slug: transaction-reattempt-logic ## seoTitle: Process Scheduled Transactions and Reattempt Logic ## description: ## contentType: Markdown ## Metadata_End ## Scheduled Batch Job to Process Scheduled Transactions When you complete the Setup Wizard we schedule a Blackthorn | Payments batch jobs to run nightly. You can also manually run these batch job any time you want from the [Blackthorn | Payments Admin tab](/v1/docs/blackthorn-payments-admin). If you fire a batch process to capture all the open Transactions and another batch process is already running, the second process will quietly fail. This way, protection against double-charges is implemented. ## Process Scheduled Charge Transactions There is a nightly [scheduled batch job](/v1/docs/scheduled-batch-jobs){target=`_blank`} that will automatically capture the charge Transactions. **Batch Job Name:** Blackthorn | Payments Daily Captures Those Transactions have to meet the following criteria to be processed: - Auto-Process checked - A valid Payment Method - Due Date or Date To Process = Less than or equal to Today - Transaction Status = \"Open\" - Currency ISO - Amount The fields below are needed for Transfer Transactions (Stripe Connect) to be automatically processed: - Auto-Process checked - A valid Connected Account - Due Date or Date To Process = Less than or equal to Today - Transaction Status = \"Open\" - Currency ISO - Amount ## Process Scheduled Refund Transactions There is a nightly scheduled batch job that will automatically capture the refund Transactions. **Batch Job Name:** Blackthorn | Payments Daily Refunds Those Transactions have to meet the following criteria to be processed: - Auto-Process checked - Payment Method is the same as the original Transaction - Due Date or Date To Process = Less than or equal to Today - Transaction Status = \"Open\" - Transactions Type = \"Refund\" - Amount is negative - Original Transaction (if refund) = original Transaction ### Reattempt Logic The reattempt logic allows you to automate reattempted Transactions. A new Transaction record will automatically create from the reattempt logic if the original one fails. Out-of-the-box, Blackthorn | Payments enables reattempt logic for four reattempts, one day apart. :::(Warning) (What Payment Gateway are you using?) Reattempt logic applies to Stripe, Authorize.net, and Spreedly payment gateways. ::: Automated Reattempts applies to Transactions with: * A Payment Method. * Auto-Process checked * Due Date equals or is less than TODAY. * {{variable.Field_Transaction_TransaStatus}} = \"Failed\". *Customized your reattempt logic in [custom settings](/v1/docs/custom-settings).* ### Reattempt Logic Process * If the Transaction fails, a new Transaction is automatically generated with a {{variable.Field_Transaction_TransaStatus}} = \"Open\". * The new Transaction is generated in a scheduled job under Blackthorn Payments | Daily Captures. If you want to change the frequency of when these jobs process, click **Manage**. * Each newly generated Transaction from the failed Transaction is related. On the original failed Transaction record, you'll see all of the reattempts in a related list and a field called `Reattempt Number` that auto-increases by 1 each time that original transaction is reattempted. * Based on the reattempt number, you can take action. *Our recommendation: Create a Process Builder process whereby each criterion fires by an incremental Reattempt Number, such as* * *Reattempt #1, do nothing.* * *Reattempt #2, auto-fire an email template to the Payment Method email address with a PayLink so the customer can update their card.* * *Reattempt #3, create a Task for someone internal to follow-up, etc.* * The reattempt logic should function whether the Transaction was initially auto-processed or processed in real time, as determined by the setting in Blackthorn Pay - Trigger Settings. The full use case can be found [here](https://docs.blackthorn.io/docs/payments-use-cases-transaction-reattempts){target=`_blank`}. ## Next Steps * Learn how to auto-process [Transactions](/v1/docs/transactions). * Configure reattempt logic in [custom settings](/v1/docs/custom-settings). * Setup a valid [Payment Method](/v1/docs/payment-methods) ## Troubleshooting If you have received an error with the auto-process and/or reattempt logic or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have Default Payment Method questions, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "process",
+    "reattempt",
+    "transaction",
+    "transactions",
+    "logic",
+    "docs",
+    "blackthorn",
+    "scheduled",
+    "batch",
+    "payments",
+    "auto",
+    "payment",
+    "date",
+    "method",
+    "original",
+    "open",
+    "automatically",
+    "processed",
+    "settings",
+    "target"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error with the auto-process and/or reattempt logic or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with the auto-process and/or reattempt logic or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

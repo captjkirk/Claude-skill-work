@@ -1,0 +1,30 @@
+{
+  "id": "number-of-conversations-to-load-in-inbox",
+  "title": "number-of-conversations-to-load-in-inbox.md",
+  "content": "## Metadata_Start ## code: en ## title: Number of Conversations to Load in Inbox ## slug: number-of-conversations-to-load-in-inbox ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End For better performance in the Blackthorn Messaging Inbox, you can set a default page size of the number of Conversations that load when the Inbox loads. ![Set the number of conversations that load in the Textey Inbox](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Set%20the%20number%20of%20conversations%20that%20load%20in%20the%20Textey%20Inbox.gif){height=\"\" width=\"\"}",
+  "keywords": [
+    "inbox",
+    "number",
+    "conversations",
+    "load",
+    "20the",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "better",
+    "performance",
+    "blackthorn",
+    "messaging",
+    "default",
+    "page"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

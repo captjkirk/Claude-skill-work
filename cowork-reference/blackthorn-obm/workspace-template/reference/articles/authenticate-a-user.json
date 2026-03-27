@@ -1,0 +1,39 @@
+{
+  "id": "authenticate-a-user",
+  "title": "authenticate-a-user.md",
+  "content": "## Metadata_Start ## code: en ## title: Authenticate a User ## slug: authenticate-a-user ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Prerequisite A user must have the Blackthorn Messaging Admin User permission set before they can be made an Authenticated User. ## What is an Authenticated User? You will need to setup one \"Authenticated User\" for your Blackthorn Messaging account. An Authenticated User is a Salesforce user that has provided access to Messaging so we can push data into your Salesforce org. Messaging uses the secure [OAuth2](https://oauth.net/2/){target=\"_blank\"} protocol to connect to your Salesforce environment through a user that has granted access to the Messaging [connected application](https://help.salesforce.com/s/articleView?id=sf.connected_app_overview.htm&type=5){target=\"_blank\"}. If you do not setup an Authenticated User then you will not be able to receive incoming text messages, delivery status updates, or link tracking info. When you receive an incoming text message to one of your provisioned phone numbers, Messaging will push that message data to a custom web service in your Salesforce environment. It's important to understand that the web service will run in the context of the Authenticated User. This means that Messaging’s access will be controlled by the Authenticated User's profile and permissions. Messaging will only have access to the records that the Authenticated User has access to. As an example, if the Authenticated User does not have access to a particular Contact record due to some Profile or Sharing Rule restriction, then Messaging won't be able to match an inbound text message from that Contact to the record due to lack of visibility. We recommend that the Authenticated User has, at a minimum, the following object access: * Read/Edit access on the Account, Contact, Lead, Opportunity, and Case objects. * Read/Edit access on all Custom Objects that you will configure for text messaging. * Read/Edit/Create access on the Phone Number, SMS Message, SMS Template, and Media objects. * Edit access on all Fields on the Phone Number, SMS Message, SMS Template, and Media objects. The Authenticated User does not necessarily need to be a System Administrator, but they should be a user who has visibility to the records that you will use for text messaging. This includes record data such as Accounts, Contacts, Leads, Opportunities, Campaigns, and any other Custom Objects that an SMS message record could be attached to. * Messaging will never delete a record from your Salesforce org. * Messaging does not store any of your standard object, custom object, or SMS Template records. ## Connect an Authenticated User Now that you understand what an Authenticated User is and how it works, you can follow these steps to complete the setup: 1. Login as the Salesforce User you want to authenticate. 2. Go to the Messaging Administration tab. 3. Go to the Configuration Setting section. 4. In the Authenticated User (for Inbound Messages) section, click the **Authenticate Me** button. 5. You will be directed to an OAuth permissions page where you'll click on **Allow** to grant access. You should be redirected back to the Messaging Administration page. 6. Now the user is connected as the Authenticated User for the Messaging application. You will see the name and email of the Authenticated User displayed under the Authenticated User (for Inbound Messages) section. 7. If you need to change the Authenticated User just click on the delete (trash can) icon next to the email. You can then login as a different user and re-authenticate. ### Reauthorize a User If any of the following scenarios occur, please reauthorize the user. * A password is changed. * A user is removed. * OAuth access is removed. * A domain is changed.",
+  "keywords": [
+    "user",
+    "authenticated",
+    "messaging",
+    "access",
+    "your",
+    "salesforce",
+    "message",
+    "authenticate",
+    "text",
+    "record",
+    "objects",
+    "custom",
+    "edit",
+    "need",
+    "setup",
+    "data",
+    "oauth",
+    "then",
+    "messages",
+    "phone"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Login as the Salesforce User you want to authenticate",
+    "2. Go to the Messaging Administration tab",
+    "3. Go to the Configuration Setting section",
+    "4. In the Authenticated User (for Inbound Messages) section, click the **Authenticate Me** button",
+    "5. You will be directed to an OAuth permissions page where you'll click on **Allow** to grant access",
+    "6. Now the user is connected as the Authenticated User for the Messaging application",
+    "7. If you need to change the Authenticated User just click on the delete (trash can) icon next to the email",
+    "* Read/Edit access on all Custom Objects that you will configure"
+  ],
+  "troubleshooting": []
+}

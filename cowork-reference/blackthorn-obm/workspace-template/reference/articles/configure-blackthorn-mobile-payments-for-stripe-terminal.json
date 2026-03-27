@@ -1,0 +1,32 @@
+{
+  "id": "configure-blackthorn-mobile-payments-for-stripe-terminal",
+  "title": "configure-blackthorn-mobile-payments-for-stripe-terminal.html",
+  "content": "The {{variable.Product_MobilePaymentApp}} can be customized in the following ways: Lock an Amount On a {{variable.Product_Salesforce}} {{variable.Object_Transaction}} record, if you set the {{variable.Field_Transaction_MobilLockAmt}} = \"Yes\", the {{variable.Product_MobilePaymentApp}} will not allow the {{variable.Field_Transaction_Amount}} value to be changed for that {{variable.Object_Transaction}} . Skip the Intro Screen On a {{variable.Product_Salesforce}} {{variable.Object_Transaction}} record, if you set the {{variable.Field_Transaction_MobSkipInScr}} = \"Yes\", the {{variable.Product_MobilePaymentApp}} will not show the Intro screen (Description, Amount, Currency, etc) for that {{variable.Object_Transaction}} . Set Payment Methods If values are set on the {{variable.Object_Transaction}} {{variable.Field_Transaction_AccepPayMeth}} field or the {{variable.Object_PaymentGateway}} {{variable.Field_PG_AcceptedPaymentMethod}} field, only the set {{variable.Object_PaymentMethod}} s will be available for the selected {{variable.Object_PaymentGateway}} or {{variable.Object_Transaction}} . The Accepted Payment Methods fields are evaluated in the following order: If the {{variable.Object_Transaction}} {{variable.Field_Transaction_AccepPayMeth}} field is set, use those values for the {{variable.Object_Transaction}} . Otherwise, if the {{variable.Object_PaymentGateway}} {{variable.Field_PG_AcceptedPaymentMethod}} field is set, use those values for the {{variable.Object_Transaction}} . If neither of those fields are set, all {{variable.Object_PaymentMethod}} s are available for use. Using Tap to Pay Users can now set {{variable.Field_Transaction_AccepPayMeth}} = \"Tap to Pay\" on the Payment Gateway, Transaction, and Payment User Override objects. Require an Existing Transaction for Mobile The {{variable.Field_MobPT_ReqExistTransacMob}} field on the Payment Gateway record is available in the {{variable.Product_MobilePaymentApp}} . This setting blocks users from processing a payment in the app if there isn’t an existing {{variable.Object_Transaction}} in {{variable.Product_Salesforce}} before the app is launched. If this field is checked and a user tries to capture a payment from the {{variable.Product_MobilePaymentApp}} , the user will get an error. iOS Mobile Save Reusable Payment Methods Important Notes We only support this feature on iOS mobile devices and for Stripe payment gateways. To use this feature, you must have Version 2.0.2 of the {{variable.Product_MobilePaymentApp}} and Version 6.42 of the {{variable.Product_Payments}} package. The iOS {{variable.Product_MobilePaymentApp}} ’s user interface now includes a “Save card for future payments” checkbox. When submitting a payment via a card reader or by typing in a card’s information, users can check the checkbox to allow their card information to be saved and reused for future payments. A message will appear in Stripe indicating the user has given consent for the card’s information to be stored and used for future payments. If the checkbox is not checked, no card information will be saved. Admins can enable or disable this feature using the custom attribute “Enable_Reusable_Payments.” For example, the following will occur if the mobile device is offline If the Payee checks \"Save card for future payments,\" then the {{variable.Object_PaymentMethod}} {{variable.Field_PM_Status}} will be set to \"Valid.\" If the Payee does not check the \"Save card for future payments\" checkbox, then the {{variable.Object_PaymentMethod}} {{variable.Field_PM_Status}} will be set to \"One-time.\" You will need to connect to a card reader at least once while connected to the internet before attempting to collect offline payments. Use Case A field engineer must collect a payment at a customer's home. Now, the customer can consent to their payment information being saved and stored as a reusable {{variable.Object_PaymentMethod}} in Salesforce. The field engineer’s organization can then charge the same {{variable.Object_PaymentMethod}} for items such as a subscription or a payment schedule for a service. Add “Enable_Reusable_Payments” to your Org Go to Setup. In the Quick Find box, search for and click “Manage Connected Apps.” Click {{variable.Button_SF_Edit}} next to “Blackthorn | Mobile Connected App.” Click {{variable.button_new}} next to Custom Attributes. Set {{variable.Field_CustomAttributes_Key}} = ENABLE_REUSABLE_PAYMENTS. Set {{variable.Field_CustomAttributes_Value}} = \"1\" . Make sure to include the quotes. Click {{variable.Button_Save}} . Open the {{variable.Product_MobilePaymentApp}} and log out. Log in to the app. Now, when a payment is entered, the user can check the “Save card for future payments” checkbox. To disable the custom attribute, an Admin must delete the “Enable_Reusable_Payments” custom attribute.",
+  "keywords": [
+    "variable",
+    "payment",
+    "object_transaction",
+    "card",
+    "product_mobilepaymentapp",
+    "field",
+    "payments",
+    "object_paymentmethod",
+    "user",
+    "future",
+    "mobile",
+    "save",
+    "checkbox",
+    "information",
+    "custom",
+    "enable_reusable_payments",
+    "click",
+    "following",
+    "product_salesforce",
+    "record"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error."
+  ]
+}

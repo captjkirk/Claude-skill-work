@@ -1,0 +1,30 @@
+{
+  "id": "create-a-spreedly-payment-gateway",
+  "title": "create-a-spreedly-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Create a Spreedly Payment Gateway ## slug: create-a-spreedly-payment-gateway ## seoTitle: Create a Spreedly Payment Gateway ## description: ## contentType: Markdown ## Metadata_End :::(Info) (**Authorize.net and Stripe Users**) When setting up a Payment Gateway using Spreedly, the option to add Authorize.net and Stripe as a Payment Gateway has been removed. Authorize.net and Stripe function as stand-alone Payment Gateways. ::: {{snippet.PGSetup_Spreedly_CreatePG}} :::(Info) (Note: Braintree Gateway) When connecting a Braintree gateway via Spreedly, select “Blue” as the Auth Mode when setting up the gateway. :::",
+  "keywords": [
+    "gateway",
+    "payment",
+    "spreedly",
+    "create",
+    "authorize",
+    "stripe",
+    "when",
+    "info",
+    "setting",
+    "braintree",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "users"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

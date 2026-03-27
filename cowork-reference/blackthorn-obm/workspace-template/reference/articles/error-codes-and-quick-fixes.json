@@ -1,0 +1,38 @@
+{
+  "id": "error-codes-and-quick-fixes",
+  "title": "error-codes-and-quick-fixes.md",
+  "content": "## Metadata_Start ## code: en ## title: Error Codes and Quick Fixes ## slug: error-codes-and-quick-fixes ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End We are here to help solve those pesky error messages! ## Error 2001 This error message means that you don't have access to the page. For example, if an {{variable.Object_Event}}’s {{variable.Field_ETEvent_VisibilityContro}} field excludes a type of {{variable.Object_Attendee}} and that {{variable.Object_Attendee}} type goes to the {{variable.Object_Event}}'s webpage, they will not see the Registration page. Instead, they will get the Error 2001. To allow them to see the Registration page, remove the value(s) from the {{variable.Field_ETEvent_VisibilityContro}} field, click {{variable.Button_Save}}, and click {{variable.Button_Events_Update}} on the {{variable.Object_Event}}. Error 2001 can also occur when selected [Visibility Controls](https://docs.blackthorn.io/docs/visibility-control) on the {{variable.Object_Attendee}}, {{variable.Object_Contact}} (for Experience Cloud only), {{variable.Object_EventItem}}, and {{variable.Object_Session}} records exclude a type of {{variable.Object_Attendee}}. ## Error 2004 This error message is related to one of the following issues: - {{variable.Object_Event}} has visibility control groups. - {{variable.Object_Event}} is not published. - {{variable.Object_Event}} no longer exists. - {{variable.Object_Event}} {{variable.Field_ETEvent_Status}} is not set to {{variable.Picklist_ETStatus_Active}} or {{variable.Picklist_ETStatus_Draft}}. - There are more than 1000 {{variable.Object_EventGroup}}s. Additional Information: - If you are the **organizer of the {{variable.Object_Event}}**, please follow [these instructions](/v1/docs/installation-instructions) to ensure your {{variable.Product_Events}} installation is activated. - If you are the **organizer of the {{variable.Object_Event}}**, please make sure your {{variable.Object_Event}} is Published by following [these steps](https://docs.blackthorn.io/docs/evbuilder-create-event-begin-scratch-start){target=`_blank`}. - If you want to **attend this {{variable.Object_Event}}**, please contact your organizer and let them know you received a 2004 error message when trying to register. ## Error 2006 This error message means there is an internal error. It may also happen if you have the license but the open authorization has not been completed for the {{variable.Product_Events}} application. - If you are the **organizer of the {{variable.Object_Event}}**, please follow [these instructions](/v1/docs/configuration) to OAuth your {{variable.Object_Event}}s. - If you want to **attend this {{variable.Object_Event}}**, please contact your organizer and let them know you received a 2006 error message when trying to register. If the problem still exists, please contact {{variable.Link_BlackthornSupport}}. ## Error 2009 This error messages means that the Salesforce environment hosting this {{variable.Object_Event}} data is not set up correctly (not authenticated) or the authentication is invalid. * If you are the **organizer of the {{variable.Object_Event}}**, please follow [these instructions](https://docs.blackthorn.io/docs/configuration?highlight=authorize%20events#authorize-the-app){target=\"_blank\"} to OAuth {{variable.Product_Events}}. * If you want to attend this {{variable.Object_Event}}, please contact your organizer and let them know you received a 2009 error message when trying to register. ## Error 2010 This error message means that your connected {{variable.Product_Events}} user doesn't have a {{variable.Product_Payments}} license and the {{variable.PS_PT_Admin}} permission set hasn't been assigned. - If you are the **organizer of the {{variable.Object_Event}}**, please make sure that your connected {{variable.Product_Events}} user have a {{variable.Product_Payments}} license and has the {{variable.PS_PT_Admin}} permission set assigned. - If you want to **attend this {{variable.Object_Event}}**, please contact your organizer and let them know you received a 2010 error message when trying to register. ## Error 2012 This error message means that there is an error with an Event being published. For an Event to be published ({{variable.Field_ETEvent_Publish}} = “True” (checked)), the Event’s {{variable.Field_ETEvent_Status}} must be set to “Active”. If you are an authorized user, click **Authorize the App** on the Configuration tab in the Blackthorn | Events Admin tab; otherwise, have the authorized user re-authorize the Events app.",
+  "keywords": [
+    "variable",
+    "error",
+    "object_event",
+    "please",
+    "message",
+    "organizer",
+    "your",
+    "docs",
+    "means",
+    "them",
+    "when",
+    "product_events",
+    "contact",
+    "object_attendee",
+    "blackthorn",
+    "published",
+    "instructions",
+    "event",
+    "want",
+    "attend"
+  ],
+  "category": "events",
+  "procedures": [
+    "2001. To allow them to see the Registration page, remove the value(s) from the {{variable"
+  ],
+  "troubleshooting": [
+    "Error Codes and Quick Fixes ## slug: error-codes-and-quick-fixes ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End We are here to help solve those pesky error messages! ## Error 2001 This error message means that you don't have access to the page.",
+    "Error 2001.",
+    "Error 2001 can also occur when selected [Visibility Controls](https://docs.",
+    "Error 2004 This error message is related to one of the following issues: - {{variable.",
+    "error message when trying to register."
+  ]
+}

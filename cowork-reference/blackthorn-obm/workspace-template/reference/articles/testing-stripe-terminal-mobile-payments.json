@@ -1,0 +1,30 @@
+{
+  "id": "testing-stripe-terminal-mobile-payments",
+  "title": "testing-stripe-terminal-mobile-payments.md",
+  "content": "## Metadata_Start ## code: en ## title: Testing ## slug: testing-stripe-terminal-mobile-payments ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End In Blackthorn {{variable.Product_Payments}}, add a {{variable.Object_PaymentGateway}} with {{variable.Field_PG_TestMode}} = \"TRUE\". Stripe offers physical test cards for purchase that work with special amounts. Those amounts are listed [here](https://stripe.com/docs/terminal/references/testing#test-cards){target=\"_blank\"}.",
+  "keywords": [
+    "testing",
+    "stripe",
+    "variable",
+    "terminal",
+    "test",
+    "cards",
+    "amounts",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "mobile",
+    "payments",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "blackthorn",
+    "product_payments"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

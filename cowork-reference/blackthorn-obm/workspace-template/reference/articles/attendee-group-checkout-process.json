@@ -1,0 +1,30 @@
+{
+  "id": "attendee-group-checkout-process",
+  "title": "attendee-group-checkout-process.html",
+  "content": "Group registration allows the user to register more than one person at a time with or without a single {{variable.Object_Transaction}} . Each person is considered their own registered {{variable.Object_Attendee}} . Set Up For this example, we will use a paid {{variable.Object_Event}} . Make sure the related {{variable.Object_EventSettings}} {{variable.Field_EVSetting_FormRespAttGrp}} field is set to “Yes.” Attendee Experience An Attendee views your Event's webpage. They can click the Share button to generate a URL to share the Event on LinkedIn, X/Twitter, or Facebook, or they can click {{variable.Button_GetTicket}} s . In this example, the Attendee selects three Main Ballroom tickets and three Main Ballroom Guest tickets. But, if a value is in the Event Item’s {{variable.Field_EVItem_DefaultQtySelecti}} field and the Event Item isn’t sold out or isn’t a Donation, the default quantity of Tickets is automatically added to the cart the first time an Attendee reaches the Event Item selection screen. If the number of remaining tickets is greater than 0 but less than the {{variable.Field_EVItem_DefaultQtySelecti}} , all remaining tickets will be added to the cart. For example, if the number of remaining tickets is 3, but the {{variable.Field_EVItem_DefaultQtySelecti}} is “5,” then 3 tickets will be added to the cart. NOTE: When an Attendee purchases Tickets from their AttendeeLink, the default quantity will not be added to the cart. (The original behavior is unchanged.) After the Attendee clicks Checkout , they will enter each {{variable.Object_Attendee}} ’s personal information. For only the first {{variable.Object_Attendee}} , they will answer the pre-registration question and click Copy related Info to all responses . The will then click Review Sessions and select Sessions for each Attendee, and click Payment . After entering the payment information, they will click Pay . Results When multiple {{variable.Object_Attendee}} s are added at one time, an {{variable.Object_AttendeeGroup}} record is automatically created. {{variable.Object_AttendeeGroup}} s can be seen in the {{variable.SFTerm_RelatedList}} of your {{variable.Object_Event}} record for easy tracking. This lets you know who will be grouped together. Note: The {{variable.Object_AttendeeGroup}} naming structure is [ {{variable.Field_ETEvent_EventName}} - Ordered Number]. Group Checkout and Waitlists Event Organizers can leverage group waitlisting by including Guest Tickets in the group’s waitlist, even though some of those Tickets do not require an email address. To do so, they can use the {{variable.Object_EventSettings}} ’ new {{variable.Field_EVSet_DisEmailWaitlGuest}} (conference360__Disable_Email_Check_For_WaitlistedGuest__c) field to allow waitlisted Guest Tickets without an email. If {{variable.Field_EVSet_DisEmailWaitlGuest}} is checked (enabled), an email will be optional for waitlisted Guest Tickets as long as the Guest {{variable.Object_EventItem}} s {{variable.Field_EventItem_Email}} field is marked as “Optional” or “Hidden.” If {{variable.Field_EVSet_DisEmailWaitlGuest}} is not checked (disabled), an email will be required. (existing functionality) NOTE: Waitlists for Guest Tickets without emails only work at the Event Item level , not at the Event level. Field Permission Set Requirements READ/EDIT: Admin, Organizer, and Community/Platform User READ: Lite User, Limited Access, and Read Only",
+  "keywords": [
+    "variable",
+    "tickets",
+    "event",
+    "attendee",
+    "they",
+    "click",
+    "guest",
+    "field",
+    "added",
+    "group",
+    "object_attendee",
+    "item",
+    "cart",
+    "email",
+    "user",
+    "than",
+    "time",
+    "without",
+    "each",
+    "example"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

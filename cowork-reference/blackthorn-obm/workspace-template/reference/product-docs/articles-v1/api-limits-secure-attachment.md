@@ -1,0 +1,17 @@
+## Metadata_Start 
+## code: en
+## title: API Limits - Secure Attachment 
+## slug: api-limits-secure-attachment 
+## seoTitle:  
+## description:  
+## contentType: Markdown 
+## Metadata_End
+
+| Limit | Amount | Notes |
+| --- | --- | --- |
+| File Size | 100MB for Files | No limit for Word docs or CSV files |
+| | 10MB for Images | |
+| Request/month | 50,000 for Files | *Images API request limit depends on plan |
+| | 1000 - 20,000,000 for Images*	 | |
+| Audit Batch Size | 10 records / batch	|  |
+		

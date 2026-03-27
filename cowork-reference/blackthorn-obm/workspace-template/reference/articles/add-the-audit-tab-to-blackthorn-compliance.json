@@ -1,0 +1,36 @@
+{
+  "id": "add-the-audit-tab-to-blackthorn-compliance",
+  "title": "add-the-audit-tab-to-blackthorn-compliance.md",
+  "content": "## Metadata_Start ## code: en ## title: Add the Audit Tab to Blackthorn Compliance ## slug: add-the-audit-tab-to-blackthorn-compliance ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End 1. Edit the Compliance Lightning App: Setup > Apps > App Manager > Compliance> Edit. ![Lightning Experience App Mgr](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Lightning%20Experience%20App%20Mgr.png){height=\"\" width=\"\"} 2. Click on Navigation Items in the App Settings. 3. Add the Audit tab to the Selected Items. ![click audit](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/click%20audit.png){height=\"\" width=\"\"} 4. Press {{variable.Button_Save}}. ![press save](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/press%20save.png){height=\"\" width=\"\"} 5. Navigate back to the Compliance Lightning App. **NOTE:** Sometimes Lightning Tabs don't show up right away. You may need to refresh a few times or log out/in in order for the Audit Tab to show.",
+  "keywords": [
+    "audit",
+    "compliance",
+    "lightning",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "click",
+    "press",
+    "blackthorn",
+    "edit",
+    "items",
+    "show"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Edit the Compliance Lightning App: Setup > Apps > App Manager > Compliance> Edit",
+    "2. Click on Navigation Items in the App Settings",
+    "3. Add the Audit tab to the Selected Items",
+    "4. Press {{variable",
+    "5. Navigate back to the Compliance Lightning App"
+  ],
+  "troubleshooting": []
+}

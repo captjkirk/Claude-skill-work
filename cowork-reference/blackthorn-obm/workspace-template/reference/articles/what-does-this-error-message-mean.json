@@ -1,0 +1,43 @@
+{
+  "id": "what-does-this-error-message-mean",
+  "title": "what-does-this-error-message-mean.md",
+  "content": "## Metadata_Start ## code: en ## title: What Does this Error Message Mean? ## slug: what-does-this-error-message-mean ## seoTitle: What Does this Error Message Mean? ## description: ## contentType: Markdown ## Metadata_End ## Why do I see the message \"No phone numbers are visible for you to send from\"? You may encounter this warning message that states you don't have visibility to any phone numbers to send from. ![no phone numbers](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/no%20phone%20numbers.png){height=\"\" width=\"\"} This means that the User who is seeing the message does not have visibility to any of your Messaging-enabled phone number records. Review the steps in the article [Phone Number Setup](/v1/docs/phone-number-setup). If you have already configured a phone number, do the following: 1. If you're in Lightning, switch to Salesforce Classic (yes, we know...😜). 2. Go to the Phone Number record that the User should have access to. 3. Click the **Sharing** button on the record. (Located at the top next to the **Edit** and **Delete** buttons). 4. Add the User who is seeing the warning message, and grant Read access. If you've confirmed the user has access to the record, but they are still seeing the message, do the following: 1. Go to the Phone Number record. 2. Uncheck the `Available for Campaign` checkbox. 3. Save the record. ## Why do I see the message \"PushTopic is not accessible\"? You may encounter a warning that sates \"PushTopic is not accessible\". This warning message would be seen either on the Blackthorn Messaging Messenger component or the Messaging Conversations page. If you see this message it means that the logged-in user does not have access to the PushTopic object. ![pushtopic](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/pushtopic.png){height=\"\" width=\"\"} PushTopic is a standard Salesforce object that is used with the Streaming API. Basically, it's how the Messaging components listen for new inbound text messages. To solve this issue, you can simply do the following: 1. Go to the Profile of the User who is seeing this message. 2. Click **Edit**. 3. Go to the Object Settings and find PushTopic. 4. Ensure the Profile has, at minimum, READ access to the PushTopic object. 5. Save the Profile.",
+  "keywords": [
+    "message",
+    "phone",
+    "pushtopic",
+    "user",
+    "number",
+    "record",
+    "access",
+    "warning",
+    "seeing",
+    "messaging",
+    "object",
+    "what",
+    "error",
+    "mean",
+    "numbers",
+    "following",
+    "profile",
+    "send",
+    "from",
+    "encounter"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. If you're in Lightning, switch to Salesforce Classic (yes, we know",
+    "2. Go to the Phone Number record that the User should have access to",
+    "3. Click the **Sharing** button on the record",
+    "4. Add the User who is seeing the warning message, and grant Read access",
+    "1. Go to the Phone Number record",
+    "2. Uncheck the `Available for Campaign` checkbox",
+    "3. Save the record",
+    "1. Go to the Profile of the User who is seeing this message",
+    "2. Click **Edit**",
+    "3. Go to the Object Settings and find PushTopic"
+  ],
+  "troubleshooting": [
+    "Error Message Mean? ## slug: what-does-this-error-message-mean ## seoTitle: What Does this Error Message Mean? ## description: ## contentType: Markdown ## Metadata_End ## Why do I see the message \"No phone numbers are visible for you to send from\"? You may encounter this warning message that states you don't have visibility to any phone numbers to send from."
+  ]
+}

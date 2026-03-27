@@ -1,0 +1,32 @@
+{
+  "id": "stripe-radar-integration",
+  "title": "stripe-radar-integration.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Radar Integration ## slug: stripe-radar-integration ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you enabled Stripe Radar features on your Stripe account, the results are automatically mapped to the Transaction records in Salesforce. ## Enable in Salesforce - Navigate to Setup | Custom Settings | `Blackthorn | Payments Triggers` and click the Manage button - Click Edit - Check the `Enable Stripe Radar` checkbox and save ## Set the Transaction Fields on Layouts - Navigate to Transaction layout edit page and add the Radar-related fields to the layouts, which are the following: `Risk Level`, `Risk Score`, `Network Status`, `Seller Message`",
+  "keywords": [
+    "stripe",
+    "radar",
+    "transaction",
+    "integration",
+    "salesforce",
+    "enable",
+    "navigate",
+    "click",
+    "edit",
+    "fields",
+    "layouts",
+    "risk",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "payments",
+  "procedures": [
+    "- Navigate to Setup | Custom Settings | `Blackthorn | Payments Triggers` and click the Manage button - Click Edit - Check the `Enable Stripe Radar` checkbox and save ## Set the Transaction Fields on Layouts - Navigate"
+  ],
+  "troubleshooting": []
+}

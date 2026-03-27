@@ -1,0 +1,41 @@
+{
+  "id": "configure-leads",
+  "title": "configure-leads.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Leads ## slug: configure-leads ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Use the steps below to configure the Lead object for SMS messaging in Lightning or Classic. ## Lightning ### Update the Page Layout and Related List #### Add the Do Not SMS Field. 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, search for and click “Lead.” 4. Click the Page Layouts tab. 5. Select the layout type you need to update. 6. Click the Fields tab. 7. In the Quick Find box, search for the {{variable.Field_Lead_DoNotSMS}} field. 8. Drag and drop the {{variable.Field_Lead_DoNotSMS}} field onto the page layout. ![Configure Leads - Add Field to Page Layout](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Lead_Add%20Field%20to%20Page%20Layout.png){height=\"\" width=\"\"} #### Add the Related List 1. Click the Related Lists tab. 2. In the Quick Find box, search for the “SMS Messages” Related List. 3. Drag and drop the Related List onto the page layout. 4. Click the **Wrench** icon to open the Properties for this related list. ![Configure Leads - Related List Properties](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Lead_Related%20List%20Properties.png){height=\"\" width=\"\"} 6. Add these fields in the following order: 1. {{variable.Field_SMS_RList_MessageDate}} 2. {{variable.Field_SMS_RList_Direction}} 3. {{variable.Field_SMS_RList_MessageFull}} 4. {{variable.Field_SMS_RList_Status}} 5. {{variable.Field_SMS_RList_FromPhone}} 6. {{variable.Field_SMS_RList_ToPhone}} 7. {{variable.Field_SMS_RList_SMSMsgNumber}} 7. In the Sort By drop-down, choose \"SMS Message Number\" and \"Descending.\" 8. Click the **plus sign (+)** located in the Buttons section. 9. Uncheck the box next to New and click **Ok**. 10. Click {{variable.Button_Save}}. ### Lightning Record Page Layout 1. Click the Lightning Record Pages tab. 2. Click the name of the layout you want to modify. 3. Click {{variable.Button_SF_Edit}}. 4. Complete the following steps if you don't see any Lightning page layouts listed. 1. Click {{variable.button_new}}. 2. Choose Record Page. 3. Click {{variable.Button_Next}}. 4. Enter a {{variable.Field_SF_PageLayout_Label}} (i.e. Lead Layout). 5. Set {{variable.Field_SF_PageLayout_Object}} = “Lead.” 6. Click {{variable.Button_Next}}. 7. Click the **Clone Salesforce Default Page** tab. 8. Choose Lead Record Page Default. 9. Click {{variable.Button_Done}}. 5. You should now be in the Lightning App Builder. 6. On the left-hand navigation bar, scroll down to the Custom-Managed section. 7. Locate the Blackthorn Messaging Messenger component. 8. Drag and drop the component onto the page layout. 9. The right-hand column will have the configuration options. We recommend keeping the {{variable.Field_SF_PageLayout_MaxHeight}} = \"400px\", but you can modify it as needed. * If you've added the component to a sidebar, set {{variable.Field_SF_PageLayout_Columns}} = “One Column.” * If you've added it to a wide section of the page, you can set {{variable.Field_SF_PageLayout_Columns}} = “Two Column” to maximize the space. 10. Click {{variable.Button_Save}}. ![Configure Leads - Lightning App Builder](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Leads_LightningAppBuilder.png){height=\"\" width=\"\"} 12. Click **Activation**. 13. Review the settings. 14. Click **Close**. Refresh your browser for the changes to take effect. 15. Open a Lead record to see the Blackthorn Messaging Messenger component on your page. ![Configure Leads - Messaging Component](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Lead_LeadRecordMessagingComp.png){height=\"\" width=\"\"} ## Classic ### Update the Page Layout and Related List #### Add the Do Not SMS Field 1. Go to Setup. 2. In the Quick Find box, enter “Leads.” 3. Click Page Layouts. 4. Click {{variable.Button_SF_Edit}} next to the layout type you need to modify. This will open the Page Layout Editor. 5. Click the Fields tab. 6. In the Quick Find box, search for the {{variable.Field_Lead_DoNotSMS}} field. 7. Drag and drop the {{variable.Field_Lead_DoNotSMS}} field onto the page layout. ![Configure Leads Classic - Add Field to Page Layout](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Classic_Lead_AddFieldPageLayout.png){height=\"\" width=\"\"} #### Add the Related List 1. Click the Related Lists tab. 2. In the Quick Find box, search for the “SMS Messages” Related List. 3. Drag and drop the Related List onto the page layout. 4. Click the **Wrench** icon to open the Properties for this related list. ![Configure Leads Classic - Related List Properties](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Classic_Lead_Related%20List%20Properties.png){height=\"\" width=\"\"} 6. Add these fields in the following order: 1. {{variable.Field_SMS_RList_MessageDate}} 2. {{variable.Field_SMS_RList_Direction}} 3. {{variable.Field_SMS_RList_MessageFull}} 4. {{variable.Field_SMS_RList_Status}} 5. {{variable.Field_SMS_RList_FromPhone}} 6. {{variable.Field_SMS_RList_ToPhone}} 7. {{variable.Field_SMS_RList_SMSMsgNumber}} 7. In the Sort By drop-down, choose \"SMS Message Number\" and \"Descending.\" 8. Click the **plus sign (+)** located in the Buttons section. 9. Uncheck the box next to New and click **Ok**. 10. Save the page layout. ### Classic Record Page Layout 1. Click the Visualforce Pages tab. 2. Drag and drop the \"+Section\" on the page. 3. Enter a {{variable.Field_SF_PageLayout_SectionNam}} such as \"Messaging.\" 4. Under Display Section Header On, check {{variable.Field_SF_PageLayout_DetailPage}} and {{variable.Field_SF_PageLayout_EditPage}}. 5. Set {{variable.Field_SF_PageLayout_Layout}} to “1-Column.” 6. Click **Ok**. ![Configure Leads Classic - New Section Details](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Classic_Lead_New%20Section%20Details.png){height=\"\" width=\"\"} 8. In the Visualforce Pages section, find the page named \"SendLead_ltng.\" 9. Drag and drop SendLead_Itng in the section you just created. 10. Hover over the section and click the **Wrench** icon to open the Properties for this section. 11. Update the following fields. 1. Change {{variable.Field_SF_PageLayout_HeightPixe}} to \"500.\" 2. Set {{variable.Field_SF_PageLayout_Showscroll}} = “True” (checked). 3. Click **Ok**. ![Configure Leads Classic - Update Properties](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Classic_Lead_UpdateProperties.png){height=\"\" width=\"\"} 16. Click {{variable.Button_Save}} to save the page layout.",
+  "keywords": [
+    "variable",
+    "click",
+    "page",
+    "layout",
+    "related",
+    "list",
+    "configure",
+    "leads",
+    "section",
+    "drop",
+    "field",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, search for and click “Lead",
+    "4. Click the Page Layouts tab",
+    "5. Select the layout type you need to update",
+    "6. Click the Fields tab",
+    "7. In the Quick Find box, search for the {{variable",
+    "8. Drag and drop the {{variable",
+    "1. Click the Related Lists tab",
+    "2. In the Quick Find box, search for the “SMS Messages” Related List"
+  ],
+  "troubleshooting": []
+}

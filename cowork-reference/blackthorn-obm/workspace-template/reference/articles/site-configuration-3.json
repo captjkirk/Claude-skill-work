@@ -1,0 +1,23 @@
+{
+  "id": "site-configuration-3",
+  "title": "site-configuration-3.md",
+  "content": "## Metadata_Start ## code: en ## title: Site Configuration ## slug: site-configuration-3 ## seoTitle: Site Configuration ## description: ## contentType: Markdown ## Metadata_End {{snippet.StripePG_WebhooksSiteConfiguration}}",
+  "keywords": [
+    "site",
+    "configuration",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "stripepg_webhookssiteconfiguration"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

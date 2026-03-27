@@ -1,0 +1,36 @@
+{
+  "id": "event-status",
+  "title": "event-status.html",
+  "content": "Overview The field provides important information about your . This read-only field tells you the current status of your , or . Example Event The , London Tour, has the = “0” and = \"True\". As a result, the is \"Sold Out\" and \"Waitlist Open\". Example Banners When an has a Sold Out banner, it is because the field = \"Sold Out\". When an has a Completed banner, it is because the field = “Event Ended”. Let's dig further to see how these statuses are derived! Instructions Complete the steps below to add the field to your and page layouts. (The field is on the page layout by default.) Click the Gear icon in the upper right-hand corner.&nbsp; Click Setup . Click the Object Manager tab. Locate and select the or object.&nbsp; Go to the Page Layout for the object. Drag and drop the field onto the page layout. Click . Use the reference tables below to learn more about the criteria for each . Events Status Formula Description Set on Criteria Event Ended The has ended, and prospects can no longer register. The and are in the past, or the = . Sold Out An is sold out based on the available capacity. The 's is disabled, and the = 0. Sold Out, Waitlist Open An is sold out, but a waitlist is available. The 's field has been checked, and the = 0. Sold Out, Waitlist Closed An is sold out, and the waitlist is closed. The 's field has been checked, and the = 0. Disabled Event The registration button will be hidden on the . The 's = \"Yes\". Event Active The is active and allows prospects to register. The 's and are still in the future. Canceled An has been canceled and prospects are no longer allowed to register or view the . The 's field is updated to . Event Items Status Formula Description Set on Criteria Pending Registration Start Date The isn't for sale yet. The and are in the future. Registration - Active The is currently available. The current date and time are in between the 's / and / , or the / is not defined, and other status criteria are not met. Registration - Ended The 's registration has ended. The and are in the past, OR the has ended. Sold Out The is sold out based on capacity. The 's = \"0\", OR the is sold out. Sold Out, Waitlist Open The is sold out based on capacity, but the waitlist is open. The 's = \"0\" and the field is checked, OR the 's field is checked. Sold Out, Waitlist Closed The is sold out, and the waitlist is closed. The 's = \"0\" and the = \"0\", OR the 's waitlist is closed. Sessions Status Formula Description Set on Criteria Pending Registration Start Date The isn't available yet. The and are in the future. Registration - Active The is currently available. The current date and time are in between the 's / and / , or the / is not defined and other status criteria are not met. Registration - Ended The 's registration has ended. The and are in the past. Sold Out The is sold out based on capacity. The 's = \"0\". Sold Out, Waitlist Open The is sold out, but the waitlist is enabled. The 's = \"0\" and the field is checked. Sold Out, Waitlist Closed The is sold out, and waitlisting is closed. The 's = \"0\", and the = \"0\". FAQ Q: What is the difference between the ’s and fields? A: When you create an , the field is set to “Active” (the default value). The field tracks the internal status of the . The values “Draft”, “Active”, “Canceled”, and “Completed” are assigned dynamically. The default value can only be changed via automation. The tracks the current status of your , which is calculated based on capacity values and the publish/unpublish status. You can review the definition of each value here . &nbsp; Q: Do I have to set the and fields on both the and records? A: No, the and fields do not need to be set on both the and records. Q: What happens if the start dates on the and are different? A: If you add the and on the page and the current date is after the , then the banner on the home page will say “Completed”.&nbsp; If you add the and on the page, a different and on the , and the current date is after the , then the banner on the home page will say “Completed” and the text next to the will say “Sale ended [Day, mm/dd/yyyy].”&nbsp; Q: What happens when an 's = “Canceled”? Will a Canceled banner appear? A: No, a Canceled banner will not appear when an 's = \"Canceled.\" Instead, an Error 2004 will occur if the 's is not set to “Active” or “Draft.”",
+  "keywords": [
+    "sold",
+    "field",
+    "waitlist",
+    "status",
+    "ended",
+    "registration",
+    "page",
+    "closed",
+    "active",
+    "canceled",
+    "current",
+    "event",
+    "banner",
+    "criteria",
+    "date",
+    "open",
+    "when",
+    "nbsp",
+    "based",
+    "available"
+  ],
+  "category": "events",
+  "procedures": [
+    "0. Sold Out, Waitlist Open An is sold out, but a waitlist is available",
+    "0. Sold Out, Waitlist Closed An is sold out, and the waitlist is closed",
+    "0. Disabled Event The registration button will be hidden on the "
+  ],
+  "troubleshooting": [
+    "Error 2004 will occur if the 's is not set to “Active” or “Draft."
+  ]
+}

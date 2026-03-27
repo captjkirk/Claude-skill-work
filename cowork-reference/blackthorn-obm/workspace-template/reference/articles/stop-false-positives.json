@@ -1,0 +1,32 @@
+{
+  "id": "stop-false-positives",
+  "title": "stop-false-positives.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Stop False Positives ## slug: stop-false-positives ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End A false positive error, or a false positive or \"false alarm\", is a result that indicates a predicted value exists, when it does not. For example, a DLP solution might flag a credit card number, but if the number is actually a mobile number, then that is a false positive. At Blackthorn Compliance, we are conservative in enforcing PCI Compliance rules. But our algorithm also has high precision and recall, which significantly reduces the false positive rate. Unfortunately, there will be instances where, despite our best predictions, false positives squeak through. The following section explains what you should do when this happens. ## Turn on Luhn Check for all credit card patterns. Making sure the field Luhn Check is true for your credit card patterns will ensure that numbers will go through a second validation; namely verifying that the supposed credit card number passes the Luhn Algorithm. ## Customize detection pattern Regular Expressions so they are stricter. You can customize the out-of-the-box RegEx that comes with Compliance. Consider adjusting the RegEx patterns to be more “strict” or more of an exact match for a specific pattern type. ## Disable Patterns you don’t need. Don’t do business overseas? Then you don’t need Maestro, JCB, and other international credit cards. Disable these patterns to significantly reduce false positives. Likewise, you don’t need to mask Social Security Numbers to be PCI compliant (that’s another story altogether). ## Create Negative Detection Patterns. Create patterns for USPS or Fedex tracking numbers, German phone numbers, and more frequent false positive candidates with negative patterns. These will effectively exclude known patterns from Compliance masking. ## Flag Logs with the False Positive checkbox field. Did a false positive come up during production testing? Crowdsource false positive data by manually flagging logs which weren’t actually a credit card. False positives found by matched Negative Patterns will be flagged automatically.",
+  "keywords": [
+    "false",
+    "patterns",
+    "positive",
+    "credit",
+    "positives",
+    "card",
+    "number",
+    "compliance",
+    "numbers",
+    "luhn",
+    "more",
+    "need",
+    "negative",
+    "stop",
+    "when",
+    "flag",
+    "actually",
+    "then",
+    "algorithm",
+    "which"
+  ],
+  "category": "compliance",
+  "procedures": [],
+  "troubleshooting": [
+    "error, or a false positive or \"false alarm\", is a result that indicates a predicted value exists, when it does not."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "payments-fsl-install-setup-setup",
+  "title": "payments-fsl-install-setup-setup.md",
+  "content": "## Metadata_Start ## code: en ## title: Setup ## slug: payments-fsl-install-setup-setup ## seoTitle: Setup ## description: ## contentType: Markdown ## Metadata_End ## Configure the Transaction Object {{snippet.PT_FSLSetup_TransactionConfiguration}} 1. Navigate to the {{variable.Object_Transaction}} object in Setup. 2. Click {{variable.Button_SF_Edit}} on the Page Layout. 3. Add the {{variable.Field_Transaction_WorkOrder}} lookup to the page layout. ![P_02_Package Setup pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/P_02_Package%20Setup%20pic%202.png){height=\"\" width=\"\"} ## Configure the Work Order Object {{snippet.PT_FSLSetup_WorkOrderConfiguration}} ## Assign Permission Sets {{snippet.PT_FSLSetup_AssignPermissionSets}} ## Add Field Service Permissions {{snippet.PT_FSLSetup_AddFieldServicePermissions}} ## Add Field Service Territory, Work Type, and Service Resource {{snippet.PT_FSLSetup_AddTerritoryWorkTypeServiceResource}}",
+  "keywords": [
+    "setup",
+    "snippet",
+    "object",
+    "variable",
+    "service",
+    "configure",
+    "page",
+    "layout",
+    "p_02_package",
+    "work",
+    "field",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "install",
+    "seotitle",
+    "description",
+    "contenttype"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to the {{variable",
+    "2. Click {{variable",
+    "3. Add the {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "set-up-translations-picklist-values",
+  "title": "set-up-translations-picklist-values.html",
+  "content": "Follow the steps below to set up an {{variable.Object_Event}} with a {{variable.Object_Form}} that uses translations on the picklist values. Create an Event Create an {{variable.Object_Event}} using your normal method. On the {{variable.Object_EventSettings}} ( conference360__Event_Settings__c ) record, include available languages for translation in the {{variable.Field_ETETSettings_SupportLang}} ( conference360__Supported_Languages__c ) field. This step configures the available languages in the language selector on the {{variable.Object_Event}} webpage. When an {{variable.Object_Attendee}} selects a language from the selector, the configured picklist translations in the steps below will be applied. {{variable.Object_Attendee}} s can also update the language via the URL. For example, they can change the “ en ” in the English URL to “ de ” to see the text in German. English URL (/ en /): https://events.blackthorn.io/ en /[org-id]/[event-id] German URL (/ de /): https://events.blackthorn.io/ de /[org-id]/[event-id] Create a Form Create a {{variable.Object_Form}} with at least one {{variable.Object_FormElement}} with {{variable.Field_Form_Type}} set to “Picklist” or “Multi-Select Picklist.” Associate the {{variable.Object_Form}} to your {{variable.Object_Event}} . For example, add the {{variable.Object_Form}} to the {{variable.Object_Event}} ’s {{variable.Field_ETEvent_FormPreRegistrat}} ( conference360__Form2__c ) field. Click here for more information about creating {{variable.Object_Form}} s. Create a Translation Record Create a new {{variable.Object_Translation}} ( bt_base__Translation__c ) record for the picklist {{variable.Object_FormElement}} . Click the App Launcher. In the search field, enter and click “Translations.” Click {{variable.button_new}} . Set the {{variable.Field_Translation_Language}} ( bt_base__Language__c ) field to the desired language. For this example, we will continue to use German. In the “Form Translation Fields” section, set the {{variable.Field_Translation_Form}} ( bt_base__Translation__c.conference360__Form__c ) field to the {{variable.Object_Form}} you just created. This will relate the recently created {{variable.Object_Form}} record to the new {{variable.Object_Translation}} record. In the “Form Element Translation Fields” section, set the {{variable.Field_Translation_FormElement}} ( bt_base__Translation__c.conference360__Form_Element__c ) field to the picklist {{variable.Object_FormElement}} related to the {{variable.Object_Form}} in the previous step. In the “Form Element Translation Fields” section, add the picklist labels you want to include in the {{variable.Object_Translation}} to the {{variable.Field_Transla_FormElemPickValu}} ( conference360__Events_Form_Element_Picklist_Values__c ) field using this format: &lt;Original picklist label&gt;:&lt;Translated picklist label&gt; In our example, we entered the following. This will take the English picklist label and change it to German when the {{variable.Object_Event}} webpage is set to German. Apple:Apfel Potato:Kartoffel Cabbage:Kohl Cherry:Kirsche Strawberry:Erdbeere Click {{variable.Button_Save}} . Attendee Experience When a potential {{variable.Object_Attendee}} visits the {{variable.Object_Event}} ’s webpage, they can translate the page’s information using one of these two methods. Update the {{variable.Object_Event}} ’s URL with the translated language specified as part of the URL. Original English URL (/ en /): https://events.blackthorn.io/ en /[org-id]/[event-id] German URL (/ de /): https://events.blackthorn.io/ de /[org-id]/[event-id] Use the {{variable.Task_LanguageSelector}} to translate the page into the desired language. If picklist translations are configured in the translated language, the picklist values will automatically be translated. The {{variable.Object_Attendee}} makes their selections, answers {{variable.Object_Form}} questions, and completes the registration process. Form Submission Processing After an {{variable.Object_Attendee}} completes the registration process, the {{variable.Object_Form}} submission processing takes place. When using picklist translations, the following happens. Blackthorn Events Form Submission Object The {{variable.Object_ET_FormSubmission}} ( conference360__Form_Submission__c ) record includes a JSON payload that contains the {{variable.Object_Attendee}} ’s {{variable.Object_Form}} answers. If an {{variable.Object_Attendee}} translates the {{variable.Object_Event}} and selects a translated picklist value, the original (non-translated) picklist value is included in the {{variable.Object_ET_FormSubmission}} record. Example: An {{variable.Object_Attendee}} translates an {{variable.Object_Event}} webpage from English to German and selects “Apfel.” The {{variable.Object_ET_FormSubmission}} record will contain “Apple,” the English picklist value (not German). Form Submission Answer Object The payload from processing the {{variable.Object_ET_FormSubmission}} record creates a {{variable.Object_FormSubmissionAnswer}} ( conference360__Form_Submission_Answer__c ) record. If an {{variable.Object_Attendee}} translates the {{variable.Object_Event}} and selects a translated picklist value, the original (non-translated) picklist value is included in the {{variable.Object_FormSubmissionAnswer}} record. Example: An {{variable.Object_Attendee}} translates an {{variable.Object_Event}} webpage from English to German and selects “Apfel.” The {{variable.Object_FormSubmissionAnswer}} record will contain “Apple,” the English picklist value (not German).",
+  "keywords": [
+    "variable",
+    "picklist",
+    "object_event",
+    "record",
+    "object_form",
+    "object_attendee",
+    "german",
+    "english",
+    "translated",
+    "field",
+    "language",
+    "form",
+    "create",
+    "example",
+    "value",
+    "translations",
+    "event",
+    "translation",
+    "webpage",
+    "selects"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

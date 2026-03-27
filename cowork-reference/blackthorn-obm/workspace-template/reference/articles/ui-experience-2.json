@@ -1,0 +1,30 @@
+{
+  "id": "ui-experience-2",
+  "title": "ui-experience-2.html",
+  "content": "New Installations Only The picklist now includes a new setting called \"Dynamic.\" Once the Dynamic UI is released, any existing Events using this UI will automatically update to the new look and feel. ( This does not affect upgrades. ) To give Event Organizers and Planners the flexibility to change the {{glossary.user experience}} or look and feel of their s, there are four different {{glossary.user interfaces (UI)}} to choose from. Tabbed UI The Tabbed UI offers the traditional checkout experience&nbsp;for free and paid s. Simple UI The Simple UI is a single-page user interface for only free s. Full-Width UI The Full-Width UI offers an adaptive user experience for free and paid s. Dynamic UI The Dynamic UI offers a contemporary look and feel with streamlined navigation for simple and complex s.",
+  "keywords": [
+    "dynamic",
+    "user",
+    "look",
+    "feel",
+    "experience",
+    "offers",
+    "free",
+    "simple",
+    "only",
+    "glossary",
+    "tabbed",
+    "paid",
+    "full",
+    "width",
+    "installations",
+    "picklist",
+    "includes",
+    "setting",
+    "called",
+    "once"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

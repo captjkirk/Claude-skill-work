@@ -1,0 +1,39 @@
+{
+  "id": "event-staff",
+  "title": "event-staff.md",
+  "content": "## Metadata_Start ## code: en ## title: Staff ## slug: event-staff ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Manage your staff for an upcoming {{variable.Object_Event}} through our {{variable.Product_Events}} {{variable.Object_Staff}} object. Define who will be working during the event and particular sessions. ## Create a Staff Record 1. From the {{variable.Object_Event}} record, navigate to the Staff {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}}. ![Create a Staff Record 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Staff%20Record%201.png){height=\"\" width=\"\"} 3. Define the {{variable.Field_Staff_Contact}} who will be working the event. 4. You can also define a {{variable.Field_Staff_User}}, which will give you results of any internal user that will be working the event. ![Create a Staff Record 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Staff%20Record%202.png){height=\"\" width=\"\"} 5. Click {{variable.Button_Save}} and see your new {{variable.Object_Staff}} record! ![Create a Staff Record 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Create%20a%20Staff%20Record%203.png){height=\"\" width=\"\"} ## Define Staff at the Session level If you want to manage {{variable.Object_Staff}} on a per {{variable.Object_Session}} basis, create a related {{variable.Object_SessionStaff}} record. ![Define Staff at Session Level 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Define%20Staff%20at%20Session%20Level%201.png){height=\"\" width=\"\"} 1. From the {{variable.Object_Staff}} record, navigate to the Session Staff {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}}. 3. Define the {{variable.Field_SessionStaff_Session}} field. ![Define Staff at Session Level 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Define%20Staff%20at%20Session%20Level%202.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "staff",
+    "define",
+    "create",
+    "record",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20staff",
+    "height",
+    "width",
+    "event",
+    "object_staff",
+    "session"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. From the {{variable",
+    "2. Click {{variable",
+    "3. Define the {{variable",
+    "4. You can also define a {{variable",
+    "5. Click {{variable",
+    "1. From the {{variable",
+    "2. Click {{variable",
+    "3. Define the {{variable"
+  ],
+  "troubleshooting": []
+}

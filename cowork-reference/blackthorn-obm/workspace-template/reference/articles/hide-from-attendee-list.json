@@ -1,0 +1,29 @@
+{
+  "id": "hide-from-attendee-list",
+  "title": "hide-from-attendee-list.html",
+  "content": "Do you want to hide certain s from the Attendee List? Check the on a specific record to remove them from the Attendee List on the 's Attendee Tab. NOTE: s that are hidden on the page will still be recorded in the record’s Attendees . Voila!&nbsp;",
+  "keywords": [
+    "attendee",
+    "from",
+    "list",
+    "record",
+    "want",
+    "hide",
+    "certain",
+    "check",
+    "specific",
+    "remove",
+    "them",
+    "note",
+    "hidden",
+    "page",
+    "still",
+    "recorded",
+    "attendees",
+    "voila",
+    "nbsp"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

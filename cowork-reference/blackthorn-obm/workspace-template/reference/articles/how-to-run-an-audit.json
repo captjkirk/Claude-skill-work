@@ -1,0 +1,38 @@
+{
+  "id": "how-to-run-an-audit",
+  "title": "how-to-run-an-audit.md",
+  "content": "## Metadata_Start ## code: en ## title: How to Run an Audit ## slug: how-to-run-an-audit ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Auditing is an important part of any Blackthorn Compliance implementation. Auditing is how you get rid of all the Personally Identifiable Information (PII) that you already have in your org. Follow the steps below to easily scan any Salesforce records for PII. 1. Navigate to the Audit tab. ![Audit Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Audit%20Tab.png){height=\"\" width=\"\"} 2. Select an `Object` to Audit. ![select object](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/select%20object.png){height=\"\" width=\"\"} 3. Select `Audit Start Date` and `Audit End Date`. ![start date end date](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/start%20date%20end%20date.png){height=\"\" width=\"\"} `Audit Start Date` is the *Created Date* from which Audit will start querying for records. `Audit End Date` is the *Created Date* at which Audit will stop querying for records. **Note:** You can change the default Audit date range field to any other DateTime field (such as LastModifiedDate) by changing the AuditDateField in the Manager Custom Metadata Type. 4. Select `Audit Action`. ![Audit Action](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Audit%20Action.png){height=\"\" width=\"\"} * \"Mask\" will permanently redact credit card numbers Compliance detects on records according to the Mask Type configured for that record’s object. * \"Report\" will create a Compliance log record if a credit card number is detected but will NOT mask the number. You can view the reported records in the PCIFY Reports Folder. * \"Delete\" will delete the ENTIRE record if a credit card number is detected in ANY field. **Note:** Existing EmailMessages do not support Mask. For more information, go [here](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_emailmessage.htm){target=\"_blank\"}. 5. Press **RUN**. You should see the following success alert: ![Success Alert](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Success%20Alert.png){height=\"\" width=\"\"} You will receive an email confirmation when the job is done. ## Important Notes * Depending on the Audit dates selected and the Audit Action, the Audit could take a few minutes to a few hours. We recommend testing your first audit with a month, and then expanding the date range to include years of records. * Masking will not be applied automatically after the creation of a new pattern since masking is only applied when a record is created or altered.",
+  "keywords": [
+    "audit",
+    "date",
+    "records",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "select",
+    "start",
+    "mask",
+    "record",
+    "compliance",
+    "object"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Navigate to the Audit tab",
+    "2. Select an `Object` to Audit",
+    "3. Select `Audit Start Date` and `Audit End Date`",
+    "4. Select `Audit Action`",
+    "5. Press **RUN**",
+    "* \"Mask\" will permanently redact credit card numbers Compliance detects on records according to the Mask Type configure",
+    "* Depending on the Audit dates select"
+  ],
+  "troubleshooting": []
+}

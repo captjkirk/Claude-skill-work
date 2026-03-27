@@ -1,0 +1,33 @@
+{
+  "id": "navigator-getting-started",
+  "title": "navigator-getting-started.html",
+  "content": "The {{variable.Product_BlackthoEventNavigator}} app is a mobile app that enables {{variable.Object_Attendee}} s to navigate and manage their agenda at multi-session {{variable.Object_Event}} s. {{variable.Object_Attendee}} s will receive an org-specific invite link from the Event Organizer. If an {{variable.Object_Attendee}} has never downloaded the app, the link will prompt them to do so. {{variable.Object_Attendee}} s then enter the email they used to register for the {{variable.Object_Event}} . A Magic Link or OTP code will be emailed to them so they can complete the login process. Once logged in, they can see the {{variable.Object_Event}} ’s agenda, {{variable.Object_Session}} s, other {{variable.Object_Attendee}} s, and more. {{variable.Object_Attendee}} s will remain logged in until they have been inactive for 24 hours, at which point the app logs them out. Download the App Download the app from the App Store (iOS) or Google Play Store (Android). Go to the App Store. Locate the {{variable.Product_BlackthoEventNavigator}} app. Download the app. Open the app. Log In On the Welcome screen, enter the email you used to register for the {{variable.Object_Event}} . Complete the following authentication process using the OTP or Magic Link method. OTP Open the {{variable.Product_BlackthoEventNavigator}} app. You will see the Welcome screen. Enter the email address that you used to register for the {{variable.Object_Event}} . Click Get Verification Code . Go to your email inbox and locate the OTP email. Open the email and copy the 6-digit code. Enter the 6-digit code in the Navigator app. Click Verify . You can now see the Upcoming Events page. NOTE: If an {{variable.Object_Attendee}} with an email address NOT associated with an {{variable.Object_Event}} tries to log into the app, they will receive an error message stating that their email address is not authenticated. Magic Link Use the Magic Link to log into the app and see the upcoming {{variable.Object_Event}} s you registered for. Open the {{variable.Product_BlackthoEventNavigator}} app and see the Welcome screen. Enter the email address that you used to register for the {{variable.Object_Event}} . Click Send Magic Link . Go to your email inbox and locate the Magic Link email. Click the Magic Link in the email. You will be redirected back to the app. You can now see the Upcoming Events page. NOTE: If an {{variable.Object_Attendee}} with an email address NOT associated with an {{variable.Object_Event}} tries to log into the app, they will receive an error message stating that their email address is not authenticated. First Time Opening the App If this is your first time opening the Navigator app, please follow the demo to learn how the app works. Known Issue There is a known issue with the demo and accessing your Event after the demo is complete. Currently, if you remain logged in, you cannot see your organization’s Events. To remedy this situation, please complete the following steps. Delete the Event Navigator app from your mobile device. Re-download it from the App Store/Google Play. Open your official Event Navigator link and sign in with the email you used to register for the Event. You will now see your organization’s Events. Added: September 2025",
+  "keywords": [
+    "variable",
+    "email",
+    "link",
+    "object_event",
+    "object_attendee",
+    "your",
+    "magic",
+    "they",
+    "address",
+    "event",
+    "enter",
+    "used",
+    "register",
+    "open",
+    "product_blackthoeventnavigator",
+    "from",
+    "code",
+    "complete",
+    "download",
+    "store"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error message stating that their email address is not authenticated.",
+    "error message stating that their email address is not authenticated."
+  ]
+}

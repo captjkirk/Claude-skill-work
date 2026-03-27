@@ -1,0 +1,38 @@
+{
+  "id": "sku",
+  "title": "sku.md",
+  "content": "## Metadata_Start ## code: en ## title: Gateway SKU's ## slug: sku ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Stock Keeping Units represent specific Product variations. * You can create SKU's only for Good-type Products. You can create these Products on Stripe Dashboard | Orders | Products. ![M_03_01_Gateeway skus 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_01_Gateeway%20skus%201.png){height=\"\" width=\"\"} Once you have created a Product, you can add SKU's in the Inventory section of that Product on the Stripe Dashboard. ![M_03_01_Gateeway skus 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_01_Gateeway%20skus%202.png){height=\"\" width=\"\"} * Products and SKU's get pushed into the Salesforce org via webhooks. * Products and SKU's can be updated from the Stripe Dashboard. The updated records are synced via webhooks. * Deleted SKU's are deleted from the Salesforce org. ![M_03_01_Gateeway skus 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_01_Gateeway%20skus%203.png){height=\"\" width=\"\"} ## Creating SKU's from Salesforce You can create a SKU record in Salesforce and push it to Stripe. 1. Create a Gateway SKU record. 2. Set the Product lookup. Note: * The Product should be synced with Stripe. * The Product Type should be Good. 3. Set Currency ISO and Price fields. 4. Optionally, set Inventory Type and Inventory Quantity fields. 5. Save the record. 6. Click 'Push to Stripe' button on the layout. 7. You should see the SKU Id field populated.",
+  "keywords": [
+    "product",
+    "stripe",
+    "m_03_01_gateeway",
+    "products",
+    "create",
+    "salesforce",
+    "type",
+    "dashboard",
+    "skus",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "20skus",
+    "height"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create a Gateway SKU record",
+    "2. Set the Product lookup",
+    "3. Set Currency ISO and Price fields",
+    "4. Optionally, set Inventory Type and Inventory Quantity fields",
+    "5. Save the record",
+    "6. Click 'Push to Stripe' button on the layout",
+    "7. You should see the SKU Id field populated"
+  ],
+  "troubleshooting": []
+}

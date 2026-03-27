@@ -1,0 +1,41 @@
+{
+  "id": "stripe-metadata",
+  "title": "stripe-metadata.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Metadata ## slug: stripe-metadata ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Stripe To Salesforce Mapping ### Introduction Blackthorn Payments now retrieves all Metadata values from Stripe for Payment Gateway Customer, Payment Method, Transaction, Payment Intent, and Subscription objects. The Stripe Metadata Structure can hold 50 keys, with key names up to 40 characters long and values up to 500 characters long for a total of 27,000 characters. Blackthorn Payments stores the Stripe Metadata in a long text area field named bt_stripe__Metadata__c on each supported object. The Metadata is stored in JSON format and can easily be converted to a key-value map in Apex code to retrieve a value by key. The field, Metadata__c, is not on object layouts, it must be added manually. The field will populate via Webhooks and the Sync feature on Payment Gateway records. Bidirectional sync from Salesforce to Stripe is available. Blackthorn Payments sets some Salesforce record Ids in the Stripe Metadata field and also support pushing custom key and values from Salesforce to Stripe. ### Sample Use Cases Here are some uses cases for Metadata in Stripe getting pulled into Salesforce: 1. Store keys or ids from other systems in the Stripe Metadata field and set them on a custom field on a Salesforce record. 2. Use the Stripe metadata field store additional customer details and parse it so set fields on the Contact in Salesforce. 3. Store information about why a refund was created, and by whom in a custom field on your refund transaction if any. ![H_02_19_Sample Use Cases 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_19_Sample%20Use%20Cases%201.png){height=\"\" width=\"\"} *Example of Stripe Metadata on the Customer object (which syncs to our Payment Gateway Customer object in the field Metadata)* * * * ![H_02_19_Sample Use Cases 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_19_Sample%20Use%20Cases%202.png){height=\"\" width=\"\"} *Example Payment Gateway Customer record in Salesforce displaying the Stripe metadata* * * * Here is sample trigger code that gets a values by key from the Metadata field on Transaction. This is useful if you want to save a value for a known key on a custom field on the Transaction or on a related record. ``` trigger MetadataParse on bt_stripe__Transaction__c (after insert after update) { for (bt_stripe__Transaction__c tra : Trigger.new) { if (String.isNotBlank(tra.bt_stripe__Metadata__c)) { Map metadataMap = (Map ) JSON.deserialize(tra.bt_stripe__Metadata__c, Map .class); // now access the metadata element using the keys & add your business logic here String value = metadataMap.get('key'); tra.Donation_Id__c = metadataMap.get('donation_id'); //e.g. dnt_89660b7daed7, Give Transaction //Boolean tra.Campaign__c = metadataMap.get('campaign')=='true'? true :false; //e.g. true/false } } } ``` ## Salesforce To Stripe Mapping Blackthorn Payments now supports the ability to configure the Salesforce field/data to be mapped to stripe metadata key/value for Payment Gateway Customer, Payment Method, Transactions, Sales document, and Subscription objects. ### Introduction 1. Install the latest payments package version 4.151 and above. 2. Configure the custom metadata mappings in Salesforce using the Source Object and the source Field. 3. Define a Metadata Key for the source field. 4. Send a record from Salesforce to see the metadata in Stripe ### Setup Steps 1. Go to Setup > Custom metadata Types > Stripe Metadata Mapping > Manage Stripe Metadata Mappings > New. 2. Enter a Label, Stripe Metadata Mapping Name, Metadata Key, Source object, Source field and Save. (Edit the Layout to include these fields if not already present) ![H_02_19_setup cases 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_19_setup%20cases%201.png){height=\"\" width=\"\"} *Example Stripe Metadata Mapping* * * * 3. Create a new Payment Gateway Customer record in Salesforce and define the Billing Country and gateway. ![H_02_19_setup cases 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_19_setup%20cases%202.png){height=\"\" width=\"\"} 4. You will see the Stripe API response populated in the metadata field on the record. :::(Info) () If you wish to map multiple fields of one source object, please create a new mapping for every field. ::: ![H_02_19_setup cases 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_19_setup%20cases%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "metadata",
+    "stripe",
+    "field",
+    "salesforce",
+    "payment",
+    "gateway",
+    "customer",
+    "object",
+    "record",
+    "cases",
+    "mapping",
+    "from",
+    "custom",
+    "source",
+    "h_02_19_setup",
+    "payments",
+    "transaction",
+    "value",
+    "https",
+    "document360"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Store keys or ids from other systems in the Stripe Metadata field and set them on a custom field on a Salesforce record",
+    "2. Use the Stripe metadata field store additional customer details and parse it so set fields on the Contact in Salesforce",
+    "3. Store information about why a refund was created, and by whom in a custom field on your refund transaction if any",
+    "1. Install the latest payments package version 4",
+    "2. Configure the custom metadata mappings in Salesforce using the Source Object and the source Field",
+    "3. Define a Metadata Key for the source field",
+    "4. Send a record from Salesforce to see the metadata in Stripe ### Setup Steps 1",
+    "2. Enter a Label, Stripe Metadata Mapping Name, Metadata Key, Source object, Source field and Save",
+    "3. Create a new Payment Gateway Customer record in Salesforce and define the Billing Country and gateway",
+    "4. You will see the Stripe API response populated in the metadata field on the record"
+  ],
+  "troubleshooting": []
+}

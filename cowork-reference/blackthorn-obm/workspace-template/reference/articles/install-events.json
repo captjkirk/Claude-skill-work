@@ -1,0 +1,30 @@
+{
+  "id": "install-events",
+  "title": "install-events.html",
+  "content": "For new installations, the Candy Shop will perform the following steps. Install Base Package Install Blackthorn Payments Install Blackthorn Events Assign Blackthorn | Events (Admin) and Blackthorn | Payments (Admin) permission sets to the person performing the installation Schedule the Events’ Scheduled Jobs Authorize the Events App as the installing user Pre-requisites {{snippet.App_Installation_Prerequisite}} Install Events Note: You’ll need the Salesforce Administrator profile to complete the following tasks. {{snippet.CandyShopInstall}} Review Salesforce Connected App Changes Salesforce recently announced a change to its security policy around Connected Apps, effective August 28th. As a result, Blackthorn recommends verifying that these Connected Apps are installed in your Salesforce orgs. Blackthorn | Connected App - required to use Blackthorn Events and Blackthorn Payments Mobile Check-in App - required for using Blackthorn Mobile Check-in Blackthorn | Mobile Connected App - required for using Blackthorn Mobile Payments Blackthorn Message - required for using Blackthorn Messaging Please review the attached pdf for instructions to check that the required Connected Apps are installed and connected correctly.",
+  "keywords": [
+    "blackthorn",
+    "connected",
+    "events",
+    "required",
+    "install",
+    "payments",
+    "salesforce",
+    "mobile",
+    "apps",
+    "check",
+    "using",
+    "following",
+    "admin",
+    "snippet",
+    "review",
+    "installed",
+    "installations",
+    "candy",
+    "shop",
+    "perform"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

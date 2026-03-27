@@ -1,0 +1,30 @@
+{
+  "id": "install-payments",
+  "title": "install-payments.html",
+  "content": "Blackthorn {{variable.Product_Payments}} can be installed in a Production or Sandbox org. Once installed, the Blackthorn team will be notified and will update your license. Pre-requisites {{snippet.App_Installation_Prerequisite}} Install Payments Note: You must have the Salesforce Administrator profile to complete the tasks below. Go to the Candy Shop . Click Install Blackthorn Payments - Click Here for Details . Click the Log In to Install button Log into your {{variable.Product_Salesforce}} org. Select “Install for Admins Only”. Once the installation process is complete, you will receive an email from {{variable.Product_Salesforce}} . Review Salesforce Connected App Changes Salesforce recently announced a change to its security policy around Connected Apps, effective August 28th. As a result, Blackthorn recommends verifying that these Connected Apps are installed in your Salesforce orgs. Blackthorn | Connected App - required to use Blackthorn Events and Blackthorn Payments Mobile Check-in App - required for using Blackthorn Mobile Check-in Blackthorn | Mobile Connected App - required for using Blackthorn Mobile Payments Blackthorn Message - required for using Blackthorn Messaging Please review the attached pdf for instructions to check that the required Connected Apps are installed and connected correctly.",
+  "keywords": [
+    "blackthorn",
+    "connected",
+    "required",
+    "installed",
+    "install",
+    "payments",
+    "salesforce",
+    "mobile",
+    "variable",
+    "your",
+    "click",
+    "apps",
+    "check",
+    "using",
+    "once",
+    "complete",
+    "product_salesforce",
+    "review",
+    "product_payments",
+    "production"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

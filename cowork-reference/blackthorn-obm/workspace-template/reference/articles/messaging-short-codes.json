@@ -1,0 +1,30 @@
+{
+  "id": "messaging-short-codes",
+  "title": "messaging-short-codes.md",
+  "content": "## Metadata_Start ## code: en ## title: Short Codes ## slug: messaging-short-codes ## seoTitle: Short Codes ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Paid Feature) Short Codes is a paid add-on. Please contact {{variable.Link_BlackthornSupport}} for more information. ::: A short code is a shorter telephone number used to send and receive SMS and MMS messages between mobile phones. You may want to use short codes instead of a traditional ten-digit number to send large volumes of messages in a short amount of time. Since short codes are pre-approved by carriers, they are less likely to be labeled as spam. While Blackthorn can initiate the short code application for you via Twilio, please review our recommended reading first. ## United States * US Industry Standards: [CTIA Short Code Monitoring Handbook](https://www.wmcglobal.com/hubfs/CTIA%20Short%20Code%20Monitoring%20Handbook%20-%20v1.8.pdf){target=`_blank`} * [Messaging Principles and Best Practices](https://api.ctia.org/wp-content/uploads/2019/07/190719-CTIA-Messaging-Principles-and-Best-Practices-FINAL.pdf){target=`_blank`} * [Twilio Opt-in Process](https://help.twilio.com/articles/223134707-Industry-Standards-for-opt-ins-for-US-Short-Codes){target=`_blank`} ## Canada * [Canadian Industry Standards](https://www.txt.ca/wp-content/uploads/2024/02/Canadian-CSC-Compliance-Policies-v1-September-2023.pdf){target=`_blank`} * [CSC Code of Conduct](https://www.txt.ca/wp-content/uploads/2020/11/Common-Short-Code_Code-of-Conduct-November-2020.pdf){target=`_blank`} * [Twilio Opt-in Process](https://help.twilio.com/articles/223182408){target=`_blank`} * [French-language requirements for Canadian Short Codes](https://help.twilio.com/articles/223134867){target=`_blank`} ## United Kingdom * [UK Industry Standards](https://www.short-codes.com/){target=`_blank`} * [Twilio Guidelines](https://www.twilio.com/en-us/guidelines/gb/short-code){target=`_blank`} * [Requirements for UK Short Codes](https://help.twilio.com/articles/223134887){target=`_blank`} ## Industry Standards Note Complying with industry and compliance standards for your location is crucial. It is your responsibility to understand and comply with them. Please consult with your legal counsel to ensure you meet your local requirements.",
+  "keywords": [
+    "short",
+    "codes",
+    "https",
+    "target",
+    "_blank",
+    "twilio",
+    "code",
+    "industry",
+    "standards",
+    "ctia",
+    "help",
+    "articles",
+    "your",
+    "messaging",
+    "please",
+    "content",
+    "uploads",
+    "canadian",
+    "requirements",
+    "paid"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

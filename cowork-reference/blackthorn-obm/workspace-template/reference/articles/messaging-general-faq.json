@@ -1,0 +1,32 @@
+{
+  "id": "messaging-general-faq",
+  "title": "messaging-general-faq.md",
+  "content": "## Metadata_Start ## code: en ## title: General FAQ ## slug: messaging-general-faq ## seoTitle: General FAQ ## description: ## contentType: Markdown ## Metadata_End **Q: How do I cancel my Messaging plan in the app?** A: While users can perform upgrades from the Admin panel, there isn't a self-service option to cancel. Please contact {{variable.Link_BlackthornSupport}} to create a case, and they will help you cancel your subscription. **Q: How do I remove phone numbers from my subscription?** A: The first step to remove one or more phone numbers is to contact {{variable.Link_BlackthornSupport}}. We will then remove unwanted phone numbers from your Twilio and Salesforce accounts and update your subscription to reflect the correct number of phone numbers.",
+  "keywords": [
+    "phone",
+    "numbers",
+    "general",
+    "cancel",
+    "from",
+    "your",
+    "subscription",
+    "remove",
+    "messaging",
+    "contact",
+    "variable",
+    "link_blackthornsupport",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "admin",
+  "procedures": [
+    "* A: The first step"
+  ],
+  "troubleshooting": []
+}

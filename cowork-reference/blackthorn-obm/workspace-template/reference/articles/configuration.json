@@ -1,0 +1,30 @@
+{
+  "id": "configuration",
+  "title": "configuration.md",
+  "content": "## Metadata_Start ## code: en ## title: Configuration Tab ## slug: configuration ## seoTitle: Configuration Tab ## description: ## contentType: Markdown ## Metadata_End Before Events can be used, you must complete the multi-step configuration process. Use the Configuration tab to set up Events for first-time users. The additional tabs give you an easy way to deploy and make automatic updates. :::(Warning) (**Consider Using an Integration User**) Before configuring the Events app or activating Scheduled Jobs, we recommend logging in as an Integration User. An Integration User is a dedicated full Salesforce license that has a custom Permission Set and is used for any 3rd party integrations. This can help reduce issues related to configuration, authorization, and individual employee user access. ::: ![events admin 4_v2\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/events%20admin%204_v2%281%29.png){height=\"\" width=\"\"} ## Authorize the App {{snippet.ETADMIN_Config_Authorize}} ## Assign Events Permission Sets to All Users {{snippet.ETADMIN_Config_AssignPSAllUsers}} ## Advanced Permission Assignments {{snippet.ETADMIN_Config_AdvancedPermissionAssign}} ## Create Test Records {{snippet.ETADMIN_Config_CreateTestRecords}} ## Create Email Templates The Email Template Builder is a user-friendly tool that creates great-looking email templates for your Event. Use the Email Template Builder and the Email Configuration component to add custom email templates for the following scenarios. * confirmation emails * waitlist emails * waitlist pending emails *Note: If you are using the Email Configuration component to set up emails on a per Event basis, you must disable the corresponding workflow rule. If you don't, Attendees will receive both emails. {{snippet.ETADMIN_Config_CreateEmailTemplates}}",
+  "keywords": [
+    "configuration",
+    "email",
+    "events",
+    "user",
+    "snippet",
+    "emails",
+    "integration",
+    "permission",
+    "templates",
+    "before",
+    "used",
+    "must",
+    "users",
+    "using",
+    "custom",
+    "create",
+    "template",
+    "builder",
+    "event",
+    "component"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

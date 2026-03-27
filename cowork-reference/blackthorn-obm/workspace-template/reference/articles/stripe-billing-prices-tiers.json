@@ -1,0 +1,36 @@
+{
+  "id": "stripe-billing-prices-tiers",
+  "title": "stripe-billing-prices-tiers.html",
+  "content": "The Payments package v5.1 requires Stripe API version 2020-08-27 or above. We've renamed Plan to Price to support Stripe API updates. Customers must use Stripe API version 2020-08-27 or above in order to use the Price updates in v5.1. {{variable.Object_StripePrice}} records track how much and how often to charge for a {{variable.Object_Subscription}} . They can be used for recurring or one-time purchases and support various business structures. One way to think about the differences between a one-time price and a recurring price is that a user is charged a one-time fee to set up a {{variable.Object_Subscription}} , and then over time, the user is charged a recurring amount for the {{variable.Object_Subscription}} . About the Stripe Price Fields Product : The Product related to this {{variable.Object_StripePrice}} Interval : The frequency with which the {{variable.Object_Subscription}} will be billed. Leave this blank if you are creating a one-time price. Previously, Interval was a required field. If you use a Payments package version earlier than Version 5.1 and want to use one-time prices, you must perform the following updates. Change the required default setting for the Interval field, so it is no longer required to create a Stripe Price record. Remove the field from the Stripe Price page layout if you do not need it. Interval Count : The number of intervals (specified in the interval property) between subscription billings. For example, Interval = “Month” and Interval Count = “3 bills every 3 months.” Amount : This is the amount to be charged. Do not use this field if you have more than one Tier. Aggregate Usage : Only for Usage-based prices. The usage is calculated at the end of the interval. Billing Scheme : If set to “Tiered,” you need to set Tiers for the Price Tiers Mode : In volume-based tiering, the maximum quantity within a period determines the per-unit price. In graduated tiering, pricing can successively change as the quantity grows. Trial Period Days : Default number of trial days when subscribing a customer to this price. Create a New Stripe Price Record This example uses the minimal requirements to create a new Stripe Price record. Create a new Stripe Price record. Set the Stripe Price Name , Currency ,&nbsp;and Interval &nbsp;properties. Optional —Add a name to Stripe Name &nbsp;to use as a nickname alongside the&nbsp; Stripe Price Name . This allows for up to 255 characters to be referenced, while the Stripe Price Name &nbsp;can only utilize 80 characters. Select a Product . (The Product must already be in Stripe.) Set the Billing Scheme . Check Active . Click {{variable.Button_Save}} . Click Push to Stripe . Prices may only be created for Products (Product2) with Type set to “Service.” If the Product has Type set to “Good,” a validation error will occur. Disable Validations To prevent the validation from firing before data is pushed to Stripe, use the Disable Plan Stripe Validation field in the “Blackthorn Pay – Trigger Settings” custom setting. Go to Setup. In the Quick Find box, enter and click “Custom Settings.” Click Manage next to “Blackthorn Pay – Trigger Settings.” Click Edit . Check the Disable Plan Stripe Validation checkbox. Click {{variable.Button_Save}} . Additional validations will be executed, and you will get an error message if something went wrong. If&nbsp;the Price ID field is populated, the Stripe Price is pushed to Stripe and ready to use. You can also pull existing Stripe Prices from Stripe, using the Sync feature on Payment Gateway. Stripe Price Tiers Tiered prices must have Tier records. You need to create Tier records&nbsp; before &nbsp;pushing the Stripe Price to Stripe. Minimal Requirements for Tiers A Tier must have a value in either the Flat Amount or Unit Amount field. A Tier must have an Up To &nbsp;property, which specifies the upper bound of the Tier, which is inclusive. A tiered Stripe Price must have at least two Tiers The last tier should be open-ended, and the Up To field left blank. Both licensed and metered Stripe Prices can be tiered. Tier Pricing Example A Stripe Price has three Tiers: 0-10, Flat Amount $100 0-100, Unit Amount 1 100 - null, Unit Amount 0.5 In this case , A Subscription with {{variable.Field_Subscrip_Quantity}} = “15” will be billed as $105 (100 + (5*1)) A Subscription with {{variable.Field_Subscrip_Quantity}} = “25” will be billed as $115 (100 + (15*1)) A Subscription with {{variable.Field_Subscrip_Quantity}} = “200” will be billed as $240 (100 + (90*1) + (100*0.5)) Update a Stripe Price After pushing the Stripe Price record to Stripe the first time, only the&nbsp; Stripe Name (nickname in Stripe) and&nbsp; Active fields can be updated. Any updates to those fields will automatically sync to Stripe after saving the Stripe Price record. Push to Stripe Checkbox Instead of using the Push to Stripe button, you can use the Stripe Prices’ Push to Stripe checkbox. When the field is checked, the data on the Stripe Price record will be pushed to Stripe. Once the operation is complete, the Stripe Price Price ID field will be populated. NOTE: You may need to add the Price ID field to the Stripe Price’s page layout. Considerations Do not use the checkbox in an asynchronous context, as the trigger starts a future method. If you need to use the checkbox in a future or batch context, complete the following steps. Update Change Data Capture Go to Setup. In the Quick Find box, enter and click “Change Data Capture.” Locate “Enable Price” (bt_stripe__Plan2__c), and move it to the Selected Entries column. Click {{variable.Button_Save}} . Update Custom Settings Go to Setup. In the Quick Find box, enter and click “Custom Settings.” Click Manage next to “Blackthorn Pay - Trigger Settings.” Click Edit . Check Disable Plan_PushToStripe . Click {{variable.Button_Save}} . Now, the Push To Stripe checkbox will work in an asynchronous context. NOTE: If you run the insert Price operations in batch, set your batch size to around 30. You will need to consider the time limits as well as the callout limits.",
+  "keywords": [
+    "stripe",
+    "price",
+    "variable",
+    "click",
+    "field",
+    "nbsp",
+    "interval",
+    "time",
+    "amount",
+    "tier",
+    "must",
+    "prices",
+    "record",
+    "need",
+    "tiers",
+    "name",
+    "settings",
+    "checkbox",
+    "product",
+    "create"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. {{variable",
+    "30. You will need to consider the time limits as well as the callout limits"
+  ],
+  "troubleshooting": [
+    "error will occur.",
+    "error message if something went wrong."
+  ]
+}

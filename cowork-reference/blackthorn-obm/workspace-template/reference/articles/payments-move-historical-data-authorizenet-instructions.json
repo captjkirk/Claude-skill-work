@@ -1,0 +1,33 @@
+{
+  "id": "payments-move-historical-data-authorizenet-instructions",
+  "title": "payments-move-historical-data-authorizenet-instructions.md",
+  "content": "## Metadata_Start ## code: en ## title: Instructions ## slug: payments-move-historical-data-authorizenet-instructions ## seoTitle: Instructions ## description: ## contentType: Markdown ## Metadata_End Select one of the following paths to move your existing Authorize.net data. ### Option 1 [Automatically sync the data](/v1/docs/payments-automatically-move-historical-data-authorizenet) from your existing gateway account to Salesforce via Authorize.net. ### Option 2 Perform the following two steps to [manually sync your data](/v1/docs/payments-manually-sync-data-authorizenet). 1. Sync the data from your existing gateway account to Authorize.net. 2. Sync your data from Authorize.net to Salesforce.",
+  "keywords": [
+    "data",
+    "your",
+    "sync",
+    "authorize",
+    "instructions",
+    "payments",
+    "move",
+    "authorizenet",
+    "existing",
+    "from",
+    "historical",
+    "following",
+    "option",
+    "automatically",
+    "docs",
+    "gateway",
+    "account",
+    "salesforce",
+    "manually",
+    "metadata_start"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Sync the data from your existing gateway account to Authorize",
+    "2. Sync your data from Authorize"
+  ],
+  "troubleshooting": []
+}

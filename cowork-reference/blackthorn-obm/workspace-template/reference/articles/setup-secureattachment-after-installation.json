@@ -1,0 +1,41 @@
+{
+  "id": "setup-secureattachment-after-installation",
+  "title": "setup-secureattachment-after-installation.md",
+  "content": "## Metadata_Start ## code: en ## title: Setup SecureAttachment (after installation) ## slug: setup-secureattachment-after-installation ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End There are a few more steps to completely finish setting up SecureAttachment. ## STEP ONE: Add SecureAttachment Tabs to Blackthorn Compliance Once you have installed the SecureAttachment package, you will need to add Custom Tabs to Compliance. 1. Edit the Compliance Lightning App. Go to Setup > Apps > App Manager > Compliance > Edit. ![edit app](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/edit%20app.png){height=\"\" width=\"\"} 2. Click on Navigation Items in the App Settings. 3. Add the \"Audit\" tab to the Selected Items. ![click audit\\(1\\)](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/click%20audit%281%29.png){height=\"\" width=\"\"} 4. Add the \"API Credentials\" tab to the Selected Items. ![add api credits](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/add%20api%20credits.png){height=\"\" width=\"\"} 5. Press {{variable.Button_Save}}. 6. At this point, you may see two Audit tabs in Compliance. SecureAttachment comes with it's own Audit tab, and you should start using the new tab highlighted in green. ![green tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/green%20tab.png){height=\"\" width=\"\"} 7. Hide the old tab (*highlighted in red*) by navigating to: Setup > Users > Profiles. 8. Select your user's Profile. 9. Click **Edit** and scroll down to the Custom Tab Settings section. 10. Change the first Audit tab to \"Tab Hidden\". ![tab hidden](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/tab%20hidden.png){height=\"\" width=\"\"} 11. Click {{variable.Button_Save}}. 12. Navigate back to the Compliance Lightning App. ## STEP TWO: Add Images API Credentials SecureAttachment scans your attachments via OCR technology. You will need to enter two different sets of credentials: 1) Images and 2) Files. 1. Click the new API Credentials tab. ![api credentials tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/api%20credentials%20tab.png){height=\"\" width=\"\"} 2. Select `Credential Type` = \"Images API\" from the dropdown. 3. Enter the Images API Key provided by Compliance support in the `API Key` field. 4. Enter the Images API Endpoint provided by Compliance support in the `API EndPoint` field. 5. Click {{variable.Button_Save}}. (For security reasons, the credentials will disappear after saving.) Stay on this page for the next step: Adding API credentials for Files. ## STEP THREE: Add Files API Credentials 1. Select `Credential Type` = \"Files API\" from the drop-down. 2. Enter the Files API Key provided by Compliance support in the `API Key` field. 3. Enter the Files API Endpoint provided by Compliance support in the `API EndPoint` field. 4. Click {{variable.Button_Save}}. (For security reasons, the credentials will disappear after saving.) Congratulations! You have finished integrating SecureAttachment with the APIs. ## STEP FOUR: Turn On APIs in SecureAttachment The last step is to turn on the APIs so that SecureAttachment knows you’re ready to start calling the APIs. If you haven’t completed steps 1-3, this step won’t work! 1. Navigate to Setup > Custom Code > Custom Metadata Types > SecureAttachment Settings. 2. Click **Manage Records**. ![manage records](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/manage%20records.png){height=\"\" width=\"\"} 3. Click on the Default record. ![default record](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/default%20record.png){height=\"\" width=\"\"} 4. Click **Edit**. ![click edit](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/click%20edit.png){height=\"\" width=\"\"} 5. Check `Enable Files API`. ![enable api](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/enable%20api.png){height=\"\" width=\"\"} 6. Check `Enable Images API`. 7. Press {{variable.Button_Save}}. ![settings complete](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/settings%20complete.png){height=\"\" width=\"\"} ## STEP FIVE: Auto-Create Chatter Posts on Parent Records [OPTIONAL] This last step is optional. If you want to inform your agents when attachments or files are auto-deleted or reported by Compliance, you can perform the following steps. A process builder flow will automatically create Chatter posts on the Chatter Feed of the parent record of the Attachment or ContentVersion record. Usually this Chatter post will be created on the Case where the Attachment was uploaded. 1. Navigate to Setup > Process Automation > Process Builder. 2. Expand the process called \"PCIFY: Create Chatter Post for Detected PII\". ![my process](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/my%20process.png){height=\"\" width=\"\"} 3. Press **Activate** and confirm the popup. 4. Navigate back to Setup > Custom Code > Custom Metadata Types > SecureAttachment Settings. 5. Click **Manage SecureAttachment Settings**. 6. Click **Default**. ![click default](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/click%20default.png){height=\"\" width=\"\"} 7. Edit and Save the \"AutoChatterMessage\" to your liking or keep as-is. ![auto chatter msg](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/auto%20chatter%20msg.png){height=\"\" width=\"\"} You’re all done! You can start using SecureAttachment now.",
+  "keywords": [
+    "images",
+    "click",
+    "secureattachment",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "documentation",
+    "height",
+    "width",
+    "compliance",
+    "step",
+    "credentials",
+    "edit",
+    "files",
+    "setup",
+    "settings"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Edit the Compliance Lightning App",
+    "2. Click on Navigation Items in the App Settings",
+    "3. Add the \"Audit\" tab to the Selected Items",
+    "4. Add the \"API Credentials\" tab to the Selected Items",
+    "5. Press {{variable",
+    "6. At this point, you may see two Audit tabs in Compliance",
+    "7. Hide the old tab (*highlighted in red*) by navigating to: Setup > Users > Profiles",
+    "8. Select your user's Profile",
+    "9. Click **Edit** and scroll down to the Custom Tab Settings section",
+    "10. Change the first Audit tab to \"Tab Hidden\""
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "multilingual-support-paylink-overview",
+  "title": "multilingual-support-paylink-overview.md",
+  "content": "## Metadata_Start ## code: en ## title: PayLink Multilingual Support Overview ## slug: multilingual-support-paylink-overview ## seoTitle: PayLink Multilingual Support Overview ## description: ## contentType: Markdown ## Metadata_End The [Data Dictionary](https://docs.blackthorn.io/docs/select-method-paylink-multilingual-support#data-dictionary){target=`_blank`} provides multilingual support, allowing Admins to establish a default language that serves as the primary language for all users. For example, you can override button labels and other static text on your {{variable.Product_PayLink}}s. Admins can also [override the default language](https://docs.blackthorn.io/docs/select-method-paylink-multilingual-support#default-language){target=`_blank`} and customize users' language experiences when specific predefined criteria are met. For example, an Admin can change the language for users in a particular region. Content will be presented in a user’s preferred language or default to English if a language isn’t pre-selected. Users won’t have to manually select their language each time they interact with the system, and they can change the displayed language according to their preferences. ## New Fields The {{variable.Object_Transaction}} object now includes two new fields, the {{variable.Field_DataDict_DataDictionaGrp}} field and the {{variable.Field_Transact_PayLinkDispLang}} field. ### Data Dictionary Group The {{variable.Field_DataDict_DataDictionaGrp}} field creates a link between the {{variable.Object_DataDictionaryGroup}} and the {{variable.Object_Transaction}} records. * Field Name: {{variable.Field_DataDict_DataDictionaGrp}} * API Name: bt_stripe__Data_Dictionary_Group__c * Data Type: Lookup(Data Dictionary Group) * Description: Select the appropriate {{variable.Object_DataDictionaryGroup}} containing the translated override values (Data Dictionary Entries) for the chosen language. ### PayLink Display Language The {{variable.Field_Transact_PayLinkDispLang}} field contains a list of languages that an Admin can choose from to display to the {{variable.Product_PayLink}} to the end user. • Field Name: {{variable.Field_Transact_PayLinkDispLang}} • API Name: PayLink_Display_Language__c • Data Type: picklist • Description: List of supported display languages for the {{variable.Product_PayLink}}. This field is set to English by default. :::(Warning) (Warning) Do not use the new {{variable.Field_DataDict_DisplayLanguage}} (Display_Language__c) and {{variable.Field_DataDict_DataDictionaGrp}} (bt_stripe__Data_Dictionary_Group__c) fields on the {{variable.Object_PayLinkConfiguration}} object. They are not functional. ::: ## How It Works The following logic describes how the {{variable.Object_DataDictionaryGroup}} / {{variable.Object_DataDictionaryEntry}} records interact with the {{variable.Field_Transact_PayLinkDispLang}} field. * {{variable.Product_PayLink}} labels are displayed in English, the default language, when either of the following is true. * The {{variable.Object_Transaction}}’s {{variable.Field_Transact_PayLinkDispLang}} and {{variable.Field_DataDict_DataDictionaGrp}} fields are blank. * The {{variable.Object_Transaction}}’s {{variable.Field_Transact_PayLinkDispLang}} field is blank, and the {{variable.Field_DataDict_DataDictionaGrp}} does not have a {{variable.Object_DataDictionaryEntry}} for English. * {{variable.Product_PayLink}} labels use a {{variable.Object_DataDictionaryEntry}}’s values if the attached {{variable.Object_Transaction}}’s {{variable.Field_DataDict_DataDictionaGrp}} has a {{variable.Object_DataDictionaryEntry}} record that uses the same language as the {{variable.Object_Transaction}}’s {{variable.Field_Transact_PayLinkDispLang}}. * {{variable.Product_PayLink}} labels are displayed in the selected {{variable.Object_Transaction}} {{variable.Field_Transact_PayLinkDispLang}} if a {{variable.Object_DataDictionaryGroup}} does not include a {{variable.Object_DataDictionaryEntry}} record for the selected {{variable.Field_Transact_PayLinkDispLang}}. * {{variable.Product_PayLink}} labels are displayed in English if a {{variable.Object_DataDictionaryGroup}} has a {{variable.Object_DataDictionaryEntry}} record with {{variable.Field_DataDictEnt_LanguageLoca}} = “English,” and the {{variable.Object_Transaction}}’s {{variable.Field_Transact_PayLinkDispLang}} field is blank. * {{variable.Product_PayLink}} labels are displayed in the selected {{variable.Object_Transaction}}’s {{variable.Field_Transact_PayLinkDispLang}} when the {{variable.Object_Transaction}}’s {{variable.Field_DataDict_DataDictionaGrp}} field does not have a value.",
+  "keywords": [
+    "variable",
+    "language",
+    "field",
+    "field_transact_paylinkdisplang",
+    "object_transaction",
+    "product_paylink",
+    "field_datadict_datadictionagrp",
+    "data",
+    "paylink",
+    "multilingual",
+    "support",
+    "default",
+    "labels",
+    "english",
+    "object_datadictionaryentry",
+    "dictionary",
+    "displayed",
+    "object_datadictionarygroup",
+    "docs",
+    "select"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* API Name: bt_stripe__Data_Dictionary_Group__c * Data Type: Lookup(Data Dictionary Group) * Description: Select"
+  ],
+  "troubleshooting": []
+}

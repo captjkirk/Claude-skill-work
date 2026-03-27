@@ -1,0 +1,33 @@
+{
+  "id": "coupons",
+  "title": "coupons.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Coupons ## slug: coupons ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Everyone loves discounts! Stripe Coupons are used to reduce the amount charged to the customer. With Blackthorn, we have you covered. ## What do they do? - Can be Amount based or Percentage based - Can have time ranges when they are applicable - Can have a maximum redemption quantity - Can be set on a Subscription or a Customer ## Create Stripe Coupons To get started, navigate to the App Launcher and search for \"Stripe Coupons\" - Create a Stripe Coupon record. - Set `Payment Gateway` field. - Set `Currency` field. - Set `Amount Off` or `Percent Off` fields. - `Amount Off` will take off a specific dollar amount. For example; I fill in \"10\" here. This will subtract my total amount by 10. - `Percent Off` will take off a specific percentage from the total. For example; I fill in \"10\" here. This will subtract the total amount by 10%. - Set `Duration` picklist. - Save the record. - Click `Push to Stripe` button. ![M_03_04 coupon](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/M_03_04%20coupon.png){height=\"\" width=\"\"} If the `Valid` checkbox is checked, the Stripe Coupon is saved in Stripe. ## Stripe Coupon fields - `Code Name` Name of the Stripe Coupon. This name is seen by your customer. - `Payment Gateway` Payment Gateway the Stripe Coupon is linked to. - `Currency` is required if this is an amount-based coupon. - `Amount Off` Amount of the discount applied to the Subscriptions. - `Percentage Off` Percentage of the discount applied to the Subscriptions. - `Max Redemptions` Maximum times the Stripe Coupon can be used by customers. - `Duration` Forever, Once or Repeating. - `Duration In Months` If Duration is set to 'Repeating`, length of the time range the Stripe Coupon is valid after being applied to a Subscription. - `Redeem By` Date after the Stripe Coupon is no longer valid. - `Times Redeemed` Number of times the Stripe Coupon has been used. ## Subscription discounts You can set a discount by setting the `Stripe Coupon` lookup field on the Subscription before pushing the Subscription to Stripe. After this, the discount is applied to the Invoices, and the Stripe Coupon lookup field is set on the Invoice records. ## Customer discount You can add a discount for a Customer. In this case, the discount will be added for every Invoice for the customer, generated from Subscriptions. To set a discount for a Customer, set the Stripe Coupon lookup field on the Stripe Customer record. If you set the Stripe User Coupon lookup field to null (remove the value and save), the discount is no longer applied. ## Delete Stripe Coupons You can delete a Stripe Coupon from Stripe. After this, the Stripe Coupon is no longer usable. In order to do so, go to the Stripe Coupon record and click the 'Delete From Stripe' button. After this, you if the `Deleted from Stripe` checkbox is checked, the Stripe Coupon was deleted from Stripe.",
+  "keywords": [
+    "stripe",
+    "coupon",
+    "amount",
+    "discount",
+    "customer",
+    "coupons",
+    "field",
+    "from",
+    "subscription",
+    "applied",
+    "after",
+    "percentage",
+    "record",
+    "duration",
+    "lookup",
+    "used",
+    "based",
+    "payment",
+    "gateway",
+    "total"
+  ],
+  "category": "payments",
+  "procedures": [
+    "10. - `Percent Off` will take off a specific percentage from the total",
+    "- Can be Amount based or Percentage based - Can have time ranges when they are applicable - Can have a maximum redemption quantity - Can be set on a Subscription or a Customer ## Create Stripe Coupons To get started, navigate"
+  ],
+  "troubleshooting": []
+}

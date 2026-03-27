@@ -1,0 +1,33 @@
+{
+  "id": "vt-custom-aura-component",
+  "title": "vt-custom-aura-component.md",
+  "content": "## Metadata_Start ## code: en ## title: Custom Aura Component (Advanced) ## slug: vt-custom-aura-component ## seoTitle: Custom Aura Component ## description: ## contentType: Markdown ## Metadata_End Some customers have expressed the need for more flexibility with the {{variable.Component_BTPayVirtualTerminal}}. To address this need, users can create their own Aura component and add it where they see fit. Inside the Aura component, users can pass in the following variables. * {{variable.Field_VT_RecordID}}: This is the Id for the record that will load the component. * {{variable.Field_Aura_ObjectName}}: This is the object type of the record that will load the component. * {{variable.Field_Aura_ParentObjectName}}: This is the name of the object used in the {{variable.Field_VT_ParentObject}} field. * {{variable.Field_Aura_ParentId}}: This is the Id associated with the record populated in the {{variable.Field_VT_ParentObject}} field. * {{variable.Field_Aura_customRedirect}}: Accepts values of “True” or “False”. Must be set to “True” to stop the default success popup. * {{variable.Field_Aura_disableCard}}: Accepts values of “True” or “False”. When set to “True”, the credit card form will NOT be displayed on the New Payment Method screen. Users will not see the credit card form on the **+ Add New** option when clicking the {{variable.Field_VT_PaymentMethod}} field. Additionally, the stored {{variable.Object_PaymentMethod}}s with the {{variable.Field_PM_RecordType}} = “Card” will not display as a {{variable.Object_PaymentMethod}} that can be used for capturing {{variable.Object_Transaction}}s. * {{variable.Field_Aura_disableACH}}: Accepts values of “True” or “False”. When set to “True” the ACH form will NOT be displayed on the New Payment Method screen. Users will not see the ACH form on the **+ Add New** option when clicking the {{variable.Field_VT_PaymentMethod}} field. Additionally, the stored {{variable.Object_PaymentMethod}}s with the {{variable.Field_PM_RecordType}} = “ACH” will not display as a {{variable.Object_PaymentMethod}} that can be used for capturing Transactions. * {{variable.Field_MgVTCustomSet_MakeCVCOpt}}: If enabled, the {{variable.Field_VT_CVC}} field will be optional when adding a {{variable.Object_PaymentMethod}}. To map the related Object, Id, or Amount fields use [VT Mapping](https://docs.blackthorn.io/docs/vt-pre-populate-fields). ## Experience Cloud The following will occur when using the Aura Virtual Terminal with the Experience Cloud. * A newly created {{variable.Object_PaymentMethod}}’s {{variable.Field_PM_PaymentGatewayCustome}} field will be updated with the existing {{variable.Object_PaymentGatewayCustomer}} when there is an existing {{variable.Object_PaymentGatewayCustomer}} record with the same email and {{variable.Object_Account}} used to create the new {{variable.Object_PaymentMethod}}. * The new {{variable.Object_PaymentMethod}}’s {{variable.Field_PM_PaymentGatewayCustome}} field will be updated with a new {{variable.Object_PaymentGatewayCustomer}} record when there isn’t an existing one with the same email and {{variable.Object_Account}} used to create the new {{variable.Object_PaymentMethod}}. * {{variable.Object_PaymentMethod}}s added via the Virtual Terminal in the Experience Cloud will be added to the available {{variable.Object_PaymentMethod}}s for the related {{variable.Object_Account}}. * When a user logs into the Experience Cloud from a {{variable.Object_Contact}} record, the Virtual Terminal will display all available {{variable.Object_PaymentMethod}}s for the {{variable.Object_Account}}.",
+  "keywords": [
+    "variable",
+    "object_paymentmethod",
+    "when",
+    "component",
+    "field",
+    "aura",
+    "record",
+    "true",
+    "used",
+    "users",
+    "form",
+    "experience",
+    "cloud",
+    "object_account",
+    "custom",
+    "create",
+    "object",
+    "accepts",
+    "values",
+    "false"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* option when click",
+    "* option when click"
+  ],
+  "troubleshooting": []
+}

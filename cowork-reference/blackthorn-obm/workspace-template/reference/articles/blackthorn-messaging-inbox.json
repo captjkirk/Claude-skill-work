@@ -1,0 +1,30 @@
+{
+  "id": "blackthorn-messaging-inbox",
+  "title": "blackthorn-messaging-inbox.md",
+  "content": "## Metadata_Start ## code: en ## title: Blackthorn Messaging Inbox ## slug: blackthorn-messaging-inbox ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Let's take a closer look at how you can use the Blackthorn Messaging Conversations page. ## Filter your view ![Textey Inbox_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Textey%20Inbox_1.png){height=\"\" width=\"\"} When you first open the Messaging Conversations page you will see all of your organization's Conversations listed on the left-hand side in chronological order (descending from newest to oldest). However, you'll likely want to filter this view to only see those Conversations you're interested in. Here are the details for your filtering options: ### Display * **All Conversations:** Starts with the set of all Conversations that the current user has visibility to. * **My Conversations:** Starts with only those Conversations owned by the current user. * **My Sent Messages:** Shows only the current user's outbound text messages. These may include text messages that were sent but are not part of a Conversation. ### Conversation Status * **Needs Response:** Conversations where the last text message was inbound. This should indicate that you need to respond back. * **Responded:** Conversations where the last text message was outbound. This indicates that your organization was the last to respond to the conversation. * **Closed:** Conversations that have been closed internally. ### Phone Number This filter allows you to see Conversations based on which of your internal phone numbers are used. For example, if you have a phone number that is used for Customer Support and you only want to see Conversations where that number is involved, you can use this filter. ### List View This filter lets you use your pre-defined object list views to determine which conversations you see. For example, let's say you have a list view for your Hot Leads. You can select that list view from this filter so that only conversations with those Leads will be visible. ## Compose a New Message ![Texty Inbox_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Texty%20Inbox_2.png){height=\"\" width=\"\"} Now you can compose a new text message directly from the Messaging Conversations page. Just select the New Message icon and search for the record you want to text. You'll then be able to compose your text message, including use of templates and ability to add an image.",
+  "keywords": [
+    "conversations",
+    "your",
+    "text",
+    "filter",
+    "message",
+    "messaging",
+    "view",
+    "only",
+    "list",
+    "blackthorn",
+    "page",
+    "from",
+    "want",
+    "current",
+    "user",
+    "messages",
+    "conversation",
+    "where",
+    "last",
+    "phone"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

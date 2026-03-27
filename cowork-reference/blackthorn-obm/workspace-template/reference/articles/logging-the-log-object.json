@@ -1,0 +1,33 @@
+{
+  "id": "logging-the-log-object",
+  "title": "logging-the-log-object.md",
+  "content": "## Metadata_Start ## code: en ## title: Logging: The Log Object ## slug: logging-the-log-object ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Everything that Blackthorn {{variable.Product_Compliance}} does is in the Logs tab. ![Logs](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Logs.png){height=\"\" width=\"\"} When {{variable.Product_Compliance}} masks a credit card, it creates a Log. When {{variable.Product_Compliance}} has an error, it creates a Log. When you press the **Delete** button on a Log record, it creates another Log that says you just deleted the related Case (or Email, etc). *The source of {{variable.Product_Compliance}} analytics & reporting is actually the Log Object.* So when you create or delete the Logs, this affects the {{variable.Product_Compliance}} reports and the Analytics tab dashboard. The Log object (API Name: pcify__Log__c) is a custom object. It was created for the {{variable.Product_Compliance}} application and is not the same as standard {{variable.Product_Salesforce}} logging. ![log 1268](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/log%201268.png){height=\"\" width=\"\"} ## Log Object Reference Fields | Field Label | API Name | Data Type | Description | Values | | --- | --- | --- | --- | --- | | RecordId | pcify__RecordId__c | Text(18) | Id of related record | | | ParentId | pcify__ParentId__c | Text(18) | Id of parent record (for Attachments and Content Version records) | | | Record Link | pcify__Record__c | Formula (Text) | Hyperlink to related record | | | Parent Link | pcify__Parent_Link__c | Formula (text) | Hyperlink to parent record (for Attachments and Content Version records) | | | Category* | pcify__Category__c | Text(255) | Classification of Log | Record Reported | | | | | | Record Deleted | | | | | | Record Masked | | Credit Card Detected | pcify__CreditCardDetected__c | Formula(Checkbox) | True if credit card number is detected. | | | Exception | pcify__Exception__c | Checkbox | True if Compliance has detected an internal error - not detected PII. | | | Large Description | pcify__Large_Description__c | Long Text Area (131072) | Long summary of Log event. | | | Object** | pcify__Object__c | Text(255) | Triggering SObject for Log event. Use this field to filter reports by SObject. | | | Field | pcify__Field__c | Text(255) | The Salesforce field in which Compliance discovered sensitive data. | | | Pattern | pcify__Pattern__c | Text(255) | The Detection Pattern matched in the detection. | | | Origin | pcify__Origin__c | Text(255) | Apex origin of Log event | | | False Positive | pcify__FalsePositive__c | Checkbox | A likely false positive. This field is flagged automatically by Compliance. You are allowed to manually check this box if you find valid false positives not caught by Compliance. | | | Confidence Rating | pcify__ConfidenceRating__c | Formula(Text) | Our confidence in the detection event. Values can be High, Medium, or Low. | High | | | | | | Medium | | | | | | Low | | Pattern Match | pcify__PatternMatch__c | Checkbox | True if a detection pattern was matched. | | | Luhn Valid | pcify__LuhnValid__c | Checkbox | True if the number flagged passed the Luhn Algorithm. | | | Log Type* | pcify__LogType__c | Formula (Text) | A standard set of values which can be used in reporting | Mask | | | | | | Report | | | | | | Delete | | | | | | Debug | *Use the Object field to filter reports by SObject e.g. “Case” will only show you Logs where the triggering records are Cases. **Use either the Category field or the Log Type field to filter reports by action i.e. “Log Type = Report” to only return logs where there was a report event.",
+  "keywords": [
+    "text",
+    "record",
+    "object",
+    "field",
+    "variable",
+    "product_compliance",
+    "logs",
+    "formula",
+    "checkbox",
+    "event",
+    "when",
+    "reports",
+    "type",
+    "detected",
+    "true",
+    "compliance",
+    "pattern",
+    "detection",
+    "logging",
+    "description"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": [
+    "error, it creates a Log.",
+    "error - not detected PII."
+  ]
+}

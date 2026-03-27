@@ -1,0 +1,32 @@
+{
+  "id": "activate-account-sandbox",
+  "title": "activate-account-sandbox.md",
+  "content": "## Metadata_Start ## code: en ## title: Account Registration (Sandbox) ## slug: activate-account-sandbox ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End If you have just installed Blackthorn Messaging for the first time and you are in a Sandbox environment, then please reach out to {{variable.Link_BlackthornSupport}} so we can setup your account. It is possible to use Messaging in a sandbox environment, it's just that we don't allow the provisioning of new Messaging accounts from a sandbox. After we setup your account you'll receive an email with account credentials and instructions on how to proceed. :::(Warning) (Refreshing your Sandbox) Using the production Account and API Key in the refreshed sandbox is not permitted. If a user tries to open the Messaging Admin tab after the Sandbox is refreshed, they will see the following error. \"Request is not allowed as account xxxx is configured with another org.\" :::",
+  "keywords": [
+    "sandbox",
+    "account",
+    "messaging",
+    "your",
+    "just",
+    "environment",
+    "setup",
+    "after",
+    "refreshed",
+    "metadata_start",
+    "code",
+    "title",
+    "registration",
+    "slug",
+    "activate",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end"
+  ],
+  "category": "admin",
+  "procedures": [],
+  "troubleshooting": [
+    "error."
+  ]
+}

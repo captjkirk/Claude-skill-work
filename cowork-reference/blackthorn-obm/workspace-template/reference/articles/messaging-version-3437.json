@@ -1,0 +1,33 @@
+{
+  "id": "messaging-version-3437",
+  "title": "messaging-version-3437.md",
+  "content": "## Metadata_Start ## code: en ## title: November 2023 - Version 3.43.7 ## slug: messaging-version-3437 ## seoTitle: November 2023 - Version 3.43.7 ## description: ## contentType: Markdown ## Metadata_End ## Enhancements * If a Messaging account is suspended (Account `Status` = “Suspended”), then the user will receive the following error message. “Your account is suspended, Please reach out to our Success Team.” ![CRM82](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM82.png){height=\"\" width=\"\"} * A user will receive an error message If they have not been assigned a Messaging license, but have been assigned a permission set. ![CRM88](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/CRM88.png){height=\"\" width=\"\"} * In the Send Bulk SMS box with the Terms of Service acknowledgment, the spelling of the word organization has been changed from “organisation” to “organization”. ![ET2297](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/ET2297.png){height=\"\" width=\"\"} ## Bug * Users can send Bulk SMS from a Campaign if the number of members in the list is more than 1000 as there is no maximum limit. The limit for the number of records that can be displayed in the UI is 1000.",
+  "keywords": [
+    "version",
+    "messaging",
+    "account",
+    "suspended",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "november",
+    "2023",
+    "user",
+    "receive",
+    "error"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": [
+    "error message.",
+    "error message If they have not been assigned a Messaging license, but have been assigned a permission set."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "merge-conversations",
+  "title": "merge-conversations.md",
+  "content": "## Metadata_Start ## code: en ## title: Merge Conversations ## slug: merge-conversations ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Sometimes you may need to merge two conversations together. This can occur when you close a conversation, but then your customer replies back in response. You will have two distinct conversation records that you may decide to merge into one. Keep in mind that you can only merge conversations that occur between the same two phone numbers. You cannot merge conversations that exist between different internal/recipient phone numbers.",
+  "keywords": [
+    "merge",
+    "conversations",
+    "occur",
+    "conversation",
+    "between",
+    "phone",
+    "numbers",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "sometimes",
+    "need",
+    "together",
+    "when"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

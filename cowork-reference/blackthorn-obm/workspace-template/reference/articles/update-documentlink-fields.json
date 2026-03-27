@@ -1,0 +1,38 @@
+{
+  "id": "update-documentlink-fields",
+  "title": "update-documentlink-fields.md",
+  "content": "## Metadata_Start ## code: en ## title: Update DocumentLink Fields ## slug: update-documentlink-fields ## seoTitle: Update DocumentLink Fields ## description: ## contentType: Markdown ## Metadata_End Complete the following steps to change the values in the {{variable.Field_Invoice_AcctNameBillTo}}, {{variable.Field_Invoice_FirstNameBillTo}}, and {{variable.Field_Invoice_LastNameBillTo}} fields, but keep the existing {{variable.Field_Invoice_AccountBillTo}} and {{variable.Field_Invoice_ContactBillTo}} field values. 1. Open an Invoice record. 2. Click the {{variable.Button_Pencil}} icon next to the {{variable.Field_Invoice_AcctNameBillTo}} field. 3. Enter a new name. 4. In the {{variable.Field_Invoice_FirstNameBillTo}} field, enter a new first name. 5. In the {{variable.Field_Invoice_LastNameBillTo}} field, enter a new last name. 6. Click {{variable.Button_Save}}. 7. Click the {{variable.Field_Invoice_DocumentLink}} URL to view the changes. ![Update the fields on the DocumentLink](https://youtu.be/9_2uXivP25Y){height=\"480\" width=\"640\"}",
+  "keywords": [
+    "variable",
+    "fields",
+    "update",
+    "documentlink",
+    "field",
+    "click",
+    "enter",
+    "name",
+    "values",
+    "field_invoice_acctnamebillto",
+    "field_invoice_firstnamebillto",
+    "field_invoice_lastnamebillto",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "general",
+  "procedures": [
+    "1. Open an Invoice record",
+    "2. Click the {{variable",
+    "3. Enter a new name",
+    "4. In the {{variable",
+    "5. In the {{variable",
+    "6. Click {{variable",
+    "7. Click the {{variable"
+  ],
+  "troubleshooting": []
+}

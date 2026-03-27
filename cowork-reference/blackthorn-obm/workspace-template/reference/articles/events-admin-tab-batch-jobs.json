@@ -1,0 +1,30 @@
+{
+  "id": "events-admin-tab-batch-jobs",
+  "title": "events-admin-tab-batch-jobs.md",
+  "content": "## Metadata_Start ## code: en ## title: Batch Jobs Tab ## slug: events-admin-tab-batch-jobs ## seoTitle: Batch Jobs Tab ## description: ## contentType: Markdown ## Metadata_End :::(Info) (Batch Jobs Settings) To prevent issues with Event Registration Submission (ERS) processing during times of high concurrent registrations, automatically scheduled ERS batch processing via the Events (Admin) page will occur. A protected custom setting with a default value of \"Off\" was added and can only be changed from the Events (Admin) page. The public custom setting has been deprecated. ::: ![Events Admin Tab_Batch Jobs Tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab.png){height=\"\" width=\"\"} ## Add Sort Order on Event Items ![Events Admin Tab_Batch Jobs Tab_Add Sort Order on Event Items](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab_Add%20Sort%20Order%20on%20Event%20Items.png){height=\"\" width=\"\"} Click the **Add Sort Order on Event Items** button to set the {{variable.Field_EventItem_SortOrder}} field on {{variable.Object_EventItem}}s where the field is currently blank. (Apex Class Name: EventItem_SetSortOrder) ## Register Attendees for Webinars ![Events Admin Tab_Batch Jobs Tab_Register Attendees for Webinars](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab_Register%20Attendees%20for%20Webinars.png){height=\"\" width=\"\"} Click the **Register Attendees for Webinars** button to register {{variable.Object_Attendee}}s with your Webinar provider. Your {{variable.Object_Attendee}}s will then receive a personalized URL to join the webinar. (Batch Job Name: Blackthorn | Events Attendee Webinar Registration) ## Process Form Submissions ![Events Admin Tab_Batch Jobs Tab_Process Form Submissions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab_Process%20Form%20Submissions.png){height=\"\" width=\"\"} Click the **Process Form Submissions** button to trigger the following batch jobs. * Batch Job Name: Blackthorn | Events FormSubmission Processing0 * Runs at the top of each hour (12:00, 1:00, 2:00, etc.) * Batch Job Name: Blackthorn | Events FormSubmission Processing53 * Runs approximately every 5 minutes ## Create Webinars for Events ![Events Admin Tab_Batch Jobs Tab_Create Webinars for Events](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab_Create%20Webinars%20for%20Events.png){height=\"\" width=\"\"} Click **Create Webinars for Events** to create webinars for {{variable.Object_Event}}s that have a value in the {{variable.Field_ETEvent_WebinMeetingAcct}} field but no value in the {{variable.Field_ETEvent_WebinarMtgURL}} field. (Batch Job Name: Create Webinars for Events) ## Create Webinars for Sessions ![Events Admin Tab_Batch Jobs Tab_Create Webinars for Sessions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Events%20Admin%20Tab_Batch%20Jobs%20Tab_Create%20Webinars%20for%20Sessions.png){height=\"\" width=\"\"} Click **Create Webinars for Sessions** to create webinars for {{variable.Object_Session}}s that have a value in the {{variable.Field_Session_WebinarMeetiAcct}} field but no value in the {{variable.Field_Session_WebinarMtgURL}} field. (Apex Class Name: WebinarCreateBatch) ## Refresh Rules ![Advanced Visibility_Refresh Rule Button](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Advanced%20Visibility_Refresh%20Rule%20Button.png){height=\"\" width=\"\"} Click **Refresh Rules** to recalculate and refresh all rules for Advanced Visibility. * Clicking **Refresh Rule** triggers the FilterRecordsSyncBatch batch job, which recalculates and refreshes all rules for Advanced Visibility. * Visibility Conditions: * The **Refresh Rule** button will only be visible if the {{variable.CS_EnableAdvancedVisibility}} custom setting is set to “True.” * If the scheduled job does not exist, it will be scheduled 60 minutes from the {{variable.Object_BTRule}} record change.",
+  "keywords": [
+    "events",
+    "variable",
+    "webinars",
+    "batch",
+    "jobs",
+    "admin",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "create",
+    "tab_batch",
+    "20admin"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

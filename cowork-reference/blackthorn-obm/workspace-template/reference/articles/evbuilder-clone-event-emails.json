@@ -1,0 +1,41 @@
+{
+  "id": "evbuilder-clone-event-emails",
+  "title": "evbuilder-clone-event-emails.md",
+  "content": "## Metadata_Start ## code: en ## title: Emails ## slug: evbuilder-clone-event-emails ## seoTitle: Emails ## description: ## contentType: Markdown ## Metadata_End You can now configure and manage emails from within the {{variable.Component_EventBuilder}} when editing existing {{variable.Object_Event}}s. The “Emails” section is located in the left-side navigation under Attendees. Note: When you use the {{variable.Component_EventBuilder}} to create or clone a new {{variable.Object_Event}}, the “Emails” tab will be hidden. ## Email Templates Related List Start by clicking the Emails tab in the left-hand navigation bar. ![EventBuilder_Edit_EmailsTab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_Edit_EmailsTab.png){height=\"\" width=\"\"} If there are {{variable.Object_EmailTemplate}}s related to the {{variable.Object_Event}}, they will appear here. You can also create new {{variable.Object_EmailTemplate}}s by clicking {{variable.button_new}} in the {{variable.Object_EmailTemplate}}s {{variable.SFTerm_RelatedList}} component. Select “New” to create a new template or select “New from Template” to use an existing template. ![EventBuilder_EmailsTab_CreateEmailTemplate_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailsTab_CreateEmailTemplate_1.png){height=\"\" width=\"\"} ### New 1. If the {{variable.Field_ETEvent_ImageURL}} field on your {{variable.Object_Event}} contains an image, it will appear in the gray box that says, “Drop your file here.” To replace the image or If the space is blank, click **Browse**. ![EventBuilder_EmailsTab_EmailTemplate_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailsTab_EmailTemplate_2.png){height=\"\" width=\"\"} 2. Click **Upload**, **Import**, or **Search free photos** to add images. * Use the **Upload** button to add an image locally from your computer. * Use the **Import** button to add an image via Facebook, Dropbox, One Drive, etc. ![EventBuilder_EmailTab_Template_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailTab_Template_3.png){height=\"\" width=\"\"} * To upload an image via Salesforce Files, click **Import**, copy the public link from your image, and paste it in the “Enter a URL” box. ![EventBuilder_EmailTab_Template_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailTab_Template_4.png){height=\"\" width=\"\"} * Click the **X** below the **Cancel** button to return to the previous screen. 3. To customize your {{variable.Object_EmailTemplate}} further, complete the following steps. * Use the options in the Rows section to change each row’s layout. * Drag and drop the icons from the Content section onto the template. You can add more images, buttons, dividers, social media links, videos, and more. * Use the options in the Settings section to set the background color, background image, default font, and more. For more information about configuring your {{variable.Object_EmailTemplate}}, click [here](https://docs.blackthorn.io/docs/email-template-builder){target=`_blank`}. ### New from Template 1. If you choose “New from Template,” select an {{variable.Object_EmailTemplate}} (required). 2. Click **Continue**. ![EventBuilder_EmailsTab_Template_5](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailsTab_Template_5.png){height=\"\" width=\"\"} 3. Use the options in the Content, Rows, and Settings sections to edit your {{variable.Object_EmailTemplate}}. For more information about how the Email Template Builder works, click [here](https://docs.blackthorn.io/docs/email-template-builder){target=`_blank`}. ## Email Configuration Component 1. Review/Edit the following fields. * {{variable.Field_EmailConfig_SendEmailFro}} (required) * {{variable.Field_ETEvent_ConfirmatioEmail}} * {{variable.Field_ETEvent_WaitlistedEmail}} * {{variable.Field_ETEvent_WaitlisPendEmail}} ![EventBuilder_EmailsTab_ConfigurationComponent](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailsTab_ConfigurationComponent.png){height=\"\" width=\"\"} 2. Click {{variable.Button_Save}}. ## Send Email Instantaneously Component 1. Review/edit the following fields. * {{variable.Field_EmailConfig_SendEmailFro}} (required) – Select the from email address. The field defaults to the current user. Add an email address to the Organization-Wide Email Addresses to automatically include it as a picklist option. * {{variable.Field_ETEvent_EmailTemplate}} (required) – Select the {{variable.Object_EmailTemplate}} you want to use. * {{variable.Field_ETEvent_AttendeeFilter}} – This field controls which {{variable.Object_Attendee}}s will receive the email. * “Registration Status” - Select “Registration Status” (Invited, Registered, etc.) to select {{variable.Object_Attendee}}s with a specific {{variable.Field_Attendee_RegistratStatus}}. * “Attendee Status” - Select “Attendance Status” (Attended, No Show, etc.) to select {{variable.Object_Attendee}}s with a specific {{variable.Field_Attendee_AttendancStatus}}. * {{variable.Field_EmailConfig_StatusFilter}} for “Registration Status” – Choose from Lead, To Invite, Invited, Pending, Registered, Declined, Canceled, Waitlisted – Pending, Waitlisted – Rejected, Awaiting Approval, or Rejected. * {{variable.Field_EmailConfig_StatusFilter}} for “Attendee Status” – Choose from Pending, Attended, or No-Show. ![EventBuilder_EmailsTab_SendEmailInstant](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/EventBuilder_EmailsTab_SendEmailInstant.png){height=\"\" width=\"\"} 2. You’ll now see the list of {{variable.Object_Attendee}}s the email will be sent to. 3. Click **Preview Email** to preview the email or click **Send**.",
+  "keywords": [
+    "variable",
+    "email",
+    "from",
+    "https",
+    "images",
+    "click",
+    "select",
+    "template",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "documentation",
+    "height",
+    "width",
+    "object_emailtemplate",
+    "emails",
+    "your"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. If the {{variable",
+    "2. Click **Upload**, **Import**, or **Search free photos** to add images",
+    "3. To customize your {{variable",
+    "1. If you choose “New from Template,” select an {{variable",
+    "2. Click **Continue**",
+    "3. Use the options in the Content, Rows, and Settings sections to edit your {{variable",
+    "1. Review/Edit the following fields",
+    "2. Click {{variable",
+    "1. Review/edit the following fields",
+    "2. You’ll now see the list of {{variable"
+  ],
+  "troubleshooting": []
+}

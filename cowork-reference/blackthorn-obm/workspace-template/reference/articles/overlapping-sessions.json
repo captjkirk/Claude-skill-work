@@ -1,0 +1,41 @@
+{
+  "id": "overlapping-sessions",
+  "title": "overlapping-sessions.md",
+  "content": "## Metadata_Start ## code: en ## title: Overlapping Sessions ## slug: overlapping-sessions ## seoTitle: Overlapping Sessions ## description: ## contentType: Markdown ## Metadata_End :::(Warning) (Please Be Aware) Overlapping {{variable.Object_Session}} validation only occurs on the {{variable.Object_Event}} webpage’s {{variable.Object_Session}} selection page during checkout, the {{variable.Object_Event}} page, and the {{variable.AttendeeLink}}. Validation will not happen through other means of {{variable.Object_Session}} registration, such as manually adding {{variable.Object_Session}}s in the {{variable.Product_Salesforce}} UI. ::: Event Organizers can now prevent {{variable.Object_Attendee}}s from registering for overlapping {{variable.Object_Session}}s. This functionality allows for a more organized and manageable event schedule and ensures that an event's resources like {{variable.Object_Session}} seats and event spaces are used effectively. The following event types are just a few examples where you can use the overlapping {{variable.Object_Session}}s feature. * **Large-scale events & conferences:** * Ensure that {{variable.Object_Attendee}}s do not book {{variable.Object_Session}}s that occur simultaneously, improving schedule management. * **Classes, workshops & training:** * Prevent time conflicts in {{variable.Object_Session}} attendance for classes or workshop {{variable.Object_Session}}s. * Avoid overlapping training {{variable.Object_Session}}s to ensure employees can attend all required training without conflicts. ## Prevent Session Overlapping Field The {{variable.Field_EV_PreventSessionOverlap}} checkbox was added to the {{variable.Object_Event}} object to prevent {{variable.Object_Attendee}}s from registering for overlapping {{variable.Object_Session}}s. * Field Label: {{variable.Field_EV_PreventSessionOverlap}} * API Name: conference360__Prevent_Session_Overlapping__c * Data Type: Checkbox * Help Text: If this is checked, registration for overlapping Sessions is not available to an Attendee. * Default Value: False (unchecked) When checked, Attendees cannot register for overlapping Sessions. If {{variable.Field_EV_PreventSessionOverlap}} = “True” (checked), {{variable.Object_Attendee}}s cannot register for overlapping {{variable.Object_Session}}s. When the field is enabled, the following will occur. * During checkout, the **Add All** button will not be visible on the Session Registration page. * The **Add** button next to the {{variable.Object_Session}} will be grayed out if an {{variable.Object_Attendee}} tries to select a {{variable.Object_Session}} that overlaps with a {{variable.Object_Session}} already in their cart. ### Limitations * This only applies to {{variable.Object_Session}}s within the same {{variable.Object_Event}}. It does not apply to overlapping {{variable.Object_Session}}s across different {{variable.Object_Event}}s. * The overlapping {{variable.Object_Session}} validation occurs only on the {{variable.Object_Attendee}}-facing {{variable.Field_ETEvent_EventPageURL}}. There is no validation on the {{variable.Product_Salesforce}} side. This allows Event Organizers to book overlapping time slots when registering {{variable.Object_Attendee}}s for {{variable.Object_Session}}s in {{variable.Product_Salesforce}}. ### Update the Event Page Layout If the {{variable.Field_EV_PreventSessionOverlap}} field is not on the {{variable.Object_Event}} object’s page layout, follow the steps below to add it. 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, enter and click “Event” (conference360__Event__c). 4. Click the Page Layouts tab. 5. Click Event Layout. 6. Enter “Prevent Session Overlapping” in the Quick Find box. 7. Drag and drop the {{variable.Field_EV_PreventSessionOverlap}} field onto the page layout. 8. Click {{variable.Button_Save}}. ![Event Record_PreventOverlappingSession Field](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Record_PreventOverlappingSession%20Field.png){height=\"\" width=\"\"} ## Examples The following examples show how using the {{variable.Field_EV_PreventSessionOverlap}} field can prevent {{variable.Object_Attendee}}s from registering for overlapping {{variable.Object_Session}}s. ### Event 1 * Event Date: March 3 * Event Item 2 has the following {{variable.Object_Session}}s. * Session C: 9:00 am – 10:00 am * Session D: 9:00 am – 10:00 am * Registration Process * Attendee 2 selects Event Item 2 with Session C and Session D. * Result: Fail – Attendee 2 cannot complete the registration process because the {{variable.Object_Session}} times overlap. ### Event 2 * Event Date: March 3 * Event Items * Event Item 5 has the following {{variable.Object_Session}}. * Session G: 9:00 am – 10:00 am * Event Item 6 has the following {{variable.Object_Session}}. * Session H: 9:00 am – 10:00 am * Registration process: * Attendee 6 selects Event Item 5 with Session G. * Attendee 6 selects Event Item 6 with Session H. * Result: Fail - Registration failed because the {{variable.Object_Session}}s overlapped. The {{variable.Object_Session}}s are related to different Event Items, but the user used the same data for each {{variable.Object_Attendee}}.",
+  "keywords": [
+    "variable",
+    "object_session",
+    "event",
+    "overlapping",
+    "session",
+    "object_attendee",
+    "page",
+    "registration",
+    "field",
+    "object_event",
+    "prevent",
+    "following",
+    "field_ev_preventsessionoverlap",
+    "item",
+    "sessions",
+    "attendee",
+    "click",
+    "validation",
+    "registering",
+    "layout"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, enter and click “Event” (conference360__Event__c)",
+    "4. Click the Page Layouts tab",
+    "5. Click Event Layout",
+    "6. Enter “Prevent Session Overlapping” in the Quick Find box",
+    "7. Drag and drop the {{variable",
+    "8. Click {{variable",
+    "* Session C: 9:00 am – 10:00 am * Session D: 9:00 am – 10:00 am * Registration Process * Attendee 2 select",
+    "* Session H: 9:00 am – 10:00 am * Registration process: * Attendee 6 select"
+  ],
+  "troubleshooting": []
+}

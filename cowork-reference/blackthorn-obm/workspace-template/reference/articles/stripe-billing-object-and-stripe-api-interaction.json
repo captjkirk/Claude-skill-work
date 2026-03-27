@@ -1,0 +1,41 @@
+{
+  "id": "stripe-billing-object-and-stripe-api-interaction",
+  "title": "stripe-billing-object-and-stripe-api-interaction.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Billing Object and Stripe API Interaction ## slug: stripe-billing-object-and-stripe-api-interaction ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Usage * **Submission Method:** Automatically pushed to Stripe upon save of related objects * **Description:** When the Subscription_Item__c & Quantity fields are defined, the usage record is automatically created in stripe. There are no updates. ## Product * **Submission Method:** Automatically pushed to Stripe upon save of related objects * **Description:** Once the Payment Gateway record is saved on the product record, the product is automatically created in Stripe. No updates are allowed once the product is pushed to Stripe. ## Subscription * **Submission Method** Click the button / Check the `Push to Stripe` field * **Description** Initially, a subscription is created by clicking the `Submit to Stripe` button. We also provide a `Push To Stripe` checkbox field on the subscription. When checked, a subscription is created in Stripe. Once created & subscription Id is present - it then automatically syncs on updates. The fields that trigger auto sync of the subscription to Stripe are: 1. Payment Method 2. Coupon 3. Billing Method 4. Days Until Due 5. Amount Threshold 6. Reset Billing Cycle Anchor 7. Cancel At Period End 7. Prorate 8. Proration Date 9. Billing Cycle 10. Anchor First Invoice 11. Trial End 12. Trial From Price 13. Tax Percent 14. Pending Invoice Item 15. Interval 16. Pending Invoice Item 17. Interval Count ## Subscription Item * **Submission Method:** Submitted along with Subscription * **Description:** Once the subscription is saved in stripe any new updates or new line items added - are automatically synced. The `Price & Quantity` fields will trigger an automatic update. ## Sales Document * **Submission Method:** Click the button/Check the `Push to Stripe` field * **Description:** Initially, an Invoice is created by clicking the `Submit to Stripe` button. We also provide a `Push To Stripe` checkbox field. When checked, it creates an Invoice in Stripe. Once created and an Invoice Id is present - it then automatically syncs on updates. The fields that trigger an auto sync of the Invoice to Stripe are: 1. Payment Method 2. Coupon 3. Billing Method 4. Days Until Due 5. Due Date 6. Customer **Updates are only allowed when the Invoice Stage = Draft. Once the Invoice is sent or finalized you cannot update the Invoice.** ## Line Item * **Submission Method:** Submitted along with Invoice * **Description:** Once the Sales Document is saved in Stripe as an Invoice, any updates or new line items added will automatically sync to Stripe. The `Price & Quantity` fields will trigger an automatic update. This can be disabled via a Custom Setting, \"Disable_LineItem_AutoSync_With_Stripe__c.\" ## Stripe Coupon * **Submission Method:** Click the button / Check the `Push to Stripe` field * **Description:** A coupon is created by clicking the `Submit to Stripe` button. We also provide a `Push To Stripe` checkbox field that when checked creates a coupon in Stripe. No updates. ## Stripe Price * **Submission Method:** Click the button / check the `Push to Stripe` field * **Description:** A Stripe Price is created by clicking the `Push to Stripe` button. We also provide a `Push To Stripe` checkbox field that when checked creates a Price in Stripe. Once created and the Price Id is present - it then automatically syncs on updates. The fields that trigger the auto-sync are: 1. Active 2. Product 3. Name 4. Trial Period Days ## Tier * **Submission Method:** n/a * **Description:** Tiers are pushed when a Price is pushed. No updates are allowed. ## Stripe Gateway Order * **Submission Method:** Click the button * **Description:** Created when you click the `Push to Stripe` button. No updates are allowed. ## Gateway Order Item * **Submission Method:** Submitted along with the Stripe Gateway Order * **Description:** Gateway Order Items are pushed with the Stripe Gateway Order. ## Gateway SKU * **Submission Method:** Click the button * **Description:** Created when you click the `Push to Stripe` button. No updates are allowed.",
+  "keywords": [
+    "stripe",
+    "method",
+    "description",
+    "submission",
+    "created",
+    "updates",
+    "button",
+    "invoice",
+    "push",
+    "automatically",
+    "when",
+    "subscription",
+    "once",
+    "click",
+    "field",
+    "price",
+    "gateway",
+    "billing",
+    "pushed",
+    "fields"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Payment Method 2",
+    "3. Billing Method 4",
+    "5. Amount Threshold 6",
+    "7. Cancel At Period End 7",
+    "8. Proration Date 9",
+    "10. Anchor First Invoice 11",
+    "12. Trial From Price 13",
+    "14. Pending Invoice Item 15",
+    "16. Pending Invoice Item 17",
+    "1. Payment Method 2"
+  ],
+  "troubleshooting": []
+}

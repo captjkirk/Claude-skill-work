@@ -1,0 +1,40 @@
+{
+  "id": "events-update-time-zones",
+  "title": "events-update-time-zones.md",
+  "content": "## Metadata_Start ## code: en ## title: Update Time Zones ## slug: events-update-time-zones ## seoTitle: Update Time Zones ## description: ## contentType: Markdown ## Metadata_End Users can enter any city when setting the time zone; however, if the Events app does not recognize the time zone, the time zone will default to ET. :::(Info) (Time Zone Update) Users will see ET on Event webpages even if the Event record's {{variable.Field_ETEvent_TimeZone}} is set to \"EST\" or \"EDT.\" This update reflects a change in the logic for time zone calculations and simplifies the switch between Daylight Savings Time and Eastern Standard Time. ::: To add an IANA recognized time zone abbreviation (Examples: GMT, EST, and AEST), complete the steps below. 1. Click the **Gear** icon. 2. Click **Setup**. 3. Click the Object Manager tab. 4. In the Quick Find box, enter and click the Event object (conference360__Event__c). ![Time%20Zone%20Update%20Feature_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Time%20Zone%20Update%20Feature_1.png){height=\"\" width=\"\"} 6. Click the Fields and Relationships tab. 7. In the Quick Find box, enter and click “Time Zone”. ![Time%20Zone%20Update%20Feature_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Time%20Zone%20Update%20Feature_2.png){height=\"\" width=\"\"} 9. In the Values section, click **New**. ![Time%20Zone%20Update%20Feature_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Time%20Zone%20Update%20Feature_3.png){height=\"\" width=\"\"} 10. Enter the missing time zone value(s). Copy the value(s) from the [TZ Identifier column of the table here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#Time_Zone_abbreviations){target=`_blank`}. (Examples: Africa/Bamako, Asia/Riyadh, and Europe/Prague) ![Time%20Zone%20Update%20Feature_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Time%20Zone%20Update%20Feature_4.png){height=\"\" width=\"\"} 11. Click {{variable.Button_Save}}. ## FAQ **Q: Does Blackthorn Events automatically handle the Daylight Savings Time (DST) Adjustment?** A: Yes, Events automatically adjusts for DST. For example, in 2024 in the Eastern time zone (ET), the clock will automatically adjust as follows on March 10th and November 3rd. * March 10, 2024 at 2AM local time: {{variable.Field_ETEvent_EventStartTime}} will automatically spring forward by one hour. * November 3, 2024 at 2AM local time: {{variable.Field_ETEvent_EventStartTime}} will automatically fall back by one hour. * These changes apply to all times listed on the Event webpage, including Sessions' start and end times. **Q: What are the global time zones?** A: Time zone labels are displayed according to DST *in most cases*. [IANA time zones](https://www.iana.org/time-zones){target=`_blank`} are checked against the current time, and DST is determined and displayed accordingly. * Example * IANA Time Zone Value: Australia/Sydney * Today, on September 10, 2024, Australia is in AEST. * The time will be displayed as HH:mm AEST. * On Sunday, 6 October 2024, 2:00 am local time, the following change occurs: * Sunday, 6 October 2024, 2:00 am AEST → Sunday, 6 October 2024, 3:00 am AEDT * The clock springs forward by an hour, and AEST switches to the AEDT label. **Q: What are the North American time zones?** A: Common North American time zones in the list below will automatically be abbreviated to First Letter + Last Letter. (Example: EST → ET, EDT → ET) * AST → always shows AT * ADT → always shows AT * EST → always shows ET * EDT → always shows ET * CST → always shows CT * CDT → always shows CT * MDT → always shows MT * PST → always shows PT * PDT → always shows PT **Q: Can I change or translate the time zone on the Event’s webpage?** A: Event Organizers can use the new [{{variable.Object_DataDictionaryEntry}}](https://docs.blackthorn.io/docs/data-dictionary){target=`_blank`} {{variable.Field_DataDictEnt_Key}} = “LBL_DATE_TIMEZONE” to change or translate the time zone for the {{variable.Object_Event}}’s {{variable.Field_ETEvent_EventStartDate}} on the {{variable.Object_Event}}’s webpage. For example, if the {{variable.Field_DataDictEnt_Key}} = “LBL_DATE_TIMEZONE” and {{variable.Field_DataDict_Value}} = “Eastern Time Zone,” “Eastern Time Zone” will appear instead of “ET” on the {{variable.Object_Event}} webpage. The “LBL_DATE_TIMEZONE” {{variable.Field_DataDictEnt_Key}} only applies to the {{variable.Object_Event}}'s {{variable.Field_ETEvent_EventStartDate}}. It does not apply to other {{variable.Object_Event}} dates/times or {{variable.Object_Session}} dates/times.",
+  "keywords": [
+    "time",
+    "variable",
+    "zone",
+    "always",
+    "shows",
+    "zones",
+    "click",
+    "20zone",
+    "20update",
+    "https",
+    "2024",
+    "event",
+    "automatically",
+    "update",
+    "aest",
+    "object_event",
+    "events",
+    "enter",
+    "change",
+    "eastern"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the **Gear** icon",
+    "2. Click **Setup**",
+    "3. Click the Object Manager tab",
+    "4. In the Quick Find box, enter and click the Event object (conference360__Event__c)",
+    "6. Click the Fields and Relationships tab",
+    "7. In the Quick Find box, enter and click “Time Zone”",
+    "9. In the Values section, click **New**",
+    "10. Enter the missing time zone value(s)",
+    "11. Click {{variable"
+  ],
+  "troubleshooting": []
+}

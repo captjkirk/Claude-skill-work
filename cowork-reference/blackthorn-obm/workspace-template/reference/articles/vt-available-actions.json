@@ -1,0 +1,34 @@
+{
+  "id": "vt-available-actions",
+  "title": "vt-available-actions.md",
+  "content": "## Metadata_Start ## code: en ## title: Available Actions ## slug: vt-available-actions ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The {{variable.Component_VirtualTerminal}} has the capability to capture a New Single Charge or create a New Payment Method. Users are able to select which screen they would like to use by selecting an {{variable.Field_VT_Action}} value. ![J_06_Available Actions](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/J_06_Available%20Actions.png){height=\"\" width=\"\"} ## New Single Charge The {{variable.Field_VT_Action}} = \"New Single Charge\" creates a new {{variable.Object_Transaction}} for the user. {{variable.Field_VT_Action}} = \"New Single Charge\" has the following fields available out of the box: * {{variable.Field_VT_PaymentGateway}}: This field is only visible if your org has more that one {{variable.Object_PaymentGateway}}. * {{variable.Field_VT_RelatedTo}}: Use this field to relate to an {{variable.Object_Account}}, {{variable.Object_Contact}}, or {{variable.Object_Lead}}. * {{variable.Field_VT_ParentObject}}: This field is a lookup to the {{variable.Object_Transaction}} Parent. * {{variable.Field_VT_PaymentMethod}}: Only valid {{variable.Object_PaymentMethod}}s for the selected {{variable.Object_PaymentGateway}} will be available in this list. * {{variable.Field_VT_Description}}: Optional * {{variable.Field_VT_Amount}} - Set to the amount you would like to charge. * {{variable.Field_VT_Currency}}: The value from the related {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field will automatically populate this field. If the {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field is blank, the Virtual Terminal will use the {{variable.Object_PaymentGateway}}’s {{variable.Field_PG_DefaultCurrency}} value. * {{variable.Field_VT_ProcessType}}: Choose from \"Capture Now\", \"Auto-Process\", or \"Authorize Now\". :::(Info) (**Known Salesforce Issue**) If, after capturing a Transaction, the Virtual Terminal component displays an error message at the bottom of the widow refresh your page. This error occurs due to a know Salesforce issue. Read more [here](https://trailblazer.salesforce.com/issues_view?id=a1p3A000000oH6CQAU&title=cross-origin-error-if-lightning-component-is-embedded-in-an-iframe-and-the-top-window-s-location-is-cross-origin). ::: ## New Payment Method The {{variable.Field_VT_Action}} = \"New Payment Method\" gives users the ability to add a new {{variable.Object_PaymentMethod}} to a related {{variable.Object_Account}}, {{variable.Object_Contact}}, or {{variable.Object_Lead}} record. Users can add either credit card or bank account details.",
+  "keywords": [
+    "variable",
+    "field",
+    "charge",
+    "available",
+    "single",
+    "field_vt_action",
+    "actions",
+    "payment",
+    "method",
+    "users",
+    "value",
+    "object_paymentgateway",
+    "salesforce",
+    "error",
+    "title",
+    "capture",
+    "like",
+    "j_06_available",
+    "https",
+    "object_transaction"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": [
+    "error message at the bottom of the widow refresh your page.",
+    "error occurs due to a know Salesforce issue.",
+    "error-if-lightning-component-is-embedded-in-an-iframe-and-the-top-window-s-location-is-cross-origin)."
+  ]
+}

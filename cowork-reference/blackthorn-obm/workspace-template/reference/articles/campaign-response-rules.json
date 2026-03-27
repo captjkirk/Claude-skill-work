@@ -1,0 +1,40 @@
+{
+  "id": "campaign-response-rules",
+  "title": "campaign-response-rules.md",
+  "content": "## Metadata_Start ## code: en ## title: Campaign Response Rules ## slug: campaign-response-rules ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End In text messaging, automated conversations give you the ability to conduct a back-and-forth text message conversation with a recipient without having to manually send messages. Automated conversations can collect information from your recipient and update Lead or Contact fields with the data from the recipient’s responses. They are used in conjunction with keyword campaigns and templates. The best way to understand how automated conversations work is to look at an example. In the example below we’ll look at how to build an automated conversation that collects the first name, last name, and email address of someone who opts into our campaign. ## Configure Campaign Page Layout You will need to add a button and a field to your Campaign page layout. 1. Go to Setup > Customize > Campaigns > Page Layouts. 2. Click **Edit** next to the page layout you want to configure. 3. Add the button named **SMS Response Rules**. 4. Add the fields named `Phone Number`, `Phone Number (Display)`, `SMS Keyword`, `Enforce Single Conversation`. 5. Save the layout. ## Create Response Templates Automated conversations rely on templates for the actual message that will be replied. It’s important to note that, since both Leads and Contacts can be associated with a Campaign, you should create both a Lead template and a Contact template for each response. In this example, our conversation will have three responses so we’ll need six templates in total. The templates will be as follows: | Name | Body | | --- | --- | | Promo Campaign Response 1 (Lead) | Thanks for signing up for our Promo campaign! Please reply with your First Name and Last Name so I know how to refer to you. | | Promo Campaign Response 1 (Contact) | Thanks for signing up for our Promo campaign! Please reply with your First Name and Last Name so I know how to refer to you. | | Promo Campaign Response 2 (Lead) | Great! Hi {!FirstName}, we’re almost done. Please reply with your email address so we can send you more info about this offer. | | Promo Campaign Response 2 (Contact) | Great! Hi {!FirstName}, we’re almost done. Please reply with your email address so we can send you more info about this offer. | | Promo Campaign Response 3 (Lead) | Got it. Look for an email soon at {!Email}. Look forward to speaking with you. If you gave any wrong info just reply PROMO. | | Promo Campaign Response 3 (Contact) | Got it. Look for an email soon at {!Email}. Look forward to speaking with you. If you gave any wrong info just reply PROMO. | Now that our templates are created it’s time to create the response rules. ## Add Response Rules In order to add these responses to our Promo campaign, we need to do the following: 1. Navigate to the Promo campaign record. 2. Click the **SMS Response Rules** button. This opens a new page where we will build the responses. 3. Click the **Add Rule** button. This will open a dialog box where we will create the first rule. The following fields are available on the rule creation page: * **Order:** the order in which the rule executes (i.e. 1, 2, 3, etc) * **Save the Lead Response:** The field to save the recipient’s response if the recipient is a Lead. * **Save the Contact Response:** The field to save the recipient’s response if the recipient is a Contact. * **Auto-Response for Leads:** The template to reply with if the recipient is a Lead. * **Auto-Response for Contacts:** The template to reply with if the recipient is a Contact. ### Populate Fields for the First Response Rule * **Order:** 1 * **Save the Lead Response:** None. Since the first message received is the campaign keyword there’s no need to save the response. * **Save the Contact Response:** None. Since the first message received is the campaign keyword there’s no need to save the response. * **Auto-Response for Leads:** Promo Campaign Response 1 (Lead) * **Auto-Response for Contacts:** Promo Campaign Response 1 (Contact) ### Populate Fields for the Second Response Rule * **Order:** 2 * **Save the Lead Response:** Name. This saves the response into the Name field. * **Save the Contact Response:** Name. This saves the response into the Name field. * **Auto-Response for Leads:** Promo Campaign Response 2 (Lead) * **Auto-Response for Contacts:** Promo Campaign Response 2 (Contact) ### Populate Fields for the Third Response Rule * **Order:** 3 * **Save the Lead Response:** Email. This saves the response into the Email field. * **Save the Contact Response:** Name. This saves the response into the Email field. * **Auto-Response for Leads:** Promo Campaign Response 3 (Lead) * **Auto-Response for Contacts:** Promo Campaign Response 3 (Contact) This concludes the creation of our response rules. We’re now ready to start auto-conversing. ## Pulling It All Together Now that we’ve finished building our response rules, let’s look at how the automated conversation works! Let’s say someone texts in PROMO to your campaign phone number. We’ll assume the phone number is new and the incoming message is not matched to any record in Salesforce. A new Lead is created with default information (assuming the `Auto-Create Leads` option is enabled). The Lead will be associated with the Promo Campaign and the automated conversation will start. By setting up a keyword campaign with an automated conversation, we’ve achieved the following: * Captured a new Lead * Associated the new Lead to a Campaign * Populated the First Name, Last Name, Mobile Phone, and Email of the new Lead All of this was accomplished without any live interaction on our part.",
+  "keywords": [
+    "response",
+    "campaign",
+    "promo",
+    "lead",
+    "contact",
+    "name",
+    "save",
+    "email",
+    "auto",
+    "recipient",
+    "rules",
+    "automated",
+    "first",
+    "reply",
+    "conversation",
+    "your",
+    "look",
+    "field",
+    "rule",
+    "fields"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to Setup > Customize > Campaigns > Page Layouts",
+    "2. Click **Edit** next to the page layout you want to configure",
+    "3. Add the button named **SMS Response Rules**",
+    "4. Add the fields named `Phone Number`, `Phone Number (Display)`, `SMS Keyword`, `Enforce Single Conversation`",
+    "5. Save the layout",
+    "1. Navigate to the Promo campaign record",
+    "2. Click the **SMS Response Rules** button",
+    "3. Click the **Add Rule** button",
+    "* next to the page layout you want to configure"
+  ],
+  "troubleshooting": []
+}

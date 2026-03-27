@@ -1,0 +1,30 @@
+{
+  "id": "attendee-viewed-link",
+  "title": "attendee-viewed-link.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendee Viewed Link ## slug: attendee-viewed-link ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The {{variable.Field_Attendee_AttendViewdLink}} field tells you if the person you invited clicked on the {{variable.AttendeeLink}}. *This provides insight into open rates post-send.* ![Attendee Viewed Link](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Attendee%20Viewed%20Link.png){height=\"\" width=\"\"} * * * ![Attendee Viewed Event From Invite](https://youtu.be/P3hFUIeWVG4){height=\"480\" width=\"640\"}",
+  "keywords": [
+    "attendee",
+    "viewed",
+    "link",
+    "variable",
+    "https",
+    "height",
+    "width",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "field_attendee_attendviewdlink",
+    "field",
+    "tells",
+    "person"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "inbound-image-messages-mms",
+  "title": "inbound-image-messages-mms.html",
+  "content": "Inbound image messages can contain photos/media plus text or only photos/media. If the inbound image message does NOT contain text, an email notification will not be triggered. This is expected behavior as there is a workflow rule called “Email Owner When SMS Message Received” that is triggered only if the field on the record contains text.&nbsp; To resolve this issue, clone the workflow rule and remove the first criteria. This will trigger an email notification when an inbound message contains photos/media but no text. Object Structure When an inbound image message with text is received, the image is saved as a Salesforce File. The File is related to the Media record which is related to the record.",
+  "keywords": [
+    "text",
+    "inbound",
+    "image",
+    "media",
+    "message",
+    "photos",
+    "email",
+    "when",
+    "record",
+    "contain",
+    "only",
+    "notification",
+    "triggered",
+    "workflow",
+    "rule",
+    "received",
+    "contains",
+    "file",
+    "related",
+    "messages"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

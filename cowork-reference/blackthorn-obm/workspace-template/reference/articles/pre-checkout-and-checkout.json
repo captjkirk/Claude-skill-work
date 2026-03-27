@@ -1,0 +1,37 @@
+{
+  "id": "pre-checkout-and-checkout",
+  "title": "pre-checkout-and-checkout.md",
+  "content": "## Metadata_Start ## code: en ## title: Pre-checkout and Checkout Details ## slug: pre-checkout-and-checkout ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Overview There are two rich-text type fields which will allow you to show additional information on the pre-checkout and checkout page of your {{variable.Object_Event}}. ## Use Case Examples 1. You can provide elaborate instructions to follow through the precheckout and checkout pages. 2. Insert table diagrams and other images to show visual aids for the registration process. ![Use Case 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Use%20Case%201.png){height=\"\" width=\"\"} * * * ![Use Case 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Use%20Case%202.png){height=\"\" width=\"\"} ## Instructions 1. Add the {{variable.Field_Event_PrecheckoutDetails}} and {{variable.Field_Event_CheckoutDetails}} fields to the {{variable.Object_Event}} page layout. :::(Info) (Important) If you are using custom permission sets, please make sure these fields are granted access where necessary. ::: 2. Fill in the the {{variable.Field_Event_PrecheckoutDetails}} and {{variable.Field_Event_CheckoutDetails}} fields. 3. Click {{variable.Button_Save}}. ![Instructions 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%201.png){height=\"\" width=\"\"} 4. View the new information on the pre-checkout and checkout pages during registration. **Precheckout Page** ![Instructions 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%202.png){height=\"\" width=\"\"} * * * **Checkout Page** ![Instructions 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Instructions%203.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "checkout",
+    "instructions",
+    "variable",
+    "images",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "documentation",
+    "height",
+    "width",
+    "fields",
+    "page",
+    "case",
+    "show",
+    "information",
+    "object_event"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. You can provide elaborate instructions to follow through the precheckout and checkout pages",
+    "2. Insert table diagrams and other images to show visual aids for the registration process",
+    "1. Add the {{variable",
+    "2. Fill in the the {{variable",
+    "3. Click {{variable",
+    "4. View the new information on the pre-checkout and checkout pages during registration"
+  ],
+  "troubleshooting": []
+}

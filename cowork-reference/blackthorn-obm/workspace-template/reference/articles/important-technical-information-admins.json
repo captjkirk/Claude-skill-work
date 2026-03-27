@@ -1,0 +1,30 @@
+{
+  "id": "important-technical-information-admins",
+  "title": "important-technical-information-admins.md",
+  "content": "## Metadata_Start ## code: en ## title: Important Technical Information for Admins ## slug: important-technical-information-admins ## seoTitle: Important Technical Information for Admins ## description: ## contentType: Markdown ## Metadata_End Below is a list of important articles that review critical technical features and processes. Please read through them. They will help you understand how to configure and maintain the {{variable.Product_Payments}} app. * [Blackthorn Logs](/v1/docs/blackthorn-logs) * [Scheduled Jobs](/v1/docs/scheduled-batch-jobs) * [Relationship Settings](/v1/docs/matching-duplication) * [Custom Settings](/v1/docs/custom-settings) * [Custom Metadata](/v1/docs/custom-metadata) * *~Stripe Only~* [Metadata Matching](/v1/docs/stripe-metadata) * *~Stripe/PSD2 Regulation Only~* [SCA](/v1/docs/sca)",
+  "keywords": [
+    "docs",
+    "important",
+    "technical",
+    "custom",
+    "metadata",
+    "information",
+    "admins",
+    "settings",
+    "stripe",
+    "blackthorn",
+    "logs",
+    "scheduled",
+    "jobs",
+    "matching",
+    "only",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

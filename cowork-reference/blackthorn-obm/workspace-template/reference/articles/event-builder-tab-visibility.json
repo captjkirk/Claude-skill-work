@@ -1,0 +1,37 @@
+{
+  "id": "event-builder-tab-visibility",
+  "title": "event-builder-tab-visibility.md",
+  "content": "## Metadata_Start ## code: en ## title: Tab Visibility ## slug: event-builder-tab-visibility ## seoTitle: Tab Visibility ## description: ## contentType: Markdown ## Metadata_End Event Admins can change the visibility of the Event Builder's navigation tabs, including the FAQ and Event Content tab from the Custom Metadata Types “Event Builder Configuration” section in Salesforce. To show or hide the navigation tabs in the Event Builder, follow the steps below. 1. Go to Setup. 2. In the Quick Find box, search for and click “Custom Metadata Types.” 3. Click **Manage Records** next to \"Event Builder Configuration.” 5. Click {{variable.Button_SF_Edit}} next to the name of the tab you want to update. ![Event Builder Tab Configurations](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Builder%20Tab%20Configurations.png){height=\"\" width=\"1000\"} 7. Check the {{variable.Field_SF_Visible}} field to make the navigation tab visible. Uncheck the {{variable.Field_SF_Visible}} field to hide the navigation tab. ![Event Builder_Tab Config_Check Visibility](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Event%20Builder_Tab%20Config_Check%20Visibility.png){height=\"\" width=\"1000\"} 8. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "event",
+    "builder",
+    "visibility",
+    "navigation",
+    "click",
+    "variable",
+    "tabs",
+    "custom",
+    "metadata",
+    "types",
+    "configuration",
+    "hide",
+    "next",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. In the Quick Find box, search for and click “Custom Metadata Types",
+    "3. Click **Manage Records** next to \"Event Builder Configuration",
+    "5. Click {{variable",
+    "7. Check the {{variable",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

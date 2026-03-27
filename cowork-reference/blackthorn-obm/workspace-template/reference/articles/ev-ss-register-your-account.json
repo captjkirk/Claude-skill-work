@@ -1,0 +1,39 @@
+{
+  "id": "ev-ss-register-your-account",
+  "title": "ev-ss-register-your-account.md",
+  "content": "## Metadata_Start ## code: en ## title: Register Your Account ## slug: ev-ss-register-your-account ## seoTitle: Register Your Account ## description: ## contentType: Markdown ## Metadata_End :::(Error) (Are You Using a Sandbox or Dev Org?) If you are using a sandbox or dev org and haven’t already contacted us, please contact {{variable.Link_BlackthornSupport}} to provide the following before proceeding. * Organization name * Org id * Org type (production or sandbox/dev org) * Primary email address * Whether you want to enable just Email (for Events only customers) or Email + Messaging (for Events & Messaging customers) **IMPORTANT:** Customers with new sandboxes need to contact {{variable.Link_BlackthornSupport}} for a unique API Key & Account Number. Reusing an API Key & Account Number from a different sandbox or a production org prevents Smart Scheduler from working since the configuration (API Key & Account Number) is uniquely set per org ID. ::: Registering your account allows us to identify your org on the server and provide security. Your account number and API key allow us to authenticate subsequent calls and associate created schedules with your account. A registered account is also required for Org level control for the following areas. * Primary Communication Address * Feature Flags * N days before notification configuration * Any futuristic attribute To register your account, please complete the steps below. 1. Click **No, I need an account**. ![Register Your Account_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Register%20Your%20Account_1.png){height=\"\" width=\"\"} 3. Review the Product Terms of Use and Licenses. 4. Check the “I confirm I have read and agree to these product terms of use and licenses” checkbox. ![Register Your Account_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Register%20Your%20Account_2.png){height=\"\" width=\"\"} 6. Click **Activate Now**. ![Register Your Account_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Register%20Your%20Account_3.png){height=\"\" width=\"\"} Congratulations! Your Base account has been created. :::(Error) (Critical Step) Before proceeding to the next section, please contact {{variable.Link_BlackthornSupport}} with the newly generated account number. Once the account is manually enabled, you will be able to continue. :::",
+  "keywords": [
+    "account",
+    "your",
+    "register",
+    "number",
+    "sandbox",
+    "please",
+    "contact",
+    "variable",
+    "link_blackthornsupport",
+    "before",
+    "email",
+    "customers",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click **No, I need an account**",
+    "3. Review the Product Terms of Use and Licenses",
+    "4. Check the “I confirm I have read and agree to these product terms of use and licenses” checkbox",
+    "6. Click **Activate Now**",
+    "* Primary Communication Address * Feature Flags * N days before notification configuration * Any futuristic attribute To register your account, please complete the step"
+  ],
+  "troubleshooting": [
+    "Error) (Are You Using a Sandbox or Dev Org?) If you are using a sandbox or dev org and haven’t already contacted us, please contact {{variable.",
+    "Error) (Critical Step) Before proceeding to the next section, please contact {{variable."
+  ]
+}

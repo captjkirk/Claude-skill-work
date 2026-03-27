@@ -1,0 +1,30 @@
+{
+  "id": "payments-test-spreedly-payment-gateway",
+  "title": "payments-test-spreedly-payment-gateway.md",
+  "content": "## Metadata_Start ## code: en ## title: Test Your Spreedly Payment Gateway ## slug: payments-test-spreedly-payment-gateway ## seoTitle: Test Your Spreedly Payment Gateway ## description: ## contentType: Markdown ## Metadata_End The next step is to test your Payment Gateway using either the test Spreedly card or the test Spreedly ACH bank account. ## Test a Spreedly Card {{snippet.PGSetup_TestSpreedly_Card}} {{snippet.Spreedly_ACH_Limitation}} ## Test a Spreedly ACH Bank Account {{snippet.PGSetup_TestSpreedly_ACHAcct}}",
+  "keywords": [
+    "test",
+    "spreedly",
+    "payment",
+    "gateway",
+    "your",
+    "snippet",
+    "card",
+    "bank",
+    "account",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "payments",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "next"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

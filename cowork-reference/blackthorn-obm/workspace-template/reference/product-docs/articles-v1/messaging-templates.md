@@ -1,0 +1,41 @@
+## Metadata_Start 
+## code: en
+## title: Create a Template 
+## slug: messaging-templates 
+## seoTitle:  
+## description:  
+## contentType: Markdown 
+## Metadata_End
+Blackthorn Messaging provides some great options to create and use templates when sending SMS messages.
+
+## Create an SMS Template
+:::(Warning) (Attachments)
+Users can attach images (jpeg, png, and gif), PDFs, and vCards to an SMS Template.
+
+However, ***only one attachment can be sent per SMS Template***. If more than one file is attached, only the last file attached will be sent with the message. For example, an image is attached first. A PDF is then attached. Lastly, a vCard is attached. Only the attached vCard will be sent with the SMS.
+:::
+
+1. Go to the SMS Templates tab. 
+2. Click {{variable.button_new}}. 
+3. Select a Template Object. Choose from the objects that are in you Salesforce account. 
+![SMSTemplate_SelectObject](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Template_SelectObject.png){height="" width=""}
+5. Complete the following fields.
+    * {{variable.Field_SMSTemplate_Name}} 
+    * Toggle {{variable.Field_SMSTemplate_Active}} to on.
+    * In the Insert Field box, select a field from the related object. The selected field will automatically be added to the message {{variable.Field_SMSTemplate_Body}}. 
+    * Enter the remaining text for the message {{variable.Field_SMSTemplate_Body}}. 
+    * Add workflow rule options if you are using the Template in a workflow Task. (Workflow rules help automate outbound messages.)
+![SMSTemplate_Edit](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_Template_Edit.png){height="" width=""}
+7. Click {{variable.Button_Save}}. 
+ 
+You now have an SMS Template.
+![SMS Template](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging_SMS%20Template.png){height="" width=""}
+
+## Send an SMS Template
+Complete the following steps to send an SMS Template from an object. 
+
+1. Navigate to a record that matches the SMS Template's {{variable.Field_SMSTemplate_Object}} type you created.
+2. Click **Send SMS**.
+3. Select the SMS Template you just created in the Template dropdown. Choosing the template populates the message body with the SMS Template’s {{variable.Field_SMSTemplate_Body}}. You’ll also see that field merge action has been performed. 
+4. Update the message body as needed.
+5. Click **Send Now**. 

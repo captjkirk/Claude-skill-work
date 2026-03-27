@@ -1,0 +1,30 @@
+{
+  "id": "send-a-bulk-message-from-a-campaign",
+  "title": "send-a-bulk-message-from-a-campaign.md",
+  "content": "## Metadata_Start ## code: en ## title: Send a Bulk Message from a Campaign ## slug: send-a-bulk-message-from-a-campaign ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End In this articles we'll explore how to send a bulk message to a list of Campaign Members from a Campaign. ## Add a Phone Number to the Campaign The first step is to determine which phone number you'll send the text from. You'll need to choose one phone number and every message in the Campaign will be sent from that phone number. The Phone Number that you want to send from must be marked as `Available for Campaign` on the Phone Number record. ![send a bulk message_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/send%20a%20bulk%20message_1.png){height=\"\" width=\"\"} * * * ![Send a bulk message_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Send%20a%20bulk%20message_2.gif){height=\"\" width=\"\"} ## Start the Campaign Wizard To begin building your text message, just click the Send SMS button. When you click this button you will be presented with the Campaign Wizard. This is where you input your message (or use a template) and preview your message before sending. **NOTE:** There is no limit for the number of Bulk SMS messages sent from the Campaign Wizard.",
+  "keywords": [
+    "send",
+    "campaign",
+    "message",
+    "from",
+    "number",
+    "bulk",
+    "phone",
+    "wizard",
+    "your",
+    "text",
+    "sent",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "session-registration",
+  "title": "session-registration.html",
+  "content": "Select a Session Please Be Aware Attendees should add paid Sessions to their cart and purchase them during the checkout process. If an Attendee wants to add a paid Session from their AttendeeLink, they must contact their Event Organizer. Desktop Once an has successfully registered for an with s (or the has = \"Registered\"), they can register for individual s by accessing the AttendeeLink. The registration screen will look like this.&nbsp; The will then check the box next to the s they want to attend and click Confirm . If they change their mind about a , they must click the checkbox next to it and click Confirm . To see their agenda with only the s they signed up for, the must click the My Agenda tab. Mobile Device Once an has successfully registered for an with s (or the has = \"Registered\"), they can register for individual s by accessing the AttendeeLink. The registration screen will look like this.&nbsp; The will then check the box next to the s they want to attend and click Confirm . If they change their mind about a , they must click the checkbox next to it and click Confirm . To see their agenda with only the s they signed up for, the must click the My Agenda tab. Sorting Sessions Session Attendee In Salesforce, a junction object record ( ) is created between the and the records. The record connects the to the , as well as connecting to the or for global visibility. Event Organizers can add a public URL to the field so Session Attendees can easily find the Form/Survey. (If you don't see the field, you may need to add it to the Session Attendee page layout.) Registered Session Content Use the field on the object to provide your registered s with additional information about the they signed up for! If you don't see the field on the Session Attendee record, complete the steps below. Navigate to the Blackthorn | Events Admin tab. Click the Upgrade tab. Click Upgrade Events Layouts .&nbsp; Wait about two minutes for it to upgrade, and then refresh your Session Attendee record. Once the is set for that , it will be displayed below the , as shown below: Locked Session Registration If you don't want an to unregister for a , update the 's to . If you don't see the field on the Session Attendee record, complete the steps below. Navigate to the Blackthorn | Events Admin tab. Click the Upgrade tab.&nbsp; Click Upgrade Events Layouts .&nbsp; Wait about two minutes for it to upgrade, and then refresh your Session Attendee record. Sold Out Sessions If a has zero , the will be considered \"Sold Out,\" and no additional participants can be registered for the . FAQ",
+  "keywords": [
+    "they",
+    "click",
+    "session",
+    "their",
+    "attendee",
+    "registered",
+    "record",
+    "upgrade",
+    "must",
+    "nbsp",
+    "about",
+    "field",
+    "then",
+    "next",
+    "confirm",
+    "agenda",
+    "below",
+    "events",
+    "sessions",
+    "attendeelink"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

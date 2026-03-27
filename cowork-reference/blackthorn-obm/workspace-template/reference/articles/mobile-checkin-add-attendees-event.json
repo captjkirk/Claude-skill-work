@@ -1,0 +1,30 @@
+{
+  "id": "mobile-checkin-add-attendees-event",
+  "title": "mobile-checkin-add-attendees-event.html",
+  "content": "Complete the steps below to register an for an from the . Go to the Select Event screen. Click on an . Click the three dots in the top right corner. Click + Add Attendee . Enter the ’s information. NOTE: If the ’ = “True” (checked), then the will only be registered if their email address isn’t associated with another registered for the . The registrant’s email address must be unique. Click . The is now registered for the , and their record will be related to the in .",
+  "keywords": [
+    "click",
+    "registered",
+    "their",
+    "email",
+    "address",
+    "complete",
+    "steps",
+    "below",
+    "register",
+    "from",
+    "select",
+    "event",
+    "screen",
+    "three",
+    "dots",
+    "right",
+    "corner",
+    "attendee",
+    "enter",
+    "information"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

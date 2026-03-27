@@ -1,0 +1,38 @@
+{
+  "id": "dashboards",
+  "title": "dashboards.md",
+  "content": "## Metadata_Start ## code: en ## title: Dashboard ## slug: dashboards ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End ## Introduction We have created a basic Dashboard that will provide a starting template that you can modify to reach your desired metrics. * Navigate to Dashboards. ***Lightning:** Click on the app launcher | Under \"All Items\" | Click on Dashboards.* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click on Dashboards.* * In the left-hand column, click on the \"Blackthorn | Payments Dashboard\" folder. ## Out of the Box Dashboard The below Dashboard components are provided by Blackthorn | Payments. * **Revenue Forecast:** The future estimated revenue per month. * **Gross Revenue:** The sum of revenue each month. * **Captured this Month:** The sum of retained revenue this month by specific segment ranges. ![H_02_04_Dashboard out of the box](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/H_02_04_Dashboard%20out%20of%20the%20box.png){height=\"\" width=\"\"} ## Next Steps Use our \"out of the box\" [Reports](/v1/docs/reports-1) to create a list of your records. ## Troubleshooting If you have received an error with our Dashboard or have a question, please view our [Troubleshooting](https://docs.blackthorn.io/docs/payments-troubleshooting){target=`_blank`} or [FAQ](https://docs.blackthorn.io/docs/payments-faq){target=`_blank`} page. If you still have questions about our Dashboard, please contact {{variable.Link_BlackthornSupport}}. We're happy to help!",
+  "keywords": [
+    "dashboard",
+    "click",
+    "revenue",
+    "docs",
+    "dashboards",
+    "blackthorn",
+    "payments",
+    "month",
+    "https",
+    "troubleshooting",
+    "your",
+    "h_02_04_dashboard",
+    "reports",
+    "please",
+    "target",
+    "_blank",
+    "metadata_start",
+    "code",
+    "title",
+    "slug"
+  ],
+  "category": "payments",
+  "procedures": [
+    "* Click on the app launcher | Under \"All Items\" | Click",
+    "* ***Classic:** Click on \"All Tabs\" (\"+\" icon in the top right) | Click",
+    "* * In the left-hand column, click"
+  ],
+  "troubleshooting": [
+    "error with our Dashboard or have a question, please view our [Troubleshooting](https://docs.",
+    "Troubleshooting If you have received an error with our Dashboard or have a question, please view our [Troubleshooting](https://docs.",
+    "troubleshooting){target=`_blank`} or [FAQ](https://docs."
+  ]
+}

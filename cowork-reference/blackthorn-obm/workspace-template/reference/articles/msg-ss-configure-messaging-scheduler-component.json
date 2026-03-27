@@ -1,0 +1,41 @@
+{
+  "id": "msg-ss-configure-messaging-scheduler-component",
+  "title": "msg-ss-configure-messaging-scheduler-component.md",
+  "content": "## Metadata_Start ## code: en ## title: Start Here ## slug: msg-ss-configure-messaging-scheduler-component ## seoTitle: Start Here ## description: ## contentType: Markdown ## Metadata_End ## Add the Smart Scheduler Admin Tab Once the component is installed, add the Smart Scheduler Admin tab to the Messaging navigation bar using one of the following methods. 1. Go to the Messaging app. 2. Click the App Launcher. 4. Enter and click \"Smart Scheduler Admin\". ![Go to Smart Scheduler Admin tab](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Go%20to%20Smart%20Scheduler%20Admin%20tab.png){height=\"\" width=\"\"} 6. Click the **Down** icon on the Smart Scheduler Admin tab. 7. Click **+ \"Add Smart Scheduler Adm\"... to Nav Bar**\". ![Add Smart Scheduler tab_Click Add to Navigation](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Add%20Smart%20Scheduler%20tab_Click%20Add%20to%20Navigation.png){height=\"\" width=\"\"} **OR** 1. Go to the Messaging app. 2. Click the **Pencil** icon in the navigation bar. 3. Click **Add More Items**. ![Open Add to Nav bar](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Open%20Add%20to%20Nav%20bar.png){height=\"\" width=\"\"} 5. Click the All tab. 6. Search for \"Smart Scheduler Admin\". 7. Check the box next to \"Smart Scheduler Admin\". ![Click Add 1 Nav Item](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Click%20Add%201%20Nav%20Item.png){height=\"\" width=\"\"} 9. Click **Add 1 Nav Item**. 10. Click {{variable.Button_Save}}. ![Messaging Record with Smart Scheduler Admin Nav.png](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Messaging%20Record%20with%20Smart%20Scheduler%20Admin%20Nav.png){height=\"\" width=\"\"} ## Next Steps 1. [Register your Account](/v1/docs/msg-ss-register-account) 2. [Authenticate a User](/v1/docs/msg-ss-authenticate-user) 3. [Add the BT Event Scheduler Component to the Event Record](/v1/docs/msg-ss-add-event-scheduler-component-event-record)",
+  "keywords": [
+    "scheduler",
+    "click",
+    "smart",
+    "admin",
+    "messaging",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "component",
+    "event",
+    "navigation",
+    "20to"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to the Messaging app",
+    "2. Click the App Launcher",
+    "4. Enter and click \"Smart Scheduler Admin\"",
+    "6. Click the **Down** icon on the Smart Scheduler Admin tab",
+    "7. Click **+ \"Add Smart Scheduler Adm\"",
+    "1. Go to the Messaging app",
+    "2. Click the **Pencil** icon in the navigation bar",
+    "3. Click **Add More Items**",
+    "5. Click the All tab",
+    "6. Search for \"Smart Scheduler Admin\""
+  ],
+  "troubleshooting": []
+}

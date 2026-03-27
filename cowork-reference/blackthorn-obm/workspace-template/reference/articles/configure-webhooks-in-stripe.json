@@ -1,0 +1,24 @@
+{
+  "id": "configure-webhooks-in-stripe",
+  "title": "configure-webhooks-in-stripe.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure Webhooks in Stripe ## slug: configure-webhooks-in-stripe ## seoTitle: Configure Webhooks in Stripe ## description: ## contentType: Markdown ## Metadata_End {{snippet.StripePG_ConfigureWebhooks}}",
+  "keywords": [
+    "configure",
+    "webhooks",
+    "stripe",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "stripepg_configurewebhooks"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

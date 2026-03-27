@@ -1,0 +1,30 @@
+{
+  "id": "welcome-to-blackthorn-messaging",
+  "title": "welcome-to-blackthorn-messaging.html",
+  "content": "This guide will help you become familiar with the key features of our powerful, business-class text messaging software. Blackthorn Messaging delivers enterprise-level text messaging capabilities for your fast-paced teams. It gives you the ability to send and receive text message communication from directly within Salesforce. It allows you to manage two-way text message conversations with your prospects and customers with a series of powerful tools such as templates, campaigns, and workflow automation. Installation Account Setup Individual Messaging Conversation Maintenance Configure Bulk Messaging Phone Number Lookups Campaigns Create a Template Automation Additional Features FAQ Release Notes Performance and Scale Testing {{snippet.PerformanceScaleTesting}}",
+  "keywords": [
+    "messaging",
+    "text",
+    "features",
+    "powerful",
+    "your",
+    "message",
+    "campaigns",
+    "automation",
+    "guide",
+    "help",
+    "become",
+    "familiar",
+    "business",
+    "class",
+    "software",
+    "blackthorn",
+    "delivers",
+    "enterprise",
+    "level",
+    "capabilities"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

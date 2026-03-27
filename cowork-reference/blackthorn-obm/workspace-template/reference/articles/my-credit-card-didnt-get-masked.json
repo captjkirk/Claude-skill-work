@@ -1,0 +1,32 @@
+{
+  "id": "my-credit-card-didnt-get-masked",
+  "title": "my-credit-card-didnt-get-masked.md",
+  "content": "## Metadata_Start ## code: en ## title: My Credit Card Didn't Get Masked! ## slug: my-credit-card-didnt-get-masked ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You need to make sure that you are testing with a valid credit card number. Try [Validate Credit Card Numbers](https://www.validcreditcardnumber.com/){target=\"_blank\"} or something similar. If any of those checkmarks are red, then you probably are not using a valid credit card number for your testing. Try using a dummy credit card number generator like: [https://saijogeorge.com/dummy-credit-card-generator/](https://saijogeorge.com/dummy-credit-card-generator/){target=\"_blank\"} Blackthorn Compliance checks two things: 1. Does the number match a regular expression in an active Detection Pattern? 2. Does the number pass the [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm){target=\"_blank\"}? If either of those are false, then the credit card number will not be masked. The Luhn Algorithm helps avoid matching international phone numbers, tracking numbers, and other common false positives. If you don't want to use the Luhn Algorithm (please think twice about this as it significantly reduces your false positive rate), then you need to uncheck the checkbox field \"LuhnCheck\" on the specific Detection Pattern you are testing: *Setup > Custom Metadata Types > DetectionPattern > Manage DetectionPatterns > Edit the DetectionPattern you are testing* This field controls whether or not Compliance validates the credit card number for the particular Detection Pattern. Try unchecking that field and re-test with the same credit card number. If the issue persists, one of the required [extension packages](/v1/docs/extension-packages) is likely missing. For example, if you are trying to test masking in emails, then you need to install this extension package [first](/v1/docs/configure-for-email-to-case).",
+  "keywords": [
+    "credit",
+    "card",
+    "number",
+    "testing",
+    "https",
+    "then",
+    "masked",
+    "need",
+    "numbers",
+    "target",
+    "_blank",
+    "dummy",
+    "generator",
+    "detection",
+    "pattern",
+    "luhn",
+    "algorithm",
+    "false",
+    "field",
+    "extension"
+  ],
+  "category": "compliance",
+  "procedures": [
+    "1. Does the number match a regular expression in an active Detection Pattern? 2"
+  ],
+  "troubleshooting": []
+}

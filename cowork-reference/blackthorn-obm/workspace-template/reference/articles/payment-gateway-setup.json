@@ -1,0 +1,30 @@
+{
+  "id": "payment-gateway-setup",
+  "title": "payment-gateway-setup.md",
+  "content": "## Metadata_Start ## code: en ## title: Payment Gateway Setup Overview ## slug: payment-gateway-setup ## seoTitle: Payment Gateway Setup ## description: ## contentType: Markdown ## Metadata_End To support paid {{variable.Object_Event}}s, you'll need to connect to your {{variable.Object_PaymentGateway}} in {{variable.Product_Salesforce}}. In Blackthorn {{variable.Product_Payments}}, a {{variable.Object_PaymentGateway}} record is synonymous with a gateway (i.e. {{variable.Product_Stripe}}, {{variable.Product_Authorizenet}}, etc.) account. Each {{variable.Object_PaymentGateway}} record you create connects your {{variable.Product_Salesforce}} org to one gateway account, in either test or live mode. To start, we suggest connecting to your {{variable.Object_PaymentGateway}} in \"Test Mode.\" When you are ready to go live, then you can create another {{variable.Object_PaymentGateway}} record connecting to your {{variable.Object_PaymentGateway}} in \"Live Mode.\" :::(Warning) (**Note About Payment Gateway Records**) Do not change your Payment Gateway record from Test to Live mode or vice versa by clicking **Connect to Gateway** or checking/unchecking the {{variable.Field_PG_TestMode}} checkbox. Instead, create a new record for the other mode you wish to enable. ::: Blackthorn supports several gateway providers. The primary gateway providers are {{variable.Product_Stripe}}, {{variable.Product_Authorizenet}}, and {{variable.Product_Spreedly}}. Blackthorn Events also supports [SCA (Strong Customer Authentication)](/v1/docs/sca){target=`_blank`} and 3DS (3D Secure) for Stripe via the Events webapp checkout and PayLink. Stripe Checkout works out-of-the-box, but Authorize.net, Spreedly, and TouchNet are not supported. Please click on the link below for your gateway and follow the instructions to connect your {{variable.Object_PaymentGateway}} in {{variable.Product_Salesforce}}. ### [Connect to Stripe](https://docs.blackthorn.io/docs/create-a-stripe-payment-gateway){target=\"_blank\"} ### [Connect to Authorize.net](https://docs.blackthorn.io/docs/create-an-authorizenet-payment-gateway){target=\"_blank\"} ### [Connect to Spreedly](https://docs.blackthorn.io/docs/update-your-payment-gateway-page-layout){target=\"_blank\"} ### [Connect to Transact (CashNet)](https://docs.blackthorn.io/docs/events-cashnet-overview){target=\"_blank\"} ### [Connect to TouchNet](https://docs.blackthorn.io/docs/events-touchnet-overview){target=`_blank`}",
+  "keywords": [
+    "variable",
+    "gateway",
+    "docs",
+    "payment",
+    "connect",
+    "your",
+    "blackthorn",
+    "object_paymentgateway",
+    "target",
+    "_blank",
+    "record",
+    "create",
+    "mode",
+    "https",
+    "live",
+    "events",
+    "stripe",
+    "setup",
+    "overview",
+    "product_salesforce"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

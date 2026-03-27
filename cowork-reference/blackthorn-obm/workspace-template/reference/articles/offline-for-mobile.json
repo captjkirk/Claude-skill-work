@@ -1,0 +1,30 @@
+{
+  "id": "offline-for-mobile",
+  "title": "offline-for-mobile.md",
+  "content": "## Metadata_Start ## code: en ## title: Offline for Mobile ## slug: offline-for-mobile ## seoTitle: Offline for Mobile ## description: ## contentType: Markdown ## Metadata_End Users can now collect payments with intermittent, limited, or no internet connectivity with the Mobile Payments app’s new Offline for Mobile feature. For example, if a user is out in the field and has an intermittent internet connection, they can collect a payment, and the following will occur behind the scenes. * A card, cash, ACH, or card reader payment is collected. * The payment information is saved in the device’s local storage. * The internet connection is restored. * The locally stored payment information is synced to the Payments app / Salesforce. * All payment information on the mobile device is deleted. ## Custom Setting Users now can collect payments when the Mobile Payments app is offline by turning on a new custom setting. * Location: Blackthorn Payments - Mobile Settings * Field Label: {{variable.CS_Mobile_EnableOfflineMobile}} * API Name: bt_stripe__Enable_Offline_Mobile__c * Default = unchecked ### Functionality #### Mobile Pay * When {{variable.CS_Mobile_EnableOfflineMobile}} is checked (enabled), then the {{variable.Button_MobilePay}} button (Mobile Payments package) includes the {{variable.Field_Transaction_Amount}} and {{variable.Field_Transaction_Description}} in the URL. * When {{variable.CS_Mobile_EnableOfflineMobile}} is unchecked (disabled), then the URL remains the same. #### FSL * When {{variable.CS_Mobile_EnableOfflineMobile}} is checked (enabled), then the Mobile Pay hyperlink (Mobile Payments FSL Extension package) includes the {{variable.Field_Transaction_Amount}} and {{variable.Field_Transaction_Description}} in the URL. * When {{variable.CS_Mobile_EnableOfflineMobile}} is unchecked (disabled), then the URL remains the same. The URL will be regenerated when the {{variable.Field_Transaction_Amount}} and/or {{variable.Field_Transaction_Description}} is updated on the {{variable.Object_Transaction}}. ## Features ### FSL The Field Service mobile app and new offline functionality will ship as a known issue as the deep link does not update as intended. This is because, with its current implementation, there is no way to update the link without connecting to the internet and performing a data sync. ### New Menu Option A new menu option called “Pending changes (x)” was added to the left-hand navigation. The label includes the number of pending records. When a user taps the Pending charges option, they will see a new screen with a list of Transactions that were saved while the device was offline. The list of records will be synched and validated in Salesforce as soon as the internet connection is restored. The records will then be removed from the Pending changes list. A dialog box will also show the user that there are pending changes if they try to log out of the app. ### Payment Gateways The Mobile Payments app will download and securely store a list of the available Payment Gateways the first time the home screen loads. This allows users to capture payment details and select a valid Payment Gateway when an active internet connection isn’t available. ***IMPORTANT:*** Change made to a Payment Gateway in Salesforce won’t be reflected in the Mobile Payments app until the home screen is loaded while the app is connected to an internet connection. ### Reminders When a user is working offline, they will see a message reminding them that there is no active internet connection. The message will automatically appear and disappear based on whether the app can find an active internet connection. Users will also see a confirmation popup after a cash payment is submitted. This functionality works similarly to the way card and ACH payments work. ### Security When a device is offline, and a Transaction is paid, the related information will be encrypted and stored locally on the device. Any additional information created or changed while the app is offline will sync to Salesforce when the app is online. After syncing, all information will be validated, processed, and deleted from the offline/local storage.",
+  "keywords": [
+    "mobile",
+    "variable",
+    "offline",
+    "payments",
+    "payment",
+    "when",
+    "internet",
+    "connection",
+    "information",
+    "device",
+    "cs_mobile_enableofflinemobile",
+    "then",
+    "pending",
+    "users",
+    "user",
+    "they",
+    "salesforce",
+    "list",
+    "collect",
+    "field"
+  ],
+  "category": "payments",
+  "procedures": [],
+  "troubleshooting": []
+}

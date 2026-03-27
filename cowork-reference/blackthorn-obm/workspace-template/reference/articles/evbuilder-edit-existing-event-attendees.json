@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-edit-existing-event-attendees",
+  "title": "evbuilder-edit-existing-event-attendees.md",
+  "content": "## Metadata_Start ## code: en ## title: Attendees ## slug: evbuilder-edit-existing-event-attendees ## seoTitle: Attendees ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_Attendee_CloneEdit_1}} ## Add Attendees from Accounts, Contacts, and Leads {{snippet.EVBuilder_Attendees_AcctContactLead}} ## Add Attendees from Campaigns {{snippet.EVBuilder_Attendees_Campaign}} ## Add Attendees from Events {{snippet.EVBuilder_Attendees_Events}} ## Add Attendees from Reports {{snippet.EVBuilder_Attendees_Report}} ## Add New Attendees {{snippet.EVBuilder_Attendees_AddNew}}",
+  "keywords": [
+    "attendees",
+    "snippet",
+    "from",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "edit",
+    "existing",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_attendee_cloneedit_1",
+    "accounts",
+    "contacts",
+    "leads"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

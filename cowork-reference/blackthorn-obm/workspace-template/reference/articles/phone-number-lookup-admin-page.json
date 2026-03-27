@@ -1,0 +1,30 @@
+{
+  "id": "phone-number-lookup-admin-page",
+  "title": "phone-number-lookup-admin-page.md",
+  "content": "## Metadata_Start ## code: en ## title: Admin Page ## slug: phone-number-lookup-admin-page ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End The new Phone Number Lookup admin page has three main areas of functionality on the right-hand side. ![Admin Page_1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Admin%20Page_1.png){height=\"\" width=\"\"} Let's look at each section, starting from the top-right. ## Phone Number Lookup Results This section shows you key metrics for your phone number lookup data at a glance. ![Admin Page_2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Admin%20Page_2.png){height=\"\" width=\"\"} * **New Numbers:** This is the quantity of phone numbers that have been discovered in your org but have not been looked up yet. * **Opt Outs:** This is the quantity of phone numbers that have been discovered in your org, but the phone number exists on a record that has opted out (i.e. where the Do Not SMS field is checked). Phone numbers are excluded from being looked up if they are on a record where that person has opted out of receiving text messages. * **Ready to Lookup:** This is the net number of phone numbers that will be looked up when you start the Lookup Numbers batch process. This number is derived from the following formula \"New Numbers - Opt Outs\". * **Completed Lookups:** This is the number of phone number lookup records in your org that have a Status of \"Success\". This means the phone number is valid and we have collected the lookup data. You should also see a link to a Salesforce report of Phone Number Lookup records. ## Lookup Phone Numbers This section guides you through the steps necessary to discover and lookup the phone numbers that exist in your org. Blackthorn Messaging includes two primary batch processes that work together to first find new phone numbers in your org, and then process the lookups on those phone numbers to collect and store the phone number details. ![Admin Page_3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Admin%20Page_3.png){height=\"\" width=\"\"} Let's look at each button and what it does. * **Find New Numbers:** This initiates a batch process to find new phone numbers in your org that have not been looked up yet. When you click the button you'll be able to select the objects that you want Messaging to search through to find phone numbers. When this process completes, the data points will be updated in the section above titled \"Phone Number Lookup Results\". * **Purchase Lookups:** After you run the batch process to determine how many new phone numbers need to be looked up in your org, you will need to ensure that you have the necessary lookup credits on your balance. Each phone number that you collect lookup data for will deduct one lookup credit from your balance. If you don't have sufficient lookup credits on your balance this button will be enabled to allow you to purchase additional lookup credits. For your convenience, the difference between your current balance and what you need will be calculated for you. * **Lookup Numbers:** This will initiate a batch process to begin collecting and appending the lookup data for each phone number in your org. The new phone numbers that exist in your org will be sent to a Messaging service to be processed. Each phone number will be looked up to find the carrier data and then that data will be pushed back to your Salesforce org and stored in the Phone Number Lookup records. ## Phone Number Lookup Settings This section provides optional configuration settings that can be managed as needed. ![Admin Page_4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Admin%20Page_4.png){height=\"\" width=\"\"} Let's look at each setting below. * **Enable Automatic Phone Number Lookups:** When this setting is activated, a lookup will automatically be performed whenever a user attempts to send a text message to a phone number that has not been looked up, yet. This setting only affects individual messages sent by a user from the Messaging Messenger or Messaging Conversations component. * **Show Visual Indicators for Phone Numbers Not Looked Up:** When this setting is activated, you will see a question mark icon next to any phone number that has not been looked up, yet. This question mark will be visible in the To drop-down on the Messaging Messenger and Messaging Conversation components. * **Show Confirmation Popup for Landlines and Bad Numbers:** When this setting is activated, a user will see a confirmation popup if they attempt to send a text to a landline or an invalid phone number. This popup will only occur when an individual message is sent from the Messaging Messenger or Messaging Conversation components.",
+  "keywords": [
+    "phone",
+    "number",
+    "lookup",
+    "numbers",
+    "your",
+    "admin",
+    "looked",
+    "messaging",
+    "data",
+    "when",
+    "each",
+    "from",
+    "process",
+    "section",
+    "batch",
+    "find",
+    "setting",
+    "https",
+    "document360",
+    "f977eec0"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": []
+}

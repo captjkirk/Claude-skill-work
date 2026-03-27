@@ -1,0 +1,40 @@
+{
+  "id": "payments-configure-documentlink-templates",
+  "title": "payments-configure-documentlink-templates.md",
+  "content": "## Metadata_Start ## code: en ## title: Configure DocumentLink Templates ## slug: payments-configure-documentlink-templates ## seoTitle: Configure DocumentLink Templates ## description: ## contentType: Markdown ## Metadata_End With {{variable.Product_DocumentLink}} authorized in your org, it's time to set up your templates. This will allow you to add in Acceptance Language, Terms & Conditions, etc. The {{variable.Object_DocumentLinkTemplate}} object stores fields that allow users to configure the presentation of a DocumentLink. ![K_02_DocLink Template pic 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%201.png){height=\"\" width=\"\"} ## Define Custom Acceptance Language Using the {{variable.Field_DocLinkTemp_AccLangACH}}, {{variable.Field_DocLinkTemp_AccLangCard}}, and {{variable.Field_DocLinkTemp_TermsandCond}} fields allows users to create their own custom messaging or link to their own custom terms and conditions. ![K_02_DocLink Template pic 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%202.png){height=\"\" width=\"\"} * * * Credit Card DocumentLink Checkout Example: ![K_02_DocLink Template pic 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%204.png){height=\"\" width=\"\"} * * * Bank DocumentLink Checkout Example: ![K_02_DocLink Template pic 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/K_02_DocLink%20Template%20pic%203.png){height=\"\" width=\"\"} ## Add a Company Logo and Details to DocumentLink To add a logo and company details to your {{variable.Product_DocumentLink}} {{variable.Object_Invoice}}, complete the following steps. 1. From the App Launcher, navigate to the {{variable.Object_CompanyInfo}} object. 2. Click {{variable.button_new}} to create a new record. 3. Complete the following fields. * {{variable.Field_CompInfo_CompInfoName}} (required) * {{variable.Field_CompInfo_Email}} (required) * {{variable.Field_CompInfo_Logo}} - enter a URL to your logo. NOTE: Use the Documents object in the Classic UI to store images. From there, right-click the image, select \"Copy Image Address,\" and add it to the {{variable.Field_CompInfo_Logo}} field. 4. Add any additional details such as a website and address. 5. Click {{variable.Button_Save}}. 6. Add the {{variable.Object_CompanyInfo}} record to either the DocumentLink Template record or directly on the {{variable.Object_Invoice}} record. Click [{{variable.Object_CompanyInfo}}](https://docs.blackthorn.io/v1/docs/company-info){target=\"_blank\"} for more information about the {{variable.Object_CompanyInfo}} object. ## Add Custom Fields and Footer Use the following fields to customize an Invoice when it is created with {{variable.Product_DocumentLink}}. * {{variable.Field_DocLinkTemp_Field1Label}} * {{variable.Field_DocLinkTemp_Field1}} * {{variable.Field_DocLinkTemp_Field2Label}} * {{variable.Field_DocLinkTemp_Field2}} * {{variable.Field_DocLinkTemp_Footer}} ## Automatically Apply DocumentLink Template to Invoices 1. Create a simple process (Process Builder, Flow, etc). 2. In your automated process, set the {{variable.Field_Invoice_DocumentLink}} field on the {{variable.Object_Invoice}} Record. 3. Set the process to fill in the {{variable.Object_DocumentLinkTemplate}} any time an {{variable.Object_Invoice}} is created. ## Deprecated Fields If you upgraded your Blackthorn Payments package and noticed that some fields on the DocumentLink Template object have the ability to be deleted, feel free to take advantage of this to clean your org. Otherwise, if a field has the ability to be deleted and can no longer be added to your page layout that means we no longer support it. You'll need to go to Setup in the Classic UI to see the option to delete. Fields that Blackthorn No Longer Supports * Background Color * Button Color * Card Color Theme * Logo * Due Date Label * Requested by label * Amount due label * Documentation",
+  "keywords": [
+    "variable",
+    "documentlink",
+    "your",
+    "fields",
+    "k_02_doclink",
+    "template",
+    "object",
+    "https",
+    "images",
+    "documentation",
+    "record",
+    "configure",
+    "templates",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "20template"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. From the App Launcher, navigate to the {{variable",
+    "2. Click {{variable",
+    "3. Complete the following fields",
+    "4. Add any additional details such as a website and address",
+    "5. Click {{variable",
+    "6. Add the {{variable",
+    "1. Create a simple process (Process Builder, Flow, etc)",
+    "2. In your automated process, set the {{variable",
+    "3. Set the process to fill in the {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "authorize-documentlink",
+  "title": "authorize-documentlink.md",
+  "content": "## Metadata_Start ## code: en ## title: Authorize DocumentLink ## slug: authorize-documentlink ## seoTitle: Authorize DocumentLink ## description: ## contentType: Markdown ## Metadata_End In order to view your Order or Invoice via {{variable.Product_DocumentLink}}, you must oauth with Blackthorn's Connect App. :::(Warning) (**Oauth Link**) In order for the authorization to work properly, you can only be logged into one Salesforce org. ::: **Production Org** Please click the [oauth link](https://auth.blackthorn.io/salesforce?packages=03361000000DksxAAC){target=\"_blank\"} to complete the DocumentLink setup. Once you authorize with the key above, you will be set. **Sandbox Org** {{snippet.DocumentLink_AuthorizeSandbox}} :::(Info) () If you receive an error with DocumentLink, click to view [Error Codes And Messages](/v1/docs/documentlink-error-codes-and-messages). :::",
+  "keywords": [
+    "documentlink",
+    "authorize",
+    "order",
+    "oauth",
+    "error",
+    "view",
+    "blackthorn",
+    "link",
+    "salesforce",
+    "click",
+    "codes",
+    "messages",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "* Please click"
+  ],
+  "troubleshooting": [
+    "error with DocumentLink, click to view [Error Codes And Messages](/v1/docs/documentlink-error-codes-and-messages)."
+  ]
+}

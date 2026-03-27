@@ -1,0 +1,41 @@
+{
+  "id": "subscription-schedules",
+  "title": "subscription-schedules.md",
+  "content": "## Metadata_Start ## code: en ## title: Subscription Schedules ## slug: subscription-schedules ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End A {{variable.Object_SubscriptionSchedule}} allows you to create and manage the lifecycle of a {{variable.Object_Subscription}} by pre-defining expected changes. These changes can include updates to the {{variable.Object_Subscription}}’s prices that are scheduled to automatically occur in the future. ![Blackthorn Payments - Subscription Schedules](https://youtu.be/f-wuP-RUe2k){height=\"480\" width=\"640\"} ## Upgrade Your Org to Use Subscription Schedules After upgrading to the latest {{variable.Product_Payments}} package that includes {{variable.Object_SubscriptionSchedule}}s, the {{variable.Object_Subscription}} object will have two new {{variable.Field_Subscription_RecordType}} options: \"Subscription\" and \"Subscription Schedule Phase.\" To use these record types properly, follow the steps below. 1. Update the existing {{variable.Object_Subscription}}s to the new \"Subscription\" {{variable.Field_Subscription_RecordType}}. 1. Navigate to {{variable.Tab_PT_BTPayAdmin}} tab. 2. Click the Stripe Billing tab. 3. Click the **Assign Subscription Record Type** button. 2. Add the Subscription Schedule Phase layout to the \"Subscription Schedule Phase\" {{variable.Field_Subscription_RecordType}} and assign the two {{variable.Object_Subscription}} record types to profiles. 1. Navigate to the Blackthorn | Payments Admin tab. 2. Click the Stripe Billing tab. 3. Click the **Deploy Stripe Billing** button. :::(Info) (New Orgs) Customers installing Blackthorn Payments for the first time will notice the new object for Subscription Schedule and 2 new record types for Subscription once installation is complete. ::: ## Create a Subscription Schedule :::(Warning) (Not Seeing Subscription Schedules?) Make sure you have upgraded to Payments v5.1 or higher. ::: 1. Navigate to the {{variable.Object_SubscriptionSchedule}} object and click {{variable.button_new}} to create a new record. **Note:** The fields on the {{variable.Object_Subscription}} object are here as well. 2. Add a value in the {{variable.Field_SubscrSched_Customer}} field. **Note:** This is the only required field. 3. Click {{variable.Button_Save}}. :::(Info) (Cancel the Subscription Schedule) Complete the following steps to cancel the Subscription Schedule. 1. Go to the Subscription Schedule record. 2. Open the navigation bar. 3. Click **Cancel/Release Schedule**. ::: ## Create the Subscription Schedule Phase A Subscription Schedule Phase is one of the record types related to the Subscription object. Previously, the Subscription object only had one record type. Now it will have two: Subscription and Subscription Schedule Phase. 1. Navigate to the Subscription Schedule Phase {{variable.SFTerm_RelatedList}} on {{variable.Object_SubscriptionSchedule}} and click {{variable.button_new}}. 2. Set {{variable.Field_Subscription_RecordType}} = {{variable.Picklist_SubscrType_SubSchPhas}}. 3. Add {{variable.Field_Subscription_Price}} if there is only one price for this {{variable.Object_Subscription}}. If there are multiple Stripe Prices, you should use {{variable.Object_SubscriptionItem}}s. 4. Select a {{variable.Field_Subscrip_BillingMethod}}. 5. Populate {{variable.Field_Subscrip_Iterations}} with the number associated with this phase. Is this the first iteration or the second, third, and so on. 6. Select a date for the {{variable.Field_Subscrip_DateEnded}} field. This will signify the end of this Subscription Schedule Phase. 7. You can add additional detail using the other fields on this record, but they are not required. 8. Click {{variable.Button_Save}}. ## Add Subscription Items *You only need to do this if you have more than one Stripe Price.* 1. Navigate to the {{variable.Object_SubscriptionItem}} {{variable.SFTerm_RelatedList}} on the Subscription Schedule Phase you just created. 2. Click ‘{{variable.button_new}}. 3. Add values to the {{variable.Field_SubscriptItem_Quantity}}, {{variable.Field_SubscriptItem_Price}}, and {{variable.Field_SubscriptItem_Product}} fields. 4. Click {{variable.Button_Save}}.",
+  "keywords": [
+    "variable",
+    "subscription",
+    "schedule",
+    "click",
+    "phase",
+    "record",
+    "object_subscription",
+    "object",
+    "schedules",
+    "navigate",
+    "stripe",
+    "object_subscriptionschedule",
+    "create",
+    "payments",
+    "field_subscription_recordtype",
+    "types",
+    "only",
+    "blackthorn",
+    "billing",
+    "button_new"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Update the existing {{variable",
+    "1. Navigate to {{variable",
+    "2. Click the Stripe Billing tab",
+    "3. Click the **Assign Subscription Record Type** button",
+    "2. Add the Subscription Schedule Phase layout to the \"Subscription Schedule Phase\" {{variable",
+    "1. Navigate to the Blackthorn | Payments Admin tab",
+    "2. Click the Stripe Billing tab",
+    "3. Click the **Deploy Stripe Billing** button",
+    "1. Navigate to the {{variable",
+    "2. Add a value in the {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "event-custom-tabs",
+  "title": "event-custom-tabs.html",
+  "content": "You can add unlimited {{variable.Object_CustomContent}} to your {{variable.Object_Event}} . (But don't add too many; it won't look good.) Your Attendees will see the {{variable.Object_CustomContent}} , previously called Custom Tabs, under the {{variable.Object_EventSettings}} ’s webpage’s {{variable.Field_ETETSettings_CustomTabs}} tab. Enable Custom Tabs in Event Settings Navigate to the {{variable.Object_EventSettings}} record. Set {{variable.Field_ETETSettings_CustomTabs}} to {{variable.picklist_Always}} . Create a Custom Content Record Click {{variable.button_new}} next to the {{variable.Object_CustomContent}} {{variable.SFTerm_RelatedList}} on your {{variable.Object_Event}} record. Can't find the Related List? If you don't see the Custom Content Related List, edit the Event page layout and add the Custom Content object as a Related List. Enter the relevant information. View the Live Custom Tab Perform a hard refresh on the Event page and you will see the Custom Tab with your {{variable.Object_CustomContent}} ! Embedded Video You can also add embedded videos as Custom Content.",
+  "keywords": [
+    "variable",
+    "custom",
+    "object_customcontent",
+    "your",
+    "content",
+    "event",
+    "record",
+    "related",
+    "list",
+    "object_event",
+    "tabs",
+    "object_eventsettings",
+    "field_etetsettings_customtabs",
+    "page",
+    "embedded",
+    "unlimited",
+    "many",
+    "look",
+    "good",
+    "attendees"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

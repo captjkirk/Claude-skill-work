@@ -1,0 +1,23 @@
+{
+  "id": "site-configuration-1",
+  "title": "site-configuration-1.md",
+  "content": "## Metadata_Start ## code: en ## title: Site Configuration ## slug: site-configuration-1 ## seoTitle: Site Configuration ## description: ## contentType: Markdown ## Metadata_End {{snippet.AuthNetPG_SiteConfiguration}}",
+  "keywords": [
+    "site",
+    "configuration",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "authnetpg_siteconfiguration"
+  ],
+  "category": "admin",
+  "procedures": [],
+  "troubleshooting": []
+}

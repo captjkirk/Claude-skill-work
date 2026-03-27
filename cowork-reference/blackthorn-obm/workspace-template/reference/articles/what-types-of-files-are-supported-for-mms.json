@@ -1,0 +1,32 @@
+{
+  "id": "what-types-of-files-are-supported-for-mms",
+  "title": "what-types-of-files-are-supported-for-mms.md",
+  "content": "## Metadata_Start ## code: en ## title: What Types of Files Are Supported for MMS? ## slug: what-types-of-files-are-supported-for-mms ## seoTitle: What Types of Files Are Supported for MMS? ## description: ## contentType: Markdown ## Metadata_End You can send multimedia message service (MMS) messages using Blackthorn Messaging. However, as files are sent as binary data directly through the carrier networks there are some limitations as to the type and size of the files that can be sent. These limitations are imposed by the individual carrier networks not by us. :::(Warning) (Video Files) At this time, video files can only be sent by attaching a video’s link to your SMS message. ::: The following file types are supported. * JPEG (.jpg or .jpeg) * GIF (.gif) * PNG (.png) The file size is limited to 3MB. Files of the above types will be automatically optimized and resized to fit into the specifications of the individual carrier networks. The following file types are accepted: * PDF (.pdf) * vCard (.vcf) Files of these type cannot be optimized or resized so their original size must be 650 KB or less in order to meet the limitations of the carrier networks. You will receive an error when sending an invalid file type or a file that's too large.",
+  "keywords": [
+    "files",
+    "types",
+    "file",
+    "supported",
+    "carrier",
+    "networks",
+    "what",
+    "sent",
+    "limitations",
+    "type",
+    "size",
+    "video",
+    "message",
+    "individual",
+    "following",
+    "jpeg",
+    "optimized",
+    "resized",
+    "metadata_start",
+    "code"
+  ],
+  "category": "messaging",
+  "procedures": [],
+  "troubleshooting": [
+    "error when sending an invalid file type or a file that's too large."
+  ]
+}

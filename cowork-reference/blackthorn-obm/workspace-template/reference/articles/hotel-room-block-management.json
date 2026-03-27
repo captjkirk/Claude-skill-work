@@ -1,0 +1,41 @@
+{
+  "id": "hotel-room-block-management",
+  "title": "hotel-room-block-management.md",
+  "content": "## Metadata_Start ## code: en ## title: Hotel Room Block Management ## slug: hotel-room-block-management ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Need to manage room blocks for your {{variable.Object_Attendee}}s? Our {{variable.Object_HotelRoomBlock}} and {{variable.Object_HotelBooking}} objects makes it easy to manage your room blocks and streamline the communication process with venues. ## Important Definitions #### Room Nights Available Field The {{variable.Field_HotelRmBlk_RmNightsAvail}} field is automatically updated based on the {{variable.Field_HotelRmBlk_TotalRmNights}} and {{variable.Field_HotelRmBlk_RmNightsClaim}}. * {{variable.Field_HotelRmBlk_RmNightsAvail}} = {{variable.Field_HotelRmBlk_TotalRmNights}} – {{variable.Field_HotelRmBlk_RmNightsClaim}} #### Room Nights Claimed Field The {{variable.Field_HotelRmBlk_RmNightsClaim}} field is updated automatically. It equals the total number of room nights that are booked by {{variable.Object_Attendee}}s. #### Total Room Nights Field The {{variable.Field_HotelRmBlk_TotalRmNights}} field represents the total number of nights reserved or “set aside” for the {{variable.Object_HotelRoomBlock}}. ## Create a New Hotel Room Block 1. After creating your {{variable.Object_Event}}, navigate to the {{variable.SFTerm_RelatedList}}s and create a new {{variable.Object_HotelRoomBlock}} record. ![Hotel Room Block Mgmt 1](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hotel%20Room%20Block%20Mgmt%201.png){height=\"\" width=\"\"} 2. Enter the name of the hotel in the {{variable.Field_HotelRmBlk_Name}} field. 3. Select the {{variable.Field_HotelRmBlk_StartDate}} and {{variable.Field_HotelRmBlk_EndDate}}. 4. Enter the {{variable.Field_HotelRmBlk_TotalRmNights}} for the block. 5. Click {{variable.Button_Save}}. ![Hotel Room Block Mgmt 2](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hotel%20Room%20Block%20Mgmt%202.png){height=\"\" width=\"\"} After {{variable.Object_Attendee}}s have registered for your {{variable.Object_Event}}, you can create a {{variable.Object_HotelBooking}} record for them. ## Create a Hotel Booking Record :::(Warning) (Event Field) The {{variable.Field_HotelBook_Event}} field will now automatically populate once you save the Hotel Booking record. Edit the Hotel Booking page layout, uncheck the required field for the {{variable.Field_HotelBook_Event}} field and then remove it from the page layout. ::: 1. Navigate to the {{variable.Object_Event}} record's {{variable.SFTerm_RelatedList}}. 2. Click {{variable.button_new}} next to the {{variable.Object_HotelBooking}} object. ![Hotel Room Block Mgmt 3](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hotel%20Room%20Block%20Mgmt%203.png){height=\"\" width=\"\"} 1. Enter in the {{variable.Field_HotelBook_ArrivalDate}} and {{variable.Field_HotelBook_DepartureDate}}. 2. Add the {{variable.Field_HotelBook_RoomCost}}. 3. Select a {{variable.Field_HotelBook_RoomType}}. 4. Click {{variable.Button_Save}}. The {{variable.Field_HotelBook_Contact}}, {{variable.Field_HotelBook_TotalRoomCost}}, and {{variable.Field_HotelBook_NumbRoomNights}} fields will automatically populate once you click save. ![Hotel Room Block Mgmt 4](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Hotel%20Room%20Block%20Mgmt%204.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "hotel",
+    "room",
+    "field",
+    "block",
+    "nights",
+    "record",
+    "your",
+    "automatically",
+    "field_hotelrmblk_totalrmnights",
+    "create",
+    "mgmt",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. After creating your {{variable",
+    "2. Enter the name of the hotel in the {{variable",
+    "3. Select the {{variable",
+    "4. Enter the {{variable",
+    "5. Click {{variable",
+    "1. Navigate to the {{variable",
+    "2. Click {{variable",
+    "1. Enter in the {{variable",
+    "2. Add the {{variable",
+    "3. Select a {{variable"
+  ],
+  "troubleshooting": []
+}

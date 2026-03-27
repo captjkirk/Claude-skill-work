@@ -1,0 +1,41 @@
+{
+  "id": "stripe-checkout-1",
+  "title": "stripe-checkout-1.md",
+  "content": "## Metadata_Start ## code: en ## title: Stripe Checkout ## slug: stripe-checkout-1 ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End {{variable.Feature_StripeCheckout}} is a solution prepackaged from {{variable.Product_Stripe}}. We've added an integration so users will be able to utilize its functionality right from {{variable.Product_Salesforce}}. Click [here](https://stripe.com/payments/checkout) to read more about {{variable.Feature_StripeCheckout}}. ## Prerequisites 1. The {{variable.Product_Events}} and {{variable.Product_Payments}} packages must be installed and configured in your org. 2. {{variable.Feature_StripeCheckout}} must be used with a {{variable.Object_PaymentGateway}} with the {{variable.Field_PaymentGateway_Provider}} set to \"Stripe\". 3. To activate {{variable.Feature_StripeCheckout}}, please contact {{variable.Link_BlackthornSupport}}, who will enable {{variable.Feature_StripeCheckout}} on your license metadata. ## Configure Event Settings ### Add Stripe Checkout to the Event Settings Object 1. Navigate to Setup. 2. Use the Object Manager to find the {{variable.Object_EventSettings}} object. 3. Click **Fields & Relationships** on the {{variable.Object_EventSettings}} object. 4. Search for and select **Enabled Payment Methods**. 5. Go to the Values section and click {{variable.button_new}}. 6. Add \"Stripe Checkout\" to the text box. 7. Click {{variable.Button_Save}}. ### Set the Value on the Event Settings Object 1. Navigate to the {{variable.Object_EventSettings}} object you would like to use for your {{variable.Feature_StripeCheckout}} transactions. 2. Edit the {{variable.Field_ETETSettings_EnabledPM}} field to include \"Stripe Checkout\". * NOTE: If using {{variable.Feature_StripeCheckout}} please do not enable other {{variable.Object_PaymentMethod}}s (except Pay Later) ## Configure the Payment Gateway ### Update Your Page Layout 1. Navigate to the {{variable.Object_PaymentGateway}} object in Setup. 2. Click **Page Layouts**. 3. Click **Payment Gateway Layout**. 4. Add the {{variable.Field_PG_AcceptedCheckoutPMs}} field to the page layout. ### Set Values on the Payment Gateway Object 1. Navigate to the {{variable.Product_Stripe}} {{variable.Object_PaymentGateway}} that will be used for {{variable.Feature_StripeCheckout}}. 2. Edit the {{variable.Field_PG_AcceptedCheckoutPMs}} field to include the {{variable.Object_PaymentMethod}} to be used for {{variable.Feature_StripeCheckout}}. The checkout {{variable.Object_PaymentMethod}} types {{variable.Feature_StripeCheckout}} supports are listed [here](https://stripe.com/docs/api/checkout/sessions/create#create_checkout_session-payment_method_types). *NOTE: Stripe updates this list periodically.* :::(Info) (Using currencies other than the US Dollar) Certain Payment Methods like Sepa Debit only work with certain currencies (EUR). Check out this Payment Method [fact sheet](https://stripe.com/payments/payment-methods-guide#payment-methods-fact-sheets) to review limitations for each Payment Method type. ::: ## Add Permissions to Access Encrypted Data 1. Create a new permission set in Setup. 2. Name it \"Access Encrypted Data\". 3. Navigate to System Permissions. 4. Click **Edit**. 5. Check the {{variable.Field_SysPermiss_viewencrypdat}} checkbox. 6. Save the permission set. 7. Navigate to the user record in Setup for the person who authenticated the {{variable.Product_Events}} app. This is the person who clicked the **Authenticate** button while running the {{variable.Product_Events}} setup wizard. 8. Add the permission set you just created to that individual's user record. ## Setup Webhooks If you haven't already setup webhooks in your org, you'll want to do this. {{variable.Feature_StripeCheckout}} utilizes data that is brought into the org via webhooks. Related records like {{variable.Object_PaymentMethod}} and {{variable.Object_PaymentGatewayCustomer}} are attached to the {{variable.Object_Transaction}} after the webhooks process. ## Enable SCA If you are using [Strong Customer Authentication (SCA)](https://docs.blackthorn.io/docs/sca){target=`_blank`}, you must also enable the SCA feature. {{snippet.SCA_Setup}} ## Complete a Stripe Checkout with Events 1. Wait for the {{variable.Object_Event}}'s record to load. 2. Register an {{variable.Object_Attendee}}. 3. Click **Pay**. 4. Wait for {{variable.Feature_StripeCheckout}} to load. 5. Complete the {{variable.Feature_StripeCheckout}} form. 6. Observe the success page. 7. Navigate back to the {{variable.Object_Event}}'s record. 8. Open the registered {{variable.Object_Attendee}} record. 9. View the {{variable.Object_Invoice}} and {{variable.Object_Transaction}} records to make sure payment was processed sucessfully. ## Stripe Checkout Considerations ### Payment Method Type Limitations If you are not seeing your preferred {{variable.Object_PaymentMethod}} type as an option this is because it is not currently support by {{variable.Feature_StripeCheckout}}. A list of supported {{variable.Object_PaymentMethod}} types for checkout can be found [here](https://stripe.com/docs/api/checkout/sessions/create#create_checkout_session-payment_method_types). - Example: ACH is NOT supported in {{variable.Feature_StripeCheckout}}. Please use one of our other solutions for this {{variable.Object_PaymentMethod}} type. \"afterpay clearpay\" is also on this list; however, it is not supported. ### Apple Pay and Google Pay In order to see the option for Apple Pay or Google Pay in {{variable.Feature_StripeCheckout}} you must be viewing {{variable.Feature_StripeCheckout}} from a supported device. Discover more about wallets [here](https://stripe.com/docs/payments/wallets). Example: To view the Apple Pay button in {{variable.Feature_StripeCheckout}} you must be using an iOS device AND have your Apple wallet configured. ### Supported Payment Methods * alipay * card * ideal * fpx * bancontact * p24 * eps * sepa_debit * grabpay * acss_debit * wechat_pay * boleto * oxxo",
+  "keywords": [
+    "variable",
+    "feature_stripecheckout",
+    "stripe",
+    "checkout",
+    "payment",
+    "click",
+    "object",
+    "your",
+    "navigate",
+    "setup",
+    "object_paymentmethod",
+    "https",
+    "must",
+    "methods",
+    "docs",
+    "record",
+    "supported",
+    "here",
+    "enable",
+    "using"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. The {{variable",
+    "2. {{variable",
+    "3. To activate {{variable",
+    "1. Navigate to Setup",
+    "2. Use the Object Manager to find the {{variable",
+    "3. Click **Fields & Relationships** on the {{variable",
+    "4. Search for and select **Enabled Payment Methods**",
+    "5. Go to the Values section and click {{variable",
+    "6. Add \"Stripe Checkout\" to the text box",
+    "7. Click {{variable"
+  ],
+  "troubleshooting": []
+}

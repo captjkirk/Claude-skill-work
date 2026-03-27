@@ -1,0 +1,45 @@
+{
+  "id": "refund-transactions",
+  "title": "refund-transactions.md",
+  "content": "## Metadata_Start ## code: en ## title: Refund Transactions ## slug: refund-transactions ## seoTitle: Refund Transactions ## description: ## contentType: Markdown ## Metadata_End {{snippet.PAY_RefundAuthNetTransactions}} There are two paths to create a refund {{variable.Object_Transaction}}. * The {{variable.Button_Refund}} / {{variable.Button_PartialRefund}} buttons on a {{variable.Object_Transaction}} record create a refund {{variable.Object_Transaction}} for either the exact {{variable.Field_Transaction_Amount}} or a lesser amount the user selects. * The {{variable.Button_PTAdmin_ProSchRefundTra}} button on [Blackthorn | Payments Admin – Batch Jobs](https://docs.blackthorn.io/docs/blackthorn-payments-admin#batch-jobs){target=\"_blank\"} tab runs the job the moment you click the button. It will only process {{variable.Object_Transaction}}s that meet the specific criteria for manual refunds. ## Refunded/Partially Refunded Transactions :::(Warning) (Transaction Page Layout Update) By default, the {{variable.Field_Transaction_Source}} field is not included on the Charge Transaction Layout page layout. To add the {{variable.Field_Transaction_Source}} field, go to Setup > Object Manager > Transaction > Page Layout > Charge Transaction Layout. ::: To refund a {{variable.Object_Transaction}} in full, click the {{variable.Button_Refund}} button. To partially refund a {{variable.Object_Transaction}}, click the {{variable.Button_PartialRefund}} button, enter the amount to be partially refunded and click {{variable.Button_Refund}}. Both refunds and partial refunds will create {{variable.Object_Transaction}}s related to the original parent {{variable.Object_Transaction}}. The {{variable.Field_Transaction_RetainedAmou}} field captures the amount left after all refund(s). For example, if the original {{variable.Object_Transaction}} {{variable.Field_Transaction_Amount}} = \"100\" and two partial refunds of 35 each (70 total) were processed, the {{variable.Field_Transaction_RetainedAmou}} field will be \"30.\" NOTE: The {{variable.Field_Transaction_Source}} field of a refund {{variable.Object_Transaction}} is set on record creation. For example, if the refund {{variable.Object_Transaction}} is created from a {{variable.Object_WebhookEvent}}, the {{variable.Field_Transaction_Source}} will specify “Webhook.” Or if the refund is processed from {{variable.Product_Salesforce}}, the {{variable.Field_Transaction_Source}} field will specify “Salesforce UI.” You can also fully refund or partially refund non-gateway {{variable.Object_Transaction}}s (see: Non-Gateway {{variable.Object_Transaction}}s). ![Partially Refunding a Transaction](https://youtu.be/4bGwOGydFvg){height=\"480\" width=\"640\"} 1. In the App Launcher, enter and click “Transaction.” 2. Select the existing {{variable.Object_Transaction}} with {{variable.Field_Transaction_PaymentStatu}} = \"Captured,\" \"Partially Captured,\" or \"Partially Refunded.\" 3. Click {{variable.Button_Refund}} or {{variable.Button_PartialRefund}}. 4. If performing a partial refund, enter the {{variable.Field_Transaction_Amount}}. 5. Click {{variable.Button_Refund}}. If the {{variable.Object_Transaction}} was a full refund, the {{variable.Field_Transaction_TransaStatus}} will be updated to \"Completed,\" and the {{variable.Field_Transaction_PaymentStatu}} will be updated to \"Refunded.\" If it was a partial refund, the {{variable.Field_Transaction_TransaStatus}} will be updated to \"Completed,\" and the {{variable.Field_Transaction_PaymentStatu}} will be updated to \"Partial Refund.\" ## Schedule Refund Transactions Now Complete the following steps to use the {{variable.Button_PTAdmin_ProSchRefundTra}} button to process a refund {{variable.Object_Transaction}}. 1. In the App Launcher, enter and click “Transaction.” 2. Click {{variable.button_new}}. 3. Set {{variable.Field_Transaction_RecordType}} = \"Charge.\" 5. Click {{variable.Button_Next}}. 6. Enter the {{variable.Field_Transaction_Amount}} as “-x.xx.” 7. Set {{variable.Field_Transaction_TransactType}} = \"Refund.\" 8. Set {{variable.Field_Transaction_DueDate}} = a date that is less than or equal to today. 9. Set {{variable.Field_Transaction_AutoProcess}} = “True” (checked). 10. Set {{variable.Field_Transaction_TransaStatus}} = \"Open.\" 11. Set {{variable.Field_Transaction_OgTranRefund}} = the original {{variable.Object_Transaction}}. 12. Set {{variable.Field_Transaction_PaymenMethod}} = {{variable.Object_PaymentMethod}} used for the original {{variable.Object_Transaction}}. 13. Click {{variable.Button_Save}}. 14. Go to the {{variable.Tab_PT_BTPayAdmin}} tab. 15. Click {{variable.Button_PTAdmin_ProSchRefundTra}} on the Batch Jobs tab. 16. Go back to the {{variable.Object_Transaction}} that was just created. Once the job is complete, the {{variable.Field_Transaction_TransaStatus}} field will be updated to “Completed.” ## Troubleshooting If you have received an error with your {{variable.Object_Transaction}}s or have a question, please view our [Troubleshooting](/v1/docs/troubleshooting-payments) page.",
+  "keywords": [
+    "variable",
+    "refund",
+    "object_transaction",
+    "click",
+    "partially",
+    "transaction",
+    "field",
+    "transactions",
+    "button_refund",
+    "button",
+    "refunded",
+    "layout",
+    "field_transaction_source",
+    "enter",
+    "partial",
+    "updated",
+    "field_transaction_amount",
+    "refunds",
+    "page",
+    "original"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. In the App Launcher, enter and click “Transaction",
+    "2. Select the existing {{variable",
+    "3. Click {{variable",
+    "4. If performing a partial refund, enter the {{variable",
+    "5. Click {{variable",
+    "1. In the App Launcher, enter and click “Transaction",
+    "2. Click {{variable",
+    "3. Set {{variable",
+    "5. Click {{variable",
+    "6. Enter the {{variable"
+  ],
+  "troubleshooting": [
+    "error with your {{variable.",
+    "Troubleshooting If you have received an error with your {{variable.",
+    "Troubleshooting](/v1/docs/troubleshooting-payments) page."
+  ]
+}

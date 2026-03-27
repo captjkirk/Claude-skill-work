@@ -1,0 +1,25 @@
+{
+  "id": "msg-ss-global-manage-scheduled-jobs",
+  "title": "msg-ss-global-manage-scheduled-jobs.md",
+  "content": "## Metadata_Start ## code: en ## title: Manage Scheduled Jobs ## slug: msg-ss-global-manage-scheduled-jobs ## seoTitle: Manage Scheduled Jobs ## description: ## contentType: Markdown ## Metadata_End {{snippet.SS_GS_ManageSCheduledJobs_GlobalScheduler}}",
+  "keywords": [
+    "manage",
+    "scheduled",
+    "jobs",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "global",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "snippet",
+    "ss_gs_managescheduledjobs_globalscheduler"
+  ],
+  "category": "general",
+  "procedures": [],
+  "troubleshooting": []
+}

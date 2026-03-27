@@ -1,0 +1,39 @@
+{
+  "id": "after-hours-response",
+  "title": "after-hours-response.md",
+  "content": "## Metadata_Start ## code: en ## title: After Hours Response ## slug: after-hours-response ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End You can’t reply to customers’ texts while you’re recharging at home. Instead, use after-hours auto replies to let customers know when you and your team will be available for business text messaging. After Hours Response work just like email auto replies. You can set up your business SMS platform to send an SMS template when it receives customer messages during a certain time period. In this case, the time period would be your out-of-office hours. **Messaging Administration > Phone Numbers > AFTER HOUR RESPONSE** ![After Hours Response](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/After%20Hours%20Response.png){height=\"\" width=\"\"} ## Set Up an Auto Response Message 1. Go to the \"Messaging Administration\" tab. 2. Click the **Phone** icon, along the left navigation, taking you to the Phone Numbers page. 3. Click the **Add Phone Numbers** button. 4. Add a Phone Number by area code or by pattern. 5. Click on the **Edit** icon under the column \"After Hour Response\". 6. Select the associated Business Hours. 7. Provide a auto reply message (remember 160 character limit per SMS). 8. Click **Save**.",
+  "keywords": [
+    "after",
+    "hours",
+    "response",
+    "phone",
+    "auto",
+    "click",
+    "your",
+    "business",
+    "messaging",
+    "numbers",
+    "code",
+    "reply",
+    "customers",
+    "replies",
+    "when",
+    "time",
+    "period",
+    "administration",
+    "hour",
+    "message"
+  ],
+  "category": "messaging",
+  "procedures": [
+    "1. Go to the \"Messaging Administration\" tab",
+    "2. Click the **Phone** icon, along the left navigation, taking you to the Phone Numbers page",
+    "3. Click the **Add Phone Numbers** button",
+    "4. Add a Phone Number by area code or by pattern",
+    "5. Click on the **Edit** icon under the column \"After Hour Response\"",
+    "6. Select the associated Business Hours",
+    "7. Provide a auto reply message (remember 160 character limit per SMS)",
+    "8. Click **Save**"
+  ],
+  "troubleshooting": []
+}

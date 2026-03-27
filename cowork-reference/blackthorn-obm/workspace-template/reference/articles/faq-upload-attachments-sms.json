@@ -1,0 +1,39 @@
+{
+  "id": "faq-upload-attachments-sms",
+  "title": "faq-upload-attachments-sms.md",
+  "content": "## Metadata_Start ## code: en ## title: How Do Users Upload Attachments to SMS? ## slug: faq-upload-attachments-sms ## seoTitle: How Do Users Upload Attachments to SMS? ## description: ## contentType: Markdown ## Metadata_End ## What permissions do I need to upload attachments? Before a user can upload attachments to SMS, their Profile permissions must be updated. 1. Click the **Gear** icon in the top right-hand corner. 2. Click **Setup**. 3. In the Quick Find box, enter and click “Profiles.” 4. Select the Profile that relates to the user(s) to whom you need to give the ability to add attachments. 5. Scroll down to the Enabled Custom Permissions section. 6. Click **Edit** in the Enabled Custom Permissions header. 7. Move “Blackthorn Messaging.simplesms.Prevent Blackthorn Messaging Attachments” from the Enabled column to the Available column. 8. Click {{variable.Button_Save}}. Users related to the Profile can now attach files via the Paperclip icon. ## Why can't I see the Attachment button? If the **Paperclip** icon or attachment button isn't visible for some phone numbers, check the formatting of the phone number. Phone numbers can't include any of the following in the number. * spaces * parantheses * hyphens",
+  "keywords": [
+    "attachments",
+    "upload",
+    "click",
+    "permissions",
+    "users",
+    "profile",
+    "icon",
+    "enabled",
+    "phone",
+    "need",
+    "user",
+    "custom",
+    "blackthorn",
+    "messaging",
+    "column",
+    "paperclip",
+    "attachment",
+    "button",
+    "numbers",
+    "number"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Click the **Gear** icon in the top right-hand corner",
+    "2. Click **Setup**",
+    "3. In the Quick Find box, enter and click “Profiles",
+    "4. Select the Profile that relates to the user(s) to whom you need to give the ability to add attachments",
+    "5. Scroll down to the Enabled Custom Permissions section",
+    "6. Click **Edit** in the Enabled Custom Permissions header",
+    "7. Move “Blackthorn Messaging",
+    "8. Click {{variable"
+  ],
+  "troubleshooting": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evbuilder-clone-event-faq",
+  "title": "evbuilder-clone-event-faq.md",
+  "content": "## Metadata_Start ## code: en ## title: FAQs ## slug: evbuilder-clone-event-faq ## seoTitle: FAQs ## description: ## contentType: Markdown ## Metadata_End {{snippet.EVBuilder_FAQ_CloneEdit_1}} ## Edit or Delete a Question {{snippet.EVBuilder_FAQ_CloneEdit_EdDe}} ## Add a Question {{snippet.EVBuilder_FAQ_CloneEdit_Add}}",
+  "keywords": [
+    "snippet",
+    "faqs",
+    "question",
+    "metadata_start",
+    "code",
+    "title",
+    "slug",
+    "evbuilder",
+    "clone",
+    "event",
+    "seotitle",
+    "description",
+    "contenttype",
+    "markdown",
+    "metadata_end",
+    "evbuilder_faq_cloneedit_1",
+    "edit",
+    "delete",
+    "evbuilder_faq_cloneedit_edde",
+    "evbuilder_faq_cloneedit_add"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

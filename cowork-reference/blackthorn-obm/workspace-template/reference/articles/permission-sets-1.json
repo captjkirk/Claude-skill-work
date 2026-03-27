@@ -1,0 +1,34 @@
+{
+  "id": "permission-sets-1",
+  "title": "permission-sets-1.html",
+  "content": "Prerequisite The following is a list of required permissions that are NOT included in the Blackthorn Events permission sets BUT are required to use the Events app. Object Read Write Delete View All Account ✅ ✅ ❌ ❌ Contact ✅ ✅ ❌ ❌ Lead ✅ ✅ ❌ ❌ Campaign ✅ ✅ ❌ ❌ Campaign Member ✅ ✅ ❌ ❌ Product ✅ ❌ ❌ ❌ Packaged Permission Sets There are five packaged permission sets that you can assign users who need access to the {{variable.Product_Events}} app. If any of your users need access to financial data related to paid registrations or discount codes, they will need a {{variable.Product_Payments}} license and for it to be related to one of the packaged {{variable.Product_Payments}} permission sets or a custom permission set. Financial data includes data from {{variable.Object_Invoice}} s, {{variable.Object_Code}} s, {{variable.Object_Transaction}} s, {{variable.Object_PaymentMethod}} s, and the {{variable.Object_PaymentGateway}} objects. Blackthorn | Events (Admin) The Events (Admin) permission set gives users full access to the Blackthorn | Events Admin tab and all objects, including custom objects. The user also has Read permission for Payment Gateways and Create/Read/Update permissions for several Payments features, including Relationship Settings, the Data Dictionary, Codes, and Codes Eligibility. Blackthorn | Events (Organizer) The Events (Organizer) permission set gives users View all/Modify all/Delete access to records for any custom objects. The user also has Read permission for Payment Gateways and Create/Read/Update permissions for several Payments features, including Relationship Settings, the Data Dictionary, Codes, and Codes Eligibility. NOTE: The Events (Organizer) permission set is for Full Users. Blackthorn | Events (Lite User) The Events (Lite User) permission set gives users Create/Read/Edit access for the Attendee, Attendee Group, Session Attendee, and Track Attendee objects and Read-only access to most Events’ objects. Users can also check in Attendees using the Mobile Check-in app. This permission set does not grant access to the following Events’ objects: Waitlist, Hotel Room, Hotel Room Block, Expense Entry, Event Notification, Event Item Purchase, Event Group Association, Attendee Data Message, Data Sync Retries, Budget Expense, Badge Printing Configuration, Badge Printing Configuration Details, and Flight. Blackthorn | Events (Limited Access) The Events (Limited Access) permission set provides users with Create/Read/Update permissions for the Event and Attendee objects. Users do not have access to the Event Settings object nor Delete access to any custom objects. Blackthorn | Events (Community/Platform User) The Events (Community/Platform User) permission set provides Create/Read/Update permissions for all Events objects except for the Assigned Apps , Leads , and Opportunity fields. This is so the permission set can be assigned to Community and Platform license users. Users are also unable to access the Campaign object and Campaign-related features like the \"Add Attendees\" component. Blackthorn | Events (Community Guest User) The Blackthorn | Events (Community Guest User) permission set provides users with Read access to the following objects: Event Group, Event, Fee, BT Rule, and Schedule. Blackthorn | Events (Read Only) The Events (Read Only) permission set is for users who have a Read-Only license and provides Read-Only permission to the Events app's objects and components. This permission set is commonly given to users who need to review reports. Custom Permission Sets Update Custom Permission Sets If you create a custom permission set, you will need to modify it after each new Events app release to ensure that users with that custom permission set continue to have the appropriate access. Prerequisite To prevent the \"Insufficient permissions: secure query included inaccessible field\" error when creating an Event and using a custom permission set, update the Blackthorn | Events (Organizer) permission set. • Object: Event • Field: Chat Channel Created (Chat_Channel_Created__c) • Read Access = “True” • Edit Access = “True” Steps If you have custom permission sets you would rather use, you can view and add individual items by following the steps below: Install the latest Blackthorn | Events Salesforce AppExchange package in a sandbox. Log in to the sandbox org as a System Admin. Navigate to Setup &gt; Users &gt; Permission Sets. Open up each individual \"Blackthorn | Events\" permission set. Review all permissions within each and compare them to your custom permission sets. Ensure that all permissions granted by our out-of-the-box standard permission sets are recreated in your custom permission sets.",
+  "keywords": [
+    "permission",
+    "events",
+    "users",
+    "access",
+    "read",
+    "blackthorn",
+    "custom",
+    "objects",
+    "sets",
+    "event",
+    "permissions",
+    "variable",
+    "user",
+    "data",
+    "create",
+    "update",
+    "attendee",
+    "need",
+    "codes",
+    "only"
+  ],
+  "category": "events",
+  "procedures": [
+    "• Object: Event • Field: Chat Channel Created (Chat_Channel_Created__c) • Read Access = “True” • Edit Access = “True” Steps If you have custom permission sets you would rather use, you can view and add individual items by following the step"
+  ],
+  "troubleshooting": [
+    "error when creating an Event and using a custom permission set, update the Blackthorn | Events (Organizer) permission set."
+  ]
+}

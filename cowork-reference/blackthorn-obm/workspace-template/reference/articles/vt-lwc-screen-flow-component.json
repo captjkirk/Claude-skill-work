@@ -1,0 +1,38 @@
+{
+  "id": "vt-lwc-screen-flow-component",
+  "title": "vt-lwc-screen-flow-component.md",
+  "content": "## Metadata_Start ## code: en ## title: LWC Screen Flow Component ## slug: vt-lwc-screen-flow-component ## seoTitle: LWC Screen Flow Component ## description: ## contentType: Markdown ## Metadata_End Drag and drop the {{variable.Component_BTLWCVirtualTerminal}} into a Screen Flow to create a seamless experience for your customers or internal {{variable.Product_Salesforce}} users. ![VT LWC Screen Flow Component](https://youtu.be/33HWyoTAr08){height=\"480\" width=\"640\"} With Screen Flows and the {{variable.Component_BTLWCVirtualTerminal}}, Admins and Developers can create an even more seamless payment experiences for {{variable.Product_Salesforce}} and Experience Cloud users with clicks instead of code. :::(Warning) (NOTE) Custom Metadata Types and Custom Settings are not respected in the screen flow component. ::: 1. Create a new screen flow. 2. Add a Screen Element and provide a Label. 3. In the Components tab scroll down to the Custom section. 4. Find {{variable.Component_BTLWCVirtualTerminal}} and drag the component to a section of the screen. 5. Configure the following input variables. * {{variable.Field_VT_APIName}}: This is how the component on this screen will be referenced in the rest of your flow. * {{variable.Field_VT_Amount}} * {{variable.Field_VT_Currency}}: The value from the related {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field will automatically populate this field. If the {{variable.Object_Invoice}}'s {{variable.Field_Invoice_CurrencyISO}} field is blank, the Virtual Terminal will use the {{variable.Object_PaymentGateway}}’s {{variable.Field_PG_DefaultCurrency}} value. * {{variable.Field_VT_Description}} * {{variable.Field_VT_EnableLiteVersion}} – Known issue affecting functionality. * {{variable.Field_VT_HideAmount}} * {{variable.Field_VT_HideCurrency}} * {{variable.Field_MgVTCustmSet_HideBankTab}}: If enabled, Bank details will be hidden from the list of available options when creating a {{variable.Object_PaymentMethod}} via the {{variable.Component_BTLWCVirtualTerminal}}. * {{variable.Field_VT_HideProcessType}} = \"True.\" * {{variable.Field_MgVTCustomSet_MakeCVCOpt}}: If enabled, the {{variable.Field_VT_CVC}} field will be optional when adding a {{variable.Object_PaymentMethod}} via the {{variable.Component_BTLWCVirtualTerminal}}. * Parent Object {{variable.Field_VT_APIName}} * {{variable.Field_VT_PaymentGatewayID}} * {{variable.Field_VT_PaymentMethodID}} * {{variable.Field_VT_Process_Type}} = \"Capture Now\" * Record Id * {{variable.Field_VT_ShowAddress}} 6. Set Component Visibility (optional). 7. Set Advanced settings (optional).",
+  "keywords": [
+    "variable",
+    "screen",
+    "flow",
+    "component",
+    "component_btlwcvirtualterminal",
+    "field",
+    "create",
+    "custom",
+    "optional",
+    "code",
+    "drag",
+    "seamless",
+    "experience",
+    "your",
+    "product_salesforce",
+    "users",
+    "settings",
+    "section",
+    "field_vt_apiname",
+    "value"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Create a new screen flow",
+    "2. Add a Screen Element and provide a Label",
+    "3. In the Components tab scroll down to the Custom section",
+    "4. Find {{variable",
+    "5. Configure the following input variables",
+    "6. Set Component Visibility (optional)",
+    "7. Set Advanced settings (optional)"
+  ],
+  "troubleshooting": []
+}

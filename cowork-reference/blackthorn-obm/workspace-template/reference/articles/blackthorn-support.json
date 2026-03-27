@@ -1,0 +1,43 @@
+{
+  "id": "blackthorn-support",
+  "title": "blackthorn-support.md",
+  "content": "## Metadata_Start ## code: en ## title: Grant Blackthorn Access to Your Org ## slug: blackthorn-support ## seoTitle: ## description: ## contentType: Markdown ## Metadata_End Our Technical Support plans provide the software updates and technical support you need to maintain a stable, optimized environment with minimal risk to maximize the return on your investment. :::(Info) (**Submitting a case and support plans**) Visit our [Contact & Case Submission page](https://community.blackthorn.io/s/support). ::: :::(Warning) (**Supported Versions**) At this time, Blackthorn is only supporting the latest 3 versions of our product. If you have a version installed that is more than 3 versions old, please upgrade before contacting support. ::: ## Granting Blackthorn Access Blackthorn Support, at times, will need to access your Salesforce Org to troubleshoot an issue. There are two tasks you will need to complete in order for us to access your org: 1. Navigate to your settings. * Lightning: * Click **View Profile** or your name. * Click **Grant Account Login Access.** * Classic: * Navigate to My Settings. * In the Quick Find box, type in and click \"Grant Login Access.\" 2. Next to \"blackthorn.io, Inc. Support,\" change the **Access Duration** to \"1 week\". ![Grant Account Login Access](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Grant%20Account%20Login%20Access.png){height=\"\" width=\"\"} ![Grant Account Access Classic](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Grant%20Account%20Login%20Access%202.png){height=\"\" width=\"\"} ## Salesforce Org ID 1. Navigate to \"Company Profile.\" * Lightning: * Click Setup icon. * In the Quick Find box, type in and click \"Company Information.\" * Classic: * Click Setup icon. * In the Quick Find box, type in and click \"Company Information.\" 2. Under Organization Detail, copy the value from the \"Salesforce.com Organization ID\" field. ## Next Steps 1. Navigate to the \"Help and Support\" page. 2. Check the **Granted Access** field. 3. Enter your Salesforce Org ID.",
+  "keywords": [
+    "access",
+    "support",
+    "grant",
+    "blackthorn",
+    "your",
+    "click",
+    "salesforce",
+    "navigate",
+    "need",
+    "https",
+    "versions",
+    "account",
+    "login",
+    "classic",
+    "quick",
+    "find",
+    "type",
+    "company",
+    "technical",
+    "plans"
+  ],
+  "category": "ui-experience",
+  "procedures": [
+    "1. Navigate to your settings",
+    "2. Next to \"blackthorn",
+    "1. Navigate to \"Company Profile",
+    "2. Under Organization Detail, copy the value from the \"Salesforce",
+    "1. Navigate to the \"Help and Support\" page",
+    "2. Check the **Granted Access** field",
+    "3. Enter your Salesforce Org ID",
+    "* Lightning: * Click",
+    "* * Classic: * Navigate",
+    "* In the Quick Find box, type in and click"
+  ],
+  "troubleshooting": [
+    "troubleshoot an issue."
+  ]
+}

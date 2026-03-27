@@ -1,0 +1,38 @@
+{
+  "id": "vt-navigate-custom-metadata-types",
+  "title": "vt-navigate-custom-metadata-types.md",
+  "content": "## Metadata_Start ## code: en ## title: Navigate to Custom Metadata Types ## slug: vt-navigate-custom-metadata-types ## seoTitle: Navigate to Custom Metadata Types ## description: ## contentType: Markdown ## Metadata_End 1. Navigate to Setup. 2. In the Quick Find box, type \"Custom Metadata Types\". 3. Click **Custom Metadata Types**. 4. Click **Manage Records** next to Virtual Terminal Mapping. 5. Click {{variable.button_new}}. 6. Add values to the following fields. * {{variable.Field_CstmMetaType_VTMapName}}: This is the API name for the record. The API name can only contain underscores and alphanumeric characters. It must be unique, begin with a letter, not include spaces, not end with an underscore, and not contain two consecutive underscores. For example, \"opp_amount.\" * {{variable.Field_CstmMetaType_Label}}: This is the label for the particular prepopulating record. For example, use \"Opp > Trans Amount\" for the label if you are prepopulating the {{variable.Field_VT_Amount}} field. * {{variable.Field_CstmMetaType_Screen}}: Single {{variable.Object_Transaction}}. Use the Related To screen for prepopulating the {{variable.Field_VT_RelatedTo}} field on the Terminal's Transaction screen. See example [here](https://docs.blackthorn.io/docs/use-cases#section-prepopulating-examples){target=\"_blank\"}. * {{variable.Field_CstmMetaType_SourceObjct}}: Select the Parent Object. For example, the Opportunity Object. * {{variable.Field_CstmMetaType_SourceField}}: Select the field you want the value to come from. For example, if you want to prepopulate the Terminal's {{variable.Object_Transaction}} {{variable.Field_Transaction_Amount}} with the {{variable.Object_Opportunity}}'s {{variable.Field_Opportunity_Amount}}, then select the \"Amount\" field from the list. * {{variable.Field_CstmMetaType_TargetObjec}}: Select a {{variable.Object_Transaction}} [bt_stripe]. * {{variable.Field_CstmMetaType_TargetField}}: Select the field you want the value to populate in. For example, you would select the {{variable.Field_Transaction_Amount}} field. 7. Click {{variable.Button_Save}}. ![Navigate to Custom Metadata Types](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/Navigate%20to%20Custom%20Metadata%20Types.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "navigate",
+    "custom",
+    "metadata",
+    "types",
+    "example",
+    "field",
+    "select",
+    "click",
+    "prepopulating",
+    "terminal",
+    "object_transaction",
+    "want",
+    "name",
+    "record",
+    "contain",
+    "underscores",
+    "label",
+    "amount",
+    "screen"
+  ],
+  "category": "payments",
+  "procedures": [
+    "1. Navigate to Setup",
+    "2. In the Quick Find box, type \"Custom Metadata Types\"",
+    "3. Click **Custom Metadata Types**",
+    "4. Click **Manage Records** next to Virtual Terminal Mapping",
+    "5. Click {{variable",
+    "6. Add values to the following fields",
+    "7. Click {{variable"
+  ],
+  "troubleshooting": []
+}

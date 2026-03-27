@@ -1,0 +1,30 @@
+{
+  "id": "bt-events-attendee-builder",
+  "title": "bt-events-attendee-builder.html",
+  "content": "Are your potential {{variable.Object_Attendee}} s related to {{variable.Object_Account}} s, {{variable.Object_Contact}} s, {{variable.Object_Campaign}} s, {{variable.Object_Event}} s, {{variable.Object_Lead}} s, or Reports? Use the {{variable.Component_BTEVAttendeeBuilder}} component to add {{variable.Object_Attendee}} s directly to an {{variable.Object_Event}} from the {{variable.Object_Event}} record. Add the Component Complete the following steps if the {{variable.Component_BTEVAttendeeBuilder}} component hasn’t been added to the {{variable.Object_Event}} record. Go to the {{variable.Object_Event}} record. Click the {{variable.Button_GearIcon}} . Click Edit Page . Locate the {{variable.Component_BTEVAttendeeBuilder}} under custom components. &nbsp; Drag and drop the component onto the screen. Click {{variable.Button_Save}} . Add Attendees Are you using reports? The first column of a report must include the Record ID for each individual/record. If the first column doesn’t contain the Record ID, the following can occur. An import will fail silently when uploading Attendees to an Event via an Attendee/Lead/Contact report. Duplicate Attendee records can be added. Return to the {{variable.Object_Event}} record. Click Attendees or the {{variable.Component_BTEVAttendeeBuilder}} component. Click in the Add Attendees field. &nbsp; Enter a name. Look through the list of potential names. Select a name. Click {{variable.Button_Save}} once you are done adding names. &nbsp; Click the Attendees Related List. &nbsp; Each newly added {{variable.Object_Attendee}} will have the {{variable.Field_ETAttendee_RegistrStatus}} set to “To Invite.”",
+  "keywords": [
+    "variable",
+    "record",
+    "click",
+    "object_event",
+    "component",
+    "attendees",
+    "component_btevattendeebuilder",
+    "nbsp",
+    "object_attendee",
+    "added",
+    "potential",
+    "related",
+    "reports",
+    "following",
+    "button_save",
+    "first",
+    "column",
+    "report",
+    "each",
+    "attendee"
+  ],
+  "category": "events",
+  "procedures": [],
+  "troubleshooting": []
+}

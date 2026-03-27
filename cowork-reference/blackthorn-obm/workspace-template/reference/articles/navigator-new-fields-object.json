@@ -1,0 +1,40 @@
+{
+  "id": "navigator-new-fields-object",
+  "title": "navigator-new-fields-object.md",
+  "content": "## Metadata_Start ## code: en ## title: New Fields and an Object ## slug: navigator-new-fields-object ## seoTitle: New Fields and an Object ## description: ## contentType: Markdown ## Metadata_End Before using the {{variable.Product_BlackthoEventNavigator}} app, you must add the following fields to the relevant page layouts. [Click here](/v1/docs/navigator-new-fields-object#add-a-field-to-a-page-layout) for general steps to add a field to an object's page layout. ## Object: Attendee * Field Label: {{variable.Field_Attendee_MobileDeviceID}} * API Name: conference360__Mobile_Device_ID__c * Data Type: Text * Help Text/Description: The Event Navigator attendee mobile app automatically populates this unique phone or tablet identifier, which is used to send push notifications to the proper recipient. * Field Label: {{variable.Field_Attendee_Facebook}} * API Name: conference360__Facebook__c * Data Type: URL(255) * Description: Link to Attendee's Facebook profile. * Field Label: {{variable.Field_Attendee_PerNavigAppLink}} * API Name: conference360__Personal_Navigator_App_Link__c * Data Type: Formula URL - e.g. https://app.navigator.blackthorn.io/?orgId={orgId}&email={attendeeEmail} * Description: This personal invitation link is generated for each registered attendee when the Navigator app is enabled for the event. Email is used as a unique identifier. * Help Text: This personal invitation link is generated for each registered attendee when the Navigator app is enabled for the event. ## Object: Event * Field Label: {{variable.Field_EV_EnableNavigaAttMobApp}} * API Name: conference360__Enable_Attendee_Passport_App__c * Data Type: Checkbox * Default Value: Checked * Help Text/Description: If true, this makes the event available to attendees on the Events Navigator mobile app. Note that this is a paid add-on feature. ## Object: Event Registration Submission * Field Label: {{variable.Field_ERS_PayloadSource}} * API Name: conference360__Payload_Source__c * Data Type: Picklist * Picklist Values * Event Checkout * Session Checkout * Check-In * Help Text/Description: Source of the checkout payload ## Object: Event Settings * Field Label: {{variable.Field_EventSettings_ShowAgenda}} * API Name: conference360__Show_Agenda__c * Data Type: Checkbox * Default: Checked * Help Text/Description: If true, show the Agenda element in the Event Navigator attendee mobile app. If false, hide the element. * Field Label: {{variable.Field_EVSettings_ShowAttendees}} * API Name: conference360__Show_Attendees__c * Data Type: Checkbox * Default: Checked * Help Text/Description: If true, the Attendees element in the Event Navigator attendee mobile app will be shown. If false, it will be hidden. * Field Label: {{variable.Field_EventSettings_ShowMap}} * API Name: conference360__Show_Map__c * Data Type: Checkbox * Default: Checked * Help Text/Description: If true, show the Map element in the Event Navigator attendee mobile app. If false, hide the element. * Field Label: {{variable.Field_EventSettings_ShowTicket}} * API Name: conference360__Show_Ticket__c * Data Type: Checkbox * Default: Checked * Help Text/Description: If true, show the Ticket element in the Event Navigator attendee mobile app. If false, hide the element. * Field Label: {{variable.Field_EventSetting_ShowProfile}} * API Name: conference360__Show_Profile__c * Data Type: Checkbox * Default: Checked * Help Text/Description: If true, show the Profile element in the Event Navigator attendee mobile app. If false, hide the element. ## Object: Event Content * Field Label: {{variable.Field_EVContent_DispNavigatApp}} * API Name: Display_In_Attendee_Mobile_App__c * Data Type: Checkbox * Help Text: If true, the content will be available via the attendee mobile app. ## New Object: Mobile Attendee App Usage * *Object Label: {{variable.Object_MobileAttendeeAppUsage}}* * API Name: Mobile_Attendee_App_Usage__c * Description: Daily report on attendee interactions with the Event Navigator Attendee Mobile App, if enabled. * Field Label: {{variable.Field_MobNavUse_TotalUniqAppUs}} * API Name: Total_Unique_Attendee_App_Users__c * Data Type: Number * Description/Help Text: The number of attendees who were active on the Event Navigator Attendee Mobile App on the Usage Date. * Field Label: {{variable.Field_MobNavUse_UsageDate}} * API Name: Usage_Date__c * Data Type: Date * Description: The specific date on which the attendee mobile app usage occurred, for reporting purposes. This date is generally one day earlier than the record's Created Date. * Help Text: The specific date the attendee mobile app usage occurred. ## Add a Field to a Page Layout 1. Go to Setup. 2. Click the Object Manager tab. 3. In the Quick Find box, enter and click the name of the object. 4. Click Page Layout. 5. Click the name of the page layout. 6. Locate the field you want to add to the page layout. 7. Drag and drop the field onto the page layout. 8. Repeat the previous step for any other fields you need to add to this page layout. 9. Click {{variable.Button_Save}}. If a record for that object is open in another tab, you need to refresh the page to see the added fields.",
+  "keywords": [
+    "field",
+    "attendee",
+    "variable",
+    "name",
+    "event",
+    "object",
+    "navigator",
+    "description",
+    "label",
+    "data",
+    "type",
+    "text",
+    "mobile",
+    "help",
+    "page",
+    "element",
+    "layout",
+    "fields",
+    "checkbox",
+    "true"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Go to Setup",
+    "2. Click the Object Manager tab",
+    "3. In the Quick Find box, enter and click the name of the object",
+    "4. Click Page Layout",
+    "5. Click the name of the page layout",
+    "6. Locate the field you want to add to the page layout",
+    "7. Drag and drop the field onto the page layout",
+    "8. Repeat the previous step for any other fields you need to add to this page layout",
+    "9. Click {{variable"
+  ],
+  "troubleshooting": []
+}

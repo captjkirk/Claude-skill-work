@@ -1,0 +1,41 @@
+{
+  "id": "attendeelink-add-calendar",
+  "title": "attendeelink-add-calendar.md",
+  "content": "## Metadata_Start ## code: en ## title: Add to Calendar Feature ## slug: attendeelink-add-calendar ## seoTitle: Add to Calendar Feature ## description: ## contentType: Markdown ## Metadata_End Help your {{variable.Object_Attendee}}s remember everything they need to know about their upcoming {{variable.Object_Event}} with the {{variable.AttendeeLink}}s Add to Calendar feature. It’s as simple as clicking the {{variable.Button_AddtoCalendar}} button and selecting a calendar platform. ![AddToCalendar_Registered](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_Registered.png){height=\"\" width=\"\"} ## Change the Calendar Invite Message To customize the invite message and location that your {{variable.Object_Attendee}}s see in their calendar app, complete the following steps. 1. Confirm that the {{variable.Field_ETEvent_CalendarLocation}} and {{variable.Field_ETEvent_CalendarDescript}} fields are on your {{variable.Object_Event}} record page layout. ![AddToCalendar_EventRecord](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_EventRecord.png){height=\"\" width=\"\"} 3. If the fields are already on the {{variable.Object_Event}} record page layout, go to Step 9. 4. If they aren’t, click the **Gear** icon in the top right corner. 5. Click **Edit Object**. 6. Search for and click the {{variable.Object_Event}} object. 7. Click **Page Layout**. 9. Add the {{variable.Field_ETEvent_CalendarLocation}} and {{variable.Field_ETEvent_CalendarDescript}} fields to the page layout. ![AddToCalendar_EventPageLayout](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_EventPageLayout.png){height=\"\" width=\"\"} 12. Click {{variable.Button_Save}}. Go to your event’s {{variable.Object_Event}} record and confirm the fields are visible. ![AddToCalendar_EventRecord](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_EventRecord.png){height=\"\" width=\"\"} 14. Enter a new {{variable.Field_ETEvent_CalendarLocation}} and {{variable.Field_ETEvent_CalendarDescript}}. 15. Check the {{variable.Field_Event_ZoomURLCalendDescr}} checkbox if you want {{variable.Object_Attendee}}s to see Zoom URLs in the invite’s {{variable.Field_ETEvent_CalendarDescript}} field after they click the **Add to Calendar** button. 16. Click {{variable.Button_Save}}. ![AddToCalendar_FieldsComplete](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_FieldsComplete.png){height=\"\" width=\"\"} 17. Click **Update** to update the {{variable.Object_Event}}. ## The Attendee Experience ![AddToCalendar_ViewEvent](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_ViewEvent.png){height=\"\" width=\"\"} After completing the registration process, {{variable.Object_Attendee}}s will receive a success message with the {{variable.Button_AddtoCalendar}} button. ![AddToCalendar_Registered](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_Registered.png){height=\"\" width=\"\"} Clicking the {{variable.Button_AddtoCalendar}} button will open a picklist where the {{variable.Object_Attendee}}s can choose their preferred calendar platform. ![AddToCalendar_ClickAddToCalendar](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_ClickAddToCalendar.png){height=\"\" width=\"\"} The newly created calendar invite will include all of the relevant {{variable.Object_Event}} information EXCEPT the venue information and description. Instead, the information in the {{variable.Field_ETEvent_CalendarLocation}} and {{variable.Field_ETEvent_CalendarDescript}} fields will be shown. ![AddToCalendar_ViewInfoCalendarInvite](https://cdn.document360.io/f977eec0-500f-40a3-b663-724a51f78075/Images/Documentation/AddToCalendar_ViewInfoCalendarInvite.png){height=\"\" width=\"\"}",
+  "keywords": [
+    "variable",
+    "calendar",
+    "https",
+    "document360",
+    "f977eec0",
+    "500f",
+    "40a3",
+    "b663",
+    "724a51f78075",
+    "images",
+    "documentation",
+    "height",
+    "width",
+    "click",
+    "object_event",
+    "object_attendee",
+    "field_etevent_calendardescript",
+    "fields",
+    "your",
+    "button"
+  ],
+  "category": "events",
+  "procedures": [
+    "1. Confirm that the {{variable",
+    "3. If the fields are already on the {{variable",
+    "9. 4",
+    "5. Click **Edit Object**",
+    "6. Search for and click the {{variable",
+    "7. Click **Page Layout**",
+    "9. Add the {{variable",
+    "12. Click {{variable",
+    "14. Enter a new {{variable",
+    "15. Check the {{variable"
+  ],
+  "troubleshooting": []
+}
