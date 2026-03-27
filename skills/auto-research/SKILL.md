@@ -1,21 +1,18 @@
 ---
 name: auto-research
 description: >
-  Autonomous skill improvement using the autoresearch pattern. Reads any target
-  skill (or all skills via --sweep), dynamically generates binary evaluation
-  criteria and success metrics, runs simulated test cases, scores outputs, and
-  iteratively improves the skill — keeping changes only when they raise the pass
-  rate. Sweep mode evaluates each skill independently then tests cross-skill
-  integration (handoffs, routing, dependency ordering, schema consistency).
-  First iteration runs interactively for approval; subsequent iterations run
-  autonomously. Invoke on: "auto-research [skill]", "improve this skill
-  automatically", "run autoresearch on [skill]", "optimize [skill] overnight",
-  "what's the pass rate for [skill]", "evaluate all my skills", "run a full
-  sweep", "how do my skills work together", "test skill integration".
-  Also invoke when dream's EVO pass surfaces a proposal and the user says
-  "auto-improve it" or "run the research loop on that". Use this skill any time
-  someone wants to measure, benchmark, or autonomously improve a skill's
-  reliability — even if they don't use the word "autoresearch".
+  Autonomous skill improvement using the autoresearch pattern. Reads a target
+  skill (or all skills via --sweep), generates binary eval criteria and test
+  cases, runs simulated evaluations, and iteratively improves the skill —
+  keeping only changes that raise the pass rate. Sweep mode evaluates each
+  skill independently then tests cross-skill integration (handoffs, routing,
+  schema consistency). First iteration is interactive; subsequent iterations
+  run autonomously. Invoke on: "auto-research [skill]", "improve this skill",
+  "run autoresearch", "optimize [skill]", "evaluate all my skills", "run a
+  full sweep", "test skill integration". Also invoke when dream's EVO pass
+  surfaces a proposal and the user says "auto-improve it". Use any time
+  someone wants to measure, benchmark, or autonomously improve skill
+  reliability.
 ---
 
 # Auto-Research — Autonomous Skill Improvement
