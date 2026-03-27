@@ -286,3 +286,185 @@ written, what was changed, what was deleted.
 **Evaluation prompt:** "Does the SKILL RESULT confirm exactly what actions
 were taken (files written, entries added/removed, paths created)? Vague
 confirmations without specifics are a FAIL. Answer PASS or FAIL."
+
+---
+
+## Cross-Skill Integration (Sweep Mode)
+
+These criteria evaluate how skills work **together** — the handoffs, routing
+decisions, and collective behavior across multi-skill chains. Used in Stage 3
+of sweep mode. Individual skill criteria (above) test skills in isolation;
+integration criteria test the boundaries between them.
+
+Never use these for single-skill evaluation. They only apply when evaluating
+a chain of 2+ skills passing data through PM.
+
+### IC1: SKILL RESULT → SKILL REQUEST Compatibility
+
+When Skill A's output flows through PM to become Skill B's input, does the
+handoff work? Does Skill A's SKILL RESULT contain all fields that Skill B
+needs in its SKILL REQUEST?
+
+**Known critical handoffs:**
+- `morning-orchestrator` → `customer-dossier`: Must pass customer names extracted from calendar
+- `customer-dossier` → `day-prep-recap`: Must pass phase, open items, contacts, risk flags
+- `customer-dossier` → `com-update`: Must pass current COM field values for comparison
+- `post-meeting-sweep` → `fathom`: Must pass meeting name + time for lookup
+- `fathom` → `com-update`: Must pass action items, key outcomes, risk signals
+- `blackthorn-support` → `product-feedback-poster`: Must pass exact question + confidence + customer context
+- `email-templates` → `blackthorn-brand`: Must pass draft content + content type + audience
+- `dream` → `memory-create`: Must pass fact text + target file + section
+
+**Evaluation prompt:** "Does Skill A's SKILL RESULT contain all data fields that
+Skill B needs to construct a valid SKILL REQUEST? Check each field the downstream
+skill expects against what the upstream skill actually provides. Any missing
+field that would force PM to fabricate data or skip the downstream skill is a
+FAIL. Answer PASS or FAIL."
+
+### IC2: Dependency Ordering
+
+Does the chain execute in the correct sequence? Hard dependencies must be
+respected.
+
+**Hard dependency rules:**
+- `customer-dossier` MUST complete before any task-specific skill when a customer is named
+- `email-templates` MUST be checked before drafting any email from scratch
+- `blackthorn-support` MUST return before deciding whether to route to `product-feedback-poster`
+- `morning-orchestrator` MUST complete before `day-prep-recap` receives its input
+- `post-meeting-sweep` findings MUST be available before `com-update` runs
+
+**Evaluation prompt:** "Does the chain execute skills in the correct dependency
+order? Specifically: does customer-dossier run before task-specific skills? Does
+email-templates get checked before freehand drafting? Are hard sequential
+dependencies respected? Any out-of-order execution is a FAIL. Answer PASS or FAIL."
+
+### IC3: Parallel Buffering
+
+When multiple skills run in parallel, PM must buffer all results before
+presenting to the user or routing downstream. No premature partial output.
+
+**Parallel patterns to test:**
+- Multiple `customer-dossier` calls for different customers (all must complete before presentation)
+- `fathom` + Gmail searches running simultaneously (both must return before synthesis)
+- Multiple SKILL RESULTs from different skills (all buffered, presented as consolidated block)
+
+**Evaluation prompt:** "When multiple skills run in parallel, does PM wait for
+ALL results before presenting or routing downstream? Any partial output while
+other skills are still pending is a FAIL. Answer PASS or FAIL."
+
+### IC4: Confidence-Based Routing
+
+When a skill returns Medium or Low confidence, PM should either deepen
+(re-request with more context) or re-route (send to a different skill).
+
+**Expected routing decisions:**
+- `fathom` Medium/Low → PM requests transcript pull (deepen)
+- `fathom` + high-stakes signal → ALWAYS transcript pull regardless of confidence
+- `blackthorn-support` Medium/Low → route to `product-feedback-poster` (re-route)
+- `customer-dossier` Low (stale) → PM requests dossier regeneration (deepen)
+- Any skill with gaps → PM checks if another skill can fill them
+
+**Evaluation prompt:** "When a skill returns Medium or Low confidence, does PM
+take the correct action (deepen with more context, or re-route to a different
+skill)? Accepting Medium/Low confidence without deepening on customer-impacting
+questions is a FAIL. Answer PASS or FAIL."
+
+### IC5: Tier 1/2 Segregation Across Chain
+
+Across the complete chain, all Tier 1 actions should execute autonomously and
+all Tier 2 items should be collected into a single block presented at the end.
+No Tier 2 action should execute mid-chain.
+
+**Tier 1 (autonomous):** File writes, memory updates, dossier updates, running
+additional skills, drafting to outputs/, routing decisions, writing EVO proposals.
+
+**Tier 2 (flag to user):** External sends (email, Slack), applying skill patches,
+irreversible actions, anything visible to customers/colleagues, high-stakes
+customer risk signals.
+
+**The "Act First, Flag Last" pattern:**
+```
+DO all Tier 1 work → COLLECT Tier 2 flags → PRESENT consolidated output + flags
+```
+
+**Evaluation prompt:** "Across the complete chain, are all Tier 1 actions executed
+autonomously while all Tier 2 items are collected and presented as a single block
+at the end? Any Tier 2 action executed mid-chain, or any Tier 2 flag presented
+before all Tier 1 work completes, is a FAIL. Answer PASS or FAIL."
+
+### IC6: High-Stakes Signal Propagation
+
+When any skill in the chain detects a high-stakes signal, it must propagate to
+PM regardless of confidence level and trigger the correct escalation.
+
+**High-stakes signals:** "cancel", "opt out", "not renewing", "considering
+alternatives", "frustrated", "this isn't working", "evaluate other platforms",
+"talk to legal", "issue a refund", threats to leave or reduce scope.
+
+**Expected behavior:** Any high-stakes signal → fathom transcript pull (if
+meeting-sourced) + Tier 2 flag + customer-dossier risk update.
+
+**Evaluation prompt:** "When a high-stakes signal appears anywhere in the chain
+(in fathom output, email content, meeting notes, etc.), does it propagate to PM
+and trigger escalation (transcript pull + Tier 2 flag)? A high-stakes signal
+that goes undetected or unescalated is a FAIL. Answer PASS or FAIL."
+
+### IC7: No Circular Handoffs
+
+The chain must terminate. No skill should trigger a loop back to itself or to
+an earlier skill in the chain.
+
+**Known risk patterns:**
+- `dream` → `memory-create` must not re-trigger `dream`
+- `product-feedback-poster` must not loop back to `blackthorn-support`
+- `com-update` after `fathom` must not re-trigger `fathom`
+- PM deepening on low confidence must have a max depth (don't deepen forever)
+
+**Evaluation prompt:** "Does the chain terminate cleanly without circular
+handoffs? Does any skill's output trigger a loop back to itself or an earlier
+skill? Any circular reference or infinite loop potential is a FAIL.
+Answer PASS or FAIL."
+
+### IC8: Schema Consistency
+
+All skills in the chain should use the same SKILL RESULT schema — same field
+names, same confidence scale (High/Medium/Low), same timestamp format (ISO 8601).
+
+**Evaluation prompt:** "Do all SKILL RESULTs in the chain use consistent schema —
+same field names, same confidence scale (High/Medium/Low), same timestamp format
+(ISO 8601)? Any schema drift (different field names for the same concept,
+numeric vs. text confidence) is a FAIL. Answer PASS or FAIL."
+
+### IC9: Graceful Degradation
+
+When one skill in the chain fails or returns empty results, the chain should
+continue with reduced context rather than halting entirely.
+
+**Expected behavior:**
+- Missing fathom data → proceed with Gmail-only context, note the gap
+- Empty dossier → create dossier, then proceed
+- Failed API call → log to TASKS.md, continue with available data
+- Skill timeout → skip, note in Gaps/failures field
+
+**Evaluation prompt:** "When one skill in the chain returns empty results or
+fails, does the chain continue with reduced context? Does PM log the gap in
+Gaps/failures? A complete chain halt due to one skill's failure is a FAIL.
+Answer PASS or FAIL."
+
+### IC10: Memory Routing Consistency
+
+When multiple skills in a chain propose memory writes, the writes should target
+the correct files without conflicts or duplicates.
+
+**Routing rules:**
+- Customer-specific facts → `customers/<name>/<name>.md`
+- Subfolder-specific facts → `<subfolder>/MEMORY.md`
+- General facts → root `/Cowork-OS/MEMORY.md`
+- Feature explanations → `reference/feature-explanations.md`
+- Never duplicate the same fact to multiple locations
+
+**Evaluation prompt:** "When multiple skills propose memory writes, do they
+target the correct files following the routing rules? Are there any conflicts
+(two skills writing contradictory data to the same file) or duplicates (same
+fact written to multiple locations)? Any routing error is a FAIL.
+Answer PASS or FAIL."

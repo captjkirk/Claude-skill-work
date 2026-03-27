@@ -199,6 +199,169 @@ iteration	timestamp	pass_rate	delta	word_count	status	description
 
 ---
 
+## Sweep Mode Schemas
+
+### discovery.json
+
+Generated in Stage 1 of sweep mode. Maps the full skill ecosystem.
+
+```json
+{
+  "timestamp": "2026-03-27T10:00:00Z",
+  "sweep_dir": "skills/",
+  "skills_found": 26,
+  "skills_skipped": ["schedule"],
+  "dependency_graph": {
+    "<skill-name>": {
+      "layer": "orchestrator | primary-worker | chained-skill | utility",
+      "invokes": ["skill-a", "skill-b"],
+      "invoked_by": ["skill-c"],
+      "criticality": "critical | high | medium | low",
+      "note": "Optional context"
+    }
+  },
+  "chains": [
+    {
+      "name": "descriptive-chain-name",
+      "sequence": ["skill-a", "skill-b", "skill-c"],
+      "trigger": "What initiates this chain"
+    }
+  ],
+  "processing_order": ["project-manager", "morning-orchestrator", "customer-dossier", "..."]
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `timestamp` | string | yes | ISO 8601 |
+| `sweep_dir` | string | yes | Directory that was scanned |
+| `skills_found` | number | yes | Total SKILL.md files found |
+| `skills_skipped` | array | yes | Skills excluded via `--skip` |
+| `dependency_graph` | object | yes | Keyed by skill name |
+| `dependency_graph.<name>.layer` | string | yes | Hierarchy classification |
+| `dependency_graph.<name>.invokes` | array | yes | Skills this skill calls |
+| `dependency_graph.<name>.invoked_by` | array | yes | Skills that call this one |
+| `dependency_graph.<name>.criticality` | string | yes | Impact rating |
+| `chains` | array | yes | Named multi-skill workflows |
+| `processing_order` | array | yes | Order skills will be evaluated |
+
+---
+
+### integration-test-cases.json
+
+Generated in Stage 3a. Test scenarios for multi-skill chains.
+
+```json
+{
+  "test_cases": [
+    {
+      "id": "IT1",
+      "category": "morning_workflow",
+      "name": "Full morning brief with flagged account",
+      "chain": ["morning-orchestrator", "customer-dossier", "day-prep-recap"],
+      "trigger": "7 AM cron fires with 3 meetings, 1 flagged account",
+      "simulated_inputs": {
+        "morning-orchestrator": "Calendar data...",
+        "customer-dossier": "SKILL REQUEST from PM with customer names...",
+        "day-prep-recap": "Aggregated dossier context..."
+      },
+      "expected_handoffs": [
+        "morning-orchestrator → PM routes customers to customer-dossier",
+        "customer-dossier results buffered → PM routes to day-prep-recap"
+      ],
+      "integration_criteria": ["IC1", "IC2", "IC3", "IC5"]
+    }
+  ]
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `test_cases[].id` | string | yes | Unique ID (IT1, IT2, ...) |
+| `test_cases[].category` | string | yes | One of: `morning_workflow`, `post_meeting`, `customer_lifecycle`, `escalation_path`, `session_end`, `multi_signal`, `error_recovery` |
+| `test_cases[].chain` | array | yes | Ordered list of skills in the chain |
+| `test_cases[].trigger` | string | yes | What initiates the chain |
+| `test_cases[].simulated_inputs` | object | yes | Keyed by skill name — the input each skill receives |
+| `test_cases[].expected_handoffs` | array | yes | Human-readable description of each handoff |
+| `test_cases[].integration_criteria` | array | yes | Which IC criteria to evaluate against |
+
+---
+
+### integration-eval.json
+
+Generated in Stage 3c. Full integration evaluation results.
+
+```json
+{
+  "timestamp": "2026-03-27T12:00:00Z",
+  "integration_pass_rate": 80.0,
+  "total_checks": 40,
+  "passed": 32,
+  "failed": 8,
+  "chain_results": {
+    "morning-workflow": {
+      "pass_rate": 83.3,
+      "failing_criteria": ["IC3"],
+      "root_cause": "day-prep-recap presents before all dossiers buffered"
+    },
+    "post-meeting": {
+      "pass_rate": 75.0,
+      "failing_criteria": ["IC4", "IC6"],
+      "root_cause": "PM doesn't deepen when fathom returns Medium on flagged account"
+    }
+  },
+  "results": [
+    {
+      "test_case": "IT1",
+      "criterion": "IC1",
+      "chain_step": "morning-orchestrator → customer-dossier",
+      "result": "PASS",
+      "justification": "All customer names present in SKILL RESULT"
+    }
+  ],
+  "criterion_pass_rates": {
+    "IC1": 90.0,
+    "IC2": 100.0,
+    "IC3": 70.0,
+    "IC4": 60.0
+  },
+  "fix_recommendations": [
+    {
+      "priority": 1,
+      "target_skill": "project-manager",
+      "issue": "IC4 failures — PM doesn't deepen on Medium confidence for flagged accounts",
+      "proposed_fix": "Add explicit rule: if customer is flagged AND confidence < High, always deepen",
+      "impact": "Would fix 3 integration test failures"
+    }
+  ]
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `integration_pass_rate` | number | yes | Overall integration pass rate |
+| `chain_results` | object | yes | Per-chain pass rates and failure analysis |
+| `chain_results.<name>.failing_criteria` | array | yes | Which IC criteria failed |
+| `chain_results.<name>.root_cause` | string | yes | Why the chain fails |
+| `results[]` | array | yes | Per (test case, criterion) results |
+| `results[].chain_step` | string | yes | Which handoff in the chain this tests |
+| `criterion_pass_rates` | object | yes | Pass rate per IC criterion |
+| `fix_recommendations` | array | yes | Prioritized list of fixes |
+
+---
+
+### scorecard.md
+
+Generated at the end of sweep mode. Human-readable ecosystem health report.
+See SKILL.md "Sweep Output — Ecosystem Scorecard" section for the full template.
+
+This is a markdown file, not JSON. It's designed to be read by the user and
+referenced by PM in the SKILL RESULT.
+
+Location: `outputs/auto-research/_sweep/scorecard.md`
+
+---
+
 ## Compatibility with skill-creator
 
 Auto-research uses a simplified version of skill-creator's eval framework:

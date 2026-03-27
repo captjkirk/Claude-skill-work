@@ -2,12 +2,16 @@
 name: auto-research
 description: >
   Autonomous skill improvement using the autoresearch pattern. Reads any target
-  skill, dynamically generates binary evaluation criteria and success metrics,
-  runs simulated test cases, scores outputs, and iteratively improves the skill —
-  keeping changes only when they raise the pass rate. First iteration runs
-  interactively for approval; subsequent iterations run autonomously. Invoke on:
-  "auto-research [skill]", "improve this skill automatically", "run autoresearch
-  on [skill]", "optimize [skill] overnight", "what's the pass rate for [skill]".
+  skill (or all skills via --sweep), dynamically generates binary evaluation
+  criteria and success metrics, runs simulated test cases, scores outputs, and
+  iteratively improves the skill — keeping changes only when they raise the pass
+  rate. Sweep mode evaluates each skill independently then tests cross-skill
+  integration (handoffs, routing, dependency ordering, schema consistency).
+  First iteration runs interactively for approval; subsequent iterations run
+  autonomously. Invoke on: "auto-research [skill]", "improve this skill
+  automatically", "run autoresearch on [skill]", "optimize [skill] overnight",
+  "what's the pass rate for [skill]", "evaluate all my skills", "run a full
+  sweep", "how do my skills work together", "test skill integration".
   Also invoke when dream's EVO pass surfaces a proposal and the user says
   "auto-improve it" or "run the research loop on that". Use this skill any time
   someone wants to measure, benchmark, or autonomously improve a skill's
@@ -42,8 +46,10 @@ Phase 6 — Return SKILL RESULT to PM
 ## Arguments
 
 ```
-$ARGUMENTS: <path-to-skill> [--iterations N] [--criteria-only] [--auto] [--interactive]
+$ARGUMENTS: <path-to-skill> | --sweep [options]
 ```
+
+### Single-Skill Mode
 
 | Flag | Default | What it does |
 |------|---------|-------------|
@@ -55,6 +61,29 @@ $ARGUMENTS: <path-to-skill> [--iterations N] [--criteria-only] [--auto] [--inter
 
 If neither `--auto` nor `--interactive` is passed, the default behavior is:
 first iteration interactive, remaining iterations autonomous.
+
+### Sweep Mode
+
+| Flag | Default | What it does |
+|------|---------|-------------|
+| `--sweep` | off | Discover all skills, evaluate each individually, then run cross-skill integration eval |
+| `--sweep-dir <path>` | `skills/` | Directory to scan for SKILL.md files |
+| `--skip <name,...>` | none | Comma-separated skill names to exclude from sweep |
+| `--integration-only` | off | Skip individual skill evals — only run cross-skill integration tests |
+| `--baseline-only` | off | Run baseline evals for all skills (no improvement iterations) — useful for initial assessment |
+| `--iterations N` | 5 | Per-skill iteration budget in sweep mode (lower default than single-skill to manage total runtime) |
+| `--auto` | **on** | Sweep mode defaults to autonomous (override with `--interactive`) |
+| `--priority <strategy>` | `worst-first` | Order to process skills: `worst-first` (lowest baseline first), `critical-first` (orchestrators and high-dependency skills first), `alphabetical` |
+
+**Examples:**
+```
+/auto-research --sweep                              # Full sweep: all skills + integration
+/auto-research --sweep --baseline-only              # Just measure everything, no improvements
+/auto-research --sweep --criteria-only              # Generate all criteria for review
+/auto-research --sweep --integration-only           # Only test how skills work together
+/auto-research --sweep --skip dream,schedule        # Skip specific skills
+/auto-research --sweep --priority critical-first    # Start with PM, morning-orchestrator
+```
 
 ---
 
@@ -420,6 +449,373 @@ Gaps/failures: [any eval limitations — e.g., simulated execution can't test
 Suggested next: Review proposed changes in outputs/auto-research/[skill-name]/
 Flags for Jared: Skill patch requires human review before applying (Tier 2).
   Review the cumulative diff and test it in a real session before installing.
+```
+
+---
+
+## Sweep Mode — Full Ecosystem Evaluation
+
+When `--sweep` is passed, auto-research shifts from single-skill mode to a
+three-stage ecosystem evaluation: discover, evaluate individually, then test
+collectively.
+
+### Stage 1 — Skill Discovery
+
+Scan `--sweep-dir` (default: `skills/`) for all SKILL.md files. For each:
+
+1. Read the SKILL.md
+2. Classify: orchestrator, primary worker, chained skill, or utility
+3. Map dependencies (reads PM's routing table + each skill's references)
+4. Build the **dependency graph** — which skills feed into which
+
+Save the discovery results to `outputs/auto-research/_sweep/discovery.json`:
+
+```json
+{
+  "timestamp": "ISO 8601",
+  "sweep_dir": "skills/",
+  "skills_found": 26,
+  "skills_skipped": ["schedule"],
+  "dependency_graph": {
+    "project-manager": {
+      "layer": "orchestrator",
+      "invokes": ["customer-dossier", "fathom", "com-update", "email-templates",
+                   "blackthorn-support", "product-feedback-poster", "kickoff-deck",
+                   "dream", "memory-create", "memory-delete", "process-mistakes",
+                   "morning-orchestrator", "day-prep-recap", "post-meeting-sweep",
+                   "flagged-onboarding-sync", "onboarding-process-sync", "subfolders",
+                   "blackthorn-brand", "skill-creator"],
+      "invoked_by": [],
+      "criticality": "critical"
+    },
+    "customer-dossier": {
+      "layer": "primary-worker",
+      "invokes": [],
+      "invoked_by": ["project-manager"],
+      "criticality": "high",
+      "note": "Hard dependency — always runs first when customer named"
+    },
+    "morning-orchestrator": {
+      "layer": "orchestrator",
+      "invokes": ["day-prep-recap"],
+      "invoked_by": ["project-manager"],
+      "criticality": "high"
+    },
+    "dream": {
+      "layer": "primary-worker",
+      "invokes": [],
+      "invoked_by": ["project-manager"],
+      "criticality": "high",
+      "note": "Proposes writes — PM executes. Never writes directly."
+    }
+  },
+  "chains": [
+    {
+      "name": "morning-workflow",
+      "sequence": ["morning-orchestrator", "customer-dossier", "day-prep-recap"],
+      "trigger": "7 AM weekday cron"
+    },
+    {
+      "name": "post-meeting",
+      "sequence": ["post-meeting-sweep", "fathom", "com-update"],
+      "trigger": "fireAt +15 min after meeting"
+    },
+    {
+      "name": "product-question-escalation",
+      "sequence": ["blackthorn-support", "product-feedback-poster"],
+      "trigger": "Product question with Confidence < High"
+    },
+    {
+      "name": "email-workflow",
+      "sequence": ["email-templates", "blackthorn-brand", "gmail_create_draft"],
+      "trigger": "Email needed for customer"
+    },
+    {
+      "name": "session-end",
+      "sequence": ["dream", "memory-create", "memory-delete"],
+      "trigger": "Session end or nightly cron"
+    },
+    {
+      "name": "new-customer",
+      "sequence": ["customer-dossier", "kickoff-deck"],
+      "trigger": "New customer assigned"
+    }
+  ],
+  "processing_order": []
+}
+```
+
+### Stage 1b — Determine Processing Order
+
+Based on `--priority`:
+
+| Strategy | Order Logic |
+|----------|------------|
+| `worst-first` | Run baseline eval on all skills first, then process from lowest pass rate to highest |
+| `critical-first` | Process by criticality: orchestrators first (PM, morning-orchestrator), then high-dependency skills (customer-dossier, dream, fathom), then remaining workers, then utilities |
+| `alphabetical` | A-Z by skill name |
+
+**`critical-first` ordering (recommended for first sweep):**
+
+```
+Tier 1 — Orchestrators (routing correctness affects everything downstream)
+  1. project-manager
+  2. morning-orchestrator
+
+Tier 2 — High-dependency workers (many skills depend on their output)
+  3. customer-dossier      (hard dependency for all customer workflows)
+  4. fathom                (primary research source)
+  5. dream                 (memory consolidation + EVO proposals)
+  6. post-meeting-sweep    (packages findings for PM routing)
+
+Tier 3 — Primary workers
+  7. email-templates
+  8. com-update
+  9. blackthorn-support
+  10. kickoff-deck
+  11. day-prep-recap
+  12. flagged-onboarding-sync
+  13. product-feedback-poster
+  14. blackthorn-brand
+
+Tier 4 — Utilities
+  15. memory-create
+  16. memory-delete
+  17. process-mistakes
+  18. onboarding-process-sync
+  19. subfolders
+  ...remaining skills
+```
+
+### Stage 2 — Individual Skill Evaluation
+
+For each skill in the processing order:
+
+1. Run Phases 1–5 (same as single-skill mode) with the per-skill `--iterations` budget
+2. Save results to `outputs/auto-research/<skill-name>/`
+3. Track the skill's baseline and final pass rate in the sweep summary
+
+**If `--baseline-only`:** Run Phase 1–3 only (analyze, generate criteria, baseline eval).
+No improvement iterations. This produces a "health check" scorecard for the
+entire ecosystem.
+
+**Runtime budget:** Each skill gets its own iteration budget (default 5 in sweep
+mode). The sweep does NOT share iterations across skills — each skill gets a
+fresh budget. This prevents one stubborn skill from consuming all iterations.
+
+**Parallelism note:** Skills within the same tier that have no dependencies on
+each other CAN be evaluated in parallel if the runtime supports it. However,
+orchestrators (Tier 1) should complete before their downstream skills are
+evaluated, because improvements to PM's routing may change how downstream
+skills should behave.
+
+### Stage 3 — Cross-Skill Integration Evaluation
+
+After all individual evaluations complete (or if `--integration-only` is passed),
+run the integration test suite. This evaluates how skills work **together** —
+not in isolation.
+
+Read `references/criteria-templates.md` section "Cross-Skill Integration" for
+the full criteria library. The integration eval dynamically selects criteria
+based on which chains exist in the dependency graph.
+
+#### 3a — Generate Integration Test Scenarios
+
+Create test scenarios that exercise **complete workflows**, not individual skills.
+Each scenario simulates a realistic multi-skill chain from trigger to final output.
+
+**Scenario categories:**
+
+| Category | Count | What it tests |
+|----------|-------|--------------|
+| Morning workflow | 2–3 | morning-orchestrator → customer-dossier → day-prep-recap full chain |
+| Post-meeting flow | 2–3 | post-meeting-sweep → fathom → com-update → email-templates chain |
+| Customer lifecycle | 2–3 | New customer → dossier → kickoff-deck → first-meeting → follow-up |
+| Escalation paths | 2–3 | Product question → blackthorn-support → product-feedback-poster |
+| Session end | 1–2 | dream → memory-create/delete → PM execution of proposed writes |
+| Multi-signal routing | 2–3 | PM receives input with multiple simultaneous signals — tests parallel routing and result buffering |
+| Error recovery | 1–2 | Skill returns low confidence or fails — tests PM's deepen/re-route logic |
+
+**Integration test case format:**
+
+```json
+{
+  "id": "IT1",
+  "category": "morning_workflow",
+  "name": "Full morning brief with flagged account and upcoming kickoff",
+  "chain": ["morning-orchestrator", "customer-dossier", "day-prep-recap"],
+  "trigger": "7 AM cron fires. Calendar has 3 meetings. One account flagged for follow-up. One new customer with kickoff tomorrow.",
+  "simulated_inputs": {
+    "morning-orchestrator": "Calendar data with 3 meetings, 1 flagged account",
+    "customer-dossier": "SKILL REQUEST from PM after morning-orchestrator surfaces customer names",
+    "day-prep-recap": "Aggregated context from dossiers + morning-orchestrator findings"
+  },
+  "expected_handoffs": [
+    "morning-orchestrator SKILL RESULT → PM routes customer names to customer-dossier",
+    "customer-dossier SKILL RESULT (x3) → PM buffers all, routes to day-prep-recap",
+    "day-prep-recap SKILL RESULT → PM presents consolidated morning brief"
+  ],
+  "integration_criteria": ["IC1", "IC2", "IC3", "IC5"]
+}
+```
+
+#### 3b — Generate Integration Criteria
+
+Integration criteria test the **boundaries between skills** — handoffs, data
+format compatibility, routing decisions, and collective behavior.
+
+**Core integration criteria (always included):**
+
+| ID | Name | What it tests |
+|----|------|--------------|
+| IC1 | **SKILL RESULT → SKILL REQUEST compatibility** | When Skill A's output becomes Skill B's input (via PM routing), does Skill B receive what it needs? Does the SKILL RESULT contain all fields that the downstream SKILL REQUEST expects? |
+| IC2 | **Dependency ordering** | Does the chain execute in the correct order? Does customer-dossier always run before task-specific skills when a customer is named? |
+| IC3 | **Parallel buffering** | When multiple skills run in parallel, does PM buffer all results before presenting? No premature partial output? |
+| IC4 | **Confidence-based routing** | When a skill returns Medium/Low confidence, does PM correctly deepen (re-request with more context) or re-route (send to different skill)? |
+| IC5 | **Tier 1/2 segregation across chain** | Across the full chain, are all Tier 1 actions executed autonomously and all Tier 2 items collected into a single block at the end? No Tier 2 action executed mid-chain? |
+| IC6 | **High-stakes signal propagation** | When any skill in the chain detects a high-stakes signal ("cancel", "not renewing", etc.), does it propagate up to PM and trigger the correct response (transcript pull + Tier 2 escalation) regardless of where in the chain it was detected? |
+| IC7 | **No circular handoffs** | Does the chain terminate? Specifically: dream → memory-create doesn't re-trigger dream. product-feedback-poster doesn't loop back to blackthorn-support. |
+| IC8 | **Schema consistency** | Do all skills in the chain use the same SKILL RESULT schema? Same field names, same confidence scale, same timestamp format? |
+| IC9 | **Graceful degradation** | When one skill in the chain fails or returns empty results, does the chain continue with reduced context rather than halting? Does PM log the gap? |
+| IC10 | **Memory routing consistency** | When multiple skills in a chain propose memory writes (dream + customer-dossier + com-update), do they target the correct files without conflicts or duplicates? |
+
+#### 3c — Simulated Chain Execution
+
+For each integration test scenario:
+
+1. **Simulate the trigger** (e.g., 7 AM cron fires with calendar data)
+2. **Execute Skill A** with the trigger as input → capture SKILL RESULT
+3. **Simulate PM routing** — read PM's routing table, determine what PM would do
+   with the SKILL RESULT (accept, deepen, re-route, escalate)
+4. **Construct the SKILL REQUEST for Skill B** based on PM's routing decision
+   and the actual SKILL RESULT from Skill A
+5. **Execute Skill B** → capture SKILL RESULT
+6. **Repeat** through the full chain
+7. **Evaluate** the complete chain output against integration criteria
+
+**Key difference from individual eval:** Individual eval tests one skill with
+mock inputs. Integration eval tests the **actual handoff** — Skill A's real
+output becomes Skill B's real input. This catches format mismatches, missing
+fields, and assumption gaps that individual evals miss.
+
+#### 3d — Integration Scoring
+
+Integration pass rate is calculated separately from individual skill pass rates:
+
+```
+integration_pass_rate = (passed_integration_checks / total_integration_checks) * 100
+```
+
+Save to `outputs/auto-research/_sweep/integration-eval.json`.
+
+#### 3e — Integration Improvement (Optional)
+
+If integration failures are found, the system identifies **which skill** needs
+to change to fix the handoff. This is different from individual improvement —
+the change targets the skill that's producing incompatible output, even if that
+skill passes its own individual eval at 100%.
+
+Example: `email-templates` might score 100% individually but fail IC1 because
+its SKILL RESULT format doesn't match what `blackthorn-brand` expects as input.
+The fix goes in `email-templates` (adjust its output format), not `blackthorn-brand`.
+
+Integration improvements follow the same keep/discard loop but re-run the
+integration test suite (not just the individual skill eval) to verify the fix.
+
+### Sweep Output — Ecosystem Scorecard
+
+After all stages complete, generate the ecosystem scorecard at
+`outputs/auto-research/_sweep/scorecard.md`:
+
+```markdown
+# Auto-Research Sweep — Ecosystem Scorecard
+Generated: [timestamp]
+Skills evaluated: [N] / [total found]
+Skills skipped: [list]
+
+## Individual Skill Results
+
+| Skill | Layer | Baseline | Final | Delta | Iterations | Status |
+|-------|-------|----------|-------|-------|------------|--------|
+| project-manager | orchestrator | 60.0% | 80.0% | +20.0 | 5 | improved |
+| customer-dossier | primary-worker | 73.3% | 86.7% | +13.4 | 4 | improved |
+| morning-orchestrator | orchestrator | 83.3% | 91.7% | +8.4 | 3 | improved |
+| email-templates | primary-worker | 66.7% | 83.3% | +16.6 | 5 | improved |
+| memory-create | utility | 100.0% | 100.0% | 0.0 | 0 | perfect |
+| ... | | | | | | |
+
+### Ecosystem Summary
+- Average baseline: [X]%
+- Average final: [Y]%
+- Skills at 90%+: [N]
+- Skills below 70%: [N] — [list names]
+- Skills unchanged: [N]
+
+## Integration Results
+
+| Chain | Pass Rate | Failing Criteria | Root Cause |
+|-------|-----------|-----------------|------------|
+| morning-workflow | 80.0% | IC3, IC5 | day-prep-recap presents partial output before all dossiers buffered |
+| post-meeting | 90.0% | IC4 | PM doesn't deepen when fathom returns Medium confidence on flagged account |
+| email-workflow | 70.0% | IC1, IC8 | email-templates SKILL RESULT uses different field names than blackthorn-brand expects |
+| session-end | 100.0% | — | All integration criteria pass |
+| ... | | | |
+
+### Integration Summary
+- Overall integration pass rate: [X]%
+- Chains at 100%: [N] / [total]
+- Most common failure: [criterion name] — [description]
+- Highest-impact fix: [which skill] — [what change would fix the most integration failures]
+
+## Priority Recommendations
+
+1. **[Highest impact]** Fix [skill] — [specific change]. Would resolve [N] integration failures.
+2. **[Second highest]** Improve [skill] — [specific change]. Individual pass rate only [X]%.
+3. ...
+
+## Detailed Results
+See outputs/auto-research/<skill-name>/ for per-skill data.
+See outputs/auto-research/_sweep/ for integration data.
+```
+
+### Sweep SKILL RESULT
+
+The sweep returns a consolidated SKILL RESULT to PM:
+
+```
+## SKILL RESULT: auto-research (sweep)
+Timestamp: [ISO 8601]
+Customer: None
+Actions taken: Full ecosystem sweep. Evaluated [N] skills individually +
+  [N] integration chains. Ran [total] improvement iterations across all skills.
+
+Findings:
+
+  === ECOSYSTEM HEALTH ===
+  Average pass rate: [baseline]% → [final]%
+  Integration pass rate: [X]%
+  Skills improved: [N]
+  Skills at risk (below 70%): [list]
+
+  === TOP INTEGRATION FAILURES ===
+  [Top 3 integration failures with root cause and recommended fix]
+
+  === HIGHEST-IMPACT IMPROVEMENTS ===
+  [Top 3 skill patches that would most improve ecosystem health]
+
+  === FULL SCORECARD ===
+  See outputs/auto-research/_sweep/scorecard.md
+
+  === TASKS.md ADDITIONS ===
+  - [ ] [AUTO-RESEARCH SWEEP] Review ecosystem scorecard — avg [X]% → [Y]%. See outputs/auto-research/_sweep/scorecard.md
+  - [ ] [AUTO-RESEARCH] Fix [skill] integration issue — [description]
+  - [ ] [AUTO-RESEARCH] Review [skill] improvement — [baseline]% → [final]%
+
+Confidence: [Based on how many skills were improved and integration health]
+Gaps/failures: [Skills that couldn't be evaluated — API dependencies, etc.]
+Suggested next: Review scorecard, approve patches, then re-run --integration-only to verify fixes
+Flags for Jared: All skill patches require human review (Tier 2). Start with
+  highest-impact recommendations in the scorecard.
 ```
 
 ---
