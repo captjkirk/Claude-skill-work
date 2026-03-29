@@ -25,6 +25,11 @@ Dream's EVO pass catches problems reactively from session transcripts.
 Auto-research catches problems proactively by stress-testing skills in isolation
 and improving them through a controlled experiment loop.
 
+## Honesty Protocol
+Follow `skills/core/honesty-protocol.md` for all outputs.
+The evaluator must follow the same honesty rules it tests for.
+A false PASS is 3x worse than a false FAIL — when in doubt, mark FAIL.
+
 ---
 
 ## How It Works (Overview)
@@ -119,6 +124,20 @@ Gather evidence of known issues before generating criteria:
 4. **Upstream/downstream skills** — identify which skills feed into this one and
    which skills consume its output. This informs the hierarchy-aware evaluation.
 
+5. **Health Ledger** — read `outputs/health-ledger/observations.jsonl` and filter
+   for observations where `skill` matches the target and `consumed_by_auto_research`
+   is `false`. For each unconsumed observation:
+
+   | Observation Type | Action |
+   |-----------------|--------|
+   | `honesty-violation` | Generate criterion targeting this honesty failure. Generate test case reproducing the scenario. |
+   | `gap` / `missing-resource` | Generate test case exposing the gap. Criterion testing whether output improves with recommended resource. |
+   | `regression` | Generate test case matching regression scenario. |
+   | `integration-failure` | Generate cross-skill test case for the broken handoff. |
+   | `miscalibration` | Add Confidence Calibration criterion. Test cases with varying evidence quality. |
+
+   Mark processed observations as `consumed_by_auto_research: true`.
+
 ### 1c — Classify Position in Hierarchy
 
 Determine where this skill sits in the orchestration chain:
@@ -152,6 +171,7 @@ for domain-specific heuristics, but adapt them to the specific skill.
 - Criteria must cover **orthogonal quality dimensions** — not three variants of "format compliance"
 - At least one criterion must test **SKILL RESULT schema compliance** (does the output match what PM expects?)
 - If PROCESS-LESSONS.md or EVO proposals flagged specific issues, include a criterion targeting that failure pattern
+- **MANDATORY: Honesty Protocol Compliance** — every evaluation MUST include a criterion testing whether the skill labels values as EXTRACTED/INFERRED, includes evidence trails, and leaves ambiguous values BLANK. This criterion cannot be excluded. See `references/criteria-templates.md` Honesty Protocol section.
 
 **Criterion format:**
 
@@ -237,10 +257,24 @@ is any reasonable doubt, mark FAIL. Do not rubber-stamp outputs. Do not give
 the benefit of the doubt. This adversarial stance is essential — without it,
 the same model generating and evaluating will converge on inflated scores.
 
+**Evaluator Honesty Protocol** — the evaluator follows the same rules it tests:
+
+1. **Force FAIL on uncertain judgments.** Cannot determine if criterion is met
+   based on output alone? Result is FAIL, not a generous PASS.
+2. **A false PASS is 3x worse than a false FAIL.** Prefer strict judgment.
+3. **Show the source for every judgment.** Every PASS must cite the specific
+   part of the output that satisfies the criterion. Every FAIL must cite the
+   violation. "Generally looks good" is not a valid justification.
+4. **Label evaluation confidence.** Each judgment is CLEAR (unambiguous) or
+   BORDERLINE (could go either way). BORDERLINE defaults to FAIL.
+5. **Spot-check drift.** Every 5 iterations, re-evaluate 2-3 baseline outputs
+   using current criteria. If scores drift upward without skill changes, flag
+   evaluator drift and recalibrate.
+
 For each (test case, criterion) pair:
 1. Read the criterion's `evaluation_prompt`
 2. Read the simulated output
-3. Answer PASS or FAIL with a one-sentence justification
+3. Answer PASS or FAIL with a one-sentence justification citing specific evidence
 
 ### 3c — Aggregate Results
 
@@ -354,17 +388,36 @@ for remaining iterations.
 After the interactive first iteration (or immediately if `--auto` was passed),
 run the remaining iterations autonomously.
 
+Each iteration follows the TDD pattern — RED/GREEN/REFACTOR (adapted from
+Superpowers for prompt engineering):
+
 ```
 previous_best = current pass rate
 
 FOR i = 2 to N (where N = --iterations, default 10):
 
-    1. Analyze failure patterns from most recent eval
-    2. Propose ONE atomic change (same rules as Phase 4b)
-    3. Apply the change to the skill file
-    4. Snapshot the skill to iterations/<NNN>/skill-snapshot.md
-    5. Re-run full evaluation suite
-    6. Record results
+    === RED (document the failure) ===
+    - Which test case fails? (cite ID)
+    - Which criterion fails? (cite ID)
+    - What does the skill currently produce that's wrong?
+    - What SHOULD it produce instead?
+    - Why does the current prompt text cause this failure?
+    Write RED documentation to iterations/<NNN>/red.md
+
+    === GREEN (minimal fix) ===
+    - ONE focused edit directly addressing the RED documentation
+    - No extra improvements, no cleanup, no "while we're here" additions
+    - If the change doesn't relate to the documented failure, reject it
+    Apply the change to the skill file
+    Snapshot to iterations/<NNN>/skill-snapshot.md
+    Re-run full evaluation suite
+
+    === REFACTOR (simplify if possible) ===
+    If pass rate improved or held steady:
+    - Can the change be more concise?
+    - Did it add unnecessary words?
+    - Can anything be removed while maintaining pass rate?
+    If yes → simplify, re-run eval to verify
 
     IF pass_rate >= previous_best:
         STATUS = "keep"
@@ -447,6 +500,29 @@ Suggested next: Review proposed changes in outputs/auto-research/[skill-name]/
 Flags for Jared: Skill patch requires human review before applying (Tier 2).
   Review the cumulative diff and test it in a real session before installing.
 ```
+
+### Health Ledger Write-Back
+
+After returning the SKILL RESULT, write back to the health ledger:
+
+1. **For consumed observations:** If the related criterion now passes
+   consistently → mark `resolved: true` with `resolution_note` describing
+   the fix. If still failing → leave unresolved for PM escalation.
+
+2. **For new patterns discovered:**
+   - Persistent failures (same criterion fails 3+ iterations) → write
+     `type: "regression"` with specific findings
+   - Resource recommendations (skill needs scripts/references/templates) →
+     write `type: "missing-resource"` with `resource_type`
+   - Bloat (skill grew >50%) → write `type: "bloat"`
+
+3. **Escalation:** When auto-research cannot fix a pattern through prompt
+   iteration alone, write to health ledger with specific findings and
+   recommendation. PM surfaces to user as Tier 2:
+
+   "Auto-research tried to fix [issue] in [skill] across [N] runs and
+   couldn't solve it with prompt changes alone. Recommends [resource].
+   Want me to have the research skill find existing options?"
 
 ---
 
