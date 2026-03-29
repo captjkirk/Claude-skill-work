@@ -116,7 +116,7 @@ Tell your Claude Code coworker session to clone and reference this repo:
 
 ```
 git clone https://github.com/captjkirk/Claude-skill-work.git
-git checkout claude/auto-research-skills-9MIoT
+git checkout skill-core
 ```
 
 ### What the coworker should read first:
